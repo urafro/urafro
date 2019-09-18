@@ -69,7 +69,18 @@ app.post("/blogs", (req, res) => {
     });
 });
 
-//Show
+//Show Route
+app.get("/blogs/:id", (req, res) => {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if (err) {
+            console.log("error finding blog id :" + err);
+        } else {
+            res.render("show", {
+                foundBlog: foundBlog
+            });
+        }
+    });
+});
 
 //Catch-all Route
 app.get("*", () => console.log("Sorry, page not found! What are you doing with your life?"));
