@@ -3,5 +3,9 @@
 <h5><%= foundBlog.title %></h5>
 <img src="<%= foundBlog.image %>" alt="Blog Image">
 <p><%= foundBlog.desc %></p>
+<a href="/blogs/<%= foundBlog.id %>/edit">Edit Blog</a>
+<form action="/blogs/<%= foundBlog.id %>?_method=DELETE" method="POST">
+    <input type="submit" value="delete">
+</form>
 
 <% include partials/footer %>

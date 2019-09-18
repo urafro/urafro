@@ -19,8 +19,11 @@ app.use(methodOverride("_method"));
 //Connecting to MongoDB
 mongoose.connect("mongodb://localhost:27017/blogApp", {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 });
+//Escaping mongoose deprecation warnings
+mongoose.set('useFindandModify', false);
 
 //Defining Schemas
 let BlogSchema = new mongoose.Schema({
@@ -78,6 +81,44 @@ app.get("/blogs/:id", (req, res) => {
             res.render("show", {
                 foundBlog: foundBlog
             });
+        }
+    });
+});
+
+//Edit Route - serve the edit-blog-form
+app.get("/blogs/:id/edit", (req, res) => {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if (err) {
+            console.log("error finding blog to edit :" + error);
+        } else {
+            res.render("edit", {
+                foundBlog: foundBlog
+            });
+        }
+    });
+});
+
+//Update Route - take the inputs from the '/blogs/:id/edit' route and update blog in database
+app.put("/blogs/:id", (req, res) => {
+    Blog.findByIdAndUpdate(req.params.id, req.body.blog, (err, updatedBlog) => {
+        if (err) {
+            console.log("error updating found blog :" + err);
+        } else {
+            res.redirect("/blogs/" + req.params.id);
+            console.log("UPDATED BLOG...:" + updatedBlog);
+            console.log("======================================");
+        }
+    });
+});
+
+//Destroy Route - delete found blog 
+app.delete("/blogs/:id", (req, res) => {
+    Blog.findByIdAndRemove(req.params.id, (err, deletedBlog) => {
+        if (err) {
+            console.log("error deleting found blog :" + err);
+        } else {
+            res.redirect("/blogs");
+            console.log(deletedBlog);
         }
     });
 });
