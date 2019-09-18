@@ -1,0 +1,8 @@
+<% include partials/header %>
+
+<% foundBlogs.forEach((blog) => { %>
+<h5><%= blog.title %></h5>
+<p><%= blog.desc %></p>
+<% }) %>
+
+<% include partials/footer %>
