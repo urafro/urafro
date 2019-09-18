@@ -1,5 +1,6 @@
 const express = require("express"),
     app = express(),
+    expressSanitizer = require("express-sanitizer"),
     bodyParser = require("body-parser"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
@@ -10,6 +11,7 @@ app.use(express.static("public"));
 //Setting view engine to EJS
 app.set("view engine", "ejs");
 //bodyParser
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
