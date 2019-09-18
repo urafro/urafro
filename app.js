@@ -22,8 +22,17 @@ mongoose.connect("mongodb://localhost:27017/blogApp", {
     useUnifiedTopology: true
 });
 
+//Defining Schemas
+let BlogSchema = new mongoose.Schema({
+    title: String,
+    image: String,
+    desc: String
+});
+
+let Blog = new mongoose.model("Blog", BlogSchema);
+
 app.get("/", (req, res) => {
-    res.send("WELCOME TO THE BLOGS HOMEPAGE");
+    res.render("landing");
 });
 
 //Catch-all Route
