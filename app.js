@@ -3,6 +3,7 @@ const express = require("express"),
     bodyParser = require("body-parser"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
+    Blog = require("./models/blog")
     port = 8080;
 
 const app = express();
