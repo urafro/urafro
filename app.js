@@ -3,10 +3,14 @@ const express = require("express"),
     bodyParser = require("body-parser"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
-    Blog = require("./models/blog")
+    Blog = require("./models/blog"),
+    seedDB = require("./seeds");
     port = 8080;
 
 const app = express();
+
+//seeding the database
+seedDB;
 
 //Expecting files from the '/public' dir
 app.use(express.static(__dirname + "/public"));
