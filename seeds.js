@@ -197,11 +197,22 @@ const seedDB = function() {
       console.log("error deleting existing blogs: ", err);
     } else {
       data.forEach(function(post) {
-        Blog.create(post, (err, createdBlogs) => {
+        Blog.create(post, (err, createdBlog) => {
           if(err) {
             console.log("Error creating blogs: ", err);
           } else {
-            console.log(createdBlogs);
+            Comment.create({
+              author: "admin",
+              text: "generic comment 101 :("
+            }, (err, comment) => {
+              if(err) {
+                console.log("error creating comment: " + err);
+              } else {
+                createdBlog.comments.push(comment);
+                createdBlog.save();
+                console.log(createdBlog);
+              }
+            })
           }
         });
       })
@@ -209,4 +220,4 @@ const seedDB = function() {
   })
 }
 
-module.exports = seedDB();
+module.exports = seedDB;
