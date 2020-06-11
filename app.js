@@ -33,8 +33,22 @@ mongoose.connect("mongodb://localhost:27017/blogApp", {
 
 //Initial Route - Home ROute
 app.get("/", (req, res) => {
+    // will come back to style landing page
     res.render("landing");
 });
+
+//Index Route - Display all blogs
+app.get("/blogs", (req, res) => {
+    Blog.find({}, (err, foundBlogs) => {
+        if(err) {
+            console.log("error finding blogs to display: ", err);
+        } else {
+            res.render("blog/index", {
+                foundBlogs: foundBlogs
+            });
+        }
+    })
+})
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));

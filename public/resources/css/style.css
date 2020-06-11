@@ -1,0 +1,112 @@
+/* ============ UNIVERSAL STYLES =========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* =================================
+REUSABLE CODE
+==================================== */
+
+.container {
+  display: flex;
+}
+
+/* ============ INDEX.EJS ============== */
+
+/* Hero section */
+.hero {
+  flex-basis: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/flagged/photo-1575744007781-3eaadbfba049?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  align-self: flex-start;
+  /* fixing hero div to NOT scroll with the showcase div */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #fff;
+}
+
+h2 {
+  align-self: flex-start;
+  margin-top: 60px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 190%;
+}
+
+.hero .header{
+  width: 100%;
+  text-align: center;
+  margin-top: 50vh;
+  font-size: 80%;
+  text-align: center;
+}
+
+.hero .header img {
+  width: 130px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #a0c1b8;
+}
+
+.hero .header h1 {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.hero .header p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 180%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 300%;
+  color: rgb(185, 178, 178);
+}
+
+.fa-instagram:active,
+.fa-instagram:hover {
+  color: #ee1092;
+}
+
+.fa-twitter:active,
+.fa-twitter:hover {
+  color: #0764f7;
+}
+
+
+/* Showcase section */
+.showcase {
+  flex-basis: 100%;
+  overflow: auto;
+}
+
+.showcase img {
+  width: 400px;
+}
