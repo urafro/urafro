@@ -93,11 +93,21 @@ h2 {
 .fa-instagram:active,
 .fa-instagram:hover {
   color: #ee1092;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 
 .fa-twitter:active,
 .fa-twitter:hover {
   color: #0764f7;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 
 
