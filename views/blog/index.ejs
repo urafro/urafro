@@ -13,11 +13,25 @@
     </div>
   </div>
   <div class="showcase">
-    <% foundBlogs.forEach(function(blog) { %>
-      <h5><%= blog.body.header.mainHeading %></h5>
-      <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="coffee music and gaming">
-    <% }) %>
+
+    <div class="group">
+      <div class="right-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="showcase-boxes">
+      <% foundBlogs.forEach(function(blog) { %>
+        <div class="showcase-box">
+        <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="coffee music and gaming">
+        </div>
+      <% }) %>
+      </div>
+
+    </div>
+
   </div>
+
 </div>
 
 

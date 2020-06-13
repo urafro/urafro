@@ -14,15 +14,44 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/* =================================
+/* =====================================
 REUSABLE CODE
-==================================== */
+======================================= */
 
 .container {
   display: flex;
 }
 
-/* ============ INDEX.EJS ============== */
+/* Clearing floats */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa-instagram:active,
+.fa-instagram:hover {
+  color: #ee1092;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+}
+
+.fa-twitter:active,
+.fa-twitter:hover {
+  color: #0764f7;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+}
+
+/* =================================== 
+          INDEX.EJS
+====================================== */
 
 /* Hero section */
 .hero {
@@ -41,9 +70,9 @@ REUSABLE CODE
   color: #fff;
 }
 
-h2 {
+.hero h2 {
   align-self: flex-start;
-  margin-top: 60px;
+  margin-top: 50px;
   padding-left: 40px;
   font-weight: 400;
   font-size: 190%;
@@ -90,33 +119,26 @@ h2 {
   color: rgb(185, 178, 178);
 }
 
-.fa-instagram:active,
-.fa-instagram:hover {
-  color: #ee1092;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
-}
-
-.fa-twitter:active,
-.fa-twitter:hover {
-  color: #0764f7;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
-}
-
-
 /* Showcase section */
 .showcase {
   flex-basis: 100%;
   overflow: auto;
 }
 
-.showcase img {
-  width: 400px;
+.showcase .group .right-menu {
+  float: right;
+  margin-top: 50px;
+  padding-right: 40px;
+  font-weight: 400;
+  font-size: 140%;
+}
+
+.showcase-boxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+ .showcase img {
+  width: 275px;
+  height: 330px;
 }
