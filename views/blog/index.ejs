@@ -25,7 +25,10 @@
       <% foundBlogs.forEach(function(blog) { %>
         <div class="showcase-box">
 
-        <img src="<%= blog.body.header.mainImage %>" alt="coffee music and gaming">
+        <!-- link will go to the blog show route-->
+        <a href="#">
+          <img src="<%= blog.body.header.mainImage %>" alt="coffee music and gaming">
+        </a>
 
           <div class="showcase-card">
 
