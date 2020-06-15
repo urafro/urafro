@@ -7,8 +7,8 @@ const data = [
     tag: "Life",
     body: {
       header: {
-        mainHeading: "How to see if you're an introvert or not",
-        mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        mainHeading: "Intra vs Inter Communication",
+        mainImage: "https://i.imgur.com/v4tRlsD.png"
       },
       content: {
         // [introParagraph] div goes directly below the main heading with text-muted
@@ -35,7 +35,7 @@ const data = [
           smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
           // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
           paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-          blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+          blogImage: "https://i.imgur.com/v4tRlsD.png",
           blogImageDescription: "coffee gaming and music",
           paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
         },
@@ -54,8 +54,8 @@ const data = [
       tag: "Life",
       body: {
         header: {
-          mainHeading: "How to see if you're an introvert or not",
-          mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          mainHeading: "Intra vs Inter Communication",
+          mainImage: "https://i.imgur.com/v4tRlsD.png"
         },
         content: {
           // [introParagraph] div goes directly below the main heading with text-muted
@@ -82,7 +82,7 @@ const data = [
             smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
             // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
             paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-            blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+            blogImage: "https://i.imgur.com/v4tRlsD.png",
             blogImageDescription: "coffee gaming and music",
             paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
           },
@@ -101,8 +101,8 @@ const data = [
         tag: "Life",
         body: {
           header: {
-            mainHeading: "How to see if you're an introvert or not",
-            mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            mainHeading: "Intra vs Inter Communication",
+            mainImage: "https://i.imgur.com/v4tRlsD.png"
           },
           content: {
             // [introParagraph] div goes directly below the main heading with text-muted
@@ -129,7 +129,7 @@ const data = [
               smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
               // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
               paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-              blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+              blogImage: "https://i.imgur.com/v4tRlsD.png",
               blogImageDescription: "coffee gaming and music",
               paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
             },
@@ -147,8 +147,8 @@ const data = [
           tag: "Life",
           body: {
             header: {
-              mainHeading: "How to see if you're an introvert or not",
-              mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              mainHeading: "Intra vs Inter Communication",
+              mainImage: "https://i.imgur.com/v4tRlsD.png"
             },
             content: {
               // [introParagraph] div goes directly below the main heading with text-muted
@@ -175,7 +175,7 @@ const data = [
                 smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
                 // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
                 paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-                blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+                blogImage: "https://i.imgur.com/v4tRlsD.png",
                 blogImageDescription: "coffee gaming and music",
                 paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
               },
@@ -193,8 +193,8 @@ const data = [
       tag: "Life",
       body: {
         header: {
-          mainHeading: "How to see if you're an introvert or not",
-          mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          mainHeading: "Intra vs Inter Communication",
+          mainImage: "https://i.imgur.com/v4tRlsD.png"
         },
         content: {
           // [introParagraph] div goes directly below the main heading with text-muted
@@ -221,7 +221,7 @@ const data = [
             smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
             // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
             paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-            blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+            blogImage: "https://i.imgur.com/v4tRlsD.png",
             blogImageDescription: "coffee gaming and music",
             paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
           },
@@ -239,8 +239,8 @@ const data = [
         tag: "Life",
         body: {
           header: {
-            mainHeading: "How to see if you're an introvert or not",
-            mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            mainHeading: "Intra vs Inter Communication",
+            mainImage: "https://i.imgur.com/v4tRlsD.png"
           },
           content: {
             // [introParagraph] div goes directly below the main heading with text-muted
@@ -267,7 +267,7 @@ const data = [
               smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
               // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
               paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-              blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+              blogImage: "https://i.imgur.com/v4tRlsD.png",
               blogImageDescription: "coffee gaming and music",
               paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
             },
@@ -285,8 +285,8 @@ const data = [
           tag: "Life",
           body: {
             header: {
-              mainHeading: "How to see if you're an introvert or not",
-              mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              mainHeading: "Intra vs Inter Communication",
+              mainImage: "https://i.imgur.com/v4tRlsD.png"
             },
             content: {
               // [introParagraph] div goes directly below the main heading with text-muted
@@ -313,7 +313,7 @@ const data = [
                 smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
                 // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
                 paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-                blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+                blogImage: "https://i.imgur.com/v4tRlsD.png",
                 blogImageDescription: "coffee gaming and music",
                 paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
               },
@@ -331,8 +331,8 @@ const data = [
             tag: "Life",
             body: {
               header: {
-                mainHeading: "How to see if you're an introvert or not",
-                mainImage: "https://images.unsplash.com/photo-1497381446305-7445b7d4d5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                mainHeading: "Intra vs Inter Communication",
+                mainImage: "https://i.imgur.com/v4tRlsD.png"
               },
               content: {
                 // [introParagraph] div goes directly below the main heading with text-muted
@@ -359,7 +359,7 @@ const data = [
                   smallHeading: "Nulla gravida ultrices dolor id sollicitudin",
                   // [paragraphThree] EVERY sentence in this div is a unordered-list-style type point
                   paragraphThree: "Aenean sapien tellus, rhoncus id nunc vitae, blandit bibendum augue. Sed congue ipsum quis placerat ultrices. Curabitur suscipit risus ex, a tincidunt mi dictum varius. Cras at sapien quis ipsum varius fermentum",
-                  blogImage: "https://images.unsplash.com/photo-1508240155128-3b7b40767aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1464&q=80",
+                  blogImage: "https://i.imgur.com/v4tRlsD.png",
                   blogImageDescription: "coffee gaming and music",
                   paragraphFour: "Pellentesque ac urna orci. Quisque ac semper odio. Sed consectetur, dui ac convallis posuere, massa diam convallis purus, et sagittis libero lectus at risus. Pellentesque facilisis viverra metus, quis congue lacus. Duis luctus ornare est ut blandit. Cras dapibus ut massa sit amet interdum. In in felis nec lacus facilisis pharetra. Donec at lorem lacus."
                 },

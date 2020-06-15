@@ -10,7 +10,7 @@ const express = require("express"),
 const app = express();
 
 //seeding the database
-//seedDB();
+seedDB();
 
 //Expecting files from the '/public' dir
 app.use(express.static(__dirname + "/public"));
