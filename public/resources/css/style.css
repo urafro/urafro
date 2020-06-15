@@ -22,6 +22,11 @@ REUSABLE CODE
   display: flex;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* Clearing floats */
 .group:after {
   content: "";
@@ -214,13 +219,27 @@ REUSABLE CODE
 
 .showcase-card .card-tag a {
   font-size: 70%;
-  text-decoration: none;
   color: rgb(231, 229, 229);
-  background-color: #16a085;
   padding: 2px 12px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.showcase-card .card-tag .green {
+  background-color: #16a085;
+}
+
+.showcase-card .card-tag .yellow {
+  background-color: #daa02d;
+}
+
+.showcase-card .card-tag .purple {
+  background-color: #474787;
+}
+
+.showcase-card .card-tag .red {
+  background-color: #e55039;
 }

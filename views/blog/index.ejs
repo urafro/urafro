@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="hero">
-    <h2>My Life</h2>
+    <h2><a href="/">My Life</a></h2>
     <div class="header">
       <img
         src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4" alt="tinashe daniel image">
@@ -34,7 +34,7 @@
 
             <div class="card-image">
               <!-- generic card image will be replaced by user image from the user schema -->
-              <img src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4" alt="">
+              <img src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4" alt="author image">
             </div>
 
             <div class="card-text">
@@ -45,7 +45,15 @@
 
             <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
             <div class="card-tag">
-              <a href="#"><%= blog.tag %></a>
+              <% if(blog.tag == "Life") { %>
+                <a href="#" class="green"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Code") { %>
+              <a href="#" class="yellow"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Music") { %>
+              <a href="#" class="purple"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Self Help") { %>
+              <a href="#" class="red"><%= blog.tag %></a>
+              <% } %>
             </div>
 
           </div>
