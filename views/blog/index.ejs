@@ -24,7 +24,25 @@
       <!-- create a box for every blog in database with data from the "/blogs" Index route-->
       <% foundBlogs.forEach(function(blog) { %>
         <div class="showcase-box">
-        <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="coffee music and gaming">
+
+        <img src="<%= blog.body.header.mainImage %>" alt="coffee music and gaming">
+
+          <div class="showcase-card">
+            
+            <div class="card-image">
+              <!-- generic card image will be replaced by user image from the user schema -->
+              <img src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4" alt="">
+            </div>
+
+            <div class="card-text">
+              <p><%= blog.createdAt.toLocaleDateString() %></p>
+            </div>
+
+            <div class="card-tag">
+              <div><%= blog.tag %></div>
+            </div>
+
+          </div>
         </div>
       <% }) %>
       </div>

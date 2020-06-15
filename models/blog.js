@@ -48,7 +48,11 @@ let BlogSchema = new mongoose.Schema({
   comments: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Comment"
-  }]
+  }],
+  createdAt : {
+    type: Date,
+    default: Date.now()
+  }
 
 });
 

@@ -4,13 +4,14 @@ const express = require("express"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
     Blog = require("./models/blog"),
-    seedDB = require("./seeds");
+    moment = require('moment'),
+    seedDB = require("./seeds"),
     port = 8080;
 
 const app = express();
 
 //seeding the database
-seedDB();
+//seedDB();
 
 //Expecting files from the '/public' dir
 app.use(express.static(__dirname + "/public"));
