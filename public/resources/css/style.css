@@ -119,11 +119,12 @@ REUSABLE CODE
   color: rgb(185, 178, 178);
 }
 
-/* Showcase section */
+/**************** Showcase section ********************/
 .showcase {
   flex-basis: 100%;
 }
 
+/* hamburger menu icon */
 .showcase .group .right-menu {
   float: right;
   margin-top: 50px;
@@ -151,4 +152,75 @@ REUSABLE CODE
  .showcase img {
   width: 100%;
   height: 100%;
+}
+
+.showcase-card {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 275px;
+  height: 65px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-image: linear-gradient(to bottom, rgba(30, 39, 46, .6), rgba(70, 79, 86, .5), rgba(114, 122, 130, .4), rgba(161, 169, 177, .3), rgba(210, 218, 226, 0));
+}
+
+.showcase-card .card-image {
+  flex: 1;
+}
+
+.showcase-card .card-text {
+  flex: 2;
+}
+
+.showcase-card .card-tag {
+  flex: 1;
+}
+
+.showcase-card .card-image img {
+  height: 45px;
+  width: 45px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.showcase-card .card-text {
+  font-weight: 300;
+  color: #fff;
+}
+
+.showcase-card .card-text h3 {
+  font-size: 70%;
+}
+
+.showcase-card .card-text p {
+  font-size: 60%;
+  color: rgb(200, 200, 200);
+}
+
+.showcase-card .card-tag {
+  margin-right: 20px;
+  height: 23px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+}
+
+.showcase-card .card-tag a {
+  font-size: 70%;
+  text-decoration: none;
+  color: rgb(231, 229, 229);
+  background-color: #16a085;
+  padding: 2px 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
