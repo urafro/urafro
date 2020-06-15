@@ -21,6 +21,7 @@
     </div>
 
     <div class="showcase-boxes">
+      <!-- create a box for every blog in database with data from the "/blogs" Index route-->
       <% foundBlogs.forEach(function(blog) { %>
         <div class="showcase-box">
         <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="coffee music and gaming">

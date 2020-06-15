@@ -122,7 +122,6 @@ REUSABLE CODE
 /* Showcase section */
 .showcase {
   flex-basis: 100%;
-  overflow: auto;
 }
 
 .showcase .group .right-menu {
@@ -135,7 +134,12 @@ REUSABLE CODE
 
 .showcase-boxes {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
  .showcase img {
