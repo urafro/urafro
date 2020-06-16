@@ -254,3 +254,22 @@ a {
 .showcase-card .card-tag .red {
   background-color: #e55039;
 }
+
+/* Index footer */
+.showcase footer {
+  height: 120px;
+  padding: 50px;
+  padding-left: 0;
+  background-color: #f8f9fb;
+  color: #555;
+}
+
+.showcase footer p {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.showcase footer a {
+  color: rgb(207, 207, 207);
+  text-decoration: underline;
+}
