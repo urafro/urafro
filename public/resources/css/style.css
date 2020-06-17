@@ -1,4 +1,6 @@
-/* ============ UNIVERSAL STYLES =========== */
+/* ===========================================
+              UNIVERSAL STYLES
+=============================================*/
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@ html {
 }
 
 /* =====================================
-REUSABLE CODE
+            REUSABLE CODE
 ======================================= */
 
 .container {
@@ -54,9 +56,9 @@ a {
   -o-transition: color 0.2s;
 }
 
-/* =================================== 
-          INDEX.EJS
-====================================== */
+/* ============================================================= 
+                          INDEX.EJS
+============================================================== */
 
 /* Hero section */
 .hero {
@@ -75,7 +77,7 @@ a {
   color: #fff;
 }
 
-.hero h2 {
+.hero h1 {
   align-self: flex-start;
   margin-top: 50px;
   padding-left: 40px;
@@ -101,7 +103,7 @@ a {
   border: 5px solid #a0c1b8;
 }
 
-.hero .header h1 {
+.hero .header h2 {
   font-size: 300%;
   font-weight: bold;
 }
@@ -262,6 +264,7 @@ a {
   padding-left: 0;
   background-color: #f8f9fb;
   color: #555;
+  font-size: 80%;
 }
 
 .showcase footer p {
@@ -273,3 +276,7 @@ a {
   color: rgb(207, 207, 207);
   text-decoration: underline;
 }
+
+/* ===============================================
+                SHOW ROUTE
+================================================ */
