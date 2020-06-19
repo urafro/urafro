@@ -4,6 +4,7 @@ const express = require("express"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
     Blog = require("./models/blog"),
+    //figure out how to use moment js to change the date format in index.ejs
     moment = require('moment'),
     seedDB = require("./seeds"),
     port = 8080;
@@ -49,7 +50,12 @@ app.get("/blogs", (req, res) => {
             });
         }
     })
-})
+});
+
+//Create Route - create new blog
+app.get("/blogs/new", (req, res) => {
+    res.render("blog/new");
+});
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
