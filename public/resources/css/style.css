@@ -278,5 +278,27 @@ a {
 }
 
 /* ===============================================
-                SHOW ROUTE
+                NEW ROUTE
 ================================================ */
+
+.wrapper {
+  padding: 40px 20px;
+}
+
+/* navbar */
+.menu .left-menu {
+  float: left;
+}
+
+.menu .right-menu {
+  float: right;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: rgb(39, 37, 37);
+}
+
