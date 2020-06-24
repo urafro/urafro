@@ -24,6 +24,10 @@ html {
   display: flex;
 }
 
+.section {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: #fff;
