@@ -17,30 +17,31 @@ let BlogSchema = new mongoose.Schema({
       },
 
       sectionTwo: {
-        smallHeading: String,
+        mediumHeading: String,
         // [paragraphOne] first sentence will be styled "italically" by applying a class to it with css
-        paragraphOne: String,
+        paragraphThree: String,
         // [highlightedParagraph] div has border to the left
-        highlightedParagraph: String,
-        paragraphThree: String
+        paragraphFour: String,
+        paragraphFive: String
       },
       sectionThree: {
         // [smallHeading] here is even smaller than that of section 2 in font-size
         smallHeading: String,
         // [paragraphOne] is a numbered div
-        paragraphOne: String,
-        paragraphTwo: String,
-        smallHeading: String,
-        // [paragraphThree] div is a list-style type div
-        paragraphThree: String,
+        paragraphSix: String,
+        paragraphSeven: String,
+        smallerHeading: String,
+        // [paragraphEight] div is a list-style type div
+        paragraphEight: String,
         blogImage: String,
+        // I'll use this value when i figure out how to set image alt attributes as variables
         blogImageDescription: String,
-        paragraphFour: String
+        paragraphNine: String
       },
       // [sectionFour] div is the conclusion
       sectionFour: {
-        smallHeading: String,
-        paragraphOne: String
+        smallestHeading: String,
+        lastParagraph: String
       }
     }
 

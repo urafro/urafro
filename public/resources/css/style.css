@@ -28,6 +28,14 @@ html {
   display: flex;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -306,3 +314,86 @@ a {
   color: rgb(39, 37, 37);
 }
 
+.content-inputs, 
+.content-text {
+  padding: 0 20px;
+}
+
+.content-inputs div:last-of-type, 
+.content-text div:last-of-type {
+  padding-bottom: 30px;
+}
+
+.content-boxes {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content-boxes .row {
+  margin-top: 50px;
+}
+
+.content-inputs {
+  flex: 1;
+}
+
+.content-text {
+  flex: 1;
+}
+
+.content-boxes h1 {
+  text-align: center;
+  font-size: 250%;
+  font-weight: 300;
+}
+
+.content-boxes h1:after {
+  display: block;
+  height: 2px;
+  background-color: #6d6966;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.content-boxes input,label {
+  display: block;
+}
+
+/* content-inputs */
+.content-inputs {
+  border: 1px solid gray;
+}
+
+.content-inputs h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.content-inputs .left, .right {
+  width: 48%;
+}
+
+.content-inputs input[type=text],textarea {
+  width: 100%;
+}
+
+.content-inputs input[type=text] {
+  height: 80px;
+}
+
+.content-boxes input[type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 120%;
+  background-color: #000;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}

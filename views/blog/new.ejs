@@ -18,51 +18,236 @@
     
     <h1>Create</h1>
 
-    <div class="row">
-      <div class="section zero">
-        <div class="content-box">
+    <form action="/blogs" method="POST">
+        <div class="row">
 
-          <h2>Section Zero</h2>
+          <div class="section zero">
 
-          <div class="box-content">
+            <div class="content-inputs">
 
-            <label for="mainHeading">Title</label>
-            <input type="text" name="mainHeading" id="mainHeading" placeholder="blog heading">
+              <h2>Section Zero</h2>
 
-            <div class="container">
-              <label for="mainImage">Image</label>
-              <input type="text" name="mainImage" id="mainImage" placeholder="main blog image url">
+              <div class="box-content">
 
-              <label for="tag">Tag</label>
-              <input type="text" name="tag" id="tag" placeholder="blog tag">
+                <label for="mainHeading">Title</label>
+                <input type="text" name="blog[mainHeading]" id="mainHeading" placeholder="blog heading">
+
+                <div class="group">
+                  <div class="left">
+                    <label for="mainImage">Image</label>
+                    <input type="text" name="blog[mainImage]" id="mainImage" placeholder="main blog image url">
+                  </div>
+
+                  <div class="right">
+                    <label for="tag">Tag</label>
+                    <input type="text" name="blog[tag]" id="tag" placeholder="blog tag">
+                  </div>
+                </div>
+
+                <label for="introParagraph">Intro</label>
+                
+                <textarea name="blog[introParagraph]" id="introParagraph" cols="30" rows="10" placeholder="create a conversation"></textarea>
+              </div>
+
             </div>
 
-            <label for="introParagraph">Intro</label>
-            <input type="text" name="introParagraph" id="introParagraph" placeholder="create a conversation">
+            <div class="content-text">
+              <p>Lorem ipsumdol</p>
+              <h2>A story lives and dies with <br>
+                  the introduction!
+              </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis ducimus corrupti recusandae
+                  eaque
+                  optio quae ipsa. Neque nihiloptio recusandae nulla imero provident temporibus, quia natus tempor</p>
+            </div>
+
           </div>
-
         </div>
 
-        <div class="content-text">
-          <p>Lorem ipsumdol</p>
-          <h2>A story lives and dies with <br>
-            the introduction!
-          </h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis ducimus corrupti recusandae eaque
-            optio quae ipsa. Neque nihil
-            optio recusandae nulla impedit nisi a molestias praesentium libero provident temporibus, quia natus tempora
-            placeat eum quas sint accusantium
-            vitae officiis officia labore beatae? Iusto odio pariatur illo excepturi soluta totam similique distinctio
-            nihil animi quibusdam sapiente id
-            voluptatum voluptates adipisci error, corrupti minima quas ad numquam veniam laboriosam! A modi iste ipsam
-            nesciunt dolore fugit eos id quasi
-            neque. Consequatur minima recusandae, enim atque fuga, numquam explicabo quibusdam totam praesentium
-            exercitationem error architecto ipsam sit
-            dicta itaque eos perferendis corporis.</p>
+        <!-- second row starts here -->
+
+        <div class="row">
+
+          <div class="section one">
+
+            <div class="content-text">
+              <p>Lorem ipsumdol</p>
+              <h2>A story lives and dies with <br>
+                the introduction!
+              </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis ducimus corrupti recusandae
+                eaque
+                optio quae ipsa. Neque nihiloptio recusandae nulla imero provident temporibus, quia natus tempor</p>
+            </div>
+
+            <div class="content-inputs">
+
+              <h2>Section One</h2>
+
+              <div class="box-content">
+
+                <label for="paragraphOne">Paragraph 1</label>
+
+                <textarea name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+
+                <label for="paragraphTwo">Paragraph Two</label>
+
+                <textarea name="blog[paragraphTwo]" id="paragraphTwo" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
+        <!-- Third row starts here -->
+
+        <div class="row">
+
+          <div class="section two">
+
+            <div class="content-inputs">
+
+              <h2>Section Two</h2>
+
+              <div class="box-content">
+
+                <label for="mediumHeading">Small Heading</label>
+                <input type="text" name="blog[mediumHeading]" id="smallHeading" placeholder="small blog heading">
+
+                <label for="paragraphThree">Paragraph Three</label>
+
+                <textarea name="blog[paragraphThree]" id="paragraphThree" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+
+                <label for="paragraphFour">Paragraph Four</label>
+
+                <textarea name="blog[paragraphFour]" id="paragraphFour" cols="30" rows="10"
+                    placeholder="create a conversation"></textarea>
+
+                <label for="paragraphFive">paragraphFive</label>
+
+                <textarea name="blog[paragraphFive]" id="paragraphFive" cols="30" rows="10"
+                      placeholder="create a conversation"></textarea>
+              </div>
+
+            </div>
+
+            <div class="content-text">
+              <p>Lorem ipsumdol</p>
+              <h2>A story lives and dies with <br>
+                the introduction!
+              </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis ducimus corrupti recusandae
+                eaque
+                optio quae ipsa. Neque nihiloptio recusandae nulla imero provident temporibus, quia natus tempor</p>
+            </div>
+
+          </div>
         </div>
+
+        <!-- Fourth Row starts here -->
+
+        <div class="row">
+
+          <div class="section zero">
+
+            <div class="content-text">
+              <p>Lorem ipsumdol</p>
+              <h2>A story lives and dies with <br>
+                the introduction!
+              </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis ducimus corrupti recusandae
+                eaque
+                optio quae ipsa. Neque nihiloptio recusandae nulla imero provident temporibus, quia natus tempor</p>
+            </div>
+
+            <div class="content-inputs">
+
+              <h2>Section Three</h2>
+
+              <div class="box-content">
+
+                <label for="smallHeading">Blog Subheading</label>
+                <input type="text" name="blog[smallHeading]" id="smallHeading" placeholder="small blog heading">
+
+                <label for="paragraphSix">Paragraph Six</label>
+
+                <textarea name="blog[paragraphSix]" id="paragraphSix" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+
+                <label for="paragraphSeven">Paragraph Seven</label>
+
+                <textarea name="blog[paragraphSeven]" id="paragraphSeven" cols="30" rows="10"
+                    placeholder="create a conversation"></textarea>
+
+                <div class="group">
+                  <div class="left">
+                    <label for="smallerHeading">Smaller Heading</label>
+                    <input type="text" name="blog[smallerHeading]" id="smallerHeading" placeholder="smaller blog heading">
+                  </div>
+
+                  <div class="right">
+                    <label for="blogImage">Blog Image</label>
+                    <input type="text" name="blog[blogImage]" id="blogImage" placeholder="secondary blog image url">
+                  </div>
+                </div>
+
+                <label for="paragraphEight">Paragraph Eight</label>
+                <textarea name="blog[paragraphEight]" id="paragraphEight" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+
+                <label for="paragraphNine">Paragraph Nine</label>
+                <textarea name="blog[paragraphNine]" id="paragraphNine" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+                    
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Fifth Row starts here -->
+        <div class="row">
+
+          <div class="section zero">
+
+            <div class="content-inputs">
+
+              <h2>Section Four</h2>
+
+              <div class="box-content">
+
+                <label for="smallestHeading">Smallest Heading</label>
+                <input type="text" name="blog[smallestHeading]" id="smallestHeading" placeholder="blog heading">
+
+                <label for="lastParagraph">Last Paragraph</label>
+
+                <textarea name="blog[lastParagraph]" id="lastParagraph" cols="30" rows="10"
+                  placeholder="create a conversation"></textarea>
+              </div>
+
+            </div>
+
+            <div class="content-text">
+              <p>Lorem ipsumdol</p>
+              <h2>A story lives and dies with <br>
+                the introduction!
+              </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis ducimus corrupti recusandae
+                eaque
+                optio quae ipsa. Neque nihiloptio recusandae nulla imero provident temporibus, quia natus tempor</p>
+            </div>
+
+          </div>
+        </div>
+
+        <input type="submit" value="say it">
       </div>
+    </form>
 
   </div>
 </div>

@@ -52,9 +52,61 @@ app.get("/blogs", (req, res) => {
     })
 });
 
-//Create Route - create new blog
+//Create Route - render new blog template
 app.get("/blogs/new", (req, res) => {
     res.render("blog/new");
+});
+
+//New Route - create new blog
+app.post("/blogs", (req, res) => {
+
+    const newBlog = {
+        tag: req.body.blog.tag,
+        body: {
+            header: {
+                mainHeading: req.body.blog.mainHeading,
+                mainImage: req.body.blog.mainImage
+            },
+            content: {
+                introParagraph: req.body.blog.introParagraph,
+                sectionOne: {
+                    paragraphOne: req.body.blog.paragraphOne,
+                    paragraphTwo: req.body.blog.paragraphTwo
+                },
+
+                sectionTwo: {
+                    mediumHeading: req.body.blog.mediumHeading,
+                    paragraphThree: req.body.blog.paragraphThree,
+                    paragraphFour: req.body.blog.paragraphFour,
+                    paragraphFive: req.body.blog.paragraphFive
+                },
+                sectionThree: {
+                    smallHeading: req.body.blog.smallHeading,
+                    paragraphSix: req.body.blog.paragraphSix,
+                    paragraphSeven: req.body.blog.paragraphSeven,
+                    smallerHeading: req.body.blog.smallerHeading,
+                    paragraphEight: req.body.blog.paragraphEight,
+                    blogImage: req.body.blog.blogImage,
+                    blogImageDescription: "blog image description :|",
+                    paragraphNine: req.body.blog.paragraphNine
+                },
+                sectionFour: {
+                    smallestHeading: req.body.blog.smallestHeading,
+                    lastParagraph: req.body.blog.lastParagraph
+                }
+            }
+        }
+    }
+
+    Blog.create(newBlog, (err, createdBlog) => {
+        if(err) {
+            console.log("Error creating new blog", err);
+        } else {
+            res.redirect("/blogs");
+        }
+    });
+
+
 });
 
 //Listening to routes on the local server
