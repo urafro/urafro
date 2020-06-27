@@ -180,6 +180,16 @@ a {
   -o-border-radius: 5px;
 }
 
+.showcase img:hover {
+  filter: grayscale(.5);
+  -webkit-filter: grayscale(.5);
+  transition: filter .5s;
+  -webkit-transition: filter .5s;
+  -moz-transition: filter .5s;
+  -ms-transition: filter .5s;
+  -o-transition: filter .5s;
+}
+
 .showcase-card {
   display: flex;
   position: absolute;
@@ -245,7 +255,8 @@ a {
   text-align: center;
 }
 
-.showcase-card .card-tag a {
+.showcase-card .card-tag a:link,
+.showcase-card .card-tag a:visited {
   font-size: 90%;
   color: rgb(231, 229, 229);
   padding: 5px 16px;
@@ -254,6 +265,16 @@ a {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+
+.showcase-card .card-tag a:active,
+.showcase-card .card-tag a:hover {
+  color: #fff;
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
 }
 
 .showcase-card .card-tag .green {
@@ -274,12 +295,24 @@ a {
 
 .showcase-text h2 {
   margin-bottom: 10px;
+  width: 75%;
 }
 
-.showcase-text h2 a {
+.showcase-text h2 a:link,
+.showcase-text h2 a:visited {
   color: #000;
   font-weight: 400;
   font-size: 80%;
+}
+
+.showcase-text h2 a:active,
+.showcase-text h2 a:hover {
+  color: rgb(172, 165, 165);
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
 }
 
 .showcase-text p {
@@ -293,9 +326,20 @@ a {
   margin-bottom: 35px;
 }
 
-.showcase-text .show-link a {
+.showcase-text .show-link a:link,
+.showcase-text .show-link a:visited {
   color: rgb(121, 117, 117);
   border-bottom: 1px solid gray;
+}
+
+.showcase-text .show-link a:active,
+.showcase-text .show-link a:hover {
+  color: #000;
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
 }
 
 .showcase-text hr {
