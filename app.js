@@ -123,3 +123,12 @@ app.get("/blogs/:id", (req, res) => {
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
+
+/* The reason for today's messy coding
+
+i'm using one of webflow's themes as inspiration to code this app
+so the UI got updated midway through my blog's show route styles
+had to go back to the index routes and restyle the whole thingy to have the visual parlence with 
+the theme i'm coping from :)
+
+*/
