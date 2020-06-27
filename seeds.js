@@ -51,7 +51,7 @@ const data = [
   },
     
   {
-      tag: "Life",
+      tag: "Code",
       body: {
         header: {
           mainHeading: "Intra vs Inter Communication",
@@ -98,7 +98,7 @@ const data = [
   },
       
   {
-        tag: "Life",
+        tag: "Music",
         body: {
           header: {
             mainHeading: "Intra vs Inter Communication",
@@ -144,7 +144,7 @@ const data = [
 
   },
   {
-          tag: "Life",
+          tag: "Self",
           body: {
             header: {
               mainHeading: "Intra vs Inter Communication",
@@ -236,7 +236,7 @@ const data = [
 
     },
       {
-        tag: "Life",
+        tag: "Music",
         body: {
           header: {
             mainHeading: "Intra vs Inter Communication",
@@ -282,7 +282,7 @@ const data = [
 
       },
         {
-          tag: "Life",
+          tag: "Self",
           body: {
             header: {
               mainHeading: "Intra vs Inter Communication",
@@ -328,7 +328,7 @@ const data = [
 
         },
           {
-            tag: "Life",
+            tag: "Code",
             body: {
               header: {
                 mainHeading: "Intra vs Inter Communication",
