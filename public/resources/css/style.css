@@ -314,6 +314,8 @@ a {
   color: rgb(39, 37, 37);
 }
 
+/* content boxes */
+
 .content-inputs, 
 .content-text {
   padding: 0 20px;
@@ -396,4 +398,13 @@ a {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+
+/* input styles */
+.box-content {
+  position: relative;
+}
+
+.box-content label {
+  position: absolute;
 }

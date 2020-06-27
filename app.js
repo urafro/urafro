@@ -106,7 +106,6 @@ app.post("/blogs", (req, res) => {
         }
     });
 
-
 });
 
 //Listening to routes on the local server

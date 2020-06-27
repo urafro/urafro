@@ -19,6 +19,7 @@
     <h1>Create</h1>
 
     <form action="/blogs" method="POST">
+
         <div class="row">
 
           <div class="section zero">
@@ -29,24 +30,24 @@
 
               <div class="box-content">
 
-                <label for="mainHeading">Title</label>
-                <input type="text" name="blog[mainHeading]" id="mainHeading" placeholder="blog heading">
+                <label for="mainHeading">Title*</label>
+                <input type="text" name="blog[mainHeading]" id="mainHeading" placeholder="blog heading" required>
 
                 <div class="group">
                   <div class="left">
-                    <label for="mainImage">Image</label>
-                    <input type="text" name="blog[mainImage]" id="mainImage" placeholder="main blog image url">
+                    <label for="mainImage">Image*</label>
+                    <input type="text" name="blog[mainImage]" id="mainImage" placeholder="main blog image url" required>
                   </div>
 
                   <div class="right">
-                    <label for="tag">Tag</label>
-                    <input type="text" name="blog[tag]" id="tag" placeholder="blog tag">
+                    <label for="tag">Tag*</label>
+                    <input type="text" name="blog[tag]" id="tag" placeholder="blog tag" required>
                   </div>
                 </div>
 
-                <label for="introParagraph">Intro</label>
+                <label for="introParagraph">Intro*</label>
                 
-                <textarea name="blog[introParagraph]" id="introParagraph" cols="30" rows="10" placeholder="create a conversation"></textarea>
+                <textarea name="blog[introParagraph]" id="introParagraph" cols="30" rows="10" placeholder="create a conversation" required></textarea>
               </div>
 
             </div>
@@ -190,8 +191,8 @@
                   </div>
 
                   <div class="right">
-                    <label for="blogImage">Blog Image</label>
-                    <input type="text" name="blog[blogImage]" id="blogImage" placeholder="secondary blog image url">
+                    <label for="blogImage">Blog Image*</label>
+                    <input type="text" name="blog[blogImage]" id="blogImage" placeholder="secondary blog image url" required>
                   </div>
                 </div>
 
@@ -221,13 +222,13 @@
 
               <div class="box-content">
 
-                <label for="smallestHeading">Smallest Heading</label>
-                <input type="text" name="blog[smallestHeading]" id="smallestHeading" placeholder="blog heading">
+                <label for="smallestHeading">Smallest Heading*</label>
+                <input type="text" name="blog[smallestHeading]" id="smallestHeading" placeholder="blog heading" required>
 
-                <label for="lastParagraph">Last Paragraph</label>
+                <label for="lastParagraph">Last Paragraph*</label>
 
                 <textarea name="blog[lastParagraph]" id="lastParagraph" cols="30" rows="10"
-                  placeholder="create a conversation"></textarea>
+                  placeholder="create a conversation" required></textarea>
               </div>
 
             </div>
