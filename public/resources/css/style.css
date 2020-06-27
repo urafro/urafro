@@ -167,6 +167,7 @@ a {
   position: relative;
   width: 590px;
   height: 250px;
+  margin-top: 10px;
 }
 
  .showcase img {
@@ -184,10 +185,10 @@ a {
   position: absolute;
   top: 0;
   width: 590px;
-  height: 65px;
+  height: 80px;
   padding-top: 10px;
   padding-left: 20px;
-  background-image: linear-gradient(to bottom, rgba(30, 39, 46, .6), rgba(70, 79, 86, .5), rgba(114, 122, 130, .4), rgba(161, 169, 177, .3), rgba(210, 218, 226, 0));
+  background-image: linear-gradient(to bottom, rgba(10, 0, 0, 0.6), rgba(27, 29, 32, 0.5), rgba(5, 30, 54, 0.4), rgba(15, 36, 56, 0.3), rgba(7, 40, 73, 0));
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -269,6 +270,36 @@ a {
 
 .showcase-card .card-tag .red {
   background-color: #e55039;
+}
+
+.showcase-text h2 {
+  margin-bottom: 10px;
+}
+
+.showcase-text h2 a {
+  color: #000;
+  font-weight: 400;
+  font-size: 80%;
+}
+
+.showcase-text p {
+  font-size: 80%;
+  line-height: 140%;
+}
+
+.showcase-text .show-link {
+  margin-top: 10px;
+  font-size: 80%;
+  margin-bottom: 35px;
+}
+
+.showcase-text .show-link a {
+  color: rgb(121, 117, 117);
+  border-bottom: 1px solid gray;
+}
+
+.showcase-text hr {
+  color: rgba(218, 223, 225, .3);
 }
 
 /* Index footer */

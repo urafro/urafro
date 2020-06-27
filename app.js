@@ -12,7 +12,7 @@ const express = require("express"),
 const app = express();
 
 //seeding the database
-seedDB();
+//seedDB();
 
 //Expecting files from the '/public' dir
 app.use(express.static(__dirname + "/public"));
@@ -108,6 +108,7 @@ app.post("/blogs", (req, res) => {
 
 });
 
+//Show route
 app.get("/blogs/:id", (req, res) => {
     Blog.findById(req.params.id, (err, foundBlog) => {
         if(err) {
