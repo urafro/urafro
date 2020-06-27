@@ -321,9 +321,8 @@ a {
   padding: 0 20px;
 }
 
-.content-inputs div:last-of-type, 
-.content-text div:last-of-type {
-  padding-bottom: 30px;
+.row div:last-child {
+  padding-bottom: 20px;
 }
 
 .content-boxes {
@@ -366,6 +365,11 @@ a {
 /* content-inputs */
 .content-inputs {
   border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .content-inputs h2 {
@@ -379,10 +383,22 @@ a {
 
 .content-inputs input[type=text],textarea {
   width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #959595;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .content-inputs input[type=text] {
   height: 80px;
+  font-size: 70%;
+}
+
+.content-inputs input[type=text] {
+  padding: 10px;
 }
 
 .content-boxes input[type=submit] {
@@ -407,4 +423,19 @@ a {
 
 .box-content label {
   position: absolute;
+  text-transform: uppercase;
+  padding: 12px;
+  font-size: 55%;
+  font-weight: bolder;
+}
+
+.box-content ::placeholder {
+  padding-top: 60px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+textarea {
+  padding-top: 40px;
+  padding-left: 10px;
 }
