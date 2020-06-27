@@ -328,7 +328,7 @@ const data = [
 
         },
           {
-            tag: "Code",
+            tag: "Life",
             body: {
               header: {
                 mainHeading: "Intra vs Inter Communication",

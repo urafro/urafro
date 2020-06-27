@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+  <div class="hero-show">
+    <h1>
+      <!-- this will redirect to author's page -->
+      <a href="/">My Life</a>
+    </h1>
+
+    <div class="header-show">
+      <img src="<%= blog.body.header.mainImage %>" alt="">
+
+      <!-- header image will be replaced by signed in user's image -->
+      <img src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4"
+        alt="tinashe daniel image">
+      <h2><%= blog.body.header.mainHeading %></h2>
+      <p>My name is Dan and I write passionately about life, music and web development.</p>
+      <a href="#" class="hero-btn hero-btn-full">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="hero-btn hero-btn-ghost">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="showcase">
+    
+  </div>
+
+</div>
+
+</div>
+
+
+<% include ../partials/footer %>

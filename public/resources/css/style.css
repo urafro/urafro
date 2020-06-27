@@ -154,7 +154,7 @@ a {
 
 .showcase-boxes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-gap: 20px;
   justify-items: center;
@@ -165,8 +165,8 @@ a {
 
 .showcase-box {
   position: relative;
-  width: 275px;
-  height: 330px;
+  width: 590px;
+  height: 250px;
 }
 
  .showcase img {
@@ -183,7 +183,7 @@ a {
   display: flex;
   position: absolute;
   top: 0;
-  width: 275px;
+  width: 590px;
   height: 65px;
   padding-top: 10px;
   padding-left: 20px;
@@ -195,21 +195,21 @@ a {
   -o-border-radius: 5px;
 }
 
-.showcase-card .card-image {
-  flex: 1;
+.showcase-card .author-card {
+  display: flex;
 }
 
-.showcase-card .card-text {
-  flex: 2;
+.showcase-card .author-card {
+  flex-basis: 480px;
 }
 
 .showcase-card .card-tag {
   flex: 1;
 }
 
-.showcase-card .card-image img {
-  height: 45px;
-  width: 45px;
+.author-card .card-image img {
+  height: 60px;
+  width: 60px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -217,23 +217,25 @@ a {
   -o-border-radius: 5px;
 }
 
-.showcase-card .card-text {
+.author-card .card-text {
   font-weight: 300;
   color: #fff;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .showcase-card .card-text h3 {
-  font-size: 70%;
+  font-size: 75%;
 }
 
-.showcase-card .card-text p {
-  font-size: 60%;
+.author-card .card-text p {
+  font-size: 70%;
   color: rgb(200, 200, 200);
 }
 
 .showcase-card .card-tag {
   margin-right: 20px;
-  height: 23px;
+  margin-top: 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -243,14 +245,14 @@ a {
 }
 
 .showcase-card .card-tag a {
-  font-size: 70%;
+  font-size: 90%;
   color: rgb(231, 229, 229);
-  padding: 2px 12px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  padding: 5px 16px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .showcase-card .card-tag .green {
