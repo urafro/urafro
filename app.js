@@ -12,7 +12,7 @@ const express = require("express"),
 const app = express();
 
 //seeding the database
-seedDB();
+//seedDB();
 
 //Expecting files from the '/public' dir
 app.use(express.static(__dirname + "/public"));
@@ -106,6 +106,18 @@ app.post("/blogs", (req, res) => {
         }
     });
 
+});
+
+app.get("/blogs/:id", (req, res) => {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if(err) {
+            console.log("Error finding blog to show", err);
+        } else {
+            res.render("blog/show", {
+                blog: foundBlog
+            });
+        }
+    });
 });
 
 //Listening to routes on the local server
