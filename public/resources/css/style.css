@@ -389,6 +389,8 @@ a {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid #959595;
+  font-family: inherit;
+  font-weight: 300;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
