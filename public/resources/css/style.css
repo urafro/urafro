@@ -314,7 +314,7 @@ a {
   color: rgb(39, 37, 37);
 }
 
-/* content boxes */
+/************************** content boxes **************************/
 
 .content-inputs, 
 .content-text {
@@ -362,7 +362,11 @@ a {
   display: block;
 }
 
-/* content-inputs */
+/******************** content-inputs ********************/
+*:focus {
+  outline: none;
+}
+
 .content-inputs {
   border: 1px solid gray;
   border-radius: 10px;
@@ -395,9 +399,6 @@ a {
 .content-inputs input[type=text] {
   height: 80px;
   font-size: 70%;
-}
-
-.content-inputs input[type=text] {
   padding: 10px;
 }
 
@@ -430,12 +431,22 @@ a {
 }
 
 .box-content ::placeholder {
-  padding-top: 60px;
-  padding-left: 20px;
   text-transform: uppercase;
 }
 
 textarea {
   padding-top: 40px;
   padding-left: 10px;
+  resize: vertical;
+}
+
+/********************** content-text ************************/
+.content-text h2 {
+  font-weight: 300;
+  font-size: 185%;
+  margin-top: 30px;
+}
+
+.content-text p {
+  margin-top: 20px;
 }
