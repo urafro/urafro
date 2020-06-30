@@ -73,7 +73,8 @@ a {
 ============================================================== */
 
 /* Hero section */
-.hero {
+.hero,
+.hero-2 {
   flex-basis: 100%;
   background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/flagged/photo-1575744007781-3eaadbfba049?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-position: center;
@@ -81,6 +82,7 @@ a {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  width: 100vh;
   align-self: flex-start;
   /* fixing hero div to NOT scroll with the showcase div */
   position: -webkit-sticky;
@@ -89,7 +91,8 @@ a {
   color: #fff;
 }
 
-.hero h1 {
+.hero h1,
+.hero-2 h1 {
   align-self: flex-start;
   margin-top: 50px;
   padding-left: 40px;
@@ -97,7 +100,8 @@ a {
   font-size: 190%;
 }
 
-.hero .header{
+.hero .header, 
+.hero-2 .header-2 {
   width: 100%;
   text-align: center;
   margin-top: 50vh;
@@ -105,7 +109,8 @@ a {
   text-align: center;
 }
 
-.hero .header img {
+.hero .header img,
+.hero-2 .header-2 img {
   height: 130px;
   width: 130px;
   border-radius: 50%;
@@ -543,3 +548,7 @@ textarea {
   margin-top: 20px;
   line-height: 135%;
 }
+
+/* ===============================================
+                SHOW ROUTE
+================================================ */
