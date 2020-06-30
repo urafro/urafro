@@ -30,6 +30,70 @@
   </div>
 
   <div class="showcase">
+    <div class="group">
+      <div class="right-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="show-wrapper">
+      <div class="show-heading">
+
+        <div class="main-heading">
+          <h2><%= blog.body.header.mainHeading %></h2>
+        </div>
+
+        <!-- this hr will be replaced by a margin bottom-->
+        <hr>
+
+        <div class="intro-paragraph">
+          <p><%= blog.body.content.introParagraph %></p>
+        </div>
+
+      </div>
+
+      <div class="show-content">
+        <div class="section-one">
+
+          <p><%= blog.body.content.sectionOne.paragraphOne %></p>
+
+          <p><%= blog.body.content.sectionOne.paragraphTwo %></p>
+          
+        </div>
+
+        <div class="section-two">
+          <h3><%= blog.body.content.sectionTwo.mediumHeading %></h3>
+
+          <p><%= blog.body.content.sectionTwo.paragraphThree %></p>
+
+          <p><%= blog.body.content.sectionTwo.paragraphFour %></p>
+
+          <p><%= blog.body.content.sectionTwo.paragraphFive %></p>
+        </div>
+
+        <div class="section-three">
+          <h4><%= blog.body.content.sectionThree.smallHeading %></h4>
+
+          <p><%= blog.body.content.sectionThree.paragraphSix %></p>
+
+          <p><%= blog.body.content.sectionThree.paragraphSeven %></p>
+
+          <h5><%= blog.body.content.sectionThree.smallerHeading %></h5>
+
+          <p><%= blog.body.content.sectionThree.paragraphEight %></p>
+
+          <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="">
+
+          <p><%= blog.body.content.sectionThree.paragraphNine %></p>
+        </div>
+
+        <div class="section-four">
+          <h6><%= blog.body.content.sectionFour.smallestHeading %></h6>
+          <p><%= blog.body.content.sectionFour.lastParagraph %></p>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 

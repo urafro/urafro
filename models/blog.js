@@ -18,16 +18,16 @@ let BlogSchema = new mongoose.Schema({
 
       sectionTwo: {
         mediumHeading: String,
-        // [paragraphOne] first sentence will be styled "italically" by applying a class to it with css
+        // [paragraphThree] first sentence will be styled "italically" by applying a class to it with css
         paragraphThree: String,
-        // [highlightedParagraph] div has border to the left
+        // [paragraphFour] div has border to the left
         paragraphFour: String,
         paragraphFive: String
       },
       sectionThree: {
         // [smallHeading] here is even smaller than that of section 2 in font-size
         smallHeading: String,
-        // [paragraphOne] is a numbered div
+        // [paragraphSix] is a numbered div
         paragraphSix: String,
         paragraphSeven: String,
         smallerHeading: String,
