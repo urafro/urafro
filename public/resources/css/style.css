@@ -106,6 +106,7 @@ a {
 }
 
 .hero .header img {
+  height: 130px;
   width: 130px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -113,6 +114,16 @@ a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border: 5px solid #a0c1b8;
+  scale: .98;
+}
+
+.hero .header img:hover {
+  scale: 1;
+  transition: scale .5s ease-in;
+  -webkit-transition: scale .5s ease-in;
+  -moz-transition: scale .5s ease-in;
+  -ms-transition: scale .5s ease-in;
+  -o-transition: scale .5s ease-in;
 }
 
 .hero .header h2 {
@@ -170,9 +181,10 @@ a {
   margin-top: 10px;
 }
 
- .showcase img {
+ .showcase-box img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -180,14 +192,15 @@ a {
   -o-border-radius: 5px;
 }
 
-.showcase img:hover {
+.showcase-box img:hover {
   filter: grayscale(.5);
+  scale: 1.005;
   -webkit-filter: grayscale(.5);
-  transition: filter .5s;
-  -webkit-transition: filter .5s;
-  -moz-transition: filter .5s;
-  -ms-transition: filter .5s;
-  -o-transition: filter .5s;
+  transition: filter .5s, scale .2s .2s;
+  -webkit-transition: filter .5s, scale .2s .2s;
+  -moz-transition: filter .5s, scale .2s .2s;
+  -ms-transition: filter .5s, scale .2s .2s;
+  -o-transition: filter .5s, scale .2s .2s;
 }
 
 .showcase-card {

@@ -55,7 +55,7 @@ const data = [
       body: {
         header: {
           mainHeading: "Intra vs Inter Communication",
-          mainImage: "https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2140&q=80"
+          mainImage: "https://images.unsplash.com/photo-1588869715817-b3e54c9928aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
         },
         content: {
           // [introParagraph] div goes directly below the main heading with text-muted
