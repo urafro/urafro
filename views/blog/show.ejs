@@ -3,26 +3,29 @@
 <div class="container">
 
   <!-- declare show hero background image as inline css to access ejs data -->
-  <div class="hero" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
+  <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
     <h1>
       <a href="/">My Life</a>
     </h1>
 
-    <!-- header image will be replaced by signed in user's image -->
-    <div class="header">
-      <a href="#">
-        <img
-          src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4"
-          alt="tinashe daniel image">
-      </a>
-      <h2>Hello.</h2>
-      <p>My name is Dan and I write passionately about life, music and web development.</p>
-      <a href="#" class="hero-btn hero-btn-full">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="hero-btn hero-btn-ghost">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <div class="header-2">
+      <h2><%= blog.body.header.mainHeading %></h2>
+
+      <div class="author-card">
+        <div class="card-image">
+          <!-- generic card image will be replaced by user image from the user schema -->
+          <img
+            src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4"
+            alt="author image">
+        </div>
+
+        <div class="card-text">
+          <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
+          <h3><a href="#">Tinashe Dan</a></h3>
+          <p><%= blog.createdAt.toLocaleDateString() %></p>
+        </div>
+      </div>
+      
     </div>
   </div>
 

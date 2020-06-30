@@ -552,3 +552,44 @@ textarea {
 /* ===============================================
                 SHOW ROUTE
 ================================================ */
+
+.header-2 h2 {
+  margin-top: 67vh;
+  font-size: 250%;
+  width: 60%;
+  text-align: left;
+}
+
+.header-2 h2, .header-2 .author-card {
+  margin-left: 20%;
+}
+
+.header-2 .author-card {
+  display: flex;
+  margin-top: 20px;
+}
+
+.header-2 .author-card img {
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.header-2 .card-text {
+  margin: 15px 0;
+}
+
+.header-2 .card-text h3 {
+  font-weight: 300;
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+
+.header-2 .card-text p {
+  font-size: 90%;
+}

@@ -7,7 +7,7 @@ const data = [
     tag: "Life",
     body: {
       header: {
-        mainHeading: "Intra vs Inter Communication",
+        mainHeading: "I will be traveling to Nepal for the second time this year",
         mainImage: "https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2140&q=80"
       },
       content: {
