@@ -155,12 +155,14 @@ a {
 }
 
 /**************** Showcase section ********************/
-.showcase {
+.showcase,
+.showcase-2 {
   flex-basis: 100%;
 }
 
 /* hamburger menu icon */
-.showcase .group .right-menu {
+.showcase .group .right-menu,
+.showcase-2 .group .right-menu {
   float: right;
   margin-top: 50px;
   padding-right: 40px;
@@ -592,4 +594,51 @@ textarea {
 
 .header-2 .card-text p {
   font-size: 90%;
+}
+
+/**************************** content section ***********************/
+
+.show-wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
+.show-wrapper p {
+  margin-bottom: 20px;
+  line-height: 135%;
+}
+
+.show-heading {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.show-heading .main-heading h2 {
+  font-size: 170%;
+  margin-bottom: 20px;
+}
+
+.main-heading h2:after {
+  display: block;
+  height: 2px;
+  background-color: rgba(218, 223, 225, .5);
+  content: " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.intro-paragraph {
+  color: rgb(162, 166, 167);
+}
+
+.intro-paragraph:after {
+  display: block;
+  height: 2px;
+  content: " ";
+  background-color: rgba(218, 223, 225, .5);
+  width: 200px;
+  margin-top: 20px;
+  margin: 0 auto;
 }
