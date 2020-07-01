@@ -367,7 +367,8 @@ a {
 }
 
 /* Index footer */
-.showcase footer {
+.showcase footer,
+.showcase-2 footer {
   height: 120px;
   padding: 50px;
   padding-left: 0;
@@ -376,12 +377,14 @@ a {
   font-size: 80%;
 }
 
-.showcase footer p {
+.showcase footer p,
+.showcase-2 footer p {
   width: 550px;
   margin: 0 auto;
 }
 
-.showcase footer a {
+.showcase footer a,
+.showcase-2 footer a {
   color: rgb(207, 207, 207);
   text-decoration: underline;
 }
