@@ -78,11 +78,11 @@
         </div>
 
         <div class="showcase-text">
-          <h2><a href="<%= blog._id %>"><%= blog.body.header.mainHeading %></a></h2>
+          <h2><a href="/blogs/<%= blog._id %>"><%= blog.body.header.mainHeading %></a></h2>
           <p><%= blog.body.content.introParagraph.substring(0, 150) %>...</p>
 
           <div class="show-link">
-            <a href="<%= blog._id %>">Read More</a>
+            <a href="/blogs/<%= blog._id %>">Read More</a>
           </div>
           <hr>
         </div>
