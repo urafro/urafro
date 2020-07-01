@@ -89,6 +89,27 @@
           <p><%= blog.body.content.sectionFour.lastParagraph %></p>
         </div>
 
+        <div class="show-backlinks">
+          <h3>Did you read these already?</h3>
+          <p>Discover more posts in 
+            <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
+            
+              <% if(blog.tag == "Life") { %>
+              <a href="#" class="green"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Code") { %>
+              <a href="#" class="yellow"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Music") { %>
+              <a href="#" class="purple"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Self") { %>
+              <a href="#" class="red"><%= blog.tag %></a>
+              <% } %>
+            
+          </p>
+
+          <div class="backlinks-cards">
+            
+          </div>
+        </div>
       </div>
     </div>
 

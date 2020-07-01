@@ -558,6 +558,17 @@ textarea {
                 SHOW ROUTE
 ================================================ */
 
+.showcase-2 a:link,
+.showcase-2 a:visited {
+  color: rgb(158, 154, 154);
+  text-decoration: underline;
+}
+
+.showcase-2 a:active,
+.showcase-2 a:hover {
+  color: rgb(85, 85, 85);
+}
+
 .header-2 h2 {
   margin-top: 67vh;
   font-size: 250%;
@@ -693,4 +704,48 @@ textarea {
 .section-four h6 {
   font-size: 110%;
   margin-bottom: 15px;
+}
+
+/********* Show-backlinks section *************/
+
+.show-backlinks h3 {
+  font-size: 140%;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  border-top: 2px solid rgba(207, 209, 209, 0.5);
+  padding-top: 20px;
+}
+
+.show-backlinks p {
+  margin-left: 2px;
+  color: rgb(162, 163, 163);
+  font-size: 90%;
+  border-bottom: 2px solid rgba(207, 209, 209, 0.5);
+  padding-bottom: 30px;
+}
+
+.show-backlinks p a {
+  font-size: 110%;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.show-backlinks p .green {
+  color: #16a085;
+  text-decoration: none;
+}
+
+.show-backlinks p .yellow {
+  color: #daa02d;
+  text-decoration: none;
+}
+
+.show-backlinks p .purple {
+  color: #474787;
+  text-decoration: none;
+}
+
+.show-backlinks p .red {
+  color: #e55039;
+  text-decoration: none;
 }

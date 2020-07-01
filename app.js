@@ -108,14 +108,57 @@ app.post("/blogs", (req, res) => {
 
 });
 
-//Show route
+/* //Show route
 app.get("/blogs/:id", (req, res) => {
     Blog.findById(req.params.id, (err, foundBlog) => {
         if(err) {
             console.log("Error finding blog to show", err);
         } else {
+            //looking for blogs with similar tag to show in this route
+            Blog.find({}, (err, foundBlogs) => {
+                if(err) {
+                    console.log("Error finding blogs", err);
+                } else {
+                     const taggedBlogs = foundBlogs.map((tagB) => {
+                        if(foundBlog.tag.toLowerCase() === tagB.tag.toLowerCase()) {
+                            console.log(tagB);
+                            return tagB;
+                        }
+                    })
+                }
+            });
+
             res.render("blog/show", {
                 blog: foundBlog
+            });
+        }
+    });
+}); */
+
+app.get("/blogs/:id", (req, res) => {
+    Blog.find({}, (err, foundBlogs) => {
+        if(err) {
+            console.log("Error finding blogs", err);
+        } else {
+            Blog.findById(req.params.id, (err, foundBlog) => {
+                if(err) {
+                    console.log("Error finding specific blog to show", err);
+                } else {
+
+                    //collecting blogs with similar tag to display in show route template
+                    const taggedBlogs = [];
+
+                    foundBlogs.forEach(function(i) {
+                        if(i.tag.toLowerCase() === foundBlog.tag.toLowerCase()) {
+                            taggedBlogs.push(i);
+                        }
+                    });
+
+                    res.render("blog/show", {
+                        blog: foundBlog,
+                        taggedBlogs: taggedBlogs
+                    });
+                }
             });
         }
     });
