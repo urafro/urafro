@@ -1,2 +1,2 @@
 # RESTful_blogApp
-Displaying the use of RESTful route practices with a simple blog app
+Displaying the use of RESTful routing with a simple blog app
