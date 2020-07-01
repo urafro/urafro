@@ -642,3 +642,24 @@ textarea {
   margin-top: 20px;
   margin: 0 auto;
 }
+
+.show-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-one {
+  margin-top: 30px;
+}
+
+.section-two h3 {
+  font-size: 140%;
+  margin-bottom: 20px;
+}
+
+.section-two p:nth-of-type(2) {
+  border-left: 5px solid rgb(186, 188, 189);
+  padding: 10px;
+  line-height: 145%;
+  word-spacing: 5px;
+}
