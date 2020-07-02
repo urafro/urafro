@@ -754,6 +754,7 @@ textarea {
 .backlinks-cards {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .backlinks-card {
@@ -777,9 +778,9 @@ textarea {
 .backlinks-header a:visited {
   position: relative;
   bottom: 50px;
-  left: 76%;
+  left: 74%;
   font-size: 70%;
-  padding: 5px 15px;
+  padding: 5px 20px;
   color: #fff;
   border-radius: 30px;
   -webkit-border-radius: 30px;
