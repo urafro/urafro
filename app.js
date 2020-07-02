@@ -156,7 +156,7 @@ app.get("/blogs/:id", (req, res) => {
                             taggedBlogs.push(allBlogs[i]);
                         } */
 
-                        if (allBlogs[i].tag == mySearchValue && allBlogs[i].id != foundBlog.id) {
+                        if (allBlogs[i].tag == mySearchValue) {
                             taggedBlogs.push(allBlogs[i]);
                         }
                     }
