@@ -402,7 +402,7 @@ a {
   height: 120px;
   padding: 50px;
   padding-left: 0;
-  background-color: #f8f9fb;
+  background-color: #faefe8;
   color: #555;
   font-size: 80%;
 }
@@ -600,7 +600,7 @@ textarea {
 }
 
 .header-2 h2 {
-  margin-top: 67vh;
+  margin-top: 17vh;
   font-size: 250%;
   width: 60%;
   text-align: left;
