@@ -146,17 +146,20 @@ app.get("/blogs/:id", (req, res) => {
                 } else {
 
                     //collecting blogs with similar tag to display in show route template
+                    const allBlogs = foundBlogs;
                     const taggedBlogs = [];
-
-                    foundBlogs.forEach(function(i) {
-                        if(i.tag.toLowerCase() === foundBlog.tag.toLowerCase()) {
-                            taggedBlogs.push(i);
+                    const mySearchValue = foundBlog.tag;
+                    
+                    for (let i = 0; i < allBlogs.length; i++) {
+                        if (allBlogs[i].tag == mySearchValue) {
+                            taggedBlogs.push(allBlogs[i])
                         }
-                    });
+                    }
+
+                    console.log(taggedBlogs);
 
                     res.render("blog/show", {
-                        blog: foundBlog,
-                        taggedBlogs: taggedBlogs
+                        blog: foundBlog
                     });
                 }
             });
