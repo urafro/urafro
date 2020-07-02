@@ -141,8 +141,6 @@ app.get("/blogs/:id", (req, res) => {
     });
 });
 
-.
-
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
 
