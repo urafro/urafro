@@ -126,14 +126,14 @@ a {
 
 .hero .header img,
 .hero-2 .header-2 img {
-  height: 130px;
-  width: 130px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border: 5px solid #a0c1b8;
+  border: 8px solid rgba(153, 59, 140, .2);
   transform: scale(1);
   transition: .3s ease-in-out;
   -webkit-transform: scale(1);
