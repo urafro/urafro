@@ -108,33 +108,7 @@ app.post("/blogs", (req, res) => {
 
 });
 
-/* //Show route
-app.get("/blogs/:id", (req, res) => {
-    Blog.findById(req.params.id, (err, foundBlog) => {
-        if(err) {
-            console.log("Error finding blog to show", err);
-        } else {
-            //looking for blogs with similar tag to show in this route
-            Blog.find({}, (err, foundBlogs) => {
-                if(err) {
-                    console.log("Error finding blogs", err);
-                } else {
-                     const taggedBlogs = foundBlogs.map((tagB) => {
-                        if(foundBlog.tag.toLowerCase() === tagB.tag.toLowerCase()) {
-                            console.log(tagB);
-                            return tagB;
-                        }
-                    })
-                }
-            });
-
-            res.render("blog/show", {
-                blog: foundBlog
-            });
-        }
-    });
-}); */
-
+//Show Route - show blog with specific id
 app.get("/blogs/:id", (req, res) => {
     Blog.find({}, (err, foundBlogs) => {
         if(err) {
@@ -166,6 +140,8 @@ app.get("/blogs/:id", (req, res) => {
         }
     });
 });
+
+.
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
