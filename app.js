@@ -149,17 +149,16 @@ app.get("/blogs/:id", (req, res) => {
                     const allBlogs = foundBlogs;
                     const taggedBlogs = [];
                     const mySearchValue = foundBlog.tag;
-                    
+
                     for (let i = 0; i < allBlogs.length; i++) {
                         if (allBlogs[i].tag == mySearchValue) {
-                            taggedBlogs.push(allBlogs[i])
+                            taggedBlogs.push(allBlogs[i]);
                         }
                     }
 
-                    console.log(taggedBlogs);
-
                     res.render("blog/show", {
-                        blog: foundBlog
+                        blog: foundBlog,
+                        taggedBlogs: taggedBlogs
                     });
                 }
             });

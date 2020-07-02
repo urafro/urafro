@@ -735,7 +735,7 @@ textarea {
   text-decoration: none;
 }
 
-.show-backlinks p .yellow {
+.show-backlinks p .yellowbackground- {
   color: #daa02d;
   text-decoration: none;
 }
@@ -747,5 +747,67 @@ textarea {
 
 .show-backlinks p .red {
   color: #e55039;
+  text-decoration: none;
+}
+
+/********* backlinks-cards *****************/
+.backlinks-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backlinks-card {
+  flex-basis: 320px;
+}
+
+.backlinks-header {
+  position: relative;
+}
+
+.backlinks-header img {
+  width: 100%;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.backlinks-header a:link,
+.backlinks-header a:visited {
+  position: relative;
+  bottom: 50px;
+  left: 76%;
+  font-size: 70%;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.backlinks-header .green:link,
+.backlinks-header .green:visited {
+  background-color: #16a085;
+  text-decoration: none;
+}
+
+.backlinks-header .yellow:link,
+.backlinks-header .yellow:visited {
+  background-color: #daa02d;
+  text-decoration: none;
+}
+
+.backlinks-header .purple:link,
+.backlinks-header .purple:visited {
+  background-color: #474787;
+  text-decoration: none;
+}
+
+.backlinks-header .red:link,
+.backlinks-header .red:visited {
+  background-color: #e55039;
   text-decoration: none;
 }
