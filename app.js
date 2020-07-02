@@ -141,7 +141,7 @@ app.get("/blogs/:id", (req, res) => {
     });
 });
 
-//Edit Route - edit blog
+//Edit Route - show edit blog template
 app.get("/blogs/:id/edit", (req, res) => {
     Blog.findById(req.params.id, (err, foundBlog) => {
         if(err) {
@@ -154,6 +154,55 @@ app.get("/blogs/:id/edit", (req, res) => {
     });
 });
 
+//Update Route - apply blogs edits
+app.put("/blogs/:id", (req, res) => {
+    const updateBlog = {
+        tag: req.body.blog.tag,
+        body: {
+            header: {
+                mainHeading: req.body.blog.mainHeading,
+                mainImage: req.body.blog.mainImage
+            },
+            content: {
+                introParagraph: req.body.blog.introParagraph,
+                sectionOne: {
+                    paragraphOne: req.body.blog.paragraphOne,
+                    paragraphTwo: req.body.blog.paragraphTwo
+                },
+
+                sectionTwo: {
+                    mediumHeading: req.body.blog.mediumHeading,
+                    paragraphThree: req.body.blog.paragraphThree,
+                    paragraphFour: req.body.blog.paragraphFour,
+                    paragraphFive: req.body.blog.paragraphFive
+                },
+                sectionThree: {
+                    smallHeading: req.body.blog.smallHeading,
+                    paragraphSix: req.body.blog.paragraphSix,
+                    paragraphSeven: req.body.blog.paragraphSeven,
+                    smallerHeading: req.body.blog.smallerHeading,
+                    paragraphEight: req.body.blog.paragraphEight,
+                    blogImage: req.body.blog.blogImage,
+                    blogImageDescription: "blog image description :|",
+                    paragraphNine: req.body.blog.paragraphNine
+                },
+                sectionFour: {
+                    smallestHeading: req.body.blog.smallestHeading,
+                    lastParagraph: req.body.blog.lastParagraph
+                }
+            }
+        }
+    }
+
+    //updating blog with data from edit route template
+    Blog.findByIdAndUpdate(req.params.id, updateBlog, (err, updatedBlog) => {
+        if (err) {
+            console.log("Error updating blog", err);
+        } else {
+            res.redirect("/blogs/" + req.params.id);
+        }
+    });
+});
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
