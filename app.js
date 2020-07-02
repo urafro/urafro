@@ -151,7 +151,12 @@ app.get("/blogs/:id", (req, res) => {
                     const mySearchValue = foundBlog.tag;
 
                     for (let i = 0; i < allBlogs.length; i++) {
-                        if (allBlogs[i].tag == mySearchValue) {
+                        //excluding the current blog from blogs with the same tag
+                        /* if (allBlogs[i].tag == mySearchValue && allBlogs[i].id != foundBlog.id) {
+                            taggedBlogs.push(allBlogs[i]);
+                        } */
+
+                        if (allBlogs[i].tag == mySearchValue && allBlogs[i].id != foundBlog.id) {
                             taggedBlogs.push(allBlogs[i]);
                         }
                     }
