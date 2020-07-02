@@ -778,11 +778,12 @@ textarea {
 .backlinks-header a img {
   width: 100%;
   border-radius: 3px;
+  scale: 1;
+  opacity: .7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  scale: 1;
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -798,6 +799,7 @@ textarea {
 .backlinks-header a img:active,
 .backlinks-header a img:hover {
   transform: scale(1.1);
+  opacity: 1;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
