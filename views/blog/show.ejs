@@ -110,23 +110,26 @@
             <% taggedBlogs.forEach((taggedBlog) => { %>
               <div class="backlinks-card">
                 <div class="backlinks-header">
-                  <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
+                  <a href="#" class="header-image">
+                    <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
+                  </a>
 
                   <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-
-                  <% if(taggedBlog.tag == "Life") { %>
-                  <a href="#" class="green"><%= taggedBlog.tag %></a>
-                  <% } else if (taggedBlog.tag == "Code") { %>
-                  <a href="#" class="yellow"><%= taggedBlog.tag %></a>
-                  <% } else if (taggedBlog.tag == "Music") { %>
-                  <a href="#" class="purple"><%= taggedBlog.tag %></a>
-                  <% } else if (taggedBlog.tag == "Self") { %>
-                  <a href="#" class="red"><%= taggedBlog.tag %></a>
-                  <% } %>
+                  <div class="tag-links">
+                    <% if(taggedBlog.tag == "Life") { %>
+                    <a href="#" class="green"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Code") { %>
+                    <a href="#" class="yellow"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Music") { %>
+                    <a href="#" class="purple"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Self") { %>
+                    <a href="#" class="red"><%= taggedBlog.tag %></a>
+                    <% } %>
+                  </div>
                 </div>
 
                 <div class="backlinks-body">
-                  <h4><%= taggedBlog.body.header.mainHeading %></h4>
+                  <h4><a href="#"><%= taggedBlog.body.header.mainHeading %></a></h4>
                   <p><%= taggedBlog.body.content.introParagraph %></p>
                   <a href="#">Read More</a>
                 </div>

@@ -767,7 +767,7 @@ textarea {
   position: relative;
 }
 
-.backlinks-header img {
+.backlinks-header a img {
   width: 100%;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -776,11 +776,11 @@ textarea {
   -o-border-radius: 3px;
 }
 
-.backlinks-header a:link,
-.backlinks-header a:visited {
-  position: relative;
-  bottom: 50px;
-  left: 74%;
+.tag-links a:link,
+.tag-links a:visited {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; 
   font-size: 70%;
   padding: 5px 20px;
   color: #fff;
@@ -820,12 +820,30 @@ textarea {
 .backlinks-body h4 {
   width: 85%;
   margin-bottom: 10px;
+  letter-spacing: .7px;
+}
+
+.backlinks-body h4 a:link,
+.backlinks-body h4 a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+.backlinks-body h4 a:active,
+.backlinks-body h4 a:hover {
+  color: rgb(162, 166, 167);
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
 }
 
 .backlinks-body p {
   border: 0;
   padding: 0;
   margin-bottom: 5px;
+  color: rgb(61, 58, 58);
 }
 
 .backlinks-body a {
