@@ -124,6 +124,13 @@
                   <a href="#" class="red"><%= taggedBlog.tag %></a>
                   <% } %>
                 </div>
+
+                <div class="backlinks-body">
+                  <h4><%= taggedBlog.body.header.mainHeading %></h4>
+                  <p><%= taggedBlog.body.content.introParagraph %></p>
+                  <a href="#">Read More</a>
+                </div>
+
               </div>
             <% }) %>
           </div>
