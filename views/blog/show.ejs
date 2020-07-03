@@ -110,7 +110,7 @@
             <% taggedBlogs.forEach((taggedBlog) => { %>
               <div class="backlinks-card">
                 <div class="backlinks-header">
-                  <a href="#" class="header-image">
+                  <a href="/blogs/<%= taggedBlog.id %>" class="header-image">
                     <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
                   </a>
 
@@ -129,9 +129,9 @@
                 </div>
 
                 <div class="backlinks-body">
-                  <h4><a href="#"><%= taggedBlog.body.header.mainHeading %></a></h4>
+                  <h4><a href="/blogs/<%= taggedBlog.id %>"><%= taggedBlog.body.header.mainHeading %></a></h4>
                   <p><%= taggedBlog.body.content.introParagraph %></p>
-                  <a href="#">Read More</a>
+                  <a href="/blogs/<%= taggedBlog.id %>">Read More</a>
                 </div>
 
               </div>
@@ -144,7 +144,7 @@
 
     <footer>
       <p>
-        Copyright &copy; <a href="#">THP</a>. Inspired by <a href="http://template-my-life.webflow.io/"
+        Copyright &copy; <a href="#q">THP</a>. Inspired by <a href="http://template-my-life.webflow.io/"
            target="_blank"> Webflow </a>
       </p>
     </footer>
