@@ -658,6 +658,10 @@ textarea {
   text-align: center;
 }
 
+.show-content .text-wrap {
+  white-space: pre-wrap;
+}
+
 .show-heading .main-heading h2 {
   font-size: 170%;
   margin-bottom: 20px;
@@ -713,7 +717,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.section-three p:first-of-type {
+.section-three .text-wrap {
   padding: 20px;
 }
 
