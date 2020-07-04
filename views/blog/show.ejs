@@ -4,9 +4,32 @@
 
   <!-- declare show hero background image as inline css to access ejs data -->
   <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
-    <h1>
+    
+    <!-- create a conditional that picks which option to show depending on which user is logged in [either the h1 or nav] -->
+    <!-- <h1>
       <a href="/">My Life</a>
-    </h1>
+    </h1> -->
+
+    <nav role="navigation">
+      <ul>
+        <li><a href="/blogs/<%= blog._id %>/edit"><i class="far fa-edit"></i></a></li>
+        <li><a href="#"><i class="fas fa-user-cog"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Insight</a></li>
+            <li>
+              <a href="#">Sub-3</a>
+            </li>
+            <li>
+              <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <input type="submit" value="Delete">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
+      </ul>
+    </nav>
+
 
     <div class="header-2">
       <h2><%= blog.body.header.mainHeading %></h2>
