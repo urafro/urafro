@@ -204,5 +204,16 @@ app.put("/blogs/:id", (req, res) => {
     });
 });
 
+//Destroy Route - delete blog with specific id
+app.delete("/blogs/:id", (req, res) => {
+    Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
+        if(err) {
+            console.log("Error deleting blog", err);
+        } else {
+            res.redirect("/blogs");
+        }
+    });
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
