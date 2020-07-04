@@ -42,7 +42,7 @@
 
           </ul>
         </li>
-        
+
         <!-- reader-mode trigger -->
         <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
       </ul>
@@ -130,11 +130,12 @@
           <p><%= blog.body.content.sectionFour.lastParagraph %></p>
         </div>
 
-        <div class="show-backlinks">
-          <h3>Did you read these already?</h3>
-          <p>Discover more posts in 
-            <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-            
+        <% if(taggedBlogs.length > 0) { %>
+          <div class="show-backlinks">
+            <h3>Did you read these already?</h3>
+            <p>Discover more posts in
+              <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
+          
               <% if(blog.tag == "Life") { %>
               <a href="#" class="green"><%= blog.tag %></a>
               <% } else if (blog.tag == "Code") { %>
@@ -144,17 +145,17 @@
               <% } else if (blog.tag == "Self") { %>
               <a href="#" class="red"><%= blog.tag %></a>
               <% } %>
-            
-          </p>
-
-          <div class="backlinks-cards">
-            <% taggedBlogs.forEach((taggedBlog) => { %>
+          
+            </p>
+          
+            <div class="backlinks-cards">
+              <% taggedBlogs.forEach((taggedBlog) => { %>
               <div class="backlinks-card">
                 <div class="backlinks-header">
                   <a href="/blogs/<%= taggedBlog.id %>" class="header-image">
                     <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
                   </a>
-
+          
                   <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
                   <div class="tag-links">
                     <% if(taggedBlog.tag == "Life") { %>
@@ -168,18 +169,20 @@
                     <% } %>
                   </div>
                 </div>
-
+          
                 <div class="backlinks-body">
                   <h4><a href="/blogs/<%= taggedBlog.id %>"><%= taggedBlog.body.header.mainHeading %></a></h4>
                   <p><%= taggedBlog.body.content.introParagraph %></p>
                   <a href="/blogs/<%= taggedBlog.id %>">Read More</a>
                 </div>
-
+          
               </div>
-            <% }) %>
+              <% }) %>
+            </div>
+          
           </div>
+        <% } %>
 
-        </div>
       </div>
     </div>
 
