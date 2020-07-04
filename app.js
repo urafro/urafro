@@ -210,6 +210,7 @@ app.delete("/blogs/:id", (req, res) => {
         if(err) {
             console.log("Error deleting blog", err);
         } else {
+            console.log(deletedBlog);
             res.redirect("/blogs");
         }
     });
