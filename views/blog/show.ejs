@@ -135,12 +135,13 @@
         </div>
 
         <!-- Comments -->
+        <% if(blog.comments.length > 0) { %>
         <div class="comments-container">
-          <h2><a href="/blogs/<%= blog._id %>/comments/new">Comment</a>[s]</h2>
+          
+            <h2><a href="/blogs/<%= blog._id %>/comments/new">Comment</a>[s]</h2>          
 
           <ul id="comments-list" class="comments-list">
-            <% if(blog.comments.length > 0) { %>
-              <% blog.comments.forEach(function(comment) { %>
+            <% blog.comments.forEach(function(comment) { %>
               <li>
                 <div class="comment-main-level">
                   <!-- Avatar will be assigned to signed in user image -->
@@ -205,8 +206,7 @@
                 </li>
               </ul>
             </li> -->
-                <% }); %>
-            <% } %>
+            <% }); %>
 
             <!-- <li>
               <div class="comment-main-level"> -->
@@ -230,6 +230,7 @@
             </li> -->
           </ul>
         </div>
+        <% } %>
 
         <% if(taggedBlogs.length > 0) { %>
           <div class="show-backlinks">
