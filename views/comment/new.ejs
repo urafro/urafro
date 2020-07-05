@@ -91,25 +91,31 @@
 
             <h2>Comment</h2>
 
-            <div class="box-content">
+            <form action="/blogs/<%= blog.id %>/comments" method="POST">
 
-              <div class="group">
-                <div class="left">
-                  <label for="userFirstName">First Name*</label>
-                  <input type="text" name="author.firstName" id="userFirstName" placeholder="John" required>
+              <div class="box-content">
+
+                <div class="group">
+                  <div class="left">
+                    <label for="userFirstName">First Name*</label>
+                    <input type="text" name="author.firstName" id="userFirstName" placeholder="John" required>
+                  </div>
+
+                  <div class="right">
+                    <label for="userLastName">Last Name*</label>
+                    <input type="text" name="author.lastName" id="userLastName" placeholder="Doe" required>
+                  </div>
                 </div>
 
-                <div class="right">
-                  <label for="userLastName">Last Name*</label>
-                  <input type="text" name="author.lastName" id="userLastName" placeholder="Doe" required>
-                </div>
+                <label for="commentText">Comment*</label>
+
+                <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="spit your fire"
+                  required></textarea>
+
+                  <input type="submit" value="say it">
               </div>
 
-              <label for="commentText">Comment*</label>
-
-              <textarea name="commentText" id="commentText" cols="30" rows="5"
-                placeholder="spit your fire" required></textarea>
-            </div>
+            </form>
 
           </div>
         </div>
