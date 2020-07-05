@@ -114,7 +114,7 @@ app.get("/blogs/:id", (req, res) => {
         if(err) {
             console.log("Error finding blogs", err);
         } else {
-            Blog.findById(req.params.id, (err, foundBlog) => {
+            Blog.findById(req.params.id).populate("comments").exec((err, foundBlog) => {
                 if(err) {
                     console.log("Error finding specific blog to show", err);
                 } else {
