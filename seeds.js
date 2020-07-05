@@ -385,7 +385,10 @@ const seedDB = function() {
             console.log("Error creating blogs: ", err);
           } else {
             Comment.create({
-              author: "admin",
+              author: {
+                firstName: "Nashe",
+                lastName: "Dan"
+              },
               text: "generic comment 101 :("
             }, (err, comment) => {
               if(err) {

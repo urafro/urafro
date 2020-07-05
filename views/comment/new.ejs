@@ -1,0 +1,133 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+  <!-- declare show hero background image as inline css to access ejs data -->
+  <div class="hero-2"
+    style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
+
+    <!-- create a conditional that picks which option to show depending on which user is logged in [either the h1 or nav] -->
+    <!-- <h1>
+      <a href="/">My Life</a>
+    </h1> -->
+
+    <nav role="navigation">
+
+      <ul>
+        <a href="/blogs">
+          <li><i class="fas fa-home"></i></li>
+        </a>
+        <!-- user dashboard link -->
+        <li><a href="#"><i class="fas fa-user-cog"></i></a>
+
+          <ul class="dropdown">
+
+            <!-- link to blog insights-->
+            <!-- <a href="#"><i class="far fa-chart-bar"></i></a> -->
+
+            <a href="/blogs/new">
+              <li><i class="far fa-file"></i></li>
+            </a>
+
+            <a href="/blogs/<%= blog._id %>/edit">
+              <li><i class="far fa-edit"></i></li>
+            </a>
+
+            <!-- <a href="#">
+                link to blog resources
+              <li><i class="fas fa-link"></i></li>
+            </a> -->
+
+            <!-- blog delete button-->
+            <li class="delete">
+              <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <button><i class="far fa-trash-alt"></i></button>
+              </form>
+            </li>
+
+          </ul>
+        </li>
+
+        <!-- reader-mode trigger -->
+        <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
+      </ul>
+    </nav>
+
+
+    <div class="header-2">
+      <h2><%= blog.body.header.mainHeading %></h2>
+
+      <div class="author-card">
+        <div class="card-image">
+          <!-- generic card image will be replaced by user image from the user schema -->
+          <img
+            src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4"
+            alt="author image">
+        </div>
+
+        <div class="card-text">
+          <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
+          <h3><a href="#">Tinashe Dan</a></h3>
+          <p><%= blog.createdAt.toLocaleDateString() %></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="showcase-2">
+    <div class="group">
+      <div class="right-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="show-wrapper">
+
+      <div class="comment">
+        <div class="section zero">
+
+          <div class="content-inputs">
+
+            <h2>Comment</h2>
+
+            <div class="box-content">
+
+              <div class="group">
+                <div class="left">
+                  <label for="userFirstName">First Name*</label>
+                  <input type="text" name="author.firstName" id="userFirstName" placeholder="John" required>
+                </div>
+
+                <div class="right">
+                  <label for="userLastName">Last Name*</label>
+                  <input type="text" name="author.lastName" id="userLastName" placeholder="Doe" required>
+                </div>
+              </div>
+
+              <label for="commentText">Comment*</label>
+
+              <textarea name="commentText" id="commentText" cols="30" rows="5"
+                placeholder="spit your fire" required></textarea>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>
+        Copyright &copy; <a href="#q">THP</a>. Inspired by <a href="http://template-my-life.webflow.io/"
+          target="_blank"> Webflow </a>
+      </p>
+    </footer>
+  </div>
+
+</div>
+
+</div>
+
+
+<% include ../partials/footer %>
