@@ -603,7 +603,8 @@ a {
 }
 
 .content-boxes input[type=submit],
-.comment .content-inputs form div.box-content input[type=submit] {
+.comment .content-inputs form div.box-content input[type=submit],
+.comments-input input[type=submit] {
   margin-top: 20px;
   width: 100%;
   height: 50px;
@@ -616,6 +617,10 @@ a {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+
+.comments-input input[type=submit] {
+  margin-top: 5px;
 }
 
 /* input styles */
