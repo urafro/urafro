@@ -1036,6 +1036,16 @@ textarea {
   color: #555;
 }
 
+.comments-container a:active,
+.comments-container a:hover {
+  color: rgb(186, 188, 189);
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+}
+
 .comments-container h1 a {
   font-size: 18px;
   font-weight: 700;

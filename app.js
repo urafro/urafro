@@ -4,6 +4,7 @@ const express = require("express"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
     Blog = require("./models/blog"),
+    Comment = require("./models/comment"),
     //figure out how to use moment js to change the date format in index.ejs
     moment = require('moment'),
     seedDB = require("./seeds"),
@@ -217,6 +218,7 @@ app.delete("/blogs/:id", (req, res) => {
 });
 
 //================== Comment Routes ===================
+//New Comment Route - render new comment template
 app.get("/blogs/:id/comments/new", (req, res) => {
     Blog.findById(req.params.id, (err, foundBlog) => {
         if(err) {
@@ -224,6 +226,42 @@ app.get("/blogs/:id/comments/new", (req, res) => {
         } else {
             res.render("comment/new", {
                 blog: foundBlog
+            });
+        }
+    });
+});
+
+//Create Comment Route - save new comment
+app.post("/blogs/:id/comments", (req, res) => {
+
+    //finding the blog to add comment to
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if(err) {
+            console.log("Error finding the blog to comment on", err);
+        } else {
+            //Creating new comment from '/blogs/:id/comments/new' route data
+            const newComment = {
+                author: {
+                    firstName: req.body.firstName,
+                    lastName: req.body.lastName
+                },
+                text: req.body.commentText
+            }
+
+            Comment.create(newComment, (err, createdComment) => {
+                if (err) {
+                    console.log("Error creating new comment", err);
+                } else {
+                    foundBlog.comments.push(createdComment);
+                    foundBlog.save((err, data) => {
+                        if(err) {
+                            console.log("Error saving comment to blog", err);
+                        } else {
+                            console.log(data);
+                            res.redirect("/blogs/" + req.params.id);
+                        }
+                    });
+                }
             });
         }
     });
