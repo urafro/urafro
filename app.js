@@ -216,5 +216,18 @@ app.delete("/blogs/:id", (req, res) => {
     });
 });
 
+//================== Comment Routes ===================
+app.get("/blogs/:id/comments/new", (req, res) => {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if(err) {
+            console.log("Error finding blog to comment on", err);
+        } else {
+            res.render("comment/new", {
+                blog: foundBlog
+            });
+        }
+    });
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
