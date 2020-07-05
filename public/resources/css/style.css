@@ -565,6 +565,10 @@ a {
   outline: none;
 }
 
+.comments-input .content-inputs {
+  margin-top: 40px;
+}
+
 .content-inputs {
   border: 1px solid gray;
   border-radius: 10px;
