@@ -589,7 +589,7 @@ a {
 
 .content-inputs input[type=text],
 textarea,
-.right input[type=password] {
+.auth input[type=password] {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid #959595;
@@ -603,7 +603,7 @@ textarea,
 }
 
 .content-inputs input[type=text],
-.right input[type=password] {
+.auth input[type=password] {
   height: 80px;
   font-size: 70%;
   padding: 10px;

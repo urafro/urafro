@@ -42,37 +42,28 @@
 
             <form action="/signup" method="POST">
 
-              <div class="box-content">
+              <div class="box-content auth">
 
                 <div class="group">
                   <div class="left">
-                    <label for="userFirstName">First Name**</label>
-                    <input type="text" name="firstName" id="userFirstName" placeholder="John" required>
+                    <label for="username">Username**</label>
+                    <input type="text" name="username" id="username" placeholder="John" required>
                   </div>
 
                   <div class="right">
-                    <label for="userLastName">Last Name**</label>
-                    <input type="text" name="lastName" id="userLastName" placeholder="Doe" required>
-                  </div>
-                </div>
-
-                <label for="commentText">Your Bio**</label>
-
-                <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="My name is John and I write about food, love and meme culture! 
-[short & concise. don't shout at us with big caps lol]"
-                  required></textarea>
-
-                <div class="group">
-                  <div class="left">
                     <label for="avatarUrl">Avatar**</label>
                     <input type="text" name="avatarUrl" id="avatarUrl" placeholder="Author Image Url" required>
                   </div>
-
-                  <div class="right">
-                    <label for="password">Password**</label>
-                    <input type="password" name="password" id="password" required>
-                  </div>
                 </div>
+
+                <label for="bio">Your Bio**</label>
+
+                <textarea name="bio" id="bio" cols="30" rows="5" placeholder="My name is John and I write about food, love and meme culture! 
+[short & concise. don't shout at us with big caps lol]"
+                  required></textarea>
+
+                <label for="password">Password**</label>
+                <input type="password" name="password" id="password" placeholder="Put in on lock :)">
 
                 <input type="submit" value="say it">
               </div>

@@ -347,5 +347,23 @@ app.get("/signup", (req, res) => {
     res.render("register");
 });
 
+app.post("/signup", (req, res) => {
+
+    User.register(new User({
+        username: req.body.username,
+        avatarUrl: req.body.avatarUrl,
+        bio: req.body.bio
+    }), req.body.password, (err, createdUser) => {
+        if(err) {
+            console.log("Error creating new user", err);
+        } else {
+            passport.authenticate("local")(req, res, () => {
+                console.log(createdUser)
+                res.redirect("/blogs");
+            });
+        }
+    });
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
