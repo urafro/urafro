@@ -287,7 +287,27 @@ app.get("/blogs/:id/comments/:comment_id/edit", (req, res) => {
                 }
             });
       }
-    })
+    });
+});
+
+//Comments Update Route - update the comment with data from the route above
+app.put("/blogs/:id/comments/:comment_id", (req, res) => {
+    //updating comment with '/blogs/:id/comments/:comment_id' route data
+    const updateComment = {
+        author: {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName
+        },
+        text: req.body.commentText
+    }
+
+    Comment.findByIdAndUpdate(req.params.comment_id, updateComment, (err, updatingComment) => {
+        if(err) {
+            console.log("Error updating comment", err);
+        } else {
+            res.redirect("/blogs/" + req.params.id);
+        }
+    });
 });
 
 //Listening to routes on the local server

@@ -91,7 +91,7 @@
 
             <h2>Comment</h2>
 
-            <form action="/blogs/<%= blog.id %>/comments" method="POST">
+            <form action="/blogs/<%= blog.id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
 
               <div class="box-content">
 
