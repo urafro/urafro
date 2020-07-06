@@ -267,5 +267,28 @@ app.post("/blogs/:id/comments", (req, res) => {
     });
 });
 
+//Edit Route - show comment edit template
+app.get("/blogs/:id/comments/:comment_id/edit", (req, res) => {
+
+    //find blog to edit comment on
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if(err) {
+            console.log("Error finding blog to edit comment on", err);
+        } else {
+            //find specific comment to edit
+            Comment.findById(req.params.comment_id, (err, foundComment) => {
+                if (err) {
+                    console.log("Error finding comment to edit", err);
+                } else {
+                    res.render("comment/edit", {
+                        comment: foundComment,
+                        blog: foundBlog
+                    });
+                }
+            });
+      }
+    })
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
