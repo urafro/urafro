@@ -341,5 +341,11 @@ app.delete("/blogs/:id/comments/:comment_id", (req, res) => {
     });
 });
 
+//============================== Auth Routes =========================
+//register form route
+app.get("/signup", (req, res) => {
+    res.render("register");
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));

@@ -1,0 +1,109 @@
+<% include ./partials/header %>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>
+      <a href="/blogs">My Life</a>
+    </h1>
+
+    <!-- header image will be replaced by signed in user's image -->
+    <div class="header">
+      <a href="#">
+        <img src="https://i.imgur.com/f89JM9hm.png" alt="author image">
+      </a>
+      <h2>Hello.</h2>
+      <p>My name is Dan and I write passionately about life, music and web development.</p>
+      <a href="#" class="hero-btn hero-btn-full">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="hero-btn hero-btn-ghost">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="showcase">
+
+    <div class="group">
+      <div class="right-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="show-wrapper">
+
+      <div class="comment">
+        <div class="section zero">
+
+          <div class="content-inputs">
+
+            <h2>Sign Up</h2>
+
+            <form action="/signup" method="POST">
+
+              <div class="box-content">
+
+                <div class="group">
+                  <div class="left">
+                    <label for="userFirstName">First Name**</label>
+                    <input type="text" name="firstName" id="userFirstName" placeholder="John" required>
+                  </div>
+
+                  <div class="right">
+                    <label for="userLastName">Last Name**</label>
+                    <input type="text" name="lastName" id="userLastName" placeholder="Doe" required>
+                  </div>
+                </div>
+
+                <label for="commentText">Your Bio**</label>
+
+                <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="My name is John and I write about food, love and meme culture! 
+[short & concise. don't shout at us with big caps lol]"
+                  required></textarea>
+
+                <div class="group">
+                  <div class="left">
+                    <label for="avatarUrl">Avatar**</label>
+                    <input type="text" name="avatarUrl" id="avatarUrl" placeholder="Author Image Url" required>
+                  </div>
+
+                  <div class="right">
+                    <label for="password">Password**</label>
+                    <input type="password" name="password" id="password" required>
+                  </div>
+                </div>
+
+                <input type="submit" value="say it">
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Copyright &copy; <a href="#">THP</a>. Inspired by <a href="http://template-my-life.webflow.io/" target="_blank">
+          Webflow </a>
+      </p>
+    </footer>
+  </div>
+
+</div>
+
+
+<% include ./partials/footer %>
+
+<!-- Notes for further developent -->
+<!-- elements to be changed to variables 
+
+  1. .hero h1
+  2. .header img
+  3. .header h2
+  4. .header p
+  
+  figure out how to put dynamic social media links there
+
+-->
