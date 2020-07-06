@@ -347,6 +347,7 @@ app.get("/signup", (req, res) => {
     res.render("register");
 });
 
+//create new user logic
 app.post("/signup", (req, res) => {
 
     User.register(new User({
@@ -364,6 +365,11 @@ app.post("/signup", (req, res) => {
         }
     });
 });
+
+//login form route
+app.get("/login", (req, res) => {
+    res.render("login");
+})
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));

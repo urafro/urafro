@@ -38,36 +38,21 @@
 
           <div class="content-inputs">
 
-            <h2>Sign Up</h2>
+            <h2>Login</h2>
 
-            <form action="/signup" method="POST">
+            <form action="/login" method="POST">
 
               <div class="box-content auth">
 
-                <div class="group">
-                  <div class="left">
-                    <label for="username">Username**</label>
-                    <input type="text" name="username" id="username" placeholder="John" required>
-                  </div>
-
-                  <div class="right">
-                    <label for="avatarUrl">Avatar**</label>
-                    <input type="text" name="avatarUrl" id="avatarUrl" placeholder="Author Image Url" required>
-                  </div>
-                </div>
-
-                <label for="bio">Your Bio**</label>
-
-                <textarea name="bio" id="bio" cols="30" rows="5" placeholder="My name is John and I write about food, love and meme culture! 
-[short & concise. don't shout at us with big caps lol]"
-                  required></textarea>
+                <label for="username">Username**</label>
+                <input type="text" name="username" id="username" placeholder="John" required>
 
                 <label for="password">Password**</label>
                 <input type="password" name="password" id="password" placeholder="Put in on lock :)">
 
-                <h5>Already have an account? <a href="/login">Login!</a></h5>
+                <input type="submit" value="login">
 
-                <input type="submit" value="say it">
+                <h5>Don't have an account? <a href="/signup">Sign Up!</a></h5>
               </div>
 
             </form>
