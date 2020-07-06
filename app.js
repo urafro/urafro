@@ -379,5 +379,11 @@ app.post("/login", passport.authenticate("local", {
 
 });
 
+//Logout route
+app.get("/logout", (req, res) => {
+    req.logout();
+    res.redirect("/");
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
