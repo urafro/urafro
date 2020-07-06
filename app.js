@@ -369,7 +369,15 @@ app.post("/signup", (req, res) => {
 //login form route
 app.get("/login", (req, res) => {
     res.render("login");
-})
+});
+
+//handling login logic
+app.post("/login", passport.authenticate("local", {
+    successRedirect: "/blogs",
+    failureRedirect: "/login"
+}), (req, res) => {
+
+});
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
