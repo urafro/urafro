@@ -1279,6 +1279,29 @@ textarea {
 }
 
 /** =====================
+  * Auth Routes
+======================= */
+
+div.box-content.auth h5 {
+  margin-bottom: 10px;
+}
+
+div.box-content.auth h5 a:link,
+div.box-content.auth h5 a:visited {
+  color: rgb(172, 165, 165);
+}
+
+div.box-content.auth h5 a:active,
+div.box-content.auth h5 a:hover {
+  color: #555;
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+}
+
+/** =====================
  * Responsive
  ========================*/
 @media only screen and (max-width: 766px) {
