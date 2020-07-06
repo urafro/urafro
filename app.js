@@ -310,5 +310,16 @@ app.put("/blogs/:id/comments/:comment_id", (req, res) => {
     });
 });
 
+//Comments Delete Route - delete comment with specific comment id
+app.delete("/blogs/:id/comments/:comment_id", (req, res) => {
+    Comment.findOneAndDelete(req.params.comment_id, (err, deletedComment) => {
+        if(err) {
+            console.log("Error finding comment to delete", err);
+        } else {
+            res.redirect("/blogs/" + req.params.id);
+        }
+    });
+});
+
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
