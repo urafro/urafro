@@ -1,5 +1,7 @@
 <% include ../partials/header %>
 
+<% console.log(currentUser) %>
+
 <div class="container">
 
   <div class="hero">
@@ -9,19 +11,23 @@
     
     <!-- header image will be replaced by signed in user's image -->
     <div class="header">
+      <!-- Displaying dynamic user data -->
       <a href="#">
-        <img
-          src="https://i.imgur.com/f89JM9hm.png"
-          alt="author image">
+        <img src="<%= currentUser.avatarUrl %>" alt="author image">
       </a>
       <h2>Hello.</h2>
-      <p>My name is Dan and I write passionately about life, music and web development.</p>
+
+      <p><%= currentUser.bio %></p>
+
+      <!-- will implement the use of dynamic social links -->
       <a href="#" class="hero-btn hero-btn-full">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="#" class="hero-btn hero-btn-ghost">
         <i class="fab fa-twitter"></i>
       </a>
+      
+      <!-- dynamic user data ends here -->
     </div>
   </div>
 
