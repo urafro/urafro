@@ -5,53 +5,55 @@
   <!-- declare show hero background image as inline css to access ejs data -->
   <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
     
-    <!-- create a conditional that picks which option to show depending on which user is logged in [either the h1 or nav] -->
-    <!-- <h1>
-      <a href="/">My Life</a>
-    </h1> -->
+    <% if(!currentUser) { %>
+      <h1>
+        <a href="/">My Life</a>
+      </h1>
+    <% } %>
 
-    <nav role="navigation">
+    <% if(currentUser) { %>
+      <nav role="navigation">
 
-      <ul>
-        <a href="/blogs">
-          <li><i class="fas fa-home"></i></li>
-        </a>
-        <!-- user dashboard link -->
-        <li><a href="#"><i class="fas fa-user-cog"></i></a>
+        <ul>
+          <a href="/blogs">
+            <li><i class="fas fa-home"></i></li>
+          </a>
+          <!-- user dashboard link -->
+          <li><a href="#"><i class="fas fa-user-cog"></i></a>
 
-          <ul class="dropdown">
+            <ul class="dropdown">
 
-            <!-- link to blog insights-->
-            <!-- <a href="#"><i class="far fa-chart-bar"></i></a> -->
+              <!-- link to blog insights-->
+              <!-- <a href="#"><i class="far fa-chart-bar"></i></a> -->
 
-            <a href="/blogs/new">
-              <li><i class="far fa-file"></i></li>
-            </a>
+              <a href="/blogs/new">
+                <li><i class="far fa-file"></i></li>
+              </a>
 
-            <a href="/blogs/<%= blog._id %>/edit">
-              <li><i class="far fa-edit"></i></li>
-            </a>
+              <a href="/blogs/<%= blog._id %>/edit">
+                <li><i class="far fa-edit"></i></li>
+              </a>
 
-            <!-- <a href="#">
+              <!-- <a href="#">
                 link to blog resources
               <li><i class="fas fa-link"></i></li>
             </a> -->
 
-            <!-- blog delete button-->
-            <li class="delete">
-              <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+              <!-- blog delete button-->
+              <li class="delete">
+                <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
                   <button><i class="far fa-trash-alt"></i></button>
-              </form>
-            </li>
+                </form>
+              </li>
 
-          </ul>
-        </li>
+            </ul>
+          </li>
 
-        <!-- reader-mode trigger -->
-        <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
-      </ul>
-    </nav>
-
+          <!-- reader-mode trigger -->
+          <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
+        </ul>
+      </nav>
+    <% } %>
 
     <div class="header-2">
       <h2><%= blog.body.header.mainHeading %></h2>
