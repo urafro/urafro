@@ -154,7 +154,7 @@
                     <div class="comment-head">
                       <h6 class="comment-name by-author">
                         <a href="#">
-                          <%= comment.author.firstName %> <%= comment.author.lastName %>
+                          <%= comment.author.username %>
                         </a>
                       </h6>
                       <span>5 mins ago</span>
@@ -253,17 +253,8 @@
 
                   <div class="box-content">
 
-                    <div class="group">
-                      <div class="left">
-                        <label for="userFirstName">First Name*</label>
-                        <input type="text" name="firstName" id="userFirstName" placeholder="John" required>
-                      </div>
-
-                      <div class="right">
-                        <label for="userLastName">Last Name*</label>
-                        <input type="text" name="lastName" id="userLastName" placeholder="Doe" required>
-                      </div>
-                    </div>
+                    <label for="username">Username*</label>
+                    <input type="text" name="username" id="username" placeholder="flawed69" required>
 
                     <label for="commentText">Comment*</label>
 
