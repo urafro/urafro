@@ -4,32 +4,59 @@
 
 <div class="container">
 
-  <div class="hero">
-    <h1>
-      <a href="/blogs">My Life</a>
-    </h1>
+  <!-- Displaying dynamic user data -->
+  <% if(currentUser) { %>
+    <div class="hero">
+      <h1>
+        <a href="/blogs">My Life</a>
+      </h1>
     
-    <!-- header image will be replaced by signed in user's image -->
-    <div class="header">
-      <!-- Displaying dynamic user data -->
-      <a href="#">
-        <img src="<%= currentUser.avatarUrl %>" alt="author image">
-      </a>
-      <h2>Hello.</h2>
-
-      <p><%= currentUser.bio %></p>
-
-      <!-- will implement the use of dynamic social links -->
-      <a href="#" class="hero-btn hero-btn-full">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="hero-btn hero-btn-ghost">
-        <i class="fab fa-twitter"></i>
-      </a>
-      
-      <!-- dynamic user data ends here -->
+      <!-- header image will be replaced by signed in user's image -->
+      <div class="header">
+        <a href="#">
+          <img src="<%= currentUser.avatarUrl %>" alt="author image">
+        </a>
+        <h2>Hello.</h2>
+    
+        <p><%= currentUser.bio %></p>
+    
+        <!-- will implement the use of dynamic social links -->
+        <a href="#" class="hero-btn hero-btn-full">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="hero-btn hero-btn-ghost">
+          <i class="fab fa-twitter"></i>
+        </a>
+    
+        <!-- dynamic user data ends here -->
+      </div>
     </div>
-  </div>
+  <% } %>
+
+  <% if(!currentUser) { %>
+    <div class="hero">
+      <h1>
+        <a href="/blogs">My Life</a>
+      </h1>
+    
+      <div class="header">
+        <a href="#">
+          <img src="https://i.pravatar.cc/300" %>" alt="author image">
+        </a>
+        <h2>Hello.</h2>
+    
+        <p>I'm Dej and travelling the globe is my passion. Well, let's see what our 'new normal' looks like. Hi Rona! 😅😆</p>
+    
+        <a href="#" class="hero-btn hero-btn-full">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="hero-btn hero-btn-ghost">
+          <i class="fab fa-twitter"></i>
+        </a>
+    
+      </div>
+    </div>
+  <% } %>
 
   <div class="showcase">
 
