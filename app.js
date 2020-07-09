@@ -54,6 +54,12 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+//Declaring global user variable
+app.use((req, res, next) => {
+    res.locals.currentUser = req.user;
+    next();
+});
+
 //Initial Route - Home ROute
 app.get("/", (req, res) => {
     // will come back to style landing page
