@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 //Defining Blog Schema
 let BlogSchema = new mongoose.Schema({
-  tag: String,
   body: {
     header: {
       mainHeading: String,
@@ -45,6 +44,14 @@ let BlogSchema = new mongoose.Schema({
       }
     }
 
+  },
+  tag: String,
+  author: {
+    id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User"
+    },
+    username: String
   },
   comments: [{
     type: mongoose.Schema.Types.ObjectId,
