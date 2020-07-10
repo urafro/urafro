@@ -5,7 +5,11 @@ const UserSchema = new mongoose.Schema({
   username: String,
   avatarUrl: String,
   bio: String,
-  password: String
+  password: String,
+  blogs: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Blog"
+  }]
 });
 
 UserSchema.plugin(LocalStrategyMongoose);
