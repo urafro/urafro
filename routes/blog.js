@@ -111,7 +111,7 @@ router.get("/:id", (req, res) => {
 });
 
 //Edit Route - show edit blog template
-router.get("/:id/edit",isLoggedIn, (req, res) => {
+router.get("/:id/edit",checkBlogOwnership, (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
       console.log("Error finding blog to update", err);
@@ -124,7 +124,7 @@ router.get("/:id/edit",isLoggedIn, (req, res) => {
 });
 
 //Update Route - apply blogs edits
-router.put("/:id",isLoggedIn, (req, res) => {
+router.put("/:id",checkBlogOwnership, (req, res) => {
   const updateBlog = {
     tag: req.body.blog.tag,
     body: {
@@ -174,7 +174,7 @@ router.put("/:id",isLoggedIn, (req, res) => {
 });
 
 //Destroy Route - delete blog with specific id
-router.delete("/:id",isLoggedIn, (req, res) => {
+router.delete("/:id",checkBlogOwnership, (req, res) => {
   Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
     if (err) {
       console.log("Error deleting blog", err);
@@ -184,6 +184,25 @@ router.delete("/:id",isLoggedIn, (req, res) => {
     }
   });
 });
+
+//Middleware to check blog ownership
+function checkBlogOwnership (req, res, next) {
+  if(req.isAuthenticated()) {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+      if(err) {
+        console.log("Error finding blog", err);
+      } else {
+        if(req.user._id.equals(foundBlog.author.id)) {
+          return next();
+        } else {
+          res.send("You don't have authorization to do that!");
+        }
+      }
+    })
+  } else {  
+    res.send("You need to be logged in to do that")
+  }
+}
 
 //Middleware to check whether or not a use is logged in
 function isLoggedIn (req, res, next) {
