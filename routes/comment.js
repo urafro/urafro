@@ -29,7 +29,8 @@ router.post("/", (req, res) => {
       const newComment = {
         author: {
           id: req.user._id,
-          username: req.user.username
+          username: req.user.username,
+          avatarUrl: req.user.avatarUrl
         },
         text: req.body.commentText
       }

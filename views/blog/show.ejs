@@ -152,7 +152,7 @@
                 <div class="comment-main-level">
                   <!-- Avatar will be assigned to signed in user image -->
                   <div class="comment-avatar"><img
-                      src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                      src="<%= comment.author.avatarUrl %>" alt=""></div>
                   <!-- Comment Content Container -->
                   <div class="comment-box">
                     <div class="comment-head">
@@ -257,6 +257,7 @@
 
                   <div class="box-content">
 
+                    <!-- Add || Remove username input field if user is logged in or out -->
                     <% if(!currentUser) { %>
                       <label for="username">Username*</label>
                       <input type="text" name="username" id="username" placeholder="flawed69" required>
