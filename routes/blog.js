@@ -18,12 +18,12 @@ router.get("/", (req, res) => {
 });
 
 //Create Route - render new blog template
-router.get("/new", (req, res) => {
+router.get("/new",isLoggedIn, (req, res) => {
   res.render("blog/new");
 });
 
 //New Route - create new blog
-router.post("/", (req, res) => {
+router.post("/",isLoggedIn, (req, res) => {
 
   const newBlog = {
     tag: req.body.blog.tag,
@@ -111,7 +111,7 @@ router.get("/:id", (req, res) => {
 });
 
 //Edit Route - show edit blog template
-router.get("/:id/edit", (req, res) => {
+router.get("/:id/edit",isLoggedIn, (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
       console.log("Error finding blog to update", err);
@@ -124,7 +124,7 @@ router.get("/:id/edit", (req, res) => {
 });
 
 //Update Route - apply blogs edits
-router.put("/:id", (req, res) => {
+router.put("/:id",isLoggedIn, (req, res) => {
   const updateBlog = {
     tag: req.body.blog.tag,
     body: {
@@ -174,7 +174,7 @@ router.put("/:id", (req, res) => {
 });
 
 //Destroy Route - delete blog with specific id
-router.delete("/:id", (req, res) => {
+router.delete("/:id",isLoggedIn, (req, res) => {
   Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
     if (err) {
       console.log("Error deleting blog", err);
@@ -184,5 +184,14 @@ router.delete("/:id", (req, res) => {
     }
   });
 });
+
+//Middleware to check whether or not a use is logged in
+function isLoggedIn (req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  } else {
+    res.send("You need to be logged in to do that");
+  }
+}
 
 module.exports = router;

@@ -108,4 +108,14 @@ router.delete("/:comment_id", (req, res) => {
   });
 });
 
+//Middleware to check whether or not user is logged in
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  } else {
+    res.send("You need to be logged in to do that");
+  }
+}
+
+
 module.exports = router;
