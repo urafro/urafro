@@ -5,13 +5,14 @@
   <!-- declare show hero background image as inline css to access ejs data -->
   <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
     
-    <% if(!currentUser) { %>
+    <% if(!currentUser || currentUser.username !== blog.author.username) { %>
       <h1>
         <a href="/">My Life</a>
       </h1>
     <% } %>
 
-    <% if(currentUser) { %>
+    <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
+      <% console.log(currentUser) %>
       <nav role="navigation">
 
         <ul>
