@@ -5,7 +5,7 @@ const Blog = require("../models/blog");
 //================================ BLOG ROUTES ===============================
 
 //Index Route - Display all blogs
-router.get("/blogs", (req, res) => {
+router.get("/", (req, res) => {
   Blog.find({}, (err, foundBlogs) => {
     if (err) {
       console.log("error finding blogs to display: ", err);
@@ -18,12 +18,12 @@ router.get("/blogs", (req, res) => {
 });
 
 //Create Route - render new blog template
-router.get("/blogs/new", (req, res) => {
+router.get("/new", (req, res) => {
   res.render("blog/new");
 });
 
 //New Route - create new blog
-router.post("/blogs", (req, res) => {
+router.post("/", (req, res) => {
 
   const newBlog = {
     tag: req.body.blog.tag,
@@ -74,7 +74,7 @@ router.post("/blogs", (req, res) => {
 });
 
 //Show Route - show blog with specific id
-router.get("/blogs/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   Blog.find({}, (err, foundBlogs) => {
     if (err) {
       console.log("Error finding blogs", err);
@@ -107,7 +107,7 @@ router.get("/blogs/:id", (req, res) => {
 });
 
 //Edit Route - show edit blog template
-router.get("/blogs/:id/edit", (req, res) => {
+router.get("/:id/edit", (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
       console.log("Error finding blog to update", err);
@@ -120,7 +120,7 @@ router.get("/blogs/:id/edit", (req, res) => {
 });
 
 //Update Route - apply blogs edits
-router.put("/blogs/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   const updateBlog = {
     tag: req.body.blog.tag,
     body: {
@@ -170,7 +170,7 @@ router.put("/blogs/:id", (req, res) => {
 });
 
 //Destroy Route - delete blog with specific id
-router.delete("/blogs/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
     if (err) {
       console.log("Error deleting blog", err);

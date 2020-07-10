@@ -5,7 +5,7 @@ const Comment = require("../models/comment");
 
 //================== Comment Routes ===================
 //New Comment Route - render new comment template
-router.get("/blogs/:id/comments/new", (req, res) => {
+router.get("/new", (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
       console.log("Error finding blog to comment on", err);
@@ -18,7 +18,7 @@ router.get("/blogs/:id/comments/new", (req, res) => {
 });
 
 //Create Comment Route - save new comment
-router.post("/blogs/:id/comments", (req, res) => {
+router.post("/", (req, res) => {
 
   //finding the blog to add comment to
   Blog.findById(req.params.id, (err, foundBlog) => {
@@ -54,7 +54,7 @@ router.post("/blogs/:id/comments", (req, res) => {
 });
 
 //Edit Route - show comment edit template
-router.get("/blogs/:id/comments/:comment_id/edit", (req, res) => {
+router.get("/:comment_id/edit", (req, res) => {
 
   //find blog to edit comment on
   Blog.findById(req.params.id, (err, foundBlog) => {
@@ -77,7 +77,7 @@ router.get("/blogs/:id/comments/:comment_id/edit", (req, res) => {
 });
 
 //Comments Update Route - update the comment with data from the route above
-router.put("/blogs/:id/comments/:comment_id", (req, res) => {
+router.put("/:comment_id", (req, res) => {
   //updating comment with '/blogs/:id/comments/:comment_id' route data
   const updateComment = {
     author: {
@@ -97,7 +97,7 @@ router.put("/blogs/:id/comments/:comment_id", (req, res) => {
 });
 
 //Comments Delete Route - delete comment with specific comment id
-router.delete("/blogs/:id/comments/:comment_id", (req, res) => {
+router.delete("/:comment_id", (req, res) => {
   Comment.findOneAndDelete(req.params.comment_id, (err, deletedComment) => {
     if (err) {
       console.log("Error finding comment to delete", err);

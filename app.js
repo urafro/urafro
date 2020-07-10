@@ -61,9 +61,9 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(Blog);
-app.use(Comment);
-app.use(index);
+app.use("/blogs", Blog);
+app.use("/blogs/:id/comments", Comment);
+app.use("/", index);
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
