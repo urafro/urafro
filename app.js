@@ -7,6 +7,7 @@ const express = require("express"),
     Blog = require("./routes/blog"),
     Comment = require("./routes/comment"),
     passport = require("passport"),
+    index = require("./routes/index");
     LocalStrategy = require("passport-local"),
     LocalStrategyMongoose = require("passport-local-mongoose"),
     User = require("./models/user"),
@@ -62,56 +63,7 @@ app.use((req, res, next) => {
 
 app.use(Blog);
 app.use(Comment);
-
-//Initial Route - Home ROute
-app.get("/", (req, res) => {
-    // will come back to style landing page
-    res.render("landing");
-});
-
-//============================== Auth Routes =========================
-//register form route
-app.get("/signup", (req, res) => {
-    res.render("register");
-});
-
-//create new user logic
-app.post("/signup", (req, res) => {
-
-    User.register(new User({
-        username: req.body.username,
-        avatarUrl: req.body.avatarUrl,
-        bio: req.body.bio
-    }), req.body.password, (err, createdUser) => {
-        if(err) {
-            console.log("Error creating new user", err);
-        } else {
-            passport.authenticate("local")(req, res, () => {
-                console.log(createdUser)
-                res.redirect("/blogs");
-            });
-        }
-    });
-});
-
-//login form route
-app.get("/login", (req, res) => {
-    res.render("login");
-});
-
-//handling login logic
-app.post("/login", passport.authenticate("local", {
-    successRedirect: "/blogs",
-    failureRedirect: "/login"
-}), (req, res) => {
-
-});
-
-//Logout route
-app.get("/logout", (req, res) => {
-    req.logout();
-    res.redirect("/");
-});
+app.use(index);
 
 //Listening to routes on the local server
 app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
