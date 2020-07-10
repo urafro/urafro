@@ -165,15 +165,23 @@
                       <span>5 mins ago</span>
                       <i class="fa fa-reply"></i>
                       <i class="fa fa-heart"></i>
-                      <a href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
+
+                      <!-- restricting users from editing comments they didn't create -->
+                      <% if(currentUser._id.equals(comment.author.id)) { %>
+                        <a href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/edit">
+                          <i class="fas fa-edit"></i>
+                        </a>
+                      <% } %>
                       
                     </div>
+
                     <div class="comment-content">
+                      <!-- restricting users from deleting comments they didn't create -->
+                      <% if(currentUser._id.equals(comment.author.id)) { %>
                       <form action="/blogs/<%= blog._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete">
                       </form>
+                      <% } %>
                       <%= comment.text %>
                     </div>
                   </div>
