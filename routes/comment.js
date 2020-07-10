@@ -28,8 +28,8 @@ router.post("/", (req, res) => {
       //Creating new comment from '/blogs/:id/comments/new' route data
       const newComment = {
         author: {
-          firstName: req.body.firstName,
-          lastName: req.body.lastName
+          id: req.user._id,
+          username: req.user.username
         },
         text: req.body.commentText
       }

@@ -60,6 +60,10 @@ router.post("/", (req, res) => {
           lastParagraph: req.body.blog.lastParagraph
         }
       }
+    },
+    author: {
+      id: req.user._id,
+      username: req.user.username
     }
   }
 
