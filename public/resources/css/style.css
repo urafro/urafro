@@ -713,12 +713,13 @@ textarea {
 
 .header-2 .card-text h3 {
   font-weight: 300;
-  margin-left: 20px;
+  /* margin-left: 2px; */
   padding-bottom: 5px;
 }
 
 .header-2 .card-text p {
   font-size: 90%;
+  margin-left: 25px;
 }
 
 /**************************** content section ***********************/
