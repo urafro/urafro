@@ -82,14 +82,14 @@
                 <!-- generic card image will be replaced by user image from the user schema -->
                 <a href="#">
                   <img
-                    src="https://i.imgur.com/f89JM9hm.png"
+                    src="<%= blog.author.avatarUrl %>"
                     alt="author image">
                 </a>
               </div>
 
               <div class="card-text">
                 <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
-                <h3><a href="#">Tinashe Dan</a></h3>
+                <h3><a href="#"><%= blog.author.username %></a></h3>
                 <p><%= blog.createdAt.toLocaleDateString() %></p>
               </div>
             </div>
