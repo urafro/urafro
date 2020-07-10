@@ -5,7 +5,7 @@ const express = require("express"),
     methodOverride = require("method-override"),
     mongoose = require("mongoose"),
     Blog = require("./routes/blog"),
-    Comment = require("./models/comment"),
+    Comment = require("./routes/comment"),
     passport = require("passport"),
     LocalStrategy = require("passport-local"),
     LocalStrategyMongoose = require("passport-local-mongoose"),
@@ -61,115 +61,12 @@ app.use((req, res, next) => {
 });
 
 app.use(Blog);
+app.use(Comment);
 
 //Initial Route - Home ROute
 app.get("/", (req, res) => {
     // will come back to style landing page
     res.render("landing");
-});
-
-//================== Comment Routes ===================
-//New Comment Route - render new comment template
-app.get("/blogs/:id/comments/new", (req, res) => {
-    Blog.findById(req.params.id, (err, foundBlog) => {
-        if(err) {
-            console.log("Error finding blog to comment on", err);
-        } else {
-            res.render("comment/new", {
-                blog: foundBlog
-            });
-        }
-    });
-});
-
-//Create Comment Route - save new comment
-app.post("/blogs/:id/comments", (req, res) => {
-
-    //finding the blog to add comment to
-    Blog.findById(req.params.id, (err, foundBlog) => {
-        if(err) {
-            console.log("Error finding the blog to comment on", err);
-        } else {
-            //Creating new comment from '/blogs/:id/comments/new' route data
-            const newComment = {
-                author: {
-                    firstName: req.body.firstName,
-                    lastName: req.body.lastName
-                },
-                text: req.body.commentText
-            }
-
-            Comment.create(newComment, (err, createdComment) => {
-                if (err) {
-                    console.log("Error creating new comment", err);
-                } else {
-                    foundBlog.comments.push(createdComment);
-                    foundBlog.save((err, data) => {
-                        if(err) {
-                            console.log("Error saving comment to blog", err);
-                        } else {
-                            console.log(data);
-                            res.redirect("/blogs/" + req.params.id);
-                        }
-                    });
-                }
-            });
-        }
-    });
-});
-
-//Edit Route - show comment edit template
-app.get("/blogs/:id/comments/:comment_id/edit", (req, res) => {
-
-    //find blog to edit comment on
-    Blog.findById(req.params.id, (err, foundBlog) => {
-        if(err) {
-            console.log("Error finding blog to edit comment on", err);
-        } else {
-            //find specific comment to edit
-            Comment.findById(req.params.comment_id, (err, foundComment) => {
-                if (err) {
-                    console.log("Error finding comment to edit", err);
-                } else {
-                    res.render("comment/edit", {
-                        comment: foundComment,
-                        blog: foundBlog
-                    });
-                }
-            });
-      }
-    });
-});
-
-//Comments Update Route - update the comment with data from the route above
-app.put("/blogs/:id/comments/:comment_id", (req, res) => {
-    //updating comment with '/blogs/:id/comments/:comment_id' route data
-    const updateComment = {
-        author: {
-            firstName: req.body.firstName,
-            lastName: req.body.lastName
-        },
-        text: req.body.commentText
-    }
-
-    Comment.findByIdAndUpdate(req.params.comment_id, updateComment, (err, updatingComment) => {
-        if(err) {
-            console.log("Error updating comment", err);
-        } else {
-            res.redirect("/blogs/" + req.params.id);
-        }
-    });
-});
-
-//Comments Delete Route - delete comment with specific comment id
-app.delete("/blogs/:id/comments/:comment_id", (req, res) => {
-    Comment.findOneAndDelete(req.params.comment_id, (err, deletedComment) => {
-        if(err) {
-            console.log("Error finding comment to delete", err);
-        } else {
-            res.redirect("/blogs/" + req.params.id);
-        }
-    });
 });
 
 //============================== Auth Routes =========================
