@@ -50,7 +50,7 @@ router.post("/login", passport.authenticate("local", {
 //Logout route
 router.get("/logout", (req, res) => {
   req.logout();
-  res.redirect("/");
+  res.redirect("/login");
 });
 
 //Middleware to check whether or not a user is logged in

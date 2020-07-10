@@ -55,7 +55,7 @@ router.post("/",isLoggedIn, (req, res) => {
 });
 
 //Edit Route - show comment edit template
-router.get("/:comment_id/edit",isLoggedIn, (req, res) => {
+router.get("/:comment_id/edit",checkCommentOwnership, (req, res) => {
 
   //find blog to edit comment on
   Blog.findById(req.params.id, (err, foundBlog) => {
@@ -78,7 +78,7 @@ router.get("/:comment_id/edit",isLoggedIn, (req, res) => {
 });
 
 //Comments Update Route - update the comment with data from the route above
-router.put("/:comment_id",isLoggedIn, (req, res) => {
+router.put("/:comment_id",checkCommentOwnership, (req, res) => {
   //updating comment with '/blogs/:id/comments/:comment_id' route data
   const updateComment = {
     author: {
@@ -98,8 +98,8 @@ router.put("/:comment_id",isLoggedIn, (req, res) => {
 });
 
 //Comments Delete Route - delete comment with specific comment id
-router.delete("/:comment_id",isLoggedIn, (req, res) => {
-  Comment.findOneAndDelete(req.params.comment_id, (err, deletedComment) => {
+router.delete("/:comment_id",checkCommentOwnership, (req, res) => {
+  Comment.findByIdAndDelete(req.params.comment_id, (err, deletedComment) => {
     if (err) {
       console.log("Error finding comment to delete", err);
     } else {
@@ -107,6 +107,23 @@ router.delete("/:comment_id",isLoggedIn, (req, res) => {
     }
   });
 });
+
+//Middleware to check comment ownership
+function checkCommentOwnership (req, res, next) {
+  if(req.isAuthenticated()) {
+    Comment.findById(req.params.comment_id, (err, foundComment) => {
+      if(err) {
+        console.log("Error finding comment", err);
+      } else {
+        if(foundComment.author.id.equals(req.user._id)) {
+          next();
+        }
+      }
+    });
+  } else {
+    res.send("You need to be logged in to do that!");
+  }
+}
 
 //Middleware to check whether or not user is logged in
 function isLoggedIn(req, res, next) {

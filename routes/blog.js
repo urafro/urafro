@@ -193,7 +193,7 @@ function checkBlogOwnership (req, res, next) {
         console.log("Error finding blog", err);
       } else {
         if(req.user._id.equals(foundBlog.author.id)) {
-          return next();
+          next();
         } else {
           res.send("You don't have authorization to do that!");
         }
