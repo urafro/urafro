@@ -9,7 +9,8 @@ const middleware = require("../middleware");
 router.get("/new",middleware.isLoggedIn, (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
-      console.log("Error finding blog to comment on", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
       res.render("comment/new", {
         blog: foundBlog
@@ -24,7 +25,8 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
   //finding the blog to add comment to
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
-      console.log("Error finding the blog to comment on", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
       //Creating new comment from '/blogs/:id/comments/new' route data
       const newComment = {
@@ -38,14 +40,16 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
 
       Comment.create(newComment, (err, createdComment) => {
         if (err) {
-          console.log("Error creating new comment", err);
+          req.flash("error", err.message);
+          res.redirect("/blogs/" + req.params.id);
         } else {
           foundBlog.comments.push(createdComment);
           foundBlog.save((err, data) => {
             if (err) {
-              console.log("Error saving comment to blog", err);
+              req.flash("error", err.message);
+              res.redirect("/blogs/" + req.params.id);
             } else {
-              console.log(data);
+              req.flash("success", "Comment posted!");
               res.redirect("/blogs/" + req.params.id);
             }
           });
@@ -61,12 +65,14 @@ router.get("/:comment_id/edit",middleware.checkCommentOwnership, (req, res) => {
   //find blog to edit comment on
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
-      console.log("Error finding blog to edit comment on", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
       //find specific comment to edit
       Comment.findById(req.params.comment_id, (err, foundComment) => {
         if (err) {
-          console.log("Error finding comment to edit", err);
+          req.flash("error", err.message);
+          res.redirect("/blogs/" + req.params.id);
         } else {
           res.render("comment/edit", {
             comment: foundComment,
@@ -82,17 +88,15 @@ router.get("/:comment_id/edit",middleware.checkCommentOwnership, (req, res) => {
 router.put("/:comment_id",middleware.checkCommentOwnership, (req, res) => {
   //updating comment with '/blogs/:id/comments/:comment_id' route data
   const updateComment = {
-    author: {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName
-    },
     text: req.body.commentText
   }
 
   Comment.findByIdAndUpdate(req.params.comment_id, updateComment, (err, updatingComment) => {
     if (err) {
-      console.log("Error updating comment", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
+      req.flash("success", "Comment updated!");
       res.redirect("/blogs/" + req.params.id);
     }
   });
@@ -102,8 +106,10 @@ router.put("/:comment_id",middleware.checkCommentOwnership, (req, res) => {
 router.delete("/:comment_id",middleware.checkCommentOwnership, (req, res) => {
   Comment.findByIdAndDelete(req.params.comment_id, (err, deletedComment) => {
     if (err) {
-      console.log("Error finding comment to delete", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
+      req.flash("success", "Comment Deleted!");
       res.redirect("/blogs/" + req.params.id);
     }
   });
