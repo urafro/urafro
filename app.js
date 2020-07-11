@@ -7,10 +7,11 @@ const express = require("express"),
     Blog = require("./routes/blog"),
     Comment = require("./routes/comment"),
     passport = require("passport"),
-    index = require("./routes/index");
+    index = require("./routes/index"),
     LocalStrategy = require("passport-local"),
     LocalStrategyMongoose = require("passport-local-mongoose"),
     User = require("./models/user"),
+    flash = require("connect-flash"),
     //figure out how to use moment js to change the date format in index.ejs
     moment = require('moment'),
     seedDB = require("./seeds"),
@@ -32,6 +33,8 @@ app.use(bodyParser.urlencoded({
 }));
 //methodOverride
 app.use(methodOverride("_method"));
+//Setting up flash messages
+app.use(flash());
 
 //Connecting to MongoDB
 mongoose.connect("mongodb://localhost:27017/blogApp", {
@@ -55,9 +58,11 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-//Declaring global user variable
+//Declaring global variables
 app.use((req, res, next) => {
     res.locals.currentUser = req.user;
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
     next();
 });
 
