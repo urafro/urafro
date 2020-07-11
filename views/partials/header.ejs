@@ -15,15 +15,17 @@
 </head>
 
 <body>
-    <div class="container flash">
-        <% if(success && success.length > 0) { %>
+    <% if(success.length > 0 || error.length > 0) { %>
+        <div class="container flash">
+            <% if(success && success.length > 0) { %>
             <div class="success-flash">
-                <h4 style="color: green;"><%= success %></h4>
+                <p><%= success %></<p>
             </div>
-        <% } %>
-        <% if( error && error.length > 0) { %>
+            <% } %>
+            <% if( error && error.length > 0) { %>
             <div class="error-flash">
-                <h4 style="color: red;"><%= error %></h4>
+                <p><%= error %></p>
             </div>
-        <% } %>
-    </div>
+            <% } %>
+        </div>
+    <% } %>

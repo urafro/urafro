@@ -68,6 +68,32 @@ a {
   -o-transition: color 0.2s;
 }
 
+/* ================= 
+    flash messages
+================== */
+.flash {
+  width: 100%;
+  height: 40px;
+  font-size: 90%;
+  font-weight: 400;
+}
+
+.success-flash,
+.error-flash {
+  padding: 10px;
+  width: 100%;
+}
+
+.success-flash {
+  background: rgba(22, 160, 133, .5);
+  color: rgb(97, 114, 110);
+}
+
+.error-flash {
+  background: rgba(255, 63, 52, .5);
+  color: rgb(97, 114, 110);
+}
+
 /* ============================================================= 
                           INDEX.EJS
 ============================================================== */
