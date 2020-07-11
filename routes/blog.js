@@ -9,7 +9,8 @@ const middleware = require("../middleware");
 router.get("/", (req, res) => {
   Blog.find({}, (err, foundBlogs) => {
     if (err) {
-      console.log("error finding blogs to display: ", err);
+      req.flash("error", err.message);
+      res.redirect("/");
     } else {
       res.render("blog/index", {
         foundBlogs: foundBlogs
@@ -71,8 +72,10 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
 
   Blog.create(newBlog, (err, createdBlog) => {
     if (err) {
-      console.log("Error creating new blog", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/new");
     } else {
+      req.flash("success", "Blog Successfully Published! 🎉")
       res.redirect("/blogs");
     }
   });
@@ -83,11 +86,13 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
 router.get("/:id", (req, res) => {
   Blog.find({}, (err, foundBlogs) => {
     if (err) {
-      console.log("Error finding blogs", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs");
     } else {
       Blog.findById(req.params.id).populate("comments").exec((err, foundBlog) => {
         if (err) {
-          console.log("Error finding specific blog to show", err);
+          req.flash("error", err.message);
+          res.redirect("/blogs");
         } else {
 
           //collecting blogs with similar tag to display in show route template
@@ -116,7 +121,8 @@ router.get("/:id", (req, res) => {
 router.get("/:id/edit",middleware.checkBlogOwnership, (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
-      console.log("Error finding blog to update", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs");
     } else {
       res.render("blog/edit", {
         blog: foundBlog
@@ -168,8 +174,10 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
   //updating blog with data from edit route template
   Blog.findByIdAndUpdate(req.params.id, updateBlog, (err, updatedBlog) => {
     if (err) {
-      console.log("Error updating blog", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
+      req.flash("success", "🚧✅ Blog Updated successfully! 🚧✅");
       res.redirect("/blogs/" + req.params.id);
     }
   });
@@ -179,9 +187,11 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
 router.delete("/:id",middleware.checkBlogOwnership, (req, res) => {
   Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
     if (err) {
-      console.log("Error deleting blog", err);
+      req.flash("error", err.message);
+      res.redirect("/blogs/" + req.params.id);
     } else {
       console.log(deletedBlog);
+      req.flash("success", "⛔️ Blog DELETED successfully! ⛔️")
       res.redirect("/blogs");
     }
   });
