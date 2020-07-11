@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const Blog = require("../models/blog");
-const middleware = require("../middleware");
 
 //================================ BLOG ROUTES ===============================
 
@@ -19,12 +18,12 @@ router.get("/", (req, res) => {
 });
 
 //Create Route - render new blog template
-router.get("/new",middleware.isLoggedIn, (req, res) => {
+router.get("/new",isLoggedIn, (req, res) => {
   res.render("blog/new");
 });
 
 //New Route - create new blog
-router.post("/",middleware.isLoggedIn, (req, res) => {
+router.post("/",isLoggedIn, (req, res) => {
 
   const newBlog = {
     tag: req.body.blog.tag,
@@ -113,7 +112,7 @@ router.get("/:id", (req, res) => {
 });
 
 //Edit Route - show edit blog template
-router.get("/:id/edit",middleware.checkBlogOwnership, (req, res) => {
+router.get("/:id/edit",checkBlogOwnership, (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if (err) {
       console.log("Error finding blog to update", err);
@@ -126,7 +125,7 @@ router.get("/:id/edit",middleware.checkBlogOwnership, (req, res) => {
 });
 
 //Update Route - apply blogs edits
-router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
+router.put("/:id",checkBlogOwnership, (req, res) => {
   const updateBlog = {
     tag: req.body.blog.tag,
     body: {
@@ -176,7 +175,7 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
 });
 
 //Destroy Route - delete blog with specific id
-router.delete("/:id",middleware.checkBlogOwnership, (req, res) => {
+router.delete("/:id",checkBlogOwnership, (req, res) => {
   Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
     if (err) {
       console.log("Error deleting blog", err);
@@ -186,5 +185,33 @@ router.delete("/:id",middleware.checkBlogOwnership, (req, res) => {
     }
   });
 });
+
+//Middleware to check blog ownership
+function checkBlogOwnership (req, res, next) {
+  if(req.isAuthenticated()) {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+      if(err) {
+        console.log("Error finding blog", err);
+      } else {
+        if(req.user._id.equals(foundBlog.author.id)) {
+          next();
+        } else {
+          res.send("You don't have authorization to do that!");
+        }
+      }
+    })
+  } else {  
+    res.send("You need to be logged in to do that")
+  }
+}
+
+//Middleware to check whether or not a use is logged in
+function isLoggedIn (req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  } else {
+    res.send("You need to be logged in to do that");
+  }
+}
 
 module.exports = router;

@@ -53,4 +53,13 @@ router.get("/logout", (req, res) => {
   res.redirect("/login");
 });
 
+//Middleware to check whether or not a user is logged in
+function isLoggedIn (req, res, next) {
+  if(req.isAuthenticated()) {
+    return next();
+  } else {
+    res.send("You need to be logged in to do that");
+  }
+}
+
 module.exports = router;
