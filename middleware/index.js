@@ -8,17 +8,20 @@ middlewareObj.checkBlogOwnership = function(req, res, next) {
   if (req.isAuthenticated()) {
     Blog.findById(req.params.id, (err, foundBlog) => {
       if (err) {
-        console.log("Error finding blog", err);
+        req.flash("error", err.message);
+        res.redirect("back");
       } else {
         if (req.user._id.equals(foundBlog.author.id)) {
           next();
         } else {
-          res.send("You don't have authorization to do that!");
+          req.flash("error", "You don't have authorization to do that!");
+          res.redirect("back");
         }
       }
     })
   } else {
-    res.send("You need to be logged in to do that")
+    req.flash("error", "You need to be logged in to do that");
+    res.redirect("/login");
   }
 }
 
@@ -27,7 +30,8 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
   if (req.isAuthenticated()) {
     Comment.findById(req.params.comment_id, (err, foundComment) => {
       if (err) {
-        console.log("Error finding comment", err);
+        req.flash("error", err.message);
+        res.redirect("back");
       } else {
         if (foundComment.author.id.equals(req.user._id)) {
           next();
@@ -35,7 +39,8 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
       }
     });
   } else {
-    res.send("You need to be logged in to do that!");
+    req.flash("error", "You need to be logged in to do that");
+    res.redirect("/login");
   }
 }
 
@@ -44,7 +49,8 @@ middlewareObj.isLoggedIn = function(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   } else {
-    res.send("You need to be logged in to do that");
+    req.flash("error", "You need to be logged in to do that");
+    res.redirect("/login");
   }
 }
 
