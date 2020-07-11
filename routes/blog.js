@@ -177,7 +177,7 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
       req.flash("error", err.message);
       res.redirect("/blogs/" + req.params.id);
     } else {
-      req.flash("success", "🚧✅ Blog Updated successfully! 🚧✅");
+      req.flash("success", "Blog Updated successfully! 🚧");
       res.redirect("/blogs/" + req.params.id);
     }
   });
