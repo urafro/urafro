@@ -24,10 +24,12 @@ router.post("/signup", (req, res) => {
     bio: req.body.bio
   }), req.body.password, (err, createdUser) => {
     if (err) {
-      console.log("Error creating new user", err);
+      req.flash("error", err.message);
+      res.redirect("/signup");
     } else {
       passport.authenticate("local")(req, res, () => {
         console.log(createdUser)
+        req.flash("success", "Welcome to F2F " + createdUser.username);
         res.redirect("/blogs");
       });
     }
@@ -50,6 +52,7 @@ router.post("/login", passport.authenticate("local", {
 //Logout route
 router.get("/logout", (req, res) => {
   req.logout();
+  req.flash("success", "See ya next time 👋🏽");
   res.redirect("/login");
 });
 

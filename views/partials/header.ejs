@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>THP blog</title>
-    
+    <!-- primary stylesheet -->
     <link rel="stylesheet" href="/resources/css/style.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -15,3 +15,15 @@
 </head>
 
 <body>
+    <div class="container flash">
+        <% if(success && success.length > 0) { %>
+            <div class="success-flash">
+                <h4 style="color: green;"><%= success %></h4>
+            </div>
+        <% } %>
+        <% if( error && error.length > 0) { %>
+            <div class="error-flash">
+                <h4 style="color: red;"><%= error %></h4>
+            </div>
+        <% } %>
+    </div>
