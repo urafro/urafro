@@ -31,9 +31,7 @@
       <nav role="navigation">
 
         <ul>
-          <a href="/blogs">
-            <li><i class="fas fa-home"></i></li>
-          </a>
+          
           <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
           <!-- user dashboard link -->
           <li><a href="#"><i class="fas fa-user-cog"></i></a>
