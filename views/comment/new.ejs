@@ -6,52 +6,33 @@
   <div class="hero-2"
     style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
 
-    <!-- create a conditional that picks which option to show depending on which user is logged in [either the h1 or nav] -->
-    <!-- <h1>
-      <a href="/">My Life</a>
-    </h1> -->
+  <div class="l-container">
 
-    <nav role="navigation">
+    <span class="menu-icon" onclick="openMenu()">&#9776;</span>
 
-      <ul>
-        <a href="/blogs">
-          <li><i class="fas fa-home"></i></li>
-        </a>
-        <!-- user dashboard link -->
-        <li><a href="#"><i class="fas fa-user-cog"></i></a>
+  </div>
 
-          <ul class="dropdown">
+  <div class="menu-container" id="navbar">
 
-            <!-- link to blog insights-->
-            <!-- <a href="#"><i class="far fa-chart-bar"></i></a> -->
+    <span class="closebtn" onclick="closeMenu()">&times</span>
 
-            <a href="/blogs/new">
-              <li><i class="far fa-file"></i></li>
-            </a>
-
-            <a href="/blogs/<%= blog._id %>/edit">
-              <li><i class="far fa-edit"></i></li>
-            </a>
-
-            <!-- <a href="#">
-                link to blog resources
-              <li><i class="fas fa-link"></i></li>
-            </a> -->
-
-            <!-- blog delete button-->
-            <li class="delete">
-              <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
-                <button><i class="far fa-trash-alt"></i></button>
-              </form>
-            </li>
-
-          </ul>
-        </li>
-
-        <!-- reader-mode trigger -->
-        <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
-      </ul>
-    </nav>
+    <div class="menu-content">
+      <a href="/">Home</a>
+      <!-- will create an about page with mission statement and what-not -->
+      <a href="#">About</a>
+      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+      <a href="#">Projects</a>
+      <!-- create a contact us panel with socials -->
+      <a href="#">Contact Us</a>
+      <% if (!currentUser) { %>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+      <% } %>
+      <% if (currentUser) { %>
+      <a href="/logout">Logout</a>
+      <% } %>
+    </div>
+  </div>
 
 
     <div class="header-2">
@@ -76,16 +57,11 @@
   </div>
 
   <div class="showcase-2">
-    <div class="group">
-      <div class="right-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
 
     <div class="show-wrapper">
 
       <div class="comment">
-        <div class="section zero">
+        <div class="section zero comment">
 
           <div class="content-inputs">
 

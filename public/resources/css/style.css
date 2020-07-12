@@ -628,8 +628,8 @@ a {
 /* Index footer */
 .showcase footer,
 .showcase-2 footer {
-  height: 140px;
-  padding: 60px;
+  height: 120px;
+  padding: 50px;
   padding-left: 0;
   background: rgba(235, 31, 116, 0.5);
   color: #555;
@@ -937,6 +937,10 @@ textarea {
 .show-content {
   width: 90%;
   margin: 0 auto;
+}
+
+.comment .content-inputs {
+  margin-top: 20vh;
 }
 
 .section-one {
