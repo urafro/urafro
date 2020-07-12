@@ -115,7 +115,7 @@ a {
 }
 
 .menu-container {
-  height: 100%;
+  height: 0%;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -123,6 +123,11 @@ a {
   z-index: 1;
   background: rgba(0, 0, 0, .8);
   overflow: hidden;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
 }
 
 .menu-content {
@@ -145,6 +150,21 @@ a {
 .menu-content a:active,
 .menu-content a:hover {
   background-color: rgba(197, 49, 69, 0.3);
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.menu-container .closebtn {
+  position: absolute;
+  top: 36px;
+  right: 48px;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
 }
 
 /* ============================================================= 
