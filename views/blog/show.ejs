@@ -2,16 +2,31 @@
 
 <div class="container">
 
+  <div class="l-container">
+
+    <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+
+  </div>
+
+  <div class="menu-container" id="navbar">
+
+    <span class="closebtn" onclick="closeMenu()">&times</span>
+
+    <div class="menu-content">
+      <a href="/blogs">Home</a>
+      <!-- will create an about page with mission statement and what-not -->
+      <a href="#">About</a>
+      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+      <a href="#">Projects</a>
+      <!-- create a contact us panel with socials -->
+      <a href="#">Contact Us</a>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+    </div>
+  </div>
+
   <!-- declare show hero background image as inline css to access ejs data -->
   <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
-    
-    <% if(!currentUser || currentUser.username !== blog.author.username) { %>
-      <h1>
-        <a href="/">My Life</a>
-      </h1>
-    <% } %>
-
-    <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
       
       <nav role="navigation">
 
@@ -19,6 +34,7 @@
           <a href="/blogs">
             <li><i class="fas fa-home"></i></li>
           </a>
+          <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
           <!-- user dashboard link -->
           <li><a href="#"><i class="fas fa-user-cog"></i></a>
 
@@ -49,12 +65,12 @@
 
             </ul>
           </li>
+          <% } %>
 
           <!-- reader-mode trigger -->
           <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
         </ul>
       </nav>
-    <% } %>
 
     <div class="header-2">
       <h2><%= blog.body.header.mainHeading %></h2>
@@ -78,11 +94,6 @@
   </div>
 
   <div class="showcase-2">
-    <div class="group">
-      <div class="right-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
 
     <div class="show-wrapper">
       <div class="show-heading">
@@ -355,5 +366,15 @@
 
 </div>
 
+
+<script>
+  function closeMenu() {
+    document.getElementById("navbar").style.height = "0%";
+  }
+
+  function openMenu() {
+    document.getElementById("navbar").style.height = "100%";
+  }
+</script>
 
 <% include ../partials/footer %>
