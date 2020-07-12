@@ -68,6 +68,16 @@ a {
   -o-transition: color 0.2s;
 }
 
+.fa-github:active,
+.fa-github:hover {
+  color: #333;
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+}
+
 /* ================= 
     flash messages
 ================== */
@@ -143,7 +153,7 @@ a {
 
 .menu-content a:active,
 .menu-content a:hover {
-  background-color: rgba(197, 49, 69, 0.3);
+  background-color: rgba(235, 31, 116, 0.5);
   transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
@@ -169,6 +179,43 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.showcase-l {
+  padding: 0;
+  margin-top: 0;
+  flex-basis: 100%;
+  background: rgba(235, 31, 116, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding-left: 50px;
+}
+
+.showcase-l span {
+  font-size: 90%;
+}
+
+.showcase-l h1 {
+  font-weight: 300;
+  padding: 15px 0px;
+}
+
+.showcase-l p {
+  font-size: 90%;
+  width: 60%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.showcase-l a:link,
+.showcase-l a:visited {
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+  font-size: 170%;
 }
 
 /* ============================================================= 
@@ -347,8 +394,7 @@ a {
 
 /**************** Showcase section ********************/
 .showcase,
-.showcase-2,
-.showcase-l {
+.showcase-2 {
   flex-basis: 100%;
   margin-top: 25px;
 }
@@ -580,7 +626,7 @@ a {
   height: 120px;
   padding: 50px;
   padding-left: 0;
-  background-color: rgba(255, 63, 52, .5);
+  background: rgba(235, 31, 116, 0.5);
   color: #555;
   font-size: 80%;
 }
