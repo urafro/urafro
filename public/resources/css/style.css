@@ -340,6 +340,7 @@ a {
 .showcase,
 .showcase-2 {
   flex-basis: 100%;
+  margin-top: 25px;
 }
 
 /* hamburger menu icon */
