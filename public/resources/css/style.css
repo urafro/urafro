@@ -95,6 +95,59 @@ a {
 }
 
 /* ============================================================= 
+                        LANDING PAGE
+============================================================== */
+
+.l-container .image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.l-container .menu-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  left: 42px;
+  top: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: rgba(0, 0, 0, .8);
+  overflow: hidden;
+}
+
+.menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-content a:link,
+.menu-content a:visited {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+}
+
+.menu-content a:active,
+.menu-content a:hover {
+  background-color: rgba(197, 49, 69, 0.3);
+}
+
+/* ============================================================= 
                           INDEX.EJS
 ============================================================== */
 
