@@ -207,9 +207,9 @@ a {
 }
 
 .hero-2 nav {
-  align-self: flex-start;
-  margin-top: 50px;
-  padding-left: 40px;
+  position: relative;
+  top: 25px;
+  left: 100%;
 }
 
 .hero-2 a {
