@@ -98,12 +98,6 @@ a {
                         LANDING PAGE
 ============================================================== */
 
-.l-container .image {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
-
 .l-container .menu-icon {
   position: fixed;
   color: #fff;
@@ -167,19 +161,25 @@ a {
   cursor: pointer;
 }
 
+.landing-section {
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://images.unsplash.com/photo-1509099863731-ef4bff19e808?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ============================================================= 
                           INDEX.EJS
 ============================================================== */
 
 /* Hero section */
 .hero,
-.hero-2 {
+.hero-2,
+.hero-l {
   flex-basis: 100%;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("https://images.unsplash.com/photo-1586182987320-4f376d39d787?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   width: 100vh;
   align-self: flex-start;
@@ -188,6 +188,15 @@ a {
   position: sticky;
   top: 0;
   color: #fff;
+}
+
+.hero,
+.hero-2 {
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://images.unsplash.com/photo-1586182987320-4f376d39d787?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero h1 {
@@ -338,7 +347,8 @@ a {
 
 /**************** Showcase section ********************/
 .showcase,
-.showcase-2 {
+.showcase-2,
+.showcase-l {
   flex-basis: 100%;
   margin-top: 25px;
 }
