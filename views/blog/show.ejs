@@ -20,8 +20,13 @@
       <a href="#">Projects</a>
       <!-- create a contact us panel with socials -->
       <a href="#">Contact Us</a>
+      <% if (!currentUser) { %>
       <a href="/signup">Sign Up</a>
       <a href="/login">Login</a>
+      <% } %>
+      <% if (currentUser) { %>
+      <a href="/logout">Logout</a>
+      <% } %>
     </div>
   </div>
 
