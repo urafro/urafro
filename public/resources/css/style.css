@@ -268,6 +268,11 @@ a {
   left: 100%;
 }
 
+.hero p a:link, 
+.hero p a:visited {
+  text-decoration: underline;
+}
+
 .hero-2 a {
   text-decoration: none;
 }
@@ -623,8 +628,8 @@ a {
 /* Index footer */
 .showcase footer,
 .showcase-2 footer {
-  height: 120px;
-  padding: 50px;
+  height: 140px;
+  padding: 60px;
   padding-left: 0;
   background: rgba(235, 31, 116, 0.5);
   color: #555;

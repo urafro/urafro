@@ -3,17 +3,35 @@
 <div class="container">
 
   <div class="hero">
-    <h1>
-      <a href="/blogs">My Life</a>
-    </h1>
+    <div class="l-container">
 
-    <!-- header image will be replaced by signed in user's image -->
+      <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+
+    </div>
+
+    <div class="menu-container" id="navbar">
+
+      <span class="closebtn" onclick="closeMenu()">&times</span>
+
+      <div class="menu-content">
+        <a href="/blogs">Home</a>
+        <!-- will create an about page with mission statement and what-not -->
+        <a href="#">About</a>
+        <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+        <a href="#">Projects</a>
+        <!-- create a contact us panel with socials -->
+        <a href="#">Contact Us</a>
+        <a href="/signup">Sign Up</a>
+        <a href="/login">Login</a>
+      </div>
+    </div>
+
     <div class="header">
       <a href="#">
         <img src="https://i.imgur.com/f89JM9hm.png" alt="author image">
       </a>
-      <h2>Hello.</h2>
-      <p>My name is Dan and I write passionately about life, music and web development.</p>
+      <h2>Join.</h2>
+      <p>Even finding worthy ideas to support can be a tedious task. Add your voice to our chorus!</p>
       <a href="#" class="hero-btn hero-btn-full">
         <i class="fab fa-instagram"></i>
       </a>
@@ -24,12 +42,6 @@
   </div>
 
   <div class="showcase">
-
-    <div class="group">
-      <div class="right-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
 
     <div class="show-wrapper">
 
