@@ -43,16 +43,14 @@ app.use(flash());
     useUnifiedTopology: true
 }); */
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog";
-const client = new MongoClient(uri, {
+mongoose.connect("mongodb+srv://Dan:eqma@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority", {
     useNewUrlParser: true,
+    useCreateIndex: true,
     useUnifiedTopology: true
-});
-client.connect(err => {
-    const collection = client.db("test").collection("devices");
-    // perform actions on the collection object
-    client.close();
+}).then(() => {
+    console.log("Connected to DB!");
+}).catch(err => {
+    console.log("ERROR", err.message);
 });
 
 
