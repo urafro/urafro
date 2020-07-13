@@ -4,9 +4,9 @@ const passport = require("passport");
 const User = require("../models/user");
 
 //Initial Route - Home ROute
-router.get("/", (req, res) => {
+router.get("/blogs", (req, res) => {
   // will come back to style landing page
-  res.render("landing");
+  res.render("blog/index");
 });
 
 //============================== Auth Routes =========================
