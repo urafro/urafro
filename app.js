@@ -37,10 +37,11 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 //Connecting to MongoDB
-mongoose.connect("mongodb://localhost:27017/blogApp", {
+const url = "mongodb + srv: //dan:dan3%2321q@yelpclone-ipcpx.mongodb.net/blog?retryWrites=true&w=majority";
+mongoose.connect(url, {
+    useFindAndModify: false,
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
+    useUnifiedTopology: true
 });
 
 //Express-session config
