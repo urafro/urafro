@@ -37,8 +37,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 //Connecting to MongoDB
-const url = "mongodb + srv: //dan:dan3%2321q@yelpclone-ipcpx.mongodb.net/blog?retryWrites=true&w=majority";
-mongoose.connect(url, {
+mongoose.connect("mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority", {
     useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
