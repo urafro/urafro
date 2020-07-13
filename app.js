@@ -14,8 +14,7 @@ const express = require("express"),
     flash = require("connect-flash"),
     //figure out how to use moment js to change the date format in index.ejs
     moment = require('moment'),
-    seedDB = require("./seeds"),
-    port = 8080;
+    seedDB = require("./seeds");
 
 const app = express();
 
@@ -36,14 +35,7 @@ app.use(methodOverride("_method"));
 //Setting up flash messages
 app.use(flash());
 
-//Connecting to MongoDB
-/* mongoose.connect("mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog", {
-    useFindAndModify: false,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}); */
-
-mongoose.connect("mongodb+srv://Dan:eqma@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASEURL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
