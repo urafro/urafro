@@ -70,5 +70,7 @@ app.use("/blogs", Blog);
 app.use("/blogs/:id/comments", Comment);
 app.use("/", index);
 
-//Listening to routes on the local server
-app.listen(port, () => console.log("APP LISTENING ON PORT " + port));
+//Listening to routes on heroku server
+app.listen(process.env.PORT || 3000, process.env.IP, () => {
+    console.log("SERVER STARTED!!");
+});
