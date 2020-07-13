@@ -44,7 +44,7 @@ app.use(flash());
 }); */
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority";
+const uri = "mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog";
 const client = new MongoClient(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
