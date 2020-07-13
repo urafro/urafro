@@ -37,11 +37,24 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 //Connecting to MongoDB
-mongoose.connect("mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority", {
+/* mongoose.connect("mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog", {
     useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
+}); */
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority";
+const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 });
+client.connect(err => {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    client.close();
+});
+
 
 //Express-session config
 app.use(session({
