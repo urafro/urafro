@@ -732,6 +732,10 @@ a {
   background-color: rgba(235, 31, 116, 0.5);
 }
 
+.last {
+  margin-bottom: 50px;
+}
+
 .s0,
 .s1,
 .s2,
