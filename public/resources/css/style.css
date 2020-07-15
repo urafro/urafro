@@ -1,4 +1,4 @@
-/* ===========================================
+/* /* ===========================================
               UNIVERSAL STYLES
 =============================================*/
 * {
@@ -26,6 +26,7 @@ html {
 
 .section {
   display: flex;
+  align-items: center;
 }
 
 .left {
@@ -680,10 +681,6 @@ a {
   padding: 0 20px;
 }
 
-.row div:last-child {
-  padding-bottom: 20px;
-}
-
 .content-boxes {
   width: 70%;
   margin: 0 auto;
@@ -719,6 +716,39 @@ a {
 
 .content-boxes input,label {
   display: block;
+}
+
+/* ================
+  new route images
+================= */
+
+.s0,
+.s1,
+.s2,
+.s3,
+.s4 {
+  padding-left: 30px;
+}
+
+.s0 img,
+.s1 img,
+.s2 img,
+.s3 img,
+.s4 img {
+  padding: 30px 0 20px 0px;
+}
+
+.s1 img {
+  height: 500px;
+}
+
+.s2 img {
+  height: 350px;
+}
+
+.s4 img {
+  height: 400px;
+  margin-left: 100px;
 }
 
 /******************** content-inputs ********************/
