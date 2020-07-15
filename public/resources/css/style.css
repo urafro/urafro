@@ -880,7 +880,9 @@ textarea {
 ================================================ */
 
 .showcase-2 a:link,
-.showcase-2 a:visited {
+.showcase-2 a:visited,
+div.content-text p a:link,
+div.content-text p a:visited {
   color: rgb(158, 154, 154);
   text-decoration: underline;
 }
