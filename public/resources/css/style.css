@@ -854,6 +854,11 @@ textarea {
   resize: vertical;
 }
 
+.new-comment {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
 /********************** content-text ************************/
 .content-text h2 {
   font-weight: 300;
