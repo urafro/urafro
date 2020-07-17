@@ -201,10 +201,11 @@ a {
 .showcase-l h1 {
   font-weight: 300;
   padding: 15px 0px;
+  font-size: 140%;
 }
 
 .showcase-l p {
-  font-size: 90%;
+  font-size: 80%;
   width: 60%;
   line-height: 150%;
   letter-spacing: 1px;
