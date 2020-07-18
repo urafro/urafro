@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router({mergeParams: true});
 const Blog = require("../models/blog");
 const Comment = require("../models/comment");
+const Reply = require("../models/reply");
 const middleware = require("../middleware");
 
 //================== Comment Routes ===================
@@ -115,7 +116,7 @@ router.delete("/:comment_id",middleware.checkCommentOwnership, (req, res) => {
   });
 });
 
-//Comment Replies - New reply
+//Comment Replies - Serve new reply form
 router.get("/:comment_id/replies/new", (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if(err) {
@@ -132,6 +133,41 @@ router.get("/:comment_id/replies/new", (req, res) => {
         }
       });
     }
+  });
+});
+
+//Comment Replies - Create reply with '/replies/new' form data
+router.post("/:comment_id/replies", (req, res) => {
+  Comment.findById(req.params.comment_id, (err, foundComment) => {
+    if(err) {
+      console.log("Error finding comment to reply to", err);
+    } else {
+
+      const newReply = {
+        author: {
+          id: req.user._id,
+          username: req.user.username 
+        },
+        avatarUrl: req.user.avatarUrl,
+        text: req.body.text
+      }
+
+      Reply.create(newReply, (err, reply) => {
+        if(err) {
+          console.log("error creating a reply to comment", err.message);
+        } else {
+          foundComment.replies.push(reply);
+          foundComment.save();
+          console.log("===============");
+          console.log(reply);
+          console.log("===============");
+          console.log(foundComment);
+
+          res.redirect("/blogs/" + req.params.id);
+        }
+      });
+
+    };
   });
 });
 

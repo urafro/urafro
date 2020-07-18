@@ -9,7 +9,11 @@ let CommentSchema = new mongoose.Schema({
     username: String,
     avatarUrl: String
   },
-  text: String
+  text: String,
+  replies: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Reply"
+  }]
 });
 
 module.exports = mongoose.model("Comment", CommentSchema);
