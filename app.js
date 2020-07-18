@@ -46,7 +46,8 @@ app.use(flash());
 mongoose.connect("mongodb+srv://Dan:eqma@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }).then(() => {
     console.log("Connected to DB!");
 }).catch(err => {
