@@ -1238,8 +1238,8 @@ div.content-text p a:visited {
  =======================*/
 .comments-container {
   background: rgba(218, 223, 225, .3);
-  margin: 60px -50px;
-  width: 768px;
+  margin: 60px -100px;
+  width: 680px;
   padding: 0 5px;
   padding-bottom: 50px;
   border-radius: 5px;
@@ -1396,8 +1396,9 @@ div.content-text p a:visited {
  * Comments List
  ---------------------------*/
 .comments-list .comment-box {
-  width: 680px;
+  width: 580px;
   float: right;
+  /* right: 100px; */
   position: relative;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -1425,7 +1426,7 @@ div.content-text p a:visited {
 }
 
 .reply-list .comment-box {
-  width: 610px;
+  width: 520px;
 }
 
 .comment-box .comment-head {
