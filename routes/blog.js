@@ -89,7 +89,16 @@ router.get("/:id", (req, res) => {
       req.flash("error", err.message);
       res.redirect("/blogs");
     } else {
-      Blog.findById(req.params.id).populate("comments").exec((err, foundBlog) => {
+      Blog.findById(req.params.id).populate([
+        {
+          path: "comments",
+          model: "Comment",
+          populate: {
+            path: "replies",
+            model: "Reply"
+          }
+        }
+    ]).exec((err, foundBlog) => {
         if (err) {
           req.flash("error", err.message);
           res.redirect("/blogs");
