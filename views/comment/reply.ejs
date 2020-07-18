@@ -1,0 +1,102 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+  <!-- declare show hero background image as inline css to access ejs data -->
+  <div class="hero-2"
+    style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
+
+    <div class="l-container">
+
+      <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+
+    </div>
+
+    <div class="menu-container" id="navbar">
+
+      <span class="closebtn" onclick="closeMenu()">&times</span>
+
+      <div class="menu-content">
+        <a href="/blogs/<%= blog._id %>">Cancel</a>
+        <!-- will create an about page with mission statement and what-not -->
+        <a href="#">About</a>
+        <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+        <a href="#">Projects</a>
+        <!-- create a contact us panel with socials -->
+        <a href="#">Contact Us</a>
+        <% if (!currentUser) { %>
+        <a href="/signup">Sign Up</a>
+        <a href="/login">Login</a>
+        <% } %>
+        <% if (currentUser) { %>
+        <a href="/logout">Logout</a>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="header-2">
+      <h2><%= blog.body.header.mainHeading %></h2>
+
+      <div class="author-card">
+        <div class="card-image">
+          <!-- generic card image will be replaced by user image from the user schema -->
+          <img
+            src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4"
+            alt="author image">
+        </div>
+
+        <div class="card-text">
+          <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
+          <h3><a href="#">Tinashe Dan</a></h3>
+          <p><%= blog.createdAt.toLocaleDateString() %></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="showcase-2">
+
+    <div class="show-wrapper">
+
+      <div class="comment">
+        <div class="section zero comment">
+
+          <div class="content-inputs">
+
+            <h2>Comment</h2>
+
+            <form action="/blogs/<%= blog.id %>/comments/<%= comment._id %>/replies" method="POST">
+
+              <div class="box-content">
+
+                <label for="commentText">Comment*</label>
+
+                <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="reply to > <%= comment.text %>"
+                  required></textarea>
+
+                <input type="submit" value="say it">
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>
+        Copyright &copy; <a href="#q">THP</a>. Inspired by <a href="http://template-my-life.webflow.io/"
+          target="_blank"> Webflow </a>
+      </p>
+    </footer>
+  </div>
+
+</div>
+
+</div>
+
+
+<% include ../partials/footer %>

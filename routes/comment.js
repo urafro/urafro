@@ -115,4 +115,24 @@ router.delete("/:comment_id",middleware.checkCommentOwnership, (req, res) => {
   });
 });
 
+//Comment Replies - New reply
+router.get("/:comment_id/replies/new", (req, res) => {
+  Blog.findById(req.params.id, (err, foundBlog) => {
+    if(err) {
+      console.log("Error finding blog to reply comments on", err);
+    } else {
+      Comment.findById(req.params.comment_id, (err, foundComment) => {
+        if(err) {
+          console.log("Error finding comment to reply to", err);
+        } else {
+          res.render("comment/reply", {
+            blog: foundBlog,
+            comment: foundComment
+          });
+        }
+      });
+    }
+  });
+});
+
 module.exports = router;
