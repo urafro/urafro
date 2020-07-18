@@ -212,27 +212,25 @@
                 <!-- COMMENT REPLIES -->
                 <% if(comment.replies.length > 0) { %>
                   <% comment.replies.forEach((reply) => { %>
-                    <!-- <% console.log(reply) %> -->
+                    <% console.log(reply) %>
                     <ul class="comments-list reply-list">
                       <li>
                         <!-- Avatar assigned to logged in user pic-->
                         <div class="comment-avatar">
-                          <img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt="">
+                          <img src="<%= reply.author.avatarUrl %>" alt="replying author's image">
                         </div>
 
                         <!-- Comment Text -->
                         <div class="comment-box">
                           <div class="comment-head">
                             <h6 class="comment-name">
-                              <a href="http://creaticode.com/blog">Lorena Rojero</a>
+                              <a href="http://creaticode.com/blog"><%= reply.author.username %></a>
                             </h6>
                             <span>2 mins ago</span>
                             <i class="fa fa-heart"></i>
                           </div>
                           <div class="comment-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure
-                            laudantium
-                            vitae, praesentium optio, sapiente distinctio illo?
+                            <%= reply.text %> 
                           </div>
                         </div>
                       </li>

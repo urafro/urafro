@@ -146,9 +146,9 @@ router.post("/:comment_id/replies", (req, res) => {
       const newReply = {
         author: {
           id: req.user._id,
-          username: req.user.username 
+          username: req.user.username,
+          avatarUrl: req.user.avatarUrl
         },
-        avatarUrl: req.user.avatarUrl,
         text: req.body.text
       }
 
