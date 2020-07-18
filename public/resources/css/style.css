@@ -775,6 +775,7 @@ a {
 .content-inputs h2 {
   padding: 20px;
   text-align: center;
+  font-size: 120%;
 }
 
 .content-inputs .left, .right {
@@ -847,6 +848,9 @@ textarea {
   resize: vertical;
 }
 
+/* ==============================
+  styles for new comment div only
+================================ */
 .new-comment {
   margin-bottom: 50px;
   padding-bottom: 20px;
@@ -855,12 +859,13 @@ textarea {
 /********************** content-text ************************/
 .content-text h2 {
   font-weight: 300;
-  font-size: 185%;
+  font-size: 120%;
   margin-top: 30px;
 }
 
 .content-text p {
   margin-top: 20px;
+  font-size: 80%;
   line-height: 135%;
 }
 
