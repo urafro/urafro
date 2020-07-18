@@ -990,7 +990,7 @@ div.content-text p a:visited {
 
 .show-content p:last-of-type {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 25px;
 }
 
 .comment .content-inputs {
