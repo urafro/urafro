@@ -159,10 +159,6 @@ router.post("/:comment_id/replies",middleware.isLoggedIn, (req, res) => {
         } else {
           foundComment.replies.push(reply);
           foundComment.save();
-          console.log("===============");
-          console.log(reply);
-          console.log("===============");
-          console.log(foundComment);
 
           res.redirect("/blogs/" + req.params.id);
         }
