@@ -4,6 +4,7 @@ const Blog = require("../models/blog");
 const Comment = require("../models/comment");
 const Reply = require("../models/reply");
 const middleware = require("../middleware");
+const middlewareObj = require("../middleware");
 
 //================== Comment Routes ===================
 //New Comment Route - render new comment template
@@ -117,7 +118,7 @@ router.delete("/:comment_id",middleware.checkCommentOwnership, (req, res) => {
 });
 
 //Comment Replies - Serve new reply form
-router.get("/:comment_id/replies/new", (req, res) => {
+router.get("/:comment_id/replies/new",middleware.isLoggedIn, (req, res) => {
   Blog.findById(req.params.id, (err, foundBlog) => {
     if(err) {
       console.log("Error finding blog to reply comments on", err);
@@ -137,7 +138,7 @@ router.get("/:comment_id/replies/new", (req, res) => {
 });
 
 //Comment Replies - Create reply with '/replies/new' form data
-router.post("/:comment_id/replies", (req, res) => {
+router.post("/:comment_id/replies",middleware.isLoggedIn, (req, res) => {
   Comment.findById(req.params.comment_id, (err, foundComment) => {
     if(err) {
       console.log("Error finding comment to reply to", err);
