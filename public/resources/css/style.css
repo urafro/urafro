@@ -1359,8 +1359,8 @@ div.content-text p a:visited {
  * Avatar
  ---------------------------*/
 .comments-list .comment-avatar {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   position: relative;
   z-index: 99;
   float: left;
@@ -1426,7 +1426,7 @@ div.content-text p a:visited {
 }
 
 .reply-list .comment-box {
-  width: 520px;
+  width: 500px;
 }
 
 .comment-box .comment-head {
