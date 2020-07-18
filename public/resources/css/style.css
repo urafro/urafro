@@ -413,7 +413,7 @@ a {
 .showcase-box {
   position: relative;
   width: 590px;
-  height: 250px;
+  height: 200px;
   margin-top: 10px;
   overflow: hidden;
 }
@@ -562,7 +562,7 @@ a {
 }
 
 .showcase-text h2 {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   width: 85%;
 }
 
