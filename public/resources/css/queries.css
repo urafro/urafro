@@ -272,4 +272,48 @@
     margin-bottom: 10px;
   }
 
+  /* =================== 
+  Show-backlinks section 
+  ==================== */
+
+  div.show-backlinks h3 {
+    font-size: 100%;
+  }
+
+  div.show-backlinks p {
+    font-size: 80%;
+  }
+
+  div.show-backlinks p a {
+    font-size: 100%;
+  }
+
+  div.backlinks-header a img {
+    height: 80px;
+  }
+
+  div.tag-links a:link,
+  div.tag-links a:visited {
+    bottom: 10px;
+    right: 5px;
+    font-size: 60%;
+    padding: 3px 12px;
+  }
+
+  div.backlinks-body h4 {
+    width: 90%;
+    margin-bottom: 5px;
+    font-size: 80%;
+  }
+
+  div.backlinks-body p {
+    margin-bottom: 5px;
+    font-size: 50%;
+    width: 100%;
+  }
+
+  div.backlinks-body a {
+    font-size: 60%;
+    margin-left: 2px;
+  }
 }
