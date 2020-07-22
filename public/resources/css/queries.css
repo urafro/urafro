@@ -112,4 +112,84 @@
 }
 
 /* Small Phones from 0p to 480p */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+  /* Hero section */
+  .hero,
+  .hero-2,
+  .hero-l {
+    display: none;
+  }
+
+  div.l-container .menu-icon {
+    color: rgb(156, 152, 152);
+    font-size: 20px;
+    left: 0;
+    top: 40px;
+    padding: 0px 5px;
+    background: rgba(235, 31, 116, 0.3);
+  }
+
+  /* showcase styles */
+  div.showcase-boxes {
+    margin-top: 40px;
+  }
+
+  div.showcase-box {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  div.card-image a img {
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
+
+  div.card-text {
+    font-weight: 300;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 3px;
+  }
+
+  div.card-text h3 {
+    font-size: 65%;
+    margin-bottom: 0;
+  }
+
+  div.card-text p {
+    font-size: 60%;
+  }
+
+  div.card-tag {
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+
+  div.card-tag a:link,
+  div.card-tag a:visited {
+    font-size: 65%;
+    padding: 5px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  div.showcase-text {
+    width: 90%;
+    font-size: 70%;
+  }
+
+  div.showcase-text h2 {
+    margin-bottom: 0px;
+    width: 95%;
+  }
+}
