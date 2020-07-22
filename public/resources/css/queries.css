@@ -113,6 +113,11 @@
 
 /* Small Phones from 0p to 480p */
 @media only screen and (max-width: 480px) {
+
+  /*================
+  index route styles
+  ================ */
+
   /* Hero section */
   .hero,
   .hero-2,
@@ -209,4 +214,62 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  /* =================
+    show route styles
+  ================== */
+
+  div.show-wrapper {
+    width: 90%;
+  }
+
+  div.show-heading {
+    width: 85%;
+  }
+
+  div.main-heading h2 {
+    font-size: 105%;
+  }
+
+  div.main-heading h2:after,
+  div.intro-paragraph:after {
+    width: 100px;
+  }
+
+  div.intro-paragraph {
+    line-height: 105%;
+  }
+
+  div.show-content {
+    width: 98%;
+  }
+
+  div.section-two h3 {
+    font-size: 92%;
+  }
+
+  div.section-two p:nth-of-type(2) {
+    border-left: 2px solid rgb(186, 188, 189);
+    padding: 10px;
+    line-height: 140%;
+    word-spacing: 2.5px;
+  }
+
+  div.section-three h4 {
+    font-size: 88%;
+  }
+
+  div.section-three h5 {
+    font-size: 80%;
+  }
+
+  div.section-three img {
+    height: 150px;
+  }
+
+  div.section-four h6 {
+    font-size: 78%;
+    margin-bottom: 10px;
+  }
+
 }

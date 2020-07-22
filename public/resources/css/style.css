@@ -403,14 +403,15 @@ a {
 }
 
 /* hamburger menu icon */
-.showcase .group .right-menu,
+/* ========= code to be deleted | obsolete =========== */
+/* .showcase .group .right-menu,
 .showcase-2 .group .right-menu {
   float: right;
   margin-top: 50px;
   padding-right: 40px;
   font-weight: 400;
   font-size: 140%;
-}
+} */
 
 .showcase-boxes {
   display: grid;
@@ -997,11 +998,6 @@ div.content-text p a:visited {
 
 .show-content p {
   font-size: 80%;
-}
-
-.show-content p:last-of-type {
-  margin-bottom: 0;
-  padding-bottom: 25px;
 }
 
 .comment .content-inputs {
