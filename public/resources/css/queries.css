@@ -192,4 +192,21 @@
     margin-bottom: 0px;
     width: 95%;
   }
+
+  /* Index footer */
+  div.showcase footer,
+  div.showcase-2 footer {
+    height: 120px;
+    width: 100%;
+    font-size: 70%;
+    padding: 0;
+  }
+
+  div.showcase footer p,
+  div.showcase-2 footer p {
+    width: 80%;
+    padding-top: 45px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
