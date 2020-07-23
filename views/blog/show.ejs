@@ -178,21 +178,29 @@
 
               </li>
 
-              <li class="comment user-comment">
+              <% if(comment.replies.length > 0) { %>
 
-                <div class="info">
-                  <a href="#">Bradley Jones</a>
-                  <span>1 hour ago</span>
-                </div>
+                <% comment.replies.forEach((reply) => { %>
+                  <li class="comment user-comment">
 
-                <a class="avatar" href="#">
-                  <img src="https://i.pravatar.cc/" width="35" alt="Profile Avatar" title="Bradley Jones" />
-                </a>
+                    <div class="info">
+                      <a href="#"><%= reply.author.username %></a>
+                      <span>1 hour ago</span>
+                    </div>
 
-                <p>Suspendisse gravida sem sit amet molestie portitor?</p>
+                    <a class="avatar" href="#">
+                      <img src="<%= reply.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                    </a>
 
-              </li>
-              
+                    <p>
+                      <%= reply.text %>
+                    </p>
+
+                  </li>
+                <% }) %>
+
+              <% } %>
+
             <% }) %>
 
             <li class="write-new">
