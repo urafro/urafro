@@ -114,6 +114,38 @@
 /* Small Phones from 0p to 480p */
 @media only screen and (max-width: 480px) {
 
+  /* ================
+  landing page styles
+  ================= */
+
+  .showcase-l {
+    margin: 0 auto;
+  }
+
+  div.showcase-l span {
+    font-size: 70%;
+  }
+
+  div.showcase-l h1 {
+    font-weight: 300;
+    padding: 15px 0px;
+    font-size: 90%;
+  }
+
+  div.showcase-l p {
+    font-size: 55%;
+    width: 98%;
+    line-height: 150%;
+  }
+
+  div.showcase-l a:link,
+  div.showcase-l a:visited {
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    font-size: 110%;
+  }
+
   /*================
   index route styles
   ================ */
