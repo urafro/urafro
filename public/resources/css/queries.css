@@ -118,10 +118,6 @@
   landing page styles
   ================= */
 
-  .showcase-l {
-    margin: 0 auto;
-  }
-
   div.showcase-l span {
     font-size: 70%;
   }
@@ -134,7 +130,7 @@
 
   div.showcase-l p {
     font-size: 55%;
-    width: 98%;
+    width: 96%;
     line-height: 150%;
   }
 
