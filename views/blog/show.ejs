@@ -156,15 +156,62 @@
                 Comments 
           ===================
         -->
-        <% if(blog.comments.length > 0) { %>
-        
-        <div class="comments-small-screen">
-          <h2><a href="/blogs/<%= blog._id %>/comments/new">Comment</a>[s]</h2>
+        <% if(blog.comments.length > 0 ) { %>
+    
+          <ul class="comment-section">
 
-          <% blog.comments.forEach(function(comment) { %>
-            
-          <% } %>
-        </div>  
+            <% blog.comments.forEach((comment) => { %>
+              <li class="comment author-comment">
+
+                <div class="info">
+                  <a href="#"><%= comment.author.username %></a>
+                  <span>3 hours ago</span>
+                </div>
+
+                <a class="avatar" href="#">
+                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Comment Author" />
+                </a>
+
+                <p>
+                  <%= comment.text %>
+                </p>
+
+              </li>
+
+              <li class="comment user-comment">
+
+                <div class="info">
+                  <a href="#">Bradley Jones</a>
+                  <span>1 hour ago</span>
+                </div>
+
+                <a class="avatar" href="#">
+                  <img src="https://i.pravatar.cc/" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                </a>
+
+                <p>Suspendisse gravida sem sit amet molestie portitor?</p>
+
+              </li>
+              
+            <% }) %>
+
+            <li class="write-new">
+
+              <form action="#" method="post">
+
+                <textarea placeholder="Write your comment here" name="comment"></textarea>
+
+                <div>
+                  <img src="https://i.pravatar.cc/" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
+                  <button type="submit">Submit</button>
+                </div>
+
+              </form>
+
+            </li>
+
+          </ul>
+        <% } %>
 
         <!-- 
           ========================

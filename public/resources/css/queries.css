@@ -353,7 +353,5 @@
   /* =========================
     show route comments styles
   ========================== */
-  div.comments-container {
-    display: none;
-  }
+  
 }
