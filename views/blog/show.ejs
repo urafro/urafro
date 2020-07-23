@@ -205,13 +205,13 @@
 
             <li class="write-new">
 
-              <form action="#" method="post">
+              <form action="/blogs/<%= blog._id %>/comments/" method="post">
 
-                <textarea placeholder="Write your comment here" name="comment"></textarea>
+                <textarea placeholder="Write your comment here" name="commentText"></textarea>
 
                 <div>
-                  <img src="https://i.pravatar.cc/" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
-                  <button type="submit">Submit</button>
+                  <img src="<%= blog.author.avatarUrl %>" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
+                  <button type="submit">comment</button>
                 </div>
 
               </form>
