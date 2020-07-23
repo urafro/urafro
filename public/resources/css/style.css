@@ -1251,6 +1251,11 @@ div.content-text p a:visited {
   padding: 10px;
 }
 
+.comment-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .comment {
   display: flex;
   border-radius: 3px;
@@ -1392,6 +1397,7 @@ div.content-text p a:visited {
   width: 100%;
   min-height: 80px;
   padding: 15px 20px;
+  font-size: 60%;
 }
 
 .write-new img {
@@ -1421,6 +1427,8 @@ div.content-text p a:visited {
     forcing the avatar and user info to wrap to the next line*/
   .comment p {
     width: 100%;
+    margin-bottom: 0;
+    font-size: 65%;
   }
 
   /* Reverse the order of elements in the user comments,
@@ -1456,6 +1464,8 @@ div.content-text p a:visited {
 
   .comment .info a {
     padding-top: 15px;
+    font-size: 60%;
+    padding-bottom: 0;
   }
 
   .comment.user-comment .avatar,
@@ -1499,21 +1509,4 @@ div.box-content.auth h5 a:hover {
   -moz-transition: color .2s;
   -ms-transition: color .2s;
   -o-transition: color .2s;
-}
-
-/** =====================
- * Responsive
- ========================*/
-@media only screen and (max-width: 766px) {
-  .comments-container {
-    width: 480px;
-  }
-
-  .comments-list .comment-box {
-    width: 390px;
-  }
-
-  .reply-list .comment-box {
-    width: 320px;
-  }
 }
