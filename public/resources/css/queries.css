@@ -217,6 +217,10 @@
     -o-border-radius: 15px;
   }
 
+  div.showcase-card {
+    height: 55px;
+  }
+
   div.showcase-text {
     width: 90%;
     font-size: 70%;
