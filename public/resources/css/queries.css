@@ -349,4 +349,11 @@
     font-size: 60%;
     margin-left: 2px;
   }
+
+  /* =========================
+    show route comments styles
+  ========================== */
+  div.comments-container {
+    display: none;
+  }
 }

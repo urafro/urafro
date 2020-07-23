@@ -157,99 +157,14 @@
           ===================
         -->
         <% if(blog.comments.length > 0) { %>
-        <div class="comments-container">
-          
-            <h2><a href="/blogs/<%= blog._id %>/comments/new">Comment</a>[s]</h2>          
+        
+        <div class="comments-small-screen">
+          <h2><a href="/blogs/<%= blog._id %>/comments/new">Comment</a>[s]</h2>
 
-          <ul id="comments-list" class="comments-list">
-            <% blog.comments.forEach(function(comment) { %>
-              <li>
-                <div class="comment-main-level">
-                  <!-- Avatar will be assigned to signed in user image -->
-                  <div class="comment-avatar"><img
-                      src="<%= comment.author.avatarUrl %>" alt=""></div>
-                  <!-- Comment Content Container -->
-                  <div class="comment-box">
-                    <div class="comment-head">
-                      <h6 class="comment-name by-author">
-                        <a href="#">
-                          <%= comment.author.username %>
-                        </a>
-                      </h6>
-                      <span>5 mins ago</span>
-                      <a href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/replies/new"><i class="fa fa-reply"></i></a>
-                      <i class="fa fa-heart"></i>
-
-                      <!-- restricting users from editing comments they didn't create -->
-                      <% if(currentUser && currentUser._id.equals(comment.author.id)) { %>
-                        <a href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/edit">
-                          <i class="fas fa-edit"></i>
-                        </a>
-                      <% } %>
-                      
-                    </div>
-
-                    <div class="comment-content">
-                      <!-- restricting users from deleting comments they didn't create -->
-                      <% if(currentUser && currentUser._id.equals(comment.author.id)) { %>
-                      <form action="/blogs/<%= blog._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-                        <input type="submit" value="Delete">
-                      </form>
-                      <% } %>
-                      <%= comment.text %>
-                    </div>
-                  </div>
-                </div>
-
-                <!--
-
-                  ====================
-                  NESTED COMMENTS CODE
-                  ====================
-
-                -->
-
-                <!-- COMMENT REPLIES -->
-                <% if(comment.replies.length > 0) { %>
-                  <% comment.replies.forEach((reply) => { %>
-                    <% console.log(reply) %>
-                    <ul class="comments-list reply-list">
-                      <li>
-                        <!-- Avatar assigned to logged in user pic-->
-                        <div class="comment-avatar">
-                          <img src="<%= reply.author.avatarUrl %>" alt="replying author's image">
-                        </div>
-
-                        <!-- Comment Text -->
-                        <div class="comment-box">
-                          <div class="comment-head">
-                            <h6 class="comment-name">
-                              <a href="http://creaticode.com/blog"><%= reply.author.username %></a>
-                            </h6>
-                            <span>2 mins ago</span>
-                            <i class="fa fa-heart"></i>
-                          </div>
-                          <div class="comment-content">
-                            <%= reply.text %> 
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-
-                  <% }) %>
-                <% } %>
-                
-                  <!-- 
-                    ========================
-                    NESTED COMMENTS END HERE
-                    ========================
-                  -->
-
-              </li>
-            <% }); %>
-          </ul>
-        </div>
-        <% } %>
+          <% blog.comments.forEach(function(comment) { %>
+            
+          <% } %>
+        </div>  
 
         <!-- 
           ========================
