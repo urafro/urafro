@@ -351,7 +351,60 @@
   }
 
   /* =========================
-    show route comments styles
+        edit route styles
   ========================== */
+
+  div.content-boxes h1 {
+    font-size: 200%;
+  }
+
+  div.content-boxes h1:after {
+    height: 2px;
+    width: 80px;
+  }
+
+  .content-text {
+    display: none;
+  }
+
+  div.content-boxes {
+    width: 100%;
+  }
+
+  div.content-boxes .row {
+    margin-top: 30px;
+  }
+
+  div.content-inputs h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 100%;
+  }
+
+  div.s3 {
+    padding-left: 0;
+  }
+
+  div.content-inputs input[type=text],
+  textarea,
+  div.auth input[type=password] {
+    margin-bottom: 10px;
+  }
+
+  div.content-inputs input[type=text],
+  div.auth input[type=password] {
+    height: 60px;
+    font-size: 60%;
+  }
+
+  div.content-inputs .left,
+  div.content-inputs .right {
+    display: block;
+    width: 100%;
+  }
+
+  div.after::after {
+    width: 150px;
+  }
   
 }
