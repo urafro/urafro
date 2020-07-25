@@ -1,6 +1,6 @@
 /* Extra large screens, TVs: 1201px and more */
 @media only screen and (min-width: 1201px) {
-  
+
 }
 
 /* Desktops, Large Screens: 1025px to 1200px */
@@ -10,6 +10,55 @@
 
 /* Small Screens and Laptops: 769px to 1024px */
 @media only screen and (max-width: 1024px) {
+  .hero,
+  .hero-2,
+  .hero-l {
+    min-width: 50%;
+  }
+
+  /* centering the landing page text on small screens/laptops */
+  .showcase-l span {
+    margin-top: -10%;
+  }
+
+  /* Index Page styles */
+  div.showcase-box {
+    width: 450px;
+  }
+
+  div.showcase-text {
+    width: 450px;
+  }
+
+  div.showcase-card {
+    width: 450px;
+    height: 80px;
+  }
+
+  .showcase-card .card-tag {
+    flex: 1;
+  }
+  
+  div.content-boxes {
+    width: 100%;
+  }
+
+  .s0 img {
+    height: 200px;
+  }
+
+  div.s1 img {
+    height: 300px;
+  }
+
+  div.s2 img {
+    height: 250px;
+  }
+
+  div.s4 img {
+    margin-left: 50px;
+    height: 280px;
+  }
 
 }
 
