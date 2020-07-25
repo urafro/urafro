@@ -5,7 +5,55 @@
 
 /* Desktops, Large Screens: 1025px to 1200px */
 @media only screen and (max-width: 1200px) {
+  .hero,
+  .hero-2,
+  .hero-l {
+    min-width: 50%;
+  }
 
+  /* Index Page styles */
+  div.showcase-box {
+    width: 500px;
+  }
+
+  div.showcase-text {
+    width: 500px;
+  }
+
+  div.showcase-card {
+    width: 500px;
+    height: 80px;
+  }
+
+  .showcase-card .card-tag {
+    flex: 1;
+  }
+
+  div.section-three img {
+    height: 250px;
+  }
+
+  /* Create Route styles */
+  div.content-boxes {
+    width: 90%;
+  }
+
+  .s0 img {
+    height: 200px;
+  }
+
+  div.s1 img {
+    height: 300px;
+  }
+
+  div.s2 img {
+    height: 250px;
+  }
+
+  div.s4 img {
+    margin-left: 50px;
+    height: 280px;
+  }
 }
 
 /* Small Screens and Laptops: 769px to 1024px */
@@ -39,6 +87,7 @@
     flex: 1;
   }
   
+  /* Create Route Styles */
   div.content-boxes {
     width: 100%;
   }
