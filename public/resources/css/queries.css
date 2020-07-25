@@ -29,6 +29,25 @@
   div.section-three img {
     height: 300px;
   }
+
+  /* Auth Routes */
+
+  div.comment {
+    margin-bottom: 0;
+  }
+
+  div.comment div.login {
+    margin-top: 30vh;
+    margin-bottom: 27vh;
+    /* margin-left: 3.vw; */
+  }
+
+  div.comment .content-inputs {
+    margin-top: 24vh;
+    margin-bottom: 20.8vh;
+    margin-left: 3.5vw;
+    width: 600px;
+  }
 }
 
 /* Desktops, Large Screens: 1025px to 1200px */
@@ -81,6 +100,24 @@
   div.s4 img {
     margin-left: 50px;
     height: 280px;
+  }
+
+  /* Auth Routes */
+
+  div.comment {
+    margin-bottom: 0;
+  }
+
+  div.comment div.login {
+    margin-top: 22.7vh;
+    margin-bottom: 20vh;
+    margin-left: 5vw;
+  }
+
+  div.comment .content-inputs {
+    margin-top: 15vh;
+    margin-bottom: 11.4vh;
+    margin-left: 2vw;
   }
 }
 
@@ -135,6 +172,22 @@
   div.s4 img {
     margin-left: 50px;
     height: 280px;
+  }
+
+  /* Auth Routes */
+
+  div.comment {
+    margin-bottom: 0;
+  }
+
+  div.comment div.login {
+    margin-bottom: 30.9vh;
+  }
+
+  div.comment .content-inputs {
+    margin-top: 31.3vh;
+    margin-bottom: 20.2vh;
+    margin-left: 3vw;
   }
 
 }
@@ -213,6 +266,24 @@
   div.s4 img {
     margin-left: 50px;
     height: 280px;
+  }
+
+  /* Auth Routes */
+
+  div.comment {
+    margin-bottom: 0;
+  }
+
+  div.comment div.login {
+    margin-top: 25.1vh;
+    margin-left: 2vw;
+    margin-bottom: 24.5vh;
+  }
+
+  div.comment .content-inputs {
+    margin-top: 20vh;
+    margin-bottom: 15.4vh;
+    width: 550px;
   }
 
 }
