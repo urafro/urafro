@@ -1,11 +1,9 @@
 /* laptop screen to large displays: 1201px to larger */
-@media only screen and (max-width: 1375px) {
+/* @media only screen and (max-width: 1375px) {
 
-  /* showcase styles */
 
   div.showcase-boxes {
     width: 100%;
-    /* overflow: hidden; */
   }
 
   div.showcase-box {
@@ -34,16 +32,15 @@
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
   }
-}
+} */
 
 /* landscape tablet to laptop screen: from 1024px to 1200px */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .hero .header,
   .hero-2 .header-2 {
     flex: 1;
   }
 
-  /* showcase styles */
   div.showcase-box {
     width: 90%;
   }
@@ -57,17 +54,16 @@
     height: 80px;
   }
 
-}
+} */
 
 /* gray area: from 1011px to 1023px */
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
 
   div.hero,
   div.hero-2 {
     min-width: 423px;
   }
   
-  /* showcase styles */
   div.showcase-box {
     width: 500px;
   }
@@ -80,11 +76,11 @@
     width: 100%;
     height: 80px;
   }
-}
+} */
 
 /* gray area: 971px to 1010px */
-@media only screen and (max-width: 1010px) {
-  /* showcase styles */
+/* @media only screen and (max-width: 1010px) {
+  
   div.showcase-box {
     width: 465px;
   }
@@ -92,11 +88,11 @@
   div.showcase-text {
     width: 465px;
   }
-}
+} */
 
 /* gray area: 769px to 970px */
-@media only screen and (max-width: 970px) {
-  /* showcase styles */
+/* @media only screen and (max-width: 970px) {
+  
   div.showcase-box {
     width: 430px;
   }
@@ -104,10 +100,83 @@
   div.showcase-text {
     width: 430px;
   }
-}
+} */
 
 /* Small Phones from 0px to 480px */
 @media only screen and (max-width: 768px) {
+  .hero,
+  .hero-2, 
+  .hero-l {
+    display: none;
+  }
+
+  div.showcase-l span {
+    font-size: 110%;
+  }
+
+  div.showcase-l h1 {
+    font-size: 150%;
+  }
+
+  div.showcase-l p {
+    font-size: 85%;
+  }
+
+  div.showcase-l a:link,
+  div.showcase-l a:visited {
+    padding-right: 15px;
+    font-size: 170%;
+  }
+
+  /* ==================
+      blog index page
+  =================== */
+
+  div.showcase footer,
+  div.showcase-2 footer {
+    width: 100%;
+    padding-left: 80px;
+  }
+
+  div.l-container .menu-icon {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    left: 0;
+    top: 36px;
+    padding: 5px 15px;
+    background: rgba(235, 31, 116, 0.3);
+  }
+
+  div.menu-content a:link,
+  div.menu-content a:visited {
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  /* ================
+   new blog template
+  ================= */
+
+  div.content-boxes {
+    width: 100%;
+  }
+
+  .s0 img {
+    height: 200px;
+  }
+
+  div.s1 img {
+    height: 300px;
+  }
+
+  div.s2 img {
+    height: 250px;
+  }
+
+  div.s4 img {
+    margin-left: 50px;
+    height: 280px;
+  }
 
 }
 
