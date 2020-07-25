@@ -1,6 +1,34 @@
 /* Extra large screens, TVs: 1201px and more */
 @media only screen and (min-width: 1201px) {
+  .hero,
+  .hero-2,
+  .hero-l {
+    min-width: 50%;
+  }
 
+  /* Index Page styles */
+  div.showcase-box {
+    width: 800px;
+    height: 250px;
+  }
+
+  div.showcase-text {
+    width: 800px;
+  }
+
+  div.showcase-card {
+    width: 800px;
+    height: 80px;
+  }
+
+  .showcase-card .card-tag {
+    flex: 1;
+  }
+
+  /* show route styles */
+  div.section-three img {
+    height: 300px;
+  }
 }
 
 /* Desktops, Large Screens: 1025px to 1200px */
