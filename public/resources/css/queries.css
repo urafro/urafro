@@ -94,7 +94,7 @@
   }
 }
 
-/* gray area: 768px to 970px */
+/* gray area: 769px to 970px */
 @media only screen and (max-width: 970px) {
   /* showcase styles */
   div.showcase-box {
@@ -107,16 +107,23 @@
 }
 
 /* Small Phones from 0px to 480px */
-@media only screen and (max-width: 767px) {
-  
+@media only screen and (max-width: 768px) {
+
 }
 
 /* Small Phones from 0p to 480p */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
   /* ================
   landing page styles
   ================= */
+
+  /* Hero section */
+  .hero,
+  .hero-2,
+  .hero-l {
+    display: none;
+  }
 
   div.showcase-l span {
     font-size: 70%;
@@ -146,13 +153,6 @@
   /*================
   index route styles
   ================ */
-
-  /* Hero section */
-  .hero,
-  .hero-2,
-  .hero-l {
-    display: none;
-  }
 
   div.l-container .menu-icon {
     color: rgb(156, 152, 152);
