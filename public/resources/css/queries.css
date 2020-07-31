@@ -6,7 +6,28 @@
     min-width: 50%;
   }
 
+  div.hero .header,
+  div.hero-2 .header-2 {
+    font-size: 100%;
+  }
+
   /* Index Page styles */
+  div.hero .header img,
+  div.hero-2 .header-2 img {
+    height: 120px;
+    width: 120px;
+  }
+
+  div.hero .header h2,
+  div.hero-2 .header-2 h2 {
+    font-size: 180%;
+    margin-bottom: 10px;
+  }
+
+  .hero .header p { 
+    margin-bottom: 5px;
+  }
+
   div.showcase-box {
     width: 800px;
     height: 250px;
@@ -22,7 +43,8 @@
   }
 
   .showcase-card .card-tag {
-    flex: 1;
+    position: absolute;
+    right: 5px;
   }
 
   /* show route styles */
