@@ -49,12 +49,10 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
         },
         sectionThree: {
           smallHeading: req.body.blog.smallHeading,
-          //Number paragrah
-          paragraphSix: req.body.blog.paragraphSix.trim(),
+          paragraphSix: req.body.blog.paragraphSix,
           paragraphSeven: req.body.blog.paragraphSeven,
           smallerHeading: req.body.blog.smallerHeading,
-          //Bulleted paragraph
-          paragraphEight: req.body.blog.paragraphEight.trim(),
+          paragraphEight: req.body.blog.paragraphEight,
           blogImage: req.body.blog.blogImage,
           blogImageDescription: "blog image description :|",
           paragraphNine: req.body.blog.paragraphNine
@@ -174,12 +172,10 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
         },
         sectionThree: {
           smallHeading: req.body.blog.smallHeading,
-          //Numbered paragraph
-          paragraphSix: req.body.blog.paragraphSix.trim(),
+          paragraphSix: req.body.blog.paragraphSix,
           paragraphSeven: req.body.blog.paragraphSeven,
           smallerHeading: req.body.blog.smallerHeading,
-          //Bulleted paragraph
-          paragraphEight: req.body.blog.paragraphEight.trim(),
+          paragraphEight: req.body.blog.paragraphEight,
           blogImage: req.body.blog.blogImage,
           blogImageDescription: "blog image description :|",
           paragraphNine: req.body.blog.paragraphNine
