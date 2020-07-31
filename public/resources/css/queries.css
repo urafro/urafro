@@ -6,10 +6,6 @@
     min-width: 50%;
   }
 
-  div.l-container #menuIcon {
-    font-size: 30px;
-  }
-
   div.hero .header,
   div.hero-2 .header-2 {
     font-size: 100%;
@@ -84,10 +80,6 @@
     min-width: 50%;
   }
 
-  div.l-container #menuIcon {
-    font-size: 30px;
-  }
-
   /* Index Page styles */
   div.showcase-box {
     width: 500px;
@@ -159,10 +151,6 @@
     min-width: 50%;
   }
 
-  div.l-container #menuIcon {
-    font-size: 30px;
-  }
-
   /* centering the landing page text on small screens/laptops */
   .showcase-l span {
     margin-top: -10%;
@@ -232,10 +220,6 @@
   .hero-2, 
   .hero-l {
     display: none;
-  }
-
-  div.l-container #menuIcon {
-    font-size: 30px;
   }
 
   div.showcase-l span {
