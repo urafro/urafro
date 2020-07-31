@@ -957,8 +957,12 @@ div.content-text p a:visited {
   text-align: center;
 }
 
-.show-content .text-wrap {
+/* .show-content .text-wrap {
   white-space: pre-wrap;
+} */
+
+.show-content p {
+  white-space: pre-line;
 }
 
 .main-heading h2 {

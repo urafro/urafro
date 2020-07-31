@@ -144,6 +144,14 @@ router.get("/:id/edit",middleware.checkBlogOwnership, (req, res) => {
 
 //Update Route - apply blogs edits
 router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
+
+  let trimInputs = Object.values(req.body.blog);
+
+  //removing unnecessary white space from inputs
+  for (let t of trimInputs) {
+    t.trim();
+  }
+
   const updateBlog = {
     tag: req.body.blog.tag,
     body: {
