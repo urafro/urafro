@@ -216,11 +216,11 @@
 
 /* Small iPads, Tablets: 481px to 768px */
 @media only screen and (max-width: 768px) {
-  .hero,
+  /* .hero,
   .hero-2, 
   .hero-l {
     display: none;
-  }
+  } */
 
   div.showcase-l span {
     font-size: 110%;
@@ -317,11 +317,21 @@
   landing page styles
   ================= */
 
+  .container {
+    flex-direction: column;
+  }
+
   /* Hero section */
-  .hero,
-  .hero-2,
   .hero-l {
     display: none;
+  }
+
+  div.hero,
+  div.hero-2 {
+    width: 100vw;
+    position: -webkit-sticky;
+    position: static;
+    top: initial;
   }
 
   div.showcase-l span {
@@ -352,6 +362,39 @@
   /*================
   index route styles
   ================ */
+
+  div.hero .header,
+  div.hero-2 .header-2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  div.hero .header img,
+  div.hero-2 .header-2 img {
+    height: 50px;
+    width: 50px;
+    border: 4px solid rgba(153, 59, 140, .2);
+  }
+
+  div.hero .header h2,
+  div.hero-2 .header-2 h2 {
+    font-size: 100%;
+  }
+
+  div.hero .header p {
+    font-size: 90%;
+    width: 70%;
+  }
+
+  a.hero-btn:link,
+  a.hero-btn:visited {
+    padding: 5px 5px 20px 5px;
+    font-size: 100%;
+  }
 
   div.l-container .menu-icon {
     font-size: 20px;
