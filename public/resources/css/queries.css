@@ -384,6 +384,7 @@
 
   div.hero .header h2,
   div.hero-2 .header-2 h2 {
+    margin-top: 20px;
     font-size: 100%;
   }
 
