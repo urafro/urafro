@@ -405,6 +405,10 @@
   }
 
   /* showcase styles */
+  div.hero-2 nav {
+    display: none;
+  }
+
   div.showcase-boxes {
     margin-top: 40px;
   }
@@ -430,16 +434,23 @@
     font-weight: 300;
     color: #fff;
     margin-left: 20px;
-    margin-top: 3px;
+    position: relative;
+    top: -5px;
   }
 
   div.card-text h3 {
-    font-size: 65%;
+    font-size: 75%;
     margin-bottom: 0;
   }
 
-  div.card-text p {
-    font-size: 60%;
+  div.card-text h3,
+  div.header-2 .card-text p {
+    position: relative;
+    right: 10px;
+  }
+
+  div.header-2 .card-text p {
+    font-size: 70%;
   }
 
   div.card-tag {
