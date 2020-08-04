@@ -328,7 +328,8 @@
 
   div.hero,
   div.hero-2 {
-    height: 174px;
+    /* to fix height and put the correct one for each screen size here */
+    height: 194px;
     width: 100vw;
     position: -webkit-sticky;
     position: static;
