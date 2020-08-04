@@ -328,6 +328,7 @@
 
   div.hero,
   div.hero-2 {
+    height: 174px;
     width: 100vw;
     position: -webkit-sticky;
     position: static;
