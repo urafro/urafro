@@ -410,14 +410,30 @@
   }
 
   div.showcase-boxes {
-    margin-top: 40px;
+    margin-top: 10px;
+    grid-gap: 5px;
+    width: 100%;
   }
 
-  div.showcase-box {
+  /* div.showcase-box {
     width: 90%;
     height: 150px;
     margin-bottom: 0;
     padding-bottom: 0;
+  } */
+
+  div.showcase-box {
+    width: 300px;
+    height: 150px;
+  }
+
+  div.showcase-text {
+    width: 300px;
+  }
+
+  div.showcase-card {
+    width: 300px;
+    height: 80px;
   }
 
   div.card-image a img {
@@ -445,6 +461,16 @@
 
   div.card-text h3,
   div.header-2 .card-text p {
+    position: relative;
+    right: 10px;
+  }
+
+  div.showcase-card .card-text {
+    font-size: 75%;
+  }
+
+  div.showcase-card .card-text h3,
+  div.showcase-card .card-text p {
     position: relative;
     right: 10px;
   }
