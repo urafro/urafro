@@ -534,16 +534,16 @@
   } */
 
   div.showcase-box {
-    width: 300px;
+    width: 90%;
     height: 150px;
   }
 
   div.showcase-text {
-    width: 300px;
+    width: 90%;
   }
 
   div.showcase-card {
-    width: 300px;
+    width: 100%;
     height: 80px;
   }
 
