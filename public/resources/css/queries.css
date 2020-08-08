@@ -412,8 +412,8 @@
 
 }
 
-/* Small Phones from 320px to 480p */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
+@media only screen and (min-width: 280px) and (max-width: 480px) {
 
   /* ================
   landing page styles
