@@ -307,7 +307,7 @@
 
   div.l-container .menu-icon {
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 20px;
     left: 0;
     top: 25px;
     padding: 5px 15px;
@@ -317,6 +317,42 @@
   div.menu-content a:visited {
     padding: 16px;
     font-size: 20px;
+  }
+
+  /* =================
+    show route styles
+  ================== */
+
+  div.show-wrapper {
+    width: 92%;
+  }
+
+  div.show-heading {
+    width: 80%;
+  }
+
+  div.main-heading h2 {
+    font-size: 90%;
+  }
+
+  div.section-three img {
+    height: 200px;
+  }
+
+  div.backlinks-header a img {
+    height: 90px;
+  }
+
+  div.tag-links a:link,
+  div.tag-links a:visited {
+    font-size: 60%;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 12px;
+  }
+
+  div.backlinks-body p {
+    font-size: 55%;
   }
 
   /* ================
