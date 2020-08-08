@@ -110,16 +110,10 @@ a {
 ============================================================== */
 
 #menuIcon {
-  position: fixed;
-  color: #fff;
-  font-size: 20px;
-  left: 42px;
-  top: 24px;
-  cursor: pointer;
-  z-index: 1;
   background: none;
 }
 
+#menuIcon, 
 .l-container .menu-icon {
   position: fixed;
   color: #fff;

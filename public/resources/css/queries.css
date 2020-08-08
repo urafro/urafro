@@ -263,9 +263,8 @@
     color: rgb(255, 255, 255);
     font-size: 30px;
     left: 0;
-    top: 36px;
+    top: 25px;
     padding: 5px 15px;
-    background: rgba(235, 31, 116, 0.3);
   }
 
   div.menu-content a:link,
