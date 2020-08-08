@@ -216,11 +216,20 @@
 
 /* Small iPads, Tablets: 481px to 768px */
 @media only screen and (max-width: 768px) {
-  /* .hero,
-  .hero-2, 
-  .hero-l {
-    display: none;
-  } */
+
+  /* Index Page styles */
+  div.showcase-box {
+    width: 345px;
+  }
+
+  div.showcase-text {
+    width: 345px;
+  }
+
+  div.showcase-card {
+    width: 345px;
+    height: 80px;
+  }
 
   div.showcase-l span {
     font-size: 110%;
@@ -402,10 +411,16 @@
   div.l-container .menu-icon {
     font-size: 20px;
     left: 0;
-    top: 40px;
-    padding: 0px 5px;
-    background: rgba(235, 31, 116, 0.3);
-  }
+    top: 10px;
+    height: 30px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgba(235, 31, 116, 0.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 
   /* showcase styles */
   div.hero-2 nav {
