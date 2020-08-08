@@ -173,6 +173,18 @@
   .showcase-card .card-tag {
     flex: 1;
   }
+
+  /* =================
+    show route styles
+  ================== */
+
+  div.show-wrapper {
+    width: 92%;
+  }
+
+  div.show-heading {
+    width: 80%;
+  }
   
   /* Create Route Styles */
   div.content-boxes {
