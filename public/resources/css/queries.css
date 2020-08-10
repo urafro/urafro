@@ -473,6 +473,7 @@
     font-size: 80%;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 20px;
   }
 
   div.hero .header img,
