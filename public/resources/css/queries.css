@@ -152,10 +152,11 @@
     show route styles
   =================== */
 
+  /* comments styles */
   ul.comment-section {
     position: relative;
-    margin-left: -50px;
-    width: 500px;
+    margin-left: -2%;
+    width: 100%;
   }
 
   li.comment {
