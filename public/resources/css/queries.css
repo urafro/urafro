@@ -52,6 +52,30 @@
     height: 300px;
   }
 
+  /* comments styles */
+  ul.comment-section {
+    position: relative;
+    margin-left: -2%;
+    width: 100%;
+  }
+
+  li.comment {
+    margin-bottom: 5px;
+  }
+
+  li.user-comment .info,
+  li.author-comment .info {
+    display: none;
+  }
+
+  li.comment p {
+    width: 70%;
+  }
+
+  li.write-new {
+    width: 100%;
+  }
+
   /* Auth Routes */
 
   div.comment {
