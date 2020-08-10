@@ -124,6 +124,33 @@
     height: 280px;
   }
 
+  /* ==================
+    show route styles
+  =================== */
+
+  ul.comment-section {
+    position: relative;
+    margin-left: -50px;
+    width: 500px;
+  }
+
+  li.comment {
+    margin-bottom: 5px;
+  }
+
+  li.user-comment .info,
+  li.author-comment .info {
+    display: none;
+  }
+
+  li.comment p {
+    width: 70%;
+  }
+
+  li.write-new {
+    width: 100%;
+  }
+
   /* Auth Routes */
 
   div.comment {
