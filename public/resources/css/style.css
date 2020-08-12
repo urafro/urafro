@@ -367,7 +367,7 @@ a {
 
 .hero .header h2,
 .hero-2 .header-2 h2 {
-  font-size: 150%;
+  font-size: 120%;
   font-weight: bold;
 }
 
@@ -893,7 +893,7 @@ div.content-text p a:visited {
 }
 
 .header-2 h2 {
-  margin-top: 17vh;
+  margin-top: 10vh;
   width: 60%;
   text-align: left;
 }
