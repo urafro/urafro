@@ -66,7 +66,8 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
     author: {
       id: req.user._id,
       username: req.user.username,
-      avatarUrl: req.user.avatarUrl
+      avatarUrl: req.user.avatarUrl,
+      bio: req.user.bio
     }
   }
 

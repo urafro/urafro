@@ -52,7 +52,8 @@ let BlogSchema = new mongoose.Schema({
       ref: "User"
     },
     username: String,
-    avatarUrl: String
+    avatarUrl: String,
+    bio: String
   },
   comments: [{
     type: mongoose.Schema.Types.ObjectId,
