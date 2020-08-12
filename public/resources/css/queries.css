@@ -543,7 +543,11 @@
   div.hero .header h2,
   div.hero-2 .header-2 h2 {
     margin-top: 20px;
-    font-size: 100%;
+    font-size: 80%;
+    width: 75%;
+    font-weight: 300;
+    line-height: 140%;
+    color: rgb(200, 200, 200);
   }
 
   div.hero .header p {
