@@ -91,8 +91,8 @@
   div.comment .content-inputs {
     margin-top: 24vh;
     margin-bottom: 20.8vh;
-    margin-left: 3.5vw;
-    width: 600px;
+    margin-left: 2%;
+    width: 100%;
   }
 }
 
@@ -183,15 +183,22 @@
   }
 
   div.comment div.login {
-    margin-top: 22.7vh;
+    margin-top: 23.8vh;
     margin-bottom: 20vh;
     margin-left: 5vw;
   }
 
   div.comment .content-inputs {
-    margin-top: 15vh;
-    margin-bottom: 11.4vh;
+    margin-top: 10vh;
+    margin-bottom: 17.6vh;
     margin-left: 2vw;
+  }
+
+  #auth-button {
+    font-size: 80%;
+    height: 40px;
+    margin: 10px 0 20px 0;
+    border: 0;
   }
 }
 
