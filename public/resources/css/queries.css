@@ -296,7 +296,8 @@
 /* Small iPads, Tablets: 481px to 768px */
 @media only screen and (max-width: 768px) {
 
-  .hero .header {
+  div.hero .header,
+  div.hero-2 .header-2 {
     padding-bottom: 30px;
   }
 
