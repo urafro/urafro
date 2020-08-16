@@ -442,22 +442,33 @@
     height: 280px;
   }
 
-  /* Auth Routes */
+  /* ==============
+  auth route styles
+  =============== */
 
   div.comment {
     margin-bottom: 0;
   }
 
-  div.comment div.login {
-    margin-top: 25.1vh;
-    margin-left: 2vw;
-    margin-bottom: 24.5vh;
+  div.comment div.login,
+  div.comment .content-inputs {
+    margin-left: 1%;
+    margin-top: 66.7%;
+    margin-bottom: 75%;
+    width: 40%;
+    padding-bottom: 20px;
   }
 
-  div.comment .content-inputs {
-    margin-top: 20vh;
-    margin-bottom: 15.4vh;
-    width: 550px;
+  .auth h5 {
+    margin-bottom: 0;
+    font-size: 60%;
+  }
+
+  #auth-button {
+    font-size: 70%;
+    height: 30px;
+    margin: 30px 0 20px 0;
+    border: 0;
   }
 
 }
