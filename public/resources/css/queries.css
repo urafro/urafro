@@ -563,7 +563,9 @@
     font-size: 100%;
   }
 
-  /* showcase styles */
+  /*=============
+  showcase styles 
+  =============== */
   div.hero-2 nav {
     display: none;
   }
@@ -815,7 +817,7 @@
   div.content-inputs h2 {
     padding: 20px;
     text-align: center;
-    font-size: 100%;
+    font-size: 80%;
   }
 
   div.s3 {
@@ -842,6 +844,35 @@
 
   div.after::after {
     width: 150px;
+  }
+
+  /* ==============
+  auth route styles
+  =============== */
+
+  div.comment {
+    margin-bottom: 0;
+  }
+
+  div.comment div.login,
+  div.comment .content-inputs {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+
+  .auth h5 {
+    margin-bottom: 0;
+    font-size: 60%;
+  }
+
+  #auth-button {
+    font-size: 70%;
+    height: 30px;
+    margin: 10px 0 20px 0;
+    border: 0;
   }
   
 }

@@ -1486,10 +1486,6 @@ div.content-text p a:visited {
   * Auth Routes
 ======================= */
 
-div.box-content.auth h5 {
-  margin-bottom: 10px;
-}
-
 div.box-content.auth h5 a:link,
 div.box-content.auth h5 a:visited {
   color: rgb(172, 165, 165);
