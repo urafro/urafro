@@ -269,17 +269,13 @@
 
   /* Auth Routes */
 
-  div.comment {
-    margin-bottom: 0;
-  }
-
   div.comment div.login {
-    margin-bottom: 30.9vh;
+    margin: 10vh 0 23.2vh 5vw;
   }
 
   div.comment .content-inputs {
-    margin-top: 31.3vh;
-    margin-bottom: 20.2vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
     margin-left: 3vw;
   }
 
