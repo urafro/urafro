@@ -276,6 +276,18 @@
     margin-left: 3vw;
   }
 
+  .auth h5 {
+    margin-bottom: 0;
+    font-size: 70%;
+  }
+
+  #auth-button {
+    font-size: 70%;
+    height: 30px;
+    margin: 30px 0 20px 0;
+    border: 0;
+  }
+
 }
 
 /* Small iPads, Tablets: 481px to 768px */
