@@ -221,7 +221,7 @@ a {
 .showcase-l .cta-button:visited {
   margin: 0;
   width: 65px;
-  height: 35px;
+  height: 32px;
   outline: none;
   cursor: pointer;
   display: inline-block;
@@ -243,7 +243,6 @@ a {
 
 .showcase-l .cta-button:hover {
   width: 180px;
-  height: 32px;
   font-size: 18px;
   padding-top: 6px;
   color: #fff;
