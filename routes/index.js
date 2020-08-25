@@ -20,7 +20,8 @@ router.post("/signup", (req, res) => {
 
   User.register(new User({
     username: req.body.username,
-    avatarUrl: req.body.avatarUrl,
+    //putting anonymous gender avatar for all new users
+    avatarUrl: "https://media.istockphoto.com/vectors/anonymous-gender-neutral-face-avatar-incognito-head-silhouette-vector-id1220827245?k=6&m=1220827245&s=612x612&w=0&h=lPIX54O64ec0ZNcW3_s5RtlJf4sCR9LjLulaK1Y3Z6w=",
     bio: req.body.bio
   }), req.body.password, (err, createdUser) => {
     if (err) {
