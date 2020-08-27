@@ -105,6 +105,54 @@ a {
   color: rgb(97, 114, 110);
 }
 
+/* body button */
+.bdb {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* body button prefered call to action selection */
+.bdb-full {
+  background-color: #ffc03d;
+  border: 1px solid #ffc03d;
+  color: #432344;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* body button alternative call to action selection */
+.bdb-ghost {
+  background-color: rgba(235, 31, 116, 0);
+  border: 1px solid #ffc03d;
+  color: #ffc03d;
+}
+
+.bdb-full:hover,
+.bdb-full:active {
+  background-color: #cf920d;
+  border-color: #cf920d;
+}
+
+.bdb-ghost:hover,
+.bdb-ghost:active {
+  color: #432344;
+  background-color: #ffc03d;
+  border-color: #ffc03d;
+}
+
 /* ============================================================= 
                         LANDING PAGE
 ============================================================== */
@@ -192,7 +240,7 @@ a {
   padding: 0;
   margin-top: 0;
   flex: 1;
-  background: rgba(235, 31, 116, 0.1);
+  background: rgba(67, 35, 68, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +261,7 @@ a {
   line-height: 150%;
 }
 
-.cta-buttons {
+/* .cta-buttons {
   font-size: 100%;
 }
 
@@ -261,7 +309,7 @@ a {
 .btn-ghost:active {
   color: #fff;
   background-color: rgba(235, 31, 116, 0.2);
-}
+} */
 
 .showcase-l p {
   font-size: 80%;
@@ -438,11 +486,32 @@ a {
 /* ====================
   landing page styles
 ===================== */
-/* larger container */
+.intro {
+  background-color: #e7eefb;
+  color: #432344;
+}
+
+/* larger nested container */
 .intro-div {
   margin: 0 auto;
+  margin-bottom: 50px;
   display: flex;
   width: 90%;
+  background-color: #fff;
+  padding: 100px 0;
+  box-shadow: 0 5px 5px #e1e6f0;
+  position: relative;
+  top: -20px;
+}
+
+.intro-div img {
+  height: 150px;
+  width: 150px;
+}
+
+.intro-div p {
+  font-size: 85%;
+  line-height: 120%;
 }
 
 /* smaller nested containers */
@@ -456,6 +525,39 @@ a {
 
 .receive {
   flex: 1;
+}
+
+.about,
+.give,
+.receive {
+  padding: 0 20px 0 65px;
+}
+
+/* first nested div */
+.about h2 {
+  font-size: 160%;
+  margin: 20px 0;
+}
+
+.about p {
+  margin-bottom: 30px;
+}
+
+/* second and third divs */
+.give h2,
+.receive h2 {
+  font-size: 120%;
+  margin: 20px 0;
+}
+
+.give p,
+.receive p {
+  margin-bottom: 10px;
+}
+
+.give a {
+  color: #432344;
+  border-bottom: 1px solid #ff2525;
 }
 
 /* ===================
