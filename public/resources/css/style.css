@@ -260,7 +260,7 @@ a {
 .btn-ghost:hover,
 .btn-ghost:active {
   color: #fff;
-  background-color: rgba(235, 31, 116, 0.4);
+  background-color: rgba(235, 31, 116, 0.2);
 }
 
 .showcase-l p {
