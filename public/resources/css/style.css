@@ -435,7 +435,32 @@ a {
   color: rgb(185, 178, 178);
 }
 
-/**************** Showcase section ********************/
+/* ====================
+  landing page styles
+===================== */
+/* larger container */
+.intro-div {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+}
+
+/* smaller nested containers */
+.about {
+  flex: 1;
+}
+
+.give {
+  flex: 1;
+}
+
+.receive {
+  flex: 1;
+}
+
+/* ===================
+    Showcase section
+==================== */
 .showcase,
 .showcase-2 {
   flex: 1;
