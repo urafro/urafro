@@ -262,6 +262,15 @@ a {
   line-height: 150%;
 }
 
+.showcase-l h1 span {
+  font-weight: 400;
+  text-transform: none;
+  font-size: 180%;
+  position: relative;
+  left: -125px;
+  margin-bottom: 40px;
+}
+
 /* .cta-buttons {
   font-size: 100%;
 }
@@ -383,7 +392,7 @@ a {
 .about p span {
   color: #ff2525;
   font-weight: 400;
-  
+
 }
 
 /* second and third divs */
