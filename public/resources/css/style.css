@@ -458,8 +458,26 @@ section {
   how-it-works
 =============== */
 
+.how-it-works {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .head {
   text-align: center;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+}
+
+.box img {
+  height: 100px;
+  width: 100px;
 }
 
 /* ============================================================= 
