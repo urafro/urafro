@@ -380,6 +380,12 @@ a {
   margin-bottom: 30px;
 }
 
+.about p span {
+  color: #ff2525;
+  font-weight: 400;
+  
+}
+
 /* second and third divs */
 .give h2,
 .receive h2 {
