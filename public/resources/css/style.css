@@ -249,26 +249,68 @@ a {
   padding-left: 15px;
 }
 
-.showcase-l span {
-  font-size: 90%;
-}
-
-.showcase-l h1 {
+/* .showcase-l h1 {
   font-weight: 300;
   padding: 15px 0px;
   font-size: 135%;
-  text-transform: uppercase;
+  text-transform: none;
+} */
+
+.showcase-l h1 {
   letter-spacing: 1px;
   line-height: 150%;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 200%;
+  position: relative;
+  transform: translateX(-105px);
+  -webkit-transform: translateX(-105px);
+  -moz-transform: translateX(-105px);
+  -ms-transform: translateX(-105px);
+  -o-transform: translateX(-105px);
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+/* animating brand h1 to slide from right to left on page load */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-220px);
+    -webkit-transform: translateX(-220px);
+    -moz-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    -o-transform: translateX(-220px);
+    display: none;
+}
+
+  100% {
+    transform: translateX(-105px);
+    -webkit-transform: translateX(-105px);
+    -moz-transform: translateX(-105px);
+    -ms-transform: translateX(-105px);
+    -o-transform: translateX(-105px);
+  }
 }
 
 .showcase-l h1 span {
-  font-weight: 400;
-  text-transform: none;
-  font-size: 180%;
-  position: relative;
-  left: -125px;
-  margin-bottom: 40px;
+  display: inline-block;
+  animation-name: tiltForward;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+.showcase-l p {
+  font-size: 130%;
+  width: 90%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 /* .cta-buttons {
@@ -320,14 +362,6 @@ a {
   color: #fff;
   background-color: rgba(235, 31, 116, 0.2);
 } */
-
-.showcase-l p {
-  font-size: 80%;
-  width: 80%;
-  line-height: 150%;
-  letter-spacing: 1px;
-  padding-bottom: 20px;
-}
 
 /* ====================
   landing page styles
@@ -407,9 +441,13 @@ a {
   margin-bottom: 10px;
 }
 
-.give a {
+.give a:link,
+.give a:visited {
   color: #432344;
-  border-bottom: 1px solid #ff2525;
+  text-decoration: underline;
+  text-decoration-color: #ff2525;
+  -moz-text-decoration-color: #ff2525;
+  text-decoration-thickness: 2px;
 }
 
 /* ============================================================= 
