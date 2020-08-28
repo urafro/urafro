@@ -245,7 +245,7 @@ a {
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 .showcase-l span {
@@ -317,6 +317,83 @@ a {
   line-height: 150%;
   letter-spacing: 1px;
   padding-bottom: 20px;
+}
+
+/* ====================
+  landing page styles
+===================== */
+.intro {
+  background-color: #e7eefb;
+  color: #432344;
+}
+
+/* larger nested container */
+.intro-div {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  width: 90%;
+  background-color: #fff;
+  padding: 100px 0;
+  box-shadow: 0 5px 5px #e1e6f0;
+  position: relative;
+  top: -20px;
+}
+
+.intro-div img {
+  height: 150px;
+  width: 150px;
+}
+
+.intro-div p {
+  font-size: 85%;
+  line-height: 120%;
+}
+
+/* smaller nested containers */
+.about {
+  flex: 1;
+}
+
+.give {
+  flex: 1;
+}
+
+.receive {
+  flex: 1;
+}
+
+.about,
+.give,
+.receive {
+  padding: 0 20px 0 65px;
+}
+
+/* first nested div */
+.about h2 {
+  font-size: 160%;
+  margin: 20px 0;
+}
+
+.about p {
+  margin-bottom: 30px;
+}
+
+/* second and third divs */
+.give h2,
+.receive h2 {
+  font-size: 120%;
+  margin: 20px 0;
+}
+
+.give p,
+.receive p {
+  margin-bottom: 10px;
+}
+
+.give a {
+  color: #432344;
+  border-bottom: 1px solid #ff2525;
 }
 
 /* ============================================================= 
@@ -481,83 +558,6 @@ a {
   text-decoration: none;
   font-size: 200%;
   color: rgb(185, 178, 178);
-}
-
-/* ====================
-  landing page styles
-===================== */
-.intro {
-  background-color: #e7eefb;
-  color: #432344;
-}
-
-/* larger nested container */
-.intro-div {
-  margin: 0 auto;
-  margin-bottom: 50px;
-  display: flex;
-  width: 90%;
-  background-color: #fff;
-  padding: 100px 0;
-  box-shadow: 0 5px 5px #e1e6f0;
-  position: relative;
-  top: -20px;
-}
-
-.intro-div img {
-  height: 150px;
-  width: 150px;
-}
-
-.intro-div p {
-  font-size: 85%;
-  line-height: 120%;
-}
-
-/* smaller nested containers */
-.about {
-  flex: 1;
-}
-
-.give {
-  flex: 1;
-}
-
-.receive {
-  flex: 1;
-}
-
-.about,
-.give,
-.receive {
-  padding: 0 20px 0 65px;
-}
-
-/* first nested div */
-.about h2 {
-  font-size: 160%;
-  margin: 20px 0;
-}
-
-.about p {
-  margin-bottom: 30px;
-}
-
-/* second and third divs */
-.give h2,
-.receive h2 {
-  font-size: 120%;
-  margin: 20px 0;
-}
-
-.give p,
-.receive p {
-  margin-bottom: 10px;
-}
-
-.give a {
-  color: #432344;
-  border-bottom: 1px solid #ff2525;
 }
 
 /* ===================
