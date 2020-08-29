@@ -240,7 +240,7 @@ a {
 .showcase-l {
   padding: 0;
   margin-top: 0;
-  max-width: 50%;
+  flex: 1;
   background: rgba(67, 35, 68, 0.5);
   display: flex;
   flex-direction: column;
@@ -430,7 +430,6 @@ section {
 .brand {
   color: #ff2525;
   font-weight: 400;
-
 }
 
 /* second and third divs */
@@ -471,8 +470,11 @@ section {
 
 .head p {
   font-size: 70%;
-  font-style: italic;
   font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .boxes {
@@ -541,6 +543,70 @@ section {
   position: relative;
   left: 0;
   align-self: flex-end;
+}
+
+/* ===============
+    about us
+================ */
+
+section.about-us {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-text {
+  text-align: center;
+  flex: 1;
+}
+
+.about-text h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.about-text h2:after {
+  display: block;
+  width: 200px;
+  background-color: rgba(255, 37, 37, 0.2);
+  content: " ";
+  height: 2px;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: initial;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 30px;
+  line-height: 130%;
+}
+
+.about-text p a:link,
+.about-text p a:visited {
+  color: rgba(255, 37, 37, 0.7);
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+}
+
+.about-text p a:hover,
+.about-text p a:active {
+  color: rgb(255, 37, 37);
+  text-decoration: underline;
+}
+
+.founder-signature {
+  margin-top: 30px;
+  height: 50px;
 }
 
 /* ============================================================= 
