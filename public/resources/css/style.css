@@ -386,6 +386,24 @@ section {
   box-shadow: 0 5px 5px #e1e6f0;
   position: relative;
   top: -20px;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+
+/* animating intro-div to pop into the viewport from below the screen */
+@keyframes slideUp {
+  0% {
+    top: 0;
+  }
+  70% {
+    top: -30px;
+  }
+  100% {
+    top: -20px;
+  }
 }
 
 .intro-div img {
