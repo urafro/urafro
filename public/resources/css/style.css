@@ -609,6 +609,86 @@ section.about-us {
   height: 50px;
 }
 
+/* ===============
+    newsletter
+================ */
+
+.newsletter {
+  width: 100vw;
+  background: linear-gradient(rgba(67, 35, 68, 0.7), rgba(67, 35, 68, 0.7)), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* to change this in favor of individual color declarations for child elements */
+  color: #fff;
+  padding: 120px 0;
+}
+
+.newsletter-form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-form h2 {
+  margin-bottom: 30px;
+}
+
+.newsletter-form p {
+  margin: 0 auto;
+  width: 90%;
+  color: rgb(231, 229, 229);
+  font-size: initial;
+  margin-bottom: 50px; 
+}
+
+.newsletter-form input[type="email"] {
+  height: 45px;
+  line-height: 45px;
+  width: 80%;
+  padding: 0 40px;
+  color: #fff;
+  border: 2px solid rgba(67, 35, 68, 0.7);
+  background-color: rgba(67, 35, 68, 0.3);
+  border-radius: 120px;
+  position: relative;
+  left: 40px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  transition: background-color .2s;
+  -webkit-transition: background-color .2s;
+  -moz-transition: background-color .2s;
+  -ms-transition: background-color .2s;
+  -o-transition: background-color .2s;
+}
+
+.newsletter-form input[type="email"]:hover,
+.newsletter-form input[type="email"]:active {
+  background-color: rgba(67, 35, 68, 0.7);
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
+.newsletter-form input[type="submit"] {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 30px;
+  cursor: pointer;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  position: relative;
+  top: .5px;
+  right: 25px;
+}
 /* ============================================================= 
                           INDEX.EJS
 ============================================================== */
