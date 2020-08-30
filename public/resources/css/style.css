@@ -606,22 +606,6 @@ section.about-us {
   line-height: 130%;
 }
 
-.about-text p a:link,
-.about-text p a:visited {
-  color: rgba(255, 37, 37, 0.7);
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
-}
-
-.about-text p a:hover,
-.about-text p a:active {
-  color: rgb(255, 37, 37);
-  text-decoration: underline;
-}
-
 .founder-signature {
   margin-top: 30px;
   height: 50px;
@@ -724,6 +708,22 @@ section.about-us {
   font-size: initial;
   width: 90%;
   margin-bottom: 20px;
+}
+
+.founder .text p a:link,
+.founder .text p a:visited {
+  color: rgba(255, 37, 37, 0.7);
+  transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+}
+
+.founder .text p a:hover,
+.founder .text p a:active {
+  color: rgb(255, 37, 37);
+  text-decoration: underline;
 }
 
 .founder .image-text {
