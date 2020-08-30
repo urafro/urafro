@@ -800,23 +800,49 @@ section.about-us {
 .testimonials .boxes {
   width: 80%;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .testimonials .box {
   width: 30%;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-left: 20px;
+  position: relative;
+  top: -180px;
+  box-shadow: 0 5px 5px #e1e6f0;
 }
 
-.testimonials .t-head {
-  text-align: center;
-  padding: 100px 0;
-  background-image: url("https://i.imgur.com/f89JM9hm.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.testimonials .box p:before {
+  display: block;
+  /* background-color: rgba(67, 35, 68, 0.9); */
+  content: "\201C";
+  position: relative;
+  bottom: 5px;
+  color: rgb(67, 35, 68);
+  font-size: 120px;
+  font-weight: 400;
 }
 
-.testimonials .t-head:hover {
-  opacity: 0.5;
+.testimonials .box p {
+  font-size: initial;
+  line-height: 150%;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.testimonials .box h3 {
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+.testimonials .title,
+.testimonials .company {
+  display: block;
+  font-size: 80%;
+  font-style: italic;
+  letter-spacing: .5px;
+  padding-bottom: 5px;
 }
 
 /* ===============
