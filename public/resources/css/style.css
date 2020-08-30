@@ -953,6 +953,116 @@ section.about-us {
   font-size: 200%;
 }
 
+/* ================
+    contact-us
+================ */
+.contact-us {
+  display: flex;
+  align-items: center;
+  /* padding: 100px 0; */
+}
+
+.contact-us .image {
+  flex: 1;
+}
+
+.contact-us .form {
+  flex: 1;
+  box-shadow: 0 5px 15px #e1e6f0;
+  padding: 50px 0 50px 30px;
+  position: relative;
+  right: 65px;
+}
+
+.contact-us .form {
+  display: flex;
+}
+
+/* OUR-CONTACTS */
+.our-contacts, .message {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.our-contacts h2,
+.message h2 {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.contact-us .our-contacts .card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card .icon {
+  padding: 0 20px 0 0;
+}
+
+.icon i,
+.card-txt p {
+  color: rgba(67, 35, 68, 0.5);
+}
+
+.icon i {
+  font-size: 140%;
+}
+
+.card-txt h5 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 70%;
+}
+
+.card-txt p {
+  font-size: 70%;
+  width: 80%;
+}
+
+/* SEND-US-A-MESSAGE */
+.message {
+  margin-right: 70px;
+}
+
+.message h2 {
+  word-spacing: 2px;
+  font-weight: 300;
+}
+
+.message-input {
+  margin-bottom: 30px;
+}
+
+.message-input label {
+  position: relative;
+  top: -10px;
+}
+
+.message-input input[type="text"],
+.message-input input[type="email"],
+.message-input input[type="textarea"] {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(67, 35, 68, 0.3);
+}
+
+.message-input input[type="text"],
+.message-input input[type="email"] {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+}
+
+.message .bdb-full {
+  position: relative;
+  top: -30px;
+  font-size: 60%;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
 /* ============================================================= 
                           INDEX.EJS
 ============================================================== */
