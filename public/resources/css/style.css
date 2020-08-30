@@ -758,7 +758,9 @@ section.about-us {
 .founder .image-text h2 span {
   color: #fff;
   text-transform: uppercase;
-  font-size: 55%;
+  font-size: 50%;
+  letter-spacing: .5px;
+  margin-right: 5px;
 }
 
 .founder .image-text h2 {
