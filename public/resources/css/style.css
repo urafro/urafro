@@ -614,16 +614,19 @@ section.about-us {
 /* ==============
       services
 =============== */
-.numbers {
+.numbers,
+.socials {
   padding: 50px 0 100px 0;
   text-align: center;
 }
 
-.numbers h2 {
+.numbers h2,
+.socials h2 {
   margin-bottom: 20px;
 }
 
-.numbers h2:before {
+.numbers h2:before,
+.socials h2:before {
   display: block;
   height: 2px;
   width: 100px;
@@ -634,7 +637,8 @@ section.about-us {
   bottom: 30px;
 }
 
-.numbers h2:after {
+.numbers h2:after,
+.socials h2:after {
   display: block;
   height: 2px;
   width: 100px;
@@ -645,7 +649,8 @@ section.about-us {
   top: 30px;
 }
 
-.numbers .boxes {
+.numbers .boxes,
+.socials .boxes {
   margin: 0 auto;
   width: 60%;
   text-align: center;
@@ -929,6 +934,25 @@ section.about-us {
   position: relative;
   right: 25px;
 }
+
+/* ==============
+      socials
+=============== */
+.socials {
+  margin: 100px 0 50px 0;
+  padding: 0;
+}
+
+.socials .box {
+  margin-top: 30px;
+}
+
+.socials .box a:link,
+.socials .box a:visited {
+  color: rgba(255, 37, 37, 0.7);
+  font-size: 200%;
+}
+
 /* ============================================================= 
                           INDEX.EJS
 ============================================================== */
