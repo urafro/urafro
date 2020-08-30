@@ -697,8 +697,8 @@ section.about-us {
 }
 
 .newsletter-form input[type="submit"] {
-  height: 44px;
-  line-height: 44px;
+  height: 45px;
+  line-height: 45px;
   padding: 0 30px;
   cursor: pointer;
   border-radius: 120px;
@@ -707,7 +707,6 @@ section.about-us {
   -ms-border-radius: 120px;
   -o-border-radius: 120px;
   position: relative;
-  top: .5px;
   right: 25px;
 }
 /* ============================================================= 
