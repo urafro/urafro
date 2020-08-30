@@ -684,6 +684,75 @@ section.about-us {
   display: inline-block;
 }
 
+/* ===============
+      founder
+================ */
+.founder {
+  display: flex;
+  align-items: center;
+}
+
+.founder .text {
+  flex: 1;
+  padding-left: 65px;
+}
+
+.founder .text h2 {
+  margin-bottom: 30px;
+}
+
+.founder .text h2:after {
+  display: block;
+  position: relative;
+  top: 20px;
+  background-color: rgba(255, 37, 37, 0.3);
+  width: 20px;
+  height: 5px;
+  content: " ";
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.founder .text h2 span {
+  font-size: 70%;
+  margin-left: 10px;
+  color: rgba(67, 35, 68, 0.5);
+}
+
+.founder .text p {
+  color: rgba(67, 35, 68, 0.5);
+  font-size: initial;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.founder .image-text {
+  flex: 1;
+  align-self: center;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/36/X7L5hgFXQZazzPaK3goC_14084990857_88cabf3b6d_o.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.founder .image-text h2 span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 55%;
+}
+
+.founder .image-text h2 {
+  font-size: 170%;
+  color: rgb(255, 37, 37);
+  padding: 30px;
+  border: 1px solid rgba(255, 37, 37, 0.5);
+}
 
 /* ===============
     newsletter
