@@ -741,6 +741,20 @@ section.about-us {
   background-attachment: fixed;
 }
 
+.founder .image-text a:link,
+.founder .image-text a:visited {
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+
+.founder .image-text a:hover,
+.founder .image-text a:active {
+  background-color: rgba(67, 35, 68, 0.3);
+}
+
 .founder .image-text h2 span {
   color: #fff;
   text-transform: uppercase;
@@ -751,7 +765,7 @@ section.about-us {
   font-size: 170%;
   color: rgb(255, 37, 37);
   padding: 30px;
-  border: 1px solid rgba(255, 37, 37, 0.5);
+  border: 2px solid rgba(67, 35, 68, 0.3);
 }
 
 /* ===============
