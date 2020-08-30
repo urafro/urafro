@@ -768,6 +768,57 @@ section.about-us {
   border: 2px solid rgba(67, 35, 68, 0.3);
 }
 
+/* ================
+    testimonials
+================= */
+/* .testimonials {
+  
+} */
+
+.testimonials .header {
+  text-align: center;
+  background-color: #f3f3f7;
+  padding: 100px 0 150px 0;
+}
+
+.testimonials .header span:first-of-type {
+  text-transform: uppercase;
+  color: rgba(67, 35, 68, 0.5);
+}
+
+.testimonials .header span.brand {
+  text-transform: none;
+  color: rgb(255, 37, 37);
+  font-size: 120%;
+}
+
+.testimonials .header h2 {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.testimonials .boxes {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonials .box {
+  width: 30%;
+}
+
+.testimonials .t-head {
+  text-align: center;
+  padding: 100px 0;
+  background-image: url("https://i.imgur.com/f89JM9hm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonials .t-head:hover {
+  opacity: 0.5;
+}
+
 /* ===============
     newsletter
 ================ */
