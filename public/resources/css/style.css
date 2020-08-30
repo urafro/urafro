@@ -1063,6 +1063,27 @@ section.about-us {
   cursor: pointer;
 }
 
+/* =============
+    l-footer 
+============== */
+.l-footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-footer .content {
+  display: flex;
+}
+
+/* presizing images. will come back to style them proper after all
+  the other elements are styled correctly */
+.l-footer img {
+  height: 50px;
+  width: 50px;
+}
+
 /* ============================================================= 
                           INDEX.EJS
 ============================================================== */
