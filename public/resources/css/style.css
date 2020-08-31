@@ -1117,11 +1117,31 @@ section.about-us {
   font-size: 120%;
 }
 
-/* presizing images. will come back to style them proper after all
-  the other elements are styled correctly */
-.l-footer img {
-  height: 50px;
-  width: 50px;
+/* recent posts */
+.f-posts {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.f-posts:nth-of-type(even) {
+  border-top: 1px solid rgba(218, 223, 225, .5);
+  border-bottom: 1px solid rgba(218, 223, 225, .5);
+}
+
+.footer-card img {
+  height: 76px;
+  width: 76px;  
+}
+
+.f-head img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 20px;
 }
 
 /* ============================================================= 
