@@ -373,6 +373,11 @@ greeting styles
   width: 100vw;
   /* height to be adjusted after i'm done with all corresponding styles */
   height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("/resources/img/greetings.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
 }
 
 .main-nav {
