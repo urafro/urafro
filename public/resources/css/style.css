@@ -226,7 +226,7 @@ a {
   cursor: pointer;
 }
 
-.landing-section {
+/* .landing-section {
   width: 100vw;
   height: 100vh;
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -235,7 +235,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 /* .showcase-l {
   padding: 0;
@@ -369,7 +369,51 @@ greeting styles
 
 ======== */
 
+.greeting {
+  width: 100vw;
+  /* height to be adjusted after i'm done with all corresponding styles */
+  height: 100vh;
+}
 
+.main-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 10px 30px;
+}
+
+.main-nav .brand {
+  flex: 1;
+}
+
+.main-nav .nav-items {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-nav .nav-items li {
+  padding: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #432344;
+  font-weight: 400;
+  font-size: 90%;
+}
+
+/* styling main-nav go-to blog button */
+.main-nav .bdb {
+  margin: 0;
+  position: relative;
+  left: 0px;
+  text-transform: none;
+  margin-left: 10px;
+}
 
 /*===================*/
 .intro {
