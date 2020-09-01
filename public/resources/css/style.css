@@ -377,7 +377,7 @@ greeting styles
   url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: local;
+  background-attachment: fixed;
 }
 
 .main-nav {
@@ -391,6 +391,7 @@ greeting styles
 
 .main-nav .brand {
   flex: 1;
+  font-size: 150%;
 }
 
 .main-nav .nav-items {
@@ -406,9 +407,21 @@ greeting styles
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  color: #432344;
+  color: #100c08;
   font-weight: 400;
-  font-size: 90%;
+  font-size: 95%;
+  transition: border-bottom .2s, color .2s;
+  -webkit-transition: border-bottom .2s, color .2s;
+  -moz-transition: border-bottom .2s, color .2s;
+  -ms-transition: border-bottom .2s, color .2s;
+  -o-transition: border-bottom .2s, color .2s;
+}
+
+.main-nav .nav-b:hover,
+.main-nav .nav-b:active {
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #100c08;
 }
 
 /* styling main-nav go-to blog button */
@@ -457,6 +470,11 @@ greeting styles
 
 .g-box .bdb {
   text-transform: none;
+  color: #100c08;
+}
+
+.g-box .bdb-full i {
+  margin-right: 10px;
 }
 
 .g-image {
@@ -465,7 +483,7 @@ greeting styles
 }
 
 .g-image img {
-  height: 470px;
+  height: 485px;
   position: relative;
   left: 60px;
 }
