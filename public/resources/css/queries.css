@@ -280,6 +280,10 @@
     width: 56px;
   }
 
+  div.newsletter-form input[type="email"] {
+    width: 70%;
+  }
+
   /* ===================
       blog app styles
   ==================== */
