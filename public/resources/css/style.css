@@ -535,33 +535,22 @@ greeting styles
   -webkit-animation-name: slideUp;
   animation-name: slideUp;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  animation-duration: 3s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-delay: 0;
   animation-delay: 0;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
 }
 
 /* animating intro-div to pop into the viewport from below the screen */
-@-webkit-keyframes slideUp {
-  0% {
-    top: 0;
-  }
-  70% {
-    top: -30px;
-  }
-  100% {
-    top: -20px;
-  }
-}
 @keyframes slideUp {
   0% {
-    top: 0;
+    top: -20px;
   }
-  70% {
-    top: -30px;
+  30% {
+    top: -40px;
   }
   100% {
     top: -20px;
@@ -605,7 +594,7 @@ greeting styles
 
 /* first nested div */
 .about h2 {
-  font-size: 160%;
+  font-size: 150%;
   margin: 20px 0;
 }
 
