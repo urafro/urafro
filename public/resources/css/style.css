@@ -485,7 +485,7 @@ greeting styles
 
 .g-box h1 {
   font-size: 160%;
-  margin: 30px 0;
+  margin: 20px 0 30px 0;
   line-height: 140%;
   color: #fff;
 }
