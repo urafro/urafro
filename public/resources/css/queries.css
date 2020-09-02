@@ -1,3 +1,23 @@
+/* Largest Laptop screens and small TVs: 1366px and more */
+@media only screen and (max-width: 1920px) {
+  /* ===================
+    landing page styles
+    ==================== */
+
+  div.g-box span {
+    font-size: 130%;
+  }
+
+  div.g-box h1 {
+    font-size: 200%;
+    margin: 20px 0 30px 0;
+  }
+
+  div.g-image img {
+    height: 850px;
+  }
+}
+
 /* Extra large screens, TVs: 1201px and more */
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
 
