@@ -1217,6 +1217,7 @@ section.about-us {
 .message h2 {
   margin-bottom: 30px;
   font-weight: 300;
+  font-size: 100%;
 }
 
 .contact-us .our-contacts .card {
@@ -1246,6 +1247,7 @@ section.about-us {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-size: 70%;
+  font-weight: 300;
 }
 
 .card-txt p {
@@ -1270,6 +1272,10 @@ section.about-us {
 .message-input label {
   position: relative;
   top: -10px;
+}
+
+.message-input label h5 {
+  font-weight: 300;
 }
 
 .message-input input[type="text"],
@@ -1335,7 +1341,7 @@ section.about-us {
 
 .footer-card h3 {
   margin-bottom: 30px;
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .f-text {
@@ -1389,6 +1395,15 @@ section.about-us {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   margin-right: 20px;
+}
+
+.f-body span {
+  font-size: 70%;
+}
+
+.f-body h5 {
+  font-size: 70%;
+  font-weight: 300;
 }
 
 /* Developers */

@@ -1,5 +1,15 @@
 /* Extra large screens, TVs: 1201px and more */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+
+  /* ================================
+        LANDING PAGE STYLES
+  ================================= */
+
+
+  /* =================================
+            BLOG APP STYLES 
+  ================================== */
+
   .hero,
   .hero-2,
   .hero-l {
