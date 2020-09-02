@@ -1426,7 +1426,8 @@ section.about-us {
 .hero,
 .hero-2,
 .hero-l {
-  max-width: 50%;
+  /* max-width: 100%; */
+  flex: 1;
   height: 100vh;
   -ms-flex-item-align: start;
   align-self: flex-start;
