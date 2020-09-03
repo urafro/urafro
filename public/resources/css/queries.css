@@ -145,27 +145,6 @@
 
 /* Desktops, Large Screens: 1025px to 1200px */
 @media only screen and (max-width: 1200px) {
-
-  /* ===================
-    landing page styles
-    ==================== */
-
-  div.g-box span {
-    font-size: 90%;
-  }
-
-  div.g-box h1 {
-    font-size: 120%;
-    margin: 10px 0 30px 0;
-  }
-
-  div.g-image img {
-    height: 485px;
-  }
-
-  /* ===================
-      blog app styles
-    ==================== */
   .hero,
   .hero-2,
   .hero-l {
@@ -402,60 +381,6 @@
 
 /* Small iPads, Tablets: 481px to 768px */
 @media only screen and (max-width: 768px) {
-
-  /* ===================
-    landing page styles
-  ==================== */
-
-  ul.main-nav .brand {
-    font-size: 90%;
-  }
-
-  ul.main-nav li a:link,
-  ul.main-nav li a:visited {
-    font-size: 50%;
-  }
-
-  div.g-box span {
-    font-size: 70%;
-  }
-
-  div.g-box h1 {
-    font-size: 85%;
-    margin: 5px 0 10px 0;
-  }
-
-  div.g-box .bdb,
-  ul.main-nav .bdb-full {
-    padding: 5px 10px;
-    font-size: 60%;
-  }
-
-  div.g-image img {
-    height: 320px;
-  }
-
-  /* div.footer-card img {
-    height: 56px;
-    width: 56px;
-  } */
-
-  /* div.newsletter-form input[type="email"] {
-    width: 70%;
-  } */
-
-  /* ===================
-      blog app styles
-  ==================== */
-
-  span#menuIcon,
-  div.l-container .menu-icon {
-    position: fixed;
-    font-size: 20px;
-    left: 0;
-    top: 15px;
-  }
-
 
   div.hero .header,
   div.hero-2 .header-2 {

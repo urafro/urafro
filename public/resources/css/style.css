@@ -559,7 +559,6 @@ greeting styles
 
 .intro-div img {
   height: 150px;
-  width: 150px;
 }
 
 .intro-div p {
@@ -726,7 +725,6 @@ greeting styles
 
 .box img {
   height: 100px;
-  width: 100px;
   position: relative;
   left: 0;
   -ms-flex-item-align: end;
@@ -790,7 +788,7 @@ section.about-us {
 }
 
 /* ==============
-      services
+    our numbers
 =============== */
 .numbers,
 .socials {
@@ -975,9 +973,6 @@ section.about-us {
 /* ================
     testimonials
 ================= */
-/* .testimonials {
-  
-} */
 
 .testimonials .header {
   text-align: center;
