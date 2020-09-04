@@ -801,8 +801,7 @@ section.about-us {
   margin-bottom: 20px;
 }
 
-.numbers h2:before,
-.socials h2:before {
+.numbers h2:before {
   display: block;
   height: 2px;
   width: 100px;
@@ -813,8 +812,7 @@ section.about-us {
   bottom: 30px;
 }
 
-.numbers h2:after,
-.socials h2:after {
+.numbers h2:after {
   display: block;
   height: 2px;
   width: 100px;

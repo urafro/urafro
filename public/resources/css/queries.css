@@ -497,6 +497,33 @@
     margin-top: 25px;
   }
 
+  /* numbers */
+  section.numbers h2 {
+    font-size: 100%;
+  }
+
+  section.numbers h2:before { 
+    bottom: 20px;
+  }
+
+  section.numbers h2:after {
+    top: 20px;
+  }
+
+  section.numbers .box h3 {
+    font-size: 120%;
+    margin-bottom: 10px;
+  }
+
+  section.numbers .box i {
+    font-size: 120%;
+    margin-right: 2px;
+  }
+
+  section.numbers .box h5 {
+    font-size: 70%;
+  }
+
   /* footer */
 
   div.footer-card img {
