@@ -524,6 +524,17 @@
     font-size: 70%;
   }
 
+  /* founder */
+  section.founder h2,
+  section.founder .image-text h2 {
+    font-size: 100%;
+  }
+
+  section.founder .text p {
+    font-size: 75%;
+    line-height: 150%;
+  }
+
   /* footer */
 
   div.footer-card img {
