@@ -564,6 +564,11 @@
     font-size: 50%;
   }
 
+  /* newsletter */
+  div.newsletter-form h2 {
+    font-size: 100%;
+  }
+
   /* footer */
 
   div.footer-card img {
@@ -573,6 +578,10 @@
 
   div.newsletter-form input[type="email"] {
     width: 70%;
+  }
+
+  div.newsletter-form p {
+    font-size: 65%;
   }
 
   /* ===================
