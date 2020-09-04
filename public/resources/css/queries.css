@@ -483,6 +483,20 @@
     height: 60px;
   }
 
+  /* our story */
+  div.about-text {
+    font-size: 70%;
+  }
+
+  div.about-text p {
+    font-size: 110%;
+  }
+
+  div.founder-signature {
+    height: 35px;
+    margin-top: 25px;
+  }
+
   /* footer */
 
   div.footer-card img {
