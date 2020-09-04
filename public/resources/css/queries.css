@@ -498,8 +498,9 @@
   }
 
   /* numbers */
-  section.numbers h2 {
-    font-size: 100%;
+  section.numbers h2,
+  section.socials h2 {
+    font-size: 120%;
   }
 
   section.numbers h2:before { 
@@ -566,6 +567,23 @@
 
   /* newsletter */
   div.newsletter-form h2 {
+    font-size: 100%;
+  }
+
+  /* contact-us */
+  section.contact-us {
+    padding-bottom: 0;
+  }
+
+  section.contact-us .form {
+    right: 0;
+  }
+
+  section.contact-us .image {
+    display: none;
+  }
+
+  section.contact-us .icon i {
     font-size: 100%;
   }
 
