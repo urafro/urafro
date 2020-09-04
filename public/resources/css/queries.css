@@ -535,6 +535,35 @@
     line-height: 150%;
   }
 
+  /* testimonials */
+  section.testimonials .header span {
+    font-size: 75%;
+  }
+
+  section.testimonials .header h2 {
+    font-size: 110%;
+  }
+
+  section.testimonials .box p:before {
+    bottom: 5px;
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  section.testimonials .box p {
+    font-size: 65%;
+  }
+
+  section.testimonials .box h3 {
+    font-size: 65%;
+    margin-bottom: 10px;
+  }
+
+  section.testimonials .title,
+  section.testimonials .company {
+    font-size: 50%;
+  }
+
   /* footer */
 
   div.footer-card img {
