@@ -25,20 +25,32 @@
     ==================== */
 
   div.g-box span {
-    font-size: 110%;
+    font-size: 130%;
   }
 
   div.g-box h1 {
-    font-size: 140%;
+    font-size: 170%;
     margin: 20px 0 30px 0;
   }
 
   div.g-image img {
-    height: 630px;
+    height: 600px;
+  }
+
+  div.intro-div p {
+    width: 80%;
   }
 
   div.about-text p {
     font-size: 100%;
+  }
+
+  div.box p {
+    width: 75%;
+  }
+
+  section.testimonials .box p {
+    width: 70%;
   }
 }
 
