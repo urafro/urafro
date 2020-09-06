@@ -951,6 +951,11 @@
     font-size: 105%;
   }
 
+  /* founder */
+  section.founder {
+    display: none;
+  }
+
   /* ================
     blog app styles
   ================= */
