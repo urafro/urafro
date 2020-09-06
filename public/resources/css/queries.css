@@ -862,6 +862,10 @@
   ================= */
 
   /* navbar & greeting section */
+  ul.main-nav {
+    padding-top: 15px;
+  }
+
   ul.main-nav .nav-items {
     display: none;
   }
@@ -874,6 +878,7 @@
     flex-direction: column;
     width: 100%;
     font-size: 90%;
+    margin-top: 45px;
   } 
 
   div.g-image {
