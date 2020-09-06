@@ -928,6 +928,29 @@
     height: 40px;
   }
 
+  /* our numbers */
+  section.numbers {
+    background-color: #f3f3f7;
+    padding-bottom: 50px;
+  }
+
+  section.numbers h2,
+  section.socials h2 {
+    font-size: 100%;
+  }
+
+  section.numbers h2:before {
+    height: 0;
+  }
+
+  section.numbers .boxes {
+    width: 100%;
+  }
+
+  section.numbers .box i {
+    font-size: 105%;
+  }
+
   /* ================
     blog app styles
   ================= */
