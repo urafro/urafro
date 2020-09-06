@@ -893,6 +893,23 @@
     margin-top: 40px;
   }
 
+  /* how-it-works */
+  div.how-it-works {
+    padding-bottom: 50px;
+  }
+
+  div.how-it-works .head {
+    font-size: 70%;
+  }
+
+  div.how-it-works .boxes {
+    flex-direction: column;
+  }
+
+  div.how-it-works .box {
+    margin-bottom: 30px;
+  }
+
   /* ================
     blog app styles
   ================= */
