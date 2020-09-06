@@ -879,11 +879,12 @@
     width: 100%;
     font-size: 90%;
     margin-top: 45px;
+    justify-items: center;
   } 
 
   div.g-image {
     align-self: flex-start;
-    margin-left: -55px;
+    margin-left: -40px;
   }
 
   /* intro-div */
