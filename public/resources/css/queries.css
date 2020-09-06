@@ -910,6 +910,24 @@
     margin-bottom: 30px;
   }
 
+  /* about us */
+  section.about-us {
+    flex-direction: column;
+  }
+
+  div.about-image img {
+    height: 100px;
+  }
+
+  div.about-text h2:after {
+    width: 120px;
+    top: 30px;
+  }
+
+  img.founder-signature {
+    height: 40px;
+  }
+
   /* ================
     blog app styles
   ================= */
