@@ -956,6 +956,25 @@
     display: none;
   }
 
+  /* testimonials */
+  section.testimonials .header {
+    padding-top: 50px;
+  }
+
+  section.testimonials .boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.testimonials .box {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 50px;
+    padding-left: 20px;
+    top: -180px;
+  }
+
   /* ================
     blog app styles
   ================= */
