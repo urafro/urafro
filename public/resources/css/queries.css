@@ -881,6 +881,18 @@
     margin-left: -55px;
   }
 
+  /* intro-div */
+  div.intro-div {
+    flex-direction: column;
+    padding: 30px 0;
+    margin-bottom: -50px;
+  }
+
+  div.intro-div .give,
+  div.intro-div .receive {
+    margin-top: 40px;
+  }
+
   /* ================
     blog app styles
   ================= */
