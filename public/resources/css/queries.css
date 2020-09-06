@@ -1025,6 +1025,24 @@
     margin-top: 30px;
   }
 
+  /* footer */
+  footer.l-footer .content {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  div.content .footer-card {
+    margin-bottom: 30px;
+  }
+
+  div.content .footer-card h3 {
+    margin-bottom: 15px;
+  }
+
+  div.f-text p {
+    width: 100%;
+  }
+
   /* ================
     blog app styles
   ================= */
@@ -1038,8 +1056,9 @@
 
   span#menuIcon,
   .l-container .menu-icon {
-    left: 10px;
+    left: 0;
     position: fixed;
+    color: rgb(186, 188, 189);
   }
 
   /* Hero section */
