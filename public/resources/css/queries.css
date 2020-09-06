@@ -861,6 +861,30 @@
   landing page styles
   ================= */
 
+  /* navbar & greeting section */
+  ul.main-nav .nav-items {
+    display: none;
+  }
+
+  ul.main-nav .brand {
+    text-align: center;
+  }
+
+  div.greeting-boxes {
+    flex-direction: column;
+    width: 100%;
+    font-size: 90%;
+  } 
+
+  div.g-image {
+    align-self: flex-start;
+    margin-left: -55px;
+  }
+
+  /* ================
+    blog app styles
+  ================= */
+
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -870,7 +894,8 @@
 
   span#menuIcon,
   .l-container .menu-icon {
-    left: 30px;
+    left: 10px;
+    position: fixed;
   }
 
   /* Hero section */
