@@ -464,16 +464,12 @@
     font-size: 70%;
   }
 
-  div.g-box {
-    margin-right: 30px;
-  }
-
   div.g-box span {
     font-size: 90%;
   }
 
   div.g-box h1 {
-    font-size: 130%;
+    font-size: 100%;
     margin: 20px 0 30px 0;
   }
 
@@ -866,8 +862,7 @@
   ================= */
 
   /* navbar & greeting section */
-  section.greeting,
-  section.newsletter {
+  section.greeting {
     background-attachment: initial;
   }
 
@@ -1006,8 +1001,8 @@
 
   div.newsletter-form input[type="email"],
   div.newsletter-form input[type="submit"] {
-    /* height: 30px;
-    line-height: 30px; */
+    height: 30px;
+    line-height: 30px;
     font-size: 50%;
   }
 
