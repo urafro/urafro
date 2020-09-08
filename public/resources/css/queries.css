@@ -964,6 +964,10 @@
     width: 100%;
   }
 
+  section.numbers .box h3 {
+    font-size: 200%;
+  }
+
   section.numbers .box i {
     font-size: 105%;
   }
@@ -1017,7 +1021,6 @@
   }
 
   div.newsletter-form input[type="submit"] {
-    /* padding: 0 10px; */
     right: unset;
     width: 30%;
     margin-top: 15px;
