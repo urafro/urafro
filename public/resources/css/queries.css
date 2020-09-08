@@ -1006,8 +1006,8 @@
 
   div.newsletter-form input[type="email"],
   div.newsletter-form input[type="submit"] {
-    height: 30px;
-    line-height: 30px;
+    /* height: 30px;
+    line-height: 30px; */
     font-size: 50%;
   }
 
