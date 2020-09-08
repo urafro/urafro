@@ -862,7 +862,8 @@
   ================= */
 
   /* navbar & greeting section */
-  section.greeting {
+  section.greeting,
+  section.newsletter {
     background-attachment: initial;
   }
 
@@ -892,7 +893,7 @@
   }
 
   div.g-image img {
-    height: 220px;
+    height: 25vh;
   }
 
   /* intro-div */
@@ -946,6 +947,8 @@
   section.numbers {
     background-color: #f3f3f7;
     padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   section.numbers h2,
@@ -999,12 +1002,12 @@
     width: 80%;
   }
 
-  div.newsletter-form input[type="email"],
+  /* div.newsletter-form input[type="email"],
   div.newsletter-form input[type="submit"] {
     height: 30px;
     line-height: 30px;
     font-size: 50%;
-  }
+  } */
 
   div.newsletter-form input[type="email"] {
     width: 64%;

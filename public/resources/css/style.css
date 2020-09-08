@@ -1145,7 +1145,7 @@ section.about-us {
 =============== */
 .socials {
   margin: 100px 0 50px 0;
-  padding: 0;
+  padding: 0 30px;
 }
 
 .socials .box {
