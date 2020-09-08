@@ -464,12 +464,16 @@
     font-size: 70%;
   }
 
+  div.g-box {
+    margin-right: 30px;
+  }
+
   div.g-box span {
     font-size: 90%;
   }
 
   div.g-box h1 {
-    font-size: 100%;
+    font-size: 130%;
     margin: 20px 0 30px 0;
   }
 
@@ -862,7 +866,8 @@
   ================= */
 
   /* navbar & greeting section */
-  section.greeting {
+  section.greeting,
+  section.newsletter {
     background-attachment: initial;
   }
 
