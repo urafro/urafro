@@ -2001,9 +2001,9 @@ section.about-us {
   width: 48%;
 }
 
-.content-inputs input[type=text],
+.content-inputs input[type="text"],
 textarea,
-.auth input[type=password] {
+.auth input[type="password"] {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid #959595;
@@ -2016,16 +2016,16 @@ textarea,
   -o-border-radius: 5px;
 }
 
-.content-inputs input[type=text],
-.auth input[type=password] {
+.content-inputs input[type="text"],
+.auth input[type="password"] {
   height: 80px;
   font-size: 70%;
   padding: 10px;
 }
 
-.content-boxes input[type=submit],
-.comment .content-inputs form div.box-content input[type=submit],
-.comments-input input[type=submit] {
+.content-boxes input[type="submit"],
+.comment .content-inputs form div.box-content input[type="submit"],
+.comments-input input[type="submit"] {
   margin-top: 20px;
   width: 100%;
   height: 50px;
@@ -2040,7 +2040,7 @@ textarea,
   -o-border-radius: 30px;
 }
 
-.comments-input input[type=submit] {
+.comments-input input[type="submit"] {
   margin-top: 5px;
 }
 
