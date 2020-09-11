@@ -1844,6 +1844,7 @@ section.about-us {
 .showcase footer p,
 .showcase-2 footer p {
   width: 100%;
+  text-align: center;
 }
 
 .showcase footer a,
