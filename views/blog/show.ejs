@@ -64,17 +64,18 @@
     <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
     <div class="show-menu">
       <ul>
-        <!-- add new blog url -->
-        <li>
-          <a href="/blogs/new">
-            <i class="far fa-file"></i>
-          </a>
-        </li>
-        
+
         <!-- edit current blog url -->
         <li>
           <a href="/blogs/<%= blog._id %>/edit">
             <i class="far fa-edit"></i>
+          </a>
+        </li>
+        
+        <!-- add new blog url -->
+        <li>
+          <a href="/blogs/new">
+            <i class="far fa-file"></i>
           </a>
         </li>
         
