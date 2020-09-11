@@ -2044,6 +2044,67 @@ textarea,
   margin-top: 5px;
 }
 
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #bebebe;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 50px;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #555;
+  cursor: pointer;
+  font-size: 85%;
+  font-weight: 300;
+}
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #808080;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  -ms-transition: .5s all ease;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
 /* input styles */
 .box-content {
   position: relative;
