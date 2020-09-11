@@ -97,18 +97,28 @@
   /* Index Page styles */
   div.hero .header img,
   div.hero-2 .header-2 img {
-    height: 120px;
-    width: 120px;
+    height: 85px;
+    width: 85px;
   }
 
   div.hero .header h2,
   div.hero-2 .header-2 h2 {
-    font-size: 130%;
+    font-size: 100%;
     margin-bottom: 10px;
+    font-weight: 300;
   }
 
-  .hero .header p { 
+  div.hero .header p { 
     margin-bottom: 5px;
+    font-size: 95%;
+  }
+
+  div.hero .header a i {
+    font-size: 80%;
+  }
+
+  div.header-2 .card-text p {
+    font-size: 60%;
   }
 
   div.showcase-box {

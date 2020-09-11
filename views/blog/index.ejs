@@ -129,7 +129,11 @@
         </div>
 
         <div class="showcase-text">
-          <h2><a href="/blogs/<%= blog._id %>"><%= blog.body.header.mainHeading %></a></h2>
+          <h3>
+            <a href="/blogs/<%= blog._id %>">
+              <%= blog.body.header.mainHeading %>
+            </a>
+          </h3>
           <p><%= blog.body.content.introParagraph.substring(0, 150) %>...</p>
 
           <div class="show-link">
