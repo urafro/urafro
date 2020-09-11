@@ -2217,7 +2217,64 @@ div.content-text p a:visited {
   margin-left: 25px;
 }
 
-/**************************** content section ***********************/
+/**********************
+    content section 
+***********************/
+
+.show-menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  background-color: rgb(231, 229, 229);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.show-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.show-menu ul li:last-of-type {
+  border-bottom: 1px solid transparent;
+}
+
+.show-menu ul li a:link,
+.show-menu ul li a:visited {
+  /* color: rgb(85, 85, 85); */
+  color: #555;
+}
+
+.show-menu ul li a:hover,
+.show-menu ul li a:active {
+  color: rgb(158, 154, 154);
+}
+
+li form button {
+  display: inline-block;
+  border: none;
+  font-size: 120%;
+  margin: 0;
+  text-decoration: none;
+  color: rgb(158, 154, 154);
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
 
 .show-wrapper {
   width: 76%;

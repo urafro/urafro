@@ -33,47 +33,6 @@
 
   <!-- declare show hero background image as inline css to access ejs data -->
   <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
-      
-      <nav role="navigation">
-
-        <ul>
-          <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
-          <!-- user dashboard link -->
-          <li><a href="#"><i class="fas fa-user-cog"></i></a>
-
-            <ul class="dropdown">
-
-              <!-- link to blog insights-->
-              <!-- <a href="#"><i class="far fa-chart-bar"></i></a> -->
-
-              <a href="/blogs/new">
-                <li><i class="far fa-file"></i></li>
-              </a>
-
-              <a href="/blogs/<%= blog._id %>/edit">
-                <li><i class="far fa-edit"></i></li>
-              </a>
-
-              <!-- <a href="#">
-                link to blog resources
-              <li><i class="fas fa-link"></i></li>
-            </a> -->
-
-              <!-- blog delete button-->
-              <li class="delete">
-                <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
-                  <button><i class="far fa-trash-alt"></i></button>
-                </form>
-              </li>
-
-            </ul>
-          </li>
-          <% } %>
-
-          <!-- reader-mode trigger -->
-          <li><a href="#"><i class="fas fa-book-reader"></i></a></li>
-        </ul>
-      </nav>
 
     <div class="header-2">
       <h2><%= blog.author.bio %></h2>
@@ -97,6 +56,38 @@
   </div>
 
   <div class="showcase-2">
+
+    <!--
+      showing author's menu when author's logged in
+    -->
+
+    <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
+    <div class="show-menu">
+      <ul>
+        <!-- add new blog url -->
+        <li>
+          <a href="/blogs/new">
+            <i class="far fa-file"></i>
+          </a>
+        </li>
+        
+        <!-- edit current blog url -->
+        <li>
+          <a href="/blogs/<%= blog._id %>/edit">
+            <i class="far fa-edit"></i>
+          </a>
+        </li>
+        
+        <!-- Delete opened blog -->
+        <li class="delete">
+          <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+            <button><i class="fas fa-trash"></i></button>
+          </form>
+        </li>
+
+      </ul>
+    </div>
+    <% } %>
 
     <div class="show-wrapper">
       <div class="show-heading">
