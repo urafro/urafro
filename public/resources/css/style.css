@@ -1562,7 +1562,7 @@ section.about-us {
 .hero .header h2,
 .hero-2 .header-2 h2 {
   font-size: 120%;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .hero .header p {
@@ -1570,7 +1570,8 @@ section.about-us {
   text-align: center;
   font-size: 120%;
   width: 70%;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .hero-btn:link,
@@ -2213,7 +2214,7 @@ div.content-text p a:visited {
 }
 
 .header-2 .card-text p {
-  font-size: 90%;
+  font-size: 70%;
   margin-left: 25px;
 }
 
