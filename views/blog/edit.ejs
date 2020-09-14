@@ -61,7 +61,7 @@
 
                 <div class="right select">
                   <!-- <input type="text" name="blog[tag]" id="tag" placeholder="blog tag" required> -->
-                  <select name="blog[tag]" id="tag">
+                  <select name="blog[tag]" id="tag" required>
                     <option selected disabled>Choose a tag</option>
                     <option value="Life">Life</option>
                     <option value="Code">Code</option>
@@ -115,7 +115,7 @@
 
               <label for="paragraphOne">Paragraph 1</label>
 
-              <textarea name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="5">
+              <textarea name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="5" required>
                 <%= blog.body.content.sectionOne.paragraphOne %>
               </textarea>
 
@@ -230,7 +230,7 @@
               <div class="group">
                 <div class="left">
                   <label for="smallerHeading">Smaller Heading</label>
-                  <input type="text" name="blog[smallerHeading]" id="smallerHeading" value="<%= blog.body.content.sectionThree.smallerHeading %>">
+                  <input type="text" name="blog[smallerHeading]" id="smallerHeading" value="<%= blog.body.content.sectionThree.smallerHeading %>" required>
                 </div>
 
                 <div class="right">
