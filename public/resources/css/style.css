@@ -136,7 +136,7 @@ a {
 .bdb-full {
   background-color: #ffc03d;
   border: 1px solid #ffc03d;
-  color: #432344;
+  color: #100c08;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -156,7 +156,7 @@ a {
 
 .bdb-ghost:hover,
 .bdb-ghost:active {
-  color: #432344;
+  color: #100c08;
   background-color: #ffc03d;
   border-color: #ffc03d;
 }
@@ -215,7 +215,7 @@ a {
 
 .menu-content a:active,
 .menu-content a:hover {
-  background-color: rgba(235, 31, 116, 0.5);
+  background-color: rgba(255, 37, 37, 0.3);
   transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
@@ -360,7 +360,11 @@ a {
   landing page styles
 ===================== */
 section {
-  color: #432344;
+  color: #100c08;
+}
+
+section h1, h2, h3 {
+  font-weight: 300;
 }
 
 /* ======
@@ -1837,7 +1841,7 @@ section.about-us {
   height: 120px;
   padding: 50px;
   padding-left: 0;
-  background: rgba(235, 31, 116, 0.5);
+  background: rgba(255, 37, 37, 0.7);
   color: #555;
   font-size: 80%;
 }
