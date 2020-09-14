@@ -1988,18 +1988,20 @@ section.about-us {
 }
 
 .content-inputs {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  box-shadow: 0 5px 15px #e1e6f0;
 }
 
 .content-inputs h2 {
   padding: 20px;
   text-align: center;
   font-size: 120%;
+  color: #ff2525;
 }
 
 .content-inputs .left, .right {
@@ -2032,18 +2034,13 @@ textarea,
 .comment .content-inputs form div.box-content input[type="submit"],
 .comments-input input[type="submit"] {
   margin-top: 20px;
-  width: 100%;
-  height: 50px;
+  /* width: 100%; */
   cursor: pointer;
-  color: #fff;
-  font-size: 120%;
-  background-color: #000;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
+  font-size: 100%;
+  text-transform: none;
+  display: inline-block;
+  font-family: inherit;
+} 
 
 .comments-input input[type="submit"] {
   margin-top: 5px;
