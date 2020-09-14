@@ -2011,7 +2011,7 @@ textarea,
 .auth input[type="password"] {
   width: 100%;
   margin-bottom: 20px;
-  border: 1px solid #959595;
+  border: 1px dashed rgba(67, 35, 68, 0.3);
   font-family: inherit;
   font-weight: 300;
   border-radius: 5px;
