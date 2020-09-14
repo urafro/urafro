@@ -1600,6 +1600,10 @@ section.about-us {
   overflow: hidden;
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* hamburger menu icon */
@@ -2304,6 +2308,10 @@ li form button {
 .show-wrapper {
   width: 76%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .show-wrapper p {
