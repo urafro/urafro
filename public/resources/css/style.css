@@ -957,7 +957,7 @@ section.about-us {
 
 .founder .image-text a:hover,
 .founder .image-text a:active {
-  background-color: rgba(67, 35, 68, 0.3);
+  background-color: rgba(255, 37, 37, 0.1);
 }
 
 .founder .image-text h2 span {
@@ -972,7 +972,7 @@ section.about-us {
   font-size: 170%;
   color: rgb(255, 37, 37);
   padding: 30px;
-  border: 2px solid rgba(67, 35, 68, 0.3);
+  border: 1px solid rgba(255, 37, 37, 0.3);
 }
 
 /* ================
