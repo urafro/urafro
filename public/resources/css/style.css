@@ -1734,9 +1734,12 @@ section.about-us {
   margin-bottom: 2px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 .card-text p {
   font-size: 70%;
   color: rgb(200, 200, 200);
+  font-family: 'Tangerine', cursive;
 }
 
 .card-tag {
