@@ -439,6 +439,17 @@ greeting styles
   -o-transition: border-bottom .2s, color .2s;
 }
 
+.main-nav li a.bdb-ghost:link,
+.main-nav li a.bdb-ghost:visited {
+  color: #ffc03d;
+  font-weight: 300;
+}
+
+.main-nav li a.bdb-ghost:hover,
+.main-nav li a.bdb-ghost:active {
+  color: #100c08;
+}
+
 .main-nav .nav-b:hover,
 .main-nav .nav-b:active {
   color: #fff;
@@ -453,6 +464,7 @@ greeting styles
   left: 0px;
   text-transform: none;
   margin-left: 10px;
+  font-weight: 300;
 }
 
 /* ==============
