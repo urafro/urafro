@@ -2885,6 +2885,12 @@ li form button {
   * Auth Routes
 ======================= */
 
+.auth h5 {
+  margin-top: 20px;
+  font-size: 70%;
+  margin-bottom: 5px;
+}
+
 div.box-content.auth h5 a:link,
 div.box-content.auth h5 a:visited {
   color: rgb(172, 165, 165);
