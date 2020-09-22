@@ -401,6 +401,33 @@ greeting styles
   padding: 10px 30px;
 }
 
+.jiggle {
+  animation-name: jiggle;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 3;
+}
+
+@keyframes jiggle {
+
+  48%,
+  62% {
+    transform: scale(1.0, 1.0)
+  }
+
+  50% {
+    transform: scale(1.1, 0.9)
+  }
+
+  56% {
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+
+  59% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
+}
+
 .main-nav .brand {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -556,10 +583,10 @@ greeting styles
   animation-duration: 3s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
-  -webkit-animation-iteration-count: 3;
-  animation-iteration-count: 3;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
 }
 
 /* animating intro-div to pop into the viewport from below the screen */
