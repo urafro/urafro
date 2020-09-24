@@ -405,7 +405,7 @@ greeting styles
   animation-name: jiggle;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
 }
 
 @keyframes jiggle {
