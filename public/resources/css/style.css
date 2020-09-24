@@ -165,14 +165,14 @@ a {
                         LANDING PAGE
 ============================================================== */
 
-#menuIcon {
+/* #menuIcon {
   background: none;
-}
+} */
 
 #menuIcon, 
 .l-container .menu-icon {
   position: fixed;
-  color: #fff;
+  color: rgb(186, 188, 189);
   font-size: 20px;
   left: 42px;
   top: 24px;
