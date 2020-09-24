@@ -221,7 +221,7 @@
           ========================
         -->
         <% if(blog.comments.length <= 0) { %>
-          <form action="/blogs/<%= blog.id %>/comments" method="POST">
+          <form class="new-comment-form" action="/blogs/<%= blog.id %>/comments" method="POST">
             <div class="row comments-input">
 
               <div class="section zero">
@@ -240,7 +240,7 @@
 
                     <label for="commentText">Comment*</label>
 
-                    <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="spit your fire"
+                    <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="be the first to say something!"
                       required></textarea>
 
                     <input class="bdb bdb-full" type="submit" value="say it">
@@ -311,7 +311,7 @@
 
     <footer>
       <p>
-        Copyright &copy; <span>#weRme</span>. <!-- Inspired by <a href="http://template-my-life.webflow.io/"
+        &copy; <span>#weRme</span>. All rights reserved. <!-- Inspired by <a href="http://template-my-life.webflow.io/"
            target="_blank"> Webflow </a> -->
       </p>
     </footer>

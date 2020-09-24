@@ -2454,6 +2454,10 @@ li form button {
   margin-bottom: 15px;
 }
 
+.new-comment-form {
+  margin-bottom: 30px;
+}
+
 /********* Show-backlinks section *************/
 
 .show-backlinks h3 {
@@ -2503,6 +2507,7 @@ li form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2513,6 +2518,7 @@ li form button {
 .backlinks-card {
   -ms-flex-preferred-size: 49%;
   flex-basis: 49%;
+  margin-bottom: 30px;
 }
 
 /********** card header *******/
