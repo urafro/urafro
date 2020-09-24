@@ -1,5 +1,13 @@
 /* Largest Laptop screens and small TVs: 1366px and more */
 @media only screen and (max-width: 1920px) {
+
+  span#menuIcon,
+  div.l-container .menu-icon {
+    left: 20px;
+    top: 20px;
+    font-size: 160%;
+  }
+
   /* ===================
     landing page styles
     ==================== */
@@ -20,6 +28,14 @@
 
 /* In between largest and large screens */
 @media only screen and (max-width: 1600px) {
+
+  span#menuIcon,
+  div.l-container .menu-icon {
+    left: 20px;
+    top: 20px;
+    font-size: 160%;
+  }
+  
   /* ===================
     landing page styles
     ==================== */
@@ -57,6 +73,13 @@
 /* Extra large screens, TVs: 1201px and more */
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
 
+  span#menuIcon,
+  div.l-container .menu-icon {
+    left: 20px;
+    top: 20px;
+    font-size: 160%;
+  }
+
     /* ===================
     landing page styles
     ==================== */
@@ -73,11 +96,6 @@
     div.g-image img {
       height: 600px;
     }
-
-    /* ===================
-      blog app styles
-    ==================== */
-
 
   /* =================================
             BLOG APP STYLES 
@@ -172,6 +190,13 @@
 
 /* Desktops, Large Screens: 1025px to 1200px */
 @media only screen and (max-width: 1200px) {
+
+  span#menuIcon,
+  div.l-container .menu-icon {
+    left: 20px;
+    top: 20px;
+    font-size: 160%;
+  }
 
   /* ===================
     landing page styles
@@ -291,6 +316,12 @@
   /* ===================
     landing page styles
   ==================== */
+  span#menuIcon,
+  div.l-container .menu-icon {
+    left: 20px;
+    top: 20px;
+    font-size: 160%;
+  }
 
   input.bdb {
     padding: 10px 20px;
@@ -419,7 +450,8 @@
   span#menuIcon, 
   div.l-container .menu-icon {
     left: 0;
-    top: 15px;
+    top: 10px;
+    font-size: 135%;
   }
 
   a.bdb {
@@ -817,6 +849,13 @@
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
 @media only screen and (min-width: 280px) and (max-width: 480px) {
 
+  span#menuIcon,
+  .l-container .menu-icon {
+    font-size: 115%;
+    left: -10px;
+    top: 15px;
+  }
+
   /* ================
   landing page styles
   ================= */
@@ -1041,13 +1080,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  span#menuIcon,
-  .l-container .menu-icon {
-    left: 0;
-    position: fixed;
-    color: rgb(186, 188, 189);
   }
 
   /* Hero section */
