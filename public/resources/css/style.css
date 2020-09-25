@@ -178,8 +178,11 @@ a {
   top: 24px;
   cursor: pointer;
   z-index: 1;
+}
+
+.landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
-  -webkit-animation: 1s menuFadeIn 12s forwards;
+  -webkit-animation: 2s menuFadeIn 12s forwards;
   opacity: 0;
 }
 
