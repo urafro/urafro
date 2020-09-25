@@ -178,6 +178,15 @@ a {
   top: 24px;
   cursor: pointer;
   z-index: 1;
+  animation: 1s menuFadeIn 12s forwards;
+  -webkit-animation: 1s menuFadeIn 12s forwards;
+  opacity: 0;
+}
+
+@keyframes menuFadeIn {
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu-container {
@@ -399,6 +408,17 @@ greeting styles
   width: 90%;
   margin: auto;
   padding: 10px 30px;
+  animation: 1s navFade .5s forwards;
+  -webkit-animation: 1s navFade .5s forwards;
+  opacity: 0;
+  margin-top: -100px;
+}
+
+@keyframes navFade {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 .jiggle {
@@ -406,6 +426,7 @@ greeting styles
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
+  animation-delay: 10s;
 }
 
 @keyframes jiggle {
@@ -526,6 +547,17 @@ greeting styles
 .g-box span {
   font-size: 120%;
   color: rgb(200, 200, 200);
+  animation: 0.5s spanSlideRight 1s forwards;
+  opacity: 0;
+  margin-left: -50px;
+  -webkit-animation: 0.5s spanSlideRight 1s forwards;
+}
+
+@keyframes spanSlideRight {
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
 }
 
 .g-box h1 {
@@ -533,11 +565,36 @@ greeting styles
   margin: 20px 0 30px 0;
   line-height: 140%;
   color: #fff;
+  animation: 0.5s h1slideRight 2s forwards;
+  -webkit-animation: 0.5s h1slideRight 1.5s forwards;
+  margin-left: -100px;
+  opacity: 0;
+}
+
+@keyframes h1slideRight {
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
 }
 
 .g-box .bdb {
   text-transform: none;
   color: #100c08;
+}
+
+.g-box .bdb-full {
+  margin-top: -50px;
+  opacity: 0;
+  animation: 1s btnSlideDown 2s forwards;
+  -webkit-animation: 1s btnSlideDown 2s forwards;
+}
+
+@keyframes btnSlideDown {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 .g-box .bdb-full i {
@@ -556,6 +613,23 @@ greeting styles
   height: 485px;
   position: relative;
   left: 60px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  animation: 1s imgPopUp 3s forwards;
+  -webkit-animation: 1s imgPopUp 3s forwards;
+}
+
+@keyframes imgPopUp {
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 }
 
 /*===================*/
