@@ -885,17 +885,28 @@
   div.greeting-boxes {
     flex-direction: column;
     width: 100%;
-    font-size: 90%;
-    margin-top: 45px;
-    justify-items: center;
-  } 
+    font-size: 100%;
+    /* margin-top: 45px; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.g-box {
+    padding-left: 0;
+  }
+
+  div.g-box h1 {
+    font-size: 100%;
+  }
 
   div.g-image {
-    align-self: flex-start;
+    align-self: center;
+    display: none;
   }
 
   div.g-image img {
     height: 25vh;
+    left: 0;
   }
 
   /* intro-div */
