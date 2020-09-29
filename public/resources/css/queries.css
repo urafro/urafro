@@ -564,6 +564,7 @@
   section.numbers .box i {
     font-size: 120%;
     margin-right: 2px;
+    display: none;
   }
 
   section.numbers .box h5 {
