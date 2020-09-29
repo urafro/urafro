@@ -551,6 +551,11 @@
     top: 20px;
   }
 
+  section.numbers .box {
+    display: flex;
+    flex-direction: column;
+  }
+
   section.numbers .box h3 {
     font-size: 120%;
     margin-bottom: 10px;
