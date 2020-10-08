@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/resources/css/queries.css">
-  <title>
-    #werme | Welcome
-  </title>
-  <!-- primary stylesheet -->
-  <link rel="stylesheet" href="/resources/css/style.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/2369667c99.js" crossorigin="anonymous"></script>
-</head>
+<% include ./partials/header %>
 
 <div class="container landing-section">
 
@@ -459,17 +442,4 @@
   </div>
 </footer>
 
-<script>
-  function closeMenu() {
-    document.getElementById("navbar").style.height = "0%";
-  }
-
-  function openMenu() {
-    document.getElementById("navbar").style.height = "100%";
-  }
-</script>
-
-<script type="text/javascript" src="/resources/css/js/script.js"></script>
-</body>
-
-</html>
+<% include ./partials/footer %>
