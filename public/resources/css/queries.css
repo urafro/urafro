@@ -111,6 +111,10 @@
   div.our-writers {
     width: 75%;
   }
+
+  div.blogs-header {
+    margin-left: 13%;
+  }
 }
 
 /* Extra large screens, TVs: 1201px and more */
@@ -180,6 +184,14 @@
 
   div.header-2 .card-text p {
     font-size: 60%;
+  }
+
+  div.our-writers {
+    width: 80%;
+  }
+
+  div.blogs-header {
+    margin-left: 10%;
   }
 
   div.showcase-box {
@@ -266,6 +278,14 @@
   .hero-2,
   .hero-l {
     min-width: 50%;
+  }
+
+  div.our-writers {
+    width: 80%;
+  }
+
+  div.blogs-header {
+    margin-left: 10%;
   }
 
   div.showcase-box {
