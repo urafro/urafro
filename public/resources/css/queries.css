@@ -41,6 +41,25 @@
   a.hero-btn i {
     font-size: 130%;
   }
+
+  div.showcase-box {
+    width: 100%;
+    height: 220px;
+  }
+
+  div.showcase-text {
+    width: 100%;
+  }
+
+  div.showcase-card {
+    width: 100%;
+    height: 80px;
+  }
+
+  div.showcase-card .card-tag {
+    position: absolute;
+    right: 5px;
+  }
 }
 
 /* In between largest and large screens */
