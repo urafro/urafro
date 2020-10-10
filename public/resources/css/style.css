@@ -1651,7 +1651,7 @@ section.about-us {
   text-decoration: underline;
   text-decoration-style: wavy;
   -moz-text-decoration-style: wavy;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
 }
 
 .showcase-boxes {
