@@ -80,11 +80,22 @@
   <% } %>
 
   <div class="showcase">
+  
+    <div class="our-writers">
+      <div class="content-text">
+        <h2><a href="#">Young minds talking big</a></h2>
+        <p>
+          We're a group of young people interested in the consequences of how we interact with our environments.
+        </p>
+        <a href="#" class="bdb bdb-full">meet the writers</a>
+      </div>
+      <div class="empty"></div>
+    </div>
 
     <div class="showcase-boxes">
       <!-- create a box for every blog in database with data from the "/blogs" Index route-->
       <% foundBlogs.forEach(function(blog) { %>
-        <div class="showcase-box">
+      <div class="showcase-box">
 
         <!-- link will go to the blog show route-->
         <a href="/blogs/<%= blog._id %>">
