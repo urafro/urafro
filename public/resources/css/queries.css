@@ -731,8 +731,20 @@
       blog app styles
   ==================== */
 
+  div.container {
+    flex-direction: column;
+  }
+
   div.hero {
     display: none;
+  }
+
+  div.hero-2 {
+    position: static;
+    top: initial;
+    width: 100%;
+    height: 35vh;
+    flex: none;
   }
 
   div.hero .header,
@@ -865,6 +877,7 @@
 
   div.show-wrapper {
     width: 92%;
+    margin-top: 30px;
   }
 
   div.show-heading {
@@ -1196,7 +1209,6 @@
     /* to fix height and put the correct one for each screen size here */
     height: 194px;
     width: 100vw;
-    position: -webkit-sticky;
     position: static;
     top: initial;
   }
