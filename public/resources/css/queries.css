@@ -1,5 +1,5 @@
 /* Largest Laptop screens and small TVs: 1366px and more */
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
 
   span#menuIcon,
   div.l-container .menu-icon {
@@ -23,6 +23,23 @@
 
   div.g-image img {
     height: 700px;
+  }
+
+  /* ==================
+      blog app styles
+  =================== */
+  div.hero .header h2,
+  div.hero-2 .header-2 h2 {
+    font-size: 150%;
+  }
+
+  div.hero .header p {
+    font-size: 145%;
+    margin-bottom: 10px;
+  }
+
+  a.hero-btn i {
+    font-size: 130%;
   }
 }
 
@@ -853,7 +870,7 @@
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
-@media only screen and (min-width: 280px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
   span#menuIcon,
   .l-container .menu-icon {
