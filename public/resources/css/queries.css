@@ -731,6 +731,10 @@
       blog app styles
   ==================== */
 
+  div.hero {
+    display: none;
+  }
+
   div.hero .header,
   div.hero-2 .header-2 {
     padding-bottom: 30px;
@@ -747,11 +751,19 @@
   }
 
   div.our-writers {
-    width: 94%;
+    width: 100%;
+  }
+
+  div.our-writers .content-text {
+    padding-left: 80px;
+  }
+
+  div.our-writers .empty {
+    flex-basis: 10%;
   }
 
   div.blogs-header {
-    margin-left: 2%;
+    margin-left: 10%;
   }
 
   div.blogs-header h1 {
