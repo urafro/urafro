@@ -104,6 +104,13 @@
   section.testimonials .box p {
     width: 70%;
   }
+
+  /* ===================
+      blog app styles
+  ==================== */
+  div.our-writers {
+    width: 75%;
+  }
 }
 
 /* Extra large screens, TVs: 1201px and more */
