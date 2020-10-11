@@ -1599,6 +1599,23 @@ section.about-us {
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
+  opacity: 0;
+  position: relative;
+  right: -250px;
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Our-writers slide left animation */
+@keyframes slideLeft {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 .our-writers .content-text {
