@@ -1603,7 +1603,7 @@ section.about-us {
   position: relative;
   right: -250px;
   animation-name: slideLeft;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -1633,7 +1633,7 @@ section.about-us {
   animation-name: textLeftRight;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -1663,7 +1663,7 @@ section.about-us {
   animation-name: btnSlideDown;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
