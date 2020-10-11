@@ -1657,6 +1657,22 @@ section.about-us {
 .our-writers .content-text a.bdb {
   font-size: 65%;
   padding: 10px 20px;
+  position: relative;
+  top: -15px;
+  opacity: 0;
+  animation-name: btnSlideDown;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btnSlideDown {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .our-writers .content-text h2 a:link,
