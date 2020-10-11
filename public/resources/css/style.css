@@ -1625,8 +1625,24 @@ section.about-us {
   align-items: flex-start;
   justify-content: flex-end;
   flex-basis: 80px;
+  opacity: 0;
+  position: relative;
+  left: -250px;
   background-color: #fff;
   padding-left: 0;
+  animation-name: textLeftRight;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textLeftRight {
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 .our-writers .content-text h2 {
