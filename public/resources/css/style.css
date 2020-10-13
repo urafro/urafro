@@ -1685,24 +1685,6 @@ section.about-us {
   flex-basis: 15%;
 }
 
-/* Blogs Header Title */
-.blogs-header {
-  align-self: flex-start;
-  margin: 70px 0 30px 10%;
-}
-
-.blogs-header h1 {
-  font-weight: 300;
-}
-
-.blogs-header .brand {
-  font-weight: 300;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  -moz-text-decoration-style: wavy;
-  text-decoration-thickness: 2px;
-}
-
 .showcase-boxes {
   display: grid;
   grid-template-columns: 1fr;
