@@ -1277,6 +1277,10 @@
     width: 70%;
   }
 
+  div.our-writers .content-text {
+    padding-left: 5%;
+  }
+
   a.hero-btn:link,
   a.hero-btn:visited {
     padding: 5px 5px 20px 5px;
