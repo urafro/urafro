@@ -696,7 +696,7 @@ greeting styles
 .box a i {
   margin-top: 30px;
   margin-bottom: 50px;
-  font-size: 200%;
+  font-size: 120%;
 }
 
 .box h3 {
@@ -1183,6 +1183,10 @@ section.about-us {
 .socials .box a:link,
 .socials .box a:visited {
   color: rgba(255, 37, 37, 0.7);
+  font-size: 200%;
+}
+
+.socials .box a i {
   font-size: 200%;
 }
 
