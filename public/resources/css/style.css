@@ -796,67 +796,6 @@ section.about-us {
   height: 50px;
 }
 
-/* ==============
-    our numbers
-=============== */
-.numbers,
-.socials {
-  padding: 50px 0 100px 0;
-  text-align: center;
-}
-
-.numbers h2,
-.socials h2 {
-  margin-bottom: 20px;
-}
-
-.numbers h2:before {
-  display: block;
-  height: 2px;
-  width: 100px;
-  content: " ";
-  background-color: rgba(255, 37, 37, 0.3);
-  margin: 0 auto;
-  position: relative;
-  bottom: 30px;
-}
-
-.numbers h2:after {
-  display: block;
-  height: 2px;
-  width: 100px;
-  content: " ";
-  background-color: rgba(255, 37, 37, 0.3);
-  margin: 0 auto;
-  position: relative;
-  top: 30px;
-}
-
-.numbers .boxes,
-.socials .boxes {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center;
-}
-
-.numbers .box h3 {
-  margin-top: 50px;
-  color: rgb(255, 37, 37);
-  font-size: 400%;
-  font-weight: 900;
-}
-
-.numbers .box i {
-  font-size: 160%;
-  margin-right: 20px;
-  color: rgb(207, 207, 207);
-}
-
-.numbers .box h5 {
-  font-size: 110%;
-  display: inline-block;
-}
-
 /* ===============
       founder
 ================ */
@@ -982,6 +921,56 @@ section.about-us {
   color: #fff;
   padding: 30px;
   border: 1px solid #100c08;
+}
+
+/* ==============
+    our numbers
+=============== */
+.numbers,
+.socials {
+  padding: 50px 0 100px 0;
+  text-align: center;
+}
+
+.numbers h2,
+.socials h2 {
+  margin-bottom: 20px;
+}
+
+.numbers h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  content: " ";
+  background-color: rgba(255, 37, 37, 0.3);
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+}
+
+.numbers .boxes,
+.socials .boxes {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.numbers .box h3 {
+  margin-top: 50px;
+  color: rgb(255, 37, 37);
+  font-size: 400%;
+  font-weight: 900;
+}
+
+.numbers .box i {
+  font-size: 160%;
+  margin-right: 20px;
+  color: rgb(207, 207, 207);
+}
+
+.numbers .box h5 {
+  font-size: 110%;
+  display: inline-block;
 }
 
 /* ================
