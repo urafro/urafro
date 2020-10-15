@@ -649,6 +649,7 @@ greeting styles
 .head p {
   font-size: 70%;
   font-weight: 400;
+  opacity: 0.5;
 }
 
 .italic {
@@ -695,6 +696,7 @@ greeting styles
 .box a i {
   margin-top: 30px;
   margin-bottom: 50px;
+  font-size: 200%;
 }
 
 .box h3 {
@@ -759,6 +761,10 @@ section.about-us {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.about-text .italic {
+  opacity: 0.5;
 }
 
 .about-text h2 {
@@ -861,6 +867,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #ffc03d;
 }
 
 .founder .text {
@@ -1152,6 +1159,21 @@ section.about-us {
 .socials {
   margin: 100px 0 50px 0;
   padding: 0 30px;
+}
+
+.socials h2 {
+  margin-bottom: 45px;
+}
+
+.socials h2::after {
+  display: block;
+  width: 100px;
+  background-color: rgba(255, 37, 37, 0.2);
+  content: " ";
+  height: 2px;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
 }
 
 .socials .box {
