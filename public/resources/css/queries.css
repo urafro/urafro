@@ -112,8 +112,8 @@
     width: 75%;
   }
 
-  div.blogs-header {
-    margin-left: 13%;
+  section.separator {
+    margin-right: 13%;
   }
 }
 
@@ -190,8 +190,8 @@
     width: 80%;
   }
 
-  div.blogs-header {
-    margin-left: 10%;
+  section.separator {
+    margin-right: 10%;
   }
 
   div.showcase-box {
@@ -284,8 +284,8 @@
     width: 80%;
   }
 
-  div.blogs-header {
-    margin-left: 10%;
+  section.separator {
+    margin-right: 10%;
   }
 
   div.showcase-box {
@@ -779,12 +779,8 @@
     flex-basis: 10%;
   }
 
-  div.blogs-header {
-    margin-left: 10%;
-  }
-
-  div.blogs-header h1 {
-    font-size: 140%;
+  section.separator {
+    margin-right: 5%;
   }
 
   div.showcase-box {
@@ -1305,7 +1301,6 @@
   }
 
   div.showcase-boxes {
-    margin-top: 10px;
     grid-gap: 5px;
     width: 100%;
   }
