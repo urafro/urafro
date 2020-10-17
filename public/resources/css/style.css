@@ -1697,6 +1697,38 @@ section.about-us {
   flex-basis: 15%;
 }
 
+/* Separator Section */
+.separator {
+  align-self: flex-end;
+  margin-right: 10%;
+  /*margin-top: 30px;
+  */position: relative;
+  left: -50px;
+  opacity: 0;
+  animation: smallSlideRight 2.5s linear 2s 1 forwards;
+  -webkit-animation: smallSlideRight 2.5s linear 2s 1 forwards;
+}
+
+@keyframes smallSlideRight {
+  50% {
+    margin-top: 30px;
+  }
+  70% {
+    margin-top: 30px;
+    opacity: 0;
+    left: -15px;
+  }
+  100% {
+    margin-top: 30px;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.separator h5 {
+  font-weight: 300;
+}
+
 .showcase-boxes {
   display: grid;
   grid-template-columns: 1fr;
