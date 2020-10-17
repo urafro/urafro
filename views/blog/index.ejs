@@ -145,6 +145,7 @@
             </a>
           </h3>
           <p>
+            <!-- Dynamically showing three dots for sample paragraph text on showcase cards -->
             <% if (blog.body.content.introParagraph.length > 145) { %>
             <%= blog.body.content.introParagraph.substring(0, 145) %>...
             <% } else { %>
