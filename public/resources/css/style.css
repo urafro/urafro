@@ -2388,8 +2388,8 @@ div.content-text p a:visited {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  animation: admenuLeft 1s linear 3s forwards;
-  -webkit-animation: admenuLeft 1s linear 3s forwards;
+  animation: admenuLeft 1s linear 5s forwards;
+  -webkit-animation: admenuLeft 1s linear 5s forwards;
 }
 
 @keyframes admenuLeft {
