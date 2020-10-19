@@ -186,6 +186,12 @@ a {
   opacity: 0;
 }
 
+@-webkit-keyframes menuFadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes menuFadeIn {
   100% {
     opacity: 1;
@@ -298,6 +304,13 @@ greeting styles
   margin-top: -100px;
 }
 
+@-webkit-keyframes navFade {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
 @keyframes navFade {
   100% {
     opacity: 1;
@@ -306,29 +319,62 @@ greeting styles
 }
 
 .jiggle {
+  -webkit-animation-name: jiggle;
   animation-name: jiggle;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-delay: 10s;
   animation-delay: 10s;
+}
+
+@-webkit-keyframes jiggle {
+
+  48%,
+  62% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0)
+  }
+
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9)
+  }
+
+  56% {
+    -webkit-transform: scale(0.9, 1.1) translate(0, -5px);
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+
+  59% {
+    -webkit-transform: scale(1.0, 1.0) translate(0, -3px);
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
 }
 
 @keyframes jiggle {
 
   48%,
   62% {
+    -webkit-transform: scale(1.0, 1.0);
     transform: scale(1.0, 1.0)
   }
 
   50% {
+    -webkit-transform: scale(1.1, 0.9);
     transform: scale(1.1, 0.9)
   }
 
   56% {
+    -webkit-transform: scale(0.9, 1.1) translate(0, -5px);
     transform: scale(0.9, 1.1) translate(0, -5px)
   }
 
   59% {
+    -webkit-transform: scale(1.0, 1.0) translate(0, -3px);
     transform: scale(1.0, 1.0) translate(0, -3px)
   }
 }
@@ -437,6 +483,13 @@ greeting styles
   -webkit-animation: 1s spanSlideRight 1s forwards;
 }
 
+@-webkit-keyframes spanSlideRight {
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
 @keyframes spanSlideRight {
   100% {
     opacity: 1;
@@ -454,6 +507,13 @@ greeting styles
   animation: 1s h1slideRight 2s forwards;
   -webkit-animation: 1s h1slideRight 2s forwards;
   opacity: 0;
+}
+
+@-webkit-keyframes h1slideRight {
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 @keyframes h1slideRight {
@@ -474,6 +534,13 @@ greeting styles
   opacity: 0;
   animation: 1.8s btnSlideDown 4.5s forwards;
   -webkit-animation: 1.8s btnSlideDown 4.5s forwards;
+}
+
+@-webkit-keyframes btnSlideDown {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 @keyframes btnSlideDown {
@@ -502,6 +569,13 @@ greeting styles
   opacity: 0;
   animation: 1.5s imgSlideLeft 3s forwards;
   -webkit-animation: 1.5s imgSlideLeft 3s forwards;
+}
+
+@-webkit-keyframes imgSlideLeft {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 @keyframes imgSlideLeft {
@@ -543,6 +617,14 @@ greeting styles
 }
 
 /* animating intro-div to pop into the viewport from below the screen */
+@-webkit-keyframes slideUp {
+  50% {
+    top: -40px;
+  }
+  100% {
+    top: -20px;
+  }
+}
 @keyframes slideUp {
   50% {
     top: -40px;
@@ -875,7 +957,8 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/36/X7L5hgFXQZazzPaK3goC_14084990857_88cabf3b6d_o.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+  url("/resources/img/founder.jpeg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("/resources/img/founder.jpeg");
   background-size: 100%;
@@ -1436,6 +1519,8 @@ section.about-us {
 .hero-2,
 .hero-l {
   /* max-width: 100%; */
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   height: 100vh;
   -ms-flex-item-align: start;
@@ -1552,6 +1637,13 @@ section.about-us {
   -webkit-animation: headerSlideUp 1s linear 5s forwards;
 }
 
+@-webkit-keyframes headerSlideUp {
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
 @keyframes headerSlideUp {
   100% {
     opacity: 1;
@@ -1608,33 +1700,58 @@ section.about-us {
   overflow: hidden;
   position: relative;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .our-writers {
   width: 80%;
   height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+  url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   opacity: 0;
   position: relative;
   right: -250px;
+  -webkit-animation-name: slideLeft;
   animation-name: slideLeft;
+  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 /* Our-writers slide left animation */
+@-webkit-keyframes slideLeft {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
 @keyframes slideLeft {
   100% {
     opacity: 1;
@@ -1643,23 +1760,47 @@ section.about-us {
 }
 
 .our-writers .content-text {
+  -ms-flex-item-align: end;
   align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-preferred-size: 80px;
   flex-basis: 80px;
   opacity: 0;
   position: relative;
   left: -250px;
   background-color: #fff;
   padding-left: 0;
+  -webkit-animation-name: textLeftRight;
   animation-name: textLeftRight;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes textLeftRight {
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 @keyframes textLeftRight {
@@ -1684,11 +1825,17 @@ section.about-us {
   position: relative;
   top: -15px;
   opacity: 0;
+  -webkit-animation-name: btnSlideDown;
   animation-name: btnSlideDown;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -1706,11 +1853,13 @@ section.about-us {
 }
 
 .our-writers .empty {
+  -ms-flex-preferred-size: 15%;
   flex-basis: 15%;
 }
 
 /* Separator Section */
 .separator {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-right: 10%;
   /*margin-top: 30px;
@@ -1719,6 +1868,22 @@ section.about-us {
   opacity: 0;
   animation: smallSlideRight 2.5s linear 2s 1 forwards;
   -webkit-animation: smallSlideRight 2.5s linear 2s 1 forwards;
+}
+
+@-webkit-keyframes smallSlideRight {
+  50% {
+    margin-top: 30px;
+  }
+  70% {
+    margin-top: 30px;
+    opacity: 0;
+    left: -15px;
+  }
+  100% {
+    margin-top: 30px;
+    left: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes smallSlideRight {
@@ -2143,6 +2308,7 @@ section.about-us {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px #e1e6f0;
   box-shadow: 0 5px 15px #e1e6f0;
 }
 
@@ -2202,6 +2368,7 @@ select {
   -ms-appearance: none;
   appearance: none;
   outline: 0;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 0 !important;
   background: #bebebe;
@@ -2216,6 +2383,8 @@ select::-ms-expand {
 /* Custom Select */
 .select {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
   height: 50px;
@@ -2226,6 +2395,8 @@ select::-ms-expand {
 }
 
 select {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 0 .5em;
   color: #555;
@@ -2245,7 +2416,6 @@ select {
   cursor: pointer;
   pointer-events: none;
   -webkit-transition: .5s all ease;
-  -o-transition: .5s all ease;
   transition: .5s all ease;
   -moz-transition: .5s all ease;
   -ms-transition: .5s all ease;
@@ -2386,6 +2556,13 @@ div.content-text p a:visited {
   -webkit-animation: admenuLeft 1s linear 3s forwards;
 }
 
+@-webkit-keyframes admenuLeft {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
 @keyframes admenuLeft {
   100% {
     opacity: 1;
@@ -2395,7 +2572,12 @@ div.content-text p a:visited {
 
 .show-menu ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -2483,9 +2665,18 @@ li form button:active {
   padding-top: 30px;
   width: 76%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -2512,6 +2703,19 @@ li form button:active {
   opacity: 0;
   animation: mainHeadingSlideDown 1s linear 0s forwards;
   -webkit-animation: mainHeadingSlideDown 1s linear 0s forwards;
+}
+
+@-webkit-keyframes mainHeadingSlideDown {
+  0% {
+    font-weight: 500;
+  }
+  95% {
+    font-weight: 500;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 @keyframes mainHeadingSlideDown {
@@ -2547,6 +2751,25 @@ li form button:active {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+}
+
+@-webkit-keyframes smallPop {
+  90% {
+    color: #100c08;
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+  100% {
+    color: rgb(162, 166, 167);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 }
 
 @keyframes smallPop {
@@ -2684,6 +2907,7 @@ li form button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
