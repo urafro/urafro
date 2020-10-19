@@ -880,7 +880,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ffc03d;
+  background-color: rgba(67, 35, 68, 0.9);
 }
 
 .founder .text {
@@ -995,7 +995,7 @@ section.about-us {
   font-weight: 400;
   color: #fff;
   padding: 30px;
-  border: 1px solid #100c08;
+  border: 1px solid #ff2525;
 }
 
 /* ==============
