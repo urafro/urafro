@@ -2374,8 +2374,9 @@ div.content-text p a:visited {
 
 .show-menu {
   position: fixed;
-  right: 0;
-  top: 50%;
+  right: -25px;
+  top: 40%;
+  opacity: 0;
   transform: translate(-50%);
   -webkit-transform: translate(-50%);
   -moz-transform: translate(-50%);
@@ -2387,6 +2388,15 @@ div.content-text p a:visited {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  animation: admenuLeft 1s linear 3s forwards;
+  -webkit-animation: admenuLeft 1s linear 3s forwards;
+}
+
+@keyframes admenuLeft {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 .show-menu ul {
