@@ -1453,10 +1453,10 @@ section.about-us {
 
 .hero,
 .hero-2 {
-  background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
-  url("https://images.unsplash.com/photo-1586182987320-4f376d39d787?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("https://images.unsplash.com/photo-1586182987320-4f376d39d787?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))),
+  url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
