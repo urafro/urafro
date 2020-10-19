@@ -2377,19 +2377,13 @@ div.content-text p a:visited {
   right: -25px;
   top: 40%;
   opacity: 0;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  background-color: rgb(246, 244, 244);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  animation: admenuLeft 1s linear 5s forwards;
-  -webkit-animation: admenuLeft 1s linear 5s forwards;
+  transform: translate(-40%);
+  -webkit-transform: translate(-40%);
+  -moz-transform: translate(-40%);
+  -ms-transform: translate(-40%);
+  -o-transform: translate(-40%);
+  animation: admenuLeft 1s linear 3s forwards;
+  -webkit-animation: admenuLeft 1s linear 3s forwards;
 }
 
 @keyframes admenuLeft {
@@ -2406,8 +2400,7 @@ div.content-text p a:visited {
 }
 
 .show-menu ul li {
-  padding: 10px;
-  border-bottom: 1px solid rgb(223, 223, 223);
+  padding: 10px 5px;
 }
 
 .show-menu ul li:last-of-type {
@@ -2423,6 +2416,31 @@ div.content-text p a:visited {
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
   -o-transition: color 0.5s;
+}
+
+.admenu-tooltip {
+  visibility: hidden;
+  width: 60px;
+  color: #100c08;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px 0;
+  font-size: 70%;
+  
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+
+  /*Position the tooltip*/
+  position: absolute;
+  z-index: 1;
+  right: 105%;
+}
+
+.show-menu ul li a:hover .admenu-tooltip,
+.show-menu ul li a:active .admenu-tooltip {
+  visibility: visible;
 }
 
 .show-menu ul li a i {
