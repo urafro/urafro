@@ -498,7 +498,7 @@ greeting styles
 .g-image img {
   height: 485px;
   position: relative;
-  right: -250px;
+  right: -50px;
   opacity: 0;
   animation: 1.5s imgSlideLeft 3s forwards;
   -webkit-animation: 1.5s imgSlideLeft 3s forwards;
