@@ -1555,22 +1555,7 @@ section.about-us {
   -webkit-animation: headerSlideUp 1s linear 5s forwards;
 }
 
-.hero-2 .header-2 {
-  position: relative;
-  bottom: -50px;
-  opacity: 0;
-  animation: header2SlideUp 1s linear 1s forwards;
-  -webkit-animation: header2SlideUp 1s linear 1s forwards;
-}
-
 @keyframes headerSlideUp {
-  100% {
-    opacity: 1;
-    bottom: 0;
-  }
-}
-
-@keyframes header2SlideUp {
   100% {
     opacity: 1;
     bottom: 0;
@@ -2479,13 +2464,19 @@ li form button {
   font-size: 110%;
   margin-bottom: 20px;
   position: relative;
-  top: -50px;
+  top: -25px;
   opacity: 0;
   animation: mainHeadingSlideDown 1s linear 0s forwards;
   -webkit-animation: mainHeadingSlideDown 1s linear 0s forwards;
 }
 
 @keyframes mainHeadingSlideDown {
+  0% {
+    font-weight: 500;
+  }
+  95% {
+    font-weight: 500;
+  }
   100% {
     opacity: 1;
     top: 0;
@@ -2505,6 +2496,32 @@ li form button {
 .intro-paragraph {
   color: rgb(162, 166, 167);
   font-size: 80%;
+  animation: smallPop 0.2s linear 2s forwards;
+  -webkit-animation: smallPop 0.2s linear 2s forwards;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+@keyframes smallPop {
+  90% {
+    color: #100c08;
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+  100% {
+    color: rgb(162, 166, 167);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 }
 
 .intro-paragraph:after {
