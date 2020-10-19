@@ -182,7 +182,7 @@ a {
 
 .landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
-  -webkit-animation: 2s menuFadeIn 12s forwards;
+  -webkit-animation: 2s menuFadeIn 2s forwards;
   opacity: 0;
 }
 
@@ -2381,7 +2381,7 @@ div.content-text p a:visited {
   -moz-transform: translate(-50%);
   -ms-transform: translate(-50%);
   -o-transform: translate(-50%);
-  background-color: rgb(231, 229, 229);
+  background-color: rgb(246, 244, 244);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2396,8 +2396,8 @@ div.content-text p a:visited {
 }
 
 .show-menu ul li {
-  padding: 15px;
-  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 10px;
+  border-bottom: 1px solid rgb(223, 223, 223);
 }
 
 .show-menu ul li:last-of-type {
@@ -2406,25 +2406,44 @@ div.content-text p a:visited {
 
 .show-menu ul li a:link,
 .show-menu ul li a:visited {
-  /* color: rgb(85, 85, 85); */
-  color: #555;
+  /*color: rgb(85, 85, 85);
+  */color: #ffc03d;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.show-menu ul li a i {
+  font-size: 70%;
 }
 
 .show-menu ul li a:hover,
 .show-menu ul li a:active {
-  color: rgb(158, 154, 154);
+  color: #f39c12;
 }
 
 li form button {
   display: inline-block;
   border: none;
-  font-size: 120%;
+  font-size: 70%;
   margin: 0;
   text-decoration: none;
-  color: rgb(158, 154, 154);
+  color: rgba(255, 63, 52, .5);
   font-family: sans-serif;
   cursor: pointer;
   text-align: center;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+li form button:hover,
+li form button:active {
+  color: #ff2525;
 }
 
 .showcase-boxes,
