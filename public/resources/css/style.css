@@ -470,10 +470,10 @@ greeting styles
 
 .g-box .bdb-full {
   position: relative;
-  top: -50px;
+  top: -15px;
   opacity: 0;
-  animation: 1.8s btnSlideDown 5s forwards;
-  -webkit-animation: 1.8s btnSlideDown 5s forwards;
+  animation: 1.8s btnSlideDown 4.5s forwards;
+  -webkit-animation: 1.8s btnSlideDown 4.5s forwards;
 }
 
 @keyframes btnSlideDown {
@@ -536,18 +536,15 @@ greeting styles
   animation-duration: 3s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-  -webkit-animation-iteration-count: 2;
-  animation-iteration-count: 2;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 /* animating intro-div to pop into the viewport from below the screen */
 @keyframes slideUp {
-  0% {
-    top: -20px;
-  }
-  30% {
+  50% {
     top: -40px;
   }
   100% {
