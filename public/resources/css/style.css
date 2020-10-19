@@ -1547,6 +1547,36 @@ section.about-us {
   overflow: hidden;
 }
 
+.hero .header {
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+  animation: headerSlideUp 1s linear 5s forwards;
+  -webkit-animation: headerSlideUp 1s linear 5s forwards;
+}
+
+.hero-2 .header-2 {
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+  animation: header2SlideUp 1s linear 1s forwards;
+  -webkit-animation: header2SlideUp 1s linear 1s forwards;
+}
+
+@keyframes headerSlideUp {
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes header2SlideUp {
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
 .hero .header img,
 .hero-2 .header-2 img {
   height: 100px;
@@ -2448,6 +2478,18 @@ li form button {
 .main-heading h2 {
   font-size: 110%;
   margin-bottom: 20px;
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  animation: mainHeadingSlideDown 1s linear 0s forwards;
+  -webkit-animation: mainHeadingSlideDown 1s linear 0s forwards;
+}
+
+@keyframes mainHeadingSlideDown {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .main-heading h2:after {
