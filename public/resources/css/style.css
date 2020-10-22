@@ -2745,8 +2745,8 @@ li form button:active {
 .intro-paragraph {
   color: rgb(162, 166, 167);
   font-size: 80%;
-  animation: smallPop 0.2s linear 2s forwards;
-  -webkit-animation: smallPop 0.2s linear 2s forwards;
+  animation: smallPop 1s linear 2s forwards;
+  -webkit-animation: smallPop 1s linear 2s forwards;
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -2755,7 +2755,7 @@ li form button:active {
 }
 
 @-webkit-keyframes smallPop {
-  90% {
+  95% {
     color: #100c08;
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
