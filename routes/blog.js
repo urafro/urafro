@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Blog = require("../models/blog");
+const Draft = require("../models/draft");
 const middleware = require("../middleware");
 
 //================================ BLOG ROUTES ===============================
@@ -213,6 +214,68 @@ router.delete("/:id",middleware.checkBlogOwnership, (req, res) => {
       res.redirect("/blogs");
     }
   });
+});
+
+/* Blog Draft Routes */
+
+//Use data from blog new get route - create new blog or save it as draft instead
+router.post("/drafts",middleware.isLoggedIn, (req, res) => {
+
+  const newDraft = {
+    tag: req.body.blog.tag,
+    body: {
+      header: {
+        mainHeading: req.body.blog.mainHeading,
+        mainImage: req.body.blog.mainImage
+      },
+      content: {
+        introParagraph: req.body.blog.introParagraph,
+        sectionOne: {
+          paragraphOne: req.body.blog.paragraphOne,
+          paragraphTwo: req.body.blog.paragraphTwo
+        },
+
+        sectionTwo: {
+          mediumHeading: req.body.blog.mediumHeading,
+          paragraphThree: req.body.blog.paragraphThree,
+          paragraphFour: req.body.blog.paragraphFour,
+          paragraphFive: req.body.blog.paragraphFive
+        },
+        sectionThree: {
+          smallHeading: req.body.blog.smallHeading,
+          paragraphSix: req.body.blog.paragraphSix,
+          paragraphSeven: req.body.blog.paragraphSeven,
+          smallerHeading: req.body.blog.smallerHeading,
+          paragraphEight: req.body.blog.paragraphEight,
+          blogImage: req.body.blog.blogImage,
+          blogImageDescription: "blog image description :|",
+          paragraphNine: req.body.blog.paragraphNine
+        },
+        sectionFour: {
+          smallestHeading: req.body.blog.smallestHeading,
+          lastParagraph: req.body.blog.lastParagraph
+        }
+      }
+    },
+    author: {
+      id: req.user._id,
+      username: req.user.username,
+      avatarUrl: req.user.avatarUrl,
+      bio: req.user.bio
+    }
+  }
+
+  Draft.create(newDraft, (err, createdDraft) => {
+    if (err) {
+      req.flash("error", err.message);
+      res.redirect("/blogs/new");
+    } else {
+      req.flash("success", "Draft stored in a cool place! 🎉")
+      res.redirect("/blogs");
+      console.log(createdDraft);
+    }
+  });
+
 });
 
 module.exports = router;
