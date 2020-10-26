@@ -137,7 +137,6 @@ a {
   background-color: #ffc03d;
   border: 1px solid #ffc03d;
   color: #100c08;
-  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -2245,7 +2244,7 @@ section.about-us {
   width: 300px;
   height: 2px;
   margin-top: 50px;
-  background-color: rgba(235, 31, 116, 0.5);
+  background-color: rgba(255, 37, 37, 0.1);
 }
 
 .last {
@@ -2404,6 +2403,8 @@ select {
   cursor: pointer;
   font-size: 85%;
   font-weight: 300;
+  background: #e2f8ff;
+  font-family: inherit;
 }
 
 /* Arrow */
@@ -2413,18 +2414,21 @@ select {
   top: 0;
   right: 0;
   padding: 0 1em;
-  background: #808080;
+  color: #fff;
+  background-color: #e2f8ff;
   cursor: pointer;
   pointer-events: none;
   -webkit-transition: .5s all ease;
   transition: .5s all ease;
   -moz-transition: .5s all ease;
   -ms-transition: .5s all ease;
+  -o-transition: .5s all ease;
 }
 
 /* Transition */
 .select:hover::after {
-  color: #f39c12;
+  color: rgba(255, 37, 37, 0.7);
+  background: #e2f8ff;
 }
 
 /* input styles */
