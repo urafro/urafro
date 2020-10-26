@@ -138,6 +138,12 @@ a {
   border: 1px solid #ffc03d;
   color: #100c08;
   font-weight: 400;
+  box-shadow: 4px 12px 15px -15px #111;
+  transition: box-shadow 0.5s color 0.5s;
+  -webkit-transition: box-shadow 0.5s color 0.5s;
+  -moz-transition: box-shadow 0.5s color 0.5s;
+  -ms-transition: box-shadow 0.5s color 0.5s;
+  -o-transition: box-shadow 0.5s color 0.5s;
 }
 
 /* body button alternative call to action selection */
@@ -151,6 +157,8 @@ a {
 .bdb-full:active {
   background-color: #cf920d;
   border-color: #cf920d;
+  box-shadow: 0px 0px 0px 0px transparent;
+  color: #fff;
 }
 
 .bdb-ghost:hover,
@@ -524,7 +532,6 @@ greeting styles
 
 .g-box .bdb {
   text-transform: none;
-  color: #100c08;
 }
 
 .g-box .bdb-full {
