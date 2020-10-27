@@ -2423,7 +2423,7 @@ select {
   top: 0;
   right: 0;
   padding: 0 1em;
-  color: #fff;
+  color: rgba(255, 37, 37, 0.7);
   background-color: #e2f8ff;
   cursor: pointer;
   pointer-events: none;
@@ -2436,7 +2436,7 @@ select {
 
 /* Transition */
 .select:hover::after {
-  color: rgba(255, 37, 37, 0.7);
+  color: #fff;
   background: #e2f8ff;
 }
 
