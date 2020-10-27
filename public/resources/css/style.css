@@ -286,7 +286,7 @@ greeting styles
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
   url("/resources/img/greetings.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(20, 30, 48, 0.7), rgba(36, 59, 85, 1)),
   url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
@@ -483,7 +483,7 @@ greeting styles
 
 .g-box span {
   font-size: 120%;
-  color: rgb(200, 200, 200);
+  color: #fff;
   animation: 1s spanSlideRight 1s forwards;
   opacity: 0;
   margin-left: -50px;
@@ -514,6 +514,7 @@ greeting styles
   animation: 1s h1slideRight 2s forwards;
   -webkit-animation: 1s h1slideRight 2s forwards;
   opacity: 0;
+  font-weight: 400;
 }
 
 @-webkit-keyframes h1slideRight {
