@@ -439,7 +439,7 @@ greeting styles
 .main-nav .nav-b:active {
   color: #fff;
   padding-bottom: 5px;
-  border-bottom: 1px solid #100c08;
+  border-bottom: 3px solid #100c08;
 }
 
 /* styling main-nav go-to blog button */
@@ -499,7 +499,7 @@ greeting styles
 
 @keyframes spanSlideRight {
   100% {
-    opacity: 1;
+    opacity: 0.6;
     margin-left: 0;
   }
 }
