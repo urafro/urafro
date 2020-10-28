@@ -1047,6 +1047,7 @@ section.about-us {
   color: rgb(255, 37, 37);
   font-size: 400%;
   font-weight: 900;
+  font-family: "Caveat", cursive;
 }
 
 .numbers .box i {
@@ -2036,12 +2037,10 @@ section.about-us {
   margin-bottom: 2px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
-
 .card-text p {
   font-size: 70%;
   color: rgb(200, 200, 200);
-  font-family: 'Tangerine', cursive;
+  font-family: 'Caveat', cursive;
 }
 
 .card-tag {
