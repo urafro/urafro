@@ -739,6 +739,11 @@
     font-size: 65%;
   }
 
+  /* footer */
+  footer.l-footer .content {
+    flex-direction: column;
+  }
+
   /* ===================
       blog app styles
   ==================== */
@@ -793,7 +798,7 @@
   }
 
   section.separator {
-    margin-right: 5%;
+    margin-right: 10%;
   }
 
   div.showcase-box {
