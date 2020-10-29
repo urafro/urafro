@@ -1648,8 +1648,9 @@ section.about-us {
   position: relative;
   bottom: -50px;
   opacity: 0;
-  animation: headerSlideUp 1s linear 5s forwards;
-  -webkit-animation: headerSlideUp 1s linear 5s forwards;
+  backface-visibility: hidden;
+  animation: headerSlideUp 1.5s linear 2s forwards;
+  -webkit-animation: headerSlideUp 1.5s linear 2s forwards;
 }
 
 @-webkit-keyframes headerSlideUp {
@@ -1748,16 +1749,16 @@ section.about-us {
   right: -250px;
   -webkit-animation-name: slideLeft;
   animation-name: slideLeft;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  backface-visibility: hidden;
 }
 
 /* Our-writers slide left animation */
@@ -1800,9 +1801,9 @@ section.about-us {
   -webkit-animation-name: textLeftRight;
   animation-name: textLeftRight;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+  animation-timing-function: ease-out;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
@@ -1819,6 +1820,9 @@ section.about-us {
 }
 
 @keyframes textLeftRight {
+  80% {
+    left: 10px
+  }
   100% {
     opacity: 1;
     left: 0;
@@ -1852,6 +1856,7 @@ section.about-us {
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  backface-visibility: hidden;
 }
 
 @keyframes btnSlideDown {
@@ -1883,6 +1888,7 @@ section.about-us {
   opacity: 0;
   animation: smallSlideRight 2.5s linear 2s 1 forwards;
   -webkit-animation: smallSlideRight 2.5s linear 2s 1 forwards;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes smallSlideRight {
