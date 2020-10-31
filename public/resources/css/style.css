@@ -631,38 +631,10 @@ greeting styles
   width: 90%;
   background-color: #fff;
   padding: 100px 0;
-  -webkit-box-shadow: 0 5px 5px #e1e6f0;
-  box-shadow: 0 5px 5px #e1e6f0;
+  -webkit-box-shadow: 0 5px 15px #e1e6f0;
+  box-shadow: 0 5px 15px #e1e6f0;
   position: relative;
-  top: -20px;
-  -webkit-animation-name: slideUp;
-  animation-name: slideUp;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-/* animating intro-div to pop into the viewport from below the screen */
-@-webkit-keyframes slideUp {
-  50% {
-    top: -40px;
-  }
-  100% {
-    top: -20px;
-  }
-}
-@keyframes slideUp {
-  50% {
-    top: -40px;
-  }
-  100% {
-    top: -20px;
-  }
+  top: -20px
 }
 
 .intro-div img {
