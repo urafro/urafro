@@ -138,12 +138,8 @@ a {
   border: 1px solid #ffc03d;
   color: #100c08;
   font-weight: 400;
-  box-shadow: 4px 12px 15px -15px #111;
-  transition: box-shadow 0.5s color 0.5s;
-  -webkit-transition: box-shadow 0.5s color 0.5s;
-  -moz-transition: box-shadow 0.5s color 0.5s;
-  -ms-transition: box-shadow 0.5s color 0.5s;
-  -o-transition: box-shadow 0.5s color 0.5s;
+  box-shadow: 5px 12px 15px -15px #111;
+  transition: all .2s;
 }
 
 /* body button alternative call to action selection */
@@ -153,12 +149,17 @@ a {
   color: #ffc03d;
 }
 
-.bdb-full:hover,
-.bdb-full:active {
+.bdb-full:hover {
   background-color: #cf920d;
   border-color: #cf920d;
-  box-shadow: 0px 0px 0px 0px transparent;
+  transform: translateY(-3px);
+  box-shadow: 2px 6px 10px -7.5px #111;
   color: #fff;
+}
+
+.bdb-full:active {
+  transform: translateY(-1px);
+  box-shadow: 1px 3px 5px -7.5px #111;
 }
 
 .bdb-ghost:hover,
