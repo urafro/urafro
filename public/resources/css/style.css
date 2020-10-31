@@ -542,8 +542,8 @@ greeting styles
   position: relative;
   top: -15px;
   opacity: 0;
-  animation: 1.8s btnSlideDown 4.5s ease-in forwards;
-  -webkit-animation: 1.8s btnSlideDown 4.5s ease-in forwards;
+  animation: 1s btnSlideDown 4.5s ease-in forwards;
+  -webkit-animation: 1s btnSlideDown 4.5s ease-in forwards;
 }
 
 @-webkit-keyframes btnSlideDown {
@@ -577,8 +577,8 @@ greeting styles
   position: relative;
   right: -80px;
   opacity: 0;
-  animation: 1.5s imgSlideLeft 3s ease-in-out forwards;
-  -webkit-animation: 1.5s imgSlideLeft 3s ease-in forwards;
+  animation: 1s imgSlideLeft 3s ease-in-out forwards;
+  -webkit-animation: 1s imgSlideLeft 3s ease-in forwards;
 }
 
 @-webkit-keyframes imgSlideLeft {
