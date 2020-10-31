@@ -546,6 +546,27 @@ greeting styles
   -webkit-animation: 1s btnSlideDown 4.5s ease-in forwards;
 }
 
+/* Blink and expand/shrink effect on landing page main cta button */
+.g-box .bdb-full::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 100px;
+  background-color: #ffc03d;
+  transition: all .4s;
+  z-index: -1;
+}
+
+/* animating the ::after element we created above, on .g-box .bdb-full hover */
+.g-box .bdb-full:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 @-webkit-keyframes btnSlideDown {
   100% {
     opacity: 1;
