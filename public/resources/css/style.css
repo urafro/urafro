@@ -3459,7 +3459,7 @@ div.box-content.auth h5 a:hover {
 .image-box {
   width: 50%;
   overflow: hidden;
-  height: 500px;
+  height: 65vh;
   background-image: url("https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-position: center;
   background-repeat: no-repeat;
@@ -3468,9 +3468,10 @@ div.box-content.auth h5 a:hover {
 
 .projects-container .contacts {
   display: flex; 
-  margin: 0 30px;
+  margin: 0 60px;
   align-items: center;
   justify-content: space-between;
+  font-size: 65%;
 }
 
 .contact-card {
@@ -3486,6 +3487,7 @@ div.box-content.auth h5 a:hover {
   margin-right: 5px;
 }
 
+/* Drawing a line after a heading */
 .contact-card .card-primary h4::after {
   content: "";
   display: inline-block;
@@ -3494,9 +3496,16 @@ div.box-content.auth h5 a:hover {
   background-color: #100c08;
   position: absolute;
   left: 105%;
-  bottom: 34px;
+  bottom: 75%;
 }
 
 .contact-card .card-secondary {
   margin-left: 40px;
+}
+
+.projects-container .footer {
+  background-color: #111;
+  color: #555;
+  text-align: center;
+  padding: 5px 0;
 }
