@@ -3465,3 +3465,18 @@ div.box-content.auth h5 a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.projects-container .contacts {
+  display: flex; 
+  margin: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-card {
+  display: flex;
+}
+
+.projects-container .contacts h4 {
+  font-weight: 300;
+}
