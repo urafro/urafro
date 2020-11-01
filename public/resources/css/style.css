@@ -3354,3 +3354,24 @@ div.box-content.auth h5 a:hover {
   -ms-transition: color .2s;
   -o-transition: color .2s;
 }
+
+/* ============================
+      PROJECTS APP STYLES
+============================ */
+
+.projects {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3f3f7;
+}
+
+.projects .logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 60px;
+}
+
+.logo-box {
+  list-style-type: none;
+}
