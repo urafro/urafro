@@ -642,6 +642,10 @@
   }
 
   /* founder */
+  section.founder {
+    display: none;
+  }
+
   section.founder h2,
   section.founder .image-text h2 {
     font-size: 100%;
