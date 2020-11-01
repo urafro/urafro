@@ -3393,4 +3393,43 @@ div.box-content.auth h5 a:hover {
 .text-box h1 {
   font-size: 130%;
   font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.text-box span {
+  display: inline-block;
+  font-size: 80%;
+  width: 65%;
+  margin-bottom: 15px;
+}
+
+.projects-email {
+  display: flex;
+}
+
+.projects-email h5 {
+  font-weight: 300;
+}
+
+.projects-email input[type="email"] {
+  /* removing borders from email input */
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: dotted;
+
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 160px;
+}
+
+.projects-email input[type="email"]::placeholder {
+  text-align: center;
+}
+
+.text-box .bdb {
+  padding: 10px 15px;
+  cursor: pointer;
 }
