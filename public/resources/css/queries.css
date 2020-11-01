@@ -968,9 +968,27 @@
   #auth-button {
     font-size: 70%;
   }
+  
+  section.projects-container .content {
+    margin: 30px 30px;
+  }
+
+  div.text-box h1 {
+    font-size: 65%;
+    margin-bottom: 20px;
+  }
+
+  div.text-box span {
+    display: inline-block;
+    font-size: 45%;
+    margin-bottom: 15px;
+  }
+
+  section.projects-container .contacts {
+    display: none;
+  }
 
 }
-
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
 @media only screen and (max-width: 480px) {
 
@@ -1644,6 +1662,43 @@
 
   #auth-button {
     font-size: 70%;
+  }
+
+  section.projects-container .bdb-ghost {
+    display: none;
+  }
+
+  section.projects-container .content {
+    margin: 30px 60px;
+    flex-direction: column;
+  }
+
+  div.text-box h1 {
+    font-size: 60%;
+    font-weight: 400;
+    /* margin-bottom: 25px; */
+  }
+
+  div.text-box span {
+    font-size: 40%;
+    margin-bottom: 0;
+  }
+
+  section.content .image-box {
+    display: none;
+  }
+
+  section.projects-container .contacts {
+    display: none;
+  }
+
+  section.projects-container .footer {
+    padding: 10px 0;
+    font-size: 80%;
+  }
+
+  div.projects-email input[type="email"]::placeholder {
+    text-align: left;
   }
   
 }
