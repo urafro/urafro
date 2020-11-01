@@ -3477,6 +3477,26 @@ div.box-content.auth h5 a:hover {
   display: flex;
 }
 
-.projects-container .contacts h4 {
+.contact-card .card-primary {
+  position: relative;
+}
+
+.contact-card .card-primary h4 {
   font-weight: 300;
+  margin-right: 5px;
+}
+
+.contact-card .card-primary h4::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background-color: #100c08;
+  position: absolute;
+  left: 105%;
+  bottom: 34px;
+}
+
+.contact-card .card-secondary {
+  margin-left: 40px;
 }
