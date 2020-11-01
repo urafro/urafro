@@ -3433,3 +3433,15 @@ div.box-content.auth h5 a:hover {
   padding: 10px 15px;
   cursor: pointer;
 }
+
+.small-socials {
+  display: flex;
+  margin-top: 20px;
+}
+
+.small-socials a:link,
+.small-socials a:visited {
+  color: #100c08;
+  text-decoration: none;
+  padding-right: 10px;
+}
