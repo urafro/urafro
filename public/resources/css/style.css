@@ -3388,10 +3388,20 @@ div.box-content.auth h5 a:hover {
 .projects-container .content {
   margin: 30px 60px;
   display: flex;
+  align-items: center;
+}
+
+.content .text-box {
+  flex: 1 1 50%;
+  min-width: 50%;
+}
+
+.content .image-box {
+  flex: 2 2 50%;
 }
 
 .text-box h1 {
-  font-size: 130%;
+  font-size: 110%;
   font-weight: 400;
   margin-bottom: 25px;
 }
@@ -3436,7 +3446,7 @@ div.box-content.auth h5 a:hover {
 
 .small-socials {
   display: flex;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .small-socials a:link,
@@ -3444,4 +3454,14 @@ div.box-content.auth h5 a:hover {
   color: #100c08;
   text-decoration: none;
   padding-right: 10px;
+}
+
+.image-box {
+  width: 50%;
+  overflow: hidden;
+  height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
