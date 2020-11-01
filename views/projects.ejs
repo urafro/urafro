@@ -1,0 +1,35 @@
+<% include ./partials/header %>
+
+<div class="container landing-section">
+
+  <div class="l-container">
+
+    <span class="menu-icon" id="menuIcon" onclick="openMenu()">&#9776;</span>
+
+  </div>
+
+  <div class="menu-container" id="navbar">
+
+    <span class="closebtn" onclick="closeMenu()">&times</span>
+
+    <div class="menu-content">
+      <a href="/blogs">Blog</a>
+      <!-- will create an about page with mission statement and what-not -->
+      <a href="#">About</a>
+      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+      <a href="#">Projects</a>
+      <!-- create a contact us panel with socials -->
+      <a href="#">Contact Us</a>
+      <% if (!currentUser) { %>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+      <% } %>
+      <% if (currentUser) { %>
+      <a href="/logout">Logout</a>
+      <% } %>
+    </div>
+  </div>
+
+</div>
+
+<% include ./partials/footer %>
