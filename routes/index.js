@@ -9,6 +9,11 @@ router.get("/", (req, res) => {
   res.render("landing");
 });
 
+//Projects App Route - placeholder (will develop a more 'cooler' app)
+router.get("/projects", (req, res) => {
+  res.render("projects");
+});
+
 //============================== Auth Routes =========================
 //register form route
 router.get("/signup", (req, res) => {
