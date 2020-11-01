@@ -3462,7 +3462,12 @@ div.box-content.auth h5 a:hover {
   width: 50%;
   overflow: hidden;
   height: 65vh;
-  background-image: linear-gradient(rgba(20, 30, 48, .5), rgba(20, 30, 48, .5)), url("https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  /* 
+  first choise background picture... just trying something different out :) 
+  url("https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80")
+  */
+  background-image: linear-gradient(rgba(20, 30, 48, .5), rgba(20, 30, 48, .5)),
+  url("https://images.unsplash.com/photo-1529088363398-8efc64a0eb95?ixlib=rb-1.2.1&auto=format&fit=crop&w=848&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
