@@ -3372,6 +3372,9 @@ div.box-content.auth h5 a:hover {
   background-color: #fff;
   height: 90%;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projects-container .logo-box {
@@ -3408,8 +3411,7 @@ div.box-content.auth h5 a:hover {
 
 .text-box span {
   display: inline-block;
-  font-size: 80%;
-  width: 65%;
+  font-size: 70%;
   margin-bottom: 15px;
 }
 
@@ -3426,7 +3428,7 @@ div.box-content.auth h5 a:hover {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
-  border-bottom-style: dotted;
+  border-bottom-style: groove;
 
   background-color: #fff;
   margin-top: 20px;
@@ -3507,5 +3509,5 @@ div.box-content.auth h5 a:hover {
   background-color: #111;
   color: #555;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
 }
