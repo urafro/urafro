@@ -14,13 +14,13 @@ middlewareObj.checkBlogOwnership = function(req, res, next) {
         if (req.user._id.equals(foundBlog.author.id)) {
           next();
         } else {
-          req.flash("error", "You don't have authorization to do that!");
+          req.flash("error", "Who else knows you're here mate? Tell us if you find a vulnerability in our security ;)");
           res.redirect("back");
         }
       }
     })
   } else {
-    req.flash("error", "You need to be logged in to do that");
+    req.flash("error", "We're usually not such a tease but kindly login first to perform that task 😄");
     res.redirect("/login");
   }
 }
@@ -39,7 +39,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
       }
     });
   } else {
-    req.flash("error", "You need to be logged in to do that");
+    req.flash("error", "We're usually not such a tease but kindly login first to perform that task 😄");
     res.redirect("/login");
   }
 }
@@ -49,7 +49,7 @@ middlewareObj.isLoggedIn = function(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   } else {
-    req.flash("error", "You need to be logged in to do that");
+    req.flash("error", "We're usually not such a tease but kindly login first to perform that task 😄");
     res.redirect("/login");
   }
 }

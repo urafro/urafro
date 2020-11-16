@@ -35,7 +35,7 @@ router.post("/signup", (req, res) => {
     } else {
       passport.authenticate("local")(req, res, () => {
         console.log(createdUser)
-        req.flash("success", "Welcome to F2F " + createdUser.username);
+        req.flash("success", "Oh hi there " + createdUser.username + "! Glad you joined #weRme. Now let's break societ--ahem... build society together!");
         res.redirect("/blogs");
       });
     }
