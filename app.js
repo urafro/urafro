@@ -43,7 +43,7 @@ app.use(flash());
     useUnifiedTopology: true
 }); */
 
-mongoose.connect("mongodb+srv://Dan:eqma@blog.bpkjc.mongodb.net/blog?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASEURL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
