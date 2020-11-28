@@ -999,6 +999,15 @@ section.about-us {
   background-color: rgba($color-primary-light, 0.1);
 }
 
+.founder .image-text h2 {
+  font-size: 170%;
+  font-weight: 400;
+  color: $color-white;
+  padding: 30px;
+  border: 1px solid $color-white;
+  border-radius: 2px;
+}
+
 .founder .image-text h2 span {
   color: $color-white;
   opacity: 0.5;
@@ -1007,14 +1016,6 @@ section.about-us {
   font-weight: 400;
   letter-spacing: .5px;
   margin-right: 5px;
-}
-
-.founder .image-text h2 {
-  font-size: 170%;
-  font-weight: 400;
-  color: $color-white;
-  padding: 30px;
-  border: 1px solid $color-white;
 }
 
 /* ==============
@@ -1105,6 +1106,7 @@ section.about-us {
   background-color: $color-white;
   padding-top: 50px;
   padding-left: 20px;
+  border-radius: 5px;
   position: relative;
   top: -180px;
   -webkit-box-shadow: 0 5px 5px $color-primary-light;
@@ -1302,6 +1304,7 @@ section.about-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 5px;
 }
 
 /* OUR-CONTACTS */
