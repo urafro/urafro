@@ -1,7 +1,22 @@
 /* /* ===========================================
               UNIVERSAL STYLES
 =============================================*/
-$color-white: #fff;
+$color-primary-dark: #432344;
+$color-primary-light: #E7EEFB;
+$color-primary-red: #FF2525;
+$color-primary-brown: #FFC03D;
+
+$color-white: #FFF;
+$color-black: #100c08;
+
+$color-instagram: #EE1092;
+$color-twitter: #0764F7;
+$color-github: #333;
+
+$color-success: #16A085;
+$color-error: #FF3F34;
+
+$color-primary-bg2: #FB623A;
 
 * {
   margin: 0;
@@ -12,7 +27,7 @@ $color-white: #fff;
 
 html {
   background-color: $color-white;
-  color: #555;
+  color: $color-black;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -49,7 +64,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: $color-white;
 }
 
 /* Clearing floats */
@@ -61,7 +76,7 @@ a {
 
 .fa-instagram:active,
 .fa-instagram:hover {
-  color: #ee1092;
+  color: $color-instagram;
   transition: color 0.2s;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -71,7 +86,7 @@ a {
 
 .fa-twitter:active,
 .fa-twitter:hover {
-  color: #0764f7;
+  color: $color-twitter;
   transition: color 0.2s;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -81,7 +96,7 @@ a {
 
 .fa-github:active,
 .fa-github:hover {
-  color: #333;
+  color: $color-github;
   transition: color .2s;
   -webkit-transition: color .2s;
   -moz-transition: color .2s;
@@ -105,13 +120,13 @@ a {
 }
 
 .success-flash {
-  background: rgba(22, 160, 133, .5);
-  color: rgb(97, 114, 110);
+  background: rgba($color-success, .5);
+  color: $color-primary-dark;
 }
 
 .error-flash {
-  background: rgba(255, 63, 52, .5);
-  color: rgb(97, 114, 110);
+  background: rgba($color-error, .5);
+  color: $color-primary-dark;
 }
 
 /* body button */
@@ -135,27 +150,28 @@ a {
 
 /* body button prefered call to action selection */
 .bdb-full {
-  background-color: #ffc03d;
-  border: 1px solid #ffc03d;
-  color: #100c08;
+  background-color: $color-primary-brown;
+  border: 1px solid $color-primary-brown;
+  color: $color-black;
   font-weight: 400;
   box-shadow: 5px 12px 15px -15px #111;
   transition: all .2s;
 }
 
 /* body button alternative call to action selection */
+$color-secondary-brown: #cf920d;
 .bdb-ghost {
-  background-color: rgba(235, 31, 116, 0);
-  border: 1px solid #ffc03d;
-  color: #ffc03d;
+  background-color: transparent;
+  border: 1px solid $color-secondary-brown;
+  color: $color-secondary-brown;
 }
 
 .bdb-full:hover {
-  background-color: #cf920d;
-  border-color: #cf920d;
+  background-color: $color-secondary-brown;
+  border-color: $color-secondary-brown;
   transform: translateY(-3px);
-  box-shadow: 2px 6px 10px -7.5px #111;
-  color: #fff;
+  box-shadow: 2px 6px 10px -7.5px $color-primary-dark;
+  color: $color-white;
 }
 
 .bdb-full:active {
@@ -165,9 +181,9 @@ a {
 
 .bdb-ghost:hover,
 .bdb-ghost:active {
-  color: #100c08;
-  background-color: #ffc03d;
-  border-color: #ffc03d;
+  color: $color-black;
+  background-color: $color-primary-brown;
+  border-color: $color-primary-brown;
 }
 
 /* ============================================================= 
@@ -179,9 +195,8 @@ a {
 } */
 
 #menuIcon,
-.l-container .menu-icon {
+.menu-icon {
   position: fixed;
-  color: rgb(186, 188, 189);
   font-size: 20px;
   left: 42px;
   top: 24px;
@@ -214,7 +229,7 @@ a {
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: rgba(0, 0, 0, .8);
+  background: rgba($color-black, .8);
   overflow: hidden;
   transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
@@ -236,13 +251,13 @@ a {
   padding: 16px;
   text-decoration: none;
   font-size: 18px;
-  color: #fff;
+  color: $color-white;
   display: block;
 }
 
 .menu-content a:active,
 .menu-content a:hover {
-  background-color: rgba(255, 37, 37, 0.3);
+  background-color: rgba($color-primary-red, 0.3);
   transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
@@ -255,7 +270,7 @@ a {
   top: 36px;
   right: 48px;
   font-size: 30px;
-  color: #fff;
+  color: $color-white;
   z-index: 1;
   cursor: pointer;
 }
@@ -267,9 +282,6 @@ a {
 /* ====================
   landing page styles
 ===================== */
-section {
-  color: #100c08;
-}
 
 section h1,
 h2,
@@ -288,8 +300,6 @@ greeting styles
   /* height to be adjusted after i'm done with all corresponding styles */
   min-height: 100vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
-    url("/resources/img/greetings.jpg");
   background-image: linear-gradient(rgba(20, 30, 48, 0.7), rgba(36, 59, 85, 1)),
     url("/resources/img/greetings.jpg");
   background-position: center;
@@ -419,7 +429,7 @@ greeting styles
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  color: #100c08;
+  color: $color-black;
   font-weight: 400;
   font-size: 95%;
   transition: border-bottom .2s, color .2s;
@@ -431,20 +441,20 @@ greeting styles
 
 .main-nav li a.bdb-ghost:link,
 .main-nav li a.bdb-ghost:visited {
-  color: #ffc03d;
+  color: $color-secondary-brown;
   font-weight: 300;
 }
 
 .main-nav li a.bdb-ghost:hover,
 .main-nav li a.bdb-ghost:active {
-  color: #100c08;
+  color: $color-black;
 }
 
 .main-nav .nav-b:hover,
 .main-nav .nav-b:active {
-  color: #fff;
+  color: $color-white;
   padding-bottom: 5px;
-  border-bottom: 3px solid #100c08;
+  border-bottom: 3px solid $color-black;
 }
 
 /* styling main-nav go-to blog button */
@@ -490,7 +500,7 @@ greeting styles
 
 .g-box span {
   font-size: 120%;
-  color: #fff;
+  color: $color-white;
   animation: 1s spanSlideRight 1s ease-in forwards;
   opacity: 0;
   margin-left: -50px;
@@ -517,7 +527,7 @@ greeting styles
   line-height: 140%;
   position: relative;
   left: -100px;
-  color: #fff;
+  color: $color-white;
   animation: 1s h1slideRight 2s ease-in forwards;
   -webkit-animation: 1s h1slideRight 2s ease-in forwards;
   opacity: 0;
@@ -560,7 +570,7 @@ greeting styles
   top: 0px;
   left: 0;
   border-radius: 100px;
-  background-color: #ffc03d;
+  background-color: $color-primary-brown;
   transition: all .4s;
   z-index: -1;
 }
@@ -622,7 +632,7 @@ greeting styles
 
 /*===================*/
 .intro {
-  background-color: #f3f3f7;
+  background-color: $color-primary-light;
 }
 
 /* larger nested container */
@@ -633,12 +643,13 @@ greeting styles
   display: -ms-flexbox;
   display: flex;
   width: 90%;
-  background-color: #fff;
+  background-color: $color-white;
   padding: 100px 0;
-  -webkit-box-shadow: 0 5px 15px #e1e6f0;
-  box-shadow: 0 5px 15px #e1e6f0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 15px $color-primary-light;
+  box-shadow: 0 5px 15px $color-primary-light;
   position: relative;
-  top: -20px
+  top: -20px;
 }
 
 .intro-div img {
@@ -686,10 +697,9 @@ greeting styles
 }
 
 .brand {
-  color: #ff2525;
+  color: $color-primary-red;
   font-weight: 400;
-  font-family: 'Caveat',
-    cursive;
+  font-family: 'Caveat', cursive;
   font-size: 120%;
 }
 
@@ -707,11 +717,11 @@ greeting styles
 
 .give a:link,
 .give a:visited {
-  color: #432344;
+  color: $color-black;
   text-decoration: underline;
-  -webkit-text-decoration-color: #ff2525;
-  text-decoration-color: #ff2525;
-  -moz-text-decoration-color: #ff2525;
+  -webkit-text-decoration-color: $color-primary-red;
+  text-decoration-color: $color-primary-red;
+  -moz-text-decoration-color: $color-primary-red;
   text-decoration-thickness: 2px;
 }
 
@@ -753,9 +763,9 @@ greeting styles
   -ms-flex-preferred-size: 32%;
   flex-basis: 32%;
   padding: 30px 30px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 5px 5px #e1e6f0;
-  box-shadow: 0 5px 5px #e1e6f0;
+  border-radius: 5px;
+  background-color: $color-white;
+  box-shadow: 0 5px 5px $color-primary-light;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,7 +778,7 @@ greeting styles
 .box a:link,
 .box a:visited {
   width: 30px;
-  color: rgba(255, 37, 37, 0.7);
+  color: rgba($color-primary-red, 0.7);
   font-size: 170%;
   transition: color 0.2s;
   -webkit-transition: color 0.2s;
@@ -795,7 +805,7 @@ greeting styles
 
 .box p a:link,
 .box p a:visited {
-  color: rgba(255, 37, 37, 0.7);
+  color: rgba($color-primary-red, 0.7);
   font-size: initial;
   text-decoration: underline;
   transition: color .2s;
@@ -809,7 +819,7 @@ greeting styles
 .box p a:active,
 .box a:hover,
 .box a:active {
-  color: rgb(255, 37, 37);
+  color: $color-primary-red;
 }
 
 .box img {
@@ -859,9 +869,9 @@ section.about-us {
 .about-text h2:after {
   display: block;
   width: 200px;
-  background-color: rgba(255, 37, 37, 0.2);
+  background-color: rgba($color-primary-dark, 0.2);
   content: " ";
-  height: 2px;
+  height: 1px;
   position: relative;
   top: 30px;
   margin: 0 auto;
@@ -890,7 +900,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FB623A;
+  background-color: $color-primary-bg2;
 }
 
 .founder .text {
@@ -909,7 +919,7 @@ section.about-us {
   display: block;
   position: relative;
   top: 20px;
-  background-color: rgba(255, 37, 37, 0.3);
+  background-color: rgba($color-primary-red, 0.3);
   width: 20px;
   height: 5px;
   content: " ";
@@ -920,12 +930,12 @@ section.about-us {
 .founder .text h2 span {
   font-size: 70%;
   margin-left: 10px;
-  color: #100c08;
+  color: $color-black;
   opacity: 0.5;
 }
 
 .founder .text p {
-  color: #100c08;
+  color: $color-black;
   font-size: initial;
   width: 90%;
   margin-bottom: 20px;
@@ -933,7 +943,7 @@ section.about-us {
 
 .founder .text p a:link,
 .founder .text p a:visited {
-  color: #fff;
+  color: $color-white;
   transition: color .2s;
   -webkit-transition: color .2s;
   -moz-transition: color .2s;
@@ -943,7 +953,7 @@ section.about-us {
 
 .founder .text p a:hover,
 .founder .text p a:active {
-  color: #100c08;
+  color: $color-black;
   text-decoration: underline;
 }
 
@@ -967,9 +977,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
-    url("/resources/img/founder.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)),
     url("/resources/img/founder.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -988,11 +996,11 @@ section.about-us {
 
 .founder .image-text a:hover,
 .founder .image-text a:active {
-  background-color: rgba(206, 205, 205, 0.1);
+  background-color: rgba($color-primary-light, 0.1);
 }
 
 .founder .image-text h2 span {
-  color: #fff;
+  color: $color-white;
   opacity: 0.5;
   text-transform: uppercase;
   font-size: 50%;
@@ -1004,9 +1012,9 @@ section.about-us {
 .founder .image-text h2 {
   font-size: 170%;
   font-weight: 400;
-  color: #fff;
+  color: $color-white;
   padding: 30px;
-  border: 1px solid #fff;
+  border: 1px solid $color-white;
 }
 
 /* ==============
@@ -1025,10 +1033,10 @@ section.about-us {
 
 .numbers h2:after {
   display: block;
-  height: 2px;
+  height: 1px;
   width: 100px;
   content: " ";
-  background-color: rgba(255, 37, 37, 0.3);
+  background-color: rgba($color-primary-red, 0.3);
   margin: 0 auto;
   position: relative;
   top: 30px;
@@ -1043,7 +1051,7 @@ section.about-us {
 
 .numbers .box h3 {
   margin-top: 50px;
-  color: rgb(255, 37, 37);
+  color: $color-primary-red;
   font-size: 400%;
   font-weight: 900;
   font-family: "Caveat", cursive;
@@ -1052,7 +1060,7 @@ section.about-us {
 .numbers .box i {
   font-size: 160%;
   margin-right: 20px;
-  color: rgb(207, 207, 207);
+  color: $color-primary-light;
 }
 
 .numbers .box h5 {
@@ -1066,18 +1074,18 @@ section.about-us {
 
 .testimonials .header {
   text-align: center;
-  background-color: #f3f3f7;
+  background-color: $color-primary-light;
   padding: 100px 0 150px 0;
 }
 
 .testimonials .header span:first-of-type {
   text-transform: uppercase;
-  color: rgba(67, 35, 68, 0.5);
+  color: rgba($color-primary-dark, .5);
 }
 
 .testimonials .header span.brand {
   text-transform: none;
-  color: rgb(255, 37, 37);
+  color: $color-primary-red;
   font-size: 120%;
 }
 
@@ -1094,13 +1102,13 @@ section.about-us {
 
 .testimonials .box {
   width: 30%;
-  background-color: #fff;
+  background-color: $color-white;
   padding-top: 50px;
   padding-left: 20px;
   position: relative;
   top: -180px;
-  -webkit-box-shadow: 0 5px 5px #e1e6f0;
-  box-shadow: 0 5px 5px #e1e6f0;
+  -webkit-box-shadow: 0 5px 5px $color-primary-light;
+  box-shadow: 0 5px 5px $color-primary-light;
 }
 
 .testimonials .box p:before {
@@ -1109,7 +1117,7 @@ section.about-us {
   content: "\201C";
   position: relative;
   bottom: 5px;
-  color: #100c08;
+  color: $color-black;
   font-size: 120px;
   font-weight: 400;
 }
@@ -1141,14 +1149,13 @@ section.about-us {
 
 .newsletter {
   /* width: 100vw; */
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(67, 35, 68, 0.9)), to(rgba(67, 35, 68, 0.9))), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
-  background: linear-gradient(rgba(67, 35, 68, 0.9), rgba(67, 35, 68, 0.9)), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
+  background: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .9)), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* to change this in favor of individual color declarations for child elements */
-  color: #fff;
+  color: $color-white;
   padding: 120px 0;
 }
 
@@ -1165,7 +1172,7 @@ section.about-us {
 .newsletter-form p {
   margin: 0 auto;
   width: 90%;
-  color: rgb(231, 229, 229);
+  color: $color-primary-light;
   font-size: initial;
   margin-bottom: 50px;
 }
@@ -1177,9 +1184,9 @@ section.about-us {
   line-height: 45px;
   width: 80%;
   padding: 0 40px;
-  color: #fff;
-  border: 2px solid rgba(67, 35, 68, 0.7);
-  background-color: rgba(67, 35, 68, 0.3);
+  color: $color-primary-light;
+  border: 2px solid rgba($color-primary-dark, 0.7);
+  background-color: rgba($color-primary-dark, 0.3);
   border-radius: 120px;
   position: relative;
   left: 40px;
@@ -1197,21 +1204,16 @@ section.about-us {
 .newsletter-form input[type="email"]:hover,
 .newsletter-form input[type="email"]:active,
 .newsletter-form input[type="email"]:focus {
-  background-color: rgba(67, 35, 68, 0.7);
+  background-color: rgba($color-primary-dark, 0.7);
 }
 
 .newsletter-form input[type="email"]::-webkit-input-placeholder {
-  color: #fff;
-  font-style: italic;
-}
-
-.newsletter-form input[type="email"]:-ms-input-placeholder {
-  color: #fff;
+  color: $color-primary-light;
   font-style: italic;
 }
 
 .newsletter-form input[type="email"]::placeholder {
-  color: #fff;
+  color: $color-primary-light;
   font-style: italic;
 }
 
@@ -1244,9 +1246,9 @@ section.about-us {
 .socials h2::after {
   display: block;
   width: 100px;
-  background-color: rgba(255, 37, 37, 0.2);
+  background-color: rgba($color-primary-red, 0.2);
   content: " ";
-  height: 2px;
+  height: 1px;
   position: relative;
   top: 30px;
   margin: 0 auto;
@@ -1258,7 +1260,7 @@ section.about-us {
 
 .socials .box a:link,
 .socials .box a:visited {
-  color: rgba(255, 37, 37, 0.7);
+  color: rgba($color-primary-red, 0.7);
   font-size: 200%;
 }
 
@@ -1290,8 +1292,7 @@ section.about-us {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-shadow: 0 5px 15px #e1e6f0;
-  box-shadow: 0 5px 15px #e1e6f0;
+  box-shadow: 0 5px 15px $color-primary-light;
   padding: 50px 0 50px 30px;
   position: relative;
   right: 65px;
@@ -1341,7 +1342,7 @@ section.about-us {
 
 .icon i,
 .card-txt p {
-  color: rgba(67, 35, 68, 0.5);
+  color: rgba($color-primary-dark, 0.5);
 }
 
 .icon i {
@@ -1388,7 +1389,7 @@ section.about-us {
 .message-input input[type="textarea"] {
   width: 100%;
   outline: none;
-  border: 1px solid rgba(67, 35, 68, 0.3);
+  border: 1px solid rgba($color-primary-dark, 0.3);
 }
 
 .message-input input[type="text"],
@@ -1426,15 +1427,13 @@ section.about-us {
   display: -ms-flexbox;
   display: flex;
   padding: 100px 60px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
-    url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)),
     url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #fff;
+  color: $color-white;
 }
 
 .content .footer-card {
@@ -1455,13 +1454,13 @@ section.about-us {
 
 .f-text p {
   line-height: 150%;
-  color: rgb(200, 200, 200);
+  color: $color-primary-light;
   width: 95%;
   margin-bottom: 10px;
 }
 
 .footer-card a i {
-  color: rgb(200, 200, 200);
+  color: $color-primary-light;
   font-size: 120%;
   margin: 10px 5px 0 0;
 }
@@ -1484,8 +1483,8 @@ section.about-us {
 }
 
 .f-posts:nth-of-type(even) {
-  border-top: 1px solid rgba(218, 223, 225, .5);
-  border-bottom: 1px solid rgba(218, 223, 225, .5);
+  border-top: 1px solid rgba($color-primary-light, .5);
+  border-bottom: 1px solid rgba($color-primary-light, .5);
 }
 
 .footer-card img {
@@ -1503,6 +1502,7 @@ section.about-us {
 }
 
 .f-body span {
+  color: rgba($color-white, .5);
   font-size: 70%;
 }
 
@@ -1514,7 +1514,7 @@ section.about-us {
 /* Developers */
 .l-footer .developer {
   text-align: center;
-  background-color: #100c08;
+  background-color: $color-black;
   border: none;
   padding: 30px 0;
 }
@@ -1524,7 +1524,7 @@ section.about-us {
 }
 
 /* ============================================================= 
-                          INDEX.EJS
+                      BLOG APP STYLES
 ============================================================== */
 
 /* Hero section */
@@ -1542,15 +1542,13 @@ section.about-us {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  color: #fff;
+  color: $color-white;
   overflow: hidden;
 }
 
 .hero,
 .hero-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))),
-    url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)),
     url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-position: center;
   background-repeat: no-repeat;
@@ -1570,66 +1568,6 @@ section.about-us {
 
 .hero-2 a {
   text-decoration: none;
-}
-
-.hero-2 ul {
-  background: rgb(255, 63, 52);
-  list-style: none;
-}
-
-.hero-2 li {
-  color: #fff;
-  background: rgba(197, 49, 69, 0.3);
-  display: block;
-  float: left;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-.hero-2 li a {
-  color: #fff;
-}
-
-.hero-2 li:hover {
-  background: rgba(182, 38, 38, 0.6);
-  cursor: pointer;
-}
-
-.hero-2 ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-
-.hero-2 ul li:hover>ul,
-.hero-2 ul li ul:hover {
-  visibility: visible;
-  opacity: .4;
-  display: block;
-}
-
-.hero-2 ul li ul li {
-  clear: both;
-  width: 100%;
-}
-
-.dropdown li form button {
-  background: none;
-  border: 0;
-  color: #fff;
-}
-
-.dropdown li form button i {
-  font-size: 200%;
 }
 
 .hero .header,
@@ -1674,7 +1612,7 @@ section.about-us {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border: 8px solid rgba(153, 59, 140, .2);
+  border: 8px solid rgba($color-primary-red, .2);
 }
 
 .hero .header h2,
@@ -1699,7 +1637,7 @@ section.about-us {
   font-weight: 300;
   text-decoration: none;
   font-size: 200%;
-  color: rgb(185, 178, 178);
+  color: $color-primary-light;
 }
 
 /* ===================
@@ -1732,9 +1670,7 @@ section.about-us {
 .our-writers {
   width: 80%;
   height: 500px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
-    url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-black, 0.5)),
     url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
   background-size: cover;
   background-position: top;
@@ -1795,7 +1731,7 @@ section.about-us {
   opacity: 0;
   position: relative;
   left: -250px;
-  background-color: #fff;
+  background-color: $color-white;
   padding-left: 0;
   -webkit-animation-name: textLeftRight;
   animation-name: textLeftRight;
@@ -1869,7 +1805,7 @@ section.about-us {
 .our-writers .content-text h2 a:link,
 .our-writers .content-text h2 a:visited {
   opacity: 0.8;
-  color: #100c08;
+  color: $color-black;
 }
 
 .our-writers .empty {
@@ -1994,7 +1930,6 @@ section.about-us {
   height: 80px;
   padding-top: 10px;
   padding-left: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 0, 0, 0.6)), color-stop(rgba(27, 29, 32, 0.5)), color-stop(rgba(5, 30, 54, 0.4)), color-stop(rgba(15, 36, 56, 0.3)), to(rgba(7, 40, 73, 0)));
   background-image: linear-gradient(to bottom, rgba(10, 0, 0, 0.6), rgba(27, 29, 32, 0.5), rgba(5, 30, 54, 0.4), rgba(15, 36, 56, 0.3), rgba(7, 40, 73, 0));
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -2040,7 +1975,7 @@ section.about-us {
 
 .card-text {
   font-weight: 300;
-  color: #fff;
+  color: $color-white;
   margin-left: 20px;
   margin-top: 10px;
 }
@@ -2052,7 +1987,7 @@ section.about-us {
 
 .card-text p {
   font-size: 70%;
-  color: rgb(200, 200, 200);
+  color: rgba($color-primary-light, .7);
   font-family: 'Caveat', cursive;
 }
 
@@ -2070,7 +2005,7 @@ section.about-us {
 .card-tag a:link,
 .card-tag a:visited {
   font-size: 90%;
-  color: rgb(231, 229, 229);
+  color: $color-primary-light;
   padding: 5px 16px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -2081,7 +2016,7 @@ section.about-us {
 
 .card-tag a:active,
 .card-tag a:hover {
-  color: #fff;
+  color: $color-white;
   transition: color .2s;
   -webkit-transition: color .2s;
   -moz-transition: color .2s;
@@ -2090,19 +2025,19 @@ section.about-us {
 }
 
 .card-tag .green {
-  background-color: #16a085;
+  background-color: $color-success;
 }
 
 .card-tag .yellow {
-  background-color: #daa02d;
+  background-color: $color-primary-brown;
 }
 
 .card-tag .purple {
-  background-color: #474787;
+  background-color: $color-primary-dark;
 }
 
 .card-tag .red {
-  background-color: #e55039;
+  background-color: $color-primary-red;
 }
 
 .showcase-text h3 {
@@ -2112,14 +2047,14 @@ section.about-us {
 
 .showcase-text h3 a:link,
 .showcase-text h3 a:visited {
-  color: #000;
+  color: $color-black;
   font-weight: 400;
   font-size: 85%;
 }
 
 .showcase-text h3 a:active,
 .showcase-text h3 a:hover {
-  color: rgb(172, 165, 165);
+  color: rgba($color-black, .5);
   transition: color .2s;
   -webkit-transition: color .2s;
   -moz-transition: color .2s;
@@ -2136,17 +2071,18 @@ section.about-us {
   margin-top: 10px;
   font-size: 80%;
   margin-bottom: 35px;
+  transition: all .2s;
 }
 
 .showcase-text .show-link a:link,
 .showcase-text .show-link a:visited {
-  color: rgb(121, 117, 117);
-  border-bottom: 1px solid gray;
+  color: rgba($color-black, .5);
+  border-bottom: 1px solid rgba($color-black, .5);
 }
 
 .showcase-text .show-link a:active,
 .showcase-text .show-link a:hover {
-  color: #000;
+  color: $color-black;
   transition: color .2s;
   -webkit-transition: color .2s;
   -moz-transition: color .2s;
@@ -2154,8 +2090,13 @@ section.about-us {
   -o-transition: color .2s;
 }
 
-.showcase-text hr {
-  color: rgba(218, 223, 225, .3);
+.showcase-text::after {
+  content: "";
+  display: block;
+  position: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba($color-black, .1);
 }
 
 /* Index footer */
@@ -2164,8 +2105,8 @@ section.about-us {
   height: 120px;
   padding: 50px;
   padding-left: 0;
-  background: rgba(255, 37, 37, 0.7);
-  color: #555;
+  background: rgba($color-primary-red, 0.7);
+  color: $color-primary-light;
   font-size: 80%;
   width: 100%;
   position: absolute;
@@ -2181,7 +2122,7 @@ section.about-us {
 
 .showcase footer a,
 .showcase-2 footer a {
-  color: rgb(207, 207, 207);
+  color: $color-black;
   text-decoration: underline;
 }
 
@@ -2207,7 +2148,7 @@ section.about-us {
 }
 
 .menu a {
-  color: rgb(39, 37, 37);
+  color: $color-primary-dark;
 }
 
 /************************** content boxes **************************/
@@ -2246,8 +2187,8 @@ section.about-us {
 
 .content-boxes h1:after {
   display: block;
-  height: 2px;
-  background-color: #6d6966;
+  height: 1px;
+  background-color: $color-primary-red;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -2268,9 +2209,9 @@ label {
   content: " ";
   margin: 0 auto;
   width: 300px;
-  height: 2px;
+  height: 1px;
   margin-top: 50px;
-  background-color: rgba(255, 37, 37, 0.1);
+  background-color: rgba($color-primary-red, .1);
 }
 
 .last {
@@ -2334,15 +2275,14 @@ label {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  -webkit-box-shadow: 0 5px 15px #e1e6f0;
-  box-shadow: 0 5px 15px #e1e6f0;
+  box-shadow: 0 5px 15px $color-primary-light;
 }
 
 .content-inputs h2 {
   padding: 20px;
   text-align: center;
   font-size: 120%;
-  color: #ff2525;
+  color: $color-primary-red;
 }
 
 .content-inputs .left,
@@ -2355,7 +2295,7 @@ textarea,
 .auth input[type="password"] {
   width: 100%;
   margin-bottom: 20px;
-  border: 1px dashed rgba(67, 35, 68, 0.3);
+  border: 1px dashed rgba($color-black, .3);
   font-family: inherit;
   font-weight: 300;
   border-radius: 5px;
@@ -2398,7 +2338,7 @@ select {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 0 !important;
-  background: #bebebe;
+  background: $color-primary-light;
   background-image: none;
 }
 
@@ -2416,7 +2356,7 @@ select::-ms-expand {
   width: 50%;
   height: 50px;
   line-height: 3;
-  background: #2c3e50;
+  background: $color-primary-light;
   overflow: hidden;
   border-radius: .25em;
 }
@@ -2426,11 +2366,11 @@ select {
   -ms-flex: 1;
   flex: 1;
   padding: 0 .5em;
-  color: #555;
+  color: $color-black;
   cursor: pointer;
   font-size: 85%;
   font-weight: 300;
-  background: #e2f8ff;
+  background: $color-primary-light;
   font-family: inherit;
 }
 
@@ -2441,8 +2381,8 @@ select {
   top: 0;
   right: 0;
   padding: 0 1em;
-  color: rgba(255, 37, 37, 0.7);
-  background-color: #e2f8ff;
+  color: rgba($color-primary-red, .7);
+  background-color: $color-primary-light;
   cursor: pointer;
   pointer-events: none;
   -webkit-transition: .5s all ease;
@@ -2454,8 +2394,8 @@ select {
 
 /* Transition */
 .select:hover::after {
-  color: #fff;
-  background: #e2f8ff;
+  color: $color-black;
+  background: $color-primary-light;
 }
 
 /* input styles */
@@ -2518,13 +2458,13 @@ textarea {
 .showcase-2 a:visited,
 div.content-text p a:link,
 div.content-text p a:visited {
-  color: rgb(158, 154, 154);
+  color: rgba($color-black, .5);
   text-decoration: underline;
 }
 
 .showcase-2 a:active,
 .showcase-2 a:hover {
-  color: rgb(85, 85, 85);
+  color: $color-black;
 }
 
 .header-2 h2 {
@@ -2626,7 +2566,7 @@ div.content-text p a:visited {
 .show-menu ul li a:visited {
   /*color: rgb(85, 85, 85);
   */
-  color: #ffc03d;
+  color: $color-primary-brown;
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
@@ -2637,7 +2577,7 @@ div.content-text p a:visited {
 .admenu-tooltip {
   visibility: hidden;
   width: 60px;
-  color: #100c08;
+  color: $color-black;
   text-align: center;
   border-radius: 15px;
   padding: 5px 0;
@@ -2665,7 +2605,7 @@ div.content-text p a:visited {
 
 .show-menu ul li a:hover,
 .show-menu ul li a:active {
-  color: #f39c12;
+  color: $color-secondary-brown;
 }
 
 li form button {
@@ -2674,7 +2614,7 @@ li form button {
   font-size: 70%;
   margin: 0;
   text-decoration: none;
-  color: rgba(255, 63, 52, .5);
+  color: rgba($color-primary-bg2, .5);
   font-family: sans-serif;
   cursor: pointer;
   text-align: center;
@@ -2687,7 +2627,7 @@ li form button {
 
 li form button:hover,
 li form button:active {
-  color: #ff2525;
+  color: $color-primary-red;
 }
 
 .showcase-boxes,
@@ -2771,8 +2711,8 @@ li form button:active {
 
 .main-heading h2:after {
   display: block;
-  height: 2px;
-  background-color: rgba(218, 223, 225, .5);
+  height: 1px;
+  background-color: rgba($color-primary-light, .5);
   content: " ";
   width: 200px;
   margin: 0 auto;
@@ -2780,7 +2720,7 @@ li form button:active {
 }
 
 .intro-paragraph {
-  color: rgb(162, 166, 167);
+  color: rgba($color-black, .5);
   font-size: 80%;
   animation: smallPop 1s linear 2s forwards;
   -webkit-animation: smallPop 1s linear 2s forwards;
@@ -2791,29 +2731,9 @@ li form button:active {
   -o-transform: scale(1);
 }
 
-@-webkit-keyframes smallPop {
-  95% {
-    color: #100c08;
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -o-transform: scale(1.03);
-  }
-
-  100% {
-    color: rgb(162, 166, 167);
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-}
-
 @keyframes smallPop {
   90% {
-    color: #100c08;
+    color: rgba($color-black, .8);
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
@@ -2822,7 +2742,7 @@ li form button:active {
   }
 
   100% {
-    color: rgb(162, 166, 167);
+    color: $color-black;
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -2833,9 +2753,9 @@ li form button:active {
 
 .intro-paragraph:after {
   display: block;
-  height: 2px;
+  height: 1px;
   content: " ";
-  background-color: rgba(218, 223, 225, .5);
+  background-color: rgba($color-primary-light, .5);
   width: 200px;
   margin-top: 20px;
   margin: 0 auto;
@@ -2860,7 +2780,7 @@ li form button:active {
 }
 
 .section-two p:nth-of-type(2) {
-  border-left: 5px solid rgb(186, 188, 189);
+  border-left: 2px solid $color-primary-red;
   padding: 10px;
   line-height: 145%;
   word-spacing: 5px;
@@ -2904,15 +2824,15 @@ li form button:active {
   font-size: 110%;
   margin-top: 50px;
   margin-bottom: 5px;
-  border-top: 2px solid rgba(207, 209, 209, 0.5);
+  border-top: 2px solid rgba($color-primary-light, .5);
   padding-top: 20px;
 }
 
 .show-backlinks p {
   margin-left: 2px;
-  color: rgb(162, 163, 163);
+  color: rgba($color-black, .5);
   font-size: 90%;
-  border-bottom: 2px solid rgba(207, 209, 209, 0.5);
+  border-bottom: 2px solid rgba($color-primary-light, .5);
   padding-bottom: 30px;
 }
 
@@ -2923,22 +2843,22 @@ li form button:active {
 }
 
 .show-backlinks p .green {
-  color: #16a085;
+  color: $color-success;
   text-decoration: none;
 }
 
 .show-backlinks p .yellow {
-  color: #daa02d;
+  color: $color-primary-brown;
   text-decoration: none;
 }
 
 .show-backlinks p .purple {
-  color: #474787;
+  color: $color-primary-dark;
   text-decoration: none;
 }
 
 .show-backlinks p .red {
-  color: #e55039;
+  color: $color-primary-red;
   text-decoration: none;
 }
 
@@ -3007,7 +2927,7 @@ li form button:active {
   right: 20px;
   font-size: 70%;
   padding: 5px 20px;
-  color: #fff;
+  color: $color-white;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -3017,25 +2937,25 @@ li form button:active {
 
 .backlinks-header .green:link,
 .backlinks-header .green:visited {
-  background-color: #16a085;
+  background-color: $color-success;
   text-decoration: none;
 }
 
 .backlinks-header .yellow:link,
 .backlinks-header .yellow:visited {
-  background-color: #daa02d;
+  background-color: $color-primary-brown;
   text-decoration: none;
 }
 
 .backlinks-header .purple:link,
 .backlinks-header .purple:visited {
-  background-color: #474787;
+  background-color: $color-primary-dark;
   text-decoration: none;
 }
 
 .backlinks-header .red:link,
 .backlinks-header .red:visited {
-  background-color: #e55039;
+  background-color: $color-primary-red;
   text-decoration: none;
 }
 
@@ -3050,13 +2970,13 @@ li form button:active {
 
 .backlinks-body h4 a:link,
 .backlinks-body h4 a:visited {
-  color: #555;
+  color: $color-black;
   text-decoration: none;
 }
 
 .backlinks-body h4 a:active,
 .backlinks-body h4 a:hover {
-  color: rgb(162, 166, 167);
+  color: rgba($color-black, .7);
   transition: color .2s;
   -webkit-transition: color .2s;
   -moz-transition: color .2s;
@@ -3068,7 +2988,7 @@ li form button:active {
   border: 0;
   padding: 0;
   margin-bottom: 5px;
-  color: rgb(61, 58, 58);
+  color: rgba($color-black, .7);
   font-size: 70%;
   width: 100%;
 }
@@ -3382,7 +3302,7 @@ div.box-content.auth h5 a:hover {
 ============================ */
 
 .projects {
-  background-color: #f3f3f7;
+  background-color: $color-primary-light;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -3391,7 +3311,7 @@ div.box-content.auth h5 a:hover {
 }
 
 .projects-container {
-  background-color: #fff;
+  background-color: $color-white;
   height: 90%;
   width: 90%;
   display: flex;
@@ -3452,7 +3372,7 @@ div.box-content.auth h5 a:hover {
   border-left-style: hidden;
   border-bottom-style: groove;
 
-  background-color: #fff;
+  background-color: $color-white;
   margin-top: 20px;
   margin-bottom: 15px;
   height: 30px;
@@ -3475,7 +3395,7 @@ div.box-content.auth h5 a:hover {
 
 .small-socials a:link,
 .small-socials a:visited {
-  color: #100c08;
+  color: $color-black;
   text-decoration: none;
   padding-right: 10px;
 }
@@ -3522,7 +3442,7 @@ div.box-content.auth h5 a:hover {
   display: inline-block;
   width: 25px;
   height: 1px;
-  background-color: #100c08;
+  background-color: $color-black;
   position: absolute;
   left: 105%;
   bottom: 75%;
