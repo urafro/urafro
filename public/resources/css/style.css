@@ -2305,7 +2305,7 @@ li form button:active {
   margin-top: 20px; }
 
 .intro-paragraph {
-  color: rgba(16, 12, 8, 0.5);
+  color: rgba(16, 12, 8, 0.3);
   font-size: 80%;
   animation: smallPop 1s linear 2s forwards;
   -webkit-animation: smallPop 1s linear 2s forwards;
@@ -2324,7 +2324,7 @@ li form button:active {
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03); }
   100% {
-    color: #100c08;
+    color: rgba(16, 12, 8, 0.3);
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);

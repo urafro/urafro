@@ -2724,7 +2724,7 @@ li form button:active {
 }
 
 .intro-paragraph {
-  color: rgba($color-black, .5);
+  color: rgba($color-black, .3);
   font-size: 80%;
   animation: smallPop 1s linear 2s forwards;
   -webkit-animation: smallPop 1s linear 2s forwards;
@@ -2746,7 +2746,7 @@ li form button:active {
   }
 
   100% {
-    color: $color-black;
+    color: rgba($color-black, .3);
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
