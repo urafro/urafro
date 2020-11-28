@@ -32,7 +32,7 @@
   </div>
 
   <!-- declare show hero background image as inline css to access ejs data -->
-  <div class="hero-2" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<%= blog.body.header.mainImage %>'); background-position: center; background-repeat: no-repeat;">
+  <div class="hero-2" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .9)), url('<%= blog.body.header.mainImage %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
     <div class="header-2">
       <h2><%= blog.author.bio %></h2>
