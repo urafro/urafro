@@ -2356,13 +2356,13 @@ div.box-content.auth h5 a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 60px; }
+  padding: 2.5rem 6rem; }
 
 .logo-box {
   list-style-type: none; }
 
 .projects-container .content {
-  margin: 30px 60px;
+  margin: 3rem 6rem;
   display: flex;
   align-items: center; }
 
@@ -2376,12 +2376,12 @@ div.box-content.auth h5 a:hover {
 .text-box h1 {
   font-size: 110%;
   font-weight: 400;
-  margin-bottom: 25px; }
+  margin-bottom: 2.5rem; }
 
 .text-box span {
   display: inline-block;
-  font-size: 70%;
-  margin-bottom: 15px; }
+  font-size: .7rem;
+  margin-bottom: 1.5rem; }
 
 .projects-email {
   display: flex; }
@@ -2396,36 +2396,32 @@ div.box-content.auth h5 a:hover {
   border-left-style: hidden;
   border-bottom-style: groove;
   background-color: #FFF;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 160px; }
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  height: 3rem;
+  width: 16rem; }
 
 .projects-email input[type="email"]::placeholder {
   text-align: center; }
 
 .text-box .btn {
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   cursor: pointer; }
 
 .small-socials {
   display: flex;
-  margin-top: 25px; }
+  margin-top: 2.5rem; }
 
 .small-socials a:link,
 .small-socials a:visited {
   color: #100c08;
   text-decoration: none;
-  padding-right: 10px; }
+  padding-right: 1rem; }
 
 .image-box {
   width: 50%;
   overflow: hidden;
   height: 65vh;
-  /* 
-  first choise background picture... just trying something different out :) 
-  url("https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80")
-  */
   background-image: linear-gradient(rgba(20, 30, 48, 0.5), rgba(20, 30, 48, 0.5)), url("https://images.unsplash.com/photo-1529088363398-8efc64a0eb95?ixlib=rb-1.2.1&auto=format&fit=crop&w=848&q=80");
   background-position: center;
   background-repeat: no-repeat;
@@ -2433,10 +2429,10 @@ div.box-content.auth h5 a:hover {
 
 .projects-container .contacts {
   display: flex;
-  margin: 0 60px;
+  margin: 0 6rem;
   align-items: center;
   justify-content: space-between;
-  font-size: 65%; }
+  font-size: .65rem; }
 
 .contact-card {
   display: flex; }
@@ -2446,24 +2442,24 @@ div.box-content.auth h5 a:hover {
 
 .contact-card .card-primary h4 {
   font-weight: 300;
-  margin-right: 5px; }
+  margin-right: .5rem; }
 
 /* Drawing a line after a heading */
 .contact-card .card-primary h4::after {
   content: "";
   display: inline-block;
-  width: 25px;
-  height: 1px;
+  width: 2.5rem;
+  height: .1rem;
   background-color: #100c08;
   position: absolute;
   left: 105%;
   bottom: 75%; }
 
 .contact-card .card-secondary {
-  margin-left: 40px; }
+  margin-left: 4rem; }
 
 .projects-container .footer {
   background-color: #111;
   color: #555;
   text-align: center;
-  padding: 10px 0; }
+  padding: 1rem 0; }
