@@ -907,24 +907,24 @@ section.about-us {
 =============== */
 .numbers,
 .socials {
-  padding: 50px 0 100px 0;
+  padding: 5rem 0 10rem 0;
   text-align: center;
 }
 
 .numbers h2,
 .socials h2 {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .numbers h2:after {
   display: block;
-  height: 1px;
-  width: 100px;
+  height: .1rem;
+  width: 10rem;
   content: " ";
-  background-color: rgba($color-primary-red, 0.3);
+  background-color: rgba($color-primary-red, .3);
   margin: 0 auto;
   position: relative;
-  top: 30px;
+  top: 3rem;
 }
 
 .numbers .boxes,
@@ -935,21 +935,21 @@ section.about-us {
 }
 
 .numbers .box h3 {
-  margin-top: 50px;
+  margin-top: 5rem;
   color: $color-primary-red;
-  font-size: 400%;
+  font-size: 4rem;
   font-weight: 900;
   font-family: "Caveat", cursive;
 }
 
 .numbers .box i {
-  font-size: 160%;
-  margin-right: 20px;
+  font-size: 1.6;
+  margin-right: 2rem;
   color: $color-primary-light;
 }
 
 .numbers .box h5 {
-  font-size: 110%;
+  font-size: 1.1rem;
   display: inline-block;
 }
 
