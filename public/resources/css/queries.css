@@ -386,7 +386,7 @@
     font-size: 160%;
   }
 
-  input.bdb {
+  input.btn {
     padding: 10px 20px;
   }
 
@@ -506,7 +506,7 @@
     landing page styles
   ==================== */
   
-  input.bdb {
+  input.btn {
     padding: 10px 20px;
   }
 
@@ -517,7 +517,7 @@
     font-size: 135%;
   }
 
-  a.bdb {
+  a.btn {
     padding: 5px 20px;
     font-size: 75%;
   }
@@ -1007,7 +1007,7 @@
   landing page styles
   ================= */
 
-  input.bdb {
+  input.btn {
     padding: 8px 15px;
   }
 
@@ -1668,7 +1668,7 @@
     font-size: 70%;
   }
 
-  section.projects-container .bdb-ghost {
+  section.projects-container .btn-ghost {
     display: none;
   }
 
