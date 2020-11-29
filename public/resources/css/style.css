@@ -1051,19 +1051,12 @@ section.about-us {
 .l-footer {
   position: relative;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
 .l-footer .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding: 100px 60px;
+  padding: 10rem 6rem;
   background-image: linear-gradient(rgba(16, 12, 8, 0.7), rgba(16, 12, 8, 0.7)), url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
   background-position: center;
   background-size: cover;
@@ -1072,66 +1065,55 @@ section.about-us {
   color: #FFF; }
 
 .content .footer-card {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  margin-right: 20px; }
+  margin-right: 2rem; }
 
 .footer-card h3 {
-  margin-bottom: 30px;
-  font-size: 100%; }
+  margin-bottom: 3rem; }
 
 .f-text {
   font-size: initial; }
 
 .f-text p {
-  line-height: 150%;
+  line-height: 1.5;
   color: #E7EEFB;
   width: 95%;
-  margin-bottom: 10px; }
+  margin-bottom: 1rem; }
 
 .footer-card a i {
   color: #E7EEFB;
-  font-size: 120%;
-  margin: 10px 5px 0 0; }
+  font-size: 1.2rem;
+  margin: 1rem .5rem 0 0; }
 
 .f-text p i {
-  margin-right: 10px;
-  font-size: 120%; }
+  margin-right: 1rem;
+  font-size: 1.2rem; }
 
 /* recent posts */
 .f-posts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  margin: 10px 0;
-  padding: 10px 0; }
+  margin: 1rem 0;
+  padding: 1rem 0; }
 
 .f-posts:nth-of-type(even) {
   border-top: 1px solid rgba(231, 238, 251, 0.5);
   border-bottom: 1px solid rgba(231, 238, 251, 0.5); }
 
 .footer-card img {
-  height: 76px;
-  width: 76px; }
+  height: 7.6rem;
+  width: 7.6rem; }
 
 .f-head img {
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-right: 20px; }
+  margin-right: 2rem; }
 
 .f-body span {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 70%; }
+  font-size: .7rem; }
 
 .f-body h5 {
-  font-size: 70%;
+  font-size: .7rem;
   font-weight: 300; }
 
 /* Developers */
@@ -1139,7 +1121,7 @@ section.about-us {
   text-align: center;
   background-color: #100c08;
   border: none;
-  padding: 30px 0;
+  padding: 3rem 0;
   color: rgba(255, 255, 255, 0.5); }
 
 .l-footer .developer h3 {
