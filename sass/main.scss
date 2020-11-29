@@ -588,91 +588,80 @@ greeting styles
 /* larger nested container */
 .intro-div {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 90%;
   background-color: $color-white;
-  padding: 100px 0;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px $color-primary-light;
-  box-shadow: 0 5px 15px $color-primary-light;
+  padding: 10rem 0;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1.5rem $color-primary-light;
   position: relative;
-  top: -20px;
+  top: -2rem;
 }
 
 .intro-div img {
-  height: 150px;
+  height: 15rem;
 }
 
 .intro-div p {
-  font-size: 85%;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 /* smaller nested containers */
 .about {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
 .give {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
 .receive {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
 .about,
 .give,
 .receive {
-  padding: 0 20px 0 30px;
+  padding: 0 2rem 0 3rem;
 }
 
 /* first nested div */
 .about h2 {
-  font-size: 150%;
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 .about p {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .brand {
   color: $color-primary-red;
   font-weight: 400;
   font-family: 'Caveat', cursive;
-  font-size: 120%;
+  font-size: 1.2rem;
 }
 
 /* second and third divs */
 .give h2,
 .receive h2 {
-  font-size: 120%;
-  margin: 20px 0;
+  font-size: 1.2rem;
+  margin: 2rem 0;
 }
 
 .give p,
 .receive p {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .give a:link,
 .give a:visited {
   color: $color-black;
   text-decoration: underline;
-  -webkit-text-decoration-color: $color-primary-red;
   text-decoration-color: $color-primary-red;
-  -moz-text-decoration-color: $color-primary-red;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: .2rem;
 }
 
 /* ==============
@@ -682,18 +671,18 @@ greeting styles
 .how-it-works {
   margin: 0 auto;
   width: 90%;
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
 .head {
-  margin: 120px 0 50px 0;
+  margin: 12rem 0 5rem 0;
   text-align: center;
 }
 
 .head p {
-  font-size: 70%;
+  font-size: 1rem;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .italic {
@@ -701,68 +690,48 @@ greeting styles
 }
 
 .boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .how-it-works .boxes .box {
-  -ms-flex-preferred-size: 32%;
   flex-basis: 32%;
-  padding: 30px 30px;
-  border-radius: 5px;
+  padding: 3rem 3rem;
+  border-radius: .5rem;
   background-color: $color-white;
-  box-shadow: 0 5px 5px $color-primary-light;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0 .5rem .5rem $color-primary-light;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .box a:link,
 .box a:visited {
-  width: 30px;
-  color: rgba($color-primary-red, 0.7);
-  font-size: 170%;
+  width: 3rem;
+  color: rgba($color-primary-red, .7);
+  font-size: 1.7rem;
   transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
 }
 
 .box a i {
-  margin-top: 30px;
-  margin-bottom: 50px;
-  font-size: 120%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
 }
 
 .box h3 {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .box p {
-  font-size: initial;
   width: 80%;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .box p a:link,
 .box p a:visited {
-  color: rgba($color-primary-red, 0.7);
-  font-size: initial;
+  color: rgba($color-primary-red, .7);
   text-decoration: underline;
   transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
 }
 
 .box p a:hover,
@@ -773,10 +742,9 @@ greeting styles
 }
 
 .box img {
-  height: 100px;
+  height: 10rem;
   position: relative;
   left: 0;
-  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -785,45 +753,37 @@ greeting styles
 ================ */
 
 section.about-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 5rem 0;
 }
 
 .about-image {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
 .about-text {
   text-align: center;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
 .about-text .italic {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .about-text h2 {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .about-text h2:after {
   display: block;
-  width: 200px;
-  background-color: rgba($color-primary-dark, 0.2);
+  width: 20rem;
+  background-color: rgba($color-primary-dark, .2);
   content: " ";
-  height: 1px;
+  height: .1rem;
   position: relative;
-  top: 30px;
+  top: 3rem;
   margin: 0 auto;
 }
 
@@ -831,74 +791,64 @@ section.about-us {
   font-size: initial;
   margin: 0 auto;
   width: 80%;
-  padding-top: 30px;
-  line-height: 130%;
+  padding-top: 3rem;
+  line-height: 1.3;
 }
 
 .founder-signature {
-  margin-top: 30px;
-  height: 50px;
+  margin-top: 3rem;
+  height: 5rem;
 }
 
 /* ===============
       founder
 ================ */
 .founder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: $color-primary-bg2;
 }
 
 .founder .text {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  padding-left: 65px;
+  padding-left: 6.5rem;
 }
 
 .founder .text h2 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   font-weight: 300;
 }
 
 .founder .text h2:after {
   display: block;
   position: relative;
-  top: 20px;
+  top: 2rem;
   background-color: rgba($color-primary-red, 0.3);
-  width: 20px;
-  height: 5px;
+  width: 2rem;
+  height: .5rem;
   content: " ";
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
 }
 
 .founder .text h2 span {
-  font-size: 70%;
-  margin-left: 10px;
+  font-size: .7rem;
+  margin-left: 1rem;
   color: $color-black;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .founder .text p {
   color: $color-black;
   font-size: initial;
   width: 90%;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .founder .text p a:link,
 .founder .text p a:visited {
   color: $color-white;
   transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
 }
 
 .founder .text p a:hover,
@@ -908,28 +858,16 @@ section.about-us {
 }
 
 .founder .image-text {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -ms-flex-item-align: center;
   align-self: center;
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100vh;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-image: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)),
     url("/resources/img/founder.jpeg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -938,34 +876,30 @@ section.about-us {
 .founder .image-text a:link,
 .founder .image-text a:visited {
   transition: background-color 1s;
-  -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -ms-transition: background-color 1s;
-  -o-transition: background-color 1s;
 }
 
 .founder .image-text a:hover,
 .founder .image-text a:active {
-  background-color: rgba($color-primary-light, 0.1);
+  background-color: rgba($color-primary-light, .1);
 }
 
 .founder .image-text h2 {
-  font-size: 170%;
+  font-size: 1.7;
   font-weight: 400;
   color: $color-white;
-  padding: 30px;
-  border: 1px solid $color-white;
-  border-radius: 2px;
+  padding: 3rem;
+  border: .1rem solid $color-white;
+  border-radius: .2rem;
 }
 
 .founder .image-text h2 span {
   color: $color-white;
-  opacity: 0.5;
+  opacity: .5;
   text-transform: uppercase;
-  font-size: 50%;
+  font-size: .5rem;
   font-weight: 400;
-  letter-spacing: .5px;
-  margin-right: 5px;
+  letter-spacing: .05rem;
+  margin-right: .5rem;
 }
 
 /* ==============
