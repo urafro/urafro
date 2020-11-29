@@ -960,7 +960,7 @@ section.about-us {
 .testimonials .header {
   text-align: center;
   background-color: $color-primary-light;
-  padding: 100px 0 150px 0;
+  padding: 10rem 0 15rem 0;
 }
 
 .testimonials .header span:first-of-type {
@@ -971,62 +971,61 @@ section.about-us {
 .testimonials .header span.brand {
   text-transform: none;
   color: $color-primary-red;
-  font-size: 120%;
+  font-size: 1.2rem;
 }
 
 .testimonials .header h2 {
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .testimonials .boxes {
   width: 80%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 5rem;
 }
 
 .testimonials .box {
   width: 30%;
   background-color: $color-white;
-  padding-top: 50px;
-  padding-left: 20px;
-  border-radius: 5px;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  border-radius: .5rem;
   position: relative;
-  top: -180px;
-  -webkit-box-shadow: 0 5px 5px $color-primary-light;
-  box-shadow: 0 5px 5px $color-primary-light;
+  top: -18rem;
+  box-shadow: 0 .5rem .5rem $color-primary-light;
 }
 
 .testimonials .box p:before {
   display: block;
   /* background-color: rgba(67, 35, 68, 0.9); */
   content: "\201C";
-  position: relative;
-  bottom: 5px;
+  position: absolute;
+  top: 5rem;
   color: $color-black;
-  font-size: 120px;
+  font-size: 12rem;
   font-weight: 400;
 }
 
 .testimonials .box p {
   font-size: initial;
   line-height: 150%;
-  margin-bottom: 20px;
+  margin: 2rem 0;
   width: 80%;
 }
 
 .testimonials .box h3 {
   font-size: 90%;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .testimonials .title,
 .testimonials .company {
   display: block;
-  font-size: 80%;
+  font-size: .8rem;
   font-style: italic;
-  letter-spacing: .5px;
-  padding-bottom: 5px;
+  letter-spacing: .05rem;
+  padding-bottom: .5rem;
 }
 
 /* ===============
@@ -1034,15 +1033,13 @@ section.about-us {
 ================ */
 
 .newsletter {
-  /* width: 100vw; */
   background: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .9)), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* to change this in favor of individual color declarations for child elements */
   color: $color-white;
-  padding: 120px 0;
+  padding: 12rem 0;
 }
 
 .newsletter-form {
@@ -1052,7 +1049,7 @@ section.about-us {
 }
 
 .newsletter-form h2 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .newsletter-form p {
@@ -1060,42 +1057,29 @@ section.about-us {
   width: 90%;
   color: $color-primary-light;
   font-size: initial;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .newsletter-form input[type="email"] {
-  font-size: 70%;
+  font-size: 1rem;
   font-family: inherit;
-  height: 45px;
-  line-height: 45px;
+  height: 4.5rem;
+  line-height: 4.5rem;
   width: 80%;
-  padding: 0 40px;
+  padding: 0 4rem;
   color: $color-primary-light;
-  border: 2px solid rgba($color-primary-dark, 0.7);
-  background-color: rgba($color-primary-dark, 0.3);
-  border-radius: 120px;
+  border: .2rem solid rgba($color-primary-dark, .7);
+  background-color: rgba($color-primary-dark, .3);
+  border-radius: 12rem;
   position: relative;
-  left: 40px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
+  left: 4rem;
   transition: background-color .2s;
-  -webkit-transition: background-color .2s;
-  -moz-transition: background-color .2s;
-  -ms-transition: background-color .2s;
-  -o-transition: background-color .2s;
 }
 
 .newsletter-form input[type="email"]:hover,
 .newsletter-form input[type="email"]:active,
 .newsletter-form input[type="email"]:focus {
-  background-color: rgba($color-primary-dark, 0.7);
-}
-
-.newsletter-form input[type="email"]::-webkit-input-placeholder {
-  color: $color-primary-light;
-  font-style: italic;
+  background-color: rgba($color-primary-dark, .7);
 }
 
 .newsletter-form input[type="email"]::placeholder {
@@ -1104,17 +1088,13 @@ section.about-us {
 }
 
 .newsletter-form input[type="submit"] {
-  height: 45px;
-  line-height: 45px;
-  padding: 0 30px;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 3rem;
   cursor: pointer;
-  border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
+  border-radius: 12rem;
   position: relative;
-  right: 25px;
+  right: 2.5rem;
 }
 
 /* ==============
