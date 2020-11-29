@@ -920,129 +920,107 @@ section.about-us {
       socials
 =============== */
 .socials {
-  margin: 100px 0 50px 0;
-  padding: 0 30px; }
+  margin: 10rem 0 5rem 0;
+  padding: 0 3rem; }
 
 .socials h2 {
-  margin-bottom: 45px; }
+  margin-bottom: 4.5rem; }
 
 .socials h2::after {
   display: block;
-  width: 100px;
+  width: 10rem;
   background-color: rgba(255, 37, 37, 0.2);
   content: " ";
-  height: 1px;
+  height: .1rem;
   position: relative;
-  top: 30px;
+  top: 3rem;
   margin: 0 auto; }
 
 .socials .box {
-  margin-top: 30px; }
+  margin-top: 3rem; }
 
 .socials .box a:link,
 .socials .box a:visited {
   color: rgba(255, 37, 37, 0.7);
-  font-size: 200%; }
+  font-size: 2rem; }
 
 .socials .box a i {
-  font-size: 200%; }
+  font-size: 2rem; }
 
 /* ================
     contact-us
 ================ */
 .contact-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0 100px 0;
-  /* padding: 100px 0; */ }
+  padding: 5rem 0 10rem 0; }
 
 .contact-us .image {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1; }
 
 .contact-us .form {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  box-shadow: 0 5px 15px #E7EEFB;
-  padding: 50px 0 50px 30px;
+  box-shadow: 0 0.5rem 1.5rem #E7EEFB;
+  padding: 5rem 0 5rem 3rem;
   position: relative;
-  right: 65px; }
+  right: 6.5rem; }
 
 .contact-us .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  border-radius: 5px; }
+  border-radius: .5rem; }
 
 /* OUR-CONTACTS */
 .our-contacts,
 .message {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1; }
 
 .our-contacts h2,
 .message h2 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   font-weight: 300;
-  font-size: 100%; }
+  font-size: 1rem; }
 
 .contact-us .our-contacts .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
 
 .card .icon {
-  padding: 0 20px 0 0; }
+  padding: 0 2rem 0 0; }
 
 .icon i,
 .card-txt p {
   color: rgba(67, 35, 68, 0.5); }
 
 .icon i {
-  font-size: 140%; }
+  font-size: 1.4rem; }
 
 .card-txt h5 {
-  margin-bottom: 5px;
+  margin-bottom: .5rem;
   text-transform: uppercase;
-  font-size: 70%;
+  font-size: .7rem;
   font-weight: 300; }
 
 .card-txt p {
-  font-size: 70%;
+  font-size: .7rem;
   width: 80%; }
 
 /* SEND-US-A-MESSAGE */
 .message {
-  margin-right: 70px; }
+  margin-right: 7rem; }
 
 .message h2 {
-  word-spacing: 2px;
+  word-spacing: .2rem;
   font-weight: 300; }
 
 .message-input {
-  margin-bottom: 30px; }
+  margin-bottom: 3rem; }
 
 .message-input label {
   position: relative;
-  top: -10px; }
+  top: -1rem; }
 
 .message-input label h5 {
   font-weight: 300; }
@@ -1052,19 +1030,19 @@ section.about-us {
 .message-input input[type="textarea"] {
   width: 100%;
   outline: none;
-  border: 1px solid rgba(67, 35, 68, 0.3); }
+  border: 0.1rem solid rgba(67, 35, 68, 0.3); }
 
 .message-input input[type="text"],
 .message-input input[type="email"] {
-  height: 45px;
-  line-height: 45px;
-  padding-left: 20px; }
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding-left: 2rem; }
 
 .message .btn-full {
   position: relative;
-  top: -30px;
-  font-size: 60%;
-  letter-spacing: .5px;
+  top: -3rem;
+  font-size: .6rem;
+  letter-spacing: .05rem;
   cursor: pointer; }
 
 /* =============
