@@ -392,6 +392,11 @@ h3 {
       flex: 1; }
     .intro__container--give {
       flex: 1; }
+      .intro__container--give a:link, .intro__container--give a:visited {
+        color: #100c08;
+        text-decoration: underline;
+        text-decoration-color: #FF2525;
+        text-decoration-thickness: .2rem; }
     .intro__container--receive {
       flex: 1; }
     .intro__container--about, .intro__container--give, .intro__container--receive {
@@ -407,12 +412,6 @@ h3 {
     .intro__container--give p,
     .intro__container--receive p {
       margin-bottom: 1rem; }
-    .intro__container--give a:link,
-    .intro__container--give a:visited {
-      color: #100c08;
-      text-decoration: underline;
-      text-decoration-color: #FF2525;
-      text-decoration-thickness: .2rem; }
 
 /* ==============
   how-it-works

@@ -531,6 +531,16 @@ h3 {
 
     &--give {
       flex: 1;
+
+      a {
+        &:link,
+        &:visited {
+          color: $color-black;
+          text-decoration: underline;
+          text-decoration-color: $color-primary-red;
+          text-decoration-thickness: .2rem;
+        }
+      }
     }
 
     &--receive {
@@ -562,14 +572,6 @@ h3 {
     &--give p,
     &--receive p {
       margin-bottom: 1rem;
-    }
-
-    &--give a:link,
-    &--give a:visited {
-      color: $color-black;
-      text-decoration: underline;
-      text-decoration-color: $color-primary-red;
-      text-decoration-thickness: .2rem;
     }
   }
 }
