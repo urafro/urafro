@@ -5,6 +5,7 @@ $color-primary-dark: #432344;
 $color-primary-light: #E7EEFB;
 $color-primary-red: #FF2525;
 $color-primary-brown: #FFC03D;
+$color-secondary-brown: #cf920d;
 
 $color-white: #FFF;
 $color-black: #100c08;
@@ -48,8 +49,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -77,30 +76,18 @@ a {
 .fa-instagram:hover {
   color: $color-instagram;
   transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
 }
 
 .fa-twitter:active,
 .fa-twitter:hover {
   color: $color-twitter;
   transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
 }
 
 .fa-github:active,
 .fa-github:hover {
   color: $color-github;
   transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
 }
 
 /* ================= 
@@ -136,15 +123,7 @@ a {
   text-decoration: none;
   font-weight: 300;
   border-radius: 20rem;
-  -webkit-border-radius: 20rem;
-  -moz-border-radius: 20rem;
-  -ms-border-radius: 20rem;
-  -o-border-radius: 20rem;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 /* body button prefered call to action selection */
@@ -158,7 +137,6 @@ a {
 }
 
 /* body button alternative call to action selection */
-$color-secondary-brown: #cf920d;
 .btn-ghost {
   background-color: transparent;
   border: .1rem solid $color-secondary-brown;
@@ -205,14 +183,7 @@ $color-secondary-brown: #cf920d;
 
 .landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
-  -webkit-animation: 2s menuFadeIn 2s forwards;
   opacity: 0;
-}
-
-@-webkit-keyframes menuFadeIn {
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes menuFadeIn {
@@ -231,10 +202,6 @@ $color-secondary-brown: #cf920d;
   background: rgba($color-black, .8);
   overflow: hidden;
   transition: 1s ease-in-out;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -ms-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
 }
 
 .menu-content {
@@ -258,10 +225,6 @@ $color-secondary-brown: #cf920d;
 .menu-content a:hover {
   background-color: rgba($color-primary-red, 0.3);
   transition: .3s ease-in-out;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
 }
 
 .menu-container .closebtn {
@@ -312,14 +275,11 @@ greeting styles
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   margin: auto;
   padding: 1rem 3rem;
   animation: 1s navFade .5s forwards;
-  -webkit-animation: 1s navFade .5s forwards;
   opacity: 0;
   margin-top: -10rem;
 }
@@ -339,15 +299,10 @@ greeting styles
 }
 
 .jiggle {
-  -webkit-animation-name: jiggle;
   animation-name: jiggle;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-delay: 10s;
   animation-delay: 10s;
 }
 
@@ -372,25 +327,15 @@ greeting styles
 }
 
 .main-nav .brand {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   font-size: 150%;
   font-family: 'Caveat', cursive;
 }
 
 .main-nav .nav-items {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -404,10 +349,6 @@ greeting styles
   font-weight: 400;
   font-size: 1rem;
   transition: border-bottom .2s, color .2s;
-  -webkit-transition: border-bottom .2s, color .2s;
-  -moz-transition: border-bottom .2s, color .2s;
-  -ms-transition: border-bottom .2s, color .2s;
-  -o-transition: border-bottom .2s, color .2s;
 }
 
 .main-nav li a.btn-ghost:link,
@@ -446,27 +387,18 @@ greeting styles
   display: -ms-flexbox;
   display: flex;
   width: 90%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
 }
 
 .g-box {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   padding-left: 3rem;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .g-box span {
@@ -475,7 +407,6 @@ greeting styles
   animation: 1s spanSlideRight 1s ease-in forwards;
   opacity: 0;
   margin-left: -50px;
-  -webkit-animation: 1s spanSlideRight 1s ease-in forwards;
 }
 
 @keyframes spanSlideRight {
@@ -493,7 +424,6 @@ greeting styles
   left: -10rem;
   color: $color-white;
   animation: 1s h1slideRight 2s ease-in forwards;
-  -webkit-animation: 1s h1slideRight 2s ease-in forwards;
   opacity: 0;
   font-weight: 400;
 }
@@ -521,7 +451,6 @@ greeting styles
   top: -1.5rem;
   opacity: 0;
   animation: 1s btnSlideDown 4.5s ease-in forwards;
-  -webkit-animation: 1s btnSlideDown 4.5s ease-in forwards;
 }
 
 /* Blink and expand/shrink effect on landing page main cta button */
@@ -557,10 +486,7 @@ greeting styles
 }
 
 .g-image {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -570,7 +496,6 @@ greeting styles
   right: -8rem;
   opacity: 0;
   animation: 1s imgSlideLeft 3s ease-in-out forwards;
-  -webkit-animation: 1s imgSlideLeft 3s ease-in forwards;
 }
 
 @keyframes imgSlideLeft {
@@ -589,8 +514,6 @@ greeting styles
 .intro-div {
   margin: 0 auto;
   margin-bottom: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
   background-color: $color-white;

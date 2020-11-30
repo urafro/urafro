@@ -27,8 +27,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .left {
@@ -50,29 +48,17 @@ a {
 .fa-instagram:active,
 .fa-instagram:hover {
   color: #EE1092;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s; }
+  transition: color 0.2s; }
 
 .fa-twitter:active,
 .fa-twitter:hover {
   color: #0764F7;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s; }
+  transition: color 0.2s; }
 
 .fa-github:active,
 .fa-github:hover {
   color: #333;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s; }
+  transition: color .2s; }
 
 /* ================= 
     flash messages
@@ -103,15 +89,7 @@ a {
   text-decoration: none;
   font-weight: 300;
   border-radius: 20rem;
-  -webkit-border-radius: 20rem;
-  -moz-border-radius: 20rem;
-  -ms-border-radius: 20rem;
-  -o-border-radius: 20rem;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -o-transition: background-color 0.2s, border 0.2s, color 0.2s; }
+  transition: background-color 0.2s, border 0.2s, color 0.2s; }
 
 /* body button prefered call to action selection */
 .btn-full {
@@ -162,12 +140,7 @@ a {
 
 .landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
-  -webkit-animation: 2s menuFadeIn 2s forwards;
   opacity: 0; }
-
-@-webkit-keyframes menuFadeIn {
-  100% {
-    opacity: 1; } }
 
 @keyframes menuFadeIn {
   100% {
@@ -182,11 +155,7 @@ a {
   z-index: 1;
   background: rgba(16, 12, 8, 0.8);
   overflow: hidden;
-  transition: 1s ease-in-out;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -ms-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out; }
+  transition: 1s ease-in-out; }
 
 .menu-content {
   position: relative;
@@ -206,11 +175,7 @@ a {
 .menu-content a:active,
 .menu-content a:hover {
   background-color: rgba(255, 37, 37, 0.3);
-  transition: .3s ease-in-out;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out; }
+  transition: .3s ease-in-out; }
 
 .menu-container .closebtn {
   position: absolute;
@@ -253,14 +218,11 @@ greeting styles
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   margin: auto;
   padding: 1rem 3rem;
   animation: 1s navFade .5s forwards;
-  -webkit-animation: 1s navFade .5s forwards;
   opacity: 0;
   margin-top: -10rem; }
 
@@ -275,15 +237,10 @@ greeting styles
     margin-top: 0; } }
 
 .jiggle {
-  -webkit-animation-name: jiggle;
   animation-name: jiggle;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-delay: 10s;
   animation-delay: 10s; }
 
 @keyframes jiggle {
@@ -298,24 +255,14 @@ greeting styles
     transform: scale(1, 1) translate(0, -0.3rem); } }
 
 .main-nav .brand {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   font-size: 150%;
   font-family: 'Caveat', cursive; }
 
 .main-nav .nav-items {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end; }
 
 .main-nav .nav-items li {
@@ -326,11 +273,7 @@ greeting styles
   color: #100c08;
   font-weight: 400;
   font-size: 1rem;
-  transition: border-bottom .2s, color .2s;
-  -webkit-transition: border-bottom .2s, color .2s;
-  -moz-transition: border-bottom .2s, color .2s;
-  -ms-transition: border-bottom .2s, color .2s;
-  -o-transition: border-bottom .2s, color .2s; }
+  transition: border-bottom .2s, color .2s; }
 
 .main-nav li a.btn-ghost:link,
 .main-nav li a.btn-ghost:visited {
@@ -364,34 +307,24 @@ greeting styles
   display: -ms-flexbox;
   display: flex;
   width: 90%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 .g-box {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   padding-left: 3rem;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden; }
+  backface-visibility: hidden; }
 
 .g-box span {
   font-size: 1.2rem;
   color: #FFF;
   animation: 1s spanSlideRight 1s ease-in forwards;
   opacity: 0;
-  margin-left: -50px;
-  -webkit-animation: 1s spanSlideRight 1s ease-in forwards; }
+  margin-left: -50px; }
 
 @keyframes spanSlideRight {
   100% {
@@ -406,7 +339,6 @@ greeting styles
   left: -10rem;
   color: #FFF;
   animation: 1s h1slideRight 2s ease-in forwards;
-  -webkit-animation: 1s h1slideRight 2s ease-in forwards;
   opacity: 0;
   font-weight: 400; }
 
@@ -427,8 +359,7 @@ greeting styles
   position: relative;
   top: -1.5rem;
   opacity: 0;
-  animation: 1s btnSlideDown 4.5s ease-in forwards;
-  -webkit-animation: 1s btnSlideDown 4.5s ease-in forwards; }
+  animation: 1s btnSlideDown 4.5s ease-in forwards; }
 
 /* Blink and expand/shrink effect on landing page main cta button */
 .g-box .btn-full::after {
@@ -458,10 +389,7 @@ greeting styles
   margin-right: 1rem; }
 
 .g-image {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -ms-flex-item-align: end;
   align-self: flex-end; }
 
 .g-image img {
@@ -469,8 +397,7 @@ greeting styles
   position: relative;
   right: -8rem;
   opacity: 0;
-  animation: 1s imgSlideLeft 3s ease-in-out forwards;
-  -webkit-animation: 1s imgSlideLeft 3s ease-in forwards; }
+  animation: 1s imgSlideLeft 3s ease-in-out forwards; }
 
 @keyframes imgSlideLeft {
   100% {
@@ -485,8 +412,6 @@ greeting styles
 .intro-div {
   margin: 0 auto;
   margin-bottom: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
   background-color: #FFF;
