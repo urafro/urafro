@@ -197,40 +197,11 @@ h2,
 h3 {
   font-weight: 300; }
 
-/* ======
+/* ===============
 
-greeting styles 
+  greeting styles 
 
-======== */
-.greeting {
-  /* width: 100vw; */
-  /* height to be adjusted after i'm done with all corresponding styles */
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(20, 30, 48, 0.7), #243b55), url("/resources/img/greetings.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
-
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  padding: 1rem 3rem;
-  animation: 1s navFade .5s forwards;
-  opacity: 0;
-  margin-top: -10rem; }
-
-@-webkit-keyframes navFade {
-  100% {
-    opacity: 1;
-    margin-top: 0; } }
-
+================= */
 @keyframes navFade {
   100% {
     opacity: 1;
@@ -254,155 +225,141 @@ greeting styles
   59% {
     transform: scale(1, 1) translate(0, -0.3rem); } }
 
-.main-nav .brand {
-  flex: 1;
-  font-size: 150%;
-  font-family: 'Caveat', cursive; }
-
-.main-nav .nav-items {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
-
-.main-nav .nav-items li {
-  padding: 1rem; }
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  color: #100c08;
-  font-weight: 400;
-  font-size: 1rem;
-  transition: border-bottom .2s, color .2s; }
-
-.main-nav li a.btn-ghost:link,
-.main-nav li a.btn-ghost:visited {
-  color: #cf920d;
-  font-weight: 300; }
-
-.main-nav li a.btn-ghost:hover,
-.main-nav li a.btn-ghost:active {
-  color: #100c08; }
-
-.main-nav .nav-b:hover,
-.main-nav .nav-b:active {
-  color: #FFF;
-  padding-bottom: .5rem;
-  border-bottom: 0.3rem solid #100c08; }
-
-/* styling main-nav go-to blog button */
-.main-nav .btn {
-  margin: 0;
-  position: relative;
-  left: 0;
-  text-transform: none;
-  margin-left: 1rem;
-  font-weight: 300; }
-
-/* ==============
-  greeting boxes
-=============== */
-.greeting-boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  align-items: center;
-  justify-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.g-box {
-  flex: 1;
-  padding-left: 3rem;
-  backface-visibility: hidden; }
-
-.g-box span {
-  font-size: 1.2rem;
-  color: #FFF;
-  animation: 1s spanSlideRight 1s ease-in forwards;
-  opacity: 0;
-  margin-left: -50px; }
-
+/* Boxes animations */
 @keyframes spanSlideRight {
   100% {
     opacity: 0.6;
     margin-left: 0; } }
-
-.g-box h1 {
-  font-size: 1.6rem;
-  margin: 2rem 0 3rem 0;
-  line-height: 1.4;
-  position: relative;
-  left: -10rem;
-  color: #FFF;
-  animation: 1s h1slideRight 2s ease-in forwards;
-  opacity: 0;
-  font-weight: 400; }
-
-@-webkit-keyframes h1slideRight {
-  100% {
-    opacity: 1;
-    left: 0; } }
 
 @keyframes h1slideRight {
   100% {
     opacity: 1;
     left: 0; } }
 
-.g-box .btn {
-  text-transform: none; }
-
-.g-box .btn-full {
-  position: relative;
-  top: -1.5rem;
-  opacity: 0;
-  animation: 1s btnSlideDown 4.5s ease-in forwards; }
-
-/* Blink and expand/shrink effect on landing page main cta button */
-.g-box .btn-full::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10rem;
-  background-color: #FFC03D;
-  transition: all .4s;
-  z-index: -1; }
-
-/* animating the ::after element we created above, on .g-box .btn-full hover */
-.g-box .btn-full:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
-
 @keyframes btnSlideDown {
   100% {
     opacity: 1;
     top: 0; } }
 
-.g-box .btn-full i {
-  margin-right: 1rem; }
-
-.g-image {
-  flex: 1;
-  align-self: flex-end; }
-
-.g-image img {
-  height: 45vh;
-  position: relative;
-  right: -8rem;
-  opacity: 0;
-  animation: 1s imgSlideLeft 3s ease-in-out forwards; }
-
 @keyframes imgSlideLeft {
   100% {
     opacity: 1;
     right: 0; } }
+
+.greeting {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(20, 30, 48, 0.7), #243b55), url("/resources/img/greetings.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  .greeting__nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 3rem;
+    animation: 1s navFade .5s forwards;
+    opacity: 0;
+    margin-top: -10rem; }
+    .greeting__nav--brand {
+      flex: 1;
+      font-size: 150%;
+      font-family: 'Caveat', cursive; }
+    .greeting__nav--items {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .greeting__nav--items li {
+        padding: 1rem; }
+        .greeting__nav--items li a:link, .greeting__nav--items li a:visited {
+          color: #100c08;
+          font-weight: 400;
+          font-size: 1rem;
+          transition: border-bottom .2s, color .2s; }
+        .greeting__nav--items li a.nav--item:hover, .greeting__nav--items li a.nav--item:active {
+          color: #FFF;
+          padding-bottom: .5rem;
+          border-bottom: 0.3rem solid #100c08; }
+        .greeting__nav--items li a.btn-ghost:link, .greeting__nav--items li a.btn-ghost:visited {
+          color: #cf920d;
+          font-weight: 300; }
+        .greeting__nav--items li a.btn-ghost:hover, .greeting__nav--items li a.btn-ghost:active {
+          color: #100c08; }
+        .greeting__nav--items li a.jiggle {
+          margin: 0;
+          position: relative;
+          left: 0;
+          text-transform: none;
+          margin-left: 1rem;
+          font-weight: 300; }
+  .greeting__boxes {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .greeting__boxes--box {
+      flex: 1;
+      padding-left: 3rem;
+      backface-visibility: hidden; }
+      .greeting__boxes--box .greeting__box--subHeading {
+        font-size: 1.2rem;
+        color: #FFF;
+        animation: 1s spanSlideRight 1s ease-in forwards;
+        opacity: 0;
+        margin-left: -50px; }
+      .greeting__boxes--box .greeting__box--mainHeading {
+        font-size: 1.6rem;
+        margin: 2rem 0 3rem 0;
+        line-height: 1.4;
+        position: relative;
+        left: -10rem;
+        color: #FFF;
+        animation: 1s h1slideRight 2s ease-in forwards;
+        opacity: 0;
+        font-weight: 400; }
+      .greeting__boxes--box.btn {
+        text-transform: none; }
+      .greeting__boxes--box .btn-full {
+        position: relative;
+        top: -1.5rem;
+        opacity: 0;
+        animation: 1s btnSlideDown 4.5s ease-in forwards;
+        /* Blink and expand/shrink effect on landing page main cta button */
+        /* animating the ::after element we created above, on .greeting__box .btn-full hover */ }
+        .greeting__boxes--box .btn-full::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 10rem;
+          background-color: #FFC03D;
+          transition: all .4s;
+          z-index: -1; }
+        .greeting__boxes--box .btn-full:hover::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0; }
+        .greeting__boxes--box .btn-full i {
+          margin-right: 1rem; }
+    .greeting__boxes--image {
+      flex: 1;
+      align-self: flex-end; }
+      .greeting__boxes--image img {
+        height: 45vh;
+        position: relative;
+        right: -8rem;
+        opacity: 0;
+        animation: 1s imgSlideLeft 3s ease-in-out forwards; }
 
 /*===================*/
 .intro {
