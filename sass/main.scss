@@ -241,6 +241,12 @@ a {
   overflow: hidden;
 }
 
+.brand {
+  color: $color-primary-red;
+  font-weight: 400;
+  font-family: 'Caveat', cursive;
+}
+
 /* ====================
   landing page styles
 ===================== */
@@ -496,83 +502,76 @@ h3 {
 /*===================*/
 .intro {
   background-color: $color-primary-light;
-}
 
-/* larger nested container */
-.intro-div {
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  display: flex;
-  width: 90%;
-  background-color: $color-white;
-  padding: 10rem 0;
-  border-radius: .5rem;
-  box-shadow: 0 .5rem 1.5rem $color-primary-light;
-  position: relative;
-  top: -2rem;
-}
+  /* larger nested container */
+  &__container {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    width: 90%;
+    background-color: $color-white;
+    padding: 10rem 0;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem $color-primary-light;
+    position: relative;
+    top: -2rem;
 
-.intro-div img {
-  height: 15rem;
-}
+    & img {
+      height: 15rem;
+    }
 
-.intro-div p {
-  line-height: 1.2;
-}
+    & p {
+      line-height: 1.2;
+    }
 
-/* smaller nested containers */
-.about {
-  flex: 1;
-}
+    /* smaller nested containers */
+    &--about {
+      flex: 1;
+    }
 
-.give {
-  flex: 1;
-}
+    &--give {
+      flex: 1;
+    }
 
-.receive {
-  flex: 1;
-}
+    &--receive {
+      flex: 1;
+    }
 
-.about,
-.give,
-.receive {
-  padding: 0 2rem 0 3rem;
-}
+    &--about,
+    &--give,
+    &--receive {
+      padding: 0 2rem 0 3rem;
+    }
 
-/* first nested div */
-.about h2 {
-  margin: 2rem 0;
-}
+    /* first nested div heading */
+    &--about h2 {
+      margin: 2rem 0;
+    }
 
-.about p {
-  margin-bottom: 3rem;
-}
+    &--about p {
+      margin-bottom: 3rem;
+    }
+    
+    /* second and third divs */
+    &--give h2,
+    &--receive h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0;
+    }
 
-.brand {
-  color: $color-primary-red;
-  font-weight: 400;
-  font-family: 'Caveat', cursive;
-  font-size: 1.2rem;
-}
+    &--give p,
+    &--receive p {
+      margin-bottom: 1rem;
+    }
 
-/* second and third divs */
-.give h2,
-.receive h2 {
-  font-size: 1.2rem;
-  margin: 2rem 0;
-}
-
-.give p,
-.receive p {
-  margin-bottom: 1rem;
-}
-
-.give a:link,
-.give a:visited {
-  color: $color-black;
-  text-decoration: underline;
-  text-decoration-color: $color-primary-red;
-  text-decoration-thickness: .2rem;
+    &--give a:link,
+    &--give a:visited {
+      color: $color-black;
+      text-decoration: underline;
+      text-decoration-color: $color-primary-red;
+      text-decoration-thickness: .2rem;
+    }
+  }
 }
 
 /* ==============

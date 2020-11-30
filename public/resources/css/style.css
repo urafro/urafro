@@ -189,6 +189,11 @@ a {
 .landing-section {
   overflow: hidden; }
 
+.brand {
+  color: #FF2525;
+  font-weight: 400;
+  font-family: 'Caveat', cursive; }
+
 /* ====================
   landing page styles
 ===================== */
@@ -363,71 +368,51 @@ h3 {
 
 /*===================*/
 .intro {
-  background-color: #E7EEFB; }
-
-/* larger nested container */
-.intro-div {
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  display: flex;
-  width: 90%;
-  background-color: #FFF;
-  padding: 10rem 0;
-  border-radius: .5rem;
-  box-shadow: 0 0.5rem 1.5rem #E7EEFB;
-  position: relative;
-  top: -2rem; }
-
-.intro-div img {
-  height: 15rem; }
-
-.intro-div p {
-  line-height: 1.2; }
-
-/* smaller nested containers */
-.about {
-  flex: 1; }
-
-.give {
-  flex: 1; }
-
-.receive {
-  flex: 1; }
-
-.about,
-.give,
-.receive {
-  padding: 0 2rem 0 3rem; }
-
-/* first nested div */
-.about h2 {
-  margin: 2rem 0; }
-
-.about p {
-  margin-bottom: 3rem; }
-
-.brand {
-  color: #FF2525;
-  font-weight: 400;
-  font-family: 'Caveat', cursive;
-  font-size: 1.2rem; }
-
-/* second and third divs */
-.give h2,
-.receive h2 {
-  font-size: 1.2rem;
-  margin: 2rem 0; }
-
-.give p,
-.receive p {
-  margin-bottom: 1rem; }
-
-.give a:link,
-.give a:visited {
-  color: #100c08;
-  text-decoration: underline;
-  text-decoration-color: #FF2525;
-  text-decoration-thickness: .2rem; }
+  background-color: #E7EEFB;
+  /* larger nested container */ }
+  .intro__container {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    width: 90%;
+    background-color: #FFF;
+    padding: 10rem 0;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1.5rem #E7EEFB;
+    position: relative;
+    top: -2rem;
+    /* smaller nested containers */
+    /* first nested div heading */
+    /* second and third divs */ }
+    .intro__container img {
+      height: 15rem; }
+    .intro__container p {
+      line-height: 1.2; }
+    .intro__container--about {
+      flex: 1; }
+    .intro__container--give {
+      flex: 1; }
+    .intro__container--receive {
+      flex: 1; }
+    .intro__container--about, .intro__container--give, .intro__container--receive {
+      padding: 0 2rem 0 3rem; }
+    .intro__container--about h2 {
+      margin: 2rem 0; }
+    .intro__container--about p {
+      margin-bottom: 3rem; }
+    .intro__container--give h2,
+    .intro__container--receive h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0; }
+    .intro__container--give p,
+    .intro__container--receive p {
+      margin-bottom: 1rem; }
+    .intro__container--give a:link,
+    .intro__container--give a:visited {
+      color: #100c08;
+      text-decoration: underline;
+      text-decoration-color: #FF2525;
+      text-decoration-thickness: .2rem; }
 
 /* ==============
   how-it-works
