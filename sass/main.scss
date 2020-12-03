@@ -8,6 +8,7 @@ $color-primary-brown: #FFC03D;
 
 $color-white: #FFF;
 $color-black: #100c08;
+$color-grey: #8C92AC;
 
 $color-instagram: #EE1092;
 $color-twitter: #0764F7;
@@ -201,6 +202,7 @@ $color-secondary-brown: #cf920d;
   top: 24px;
   cursor: pointer;
   z-index: 1;
+  color: $color-grey;
 }
 
 .landing-section #menuIcon {

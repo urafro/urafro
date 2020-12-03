@@ -158,7 +158,8 @@ a {
   left: 42px;
   top: 24px;
   cursor: pointer;
-  z-index: 1; }
+  z-index: 1;
+  color: #8C92AC; }
 
 .landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
