@@ -618,30 +618,27 @@ h3 {
 /* ================
     testimonials
 ================= */
-.testimonials .header {
+.testimonials__header {
   text-align: center;
   background-color: #E7EEFB;
   padding: 10rem 0 15rem 0; }
+  .testimonials__header--main {
+    text-transform: uppercase;
+    color: rgba(67, 35, 68, 0.5); }
+  .testimonials__header--brand {
+    text-transform: none;
+    color: #FF2525;
+    font-size: 1.2rem; }
+  .testimonials__header--sub {
+    font-weight: 300;
+    margin-bottom: 4rem; }
 
-.testimonials .header span:first-of-type {
-  text-transform: uppercase;
-  color: rgba(67, 35, 68, 0.5); }
-
-.testimonials .header span.brand {
-  text-transform: none;
-  color: #FF2525;
-  font-size: 1.2rem; }
-
-.testimonials .header h2 {
-  font-weight: 300;
-  margin-bottom: 4rem; }
-
-.testimonials .boxes {
+.testimonials__boxes {
   width: 80%;
   margin: 0 auto;
   padding-top: 5rem; }
 
-.testimonials .box {
+.testimonials__box {
   width: 30%;
   background-color: #FFF;
   padding-top: 5rem;
@@ -650,34 +647,27 @@ h3 {
   position: relative;
   top: -18rem;
   box-shadow: 0 0.5rem 0.5rem #E7EEFB; }
-
-.testimonials .box p:before {
-  display: block;
-  /* background-color: rgba(67, 35, 68, 0.9); */
-  content: "\201C";
-  position: absolute;
-  top: 5rem;
-  color: #100c08;
-  font-size: 12rem;
-  font-weight: 400; }
-
-.testimonials .box p {
-  font-size: initial;
-  line-height: 150%;
-  margin: 2rem 0;
-  width: 80%; }
-
-.testimonials .box h3 {
-  font-size: 90%;
-  margin-bottom: 2rem; }
-
-.testimonials .title,
-.testimonials .company {
-  display: block;
-  font-size: .8rem;
-  font-style: italic;
-  letter-spacing: .05rem;
-  padding-bottom: .5rem; }
+  .testimonials__box--paragraph {
+    line-height: 150%;
+    margin: 2rem 0;
+    width: 80%; }
+    .testimonials__box--paragraph::before {
+      display: block;
+      content: "\201C";
+      position: absolute;
+      top: 5rem;
+      color: #100c08;
+      font-size: 12rem;
+      font-weight: 400; }
+  .testimonials__box--name {
+    font-size: 90%;
+    margin-bottom: 2rem; }
+  .testimonials__box--title, .testimonials__box--company {
+    display: block;
+    font-size: .8rem;
+    font-style: italic;
+    letter-spacing: .05rem;
+    padding-bottom: .5rem; }
 
 /* ===============
     newsletter

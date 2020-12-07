@@ -878,75 +878,75 @@ h3 {
     testimonials
 ================= */
 
-.testimonials .header {
-  text-align: center;
-  background-color: $color-primary-light;
-  padding: 10rem 0 15rem 0;
-}
+.testimonials {
+  &__header {
+    text-align: center;
+    background-color: $color-primary-light;
+    padding: 10rem 0 15rem 0;
 
-.testimonials .header span:first-of-type {
-  text-transform: uppercase;
-  color: rgba($color-primary-dark, .5);
-}
+    &--main {
+      text-transform: uppercase;
+      color: rgba($color-primary-dark, .5);
+    }
 
-.testimonials .header span.brand {
-  text-transform: none;
-  color: $color-primary-red;
-  font-size: 1.2rem;
-}
+    &--brand {
+      text-transform: none;
+      color: $color-primary-red;
+      font-size: 1.2rem;
+    }
 
-.testimonials .header h2 {
-  font-weight: 300;
-  margin-bottom: 4rem;
-}
+    &--sub {
+      font-weight: 300;
+      margin-bottom: 4rem;
+    }
+  }
 
-.testimonials .boxes {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 5rem;
-}
+  &__boxes {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
 
-.testimonials .box {
-  width: 30%;
-  background-color: $color-white;
-  padding-top: 5rem;
-  padding-left: 2rem;
-  border-radius: .5rem;
-  position: relative;
-  top: -18rem;
-  box-shadow: 0 .5rem .5rem $color-primary-light;
-}
+  &__box {
+    width: 30%;
+    background-color: $color-white;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    border-radius: .5rem;
+    position: relative;
+    top: -18rem;
+    box-shadow: 0 .5rem .5rem $color-primary-light;
 
-.testimonials .box p:before {
-  display: block;
-  /* background-color: rgba(67, 35, 68, 0.9); */
-  content: "\201C";
-  position: absolute;
-  top: 5rem;
-  color: $color-black;
-  font-size: 12rem;
-  font-weight: 400;
-}
+    &--paragraph {
+      line-height: 150%;
+      margin: 2rem 0;
+      width: 80%;
+      
+      &::before {
+        display: block;
+        content: "\201C";
+        position: absolute;
+        top: 5rem;
+        color: $color-black;
+        font-size: 12rem;
+        font-weight: 400;
+      }
+    }
 
-.testimonials .box p {
-  font-size: initial;
-  line-height: 150%;
-  margin: 2rem 0;
-  width: 80%;
-}
+    &--name {
+      font-size: 90%;
+      margin-bottom: 2rem;
+    }
 
-.testimonials .box h3 {
-  font-size: 90%;
-  margin-bottom: 2rem;
-}
-
-.testimonials .title,
-.testimonials .company {
-  display: block;
-  font-size: .8rem;
-  font-style: italic;
-  letter-spacing: .05rem;
-  padding-bottom: .5rem;
+    &--title,
+    &--company {
+      display: block;
+      font-size: .8rem;
+      font-style: italic;
+      letter-spacing: .05rem;
+      padding-bottom: .5rem;
+    }
+  }
 }
 
 /* ===============
