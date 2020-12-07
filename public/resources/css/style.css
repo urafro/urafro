@@ -669,9 +669,9 @@ h3 {
     letter-spacing: .05rem;
     padding-bottom: .5rem; }
 
-/* ===============
-    newsletter
-================ */
+/* ===============================================================
+    this is supposed to be remade into a nicer thing Daniel!! :(
+================================================================== */
 .newsletter {
   background: linear-gradient(rgba(67, 35, 68, 0.9), rgba(67, 35, 68, 0.9)), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
   background-size: cover;
