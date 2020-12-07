@@ -670,52 +670,52 @@ h3 {
     about us
 ================ */
 
-section.about-us {
+.about {
   display: flex;
   align-items: center;
   padding: 5rem 0;
-}
 
-.about-image {
-  flex: 1;
-}
+  &__image {
+    flex: 1;
+  }
 
-.about-text {
-  text-align: center;
-  flex: 1;
-}
+  &__text {
+    text-align: center;
+    flex: 1;
 
-.about-text .italic {
-  opacity: .5;
-}
+    &--sub {
+      opacity: .5;
+    }
 
-.about-text h2 {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
+    &--main {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
 
-.about-text h2:after {
-  display: block;
-  width: 20rem;
-  background-color: rgba($color-primary-dark, .2);
-  content: " ";
-  height: .1rem;
-  position: relative;
-  top: 3rem;
-  margin: 0 auto;
-}
+    &--main:after {
+      display: block;
+      width: 20rem;
+      background-color: rgba($color-primary-dark, .2);
+      content: " ";
+      height: .1rem;
+      position: relative;
+      top: 3rem;
+      margin: 0 auto;
+    }
 
-.about-text p {
-  font-size: initial;
-  margin: 0 auto;
-  width: 80%;
-  padding-top: 3rem;
-  line-height: 1.3;
-}
+    &--phrase {
+      font-size: initial;
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 3rem;
+      line-height: 1.3;
+    }
+  }
 
-.founder-signature {
-  margin-top: 3rem;
-  height: 5rem;
+  &--signature {
+    margin-top: 3rem;
+    height: 5rem;
+  }
 }
 
 /* ===============
