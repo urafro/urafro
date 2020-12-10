@@ -375,7 +375,7 @@ h3 {
 
 /*===================*/
 .intro {
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   /* larger nested container */ }
   .intro__container {
     margin: 0 auto;
@@ -385,7 +385,7 @@ h3 {
     background-color: #FFF;
     padding: 10rem 0;
     border-radius: .5rem;
-    box-shadow: 0 0.5rem 1.5rem #E7EEFB;
+    box-shadow: 0 0.5rem 1.5rem #f9f9f9;
     position: relative;
     top: -2rem;
     /* smaller nested containers */
@@ -442,7 +442,7 @@ h3 {
       padding: 3rem 3rem;
       border-radius: .5rem;
       background-color: #FFF;
-      box-shadow: 0 0.5rem 0.5rem #E7EEFB;
+      box-shadow: 0 0.5rem 0.5rem #f9f9f9;
       display: flex;
       flex-direction: column; }
       .features__boxes--box a:link,
@@ -563,7 +563,7 @@ h3 {
     .founder__image a:link, .founder__image a:visited {
       transition: background-color 1s; }
     .founder__image a:hover, .founder__image a:active {
-      background-color: rgba(231, 238, 251, 0.1); }
+      background-color: rgba(249, 249, 249, 0.1); }
     .founder__image--mainHeading {
       font-size: 1.7;
       font-weight: 400;
@@ -610,7 +610,7 @@ h3 {
     .numbers__boxes--icon {
       font-size: 1.6;
       margin-right: 2rem;
-      color: #E7EEFB; }
+      color: rgba(16, 12, 8, 0.5); }
     .numbers__boxes--title {
       font-size: 1.1rem;
       display: inline-block; }
@@ -620,7 +620,7 @@ h3 {
 ================= */
 .testimonials__header {
   text-align: center;
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   padding: 10rem 0 15rem 0; }
   .testimonials__header--main {
     text-transform: uppercase;
@@ -646,7 +646,7 @@ h3 {
   border-radius: .5rem;
   position: relative;
   top: -18rem;
-  box-shadow: 0 0.5rem 0.5rem #E7EEFB; }
+  box-shadow: 0 0.5rem 0.5rem #f9f9f9; }
   .testimonials__box--paragraph {
     line-height: 150%;
     margin: 2rem 0;
@@ -656,7 +656,7 @@ h3 {
       content: "\201C";
       position: absolute;
       top: 5rem;
-      color: #100c08;
+      color: rgba(16, 12, 8, 0.3);
       font-size: 12rem;
       font-weight: 400; }
   .testimonials__box--name {
@@ -692,7 +692,7 @@ h3 {
 .newsletter-form p {
   margin: 0 auto;
   width: 90%;
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-size: initial;
   margin-bottom: 5rem; }
 
@@ -703,7 +703,7 @@ h3 {
   line-height: 4.5rem;
   width: 80%;
   padding: 0 4rem;
-  color: #E7EEFB;
+  color: #f9f9f9;
   border: 0.2rem solid rgba(67, 35, 68, 0.7);
   background-color: rgba(67, 35, 68, 0.3);
   border-radius: 12rem;
@@ -717,7 +717,7 @@ h3 {
   background-color: rgba(67, 35, 68, 0.7); }
 
 .newsletter-form input[type="email"]::placeholder {
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-style: italic; }
 
 .newsletter-form input[type="submit"] {
@@ -779,7 +779,7 @@ h3 {
 
 .contact-us .form {
   flex: 1;
-  box-shadow: 0 0.5rem 1.5rem #E7EEFB;
+  box-shadow: 0 0.5rem 1.5rem #f9f9f9;
   padding: 5rem 0 5rem 3rem;
   position: relative;
   right: 6.5rem; }
@@ -895,12 +895,12 @@ h3 {
 
 .f-text p {
   line-height: 1.5;
-  color: #E7EEFB;
+  color: #f9f9f9;
   width: 95%;
   margin-bottom: 1rem; }
 
 .footer-card a i {
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-size: 1.2rem;
   margin: 1rem .5rem 0 0; }
 
@@ -916,8 +916,8 @@ h3 {
   padding: 1rem 0; }
 
 .f-posts:nth-of-type(even) {
-  border-top: 1px solid rgba(231, 238, 251, 0.5);
-  border-bottom: 1px solid rgba(231, 238, 251, 0.5); }
+  border-top: 1px solid rgba(249, 249, 249, 0.5);
+  border-bottom: 1px solid rgba(249, 249, 249, 0.5); }
 
 .footer-card img {
   height: 7.6rem;
@@ -1034,7 +1034,7 @@ h3 {
   font-weight: 300;
   text-decoration: none;
   font-size: 2rem;
-  color: #E7EEFB; }
+  color: #f9f9f9; }
 
 /* ===================
     Showcase section
@@ -1224,7 +1224,7 @@ h3 {
 
 .card-text p {
   font-size: .7rem;
-  color: rgba(231, 238, 251, 0.7);
+  color: rgba(249, 249, 249, 0.7);
   font-family: 'Caveat', cursive; }
 
 .card-tag {
@@ -1236,7 +1236,7 @@ h3 {
 .card-tag a:link,
 .card-tag a:visited {
   font-size: .9rem;
-  color: #E7EEFB;
+  color: #f9f9f9;
   padding: .5rem 1.6rem;
   border-radius: 1.5rem; }
 
@@ -1307,7 +1307,7 @@ h3 {
   padding: 5rem;
   padding-left: 0;
   background: rgba(255, 37, 37, 0.7);
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-size: .8rem;
   width: 100%;
   position: absolute;
@@ -1434,7 +1434,7 @@ label {
 
 .content-inputs {
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem #E7EEFB; }
+  box-shadow: 0 0.5rem 1.5rem #f9f9f9; }
 
 .content-inputs h2 {
   padding: 2rem;
@@ -1480,7 +1480,7 @@ select {
   outline: 0;
   box-shadow: none;
   border: 0 !important;
-  background: #E7EEFB;
+  background: #f9f9f9;
   background-image: none; }
 
 /* Remove IE arrow */
@@ -1494,7 +1494,7 @@ select::-ms-expand {
   width: 50%;
   height: 50px;
   line-height: 3;
-  background: #E7EEFB;
+  background: #f9f9f9;
   overflow: hidden;
   border-radius: .25em; }
 
@@ -1505,7 +1505,7 @@ select {
   cursor: pointer;
   font-size: 85%;
   font-weight: 300;
-  background: #E7EEFB;
+  background: #f9f9f9;
   font-family: inherit; }
 
 /* Arrow */
@@ -1516,7 +1516,7 @@ select {
   right: 0;
   padding: 0 1em;
   color: rgba(255, 37, 37, 0.7);
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   cursor: pointer;
   pointer-events: none;
   transition: .5s all ease; }
@@ -1524,7 +1524,7 @@ select {
 /* Transition */
 .select:hover::after {
   color: #100c08;
-  background: #E7EEFB; }
+  background: #f9f9f9; }
 
 /* input styles */
 .box-content {
@@ -1729,7 +1729,7 @@ li form button:active {
 .main-heading h2:after {
   display: block;
   height: .1rem;
-  background-color: rgba(231, 238, 251, 0.5);
+  background-color: rgba(249, 249, 249, 0.5);
   content: " ";
   width: 20rem;
   margin: 0 auto;
@@ -1758,7 +1758,7 @@ li form button:active {
   display: block;
   height: .1rem;
   content: " ";
-  background-color: rgba(231, 238, 251, 0.5);
+  background-color: rgba(249, 249, 249, 0.5);
   width: 20rem;
   margin-top: 2rem;
   margin: 0 auto; }
@@ -1813,14 +1813,14 @@ li form button:active {
   font-size: 1.1rem;
   margin-top: 5rem;
   margin-bottom: .5rem;
-  border-top: 0.2rem solid rgba(231, 238, 251, 0.5);
+  border-top: 0.2rem solid rgba(249, 249, 249, 0.5);
   padding-top: 2rem; }
 
 .show-backlinks p {
   margin-left: .2rem;
   color: rgba(16, 12, 8, 0.5);
   font-size: .9rem;
-  border-bottom: 0.2rem solid rgba(231, 238, 251, 0.5);
+  border-bottom: 0.2rem solid rgba(249, 249, 249, 0.5);
   padding-bottom: 3rem; }
 
 .show-backlinks p a {
@@ -2156,7 +2156,7 @@ div.box-content.auth h5 a:hover {
       PROJECTS APP STYLES
 ============================ */
 .projects {
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   height: 100vh;
   width: 100vw;
   display: flex;

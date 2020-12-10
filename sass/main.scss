@@ -2,7 +2,7 @@
               UNIVERSAL STYLES
 =============================================*/
 $color-primary-dark: #432344;
-$color-primary-light: #E7EEFB;
+$color-primary-light: #f9f9f9;
 $color-primary-red: #FF2525;
 $color-primary-brown: #FFC03D;
 $color-secondary-brown: #cf920d;
@@ -864,7 +864,7 @@ h3 {
     &--icon {
       font-size: 1.6;
       margin-right: 2rem;
-      color: $color-primary-light;
+      color: rgba($color-black, .5);
     }
 
     &--title {
@@ -927,7 +927,7 @@ h3 {
         content: "\201C";
         position: absolute;
         top: 5rem;
-        color: $color-black;
+        color: rgba($color-black, .3);
         font-size: 12rem;
         font-weight: 400;
       }
