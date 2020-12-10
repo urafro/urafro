@@ -132,7 +132,7 @@ a {
   border: 1px solid $color-primary-brown;
   color: $color-black;
   font-weight: 400;
-  box-shadow: .5rem 1.2rem 1.5rem -1.5rem #111;
+  box-shadow: .5rem 1.2rem 1.5rem -1.5rem rgba($color-black, .1);
   transition: all .2s;
 }
 
@@ -147,13 +147,13 @@ a {
   background-color: $color-secondary-brown;
   border-color: $color-secondary-brown;
   transform: translateY(-3px);
-  box-shadow: .2rem .6rem 1rem -.75rem $color-primary-dark;
+  box-shadow: .2rem .6rem 1rem -.75rem rgba($color-black, .1);
   color: $color-white;
 }
 
 .btn-full:active {
   transform: translateY(-1px);
-  box-shadow: .1rem .3rem .5rem -.75rem #111;
+  box-shadow: .1rem .3rem .5rem -.75rem rgba($color-black, .1);
 }
 
 .btn-ghost:hover,
@@ -521,7 +521,7 @@ h3 {
     background-color: $color-white;
     padding: 10rem 0;
     border-radius: .5rem;
-    box-shadow: 0 .5rem 1.5rem $color-primary-light;
+    box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
     position: relative;
     top: -2rem;
 
@@ -614,7 +614,7 @@ h3 {
       padding: 3rem 3rem;
       border-radius: .5rem;
       background-color: $color-white;
-      box-shadow: 0 .5rem .5rem $color-primary-light;
+      box-shadow: 0 .5rem .5rem rgba($color-black, .1);
       display: flex;
       flex-direction: column;
 
@@ -915,7 +915,7 @@ h3 {
     border-radius: .5rem;
     position: relative;
     top: -18rem;
-    box-shadow: 0 .5rem .5rem $color-primary-light;
+    box-shadow: 0 .5rem .5rem rgba($color-black, .1);
 
     &--paragraph {
       line-height: 150%;
@@ -1079,81 +1079,84 @@ h3 {
 /* ================
     contact-us
 ================ */
-.contact-us {
+.contact {
   display: flex;
   align-items: center;
   padding: 5rem 0 10rem 0;
+
+  &--image {
+    flex: 1;
+  }
+
+  &--form {
+    flex: 1;
+    box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+    padding: 5rem 0 5rem 3rem;
+    position: relative;
+    right: 6.5rem;
+    display: flex;
+    border-radius: .5rem;
+
+    /* OUR-CONTACTS */
+    .form__cards,
+    .form__inputs {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
 }
 
-.contact-us .image {
-  flex: 1;
+.form__cards {
+
+  &--mainHeading,
+  &--secondaryHeading {
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  &--card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
 }
 
-.contact-us .form {
-  flex: 1;
-  box-shadow: 0 .5rem 1.5rem $color-primary-light;
-  padding: 5rem 0 5rem 3rem;
-  position: relative;
-  right: 6.5rem;
-}
+.card {
+  &__icon {
+    &--container {
+      padding: 0 2rem 0 0;
+    }
 
-.contact-us .form {
-  display: flex;
-  border-radius: .5rem;
-}
+    &--element {
+      font-size: 1.4rem;
+      color: rgba($color-black, .5);
+    }
+  }
 
-/* OUR-CONTACTS */
-.our-contacts,
-.message {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
+  &__txt {
+    &--title {
+      margin-bottom: .5rem;
+      text-transform: uppercase;
+      font-size: .7rem;
+      font-weight: 300;
+    }
 
-.our-contacts h2,
-.message h2 {
-  margin-bottom: 3rem;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.contact-us .our-contacts .card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.card .icon {
-  padding: 0 2rem 0 0;
-}
-
-.icon i,
-.card-txt p {
-  color: rgba($color-primary-dark, .5);
-}
-
-.icon i {
-  font-size: 1.4rem;
-}
-
-.card-txt h5 {
-  margin-bottom: .5rem;
-  text-transform: uppercase;
-  font-size: .7rem;
-  font-weight: 300;
-}
-
-.card-txt p {
-  font-size: .7rem;
-  width: 80%;
+    &--desc {
+      color: rgba($color-black, .5);
+      font-size: .7rem;
+      width: 80%;
+    }
+  }
 }
 
 /* SEND-US-A-MESSAGE */
-.message {
+.form__inputs {
   margin-right: 7rem;
 }
 
-.message h2 {
+.form__inputs h2 {
   word-spacing: .2rem;
   font-weight: 300;
 }
@@ -1881,7 +1884,7 @@ label {
 
 .content-inputs {
   border-radius: 1rem;
-  box-shadow: 0 .5rem 1.5rem $color-primary-light;
+  box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
 }
 
 .content-inputs h2 {
@@ -2645,7 +2648,7 @@ li form button:active {
   border-radius: .3rem;
   border: .1rem solid #cecece;
   background-color: #fefefe;
-  box-shadow: .1rem .2rem .1rem 0 rgba(0, 0, 0, .06);
+  box-shadow: .1rem .2rem .1rem 0 rgba($color-black, .1);
   overflow: auto;
 
   width: 100%;
@@ -2662,7 +2665,7 @@ li form button:active {
 .write-new button {
   float: right;
   background-color: #87bae1;
-  box-shadow: .1rem .2rem .1rem .0 rgba(0, 0, 0, .12);
+  box-shadow: .1rem .2rem .1rem .0 rgba($color-black, .1);
   border-radius: .2rem;
   border: 0;
   color: #ffffff;
