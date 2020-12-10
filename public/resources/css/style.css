@@ -735,35 +735,29 @@ h3 {
   margin: 10rem 0 5rem 0;
   padding: 0 3rem;
   text-align: center; }
-
-.socials__boxes {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center; }
-
-.socials h2 {
-  margin-bottom: 4.5rem; }
-
-.socials h2::after {
-  display: block;
-  width: 10rem;
-  background-color: rgba(255, 37, 37, 0.2);
-  content: " ";
-  height: .1rem;
-  position: relative;
-  top: 3rem;
-  margin: 0 auto; }
-
-.socials .box {
-  margin-top: 3rem; }
-
-.socials .box a:link,
-.socials .box a:visited {
-  color: rgba(255, 37, 37, 0.7);
-  font-size: 2rem; }
-
-.socials .box a i {
-  font-size: 2rem; }
+  .socials--mainHeading {
+    margin-bottom: 4.5rem; }
+    .socials--mainHeading::after {
+      display: block;
+      width: 10rem;
+      background-color: rgba(255, 37, 37, 0.2);
+      content: " ";
+      height: .1rem;
+      position: relative;
+      top: 3rem;
+      margin: 0 auto; }
+  .socials__boxes {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center; }
+    .socials__boxes--box {
+      margin-top: 3rem; }
+      .socials__boxes--box .socials--boxLink:link,
+      .socials__boxes--box .socials--boxLink:visited {
+        color: rgba(255, 37, 37, 0.7);
+        font-size: 2rem; }
+      .socials__boxes--box .socials--boxIcon {
+        font-size: 2rem; }
 
 /* ================
     contact-us
