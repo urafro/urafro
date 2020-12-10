@@ -950,72 +950,86 @@ h3 {
 }
 
 /* ===============================================================
-    this is supposed to be remade into a nicer thing Daniel!! :(
+    NEWSLETTER SECTION - still trying to improve this bit :)
 ================================================================== */
 
 .newsletter {
-  background: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .9)), url(https://images.unsplash.com/photo-1528808302-cddd825c94fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
+  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url('/resources/img/newsletter-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: $color-white;
-  padding: 12rem 0;
-}
+  padding: 15rem 0;
 
-.newsletter-form {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
-.newsletter-form h2 {
-  margin-bottom: 3rem;
-}
+    &--mainHeading {
+      margin-bottom: 2rem;
+      font-weight: 500;
+      font-size: 6rem;
+      letter-spacing: .1rem;
+      word-spacing: .3rem;
+    }
 
-.newsletter-form p {
-  margin: 0 auto;
-  width: 90%;
-  color: $color-primary-light;
-  font-size: initial;
-  margin-bottom: 5rem;
-}
+    &--subHeading {
+      margin: 0 auto;
+      color: rgba($color-white, .8);
+      font-size: 2.35rem;
+      margin-bottom: 2rem;
+      word-spacing: .2rem;
+    }
 
-.newsletter-form input[type="email"] {
-  font-size: 1rem;
-  font-family: inherit;
-  height: 4.5rem;
-  line-height: 4.5rem;
-  width: 80%;
-  padding: 0 4rem;
-  color: $color-primary-light;
-  border: .2rem solid rgba($color-primary-dark, .7);
-  background-color: rgba($color-primary-dark, .3);
-  border-radius: 12rem;
-  position: relative;
-  left: 4rem;
-  transition: background-color .2s;
-}
+    &--email,
+    &--btn {
+      margin: 1rem 0 2rem;
+    }
 
-.newsletter-form input[type="email"]:hover,
-.newsletter-form input[type="email"]:active,
-.newsletter-form input[type="email"]:focus {
-  background-color: rgba($color-primary-dark, .7);
-}
+    &--email {
+      font-size: 2rem;
+      font-family: inherit;
+      width: 60rem;
+      text-align: center;
+      padding: 2rem 0;
+      color: $color-white;
+      border: .2rem solid rgba($color-white, .7);
+      background-color: rgba($color-black, .1);
+      border-radius: 12rem;
+      transition: all .2s;
+    }
 
-.newsletter-form input[type="email"]::placeholder {
-  color: $color-primary-light;
-  font-style: italic;
-}
+    &--email:hover,
+    &--email:active,
+    &--email:focus {
+      background-color: rgba($color-black, .7);
+    }
 
-.newsletter-form input[type="submit"] {
-  height: 4.5rem;
-  line-height: 4.5rem;
-  padding: 0 3rem;
-  cursor: pointer;
-  border-radius: 12rem;
-  position: relative;
-  right: 2.5rem;
+    &--email::placeholder {
+      color: rgba($color-white, .7);
+      word-spacing: .3rem;
+    }
+
+    &--btn {
+      cursor: pointer;
+      border-radius: 12rem;
+      font-size: 2rem;
+      padding: 1.5rem 3rem;
+      color: $color-black;
+      letter-spacing: .1rem;
+
+      &:active,
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+  }
 }
 
 /* ==============

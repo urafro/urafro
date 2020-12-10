@@ -264,14 +264,18 @@
 
 <section class="newsletter">
 
-  <div class="newsletter-form">
-    <h2>Subscribe to our <span class="brand">newsletter</span></h2>
-    <p>You will receive newest information about upcoming projects, sponsorship opportunities and other important information.</p>
+  <div class="newsletter__content">
+    <h2 class="newsletter__content--mainHeading">Do you like this challenge?</h2>
+    <p class="newsletter__content--subHeading">Subscribe to be the first to hear about upcoming projects and other goodies!</p>
 
     <!-- form will redirect data to be stored somewhere safe -->
     <form action="">
-      <input type="email" name="" id="" placeholder="Enter your email" required>
-      <input class="btn btn-full" type="submit" value="Send">
+      <div class="newsletter--email">
+        <input class="newsletter__content--email" type="email" name="" id="" placeholder="Write your email here" required>
+      </div>
+      <div class="content--submitBtn">
+        <input class="btn btn-full newsletter__content--btn" type="submit" value="Subscribe">
+      </div>
     </form>
   </div>
 
