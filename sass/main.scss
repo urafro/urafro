@@ -955,6 +955,7 @@ h3 {
 
 .newsletter {
   background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url('/resources/img/newsletter-bg.jpg');
+  /* try to compress the background image or remove 'background-size: cover' to remove lag on scroll" */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1109,8 +1110,7 @@ h3 {
 
 .form__cards {
 
-  &--mainHeading,
-  &--secondaryHeading {
+  &--mainHeading {
     margin-bottom: 3rem;
     font-weight: 300;
     font-size: 1rem;
@@ -1154,47 +1154,56 @@ h3 {
 /* SEND-US-A-MESSAGE */
 .form__inputs {
   margin-right: 7rem;
-}
 
-.form__inputs h2 {
-  word-spacing: .2rem;
-  font-weight: 300;
-}
+  &--secondaryHeading {
+    word-spacing: .2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
 
-.message-input {
-  margin-bottom: 3rem;
-}
+  .form__input {
+    margin-bottom: 3rem;
 
-.message-input label {
-  position: relative;
-  top: -1rem;
-}
+    &--label {
+      position: relative;
+      top: -1rem;
+    }
 
-.message-input label h5 {
-  font-weight: 300;
-}
+    &--labelHead {
+      font-weight: 300;
+    }
 
-.message-input input[type="text"],
-.message-input input[type="email"],
-.message-input input[type="textarea"] {
-  width: 100%;
-  outline: none;
-  border: .1rem solid rgba($color-primary-dark, .3);
-}
+    &--text,
+    &--email,
+    &--textArea {
+      width: 100%;
+      outline: none;
+      border: .1rem solid rgba($color-primary-dark, .3);
+      color: inherit;
+    }
 
-.message-input input[type="text"],
-.message-input input[type="email"] {
-  height: 4.5rem;
-  line-height: 4.5rem;
-  padding-left: 2rem;
-}
+    &--text,
+    &--email {
+      /* 
+      obsolete styles to be deleted
+      height: 4.5rem;
+      line-height: 4.5rem; 
+      padding-left: 2rem; 
+      */
 
-.message .btn-full {
-  position: relative;
-  top: -3rem;
-  font-size: .6rem;
-  letter-spacing: .05rem;
-  cursor: pointer;
+      padding: 1.5rem 1rem;
+      border-radius: .5rem;
+    }
+
+    &--submitBtn {
+      position: relative;
+      top: -3rem;
+      letter-spacing: .05rem;
+      cursor: pointer;
+    }
+  }
 }
 
 /* =============
