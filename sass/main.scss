@@ -1206,103 +1206,95 @@ h3 {
   }
 }
 
-/* =============
-    l-footer 
-============== */
+/* ======================
+    landing page footer 
+====================== */
 .landingFooter {
   position: relative;
   bottom: 0;
   display: flex;
   flex-direction: column;
+  
+  &__content {
+    display: flex;
+    padding: 10rem 6rem;
+    background-image: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)),
+      url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $color-white;
+  }
+
+  /* Developers */
+  &__developer {
+    text-align: center;
+    background-color: $color-black;
+    border: none;
+    padding: 1rem 0;
+    color: rgba($color-white, .5);
+  }
 }
 
-.landingFooter .content {
-  display: flex;
-  padding: 10rem 6rem;
-  background-image: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)),
-    url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: $color-white;
-}
-
-.content .footer-card {
+.footerCard {
   flex: 1;
   margin-right: 2rem;
-}
 
-.footer-card h3 {
-  margin-bottom: 3rem;
-}
+  &--title {
+    margin-bottom: 3rem;
+  }
 
-.f-text {
-  font-size: initial;
-}
+  &__text {
+    font-size: initial;
 
-.f-text p {
-  line-height: 1.5;
-  color: $color-primary-light;
-  width: 95%;
-  margin-bottom: 1rem;
-}
+    &--paragraph {
+      line-height: 1.5;
+      color: $color-primary-light;
+      width: 95%;
+      margin-bottom: 1rem;
+    }
 
-.footer-card a i {
-  color: $color-primary-light;
-  font-size: 1.2rem;
-  margin: 1rem .5rem 0 0;
-}
+    &--icon {
+      margin: 1rem 1rem 0 0;
+      font-size: 1.2rem;
+      color: $color-primary-light;
+    }
+  }
 
-.f-text p i {
-  margin-right: 1rem;
-  font-size: 1.2rem;
-}
+  /* recent posts */
+  &__post {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+    padding: 1rem 0;
 
-/* recent posts */
-.f-posts {
-  display: flex;
-  align-items: flex-start;
-  margin: 1rem 0;
-  padding: 1rem 0;
-}
+    &:nth-of-type(even) {
+      border-top: 1px solid rgba($color-primary-light, .5);
+      border-bottom: 1px solid rgba($color-primary-light, .5);
+    }
 
-.f-posts:nth-of-type(even) {
-  border-top: 1px solid rgba($color-primary-light, .5);
-  border-bottom: 1px solid rgba($color-primary-light, .5);
-}
+    &--image,
+    &--image2 {
+      height: 7.6rem;
+      width: 7.6rem;
+    }
 
-.footer-card img {
-  height: 7.6rem;
-  width: 7.6rem;
-}
+    &--image {
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
 
-.f-head img {
-  border-radius: 50%;
-  margin-right: 2rem;
-}
+    &--bodySpan {
+      color: rgba($color-white, .5);
+      font-size: .7rem;
+    }
 
-.f-body span {
-  color: rgba($color-white, .5);
-  font-size: .7rem;
-}
-
-.f-body h5 {
-  font-size: .7rem;
-  font-weight: 300;
-}
-
-/* Developers */
-.landingFooter .developer {
-  text-align: center;
-  background-color: $color-black;
-  border: none;
-  padding: 3rem 0;
-  color: rgba($color-white, .5);
-}
-
-.landingFooter .developer h3 {
-  font-style: italic;
+    &--bodyTitle {
+      font-size: .7rem;
+      font-weight: 300;
+    }
+  }
 }
 
 /* ============================================================= 
