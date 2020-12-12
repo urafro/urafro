@@ -851,13 +851,13 @@ h3 {
 /* =============
     l-footer 
 ============== */
-.l-footer {
+.landingFooter {
   position: relative;
   bottom: 0;
   display: flex;
   flex-direction: column; }
 
-.l-footer .content {
+.landingFooter .content {
   display: flex;
   padding: 10rem 6rem;
   background-image: linear-gradient(rgba(16, 12, 8, 0.7), rgba(16, 12, 8, 0.7)), url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
@@ -920,14 +920,14 @@ h3 {
   font-weight: 300; }
 
 /* Developers */
-.l-footer .developer {
+.landingFooter .developer {
   text-align: center;
   background-color: #100c08;
   border: none;
   padding: 3rem 0;
   color: rgba(255, 255, 255, 0.5); }
 
-.l-footer .developer h3 {
+.landingFooter .developer h3 {
   font-style: italic; }
 
 /* ============================================================= 
