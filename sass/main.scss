@@ -256,6 +256,10 @@ a {
   font-family: 'Caveat', cursive;
 }
 
+.caveat {
+  font-family: 'Caveat', cursive;
+}
+
 /* ====================
   landing page styles
 ===================== */
@@ -1300,10 +1304,16 @@ h3 {
 /* ============================================================= 
                       BLOG APP STYLES
 ============================================================== */
+@keyframes headerSlideUp {
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
 
 /* Hero section */
 .hero,
-.hero-2,
+.heroTwo,
 .hero-l {
   flex: 1;
   height: 100vh;
@@ -1315,93 +1325,115 @@ h3 {
   overflow: hidden;
 }
 
-.hero,
-.hero-2 {
+/* Index hero(left side) section */
+.hero {
   background: linear-gradient(rgba($color-black, .2), rgba($color-black, .8)),
-    url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* 
+  use this as a mixin/extend cuz i'm gonna do the same thing with heroTwo__header too
+  margin-top will be a variable to cater for the difference
+  */
+  &__header {
+    width: 100%;
+    text-align: center;
+    margin-top: 55vh;
+    font-size: .8rem;
+    position: relative;
+    bottom: -5rem;
+    opacity: 0;
+    backface-visibility: hidden;
+    animation: headerSlideUp 1.5s linear 2s forwards;
+    display: flex;
+    flex-direction: column;
+
+    &--image {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      border: 8px solid rgba($color-primary-red, .2);
+    }
+  }
+
+  &__body {
+    &--mainTitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    &--desc {
+      font-weight: 300;
+      text-align: center;
+      font-size: 1.2rem;
+      width: 70%;
+      margin: auto;
+      margin-top: 1rem;
+    }
+
+    &--link:link,
+    &--link:visited {
+      padding: 1rem;
+      font-size: 2rem;
+      color: $color-primary-light;
+    }
+  }
 }
 
-.hero-2 nav {
-  position: relative;
-  top: 2.5rem;
-  left: 100%;
-}
-
-.hero p a:link,
-.hero p a:visited {
-  text-decoration: underline;
-}
-
-.hero-2 a {
-  text-decoration: none;
-}
-
-.hero .header,
-.hero-2 .header-2 {
-  width: 100%;
-  text-align: center;
-  margin-top: 55vh;
+.heroTwo__headerTwo {
+  /* 
+  this code should be a mixin/extend cuz its the same as hero__header the first one just a few lines up 
+  margin-top will be a variable to cater for the difference
+  */
+  width: 80%;
+  margin: 65vh auto;
   font-size: .8rem;
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero .header {
   position: relative;
+  /* for Pop up animation */
   bottom: -5rem;
   opacity: 0;
   backface-visibility: hidden;
   animation: headerSlideUp 1.5s linear 2s forwards;
+  display: flex;
+  flex-direction: column;
 }
 
-@-webkit-keyframes headerSlideUp {
-  100% {
-    opacity: 1;
-    bottom: 0;
-  }
+.heroTwo__headerTwo--mainTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 70%;
 }
 
-@keyframes headerSlideUp {
-  100% {
-    opacity: 1;
-    bottom: 0;
-  }
+.heroTwo__body {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
 
-.hero .header img,
-.hero-2 .header-2 img {
+.heroTwo__body--cardImage {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
   border: 8px solid rgba($color-primary-red, .2);
 }
 
-.hero .header h2,
-.hero-2 .header-2 h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.hero .header p {
-  font-weight: 300;
-  text-align: center;
-  font-size: 1.2rem;
+.heroTwo__body--cardText {
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: relative;
+  top: -1rem;
   width: 70%;
-  margin: auto;
-  margin-top: 1rem;
 }
 
-.hero-btn:link,
-.hero-btn:visited {
-  display: inline-block;
-  padding: 1rem 1rem;
-  font-weight: 300;
-  text-decoration: none;
-  font-size: 2rem;
-  color: $color-primary-light;
+.heroTwo__body--cardTitle {
+  margin-bottom: .5rem;
+}
+
+.heroTwo__body--cardDate {
+  color: rgba($color-primary-light, .5);
+  margin-left: .2rem;
 }
 
 /* ===================
@@ -2051,39 +2083,39 @@ div.content-text p a:visited {
   color: $color-black;
 }
 
-.header-2 h2 {
+.headerTwo h2 {
   margin-top: 10vh;
   width: 60%;
   text-align: left;
 }
 
-.header-2 h2,
-.header-2 .author-card {
+.headerTwo h2,
+.headerTwo .author-card {
   margin-left: 20%;
 }
 
-.header-2 .author-card {
+.headerTwo .author-card {
   display: flex;
   margin-top: 2rem;
 }
 
-.header-2 .author-card img {
+.headerTwo .author-card img {
   height: 8rem;
   width: 8rem;
   border: none;
   border-radius: 50%;
 }
 
-.header-2 .card-text {
+.headerTwo .card-text {
   margin: 1.5rem 0;
 }
 
-.header-2 .card-text h3 {
+.headerTwo .card-text h3 {
   font-weight: 300;
   padding-bottom: .5rem;
 }
 
-.header-2 .card-text p {
+.headerTwo .card-text p {
   font-size: .7rem;
   margin-left: 2.5rem;
 }

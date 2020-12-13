@@ -34,23 +34,23 @@
   <!-- Displaying dynamic user data -->
   <% if(currentUser) { %>
     <div class="hero">
-      <!-- header image will be replaced by signed in user's image -->
-      <div class="header">
-        <a href="#">
-          <img src="<%= currentUser.avatarUrl %>" alt="author image">
+      <div class="hero__header">
+        <a href="#" class="hero__header--link">
+          <img class="hero__header--image" src="<%= currentUser.avatarUrl %>" alt="author image">
         </a>
-        <h2>Hello.</h2>
-    
-        <p><%= currentUser.bio %></p>
-    
-        <!-- will implement the use of dynamic social links -->
-        <a href="#" class="hero-btn hero-btn-full">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="hero-btn hero-btn-ghost">
-          <i class="fab fa-twitter"></i>
-        </a>
-    
+        <div class="hero__body">
+          <h2 class="hero__body--mainTitle">
+            <%= currentUser.username %> <span class="hero__body--subTitle">/ urAfro writer</span>
+          </h2>
+          <p class="hero__body--desc"><%= currentUser.bio %></p>    
+          <!-- will implement the use of dynamic social links -->
+          <a class="hero__body--link" href="#" class="hero-btn hero-btn-full">
+            <i class="fab fa-instagram hero__body--linkIcon"></i>
+          </a>
+          <a class="hero__body--link" href="#" class="hero-btn hero-btn-ghost">
+            <i class="fab fa-twitter hero__body--linkIcon"></i>
+          </a>
+        </div>
         <!-- dynamic user data ends here -->
       </div>
     </div>
