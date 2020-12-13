@@ -954,7 +954,7 @@ h3 {
 ================================================================== */
 
 .newsletter {
-  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url('/resources/img/newsletter-bg.jpg');
+  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url('/resources/img/newsletter-bg-min.jpg');
   /* try to compress the background image or remove 'background-size: cover' to remove lag on scroll" */
   background-size: cover;
   background-position: center;

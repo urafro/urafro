@@ -673,7 +673,7 @@ h3 {
     NEWSLETTER SECTION - still trying to improve this bit :)
 ================================================================== */
 .newsletter {
-  background: linear-gradient(rgba(16, 12, 8, 0.8), rgba(16, 12, 8, 0.8)), url("/resources/img/newsletter-bg.jpg");
+  background: linear-gradient(rgba(16, 12, 8, 0.8), rgba(16, 12, 8, 0.8)), url("/resources/img/newsletter-bg-min.jpg");
   /* try to compress the background image or remove 'background-size: cover' to remove lag on scroll" */
   background-size: cover;
   background-position: center;
