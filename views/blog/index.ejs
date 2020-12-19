@@ -56,10 +56,7 @@
     </div>
   <% } %>
 
-  <!-- 
-    STARTING FROM HERE NEXT rest the eye mate :( see whether these styles are connected to auth templates or if its the
-    ones I tweaked above! next time i.e. now rest up 🤓
-  -->
+  <!-- Display our 'welcome details' if no user is logged in -->
   <% if(!currentUser) { %>
     <div class="hero">
     
@@ -150,6 +147,9 @@
 
         </div>
 
+        <!-- 
+          STARTING FROM HERE NEXT!!
+        -->
         <div class="showcase-text">
           <h3>
             <a href="/blogs/<%= blog._id %>">
