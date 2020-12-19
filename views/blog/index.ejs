@@ -63,22 +63,24 @@
   <% if(!currentUser) { %>
     <div class="hero">
     
-      <div class="header">
-        <a href="#">
-          <img src="https://i.imgur.com/f89JM9hs.png" %>" alt="author image">
+      <div class="hero__header">
+        <a href="#" class="hero__header--link">
+          <img class="hero__header--image" src="https://i.imgur.com/f89JM9hs.png" %>" alt="author image">
         </a>
-        <h2 class="brand">#weRme</h2>
+
+        <div class="hero__body">
+          <h2 class="brand hero__body--mainTitle">urAfro</h2>
     
-        <p>Translating an idea into a practical solution can be hard alone. <a href="/signup">Join us</a> and let's make
+          <p class="hero__body--desc">Translating an idea into a practical solution can be hard alone. <a href="/signup">Join us</a> and let's make
           change!</p>
     
-        <a href="https://instagram.com/nashe_dan" target="_blank" class="hero-btn hero-btn-full">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/tinashe_dan" target="_blank" class="hero-btn hero-btn-ghost">
-          <i class="fab fa-twitter"></i>
-        </a>
-    
+          <a class="hero__body--link" href="https://instagram.com/nashe_dan" target="_blank" class="hero-btn hero-btn-full">
+            <i class="fab fa-instagram hero__body--linkIcon"></i>
+          </a>
+          <a class="hero__body--link" href="https://twitter.com/tinashe_dan" target="_blank" class="hero-btn hero-btn-ghost">
+            <i class="fab fa-twitter hero__body--linkIcon"></i>
+          </a>
+        </div>
       </div>
     </div>
   <% } %>
