@@ -993,90 +993,39 @@ h3 {
   animation: headerSlideUp 1.5s linear 2s forwards;
   display: flex;
   flex-direction: column; }
-
-.heroTwo__headerTwo--mainTitle {
-  font-size: 1rem;
-  font-weight: 400;
-  width: 70%; }
+  .heroTwo__headerTwo--mainTitle {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 70%; }
 
 .heroTwo__body {
   display: flex;
   align-items: center;
   margin-top: 1rem; }
-
-.heroTwo__body--cardImage {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  border: 8px solid rgba(255, 37, 37, 0.2); }
-
-.heroTwo__body--cardText {
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  position: relative;
-  top: -1rem;
-  width: 70%; }
-
-.heroTwo__body--cardTitle {
-  margin-bottom: .5rem; }
-
-.heroTwo__body--cardDate {
-  color: rgba(249, 249, 249, 0.5);
-  margin-left: .2rem; }
+  .heroTwo__body--cardImage {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 37, 37, 0.2); }
+  .heroTwo__body--cardText {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: relative;
+    top: -1rem;
+    width: 70%; }
+  .heroTwo__body--cardTitle {
+    margin-bottom: .5rem; }
+  .heroTwo__body--cardDate {
+    color: rgba(249, 249, 249, 0.5);
+    margin-left: .2rem; }
 
 /* ===================
     Showcase section
 ==================== */
-.showcase,
-.showcase-2 {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.our-writers {
-  width: 80%;
-  height: 50rem;
-  background-image: linear-gradient(rgba(16, 12, 8, 0.5), rgba(16, 12, 8, 0.5)), url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  display: flex;
-  opacity: 0;
-  position: relative;
-  right: -25rem;
-  animation-fill-mode: forwards;
-  backface-visibility: hidden;
-  animation: slideLeft 2s 1 0s forwards; }
-
 @keyframes slideLeft {
   100% {
     opacity: 1;
     right: 0; } }
-
-.our-writers .content-text {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-basis: 8rem;
-  opacity: 0;
-  position: relative;
-  left: -25rem;
-  background-color: #FFF;
-  padding-left: 0;
-  animation-name: textLeftRight;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation: textLeftRight 2s ease-out 0s 1 forwards; }
 
 @keyframes textLeftRight {
   80% {
@@ -1085,44 +1034,76 @@ h3 {
     opacity: 1;
     left: 0; } }
 
-.our-writers .content-text h2 {
-  font-size: 1.2rem;
-  font-weight: 400; }
-
-.our-writers .content-text p {
-  margin-bottom: 3rem; }
-
-.our-writers .content-text a.btn {
-  font-size: .65rem;
-  padding: 1rem 2rem;
-  position: relative;
-  top: -1.5rem;
-  opacity: 0;
-  animation: btnSlideDown 1s linear 2s 1 forwards;
-  backface-visibility: hidden; }
-
 @keyframes btnSlideDown {
   100% {
     opacity: 1;
     top: 0; } }
 
-.our-writers .content-text h2 a:link,
-.our-writers .content-text h2 a:visited {
-  opacity: .8;
-  color: #100c08; }
-
-.our-writers .empty {
-  flex-basis: 15%; }
-
-/* Separator Section */
-.separator {
-  align-self: flex-end;
-  margin-right: 10%;
+.showcase {
+  /* 
+  this code should be a mixin/extend cuz its the same as hero__header the first one just a few lines up 
+  margin-top will be a variable to cater for the difference
+  */
+  flex: 1;
+  overflow: hidden;
   position: relative;
-  left: -5rem;
-  opacity: 0;
-  animation: smallSlideRight 2.5s linear 2s 1 forwards;
-  backface-visibility: hidden; }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Separator Section */ }
+  .showcase__writers {
+    width: 80%;
+    height: 50rem;
+    background-image: linear-gradient(rgba(16, 12, 8, 0.5), rgba(16, 12, 8, 0.5)), url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    opacity: 0;
+    position: relative;
+    right: -25rem;
+    animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    animation: slideLeft 2s 1 0s forwards; }
+    .showcase__writersContainer {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-basis: 90%;
+      opacity: 0;
+      position: relative;
+      left: -25rem;
+      background-color: #FFF;
+      padding-left: 0;
+      animation-name: textLeftRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation: textLeftRight 2s ease-out 0s 1 forwards; }
+      .showcase__writersContainer--title {
+        font-size: 1.2rem;
+        font-weight: 400; }
+      .showcase__writersContainer--paragraph {
+        margin-bottom: 3rem; }
+      .showcase__writersContainer--link {
+        font-size: .65rem;
+        padding: 1rem 2rem;
+        position: relative;
+        top: -1.5rem;
+        opacity: 0;
+        animation: btnSlideDown 1s linear 2s 1 forwards;
+        backface-visibility: hidden; }
+      .showcase__writersContainer--mainLink:link, .showcase__writersContainer--mainLink:visited {
+        opacity: .8;
+        color: #100c08; }
+    .showcase__writers--empty {
+      flex-basis: 15%; }
 
 @keyframes smallSlideRight {
   50% {
@@ -1135,10 +1116,17 @@ h3 {
     margin-top: 3rem;
     left: 0;
     opacity: 1; } }
-
-.separator h5 {
-  font-weight: 300;
-  font-size: .75rem; }
+  .showcase__separator {
+    align-self: flex-end;
+    margin-right: 10%;
+    position: relative;
+    left: -5rem;
+    opacity: 0;
+    animation: smallSlideRight 2.5s linear 2s 1 forwards;
+    backface-visibility: hidden; }
+    .showcase__separator--title {
+      font-weight: 300;
+      font-size: .75rem; }
 
 .showcase-boxes {
   display: grid;
@@ -1289,7 +1277,39 @@ h3 {
   background-color: rgba(16, 12, 8, 0.1); }
 
 /* Index footer */
-.showcase footer,
+.showcase footer {
+  height: 12rem;
+  padding: 5rem;
+  padding-left: 0;
+  background: rgba(255, 37, 37, 0.7);
+  color: #f9f9f9;
+  font-size: .8rem;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.showcase footer p {
+  width: 100%;
+  text-align: center; }
+
+.showcase footer a {
+  color: #100c08;
+  text-decoration: underline; }
+
+/* =====================
+    showcase 2
+======================  */
+.showcase-2 {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 .showcase-2 footer {
   height: 12rem;
   padding: 5rem;
@@ -1302,12 +1322,10 @@ h3 {
   right: 0;
   bottom: 0; }
 
-.showcase footer p,
 .showcase-2 footer p {
   width: 100%;
   text-align: center; }
 
-.showcase footer a,
 .showcase-2 footer a {
   color: #100c08;
   text-decoration: underline; }

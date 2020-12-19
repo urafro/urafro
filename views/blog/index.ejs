@@ -87,19 +87,21 @@
 
   <div class="showcase">
   
-    <div class="our-writers">
-      <div class="content-text">
-        <h2><a href="#">Old heads young shoulders</a></h2>
-        <p>
+    <div class="showcase__writers">
+      <div class="showcase__writersContainer">
+        <h2 class="showcase__writersContainer--title"><a href="#" class="showcase__writersContainer--mainLink">Old heads young shoulders</a></h2>
+        <p class="showcase__writersContainer--paragraph">
           <span class="brand">#We</span>'re a group of young people interested in the consequences of how we interact with our environments.
         </p>
-        <a href="/projects" class="btn btn-full">meet the writers</a>
+        <a href="/projects" class="btn btn-full showcase__writersContainer--link">meet the writers</a>
       </div>
-      <div class="empty"></div>
+      <div class="showcase__writers--empty"></div>
     </div>
 
-    <section class="separator">
-      <h5><i class="fas fa-hand-point-down"></i> start reading now?</h5>
+    <section class="showcase__separator">
+      <h5 class="showcase__separator--title">
+        <i class="fas fa-hand-point-down showcase__separator--titleIcon"></i> start reading now?
+      </h5>
     </section>
 
     <div class="showcase-boxes">
@@ -155,7 +157,7 @@
             </a>
           </h3>
           <p>
-            <!-- Dynamically showing three dots for sample paragraph text on showcase cards -->
+            <!-- Dynamically show blog intro paragraph sub string -->
             <% if (blog.body.content.introParagraph.length > 145) { %>
             <%= blog.body.content.introParagraph.substring(0, 145) %>...
             <% } else { %>
