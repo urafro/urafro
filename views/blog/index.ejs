@@ -102,49 +102,52 @@
     </section>
 
     <div class="showcaseBoxes">
+      
       <!-- create a box for every blog in database with data from the "/blogs" Index route-->
       <% foundBlogs.forEach(function(blog) { %>
       <div class="showcaseBoxes__box">
 
-        <!-- link will go to the blog show route-->
+        <!-- image link directing user to the blog show route-->
         <a class="showcaseBoxes__box--link" href="/blogs/<%= blog._id %>">
           <img class="showcaseBoxes__box--linkImage" src="<%= blog.body.header.mainImage %>" alt="">
         </a>
 
-          <div class="showcase-card">
-
-            <div class="author-card">
-              <div class="card-image">
-                <!-- generic card image will be replaced by user image from the user schema -->
-                <a href="#">
-                  <img
-                    src="<%= blog.author.avatarUrl %>"
-                    alt="author image">
+          <!-- create card fixed to the top of showcaseBoxes__box with blog author & blog tag data -->
+          <div class="showcaseCard">
+            <div class="showcaseCard__author">
+              <div class="showcaseCard__author--imgContainer">
+                <!-- card image showing user image from the user schema -->
+                <a class="showcaseCard__author--imgLink" href="#"> 
+                  <img class="showcaseCard__author--image" src="<%= blog.author.avatarUrl %>" alt="author image">
                 </a>
               </div>
 
-              <div class="card-text">
-                <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
-                <h3><a href="#"><%= blog.author.username %></a></h3>
-                <p><%= blog.createdAt.toLocaleDateString() %></p>
+              <div class="showcaseCard__text">
+                <!-- h5 heading showing blog author from blog schema-->
+                <h3 class="showcaseCard__text--title">
+                  <a class="showcaseCard__text--titleLink" href="#">
+                    <%= blog.author.username %>
+                  </a>
+                </h3>
+                <p class="showcaseCard__text--paragraph">
+                  <%= blog.createdAt.toLocaleDateString() %>
+                </p>
               </div>
             </div>
 
             <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-            <div class="card-tag">
-              <% if(blog.tag == "Life") { %>
-                <a href="#" class="green"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Code") { %>
-              <a href="#" class="yellow"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Music") { %>
-              <a href="#" class="purple"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Self") { %>
-              <a href="#" class="red"><%= blog.tag %></a>
+            <div class="showcaseCard__tag">
+              <% if(blog.tag == "Self") { %>
+                <a class="showcaseCard__tag--link" href="#" class="green"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Society") { %>
+                <a class="showcaseCard__tag--link" href="#" class="yellow"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Tech") { %>
+                <a class="showcaseCard__tag--link" href="#" class="purple"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Money") { %>
+                <a class="showcaseCard__tag--link" href="#" class="red"><%= blog.tag %></a>
               <% } %>
             </div>
-
           </div>
-
         </div>
 
         <!-- 

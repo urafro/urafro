@@ -1141,7 +1141,8 @@ h3 {
       width: 100%;
       height: 20rem;
       margin-top: 1rem;
-      overflow: hidden; }
+      overflow: hidden;
+      border-radius: .5rem; }
       .showcaseBoxes__box--linkImage {
         width: 100%;
         height: 100%;
@@ -1153,7 +1154,11 @@ h3 {
         filter: grayscale(0.5);
         transform: scale(1.1); }
 
-.showcase-card {
+/* 
+showcaseCard is the top div nested within showcasesBoxes__box fixed to the top 
+contains blog author name, blog date and tag
+*/
+.showcaseCard {
   display: flex;
   position: absolute;
   top: 0;
@@ -1163,67 +1168,57 @@ h3 {
   padding-left: 2rem;
   background-image: linear-gradient(to bottom, rgba(10, 0, 0, 0.6), rgba(27, 29, 32, 0.5), rgba(5, 30, 54, 0.4), rgba(15, 36, 56, 0.3), rgba(7, 40, 73, 0));
   border-radius: .5rem; }
+  .showcaseCard__author {
+    display: flex;
+    flex-basis: 100%; }
+    .showcaseCard__author--image {
+      height: 6rem;
+      width: 6rem;
+      border-radius: .5rem; }
+  .showcaseCard__text {
+    font-weight: 300;
+    color: #FFF;
+    margin-left: 2rem;
+    margin-top: 1rem; }
+    .showcaseCard__text--title {
+      font-size: .75rem;
+      margin-bottom: .2rem; }
+    .showcaseCard__text--paragraph {
+      font-size: .7rem;
+      color: rgba(249, 249, 249, 0.7);
+      font-family: 'Caveat', cursive; }
 
-.showcase-card .author-card {
-  display: flex; }
-
-.author-card {
-  flex-basis: 48rem; }
-
-.card-tag {
+.showcaseCard__tag {
   flex: 1; }
 
-.card-image a img {
-  height: 6rem;
-  width: 6rem;
-  border-radius: .5rem; }
-
-.card-image a img:hover {
-  transform: scale(1); }
-
-.card-text {
-  font-weight: 300;
-  color: #FFF;
-  margin-left: 2rem;
-  margin-top: 1rem; }
-
-.card-text h3 {
-  font-size: .75rem;
-  margin-bottom: .2rem; }
-
-.card-text p {
-  font-size: .7rem;
-  color: rgba(249, 249, 249, 0.7);
-  font-family: 'Caveat', cursive; }
-
-.card-tag {
+.showcaseCard__tag {
   margin-right: 2rem;
   margin-top: 1rem;
   border-radius: 1rem;
   text-align: center; }
 
-.card-tag a:link,
-.card-tag a:visited {
+.showcaseCard__tag a:link,
+.showcaseCard__tag a:visited {
   font-size: .9rem;
   color: #f9f9f9;
   padding: .5rem 1.6rem;
   border-radius: 1.5rem; }
 
-.card-tag a:active,
-.card-tag a:hover {
+.showcaseCard__tag a:active,
+.showcaseCard__tag a:hover {
   color: #FFF;
   transition: color .2s; }
 
-.card-tag .green {
+.showcaseCard__tag .green {
   background-color: #16A085; }
 
-.card-tag .yellow {
+.showcaseCard__tag .yellow {
   background-color: #FFC03D; }
 
-.card-tag .purple {
+.showcaseCard__tag .purple {
   background-color: #432344; }
 
-.card-tag .red {
+.showcaseCard__tag .red {
   background-color: #FF2525; }
 
 .showcase-text {
