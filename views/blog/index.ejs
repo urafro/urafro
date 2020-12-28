@@ -135,16 +135,16 @@
               </div>
             </div>
 
-            <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
+            <!-- display dynamic blog tag by use of a conditional -->
             <div class="showcaseCard__tag">
               <% if(blog.tag == "Self") { %>
-                <a class="showcaseCard__tag--link" href="#" class="green"><%= blog.tag %></a>
+                <a class="showcaseCard__tag--link green" href="#"><%= blog.tag %></a>
               <% } else if (blog.tag == "Society") { %>
-                <a class="showcaseCard__tag--link" href="#" class="yellow"><%= blog.tag %></a>
+                <a class="showcaseCard__tag--link yellow" href="#"><%= blog.tag %></a>
               <% } else if (blog.tag == "Tech") { %>
-                <a class="showcaseCard__tag--link" href="#" class="purple"><%= blog.tag %></a>
+                <a class="showcaseCard__tag--link purple" href="#"><%= blog.tag %></a>
               <% } else if (blog.tag == "Money") { %>
-                <a class="showcaseCard__tag--link" href="#" class="red"><%= blog.tag %></a>
+                <a class="showcaseCard__tag--link red" href="#"><%= blog.tag %></a>
               <% } %>
             </div>
           </div>
@@ -153,31 +153,31 @@
         <!-- 
           STARTING FROM HERE NEXT!!
         -->
-        <div class="showcase-text">
-          <h3>
-            <a href="/blogs/<%= blog._id %>">
-              <%= blog.body.header.mainHeading %>
-            </a>
-          </h3>
-          <p>
+        <div class="showcaseText">
+          <div class="showcaseText__head">
+            <h3 class="showcaseText__head--title">
+              <a class="showcaseText__head--titleLink" href="/blogs/<%= blog._id %>">
+                <%= blog.body.header.mainHeading %>
+              </a>
+            </h3>
+            <p class="showcaseText__paragraph">
             <!-- Dynamically show blog intro paragraph sub string -->
-            <% if (blog.body.content.introParagraph.length > 145) { %>
-            <%= blog.body.content.introParagraph.substring(0, 145) %>...
-            <% } else { %>
-            <%= blog.body.content.introParagraph.substring(0, 145) %>  
-            <% } %>
-          </p>
-
-          <div class="show-link">
-            <a href="/blogs/<%= blog._id %>">Read More</a>
+              <% if (blog.body.content.introParagraph.length > 145) { %>
+              <%= blog.body.content.introParagraph.substring(0, 145) %>...
+              <% } else { %>
+              <%= blog.body.content.introParagraph.substring(0, 145) %>  
+              <% } %>
+            </p>
           </div>
-          
+          <div class="showcaseText__link">
+            <a class="showcaseText__link--anchorTag" href="/blogs/<%= blog._id %>">Read More</a>
+          </div>          
         </div>
       <% }) %>
       </div>
 
-      <footer>
-        <p>
+      <footer class="showcase__footer">
+        <p class="showcase__footer--paragraph">
           &copy; <span>#weRme</span>. All rights reserved. Invest in a peer, believe in WE.
         </p>
       </footer>

@@ -204,6 +204,19 @@ a {
 .caveat {
   font-family: 'Caveat', cursive; }
 
+/* Blog tag colors */
+.green {
+  background-color: #16A085; }
+
+.yellow {
+  background-color: #FFC03D; }
+
+.purple {
+  background-color: #432344; }
+
+.red {
+  background-color: #FF2525; }
+
 /* ====================
   landing page styles
 ===================== */
@@ -1052,7 +1065,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* Separator Section */ }
+  /* Separator Section */
+  /* Index footer */ }
   .showcase__writers {
     width: 80%;
     height: 50rem;
@@ -1079,12 +1093,6 @@ h3 {
       left: -25rem;
       background-color: #FFF;
       padding-left: 0;
-      animation-name: textLeftRight;
-      animation-duration: 2s;
-      animation-timing-function: ease-out;
-      animation-delay: 0s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
       animation: textLeftRight 2s ease-out 0s 1 forwards; }
       .showcase__writersContainer--title {
         font-size: 1.2rem;
@@ -1109,7 +1117,6 @@ h3 {
   50% {
     margin-top: 3rem; }
   70% {
-    margin-top: 3rem;
     opacity: 0;
     left: -1.5rem; }
   100% {
@@ -1153,6 +1160,20 @@ h3 {
       .showcaseBoxes__box--linkImage:hover {
         filter: grayscale(0.5);
         transform: scale(1.1); }
+  .showcase__footer {
+    height: 12rem;
+    padding: 5rem;
+    padding-left: 0;
+    background: rgba(255, 37, 37, 0.7);
+    color: #f9f9f9;
+    font-size: .8rem;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+    .showcase__footer--paragraph {
+      width: 100%;
+      text-align: center; }
 
 /* 
 showcaseCard is the top div nested within showcasesBoxes__box fixed to the top 
@@ -1187,106 +1208,54 @@ contains blog author name, blog date and tag
       font-size: .7rem;
       color: rgba(249, 249, 249, 0.7);
       font-family: 'Caveat', cursive; }
+  .showcaseCard__tag {
+    flex: 1;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: center; }
+    .showcaseCard__tag--link:link, .showcaseCard__tag--link:visited {
+      font-size: .9rem;
+      color: #f9f9f9;
+      padding: .5rem 1.6rem;
+      border-radius: 1.5rem; }
+    .showcaseCard__tag--link:active, .showcaseCard__tag--link:hover {
+      color: #FFF;
+      transition: color .2s; }
 
-.showcaseCard__tag {
-  flex: 1; }
-
-.showcaseCard__tag {
-  margin-right: 2rem;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  text-align: center; }
-
-.showcaseCard__tag a:link,
-.showcaseCard__tag a:visited {
-  font-size: .9rem;
-  color: #f9f9f9;
-  padding: .5rem 1.6rem;
-  border-radius: 1.5rem; }
-
-.showcaseCard__tag a:active,
-.showcaseCard__tag a:hover {
-  color: #FFF;
-  transition: color .2s; }
-
-.showcaseCard__tag .green {
-  background-color: #16A085; }
-
-.showcaseCard__tag .yellow {
-  background-color: #FFC03D; }
-
-.showcaseCard__tag .purple {
-  background-color: #432344; }
-
-.showcaseCard__tag .red {
-  background-color: #FF2525; }
-
-.showcase-text {
+.showcaseText {
   width: 100%; }
-
-.showcase-text h3 {
-  margin-bottom: .5rem;
-  width: 85%; }
-
-.showcase-text h3 a:link,
-.showcase-text h3 a:visited {
-  color: #100c08;
-  font-weight: 400;
-  font-size: .85rem; }
-
-.showcase-text h3 a:active,
-.showcase-text h3 a:hover {
-  color: rgba(16, 12, 8, 0.5);
-  transition: color .2s; }
-
-.showcase-text p {
-  font-size: .8rem;
-  line-height: 1.2; }
-
-.showcase-text .show-link {
-  margin-top: 1rem;
-  font-size: .8rem;
-  margin-bottom: 3.5rem;
-  transition: all .2s; }
-
-.showcase-text .show-link a:link,
-.showcase-text .show-link a:visited {
-  color: rgba(16, 12, 8, 0.5);
-  border-bottom: 0.1rem solid rgba(16, 12, 8, 0.5); }
-
-.showcase-text .show-link a:active,
-.showcase-text .show-link a:hover {
-  color: #100c08;
-  transition: color .2s; }
-
-.showcase-text::after {
-  content: "";
-  display: block;
-  position: block;
-  width: 100%;
-  height: .1rem;
-  background-color: rgba(16, 12, 8, 0.1); }
-
-/* Index footer */
-.showcase footer {
-  height: 12rem;
-  padding: 5rem;
-  padding-left: 0;
-  background: rgba(255, 37, 37, 0.7);
-  color: #f9f9f9;
-  font-size: .8rem;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0; }
-
-.showcase footer p {
-  width: 100%;
-  text-align: center; }
-
-.showcase footer a {
-  color: #100c08;
-  text-decoration: underline; }
+  .showcaseText__head--title {
+    margin-bottom: .5rem;
+    width: 85%; }
+    .showcaseText__head--titleLink:link, .showcaseText__head--titleLink:visited {
+      color: #100c08;
+      font-weight: 400;
+      font-size: .85rem; }
+    .showcaseText__head--titleLink:active, .showcaseText__head--titleLink:hover {
+      color: rgba(16, 12, 8, 0.5);
+      transition: color .2s; }
+  .showcaseText__paragraph {
+    font-size: .8rem;
+    line-height: 1.2; }
+  .showcaseText__link {
+    margin-top: 1rem;
+    font-size: .8rem;
+    margin-bottom: 3.5rem;
+    transition: all .2s; }
+    .showcaseText__link--anchorTag:link, .showcaseText__link--anchorTag:visited {
+      color: rgba(16, 12, 8, 0.5);
+      border-bottom: 0.1rem solid rgba(16, 12, 8, 0.5); }
+    .showcaseText__link--anchorTag:active, .showcaseText__link--anchorTag:hover {
+      color: #100c08;
+      transition: color .2s; }
+  .showcaseText::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: .1rem;
+    background-color: rgba(16, 12, 8, 0.1); }
 
 /* =====================
     showcase 2

@@ -260,6 +260,23 @@ a {
   font-family: 'Caveat', cursive;
 }
 
+/* Blog tag colors */
+.green {
+  background-color: $color-success;
+}
+
+.yellow {
+  background-color: $color-primary-brown;
+}
+
+.purple {
+  background-color: $color-primary-dark;
+}
+
+.red {
+  background-color: $color-primary-red;
+}
+
 /* ====================
   landing page styles
 ===================== */
@@ -1507,12 +1524,6 @@ h3 {
       left: -25rem;
       background-color: $color-white;
       padding-left: 0;
-      animation-name: textLeftRight;
-      animation-duration: 2s;
-      animation-timing-function: ease-out;
-      animation-delay: 0s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
       animation: textLeftRight 2s ease-out 0s 1 forwards;
 
       &--title {
@@ -1552,7 +1563,6 @@ h3 {
     }
 
     70% {
-      margin-top: 3rem;
       opacity: 0;
       left: -1.5rem;
     }
@@ -1613,6 +1623,25 @@ h3 {
       }
     }
   }
+
+  /* Index footer */
+  &__footer {
+    height: 12rem;
+    padding: 5rem;
+    padding-left: 0;
+    background: rgba($color-primary-red, .7);
+    color: $color-primary-light;
+    font-size: .8rem;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &--paragraph {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 /* 
@@ -1658,126 +1687,91 @@ contains blog author name, blog date and tag
       font-family: 'Caveat', cursive;
     }
   }
+
+  &__tag {
+    flex: 1;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    &--link {
+      &:link,
+      &:visited {
+        font-size: .9rem;
+        color: $color-primary-light;
+        padding: .5rem 1.6rem;
+        border-radius: 1.5rem;
+      }
+
+      &:active,
+      &:hover {
+        color: $color-white;
+        transition: color .2s;
+      }
+    }
+  }
 }
 
-.showcaseCard__tag {
-  flex: 1;
-}
-
-.showcaseCard__tag {
-  margin-right: 2rem;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  text-align: center;
-}
-
-.showcaseCard__tag a:link,
-.showcaseCard__tag a:visited {
-  font-size: .9rem;
-  color: $color-primary-light;
-  padding: .5rem 1.6rem;
-  border-radius: 1.5rem;
-}
-
-.showcaseCard__tag a:active,
-.showcaseCard__tag a:hover {
-  color: $color-white;
-  transition: color .2s;
-}
-
-.showcaseCard__tag .green {
-  background-color: $color-success;
-}
-
-.showcaseCard__tag .yellow {
-  background-color: $color-primary-brown;
-}
-
-.showcaseCard__tag .purple {
-  background-color: $color-primary-dark;
-}
-
-.showcaseCard__tag .red {
-  background-color: $color-primary-red;
-}
-
-.showcase-text {
+.showcaseText {
   width: 100%;
-}
 
-.showcase-text h3 {
-  margin-bottom: .5rem;
-  width: 85%;
-}
+  &__head {
+    &--title {
+      margin-bottom: .5rem;
+      width: 85%;
 
-.showcase-text h3 a:link,
-.showcase-text h3 a:visited {
-  color: $color-black;
-  font-weight: 400;
-  font-size: .85rem;
-}
+      &Link {
+        &:link,
+        &:visited {
+          color: $color-black;
+          font-weight: 400;
+          font-size: .85rem;
+        }
 
-.showcase-text h3 a:active,
-.showcase-text h3 a:hover {
-  color: rgba($color-black, .5);
-  transition: color .2s;
-}
+        &:active,
+        &:hover {
+          color: rgba($color-black, .5);
+          transition: color .2s;
+        }
+      }
+    }
+  }
 
-.showcase-text p {
-  font-size: .8rem;
-  line-height: 1.2;
-}
+  &__paragraph {
+    font-size: .8rem;
+    line-height: 1.2;
+  }
 
-.showcase-text .show-link {
-  margin-top: 1rem;
-  font-size: .8rem;
-  margin-bottom: 3.5rem;
-  transition: all .2s;
-}
+  &__link {
+    margin-top: 1rem;
+    font-size: .8rem;
+    margin-bottom: 3.5rem;
+    transition: all .2s;
 
-.showcase-text .show-link a:link,
-.showcase-text .show-link a:visited {
-  color: rgba($color-black, .5);
-  border-bottom: .1rem solid rgba($color-black, .5);
-}
+    &--anchorTag {
+      &:link,
+      &:visited {
+        color: rgba($color-black, .5);
+        border-bottom: .1rem solid rgba($color-black, .5);
+      }
 
-.showcase-text .show-link a:active,
-.showcase-text .show-link a:hover {
-  color: $color-black;
-  transition: color .2s;
-}
+      &:active,
+      &:hover {
+        color: $color-black;
+        transition: color .2s;
+      }
+    }
+  }
 
-.showcase-text::after {
-  content: "";
-  display: block;
-  position: block;
-  width: 100%;
-  height: .1rem;
-  background-color: rgba($color-black, .1);
-}
-
-/* Index footer */
-.showcase footer {
-  height: 12rem;
-  padding: 5rem;
-  padding-left: 0;
-  background: rgba($color-primary-red, .7);
-  color: $color-primary-light;
-  font-size: .8rem;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.showcase footer p {
-  width: 100%;
-  text-align: center;
-}
-
-.showcase footer a {
-  color: $color-black;
-  text-decoration: underline;
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: .1rem;
+    background-color: rgba($color-black, .1);
+  }
 }
 
 /* =====================
