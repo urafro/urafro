@@ -101,14 +101,14 @@
       </h5>
     </section>
 
-    <div class="showcase-boxes">
+    <div class="showcaseBoxes">
       <!-- create a box for every blog in database with data from the "/blogs" Index route-->
       <% foundBlogs.forEach(function(blog) { %>
-      <div class="showcase-box">
+      <div class="showcaseBoxes__box">
 
         <!-- link will go to the blog show route-->
-        <a href="/blogs/<%= blog._id %>">
-          <img src="<%= blog.body.header.mainImage %>" alt="coffee music and gaming">
+        <a class="showcaseBoxes__box--link" href="/blogs/<%= blog._id %>">
+          <img class="showcaseBoxes__box--linkImage" src="<%= blog.body.header.mainImage %>" alt="">
         </a>
 
           <div class="showcase-card">

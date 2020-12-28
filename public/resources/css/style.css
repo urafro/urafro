@@ -1127,44 +1127,37 @@ h3 {
     .showcase__separator--title {
       font-weight: 300;
       font-size: .75rem; }
-
-.showcase-boxes {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 2rem;
-  justify-items: center;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 10rem; }
-
-.showcase-box {
-  position: relative;
-  width: 59rem;
-  height: 20rem;
-  margin-top: 1rem;
-  overflow: hidden; }
-
-.showcase-text {
-  width: 59rem; }
-
-.showcase-box a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: .5rem;
-  transform: scale(1);
-  transition: .3s ease-in-out; }
-
-.showcase-box a img:hover {
-  filter: grayscale(0.5);
-  transform: scale(1.1); }
+  .showcaseBoxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10rem; }
+    .showcaseBoxes__box {
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      margin-top: 1rem;
+      overflow: hidden; }
+      .showcaseBoxes__box--linkImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: .5rem;
+        transform: scale(1);
+        transition: .3s ease-in-out; }
+      .showcaseBoxes__box--linkImage:hover {
+        filter: grayscale(0.5);
+        transform: scale(1.1); }
 
 .showcase-card {
   display: flex;
   position: absolute;
   top: 0;
-  width: 59rem;
+  width: 100%;
   height: 8rem;
   padding-top: 1rem;
   padding-left: 2rem;
@@ -1232,6 +1225,9 @@ h3 {
 
 .card-tag .red {
   background-color: #FF2525; }
+
+.showcase-text {
+  width: 100%; }
 
 .showcase-text h3 {
   margin-bottom: .5rem;
@@ -1680,7 +1676,7 @@ li form button:hover,
 li form button:active {
   color: #FF2525; }
 
-.showcase-boxes,
+.showcaseBoxes,
 .show-wrapper {
   padding-bottom: 10rem; }
 
