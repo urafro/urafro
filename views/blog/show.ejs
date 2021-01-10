@@ -87,17 +87,17 @@
     </ul>
     <% } %>
 
-    <div class="wrapper">
-      <div class="show-heading">
-        <div class="main-heading">
-          <h2><%= blog.body.header.mainHeading %></h2>
-        </div>
-        <div class="intro-paragraph">
-          <p><%= blog.body.content.introParagraph %></p>
-        </div>
+    <div class="blog">
+      <div class="blog__heading">
+        <h2 class="blog__heading--mainHeading">
+          <%= blog.body.header.mainHeading %>
+        </h2>
+        <p class="blog__heading--paragraph">
+          <%= blog.body.content.introParagraph %>
+        </p>
       </div>
 
-      <div class="show-content">
+      <div class="blog__body">
         <div class="section-one">
           <p><%= blog.body.content.sectionOne.paragraphOne %></p>
           <p><%= blog.body.content.sectionOne.paragraphTwo %></p>

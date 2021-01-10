@@ -1895,7 +1895,7 @@ contains blog author name, blog date and tag
     }
   }
 
-  .wrapper {
+  .blog {
     padding-top: 3rem;
     width: 76%;
     margin: 0 auto;
@@ -1909,49 +1909,8 @@ contains blog author name, blog date and tag
   }
 }
 /* ====================
-    wrapper section 
+    Blog show section 
 ======================= */
-
-.wrapper p {
-  margin-bottom: 20px;
-  line-height: 135%;
-}
-
-.show-heading {
-  width: 65%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.show-content .text-wrap {
-  white-space: pre-wrap;
-}
-
-.main-heading h2 {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  position: relative;
-  top: -2.5rem;
-  opacity: 0;
-  animation: mainHeadingSlideDown 1s linear 0s forwards;
-  -webkit-animation: mainHeadingSlideDown 1s linear 0s forwards;
-}
-
-@-webkit-keyframes mainHeadingSlideDown {
-  0% {
-    font-weight: 500;
-  }
-
-  95% {
-    font-weight: 500;
-  }
-
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-
 @keyframes mainHeadingSlideDown {
   0% {
     font-weight: 500;
@@ -1967,28 +1926,6 @@ contains blog author name, blog date and tag
   }
 }
 
-.main-heading h2:after {
-  display: block;
-  height: .1rem;
-  background-color: rgba($color-primary-light, .5);
-  content: " ";
-  width: 20rem;
-  margin: 0 auto;
-  margin-top: 2rem;
-}
-
-.intro-paragraph {
-  color: rgba($color-black, .3);
-  font-size: .8rem;
-  animation: smallPop 1s linear 2s forwards;
-  -webkit-animation: smallPop 1s linear 2s forwards;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-}
-
 @keyframes smallPop {
   90% {
     color: rgba($color-black, .8);
@@ -2001,23 +1938,67 @@ contains blog author name, blog date and tag
   }
 }
 
-.intro-paragraph:after {
-  display: block;
-  height: .1rem;
-  content: " ";
-  background-color: rgba($color-primary-light, .5);
-  width: 20rem;
-  margin-top: 2rem;
+.blog__heading {
+  width: 65%;
   margin: 0 auto;
+  text-align: center;
+
+  &--mainHeading {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    top: -2.5rem;
+    opacity: 0;
+    animation: mainHeadingSlideDown 1s linear 0s forwards;
+    
+    &:after {
+      display: block;
+      height: .1rem;
+      background-color: rgba($color-primary-light, .5);
+      content: " ";
+      width: 20rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+
+  &--paragraph {
+    color: rgba($color-black, .3);
+    font-size: .8rem;
+    animation: smallPop 1s linear 2s forwards;
+    transform: scale(1);
+
+    &:after {
+      display: block;
+      height: .1rem;
+      content: " ";
+      background-color: rgba($color-primary-light, .5);
+      width: 20rem;
+      margin-top: 2rem;
+      margin: 0 auto;
+    }
+  }
 }
 
-.show-content {
+/*
+ try to find a way to pattern bem naming for blog body elements after the blog__body style 
+ starting from here next time
+ rest up me brudda :)
+*/
+
+.blog__body {
   width: 90%;
   margin: 0 auto;
 }
 
-.show-content p {
+.blog p {
+  margin-bottom: 20px;
+  line-height: 135%;
   font-size: .8rem;
+}
+
+.text-wrap {
+  white-space: pre-wrap;
 }
 
 .section-one {
