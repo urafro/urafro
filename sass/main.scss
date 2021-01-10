@@ -1804,6 +1804,17 @@ contains blog author name, blog date and tag
   align-items: center;
   justify-content: center;
 
+  & a:link,
+  & a:visited {
+    color: rgba($color-black, .5);
+    text-decoration: underline;
+  }
+
+  & a:active,
+  & a:hover {
+    color: $color-black;
+  }
+
   &__admin {
     list-style: none;
     display: flex;
@@ -1862,92 +1873,36 @@ contains blog author name, blog date and tag
     &--i {
       font-size: .7rem;
     }
+
+    &--button {
+      display: inline-block;
+      border: none;
+      font-size: .7rem;
+      margin: 0;
+      text-decoration: none;
+      color: rgba($color-primary-bg2, .5);
+      font-family: sans-serif;
+      cursor: pointer;
+      text-align: center;
+      transition: color 0.5s;
+    }
+
+    &--button:hover,
+    &--button:active {
+      color: $color-primary-red;
+    }
   }
 }
-
-/* ===========================================================================================
-  PICK UP FROM HERE NEXT SESH
-  UPWARDS AND ONWARDS BOI :)
-============================================================================================= */
-
-.showcaseTwo a:link,
-.showcaseTwo a:visited,
-div.content-text p a:link,
-div.content-text p a:visited {
-  color: rgba($color-black, .5);
-  text-decoration: underline;
-}
-
-.showcaseTwo a:active,
-.showcaseTwo a:hover {
-  color: $color-black;
-}
-
-.headerTwo h2 {
-  margin-top: 10vh;
-  width: 60%;
-  text-align: left;
-}
-
-.headerTwo h2,
-.headerTwo .author-card {
-  margin-left: 20%;
-}
-
-.headerTwo .author-card {
-  display: flex;
-  margin-top: 2rem;
-}
-
-.headerTwo .author-card img {
-  height: 8rem;
-  width: 8rem;
-  border: none;
-  border-radius: 50%;
-}
-
-.headerTwo .card-text {
-  margin: 1.5rem 0;
-}
-
-.headerTwo .card-text h3 {
-  font-weight: 300;
-  padding-bottom: .5rem;
-}
-
-.headerTwo .card-text p {
-  font-size: .7rem;
-  margin-left: 2.5rem;
-}
-
-/**********************
+/* ====================
     content section 
-***********************/
-
-li form button {
-  display: inline-block;
-  border: none;
-  font-size: .7rem;
-  margin: 0;
-  text-decoration: none;
-  color: rgba($color-primary-bg2, .5);
-  font-family: sans-serif;
-  cursor: pointer;
-  text-align: center;
-  transition: color 0.5s;
-}
-
-li form button:hover,
-li form button:active {
-  color: $color-primary-red;
-}
+======================= */
 
 .showcaseBoxes,
-.show-wrapper {
+.wrapper {
   padding-bottom: 10rem;
 }
 
-.show-wrapper {
+.wrapper {
   padding-top: 3rem;
   width: 76%;
   margin: 0 auto;
@@ -1957,7 +1912,7 @@ li form button:active {
   justify-content: center;
 }
 
-.show-wrapper p {
+.wrapper p {
   margin-bottom: 20px;
   line-height: 135%;
 }
@@ -2579,6 +2534,14 @@ textarea {
   margin-top: 2rem;
   font-size: .8rem;
   line-height: 1.35;
+}
+
+div.content-text p a:link,
+div.content-text p a:visited {
+  /* this can be a mixin/extend cuz i'm using the same two rules on showcaseTwo anchor tags */
+
+  color: rgba($color-black, .5);
+  text-decoration: underline;
 }
 
 /* ===============================================

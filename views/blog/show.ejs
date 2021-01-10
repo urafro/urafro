@@ -80,7 +80,7 @@
         <!-- Delete opened blog -->
         <li class="delete showcaseTwo__admin--li">
           <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
-            <button>
+            <button class="showcaseTwo__admin--button">
               <i class="fas fa-trash showcaseTwo__admin--i"></i>
             </button>
           </form>
@@ -89,7 +89,7 @@
     </div>
     <% } %>
 
-    <div class="show-wrapper">
+    <div class="wrapper">
       <div class="show-heading">
         <div class="main-heading">
           <h2><%= blog.body.header.mainHeading %></h2>

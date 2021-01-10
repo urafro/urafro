@@ -1281,6 +1281,13 @@ contains blog author name, blog date and tag
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .showcaseTwo a:link,
+  .showcaseTwo a:visited {
+    color: rgba(16, 12, 8, 0.5);
+    text-decoration: underline; }
+  .showcaseTwo a:active,
+  .showcaseTwo a:hover {
+    color: #100c08; }
   .showcaseTwo__admin {
     list-style: none;
     display: flex;
@@ -1319,76 +1326,28 @@ contains blog author name, blog date and tag
       right: 105%; }
     .showcaseTwo__admin--i {
       font-size: .7rem; }
+    .showcaseTwo__admin--button {
+      display: inline-block;
+      border: none;
+      font-size: .7rem;
+      margin: 0;
+      text-decoration: none;
+      color: rgba(251, 98, 58, 0.5);
+      font-family: sans-serif;
+      cursor: pointer;
+      text-align: center;
+      transition: color 0.5s; }
+    .showcaseTwo__admin--button:hover, .showcaseTwo__admin--button:active {
+      color: #FF2525; }
 
-/* ===========================================================================================
-  PICK UP FROM HERE NEXT SESH
-  UPWARDS AND ONWARDS BOI :)
-============================================================================================= */
-.showcaseTwo a:link,
-.showcaseTwo a:visited,
-div.content-text p a:link,
-div.content-text p a:visited {
-  color: rgba(16, 12, 8, 0.5);
-  text-decoration: underline; }
-
-.showcaseTwo a:active,
-.showcaseTwo a:hover {
-  color: #100c08; }
-
-.headerTwo h2 {
-  margin-top: 10vh;
-  width: 60%;
-  text-align: left; }
-
-.headerTwo h2,
-.headerTwo .author-card {
-  margin-left: 20%; }
-
-.headerTwo .author-card {
-  display: flex;
-  margin-top: 2rem; }
-
-.headerTwo .author-card img {
-  height: 8rem;
-  width: 8rem;
-  border: none;
-  border-radius: 50%; }
-
-.headerTwo .card-text {
-  margin: 1.5rem 0; }
-
-.headerTwo .card-text h3 {
-  font-weight: 300;
-  padding-bottom: .5rem; }
-
-.headerTwo .card-text p {
-  font-size: .7rem;
-  margin-left: 2.5rem; }
-
-/**********************
+/* ====================
     content section 
-***********************/
-li form button {
-  display: inline-block;
-  border: none;
-  font-size: .7rem;
-  margin: 0;
-  text-decoration: none;
-  color: rgba(251, 98, 58, 0.5);
-  font-family: sans-serif;
-  cursor: pointer;
-  text-align: center;
-  transition: color 0.5s; }
-
-li form button:hover,
-li form button:active {
-  color: #FF2525; }
-
+======================= */
 .showcaseBoxes,
-.show-wrapper {
+.wrapper {
   padding-bottom: 10rem; }
 
-.show-wrapper {
+.wrapper {
   padding-top: 3rem;
   width: 76%;
   margin: 0 auto;
@@ -1397,7 +1356,7 @@ li form button:active {
   align-items: center;
   justify-content: center; }
 
-.show-wrapper p {
+.wrapper p {
   margin-bottom: 20px;
   line-height: 135%; }
 
@@ -1909,6 +1868,12 @@ textarea {
   margin-top: 2rem;
   font-size: .8rem;
   line-height: 1.35; }
+
+div.content-text p a:link,
+div.content-text p a:visited {
+  /* this can be a mixin/extend cuz i'm using the same two rules on showcaseTwo anchor tags */
+  color: rgba(16, 12, 8, 0.5);
+  text-decoration: underline; }
 
 /* ===============================================
                 COMMENT ROUTE
