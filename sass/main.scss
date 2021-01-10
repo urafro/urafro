@@ -1778,9 +1778,10 @@ contains blog author name, blog date and tag
   }
 }
 
-/* =====================
-    showcase 2
-======================  */
+/* ===============================================
+                SHOW ROUTE
+================================================ */
+
 @keyframes admenuLeft {
   100% {
     opacity: 1;
@@ -1864,321 +1865,10 @@ contains blog author name, blog date and tag
   }
 }
 
-.showcaseTwo footer p {
-  width: 100%;
-  text-align: center;
-}
-
-.showcaseTwo footer a {
-  color: $color-black;
-  text-decoration: underline;
-}
-
-.showcaseTwo footer {
-  /* 
-  this code should be a mixin/extend cuz its the same as showcase footer the first one just a few lines up 
-  */
-
-  height: 12rem;
-  padding: 5rem;
-  padding-left: 0;
-  background: rgba($color-primary-red, .7);
-  color: $color-primary-light;
-  font-size: .8rem;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-/* ===============================================
-                NEW ROUTE
-================================================ */
-
-.wrapper {
-  padding: 4rem 2rem;
-}
-
-/* navbar */
-.menu .left-menu {
-  float: left;
-}
-
-.menu .right-menu {
-  float: right;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.menu a {
-  color: $color-primary-dark;
-}
-
-/************************** content boxes **************************/
-
-.content-inputs,
-.content-text {
-  padding: 0 2rem;
-}
-
-.content-boxes {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.content-boxes .row {
-  margin-top: 6rem;
-}
-
-.content-inputs {
-  flex: 1;
-}
-
-.content-text {
-  flex: 1;
-}
-
-.content-boxes h1 {
-  text-align: center;
-  font-size: 2.5;
-  font-weight: 300;
-}
-
-.content-boxes h1:after {
-  display: block;
-  height: .1rem;
-  background-color: $color-primary-red;
-  content: " ";
-  width: 10rem;
-  margin: 0 auto;
-  margin-top: 2rem;
-}
-
-.content-boxes input,
-label {
-  display: block;
-}
-
-/* ================
-  new route images
-================= */
-
-.after::after {
-  display: block;
-  content: " ";
-  margin: 0 auto;
-  width: 30rem;
-  height: .1rem;
-  margin-top: 5rem;
-  background-color: rgba($color-primary-red, .1);
-}
-
-.last {
-  margin-bottom: 5rem;
-}
-
-.s0,
-.s1,
-.s2,
-.s3,
-.s4 {
-  padding-left: 3rem;
-}
-
-.s0 img,
-.s1 img,
-.s2 img,
-.s3 img,
-.s4 img {
-  padding: 3rem 0 2rem 0;
-}
-
-.s1 img {
-  height: 50rem;
-}
-
-.s2 img {
-  height: 35rem;
-}
-
-.s4 img {
-  height: 40rem;
-  margin-left: 10rem;
-}
-
-/******************** content-inputs ********************/
-.comment .login,
-.comment .content-inputs {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-*:focus {
-  outline: none;
-}
-
-.comments-input .content-inputs {
-  margin-top: 4rem;
-}
-
-.content-inputs {
-  border-radius: 1rem;
-  box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
-}
-
-.content-inputs h2 {
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: $color-primary-red;
-}
-
-.content-inputs .left,
-.right {
-  width: 48%;
-}
-
-.content-inputs input[type="text"],
-textarea,
-.auth input[type="password"] {
-  width: 100%;
-  margin-bottom: 2rem;
-  border: .1rem dashed rgba($color-black, .3);
-  font-family: inherit;
-  font-weight: 300;
-  border-radius: .5rem;
-}
-
-.content-inputs input[type="text"],
-.auth input[type="password"] {
-  height: 8rem;
-  font-size: .7rem;
-  padding: 1rem;
-}
-
-.content-boxes input[type="submit"],
-.comment .content-inputs form div.box-content input[type="submit"],
-.comments-input input[type="submit"] {
-  margin-top: 2rem;
-  cursor: pointer;
-  text-transform: none;
-  display: inline-block;
-  font-family: inherit;
-}
-
-.comments-input input[type="submit"] {
-  margin-top: .5rem;
-}
-
-/* Reset Select */
-select {
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background: $color-primary-light;
-  background-image: none;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-
-/* Custom Select */
-.select {
-  position: relative;
-  display: flex;
-  width: 50%;
-  height: 50px;
-  line-height: 3;
-  background: $color-primary-light;
-  overflow: hidden;
-  border-radius: .25em;
-}
-
-select {
-  flex: 1;
-  padding: 0 .5em;
-  color: $color-black;
-  cursor: pointer;
-  font-size: 85%;
-  font-weight: 300;
-  background: $color-primary-light;
-  font-family: inherit;
-}
-
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  color: rgba($color-primary-red, .7);
-  background-color: $color-primary-light;
-  cursor: pointer;
-  pointer-events: none;
-  transition: .5s all ease;
-}
-
-/* Transition */
-.select:hover::after {
-  color: $color-black;
-  background: $color-primary-light;
-}
-
-/* input styles */
-.box-content {
-  position: relative;
-}
-
-.box-content label {
-  position: absolute;
-  text-transform: uppercase;
-  padding: 1.2rem;
-  font-size: .55rem;
-  font-weight: bolder;
-}
-
-.box-content ::placeholder {
-  text-transform: uppercase;
-}
-
-textarea {
-  padding-top: 4rem;
-  padding-left: 1rem;
-  resize: vertical;
-}
-
-/* ==============================
-  styles for new comment div only
-================================ */
-.new-comment {
-  margin-bottom: 1.5rem;
-  padding-bottom: 2rem;
-}
-
-/********************** content-text ************************/
-.content-text h2 {
-  font-weight: 300;
-  font-size: 1.2rem;
-  margin-top: 3rem;
-}
-
-.content-text p {
-  margin-top: 2rem;
-  font-size: .8rem;
-  line-height: 1.35;
-}
-
-/* ===============================================
-                SHOW ROUTE
-================================================ */
+/* ===========================================================================================
+  PICK UP FROM HERE NEXT SESH
+  UPWARDS AND ONWARDS BOI :)
+============================================================================================= */
 
 .showcaseTwo a:link,
 .showcaseTwo a:visited,
@@ -2575,6 +2265,320 @@ li form button:active {
 .backlinks-body a {
   font-size: .7rem;
   margin-left: .2rem;
+}
+
+
+
+.showcaseTwo footer p {
+  width: 100%;
+  text-align: center;
+}
+
+.showcaseTwo footer a {
+  color: $color-black;
+  text-decoration: underline;
+}
+
+.showcaseTwo footer {
+  /* 
+  this code should be a mixin/extend cuz its the same as showcase footer the first one just a few lines up 
+  */
+
+  height: 12rem;
+  padding: 5rem;
+  padding-left: 0;
+  background: rgba($color-primary-red, .7);
+  color: $color-primary-light;
+  font-size: .8rem;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* ===============================================
+                NEW ROUTE
+================================================ */
+
+.wrapper {
+  padding: 4rem 2rem;
+}
+
+/* navbar */
+.menu .left-menu {
+  float: left;
+}
+
+.menu .right-menu {
+  float: right;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: $color-primary-dark;
+}
+
+/************************** content boxes **************************/
+
+.content-inputs,
+.content-text {
+  padding: 0 2rem;
+}
+
+.content-boxes {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content-boxes .row {
+  margin-top: 6rem;
+}
+
+.content-inputs {
+  flex: 1;
+}
+
+.content-text {
+  flex: 1;
+}
+
+.content-boxes h1 {
+  text-align: center;
+  font-size: 2.5;
+  font-weight: 300;
+}
+
+.content-boxes h1:after {
+  display: block;
+  height: .1rem;
+  background-color: $color-primary-red;
+  content: " ";
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.content-boxes input,
+label {
+  display: block;
+}
+
+/* ================
+  new route images
+================= */
+
+.after::after {
+  display: block;
+  content: " ";
+  margin: 0 auto;
+  width: 30rem;
+  height: .1rem;
+  margin-top: 5rem;
+  background-color: rgba($color-primary-red, .1);
+}
+
+.last {
+  margin-bottom: 5rem;
+}
+
+.s0,
+.s1,
+.s2,
+.s3,
+.s4 {
+  padding-left: 3rem;
+}
+
+.s0 img,
+.s1 img,
+.s2 img,
+.s3 img,
+.s4 img {
+  padding: 3rem 0 2rem 0;
+}
+
+.s1 img {
+  height: 50rem;
+}
+
+.s2 img {
+  height: 35rem;
+}
+
+.s4 img {
+  height: 40rem;
+  margin-left: 10rem;
+}
+
+/******************** content-inputs ********************/
+.comment .login,
+.comment .content-inputs {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*:focus {
+  outline: none;
+}
+
+.comments-input .content-inputs {
+  margin-top: 4rem;
+}
+
+.content-inputs {
+  border-radius: 1rem;
+  box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+}
+
+.content-inputs h2 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: $color-primary-red;
+}
+
+.content-inputs .left,
+.right {
+  width: 48%;
+}
+
+.content-inputs input[type="text"],
+textarea,
+.auth input[type="password"] {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: .1rem dashed rgba($color-black, .3);
+  font-family: inherit;
+  font-weight: 300;
+  border-radius: .5rem;
+}
+
+.content-inputs input[type="text"],
+.auth input[type="password"] {
+  height: 8rem;
+  font-size: .7rem;
+  padding: 1rem;
+}
+
+.content-boxes input[type="submit"],
+.comment .content-inputs form div.box-content input[type="submit"],
+.comments-input input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  text-transform: none;
+  display: inline-block;
+  font-family: inherit;
+}
+
+.comments-input input[type="submit"] {
+  margin-top: .5rem;
+}
+
+/* Reset Select */
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: $color-primary-light;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 50px;
+  line-height: 3;
+  background: $color-primary-light;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: $color-black;
+  cursor: pointer;
+  font-size: 85%;
+  font-weight: 300;
+  background: $color-primary-light;
+  font-family: inherit;
+}
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  color: rgba($color-primary-red, .7);
+  background-color: $color-primary-light;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .5s all ease;
+}
+
+/* Transition */
+.select:hover::after {
+  color: $color-black;
+  background: $color-primary-light;
+}
+
+/* input styles */
+.box-content {
+  position: relative;
+}
+
+.box-content label {
+  position: absolute;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  font-size: .55rem;
+  font-weight: bolder;
+}
+
+.box-content ::placeholder {
+  text-transform: uppercase;
+}
+
+textarea {
+  padding-top: 4rem;
+  padding-left: 1rem;
+  resize: vertical;
+}
+
+/* ==============================
+  styles for new comment div only
+================================ */
+.new-comment {
+  margin-bottom: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/********************** content-text ************************/
+.content-text h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.content-text p {
+  margin-top: 2rem;
+  font-size: .8rem;
+  line-height: 1.35;
 }
 
 /* ===============================================
