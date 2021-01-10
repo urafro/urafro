@@ -91,49 +91,34 @@
 
     <div class="show-wrapper">
       <div class="show-heading">
-
         <div class="main-heading">
           <h2><%= blog.body.header.mainHeading %></h2>
         </div>
-
         <div class="intro-paragraph">
           <p><%= blog.body.content.introParagraph %></p>
         </div>
-
       </div>
 
       <div class="show-content">
         <div class="section-one">
-
           <p><%= blog.body.content.sectionOne.paragraphOne %></p>
-
           <p><%= blog.body.content.sectionOne.paragraphTwo %></p>
-          
         </div>
 
         <div class="section-two">
           <h3><%= blog.body.content.sectionTwo.mediumHeading %></h3>
-
           <p><%= blog.body.content.sectionTwo.paragraphThree %></p>
-
           <p><%= blog.body.content.sectionTwo.paragraphFour %></p>
-
           <p><%= blog.body.content.sectionTwo.paragraphFive %></p>
         </div>
 
         <div class="section-three">
           <h4><%= blog.body.content.sectionThree.smallHeading %></h4>
-
           <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphSix.trim() %></p>
-
           <p><%= blog.body.content.sectionThree.paragraphSeven %></p>
-
           <h5><%= blog.body.content.sectionThree.smallerHeading %></h5>
-
           <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphEight.trim() %></p>
-
           <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="">
-
           <p><%= blog.body.content.sectionThree.paragraphNine %></p>
         </div>
 
@@ -147,117 +132,89 @@
                 Comments 
           ===================
         -->
-        <% if(blog.comments.length > 0 ) { %>
-    
+        <% if(blog.comments.length > 0 ) { %>    
           <ul class="comment-section">
-
             <h3>Comments</h3>
-
+            <!-- Comment UI -->
             <% blog.comments.forEach((comment) => { %>
               <li class="comment author-comment">
-
                 <div class="info">
                   <a href="#"><%= comment.author.username %></a>
                   <span>3 hours ago</span>
                 </div>
-
                 <a class="avatar" href="#">
                   <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Comment Author" />
                 </a>
-
                 <p>
                   <%= comment.text %>
                 </p>
-
               </li>
 
+              <!-- Comment Replies -->
               <% if(comment.replies.length > 0) { %>
-
                 <% comment.replies.forEach((reply) => { %>
                   <li class="comment user-comment">
-
                     <div class="info">
                       <a href="#"><%= reply.author.username %></a>
                       <span>1 hour ago</span>
                     </div>
-
                     <a class="avatar" href="#">
                       <img src="<%= reply.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Bradley Jones" />
                     </a>
-
                     <p>
                       <%= reply.text %>
                     </p>
-
                   </li>
                 <% }) %>
-
               <% } %>
-
             <% }) %>
 
+            <!--  Add Comment -->
             <li class="write-new">
-
               <form action="/blogs/<%= blog._id %>/comments/" method="post">
-
                 <textarea placeholder="Write your comment here" name="commentText"></textarea>
-
                 <div>
                   <img src="<%= blog.author.avatarUrl %>" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
                   <button type="submit">comment</button>
                 </div>
-
               </form>
-
             </li>
-
           </ul>
         <% } %>
-
         <!-- 
           ========================
-             NEW BLOG COMMENTS
+                NEW COMMENTS
           ========================
         -->
         <% if(blog.comments.length <= 0) { %>
           <form class="new-comment-form" action="/blogs/<%= blog.id %>/comments" method="POST">
             <div class="row comments-input">
-
               <div class="section zero">
-
                 <div class="content-inputs new-comment">
-
                   <h2>Leave A Reply</h2>
-
                   <div class="box-content">
-
                     <!-- Add || Remove username input field if user is logged in or out -->
                     <% if(!currentUser) { %>
                       <label for="username">Username*</label>
                       <input type="text" name="username" id="username" placeholder="flawed69" required>
                     <% } %>
-
                     <label for="commentText">Comment*</label>
-
                     <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="be the first to say something!"
                       required></textarea>
-
                     <input class="btn btn-full" type="submit" value="say it">
                   </div>
-
                 </div>
-
               </div>
             </div>
           </form>
         <% } %>
 
+        <!-- BACKLINKS - Show Related Blogs -->
         <% if(taggedBlogs.length > 0) { %>
           <div class="show-backlinks">
             <h3>Did you read these already?</h3>
             <p>Discover more posts in
               <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-          
               <% if(blog.tag == "Life") { %>
               <a href="#" class="green"><%= blog.tag %></a>
               <% } else if (blog.tag == "Code") { %>
@@ -267,10 +224,10 @@
               <% } else if (blog.tag == "Self") { %>
               <a href="#" class="red"><%= blog.tag %></a>
               <% } %>
-          
             </p>
           
             <div class="backlinks-cards">
+              <!-- Show Related Blogs -->
               <% taggedBlogs.forEach((taggedBlog) => { %>
               <div class="backlinks-card">
                 <div class="backlinks-header">
@@ -278,7 +235,7 @@
                     <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
                   </a>
           
-                  <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
+                  <!-- display dynamic blog tag -->
                   <div class="tag-links">
                     <% if(taggedBlog.tag == "Life") { %>
                     <a href="#" class="green"><%= taggedBlog.tag %></a>
@@ -297,14 +254,11 @@
                   <p><%= taggedBlog.body.content.introParagraph.substr(0, 78) %> ...</p>
                   <a href="/blogs/<%= taggedBlog.id %>">Read More</a>
                 </div>
-          
               </div>
               <% }) %>
             </div>
-          
           </div>
         <% } %>
-
       </div>
     </div>
 
