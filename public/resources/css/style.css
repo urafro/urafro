@@ -1263,6 +1263,11 @@ contains blog author name, blog date and tag
 /* =====================
     showcase 2
 ======================  */
+@keyframes admenuLeft {
+  100% {
+    opacity: 1;
+    right: 0; } }
+
 .showcaseTwo {
   /* 
   this code should be a mixin/extend cuz its the same as hero__header the first one just a few lines up 
@@ -1291,7 +1296,7 @@ contains blog author name, blog date and tag
       .showcaseTwo__admin--li:last-of-type {
         border-bottom: .1rem solid transparent; }
     .showcaseTwo__admin--link {
-      transition: color 0.5s;
+      transition: all 0.5s;
       /* showing tooltip on li item hover */ }
       .showcaseTwo__admin--link:link, .showcaseTwo__admin--link:visited {
         color: #FFC03D; }
