@@ -56,37 +56,35 @@
     </div>
   </div>
 
-  <div class="showcase-2">
-
+  <div class="showcaseTwo">
     <!--
       showing author's menu when author's logged in
     -->
-
     <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
-    <div class="show-menu">
-      <ul>
-
+    <div>
+      <ul class="showcaseTwo__admin">
         <!-- edit current blog url -->
-        <li>
-          <a href="/blogs/<%= blog._id %>/edit">
-            <span class="admenu-tooltip btn btn-ghost">Edit</span><i class="far fa-edit"></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="/blogs/<%= blog._id %>/edit">
+            <span class="showcaseTwo__admin--tooltip btn btn-ghost">Edit</span>
+            <i class="far fa-edit showcaseTwo__admin--i"></i>
           </a>
-        </li>
-        
+        </li>        
         <!-- add new blog url -->
-        <li>
-          <a href="/blogs/new">
-            <span class="admenu-tooltip btn btn-ghost">New</span><i class="far fa-file"></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="/blogs/new">
+            <span class="showcaseTwo__admin--tooltip btn btn-ghost">New</span>
+            <i class="far fa-file showcaseTwo__admin--i"></i>
           </a>
-        </li>
-        
+        </li>        
         <!-- Delete opened blog -->
-        <li class="delete">
+        <li class="delete showcaseTwo__admin--li">
           <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
-            <button><i class="fas fa-trash"></i></button>
+            <button>
+              <i class="fas fa-trash showcaseTwo__admin--i"></i>
+            </button>
           </form>
         </li>
-
       </ul>
     </div>
     <% } %>

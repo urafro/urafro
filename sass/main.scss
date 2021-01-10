@@ -1626,6 +1626,10 @@ h3 {
 
   /* Index footer */
   &__footer {
+    /* 
+    this code should be a mixin/extend cuz its the same as showcase footer the second one just a few lines down 
+    */
+
     height: 12rem;
     padding: 5rem;
     padding-left: 0;
@@ -1777,7 +1781,12 @@ contains blog author name, blog date and tag
 /* =====================
     showcase 2
 ======================  */
-.showcase-2 {
+.showcaseTwo {
+  /* 
+  this code should be a mixin/extend cuz its the same as hero__header the first one just a few lines up 
+  margin-top will be a variable to cater for the difference
+  */
+
   flex: 1;
   overflow: hidden;
   position: relative;
@@ -1786,9 +1795,83 @@ contains blog author name, blog date and tag
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  &__admin {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    right: -2.5rem;
+    top: 40%;
+    opacity: 0;
+    transform: translate(-40%);
+    animation: admenuLeft 1s linear 3s forwards;
+
+    &--li {
+      padding: 1rem .5rem;
+
+      &:last-of-type {
+        border-bottom: .1rem solid transparent;
+      }
+    }
+
+    &--link {
+      transition: color 0.5s;
+
+      &:link,
+      &:visited {
+        color: $color-primary-brown;
+      }
+
+      &:active,
+      &:hover {
+        color: $color-secondary-brown;
+      }
+
+      /* showing tooltip on li item hover */
+      &:hover .showcaseTwo__admin--tooltip,
+      &:active .showcaseTwo__admin--tooltip {
+        visibility: visible;
+      }
+    }
+
+    &--tooltip {
+      visibility: hidden;
+      width: 6rem;
+      color: $color-black;
+      text-align: center;
+      border-radius: 1.5rem;
+      padding: .5rem 0;
+      font-size: .7rem;
+
+      /*Positioning the tooltip*/
+      position: absolute;
+      z-index: 1;
+      right: 105%;
+    }
+
+    &--i {
+      font-size: .7rem;
+    }
+  }
 }
 
-.showcase-2 footer {
+.showcaseTwo footer p {
+  width: 100%;
+  text-align: center;
+}
+
+.showcaseTwo footer a {
+  color: $color-black;
+  text-decoration: underline;
+}
+
+.showcaseTwo footer {
+  /* 
+  this code should be a mixin/extend cuz its the same as showcase footer the first one just a few lines up 
+  */
+
   height: 12rem;
   padding: 5rem;
   padding-left: 0;
@@ -1799,16 +1882,6 @@ contains blog author name, blog date and tag
   position: absolute;
   right: 0;
   bottom: 0;
-}
-
-.showcase-2 footer p {
-  width: 100%;
-  text-align: center;
-}
-
-.showcase-2 footer a {
-  color: $color-black;
-  text-decoration: underline;
 }
 
 /* ===============================================
@@ -2100,16 +2173,16 @@ textarea {
                 SHOW ROUTE
 ================================================ */
 
-.showcase-2 a:link,
-.showcase-2 a:visited,
+.showcaseTwo a:link,
+.showcaseTwo a:visited,
 div.content-text p a:link,
 div.content-text p a:visited {
   color: rgba($color-black, .5);
   text-decoration: underline;
 }
 
-.showcase-2 a:active,
-.showcase-2 a:hover {
+.showcaseTwo a:active,
+.showcaseTwo a:hover {
   color: $color-black;
 }
 
@@ -2153,64 +2226,6 @@ div.content-text p a:visited {
 /**********************
     content section 
 ***********************/
-
-.show-menu {
-  position: fixed;
-  right: -2.5rem;
-  top: 40%;
-  opacity: 0;
-  transform: translate(-40%);
-  animation: admenuLeft 1s linear 3s forwards;
-}
-
-.show-menu ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.show-menu ul li {
-  padding: 1rem .5rem;
-}
-
-.show-menu ul li:last-of-type {
-  border-bottom: .1rem solid transparent;
-}
-
-.show-menu ul li a:link,
-.show-menu ul li a:visited {
-  color: $color-primary-brown;
-  transition: color 0.5s;
-}
-
-.admenu-tooltip {
-  visibility: hidden;
-  width: 6rem;
-  color: $color-black;
-  text-align: center;
-  border-radius: 1.5rem;
-  padding: .5rem 0;
-  font-size: .7rem;
-
-  /*Position the tooltip*/
-  position: absolute;
-  z-index: 1;
-  right: 105%;
-}
-
-.show-menu ul li a:hover .admenu-tooltip,
-.show-menu ul li a:active .admenu-tooltip {
-  visibility: visible;
-}
-
-.show-menu ul li a i {
-  font-size: .7rem;
-}
-
-.show-menu ul li a:hover,
-.show-menu ul li a:active {
-  color: $color-secondary-brown;
-}
 
 li form button {
   display: inline-block;
