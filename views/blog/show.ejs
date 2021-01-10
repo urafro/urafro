@@ -61,32 +61,30 @@
       showing author's menu when author's logged in
     -->
     <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
-    <div>
-      <ul class="showcaseTwo__admin">
-        <!-- edit current blog url -->
-        <li class="showcaseTwo__admin--li">
-          <a class="showcaseTwo__admin--link" href="/blogs/<%= blog._id %>/edit">
-            <span class="showcaseTwo__admin--tooltip btn btn-ghost">Edit</span>
-            <i class="far fa-edit showcaseTwo__admin--i"></i>
-          </a>
-        </li>        
-        <!-- add new blog url -->
-        <li class="showcaseTwo__admin--li">
-          <a class="showcaseTwo__admin--link" href="/blogs/new">
-            <span class="showcaseTwo__admin--tooltip btn btn-ghost">New</span>
-            <i class="far fa-file showcaseTwo__admin--i"></i>
-          </a>
-        </li>        
-        <!-- Delete opened blog -->
-        <li class="delete showcaseTwo__admin--li">
-          <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+    <ul class="showcaseTwo__admin">
+      <!-- edit current blog url -->
+      <li class="showcaseTwo__admin--li">
+        <a class="showcaseTwo__admin--link" href="/blogs/<%= blog._id %>/edit">
+          <span class="showcaseTwo__admin--tooltip btn btn-ghost">Edit</span>
+          <i class="far fa-edit showcaseTwo__admin--i"></i>
+        </a>
+      </li>        
+      <!-- add new blog url -->
+      <li class="showcaseTwo__admin--li">
+        <a class="showcaseTwo__admin--link" href="/blogs/new">
+          <span class="showcaseTwo__admin--tooltip btn btn-ghost">New</span>
+          <i class="far fa-file showcaseTwo__admin--i"></i>
+        </a>
+      </li>        
+      <!-- Delete opened blog -->
+      <li class="delete showcaseTwo__admin--li">
+        <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
             <button class="showcaseTwo__admin--button">
-              <i class="fas fa-trash showcaseTwo__admin--i"></i>
-            </button>
-          </form>
-        </li>
-      </ul>
-    </div>
+            <i class="fas fa-trash showcaseTwo__admin--i"></i>
+          </button>
+        </form>
+      </li>
+    </ul>
     <% } %>
 
     <div class="wrapper">

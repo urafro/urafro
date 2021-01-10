@@ -1142,7 +1142,9 @@ h3 {
     justify-items: center;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 10rem; }
+    margin-bottom: 10rem;
+    /* using the same padding as on the .wrapper class. Can make it into a mixin */
+    padding-bottom: 10rem; }
     .showcaseBoxes__box {
       position: relative;
       width: 100%;
@@ -1339,23 +1341,20 @@ contains blog author name, blog date and tag
       transition: color 0.5s; }
     .showcaseTwo__admin--button:hover, .showcaseTwo__admin--button:active {
       color: #FF2525; }
+  .showcaseTwo .wrapper {
+    padding-top: 3rem;
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* this can be a mixin/extend. using the same padding on showcaseBoxes */
+    padding-bottom: 10rem; }
 
 /* ====================
-    content section 
+    wrapper section 
 ======================= */
-.showcaseBoxes,
-.wrapper {
-  padding-bottom: 10rem; }
-
-.wrapper {
-  padding-top: 3rem;
-  width: 76%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
 .wrapper p {
   margin-bottom: 20px;
   line-height: 135%; }

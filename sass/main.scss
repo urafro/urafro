@@ -1599,6 +1599,8 @@ h3 {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10rem;
+    /* using the same padding as on the .wrapper class. Can make it into a mixin */
+    padding-bottom: 10rem;
 
     &__box {
       position: relative;
@@ -1892,25 +1894,23 @@ contains blog author name, blog date and tag
       color: $color-primary-red;
     }
   }
+
+  .wrapper {
+    padding-top: 3rem;
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* this can be a mixin/extend. using the same padding on showcaseBoxes */
+    padding-bottom: 10rem;
+  }
 }
 /* ====================
-    content section 
+    wrapper section 
 ======================= */
-
-.showcaseBoxes,
-.wrapper {
-  padding-bottom: 10rem;
-}
-
-.wrapper {
-  padding-top: 3rem;
-  width: 76%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .wrapper p {
   margin-bottom: 20px;
