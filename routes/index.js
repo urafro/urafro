@@ -28,19 +28,46 @@ let mailTransporter = nodemailer.createTransport({
 router.post("/newsletter", (req, res) => {
   //saving email input from landing ejs form
   const sender = `${req.body.newsletter}`;
+  const sendersEmail = req.body.newsletter;
 
   let mailDetails = { 
     from: sender, 
     to: 'tinashydaniel@gmail.com', 
-    subject: 'Test mail', 
-    text: 'Node.js testing mail for GeeksforGeeks'
+    subject: 'New sub to newsletter! 🎉', 
+    text: `Save ${sendersEmail} to newsletter mailing list`
   };
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
         req.flash("error", err); 
     } else { 
-        req.flash("success", "Email sent successfully");
+        req.flash("success", "Email sent successfully ✅");
+        res.redirect("/");
+    } 
+  });
+});
+
+//SENDING 'SEND-US-A-MESSAGE EMAIL TO GMAIL ACCOUNT
+router.post("/message", (req, res) => {
+  //saving inputs from landing.ejs <send-us-a-message> div to variables
+  const sender = `${req.body.email}`;
+  const sendersName = `${req.body.name}`;
+  //subject is hardcoded in! a bad practice ik, will make it a variable asap
+  const subject = "urAfro input | critiques";
+  const text = `Hi, my name is ${sendersName}!  ${req.body.message}`;
+
+  let mailDetails = { 
+    from: sender, 
+    to: 'tinashydaniel@gmail.com', 
+    subject: subject, 
+    text: text
+  };
+
+  mailTransporter.sendMail(mailDetails, (err, data) => { 
+    if(err) { 
+        req.flash("error", err); 
+    } else { 
+        req.flash("success", "Message sent successfully");
         res.redirect("/");
     } 
   });
