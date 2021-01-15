@@ -33,7 +33,8 @@ router.post("/newsletter", (req, res) => {
   let mailDetails = { 
     from: sender, 
     to: 'tinashydaniel@gmail.com', 
-    subject: 'New sub to newsletter! 🎉', 
+    subject: 'New sub to newsletter! 🎉',
+    //Use proper html tags here to construct a more beautifull email 
     text: `Save ${sendersEmail} to newsletter mailing list`
   };
 
@@ -54,6 +55,7 @@ router.post("/message", (req, res) => {
   const sendersName = `${req.body.name}`;
   //subject is hardcoded in! a bad practice ik, will make it a variable asap
   const subject = "urAfro input | critiques";
+  //Use proper html tags here to construct a more beautifull email
   const text = `Hi, my name is ${sendersName}!  ${req.body.message}`;
 
   let mailDetails = { 
