@@ -40,7 +40,8 @@ router.post("/newsletter", (req, res) => {
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", err); 
+        req.flash("error", err);
+        res.redirect("/");
     } else { 
         req.flash("success", "Email sent successfully ✅");
         res.redirect("/");
@@ -68,6 +69,7 @@ router.post("/message", (req, res) => {
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
         req.flash("error", err); 
+        res.redirect("/");
     } else { 
         req.flash("success", "Message sent successfully");
         res.redirect("/");
