@@ -40,7 +40,7 @@ router.post("/newsletter", (req, res) => {
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", err);
+        req.flash("error", err.message);
         res.redirect("/");
     } else { 
         req.flash("success", "Email sent successfully ✅");
@@ -52,7 +52,7 @@ router.post("/newsletter", (req, res) => {
 //SENDING 'SEND-US-A-MESSAGE EMAIL TO GMAIL ACCOUNT
 router.post("/message", (req, res) => {
   //saving inputs from landing.ejs <send-us-a-message> div to variables
-  const sender = `${req.body.email}`;
+  const sender = 12;
   const sendersName = `${req.body.name}`;
   //subject is hardcoded in! a bad practice ik, will make it a variable asap
   const subject = "urAfro input | critiques";
@@ -68,7 +68,7 @@ router.post("/message", (req, res) => {
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", err); 
+        req.flash("error", err.message); 
         res.redirect("/");
     } else { 
         req.flash("success", "Message sent successfully");
