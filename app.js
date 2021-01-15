@@ -36,13 +36,6 @@ app.use(methodOverride("_method"));
 //Setting up flash messages
 app.use(flash());
 
-//Connecting to MongoDB
-/* mongoose.connect("mongodb+srv://Dan:dan3%2321q@blog.bpkjc.mongodb.net/blog", {
-    useFindAndModify: false,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}); */
-
 mongoose.connect(process.env.DATABASEURL, {
     useNewUrlParser: true,
     useCreateIndex: true,
