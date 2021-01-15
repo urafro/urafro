@@ -52,7 +52,7 @@ router.post("/newsletter", (req, res) => {
 //SENDING 'SEND-US-A-MESSAGE EMAIL TO GMAIL ACCOUNT
 router.post("/message", (req, res) => {
   //saving inputs from landing.ejs <send-us-a-message> div to variables
-  const sender = 12;
+  const sender = `${req.body.email}`;
   const sendersName = `${req.body.name}`;
   //subject is hardcoded in! a bad practice ik, will make it a variable asap
   const subject = "urAfro input | critiques";
