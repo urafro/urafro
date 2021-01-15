@@ -12,6 +12,7 @@ const express = require("express"),
     LocalStrategyMongoose = require("passport-local-mongoose"),
     User = require("./models/user"),
     flash = require("connect-flash"),
+    nodemailer = require("nodemailer"),
     //figure out how to use moment js to change the date format in index.ejs
     moment = require('moment'),
     seedDB = require("./seeds"),

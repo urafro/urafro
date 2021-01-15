@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const passport = require("passport");
 const User = require("../models/user");
+const nodemailer = require("nodemailer");
 
 //Initial Route - Home ROute
 router.get("/", (req, res) => {
@@ -12,6 +13,37 @@ router.get("/", (req, res) => {
 //Projects App Route - placeholder (will develop a more 'cooler' app)
 router.get("/projects", (req, res) => {
   res.render("projects");
+});
+
+//nodemail SETUP - find a way to save these as environment veriables (the user & pass keys)
+let mailTransporter = nodemailer.createTransport({ 
+    service: 'gmail', 
+    auth: { 
+        user: 'tinashydaniel@gmail.com', 
+        pass: 'dashel123'
+    } 
+});  
+
+//SENDING NEWSLETTER EMAIL TO GMAIL ACCOUNT
+router.post("/newsletter", (req, res) => {
+  //saving email input from landing ejs form
+  const sender = `${req.body.newsletter}`;
+
+  let mailDetails = { 
+    from: sender, 
+    to: 'tinashydaniel@gmail.com', 
+    subject: 'Test mail', 
+    text: 'Node.js testing mail for GeeksforGeeks'
+  };
+
+  mailTransporter.sendMail(mailDetails, (err, data) => { 
+    if(err) { 
+        req.flash("error", err); 
+    } else { 
+        req.flash("success", "Email sent successfully");
+        res.redirect("/");
+    } 
+  });
 });
 
 //============================== Auth Routes =========================
