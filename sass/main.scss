@@ -13,6 +13,7 @@ $color-grey: #8C92AC;
 $color-instagram: #EE1092;
 $color-twitter: #0764F7;
 $color-github: #333;
+$color-reddit: #FF5700;
 
 $color-success: #16A085;
 $color-error: #FF3F34;
@@ -74,34 +75,29 @@ a {
   clear: both;
 }
 
+.fab {
+  transition: all .2s;
+}
+
 .fa-instagram:active,
 .fa-instagram:hover {
   color: $color-instagram;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
 }
 
 .fa-twitter:active,
 .fa-twitter:hover {
   color: $color-twitter;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
 }
 
 .fa-github:active,
 .fa-github:hover {
   color: $color-github;
+}
+
+.fa-reddit:active,
+.fa-reddit:hover {
+  color: $color-reddit;
   transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
 }
 
 /* ================= 

@@ -47,32 +47,25 @@ a {
   display: table;
   clear: both; }
 
+.fab {
+  transition: all .2s; }
+
 .fa-instagram:active,
 .fa-instagram:hover {
-  color: #EE1092;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s; }
+  color: #EE1092; }
 
 .fa-twitter:active,
 .fa-twitter:hover {
-  color: #0764F7;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s; }
+  color: #0764F7; }
 
 .fa-github:active,
 .fa-github:hover {
-  color: #333;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s; }
+  color: #333; }
+
+.fa-reddit:active,
+.fa-reddit:hover {
+  color: #FF5700;
+  transition: color .2s; }
 
 /* ================= 
     flash messages
