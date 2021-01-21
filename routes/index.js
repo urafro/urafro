@@ -17,7 +17,7 @@ router.get("/projects", (req, res) => {
 
 //nodemail SETUP - find a way to save these as environment veriables (the user & pass keys)
 let mailTransporter = nodemailer.createTransport({ 
-    service: 'gmail', 
+    service: process.env.EMAILSERVICE, 
     auth: { 
         user: process.env.EMAIL, 
         pass: process.env.EMAILPASS
