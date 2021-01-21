@@ -850,12 +850,6 @@ h3 {
       border: 0.1rem solid rgba(67, 35, 68, 0.3);
       color: inherit; }
     .form__inputs .form__input--text, .form__inputs .form__input--email {
-      /* 
-      obsolete styles to be deleted
-      height: 4.5rem;
-      line-height: 4.5rem; 
-      padding-left: 2rem; 
-      */
       padding: 1.5rem 1rem;
       border-radius: .5rem; }
     .form__inputs .form__input--submitBtn {
