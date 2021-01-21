@@ -77,6 +77,30 @@ router.post("/message", (req, res) => {
   });
 });
 
+//SENDING 'SUBSCRIBE-TO-PROJECTS-UPDATES' EMAIL TO GMAIL ACCOUNT
+router.post("/projects", (req, res) => {
+  //saving email input from landing ejs form
+  const sender = `${req.body.email}`;
+
+  let mailDetails = { 
+    from: sender, 
+    to: 'tinashydaniel@gmail.com', 
+    subject: 'New sub to projects app updates! 🎉',
+    //Use proper html tags here to construct a more beautifull email 
+    text: `Save ${sender} to Projects App mailing list`
+  };
+
+  mailTransporter.sendMail(mailDetails, (err, data) => { 
+    if(err) { 
+        req.flash("error", "Kindly use our social media to get in touch while we fix our email!");
+        res.redirect("/");
+    } else { 
+        req.flash("success", "Email sent successfully ✅");
+        res.redirect("/");
+    } 
+  });
+});
+
 //============================== Auth Routes =========================
 //register form route
 router.get("/signup", (req, res) => {
