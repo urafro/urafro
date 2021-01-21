@@ -19,8 +19,8 @@ router.get("/projects", (req, res) => {
 let mailTransporter = nodemailer.createTransport({ 
     service: 'gmail', 
     auth: { 
-        user: 'tinashydaniel@gmail.com', 
-        pass: 'dashel123'
+        user: process.env.EMAIL, 
+        pass: process.env.EMAILPASS
     } 
 });  
 
