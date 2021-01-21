@@ -32,7 +32,7 @@ router.post("/newsletter", (req, res) => {
 
   let mailDetails = { 
     from: sender, 
-    to: 'tinashydaniel@gmail.com', 
+    to: process.env.EMAIL, 
     subject: 'New sub to newsletter! 🎉',
     //Use proper html tags here to construct a more beautifull email 
     text: `Save ${sendersEmail} to newsletter mailing list`
@@ -61,7 +61,7 @@ router.post("/message", (req, res) => {
 
   let mailDetails = { 
     from: sender, 
-    to: 'tinashydaniel@gmail.com', 
+    to: process.env.EMAIL, 
     subject: subject, 
     text: text
   };
@@ -84,7 +84,7 @@ router.post("/projects", (req, res) => {
 
   let mailDetails = { 
     from: sender, 
-    to: 'tinashydaniel@gmail.com', 
+    to: process.env.EMAIL, 
     subject: 'New sub to projects app updates! 🎉',
     //Use proper html tags here to construct a more beautifull email 
     text: `Save ${sender} to Projects App mailing list`
