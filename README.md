@@ -1,2 +1,3 @@
 # RESTful_blogApp
-Displaying the use of RESTful routing with a simple blog app
+NodeJS CMS system built on a RESTful API.
+Technologies: HTML, CSS (SCSS), JavaScript
