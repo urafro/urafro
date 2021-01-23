@@ -905,7 +905,7 @@
     width: 80%;
   }
 
-  div.main-heading h2 {
+  div.main-heading h1 {
     font-size: 90%;
   }
 
@@ -1501,11 +1501,11 @@
     width: 85%;
   }
 
-  div.main-heading h2 {
+  div.main-heading h1 {
     font-size: 105%;
   }
 
-  div.main-heading h2:after,
+  div.main-heading h1:after,
   div.intro-paragraph:after {
     width: 100px;
   }

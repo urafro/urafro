@@ -14,6 +14,9 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
 /* =====================================
             REUSABLE CODE
 ======================================= */
@@ -221,11 +224,6 @@ a {
 /* ====================
   landing page styles
 ===================== */
-section h1,
-h2,
-h3 {
-  font-weight: 300; }
-
 /* ======
 
 greeting styles 
@@ -2261,7 +2259,7 @@ li form button:active {
 .show-content .text-wrap {
   white-space: pre-wrap; }
 
-.main-heading h2 {
+.main-heading h1 {
   font-size: 110%;
   margin-bottom: 20px;
   position: relative;
@@ -2288,7 +2286,7 @@ li form button:active {
     opacity: 1;
     top: 0; } }
 
-.main-heading h2:after {
+.main-heading h1:after {
   display: block;
   height: 1px;
   background-color: rgba(231, 238, 251, 0.5);

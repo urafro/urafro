@@ -94,7 +94,7 @@
       <div class="show-heading">
 
         <div class="main-heading">
-          <h2><%= blog.body.header.mainHeading %></h2>
+          <h1><%= blog.body.header.mainHeading %></h1>
         </div>
 
         <div class="intro-paragraph">
@@ -203,7 +203,7 @@
 
               <form action="/blogs/<%= blog._id %>/comments/" method="post">
 
-                <textarea placeholder="Write your comment here" name="commentText"></textarea>
+                <textarea placeholder="Opinions — Share yours. Congratulate 'n educate 🗣" name="commentText"></textarea>
 
                 <div>    
                   <% if(currentUser) { %>
