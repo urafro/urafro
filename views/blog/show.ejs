@@ -157,10 +157,11 @@
             <% blog.comments.forEach((comment) => { %>
               <li class="comment author-comment">
 
-                <div class="info">
+                <!-- Try to come up with a way of putting these inside the comment text div for thematic purposes | easy on the eye -->
+                <!-- <div class="info">
                   <a href="#"><%= comment.author.username %></a>
                   <span>3 hours ago</span>
-                </div>
+                </div> -->
 
                 <a class="avatar" href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/replies/new">
                   <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="<%= comment.author.username %>" />
@@ -177,10 +178,11 @@
                 <% comment.replies.forEach((reply) => { %>
                   <li class="comment user-comment">
 
-                    <div class="info">
+                    <!-- Try to come up with a way of putting these inside the comment text div for thematic purposes | easy on the eye -->
+                    <!-- <div class="info">
                       <a href="#"><%= reply.author.username %></a>
                       <span>1 hour ago</span>
-                    </div>
+                    </div> -->
 
                     <a class="avatar" href="#">
                       <img src="<%= reply.author.avatarUrl %>" width="35" alt="Profile Avatar" title="<%= reply.author.username %>" />
