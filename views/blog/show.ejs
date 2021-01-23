@@ -152,7 +152,7 @@
     
           <ul class="comment-section">
 
-            <h3>Comments</h3>
+            <h2>The Convo<span class='commentHeadSpan'>...</span></h2>
 
             <% blog.comments.forEach((comment) => { %>
               <li class="comment author-comment">
@@ -163,7 +163,7 @@
                 </div>
 
                 <a class="avatar" href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/replies/new">
-                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Comment Author" />
+                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="<%= comment.author.username %>" />
                 </a>
 
                 <p>
@@ -183,7 +183,7 @@
                     </div>
 
                     <a class="avatar" href="#">
-                      <img src="<%= reply.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                      <img src="<%= reply.author.avatarUrl %>" width="35" alt="Profile Avatar" title="<%= reply.author.username %>" />
                     </a>
 
                     <p>
@@ -203,9 +203,15 @@
 
                 <textarea placeholder="Write your comment here" name="commentText"></textarea>
 
-                <div>
-                  <img src="<%= blog.author.avatarUrl %>" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
-                  <button type="submit">comment</button>
+                <div>    
+                  <% if(currentUser) { %>
+                    <!-- show current user image next to comment button if user is logged in -->
+                    <img src="<%= currentUser.avatarUrl %>" width="35" alt="Profile of <%= currentUser.username %>" title="<%= currentUser.username %>" />
+                  <% } else { %>
+                    <!-- show blog owner image next to comment button if no user is logged in -->
+                    <img src="<%= blog.author.avatarUrl %>" width="35" alt="Profile of <%= blog.author.username %>" title="<%= blog.author.username %>" />
+                  <% } %>
+                  <button class="bdb bdb-ghost" type="submit">comment</button>
                 </div>
 
               </form>

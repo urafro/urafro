@@ -2546,18 +2546,26 @@ li form button:active {
   max-width: 800px;
   width: 100%;
   margin: 50px auto;
-  padding: 10px; }
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #E7EEFB; }
 
-.comment-section h3 {
+.comment-section h2 {
   text-align: center;
-  margin-bottom: 20px; }
+  font-family: 'Caveat', cursive;
+  margin-bottom: 30px;
+  font-weight: 400; }
+
+.comment-section p {
+  margin-bottom: 0; }
 
 .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 3px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -2627,13 +2635,15 @@ li form button:active {
   padding: 18px 22px;
   width: 50%;
   position: relative;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  border-radius: 150px; }
 
 .comment.user-comment p {
-  background-color: #f3f3f3; }
+  background-color: rgba(255, 192, 61, 0.2); }
 
 .comment.author-comment p {
-  background-color: #e2f8ff;
+  background-color: rgba(255, 37, 37, 0.9);
+  color: #FFF;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1; }
@@ -2644,8 +2654,8 @@ li form button:active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #f3f3f3;
+  background-color: #FFF;
+  border: 2px solid #E7EEFB;
   left: -8px;
   top: 18px; }
 
@@ -2655,8 +2665,8 @@ li form button:active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #e2f8ff;
+  background-color: #FFF;
+  border: 2px solid #FFC03D;
   right: -8px;
   top: 18px; }
 
@@ -2666,11 +2676,11 @@ li form button:active {
   width: 50%; }
 
 .write-new textarea {
-  color: #444;
+  color: #100c08;
   font: inherit;
   outline: 0;
   border-radius: 3px;
-  border: 1px solid #cecece;
+  border: 1px dashed #cecece;
   background-color: #fefefe;
   -webkit-box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.06);
@@ -2686,15 +2696,6 @@ li form button:active {
 
 .write-new button {
   float: right;
-  background-color: #87bae1;
-  -webkit-box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 2px;
-  border: 0;
-  color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px 25px;
   margin-top: 18px; }
 
 /* Responsive styles */
