@@ -177,7 +177,7 @@ a {
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: rgba(16, 12, 8, 0.8);
+  background: #FFC03D;
   overflow: hidden;
   transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
@@ -197,12 +197,12 @@ a {
   padding: 16px;
   text-decoration: none;
   font-size: 18px;
-  color: #FFF;
+  color: #100c08;
   display: block; }
 
 .menu-content a:active,
 .menu-content a:hover {
-  background-color: rgba(255, 37, 37, 0.3);
+  background-color: #cf920d;
   transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;

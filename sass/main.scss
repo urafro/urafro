@@ -230,7 +230,7 @@ $color-secondary-brown: #cf920d;
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: rgba($color-black, .8);
+  background: $color-primary-brown;
   overflow: hidden;
   transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
@@ -252,13 +252,13 @@ $color-secondary-brown: #cf920d;
   padding: 16px;
   text-decoration: none;
   font-size: 18px;
-  color: $color-white;
+  color: $color-black;
   display: block;
 }
 
 .menu-content a:active,
 .menu-content a:hover {
-  background-color: rgba($color-primary-red, 0.3);
+  background-color: $color-secondary-brown;
   transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
