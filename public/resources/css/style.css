@@ -424,7 +424,9 @@ greeting styles
   animation: 1s h1slideRight 2s ease-in forwards;
   -webkit-animation: 1s h1slideRight 2s ease-in forwards;
   opacity: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  border-left: 0px solid #FF2525;
+  padding-left: 0px; }
 
 @keyframes h1slideRight {
   50% {

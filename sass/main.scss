@@ -527,6 +527,8 @@ greeting styles
   -webkit-animation: 1s h1slideRight 2s ease-in forwards;
   opacity: 0;
   font-weight: 400;
+  border-left: 0px solid $color-primary-red;
+  padding-left: 0px;
 }
 
 @keyframes h1slideRight {
