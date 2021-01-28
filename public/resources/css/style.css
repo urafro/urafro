@@ -234,7 +234,7 @@ greeting styles
   /* height to be adjusted after i'm done with all corresponding styles */
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(20, 30, 48, 0.7), #243b55), url("/resources/img/greetings.jpg");
+  background-image: linear-gradient(rgba(255, 30, 48, 0.3), #ff3b55), url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -809,7 +809,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(#ff2525, rgba(255, 37, 37, 0.8)), url("/resources/img/founder.jpeg");
+  background-image: linear-gradient(rgba(255, 30, 48, 0.3), #ff3b55), url("/resources/img/founder.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2187,7 +2187,7 @@ li form button {
   font-size: 70%;
   margin: 0;
   text-decoration: none;
-  color: rgba(251, 98, 58, 0.5);
+  color: rgba(255, 30, 48, 0.5);
   font-family: sans-serif;
   cursor: pointer;
   text-align: center;
