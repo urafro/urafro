@@ -20,6 +20,7 @@ $color-error: #FF3F34;
 
 $color-bg1: rgb(255, 30, 48);
 $color-bg2: rgb(255, 59, 85);
+$color-bg3: #EEEEEE;
 
 * {
   margin: 0;
@@ -637,8 +638,8 @@ greeting styles
   background-color: $color-white;
   padding: 100px 0;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px $color-primary-light;
-  box-shadow: 0 5px 15px $color-primary-light;
+  -webkit-box-shadow: 0 5px 15px $color-bg3;
+  box-shadow: 0 5px 15px $color-bg3;
   position: relative;
   top: -20px;
 }
@@ -756,7 +757,7 @@ greeting styles
   padding: 30px 30px;
   border-radius: 5px;
   background-color: $color-white;
-  box-shadow: 0 5px 5px $color-primary-light;
+  box-shadow: 0 5px 5px $color-bg3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1026,7 +1027,7 @@ section.about-us {
 .numbers .box i {
   font-size: 160%;
   margin-right: 20px;
-  color: $color-primary-light;
+  color: rgba($color-black, .2);
 }
 
 .numbers .box h5 {
@@ -1074,8 +1075,8 @@ section.about-us {
   border-radius: 5px;
   position: relative;
   top: -180px;
-  -webkit-box-shadow: 0 5px 5px $color-primary-light;
-  box-shadow: 0 5px 5px $color-primary-light;
+  -webkit-box-shadow: 0 5px 5px $color-bg3;
+  box-shadow: 0 5px 5px $color-bg3;
 }
 
 .testimonials .box p:before {
@@ -1084,7 +1085,7 @@ section.about-us {
   content: "\201C";
   position: relative;
   bottom: 5px;
-  color: $color-black;
+  color: rgba($color-black, .2);
   font-size: 120px;
   font-weight: 400;
 }
@@ -1260,7 +1261,7 @@ section.about-us {
   -ms-flex: 1;
   flex: 1;
   background-color: $color-primary-light;
-  box-shadow: 0 5px 15px $color-primary-light;
+  box-shadow: 0 5px 15px $color-bg3;
   padding: 50px 0 50px 30px;
   position: relative;
   right: 65px;
@@ -2241,7 +2242,7 @@ label {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0 5px 15px $color-primary-light;
+  box-shadow: 0 5px 15px $color-bg3;
 }
 
 .content-inputs h2 {
@@ -2980,7 +2981,7 @@ li form button:active {
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
-  box-shadow: 0 5px 15px $color-primary-light;
+  box-shadow: 0 5px 15px $color-bg3;
 }
 
 .comment-section h2 {

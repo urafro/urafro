@@ -516,8 +516,8 @@ greeting styles
   background-color: #FFF;
   padding: 100px 0;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px #f9f9f9;
-  box-shadow: 0 5px 15px #f9f9f9;
+  -webkit-box-shadow: 0 5px 15px #EEEEEE;
+  box-shadow: 0 5px 15px #EEEEEE;
   position: relative;
   top: -20px; }
 
@@ -616,7 +616,7 @@ greeting styles
   padding: 30px 30px;
   border-radius: 5px;
   background-color: #FFF;
-  box-shadow: 0 5px 5px #f9f9f9;
+  box-shadow: 0 5px 5px #EEEEEE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -853,7 +853,7 @@ section.about-us {
 .numbers .box i {
   font-size: 160%;
   margin-right: 20px;
-  color: #f9f9f9; }
+  color: rgba(16, 12, 8, 0.2); }
 
 .numbers .box h5 {
   font-size: 110%;
@@ -893,8 +893,8 @@ section.about-us {
   border-radius: 5px;
   position: relative;
   top: -180px;
-  -webkit-box-shadow: 0 5px 5px #f9f9f9;
-  box-shadow: 0 5px 5px #f9f9f9; }
+  -webkit-box-shadow: 0 5px 5px #EEEEEE;
+  box-shadow: 0 5px 5px #EEEEEE; }
 
 .testimonials .box p:before {
   display: block;
@@ -902,7 +902,7 @@ section.about-us {
   content: "\201C";
   position: relative;
   bottom: 5px;
-  color: #100c08;
+  color: rgba(16, 12, 8, 0.2);
   font-size: 120px;
   font-weight: 400; }
 
@@ -1056,7 +1056,7 @@ section.about-us {
   -ms-flex: 1;
   flex: 1;
   background-color: #f9f9f9;
-  box-shadow: 0 5px 15px #f9f9f9;
+  box-shadow: 0 5px 15px #EEEEEE;
   padding: 50px 0 50px 30px;
   position: relative;
   right: 65px; }
@@ -1892,7 +1892,7 @@ label {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0 5px 15px #f9f9f9; }
+  box-shadow: 0 5px 15px #EEEEEE; }
 
 .content-inputs h2 {
   padding: 20px;
@@ -2519,7 +2519,7 @@ li form button:active {
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
-  box-shadow: 0 5px 15px #f9f9f9; }
+  box-shadow: 0 5px 15px #EEEEEE; }
 
 .comment-section h2 {
   text-align: center;
