@@ -2,7 +2,7 @@
               UNIVERSAL STYLES
 =============================================*/
 $color-primary-dark: #432344;
-$color-primary-light: #E7EEFB;
+$color-primary-light: #f9f9f9;
 $color-primary-red: #FF2525;
 $color-primary-brown: #FFC03D;
 
@@ -1259,6 +1259,7 @@ section.about-us {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  background-color: $color-primary-light;
   box-shadow: 0 5px 15px $color-primary-light;
   padding: 50px 0 50px 30px;
   position: relative;

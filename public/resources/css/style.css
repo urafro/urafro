@@ -503,7 +503,7 @@ greeting styles
 
 /*===================*/
 .intro {
-  background-color: #E7EEFB; }
+  background-color: #f9f9f9; }
 
 /* larger nested container */
 .intro-div {
@@ -516,8 +516,8 @@ greeting styles
   background-color: #FFF;
   padding: 100px 0;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px #E7EEFB;
-  box-shadow: 0 5px 15px #E7EEFB;
+  -webkit-box-shadow: 0 5px 15px #f9f9f9;
+  box-shadow: 0 5px 15px #f9f9f9;
   position: relative;
   top: -20px; }
 
@@ -616,7 +616,7 @@ greeting styles
   padding: 30px 30px;
   border-radius: 5px;
   background-color: #FFF;
-  box-shadow: 0 5px 5px #E7EEFB;
+  box-shadow: 0 5px 5px #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -853,7 +853,7 @@ section.about-us {
 .numbers .box i {
   font-size: 160%;
   margin-right: 20px;
-  color: #E7EEFB; }
+  color: #f9f9f9; }
 
 .numbers .box h5 {
   font-size: 110%;
@@ -864,7 +864,7 @@ section.about-us {
 ================= */
 .testimonials .header {
   text-align: center;
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   padding: 100px 0 150px 0; }
 
 .testimonials .header span:first-of-type {
@@ -893,8 +893,8 @@ section.about-us {
   border-radius: 5px;
   position: relative;
   top: -180px;
-  -webkit-box-shadow: 0 5px 5px #E7EEFB;
-  box-shadow: 0 5px 5px #E7EEFB; }
+  -webkit-box-shadow: 0 5px 5px #f9f9f9;
+  box-shadow: 0 5px 5px #f9f9f9; }
 
 .testimonials .box p:before {
   display: block;
@@ -949,7 +949,7 @@ section.about-us {
 .newsletter-form p {
   margin: 0 auto;
   width: 90%;
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-size: initial;
   margin-bottom: 50px; }
 
@@ -960,7 +960,7 @@ section.about-us {
   line-height: 45px;
   width: 80%;
   padding: 0 40px;
-  color: #E7EEFB;
+  color: #f9f9f9;
   border: 2px solid rgba(67, 35, 68, 0.7);
   background-color: rgba(67, 35, 68, 0.3);
   border-radius: 120px;
@@ -982,11 +982,11 @@ section.about-us {
   background-color: rgba(67, 35, 68, 0.7); }
 
 .newsletter-form input[type="email"]::-webkit-input-placeholder {
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-style: italic; }
 
 .newsletter-form input[type="email"]::placeholder {
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-style: italic; }
 
 .newsletter-form input[type="submit"] {
@@ -1055,7 +1055,8 @@ section.about-us {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  box-shadow: 0 5px 15px #E7EEFB;
+  background-color: #f9f9f9;
+  box-shadow: 0 5px 15px #f9f9f9;
   padding: 50px 0 50px 30px;
   position: relative;
   right: 65px; }
@@ -1194,12 +1195,12 @@ section.about-us {
 
 .f-text p {
   line-height: 150%;
-  color: #E7EEFB;
+  color: #f9f9f9;
   width: 95%;
   margin-bottom: 10px; }
 
 .footer-card a i {
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-size: 120%;
   margin: 10px 5px 0 0; }
 
@@ -1219,8 +1220,8 @@ section.about-us {
   padding: 10px 0; }
 
 .f-posts:nth-of-type(even) {
-  border-top: 1px solid rgba(231, 238, 251, 0.5);
-  border-bottom: 1px solid rgba(231, 238, 251, 0.5); }
+  border-top: 1px solid rgba(249, 249, 249, 0.5);
+  border-bottom: 1px solid rgba(249, 249, 249, 0.5); }
 
 .footer-card img {
   height: 76px;
@@ -1351,7 +1352,7 @@ section.about-us {
   font-weight: 300;
   text-decoration: none;
   font-size: 200%;
-  color: #E7EEFB; }
+  color: #f9f9f9; }
 
 /* ===================
     Showcase section
@@ -1652,7 +1653,7 @@ section.about-us {
 
 .card-text p {
   font-size: 70%;
-  color: rgba(231, 238, 251, 0.7);
+  color: rgba(249, 249, 249, 0.7);
   font-family: 'Caveat', cursive; }
 
 .card-tag {
@@ -1668,7 +1669,7 @@ section.about-us {
 .card-tag a:link,
 .card-tag a:visited {
   font-size: 90%;
-  color: #E7EEFB;
+  color: #f9f9f9;
   padding: 5px 16px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -1751,7 +1752,7 @@ section.about-us {
   padding: 50px;
   padding-left: 0;
   background: rgba(255, 37, 37, 0.7);
-  color: #E7EEFB;
+  color: #f9f9f9;
   font-size: 80%;
   width: 100%;
   position: absolute;
@@ -1891,7 +1892,7 @@ label {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0 5px 15px #E7EEFB; }
+  box-shadow: 0 5px 15px #f9f9f9; }
 
 .content-inputs h2 {
   padding: 20px;
@@ -1947,7 +1948,7 @@ select {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 0 !important;
-  background: #E7EEFB;
+  background: #f9f9f9;
   background-image: none; }
 
 /* Remove IE arrow */
@@ -1963,7 +1964,7 @@ select::-ms-expand {
   width: 50%;
   height: 50px;
   line-height: 3;
-  background: #E7EEFB;
+  background: #f9f9f9;
   overflow: hidden;
   border-radius: .25em; }
 
@@ -1976,7 +1977,7 @@ select {
   cursor: pointer;
   font-size: 85%;
   font-weight: 300;
-  background: #E7EEFB;
+  background: #f9f9f9;
   font-family: inherit; }
 
 /* Arrow */
@@ -1987,7 +1988,7 @@ select {
   right: 0;
   padding: 0 1em;
   color: rgba(255, 37, 37, 0.7);
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   cursor: pointer;
   pointer-events: none;
   -webkit-transition: .5s all ease;
@@ -1999,7 +2000,7 @@ select {
 /* Transition */
 .select:hover::after {
   color: #100c08;
-  background: #E7EEFB; }
+  background: #f9f9f9; }
 
 /* input styles */
 .box-content {
@@ -2260,7 +2261,7 @@ li form button:active {
 .main-heading h1:after {
   display: block;
   height: 1px;
-  background-color: rgba(231, 238, 251, 0.5);
+  background-color: rgba(249, 249, 249, 0.5);
   content: " ";
   width: 200px;
   margin: 0 auto;
@@ -2297,7 +2298,7 @@ li form button:active {
   display: block;
   height: 1px;
   content: " ";
-  background-color: rgba(231, 238, 251, 0.5);
+  background-color: rgba(249, 249, 249, 0.5);
   width: 200px;
   margin-top: 20px;
   margin: 0 auto; }
@@ -2352,14 +2353,14 @@ li form button:active {
   font-size: 110%;
   margin-top: 50px;
   margin-bottom: 5px;
-  border-top: 2px solid rgba(231, 238, 251, 0.5);
+  border-top: 2px solid rgba(249, 249, 249, 0.5);
   padding-top: 20px; }
 
 .show-backlinks p {
   margin-left: 2px;
   color: rgba(16, 12, 8, 0.5);
   font-size: 90%;
-  border-bottom: 2px solid rgba(231, 238, 251, 0.5);
+  border-bottom: 2px solid rgba(249, 249, 249, 0.5);
   padding-bottom: 30px; }
 
 .show-backlinks p a {
@@ -2518,7 +2519,7 @@ li form button:active {
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
-  box-shadow: 0 5px 15px #E7EEFB; }
+  box-shadow: 0 5px 15px #f9f9f9; }
 
 .comment-section h2 {
   text-align: center;
@@ -2624,7 +2625,7 @@ li form button:active {
   height: 15px;
   border-radius: 50%;
   background-color: #FFF;
-  border: 2px solid #E7EEFB;
+  border: 2px solid #f9f9f9;
   left: -8px;
   top: 18px; }
 
@@ -2743,7 +2744,7 @@ div.box-content.auth h5 a:hover {
       PROJECTS APP STYLES
 ============================ */
 .projects {
-  background-color: #E7EEFB;
+  background-color: #f9f9f9;
   height: 100vh;
   width: 100vw;
   display: flex;
