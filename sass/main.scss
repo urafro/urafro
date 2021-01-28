@@ -502,16 +502,9 @@ greeting styles
   -webkit-animation: 1s spanSlideRight 1s ease-in forwards;
 }
 
-@-webkit-keyframes spanSlideRight {
-  100% {
-    opacity: 0.6;
-    margin-left: 0;
-  }
-}
-
 @keyframes spanSlideRight {
   100% {
-    opacity: 0.6;
+    opacity: .8;
     margin-left: 0;
   }
 }
