@@ -424,7 +424,7 @@ greeting styles
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  color: $color-black;
+  color: $color-white;
   font-weight: 400;
   font-size: 95%;
   transition: border-bottom .2s, color .2s;
@@ -447,7 +447,7 @@ greeting styles
 
 .main-nav .nav-b:hover,
 .main-nav .nav-b:active {
-  color: $color-white;
+  color: rgba($color-white, .8);
   padding-bottom: 5px;
   border-bottom: 3px solid $color-primary-red;
 }
