@@ -985,35 +985,8 @@ section.about-us {
 
 .founder .image-text a:link,
 .founder .image-text a:visited {
-  transition: background-color 1s;
-  -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -ms-transition: background-color 1s;
-  -o-transition: background-color 1s;
-}
-
-.founder .image-text a:hover,
-.founder .image-text a:active {
-  background-color: rgba($color-primary-light, 0.1);
-}
-
-.founder .image-text h2 {
-  font-size: 170%;
-  font-weight: 400;
-  color: $color-white;
-  padding: 30px;
-  border: 1px solid $color-white;
-  border-radius: 2px;
-}
-
-.founder .image-text h2 span {
-  color: $color-white;
-  opacity: 0.5;
-  text-transform: uppercase;
-  font-size: 50%;
-  font-weight: 400;
+  font-family: "Caveat", cursive;
   letter-spacing: .5px;
-  margin-right: 5px;
 }
 
 /* ==============
