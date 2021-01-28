@@ -808,7 +808,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(rgba(255, 192, 61, 0.3), rgba(255, 192, 61, 0.3)), url("/resources/img/founder.jpeg");
+  background-image: linear-gradient(#ff2525, rgba(255, 37, 37, 0.8)), url("/resources/img/founder.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
