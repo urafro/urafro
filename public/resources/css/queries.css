@@ -1074,7 +1074,7 @@
 
   div.intro-div .give,
   div.intro-div .receive {
-    margin-top: 40px;
+    display: none;
   }
 
   /* how-it-works */
