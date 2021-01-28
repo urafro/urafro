@@ -898,7 +898,7 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: $color-primary-bg2;
+  background-color: $color-primary-brown;
 }
 
 .founder .text {
@@ -975,9 +975,9 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)),
+  background-image: linear-gradient(rgba($color-primary-brown, 0.3), rgba($color-primary-brown, 0.3)),
     url("/resources/img/founder.jpeg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
