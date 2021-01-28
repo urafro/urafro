@@ -2073,23 +2073,19 @@ section.about-us {
   margin-top: 10px;
   font-size: 80%;
   margin-bottom: 35px;
-  transition: all .2s;
 }
 
 .showcase-text .show-link a:link,
 .showcase-text .show-link a:visited {
   color: rgba($color-black, .5);
-  border-bottom: 1px solid rgba($color-black, .5);
+  border-bottom: 1px solid rgba($color-primary-red, .5);
+  transition: all .5s;
 }
 
 .showcase-text .show-link a:active,
 .showcase-text .show-link a:hover {
+  border-bottom: 2px solid $color-primary-red;
   color: $color-black;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
 }
 
 .showcase-text::after {

@@ -1751,22 +1751,18 @@ section.about-us {
 .showcase-text .show-link {
   margin-top: 10px;
   font-size: 80%;
-  margin-bottom: 35px;
-  transition: all .2s; }
+  margin-bottom: 35px; }
 
 .showcase-text .show-link a:link,
 .showcase-text .show-link a:visited {
   color: rgba(16, 12, 8, 0.5);
-  border-bottom: 1px solid rgba(16, 12, 8, 0.5); }
+  border-bottom: 1px solid rgba(255, 37, 37, 0.5);
+  transition: all .5s; }
 
 .showcase-text .show-link a:active,
 .showcase-text .show-link a:hover {
-  color: #100c08;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s; }
+  border-bottom: 2px solid #FF2525;
+  color: #100c08; }
 
 .showcase-text::after {
   content: "";
