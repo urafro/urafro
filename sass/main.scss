@@ -529,15 +529,16 @@ greeting styles
   font-weight: 400;
 }
 
-@-webkit-keyframes h1slideRight {
-  100% {
+@keyframes h1slideRight {
+  50% {
     opacity: 1;
     left: 0;
+    padding-left: 0;
   }
-}
 
-@keyframes h1slideRight {
   100% {
+    border-left: 5px solid $color-primary-red;
+    padding-left: 20px;
     opacity: 1;
     left: 0;
   }
