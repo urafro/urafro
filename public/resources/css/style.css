@@ -739,7 +739,8 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FB623A; }
+  background-color: #FFC03D;
+  }
 
 .founder .text {
   -webkit-box-flex: 1;
@@ -808,8 +809,9 @@ section.about-us {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(rgba(16, 12, 8, 0.8), rgba(16, 12, 8, 0.8)), url("/resources/img/founder.jpeg");
-  background-size: 100%;
+  /* rgb(255,192,61) */
+  background-image: linear-gradient(rgba(255, 192, 61, 0.8), rgba(255, 192, 61, 0.5)), url("/resources/img/founder.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; }
