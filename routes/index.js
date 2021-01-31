@@ -28,7 +28,6 @@ let mailTransporter = nodemailer.createTransport({
 router.post("/newsletter", (req, res) => {
   //saving email input from landing ejs form
   const sender = `${req.body.newsletter}`;
-  const sendersEmail = req.body.newsletter;
 
   let mailDetails = { 
     from: sender, 
@@ -40,7 +39,7 @@ router.post("/newsletter", (req, res) => {
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", "Kindly use our social media to get in touch while we fix our email!");
+        req.flash("error", "Well, this is embarassing 😅. Email seems down atm. Kindly use our socials to get in touch");
         res.redirect("/");
     } else { 
         req.flash("success", "Email sent successfully ✅");
@@ -57,18 +56,18 @@ router.post("/message", (req, res) => {
   //subject is hardcoded in! a bad practice ik, will make it a variable asap
   const subject = "urAfro input | critiques";
   //Use proper html tags here to construct a more beautifull email
-  const text = `Hi, my name is ${sendersName}!  ${req.body.message}`;
+  const html = `<h3>Name:  ${sendersName}</h3> <h3>Email: ${sender}</h3> <p>Message: ${req.body.message}</p>`;
 
   let mailDetails = { 
     from: sender, 
     to: process.env.EMAIL, 
     subject: subject, 
-    text: text
+    html: html
   };
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", "Kindly use our social media to get in touch while we fix our email!"); 
+        req.flash("error", "Well, this is embarassing 😅. Email seems down atm. Kindly use our socials to get in touch"); 
         res.redirect("/");
     } else { 
         req.flash("success", "Message sent successfully");
@@ -92,7 +91,7 @@ router.post("/projects", (req, res) => {
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", "Kindly use our social media to get in touch while we fix our email!");
+        req.flash("error", "Well, this is embarassing 😅. Email seems down atm. Kindly use our socials to get in touch");
         res.redirect("/");
     } else { 
         req.flash("success", "Email sent successfully ✅");
