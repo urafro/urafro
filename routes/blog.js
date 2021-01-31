@@ -61,6 +61,13 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
         sectionFour: {
           smallestHeading: req.body.blog.smallestHeading,
           lastParagraph: req.body.blog.lastParagraph
+        },
+        sectionFive: {
+          youtubeLink: req.body.blog.youtubeLink,
+          redditLink: req.body.blog.redditLink,
+          twitterLink: req.body.blog.twitterLink,
+          instagramLink: req.body.blog.instagramLink,
+          externalLink: req.body.blog.externalLink
         }
       }
     },
@@ -185,6 +192,13 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
         sectionFour: {
           smallestHeading: req.body.blog.smallestHeading,
           lastParagraph: req.body.blog.lastParagraph
+        },
+        sectionFive: {
+          linkOne: req.body.blog.linkOne,
+          linkTwo: req.body.blog.linkTwo,
+          linkThree: req.body.blog.linkThree,
+          linkFour: req.body.blog.linkFour,
+          linkFive: req.body.blog.linkFive
         }
       }
     }

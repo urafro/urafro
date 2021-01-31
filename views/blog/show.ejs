@@ -90,6 +90,48 @@
     </div>
     <% } %>
 
+    <% if((!currentUser || !currentUser._id.equals(blog.author.id)) && blog.body.content.sectionFive) { %>
+    <div class="show-menu">
+      <ul>
+        <!-- link to youtube episode -->
+        <li>
+          <a href="<%= blog.body.content.sectionFive.youtubeLink %>" target="_blank">
+            <span class="admenu-tooltip bdb bdb-ghost">Youtube</span><i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        
+        <!-- link to reddit discussion -->
+        <li>
+          <a href="<%= blog.body.content.sectionFive.redditLink %>" target="_blank">
+            <span class="admenu-tooltip bdb bdb-ghost">Reddit</span><i class="fab fa-reddit-alien"></i>
+          </a>
+        </li>
+
+        <!-- link to twitter hashtag -->
+        <li>
+          <a href="<%= blog.body.content.sectionFive.twitterLink %>" target="_blank">
+            <span class="admenu-tooltip bdb bdb-ghost">Twitter</span><i class="fab fa-twitter"></i>
+          </a>
+        </li>
+
+        <!-- link to instagram hashtag/challenge -->
+        <li>
+          <a href="<%= blog.body.content.sectionFive.instagramLink %>" target="_blank">
+            <span class="admenu-tooltip bdb bdb-ghost">Insta</span><i class="fab fa-instagram"></i></i>
+          </a>
+        </li>
+
+        <!-- link to external story -->
+        <li>
+          <a href="<%= blog.body.content.sectionFive.externalLink %>" target="_blank">
+            <span class="admenu-tooltip bdb bdb-ghost">Link</span><i class="fas fa-link"></i></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <% } %>
+
     <div class="show-wrapper">
       <div class="show-heading">
 

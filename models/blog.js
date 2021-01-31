@@ -41,6 +41,13 @@ let BlogSchema = new mongoose.Schema({
       sectionFour: {
         smallestHeading: String,
         lastParagraph: String
+      },
+      sectionFive: {
+        youtubeLink: String,
+        redditLink: String,
+        twitterLink: String,
+        instagramLink: String,
+        externalLink: String
       }
     }
 
