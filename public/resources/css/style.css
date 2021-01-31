@@ -1753,8 +1753,7 @@ section.about-us {
 /* Index footer */
 .showcase footer,
 .showcase-2 footer {
-  height: 120px;
-  padding: 50px;
+  padding: 15px;
   padding-left: 0;
   background: rgba(255, 37, 37, 0.7);
   color: #f9f9f9;
@@ -2106,8 +2105,8 @@ div.content-text p a:visited {
 ***********************/
 .show-menu {
   position: fixed;
-  right: -25px;
-  top: 40%;
+  right: -10px;
+  top: 70%;
   opacity: 0;
   transform: translate(-40%);
   -webkit-transform: translate(-40%);
@@ -2115,7 +2114,8 @@ div.content-text p a:visited {
   -ms-transform: translate(-40%);
   -o-transform: translate(-40%);
   animation: admenuLeft 1s linear 3s forwards;
-  -webkit-animation: admenuLeft 1s linear 3s forwards; }
+  -webkit-animation: admenuLeft 1s linear 3s forwards;
+  background-color: #432344; }
 
 @-webkit-keyframes admenuLeft {
   100% {
@@ -2123,9 +2123,12 @@ div.content-text p a:visited {
     right: 0; } }
 
 @keyframes admenuLeft {
+  80% {
+    opacity: 1;
+    right: 5px; }
   100% {
     opacity: 1;
-    right: 0; } }
+    right: -10px; } }
 
 .show-menu ul {
   list-style: none;

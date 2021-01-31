@@ -1001,6 +1001,10 @@
     top: 15px;
   }
 
+  div.show-menu {
+    display: none;
+  }
+
   /* ================
   landing page styles
   ================= */

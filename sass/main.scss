@@ -2076,8 +2076,7 @@ section.about-us {
 /* Index footer */
 .showcase footer,
 .showcase-2 footer {
-  height: 120px;
-  padding: 50px;
+  padding: 15px;
   padding-left: 0;
   background: rgba($color-primary-red, 0.7);
   color: $color-primary-light;
@@ -2491,8 +2490,8 @@ div.content-text p a:visited {
 
 .show-menu {
   position: fixed;
-  right: -25px;
-  top: 40%;
+  right: -10px;
+  top: 70%;
   opacity: 0;
   transform: translate(-40%);
   -webkit-transform: translate(-40%);
@@ -2501,6 +2500,7 @@ div.content-text p a:visited {
   -o-transform: translate(-40%);
   animation: admenuLeft 1s linear 3s forwards;
   -webkit-animation: admenuLeft 1s linear 3s forwards;
+  background-color: $color-primary-dark;
 }
 
 @-webkit-keyframes admenuLeft {
@@ -2511,9 +2511,13 @@ div.content-text p a:visited {
 }
 
 @keyframes admenuLeft {
+  80% {
+    opacity: 1;
+    right: 5px;
+  }
   100% {
     opacity: 1;
-    right: 0;
+    right: -10px;
   }
 }
 
