@@ -12,7 +12,17 @@ html {
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow: -moz-scrollbars-none;
+  /* Older Version Firefox */ }
+
+html::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */ }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
