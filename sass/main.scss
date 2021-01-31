@@ -36,20 +36,6 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  
-  //hiding the scrollbar
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
-  overflow: -moz-scrollbars-none;
-  /* Older Version Firefox */
-}
-
-//hiding the scrollbar
-html::-webkit-scrollbar {
-  display: none;
-  /* Safari and Chrome */
 }
 
 h1,h2,h3,h4,h5,h6 {
