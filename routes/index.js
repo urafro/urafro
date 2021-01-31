@@ -17,10 +17,10 @@ router.get("/projects", (req, res) => {
 
 //nodemail SETUP - find a way to save these as environment veriables (the user & pass keys)
 let mailTransporter = nodemailer.createTransport({ 
-    service: 'gmail', 
+    service: process.env.EMAILSERVICE, 
     auth: { 
-        user: 'tinashydaniel@gmail.com', 
-        pass: 'dashel123'
+        user: process.env.EMAIL, 
+        pass: process.env.EMAILPASS
     } 
 });  
 
@@ -32,14 +32,16 @@ router.post("/newsletter", (req, res) => {
 
   let mailDetails = { 
     from: sender, 
-    to: 'tinashydaniel@gmail.com', 
-    subject: 'New sub to newsletter! 🎉', 
+    to: process.env.EMAIL, 
+    subject: 'New sub to newsletter! 🎉',
+    //Use proper html tags here to construct a more beautifull email 
     text: `Save ${sendersEmail} to newsletter mailing list`
   };
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", err); 
+        req.flash("error", "Kindly use our social media to get in touch while we fix our email!");
+        res.redirect("/");
     } else { 
         req.flash("success", "Email sent successfully ✅");
         res.redirect("/");
@@ -54,20 +56,46 @@ router.post("/message", (req, res) => {
   const sendersName = `${req.body.name}`;
   //subject is hardcoded in! a bad practice ik, will make it a variable asap
   const subject = "urAfro input | critiques";
+  //Use proper html tags here to construct a more beautifull email
   const text = `Hi, my name is ${sendersName}!  ${req.body.message}`;
 
   let mailDetails = { 
     from: sender, 
-    to: 'tinashydaniel@gmail.com', 
+    to: process.env.EMAIL, 
     subject: subject, 
     text: text
   };
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
-        req.flash("error", err); 
+        req.flash("error", "Kindly use our social media to get in touch while we fix our email!"); 
+        res.redirect("/");
     } else { 
         req.flash("success", "Message sent successfully");
+        res.redirect("/");
+    } 
+  });
+});
+
+//SENDING 'SUBSCRIBE-TO-PROJECTS-UPDATES' EMAIL TO GMAIL ACCOUNT
+router.post("/projects", (req, res) => {
+  //saving email input from landing ejs form
+  const sender = `${req.body.email}`;
+
+  let mailDetails = { 
+    from: sender, 
+    to: process.env.EMAIL, 
+    subject: 'New sub to projects app updates! 🎉',
+    //Use proper html tags here to construct a more beautifull email 
+    text: `Save ${sender} to Projects App mailing list`
+  };
+
+  mailTransporter.sendMail(mailDetails, (err, data) => { 
+    if(err) { 
+        req.flash("error", "Kindly use our social media to get in touch while we fix our email!");
+        res.redirect("/");
+    } else { 
+        req.flash("success", "Email sent successfully ✅");
         res.redirect("/");
     } 
   });
