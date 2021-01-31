@@ -14,6 +14,7 @@ $color-instagram: #EE1092;
 $color-twitter: #0764F7;
 $color-github: #333;
 $color-reddit: #FF5700;
+$color-youtube: #c4302b;
 
 $color-success: #16A085;
 $color-error: #FF3F34;
@@ -104,6 +105,11 @@ a {
 .fa-reddit:hover {
   color: $color-reddit;
   transition: color .2s;
+}
+
+.fa-youtube:active,
+.fa-youtube:hover {
+  color: $color-youtube;
 }
 
 /* ================= 
