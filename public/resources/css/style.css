@@ -198,7 +198,8 @@ a {
   text-decoration: none;
   font-size: 18px;
   color: #100c08;
-  display: block; }
+  display: block;
+  font-weight: 400; }
 
 .menu-content a:active,
 .menu-content a:hover {
