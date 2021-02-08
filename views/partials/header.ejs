@@ -54,7 +54,7 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -62,9 +62,10 @@
       <div class="fb-customerchat"
         attribution="setup_tool"
         page_id="339129300754006"
-    theme_color="#0A7CFF">
-      </div>
-      
+  theme_color="#ff2525"
+  logged_in_greeting="Yikes! Pop ups are a weird ice breaker 🙂"
+  logged_out_greeting="Yikes! Pop ups are a weird ice breaker 🙂">
+      </div>  
     <% if(success.length > 0 || error.length > 0) { %>
         <div class="container flash">
             <% if(success && success.length > 0) { %>
