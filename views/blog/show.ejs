@@ -224,33 +224,39 @@
               <% } %>
             </p>
           
-            <div class="backlinks-cards">
+            <div class="backlinks__cards">
               <!-- Show Related Blogs -->
               <% taggedBlogs.forEach((taggedBlog) => { %>
-              <div class="backlinks-card">
-                <div class="backlinks-header">
-                  <a href="/blogs/<%= taggedBlog.id %>" class="header-image">
-                    <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
+              <div class="backlinkCard">
+                <div class="backlinkCard__header">
+                  <a href="/blogs/<%= taggedBlog.id %>">
+                    <img class="backlinkCard__header--image" src="<%= taggedBlog.body.header.mainImage %>" alt="">
                   </a>
           
                   <!-- display dynamic blog tag -->
-                  <div class="tag-links">
-                    <% if(taggedBlog.tag == "Life") { %>
-                    <a href="#" class="green"><%= taggedBlog.tag %></a>
-                    <% } else if (taggedBlog.tag == "Code") { %>
-                    <a href="#" class="yellow"><%= taggedBlog.tag %></a>
-                    <% } else if (taggedBlog.tag == "Music") { %>
-                    <a href="#" class="purple"><%= taggedBlog.tag %></a>
-                    <% } else if (taggedBlog.tag == "Self") { %>
-                    <a href="#" class="red"><%= taggedBlog.tag %></a>
+                  <div class="backlinkCard__tag">
+                    <% if(taggedBlog.tag == "Self") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--green"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Society") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--yellow"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Tech") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--purple"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Money") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--red"><%= taggedBlog.tag %></a>
                     <% } %>
                   </div>
                 </div>
           
-                <div class="backlinks-body">
-                  <h4><a href="/blogs/<%= taggedBlog.id %>"><%= taggedBlog.body.header.mainHeading %></a></h4>
-                  <p><%= taggedBlog.body.content.introParagraph.substr(0, 78) %> ...</p>
-                  <a href="/blogs/<%= taggedBlog.id %>">Read More</a>
+                <div class="backlinkCard__body">
+                  <h4 class="backlinkCard__body--heading">
+                    <a class="backlinkCard__body--headingLink" href="/blogs/<%= taggedBlog.id %>">
+                      <%= taggedBlog.body.header.mainHeading %>
+                    </a>
+                  </h4>
+                  <p class="backlinkCard__body--paragraph">
+                    <%= taggedBlog.body.content.introParagraph.substr(0, 78) %> ...
+                  </p>
+                  <a class="backlinkCard__body--link" href="/blogs/<%= taggedBlog.id %>">Read More</a>
                 </div>
               </div>
               <% }) %>

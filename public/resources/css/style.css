@@ -1478,98 +1478,69 @@ contains blog author name, blog date and tag
     color: #FF2525; }
 
 /********* backlinks-cards *****************/
-.backlinks-cards {
+.backlinks__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 4rem;
   margin-bottom: 8rem; }
 
-.backlinks-card {
+.backlinkCard {
   flex-basis: 49%;
   margin-bottom: 3rem; }
-
-/********** card header *******/
-.backlinks-header {
-  position: relative;
-  overflow: hidden; }
-
-.backlinks-header a img {
-  width: 100%;
-  height: 12.5rem;
-  border-radius: .3rem;
-  scale: 1;
-  opacity: .7;
-  transform: scale(1);
-  transition: .3s ease-in-out; }
-
-.backlinks-header a img:active,
-.backlinks-header a img:hover {
-  transform: scale(1.1);
-  opacity: 1; }
-
-.tag-links a:link,
-.tag-links a:visited {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  font-size: .7rem;
-  padding: 5px 2rem;
-  color: #FFF;
-  border-radius: 3rem; }
-
-.backlinks-header .green:link,
-.backlinks-header .green:visited {
-  background-color: #16A085;
-  text-decoration: none; }
-
-.backlinks-header .yellow:link,
-.backlinks-header .yellow:visited {
-  background-color: #FFC03D;
-  text-decoration: none; }
-
-.backlinks-header .purple:link,
-.backlinks-header .purple:visited {
-  background-color: #432344;
-  text-decoration: none; }
-
-.backlinks-header .red:link,
-.backlinks-header .red:visited {
-  background-color: #FF2525;
-  text-decoration: none; }
-
-/******** card-body ***********/
-.backlinks-body h4 {
-  width: 85%;
-  margin-bottom: 1rem;
-  font-size: .9rem;
-  letter-spacing: .01rem; }
-
-.backlinks-body h4 a:link,
-.backlinks-body h4 a:visited {
-  color: #100c08;
-  text-decoration: none; }
-
-.backlinks-body h4 a:active,
-.backlinks-body h4 a:hover {
-  color: rgba(16, 12, 8, 0.7);
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s; }
-
-.backlinks-body p {
-  border: 0;
-  padding: 0;
-  margin-bottom: .5rem;
-  color: rgba(16, 12, 8, 0.7);
-  font-size: .7rem;
-  width: 100%; }
-
-.backlinks-body a {
-  font-size: .7rem;
-  margin-left: .2rem; }
+  .backlinkCard__header {
+    position: relative;
+    overflow: hidden; }
+    .backlinkCard__header--image {
+      width: 100%;
+      height: 20rem;
+      border-radius: .3rem;
+      scale: 1;
+      opacity: .7;
+      transform: scale(1);
+      transition: .3s ease-in-out; }
+    .backlinkCard__header--image:active, .backlinkCard__header--image:hover {
+      transform: scale(1.1);
+      opacity: 1; }
+  .backlinkCard__tag--link:link, .backlinkCard__tag--link:visited {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: .7rem;
+    padding: 5px 2rem;
+    color: #FFF;
+    border-radius: 3rem; }
+  .backlinkCard__tag--green:link, .backlinkCard__tag--green:visited {
+    background-color: #16A085; }
+  .backlinkCard__tag--yellow:link, .backlinkCard__tag--yellow:visited {
+    background-color: #FFC03D; }
+  .backlinkCard__tag--purple:link, .backlinkCard__tag--purple:visited {
+    background-color: #432344; }
+  .backlinkCard__tag--red:link, .backlinkCard__tag--red:visited {
+    background-color: #FF2525; }
+  .backlinkCard__body--heading {
+    width: 85%;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    letter-spacing: .01rem; }
+  .backlinkCard__body--headingLink:link, .backlinkCard__body--headingLink:visited {
+    color: #100c08;
+    text-decoration: none; }
+  .backlinkCard__body--headingLink:active, .backlinkCard__body--headingLink:hover {
+    color: rgba(16, 12, 8, 0.7);
+    transition: color .2s; }
+  .backlinkCard__body--paragraph {
+    margin-bottom: .5rem;
+    color: rgba(16, 12, 8, 0.7);
+    font-size: .7rem;
+    width: 100%; }
+  .backlinkCard__body--link:link, .backlinkCard__body--link:visited {
+    font-size: .7rem;
+    margin-left: .2rem;
+    color: rgba(16, 12, 8, 0.5);
+    text-decoration: underline; }
+  .backlinkCard__body--link:hover, .backlinkCard__body--link:active {
+    color: #100c08; }
 
 .showcaseTwo footer p {
   width: 100%;
