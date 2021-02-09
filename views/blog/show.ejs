@@ -98,30 +98,30 @@
       </div>
 
       <div class="blog__body">
-        <div class="section-one">
+        <div class="blog__body--sectionOne">
           <p><%= blog.body.content.sectionOne.paragraphOne %></p>
           <p><%= blog.body.content.sectionOne.paragraphTwo %></p>
         </div>
 
-        <div class="section-two">
-          <h3><%= blog.body.content.sectionTwo.mediumHeading %></h3>
+        <div class="blog__body--sectionTwo">
+          <h3 class="blog__heading--h3"><%= blog.body.content.sectionTwo.mediumHeading %></h3>
           <p><%= blog.body.content.sectionTwo.paragraphThree %></p>
           <p><%= blog.body.content.sectionTwo.paragraphFour %></p>
           <p><%= blog.body.content.sectionTwo.paragraphFive %></p>
         </div>
 
-        <div class="section-three">
-          <h4><%= blog.body.content.sectionThree.smallHeading %></h4>
+        <div class="blog__body--sectionThree">
+          <h4 class="blog__heading--h4"><%= blog.body.content.sectionThree.smallHeading %></h4>
           <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphSix.trim() %></p>
           <p><%= blog.body.content.sectionThree.paragraphSeven %></p>
-          <h5><%= blog.body.content.sectionThree.smallerHeading %></h5>
+          <h5 class="blog__heading--h5"><%= blog.body.content.sectionThree.smallerHeading %></h5>
           <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphEight.trim() %></p>
           <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="">
           <p><%= blog.body.content.sectionThree.paragraphNine %></p>
         </div>
 
-        <div class="section-four">
-          <h6><%= blog.body.content.sectionFour.smallestHeading %></h6>
+        <div class="blog__body--sectionFour">
+          <h6 class="blog__heading--h6"><%= blog.body.content.sectionFour.smallestHeading %></h6>
           <p><%= blog.body.content.sectionFour.lastParagraph %></p>
         </div>
 

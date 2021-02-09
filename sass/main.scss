@@ -167,6 +167,10 @@ a {
   font-style: italic;
 }
 
+.text-wrap {
+  white-space: pre-wrap;
+}
+
 .boxes {
   display: flex;
   justify-content: space-between;
@@ -800,7 +804,7 @@ h3 {
   &__image {
     flex: 1;
     align-self: center;
-    height: 100vh;
+    height: 70rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1899,6 +1903,12 @@ contains blog author name, blog date and tag
 
     /* this can be a mixin/extend. using the same padding on showcaseBoxes */
     padding-bottom: 10rem;
+
+    & p {
+      margin-bottom: 20px;
+      line-height: 135%;
+      font-size: .8rem;
+    }
   }
 }
 /* ====================
@@ -1931,6 +1941,7 @@ contains blog author name, blog date and tag
   }
 }
 
+/* BLOG HEADINGS */
 .blog__heading {
   width: 65%;
   margin: 0 auto;
@@ -1971,71 +1982,56 @@ contains blog author name, blog date and tag
       margin: 0 auto;
     }
   }
+
+  &--h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  &--h4 {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  &--h5 {
+    font-size: .95rem;
+    margin-bottom: .5rem;
+  }
+
+  &--h6 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
-/*
- try to find a way to pattern bem naming for blog body elements after the blog__body style 
- starting from here next time
- rest up me brudda :)
-*/
-
+/* BLOG BODY SECTION */
 .blog__body {
   width: 90%;
   margin: 0 auto;
-}
 
-.blog p {
-  margin-bottom: 20px;
-  line-height: 135%;
-  font-size: .8rem;
-}
+  &--sectionOne {
+    margin-top: 3rem;
+  }
 
-.text-wrap {
-  white-space: pre-wrap;
-}
+  &--sectionTwo p:nth-of-type(2) {
+    border-left: .2rem solid $color-primary-red;
+    padding: 1rem;
+    line-height: 1.45rem;
+    word-spacing: .5rem;
+  }
 
-.section-one {
-  margin-top: 3rem;
-}
+  &--sectionThree .text-wrap {
+    padding: 1rem 2rem;
+  }
 
-.section-two h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
+  &--sectionThree img {
+    width: 100%;
+    height: 40rem;
+  }
 
-.section-two p:nth-of-type(2) {
-  border-left: .2rem solid $color-primary-red;
-  padding: 1rem;
-  line-height: 1.45rem;
-  word-spacing: .5rem;
-}
-
-.section-three h4 {
-  font-size: 1.05rem;
-  margin-bottom: 1rem;
-}
-
-.section-three .text-wrap {
-  padding: 1rem 2rem;
-}
-
-.section-three h5 {
-  font-size: .95rem;
-  margin-bottom: .5rem;
-}
-
-.section-three img {
-  width: 100%;
-  height: 30rem;
-}
-
-.section-three p:last-of-type {
-  margin-top: 2rem;
-}
-
-.section-four h6 {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  &--sectionThree p:last-of-type {
+    margin-top: 2rem;
+  }
 }
 
 .new-comment-form {
