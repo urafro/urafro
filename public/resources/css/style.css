@@ -1442,7 +1442,7 @@ contains blog author name, blog date and tag
     padding: 1rem 2rem; }
   .blog__body--sectionThree img {
     width: 100%;
-    height: 40rem; }
+    height: 50rem; }
   .blog__body--sectionThree p:last-of-type {
     margin-top: 2rem; }
 
@@ -1493,7 +1493,7 @@ contains blog author name, blog date and tag
     overflow: hidden; }
     .backlinkCard__header--image {
       width: 100%;
-      height: 20rem;
+      height: 30rem;
       border-radius: .3rem;
       scale: 1;
       opacity: .7;
