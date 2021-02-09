@@ -1803,6 +1803,11 @@ contains blog author name, blog date and tag
   align-items: center;
   justify-content: center;
 
+
+/*
+  figure out a way to style all links in the blog body without affecting the backlinks a tags styling down below
+  that's why I've commented these out for now
+
   & a:link,
   & a:visited {
     color: rgba($color-black, .5);
@@ -1812,7 +1817,8 @@ contains blog author name, blog date and tag
   & a:active,
   & a:hover {
     color: $color-black;
-  }
+  } 
+*/
 
   &__admin {
     list-style: none;
@@ -2039,47 +2045,50 @@ contains blog author name, blog date and tag
 }
 
 /********* Show-backlinks section *************/
+.backlinks {
 
-.show-backlinks h3 {
-  font-size: 1.1rem;
-  margin-top: 5rem;
-  margin-bottom: .5rem;
-  border-top: .2rem solid rgba($color-primary-light, .5);
-  padding-top: 2rem;
-}
+  &--heading {
+    font-size: 1.1rem;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+    border-top: .2rem solid rgba($color-primary-light, .5);
+    padding-top: 2rem;
+  }
 
-.show-backlinks p {
-  margin-left: .2rem;
-  color: rgba($color-black, .5);
-  font-size: .9rem;
-  border-bottom: .2rem solid rgba($color-primary-light, .5);
-  padding-bottom: 3rem;
-}
+  &__tag {
+    margin-left: .2rem;
+    color: rgba($color-black, .5);
+    font-size: .9rem;
+    border-bottom: .2rem solid rgba($color-primary-light, .5);
+    padding-bottom: 3rem;
 
-.show-backlinks p a {
-  font-size: 1.1rem;
-  margin-left: .5rem;
-  font-weight: 400;
-}
+    &--link {
+      font-size: 1.1rem;
+      margin-left: .5rem;
+      font-weight: 400;
+      text-decoration: underline;
+    }
 
-.show-backlinks p .green {
-  color: $color-success;
-  text-decoration: none;
-}
+    &--green:link,
+    &--green:visited {
+      color: $color-success;
+    }
 
-.show-backlinks p .yellow {
-  color: $color-primary-brown;
-  text-decoration: none;
-}
+    &--yellow:link,
+    &--yellow:visited {
+      color: $color-primary-brown;
+    }
 
-.show-backlinks p .purple {
-  color: $color-primary-dark;
-  text-decoration: none;
-}
+    &--purple:link,
+    &--purple:visited {
+      color: $color-primary-dark;
+    }
 
-.show-backlinks p .red {
-  color: $color-primary-red;
-  text-decoration: none;
+    &--red:link,
+    &--red:visited {
+      color: $color-primary-red;
+    }
+  }
 }
 
 /********* backlinks-cards *****************/

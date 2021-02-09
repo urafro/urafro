@@ -1279,14 +1279,22 @@ contains blog author name, blog date and tag
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
-  .showcaseTwo a:link,
-  .showcaseTwo a:visited {
-    color: rgba(16, 12, 8, 0.5);
-    text-decoration: underline; }
-  .showcaseTwo a:active,
-  .showcaseTwo a:hover {
-    color: #100c08; }
+  justify-content: center;
+  /*
+  figure out a way to style all links in the blog body without affecting the backlinks a tags styling down below
+  that's why I've commented these out for now
+
+  & a:link,
+  & a:visited {
+    color: rgba($color-black, .5);
+    text-decoration: underline;
+  }
+
+  & a:active,
+  & a:hover {
+    color: $color-black;
+  } 
+*/ }
   .showcaseTwo__admin {
     list-style: none;
     display: flex;
@@ -1442,40 +1450,32 @@ contains blog author name, blog date and tag
   margin-bottom: 3rem; }
 
 /********* Show-backlinks section *************/
-.show-backlinks h3 {
+.backlinks--heading {
   font-size: 1.1rem;
   margin-top: 5rem;
   margin-bottom: .5rem;
   border-top: 0.2rem solid rgba(249, 249, 249, 0.5);
   padding-top: 2rem; }
 
-.show-backlinks p {
+.backlinks__tag {
   margin-left: .2rem;
   color: rgba(16, 12, 8, 0.5);
   font-size: .9rem;
   border-bottom: 0.2rem solid rgba(249, 249, 249, 0.5);
   padding-bottom: 3rem; }
-
-.show-backlinks p a {
-  font-size: 1.1rem;
-  margin-left: .5rem;
-  font-weight: 400; }
-
-.show-backlinks p .green {
-  color: #16A085;
-  text-decoration: none; }
-
-.show-backlinks p .yellow {
-  color: #FFC03D;
-  text-decoration: none; }
-
-.show-backlinks p .purple {
-  color: #432344;
-  text-decoration: none; }
-
-.show-backlinks p .red {
-  color: #FF2525;
-  text-decoration: none; }
+  .backlinks__tag--link {
+    font-size: 1.1rem;
+    margin-left: .5rem;
+    font-weight: 400;
+    text-decoration: underline; }
+  .backlinks__tag--green:link, .backlinks__tag--green:visited {
+    color: #16A085; }
+  .backlinks__tag--yellow:link, .backlinks__tag--yellow:visited {
+    color: #FFC03D; }
+  .backlinks__tag--purple:link, .backlinks__tag--purple:visited {
+    color: #432344; }
+  .backlinks__tag--red:link, .backlinks__tag--red:visited {
+    color: #FF2525; }
 
 /********* backlinks-cards *****************/
 .backlinks-cards {

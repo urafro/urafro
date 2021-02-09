@@ -209,18 +209,18 @@
 
         <!-- BACKLINKS - Show Related Blogs -->
         <% if(taggedBlogs.length > 0) { %>
-          <div class="show-backlinks">
-            <h3>Did you read these already?</h3>
-            <p>Discover more posts in
+          <div class="backlinks">
+            <h3 class="backlinks--heading">Did you read these already?</h3>
+            <p class="backlinks__tag">Discover more posts in
               <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-              <% if(blog.tag == "Life") { %>
-              <a href="#" class="green"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Code") { %>
-              <a href="#" class="yellow"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Music") { %>
-              <a href="#" class="purple"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Self") { %>
-              <a href="#" class="red"><%= blog.tag %></a>
+              <% if(blog.tag == "Self") { %>
+              <a href="#" class="backlinks__tag--green backlinks__tag--link"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Society") { %>
+              <a href="#" class="backlinks__tag--yellow backlinks__tag--link"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Tech") { %>
+              <a href="#" class="backlinks__tag--purple backlinks__tag--link"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Money") { %>
+              <a href="#" class="backlinks__tag--red backlinks__tag--link"><%= blog.tag %></a>
               <% } %>
             </p>
           
