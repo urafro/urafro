@@ -42,7 +42,7 @@
           <!-- generic card image will be replaced by user image from the user schema -->
           <img
             src="<%= blog.author.avatarUrl %>"
-            alt="author image">
+            alt="urafro blog author image">
         </div>
 
         <div class="card-text">
@@ -175,7 +175,7 @@
 
           <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphEight.trim() %></p>
 
-          <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="">
+          <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="urafro | <%= blog.body.header.mainHeading %> image2">
 
           <p><%= blog.body.content.sectionThree.paragraphNine %></p>
         </div>
@@ -206,7 +206,7 @@
                 </div> -->
 
                 <a class="avatar" href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/replies/new">
-                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="<%= comment.author.username %>" />
+                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="urafro Profile Avatar" title="<%= comment.author.username %>" />
                 </a>
 
                 <p>
@@ -227,7 +227,7 @@
                     </div> -->
 
                     <a class="avatar" href="#">
-                      <img src="<%= reply.author.avatarUrl %>" width="35" alt="Profile Avatar" title="<%= reply.author.username %>" />
+                      <img src="<%= reply.author.avatarUrl %>" width="35" alt="urafro Profile Avatar" title="<%= reply.author.username %>" />
                     </a>
 
                     <p>
@@ -250,10 +250,10 @@
                 <div>    
                   <% if(currentUser) { %>
                     <!-- show current user image next to comment button if user is logged in -->
-                    <img src="<%= currentUser.avatarUrl %>" width="35" alt="Profile of <%= currentUser.username %>" title="<%= currentUser.username %>" />
+                    <img src="<%= currentUser.avatarUrl %>" width="35" alt="urafro Profile of <%= currentUser.username %>" title="<%= currentUser.username %>" />
                   <% } else { %>
                     <!-- show blog owner image next to comment button if no user is logged in -->
-                    <img src="<%= blog.author.avatarUrl %>" width="35" alt="Profile of <%= blog.author.username %>" title="<%= blog.author.username %>" />
+                    <img src="<%= blog.author.avatarUrl %>" width="35" alt="urafro Profile of <%= blog.author.username %>" title="<%= blog.author.username %>" />
                   <% } %>
                   <button class="bdb bdb-ghost" type="submit">comment</button>
                 </div>
@@ -326,7 +326,7 @@
               <div class="backlinks-card">
                 <div class="backlinks-header">
                   <a href="/blogs/<%= taggedBlog.id %>" class="header-image">
-                    <img src="<%= taggedBlog.body.header.mainImage %>" alt="">
+                    <img src="<%= taggedBlog.body.header.mainImage %>" alt="urafro blog | <%= taggedBlog.body.header.mainHeading %> image1">
                   </a>
           
                   <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
