@@ -1916,6 +1916,28 @@ contains blog author name, blog date and tag
       font-size: .8rem;
     }
   }
+
+  &__footer {
+    /* 
+  this code should be a mixin/extend cuz its the same as showcase footer the first one just a few lines up 
+  */
+
+    height: 12rem;
+    padding: 5rem;
+    padding-left: 0;
+    background: rgba($color-primary-red, .7);
+    color: $color-primary-light;
+    font-size: .8rem;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &--paragraph {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 /* ====================
     Blog show section 
@@ -2202,34 +2224,6 @@ contains blog author name, blog date and tag
       }
     }
   }
-}
-
-
-.showcaseTwo footer p {
-  width: 100%;
-  text-align: center;
-}
-
-.showcaseTwo footer a {
-  color: $color-black;
-  text-decoration: underline;
-}
-
-.showcaseTwo footer {
-  /* 
-  this code should be a mixin/extend cuz its the same as showcase footer the first one just a few lines up 
-  */
-
-  height: 12rem;
-  padding: 5rem;
-  padding-left: 0;
-  background: rgba($color-primary-red, .7);
-  color: $color-primary-light;
-  font-size: .8rem;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 /* ===============================================
