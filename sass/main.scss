@@ -1939,9 +1939,11 @@ contains blog author name, blog date and tag
     }
   }
 }
-/* ====================
-    Blog show section 
-======================= */
+
+/* ================================
+        Blog show section 
+=================================== */
+
 @keyframes mainHeadingSlideDown {
   0% {
     font-weight: 500;
@@ -2251,7 +2253,7 @@ contains blog author name, blog date and tag
   color: $color-primary-dark;
 }
 
-/************************** content boxes **************************/
+/******** content boxes *********/
 
 .content-inputs,
 .content-text {
@@ -2343,7 +2345,7 @@ label {
   margin-left: 10rem;
 }
 
-/******************** content-inputs ********************/
+/********** content-inputs *********/
 .comment .login,
 .comment .content-inputs {
   position: relative;
@@ -2498,7 +2500,7 @@ textarea {
   padding-bottom: 2rem;
 }
 
-/********************** content-text ************************/
+/****** content-text ******/
 .content-text h2 {
   font-weight: 300;
   font-size: 1.2rem;
