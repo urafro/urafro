@@ -2236,37 +2236,43 @@ contains blog author name, blog date and tag
   padding: 4rem 2rem;
 }
 
+.create {
+  width: 70%;
+  margin: 0 auto;
+
+  &--mainHeading {
+    text-align: center;
+    font-size: 2.5;
+    font-weight: 300;
+
+    &--mainHeading::after {
+      display: block;
+      height: .1rem;
+      background-color: $color-primary-red;
+      content: " ";
+      width: 10rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+
+  &__form--row {
+    margin-top: 6rem;
+  }
+}
+
+.create input,
+label {
+  display: block;
+}
+
 /* navbar */
-.menu .left-menu {
+.left-menu {
   float: left;
 }
 
-.menu .right-menu {
+.right-menu {
   float: right;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.menu a {
-  color: $color-primary-dark;
-}
-
-/******** content boxes *********/
-
-.content-inputs,
-.content-text {
-  padding: 0 2rem;
-}
-
-.content-boxes {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.content-boxes .row {
-  margin-top: 6rem;
 }
 
 .content-inputs {
@@ -2277,32 +2283,16 @@ contains blog author name, blog date and tag
   flex: 1;
 }
 
-.content-boxes h1 {
-  text-align: center;
-  font-size: 2.5;
-  font-weight: 300;
-}
-
-.content-boxes h1:after {
-  display: block;
-  height: .1rem;
-  background-color: $color-primary-red;
-  content: " ";
-  width: 10rem;
-  margin: 0 auto;
-  margin-top: 2rem;
-}
-
-.content-boxes input,
-label {
-  display: block;
+.content-inputs,
+.content-text {
+  padding: 0 2rem;
 }
 
 /* ================
   new route images
 ================= */
 
-.after::after {
+.create__form--after::after {
   display: block;
   content: " ";
   margin: 0 auto;
@@ -2397,7 +2387,7 @@ textarea,
   padding: 1rem;
 }
 
-.content-boxes input[type="submit"],
+.create input[type="submit"],
 .comment .content-inputs form div.box-content input[type="submit"],
 .comments-input input[type="submit"] {
   margin-top: 2rem;
