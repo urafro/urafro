@@ -2278,6 +2278,10 @@ contains blog author name, blog date and tag
       margin-top: 5rem;
       background-color: rgba($color-primary-red, .1);
     }
+
+    &--last {
+      margin-bottom: 5rem;
+    }
   }
 }
 
@@ -2413,10 +2417,6 @@ contains blog author name, blog date and tag
 /* ================
   new route images
 ================= */
-
-.last {
-  margin-bottom: 5rem;
-}
 
 .s0,
 .s1,

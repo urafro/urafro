@@ -1597,6 +1597,8 @@ contains blog author name, blog date and tag
     height: .1rem;
     margin-top: 5rem;
     background-color: rgba(255, 37, 37, 0.1); }
+  .create__form--last {
+    margin-bottom: 5rem; }
 
 .section {
   display: flex;
@@ -1692,9 +1694,6 @@ contains blog author name, blog date and tag
 /* ================
   new route images
 ================= */
-.last {
-  margin-bottom: 5rem; }
-
 .s0,
 .s1,
 .s2,
