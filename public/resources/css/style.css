@@ -1591,10 +1591,18 @@ contains blog author name, blog date and tag
   .section__inputs {
     /* mixin or extend for these two cuz they have the same code  [__inputs and __desc] */
     flex: 1;
-    padding: 0 2rem; }
+    padding: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1); }
   .section__desc {
     flex: 1;
     padding: 0 2rem; }
+
+.section__inputs--heading {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #FF2525; }
 
 /* navbar */
 .left-menu {
@@ -1650,16 +1658,6 @@ label {
 
 .comments-input .section__inputs {
   margin-top: 4rem; }
-
-.section__inputs {
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1); }
-
-.section__inputs h2 {
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #FF2525; }
 
 .section__inputs .left,
 .right {

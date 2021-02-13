@@ -188,8 +188,8 @@
           <form class="new-comment-form" action="/blogs/<%= blog.id %>/comments" method="POST">
             <div class="row comments-input">
               <div class="section zero">
-                <div class="content-inputs new-comment">
-                  <h2>Leave A Reply</h2>
+                <div class="section__inputs new-comment">
+                  <h2 class="section__inputs--heading">Leave A Reply</h2>
                   <div class="box-content">
                     <!-- Add || Remove username input field if user is logged in or out -->
                     <% if(!currentUser) { %>
