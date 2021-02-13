@@ -2285,6 +2285,9 @@ contains blog author name, blog date and tag
   }
 }
 
+/* ==========================
+Content sections in form rows 
+=========================== */
 .section {
   display: flex;
   align-items: center;
@@ -2311,7 +2314,9 @@ contains blog author name, blog date and tag
   }
 }
 
-/* input styles */
+/* ============================== 
+Individual boxes in section rows 
+=============================== */
 .inputsBox {
   position: relative;
 
@@ -2405,7 +2410,9 @@ contains blog author name, blog date and tag
   }
 }
 
-//form submit buttons
+/* =================
+form submit buttons
+================== */
 .form--btn {
   margin-top: 2rem;
   cursor: pointer;
@@ -2417,34 +2424,25 @@ contains blog author name, blog date and tag
 /* ================
   new route images
 ================= */
-
-.s0,
-.s1,
-.s2,
-.s3,
-.s4 {
+.section__desc {
   padding-left: 3rem;
-}
 
-.s0 img,
-.s1 img,
-.s2 img,
-.s3 img,
-.s4 img {
-  padding: 3rem 0 2rem 0;
-}
+  &--image {
+    padding: 3rem 0 2rem 0;
+  }
 
-.s1 img {
-  height: 50rem;
-}
+  &--imageOne {
+    height: 50rem;
+  }
 
-.s2 img {
-  height: 35rem;
-}
+  &--imageTwo {
+    height: 35rem;
+  }
 
-.s4 img {
-  height: 40rem;
-  margin-left: 10rem;
+  &--imageFour {
+    height: 40rem;
+    margin-left: 10rem;
+  }
 }
 
 /* ==============================
