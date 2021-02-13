@@ -140,7 +140,7 @@
                   <a href="#"><%= comment.author.username %></a>
                   <span>3 hours ago</span>
                 </div>
-                <a class="avatar" href="#">
+                <a class="avatar" href="<%= blog._id %>/comments/<%= comment._id %>/replies/new">
                   <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Comment Author" />
                 </a>
                 <p>
@@ -190,16 +190,16 @@
               <div class="section zero">
                 <div class="section__inputs new-comment">
                   <h2 class="section__inputs--heading">Leave A Reply</h2>
-                  <div class="box-content">
+                  <div class="inputsBox">
                     <!-- Add || Remove username input field if user is logged in or out -->
                     <% if(!currentUser) { %>
-                      <label for="username">Username*</label>
-                      <input type="text" name="username" id="username" placeholder="flawed69" required>
+                      <label class="inputsBox--label" for="username">Username*</label>
+                      <input class="inputsBox--input inputsBox--text" type="text" name="username" id="username" placeholder="flawed69" required>
                     <% } %>
-                    <label for="commentText">Comment*</label>
-                    <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="be the first to say something!"
+                    <label class="inputsBox--label" for="commentText">Comment*</label>
+                    <textarea class="inputsBox--input inputsBox--textarea" name="commentText" id="commentText" cols="30" rows="5" placeholder="be the first to say something!"
                       required></textarea>
-                    <input class="btn btn-full" type="submit" value="say it">
+                    <input class="btn btn-full form--btn" type="submit" value="say it">
                   </div>
                 </div>
               </div>

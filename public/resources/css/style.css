@@ -14,6 +14,19 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility; }
 
+/* Reset Select */
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #f9f9f9;
+  background-image: none; }
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none; }
+
 /* =====================================
             REUSABLE CODE
 ======================================= */
@@ -1594,26 +1607,87 @@ contains blog author name, blog date and tag
     padding: 0 2rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1); }
+    .section__inputs--heading {
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #FF2525; }
   .section__desc {
     flex: 1;
     padding: 0 2rem; }
 
-.section__inputs--heading {
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #FF2525; }
+/* input styles */
+.inputsBox {
+  position: relative;
+  /* Custom dropdown styles */ }
+  .inputsBox--label {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-size: .55rem;
+    font-weight: bolder;
+    display: block; }
+  .inputsBox--left, .inputsBox--right {
+    width: 48%; }
+  .inputsBox .inputsBox--input {
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 0.1rem dashed rgba(16, 12, 8, 0.3);
+    font-family: inherit;
+    font-weight: 300;
+    border-radius: .5rem;
+    display: block; }
+    .inputsBox .inputsBox--input::placeholder {
+      text-transform: uppercase; }
+  .inputsBox--text, .inputsBox--password {
+    height: 8rem;
+    font-size: .7rem;
+    padding: 1rem; }
+  .inputsBox--textarea {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    resize: vertical; }
+  .inputsBox__selectWrapper {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 50px;
+    line-height: 3;
+    background: #f9f9f9;
+    overflow: hidden;
+    border-radius: .25em;
+    /* Arrow */
+    /* Transition */ }
+    .inputsBox__selectWrapper::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 1em;
+      color: rgba(255, 37, 37, 0.7);
+      background-color: #f9f9f9;
+      cursor: pointer;
+      pointer-events: none;
+      transition: .5s all ease; }
+    .inputsBox__selectWrapper:hover::after {
+      color: #100c08;
+      background: #f9f9f9; }
+    .inputsBox__selectWrapper--select {
+      flex: 1;
+      padding: 0 .5em;
+      color: #100c08;
+      cursor: pointer;
+      font-size: 85%;
+      font-weight: 300;
+      background: #f9f9f9;
+      font-family: inherit; }
 
-/* navbar */
-.left-menu {
-  float: left; }
-
-.right-menu {
-  float: right; }
-
-.create input,
-label {
-  display: block; }
+.form--btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  text-transform: none;
+  display: inline-block;
+  font-family: inherit; }
 
 /* ================
   new route images
@@ -1645,7 +1719,9 @@ label {
   height: 40rem;
   margin-left: 10rem; }
 
-/********** content-inputs *********/
+/* ==============================
+  styles for new comment div only
+================================ */
 .comment .login,
 .comment .section__inputs {
   position: relative;
@@ -1653,118 +1729,9 @@ label {
   top: 50%;
   transform: translate(-50%, -50%); }
 
-*:focus {
-  outline: none; }
-
 .comments-input .section__inputs {
   margin-top: 4rem; }
 
-.section__inputs .left,
-.right {
-  width: 48%; }
-
-.section__inputs input[type="text"],
-textarea,
-.auth input[type="password"] {
-  width: 100%;
-  margin-bottom: 2rem;
-  border: 0.1rem dashed rgba(16, 12, 8, 0.3);
-  font-family: inherit;
-  font-weight: 300;
-  border-radius: .5rem; }
-
-.section__inputs input[type="text"],
-.auth input[type="password"] {
-  height: 8rem;
-  font-size: .7rem;
-  padding: 1rem; }
-
-.create input[type="submit"],
-.comment .section__inputs form div.box-content input[type="submit"],
-.comments-input input[type="submit"] {
-  margin-top: 2rem;
-  cursor: pointer;
-  text-transform: none;
-  display: inline-block;
-  font-family: inherit; }
-
-.comments-input input[type="submit"] {
-  margin-top: .5rem; }
-
-/* Reset Select */
-select {
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background: #f9f9f9;
-  background-image: none; }
-
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none; }
-
-/* Custom Select */
-.select {
-  position: relative;
-  display: flex;
-  width: 50%;
-  height: 50px;
-  line-height: 3;
-  background: #f9f9f9;
-  overflow: hidden;
-  border-radius: .25em; }
-
-select {
-  flex: 1;
-  padding: 0 .5em;
-  color: #100c08;
-  cursor: pointer;
-  font-size: 85%;
-  font-weight: 300;
-  background: #f9f9f9;
-  font-family: inherit; }
-
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  color: rgba(255, 37, 37, 0.7);
-  background-color: #f9f9f9;
-  cursor: pointer;
-  pointer-events: none;
-  transition: .5s all ease; }
-
-/* Transition */
-.select:hover::after {
-  color: #100c08;
-  background: #f9f9f9; }
-
-/* input styles */
-.box-content {
-  position: relative; }
-
-.box-content label {
-  position: absolute;
-  text-transform: uppercase;
-  padding: 1.2rem;
-  font-size: .55rem;
-  font-weight: bolder; }
-
-.box-content ::placeholder {
-  text-transform: uppercase; }
-
-textarea {
-  padding-top: 4rem;
-  padding-left: 1rem;
-  resize: vertical; }
-
-/* ==============================
-  styles for new comment div only
-================================ */
 .new-comment {
   margin-bottom: 1.5rem;
   padding-bottom: 2rem; }
@@ -1987,12 +1954,12 @@ div.section__desc p a:visited {
   font-size: .7rem;
   margin-bottom: .5rem; }
 
-div.box-content.auth h5 a:link,
-div.box-content.auth h5 a:visited {
+div.inputsBox.auth h5 a:link,
+div.inputsBox.auth h5 a:visited {
   color: #aca5a5; }
 
-div.box-content.auth h5 a:active,
-div.box-content.auth h5 a:hover {
+div.inputsBox.auth h5 a:active,
+div.inputsBox.auth h5 a:hover {
   color: #555;
   transition: color .2s;
   -webkit-transition: color .2s;

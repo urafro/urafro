@@ -62,15 +62,15 @@
 
             <form action="/login" method="POST">
 
-              <div class="box-content auth">
+              <div class="inputsBox auth">
 
-                <label for="username">Username**</label>
-                <input type="text" name="username" id="username" placeholder="John" required>
+                <label class="inputsBox--label" for="username">Username**</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="username" id="username" placeholder="John" required>
 
-                <label for="password">Password**</label>
-                <input type="password" name="password" id="password" placeholder="Put in on lock :)">
+                <label class="inputsBox--label" for="password">Password**</label>
+                <input class="inputsBox--input inputsBox--password" type="password" name="password" id="password" placeholder="Put in on lock :)">
 
-                <input class="btn btn-full" id="auth-button" type="submit" value="login">
+                <input class="btn btn-full form--btn" type="submit" value="login">
 
                 <h5>Don't have an account? &nbsp; <a href="/signup">Sign Up!</a></h5>
               </div>

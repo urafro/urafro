@@ -48,20 +48,20 @@
 
               <h2 class="section__inputs--heading">Section Zero</h2>
 
-              <div class="box-content">
+              <div class="inputsBox">
 
-                <label for="mainHeading">Title*</label>
-                <input type="text" name="blog[mainHeading]" id="mainHeading" placeholder="blog heading" required>
+                <label class="inputsBox--label" for="mainHeading">Title*</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[mainHeading]" id="mainHeading" placeholder="blog heading" required>
 
                 <div class="group">
-                  <div class="left">
-                    <label for="mainImage">Image*</label>
-                    <input type="text" name="blog[mainImage]" id="mainImage" placeholder="main blog image url" required>
+                  <div class="inputsBox--left left">
+                    <label class="inputsBox--label" for="mainImage">Image*</label>
+                    <input class="inputsBox--input inputsBox--text" type="text" name="blog[mainImage]" id="mainImage" placeholder="main blog image url" required>
                   </div>
 
-                  <div class="right select">
+                  <div class="inputsBox--right right inputsBox__selectWrapper">
                     <!-- <input type="text" name="blog[tag]" id="tag" placeholder="blog tag" required> -->
-                    <select name="blog[tag]" id="tag" required>
+                    <select class="inputsBox__selectWrapper--select" name="blog[tag]" id="tag" required>
                       <option selected disabled>Choose a tag</option>
                       <option value="Self">Self</option>
                       <option value="Society">Society</option>
@@ -71,9 +71,9 @@
                   </div>
                 </div>
 
-                <label for="introParagraph">Intro*</label>
+                <label class="inputsBox--label" for="introParagraph">Intro*</label>
                 
-                <textarea name="blog[introParagraph]" id="introParagraph" cols="30" rows="5" placeholder="create a conversation" required></textarea>
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[introParagraph]" id="introParagraph" cols="30" rows="5" placeholder="create a conversation" required></textarea>
               </div>
 
             </div>
@@ -117,16 +117,16 @@
 
               <h2 class="section__inputs--heading">Section One</h2>
 
-              <div class="box-content">
+              <div class="inputsBox">
 
-                <label for="paragraphOne">Paragraph 1</label>
+                <label class="inputsBox--label" for="paragraphOne">Paragraph 1</label>
 
-                <textarea name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="5"
                   placeholder="theme 1"></textarea>
 
-                <label for="paragraphTwo">Paragraph Two</label>
+                <label class="inputsBox--label" for="paragraphTwo">Paragraph Two</label>
 
-                <textarea name="blog[paragraphTwo]" id="paragraphTwo" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphTwo]" id="paragraphTwo" cols="30" rows="5"
                   placeholder="theme 2"></textarea>
               </div>
 
@@ -145,24 +145,24 @@
 
               <h2 class="section__inputs--heading">Section Two</h2>
 
-              <div class="box-content">
+              <div class="inputsBox">
 
-                <label for="mediumHeading">Small Heading</label>
-                <input type="text" name="blog[mediumHeading]" id="smallHeading" placeholder="small blog heading" required>
+                <label class="inputsBox--label" for="mediumHeading">Small Heading</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[mediumHeading]" id="smallHeading" placeholder="small blog heading" required>
 
-                <label for="paragraphThree">Paragraph Three</label>
+                <label class="inputsBox--label" for="paragraphThree">Paragraph Three</label>
 
-                <textarea name="blog[paragraphThree]" id="paragraphThree" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphThree]" id="paragraphThree" cols="30" rows="5"
                   placeholder="create a conversation"></textarea>
 
-                <label for="paragraphFour">Paragraph Four</label>
+                <label class="inputsBox--label" for="paragraphFour">Paragraph Four</label>
 
-                <textarea name="blog[paragraphFour]" id="paragraphFour" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphFour]" id="paragraphFour" cols="30" rows="5"
                     placeholder="create a conversation"></textarea>
 
-                <label for="paragraphFive">paragraphFive</label>
+                <label class="inputsBox--label" for="paragraphFive">paragraphFive</label>
 
-                <textarea name="blog[paragraphFive]" id="paragraphFive" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphFive]" id="paragraphFive" cols="30" rows="5"
                       placeholder="create a conversation"></textarea>
               </div>
 
@@ -214,39 +214,39 @@
 
               <h2 class="section__inputs--heading">Section Three</h2>
 
-              <div class="box-content">
+              <div class="inputsBox">
 
-                <label for="smallHeading">Blog Subheading</label>
-                <input type="text" name="blog[smallHeading]" id="smallHeading" placeholder="small blog heading">
+                <label class="inputsBox--label" for="smallHeading">Blog Subheading</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[smallHeading]" id="smallHeading" placeholder="small blog heading">
 
-                <label for="paragraphSix">Paragraph Six</label>
+                <label class="inputsBox--label" for="paragraphSix">Paragraph Six</label>
 
-                <textarea name="blog[paragraphSix]" id="paragraphSix" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphSix]" id="paragraphSix" cols="30" rows="5"
                   placeholder="create a conversation"></textarea>
 
-                <label for="paragraphSeven">Paragraph Seven</label>
+                <label class="inputsBox--label" for="paragraphSeven">Paragraph Seven</label>
 
-                <textarea name="blog[paragraphSeven]" id="paragraphSeven" cols="30" rows="5"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphSeven]" id="paragraphSeven" cols="30" rows="5"
                     placeholder="create a conversation"></textarea>
 
                 <div class="group">
-                  <div class="left">
-                    <label for="smallerHeading">Smaller Heading</label>
-                    <input type="text" name="blog[smallerHeading]" id="smallerHeading" placeholder="smaller blog heading">
+                  <div class="inputsBox--left left">
+                    <label class="inputsBox--label" for="smallerHeading">Smaller Heading</label>
+                    <input class="inputsBox--input inputsBox--text" type="text" name="blog[smallerHeading]" id="smallerHeading" placeholder="smaller blog heading">
                   </div>
 
-                  <div class="right">
-                    <label for="blogImage">Blog Image*</label>
-                    <input type="text" name="blog[blogImage]" id="blogImage" placeholder="secondary blog image url" required>
+                  <div class="inputsBox--right right">
+                    <label class="inputsBox--label" for="blogImage">Blog Image*</label>
+                    <input class="inputsBox--input inputsBox--text" type="text" name="blog[blogImage]" id="blogImage" placeholder="secondary blog image url" required>
                   </div>
                 </div>
 
-                <label for="paragraphEight">Paragraph Eight</label>
-                <textarea name="blog[paragraphEight]" id="paragraphEight" cols="30" rows="5"
+                <label class="inputsBox--label" for="paragraphEight">Paragraph Eight</label>
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphEight]" id="paragraphEight" cols="30" rows="5"
                   placeholder="create a conversation"></textarea>
 
-                <label for="paragraphNine">Paragraph Nine</label>
-                <textarea name="blog[paragraphNine]" id="paragraphNine" cols="30" rows="5"
+                <label class="inputsBox--label" for="paragraphNine">Paragraph Nine</label>
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphNine]" id="paragraphNine" cols="30" rows="5"
                   placeholder="create a conversation"></textarea>
                     
               </div>
@@ -265,14 +265,14 @@
 
               <h2 class="section__inputs--heading">Section Four</h2>
 
-              <div class="box-content">
+              <div class="inputsBox">
 
-                <label for="smallestHeading">Smallest Heading*</label>
-                <input type="text" name="blog[smallestHeading]" id="smallestHeading" placeholder="outro heading" required>
+                <label class="inputsBox--label" for="smallestHeading">Smallest Heading*</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[smallestHeading]" id="smallestHeading" placeholder="outro heading" required>
 
-                <label for="lastParagraph">Last Paragraph*</label>
+                <label class="inputsBox--label" for="lastParagraph">Last Paragraph*</label>
 
-                <textarea name="blog[lastParagraph]" id="lastParagraph" cols="30" rows="10"
+                <textarea class="inputsBox--input inputsBox--textarea" name="blog[lastParagraph]" id="lastParagraph" cols="30" rows="10"
                   placeholder="conclude your story" required></textarea>
               </div>
 
@@ -292,9 +292,9 @@
           </div>
         </div>
 
-        <div class="form-btns">
-          <input class="btn btn-full" type="submit" value="Publish"> 
-          <input class="btn btn-ghost" type="submit" value="Save Draft" formaction="/blogs/drafts">
+        <div class="create__form--btns">
+          <input class="btn btn-full form--btn" type="submit" value="Publish"> 
+          <input class="btn btn-ghost form--btn" type="submit" value="Save Draft" formaction="/blogs/drafts">
         </div>
         
       </div>
