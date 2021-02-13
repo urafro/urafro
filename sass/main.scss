@@ -45,13 +45,6 @@ html {
   /* max-width: 100vw; */
 }
 
-.section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-}
-
 .left {
   float: left;
 }
@@ -2245,7 +2238,7 @@ contains blog author name, blog date and tag
     font-size: 2.5;
     font-weight: 300;
 
-    &--mainHeading::after {
+    &::after {
       display: block;
       height: .1rem;
       background-color: $color-primary-red;
@@ -2256,14 +2249,37 @@ contains blog author name, blog date and tag
     }
   }
 
-  &__form--row {
-    margin-top: 6rem;
+  &__form {
+    &--row {
+      margin-top: 6rem;
+    }
+
+    &--after::after {
+      display: block;
+      content: " ";
+      margin: 0 auto;
+      width: 30rem;
+      height: .1rem;
+      margin-top: 5rem;
+      background-color: rgba($color-primary-red, .1);
+    }
   }
 }
 
-.create input,
-label {
-  display: block;
+.section {
+  display: flex;
+  align-items: center;
+
+  &__inputs {
+    /* mixin or extend for these two cuz they have the same code  [__inputs and __desc] */
+    flex: 1;
+    padding: 0 2rem;
+  }
+
+  &__desc {
+    flex: 1;
+    padding: 0 2rem;
+  }
 }
 
 /* navbar */
@@ -2275,32 +2291,14 @@ label {
   float: right;
 }
 
-.content-inputs {
-  flex: 1;
-}
-
-.content-text {
-  flex: 1;
-}
-
-.content-inputs,
-.content-text {
-  padding: 0 2rem;
+.create input,
+label {
+  display: block;
 }
 
 /* ================
   new route images
 ================= */
-
-.create__form--after::after {
-  display: block;
-  content: " ";
-  margin: 0 auto;
-  width: 30rem;
-  height: .1rem;
-  margin-top: 5rem;
-  background-color: rgba($color-primary-red, .1);
-}
 
 .last {
   margin-bottom: 5rem;
@@ -2337,7 +2335,7 @@ label {
 
 /********** content-inputs *********/
 .comment .login,
-.comment .content-inputs {
+.comment .section__inputs {
   position: relative;
   left: 50%;
   top: 50%;
@@ -2348,28 +2346,28 @@ label {
   outline: none;
 }
 
-.comments-input .content-inputs {
+.comments-input .section__inputs {
   margin-top: 4rem;
 }
 
-.content-inputs {
+.section__inputs {
   border-radius: 1rem;
   box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
 }
 
-.content-inputs h2 {
+.section__inputs h2 {
   padding: 2rem;
   text-align: center;
   font-size: 1.2rem;
   color: $color-primary-red;
 }
 
-.content-inputs .left,
+.section__inputs .left,
 .right {
   width: 48%;
 }
 
-.content-inputs input[type="text"],
+.section__inputs input[type="text"],
 textarea,
 .auth input[type="password"] {
   width: 100%;
@@ -2380,7 +2378,7 @@ textarea,
   border-radius: .5rem;
 }
 
-.content-inputs input[type="text"],
+.section__inputs input[type="text"],
 .auth input[type="password"] {
   height: 8rem;
   font-size: .7rem;
@@ -2388,7 +2386,7 @@ textarea,
 }
 
 .create input[type="submit"],
-.comment .content-inputs form div.box-content input[type="submit"],
+.comment .section__inputs form div.box-content input[type="submit"],
 .comments-input input[type="submit"] {
   margin-top: 2rem;
   cursor: pointer;
@@ -2491,20 +2489,20 @@ textarea {
 }
 
 /****** content-text ******/
-.content-text h2 {
+.section__desc h2 {
   font-weight: 300;
   font-size: 1.2rem;
   margin-top: 3rem;
 }
 
-.content-text p {
+.section__desc p {
   margin-top: 2rem;
   font-size: .8rem;
   line-height: 1.35;
 }
 
-div.content-text p a:link,
-div.content-text p a:visited {
+div.section__desc p a:link,
+div.section__desc p a:visited {
   /* this can be a mixin/extend cuz i'm using the same two rules on showcaseTwo anchor tags */
 
   color: rgba($color-black, .5);
