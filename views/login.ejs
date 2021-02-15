@@ -2,92 +2,91 @@
 
 <div class="container">
 
-  <div class="hero">
-    <div class="l-container">
+  <div class="l-container">
 
-      <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+    <span class="menu-icon" onclick="openMenu()">&#9776;</span>
 
-    </div>
+  </div>
 
-    <div class="menu-container" id="navbar">
+  <div class="menu-container" id="navbar">
 
-      <span class="closebtn" onclick="closeMenu()">&times</span>
+    <span class="closebtn" onclick="closeMenu()">&times</span>
 
-      <div class="menu-content">
-        <a href="/blogs">Home</a>
-        <!-- will create an about page with mission statement and what-not -->
-        <a href="#">About</a>
-        <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
-        <a href="/projects">Projects</a>
-        <!-- create a contact us panel with socials -->
-        <a href="#">Contact Us</a>
-        <% if (!currentUser) { %>
-        <a href="/signup">Sign Up</a>
-        <a href="/login">Login</a>
-        <% } %>
-        <% if (currentUser) { %>
-        <a href="/logout">Logout</a>
-        <% } %>
-      </div>
-    </div>
-
-    <!-- header image will be replaced by signed in user's image -->
-    <div class="hero__header">
-      <a href="#" class="hero__header--link">
-        <img class="hero__header--image" src="https://i.imgur.com/f89JM9hm.png" alt="author image">
-      </a>
-      <div class="hero__body">
-        <h2 class="brand hero__body--mainTitle">urAfro</h2>
-        <p class="hero__body--desc">And what do they say about big ideas? Small step here, another there, we'll get it 💪🏽</p>
-        <a href="#" class="hero-btn hero-btn-full hero__body--link">
-          <i class="fab fa-instagram hero__body--linkIcon"></i>
-        </a>
-        <a href="#" class="hero-btn hero-btn-ghost hero__body--link">
-          <i class="fab fa-twitter hero__body--linkIcon"></i>
-        </a>
-      </div>
+    <div class="menu-content">
+      <a href="/blogs">Posts</a>
+      <!-- will create an about page with mission statement and what-not -->
+      <a href="/blogs/new">Create</a>
+      <a href="#">About</a>
+      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+      <a href="/projects">Projects</a>
+      <!-- create a contact us panel with socials -->
+      <a href="#">Contact Us</a>
+      <% if (!currentUser) { %>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+      <% } %>
+      <% if (currentUser) { %>
+      <a href="/logout">Logout</a>
+      <% } %>
     </div>
   </div>
 
-  <div class="showcase">
-
-    <div class="show-wrapper">
-
-      <div class="comment">
-        <div class="section zero">
-
-          <div class="section__inputs login">
-
-            <h2 class="section__inputs--heading">Login</h2>
-
-            <form action="/login" method="POST">
-
-              <div class="inputsBox auth">
-
-                <label class="inputsBox--label" for="username">Username**</label>
-                <input class="inputsBox--input inputsBox--text" type="text" name="username" id="username" placeholder="John" required>
-
-                <label class="inputsBox--label" for="password">Password**</label>
-                <input class="inputsBox--input inputsBox--password" type="password" name="password" id="password" placeholder="Put in on lock :)">
-
-                <input class="btn btn-full form--btn" type="submit" value="login">
-
-                <h5>Don't have an account? &nbsp; <a href="/signup">Sign Up!</a></h5>
-              </div>
-
-            </form>
-
-          </div>
+    <div class="hero">
+      <!-- header image will be replaced by signed in user's image -->
+      <div class="hero__header">
+        <a href="#" class="hero__header--link">
+          <img class="hero__header--image" src="https://i.imgur.com/f89JM9hm.png" alt="author image">
+        </a>
+        <div class="hero__body">
+          <h2 class="brand hero__body--mainTitle">urAfro</h2>
+          <p class="hero__body--desc">And what do they say about big ideas? Small step here, another there, we'll get it 💪🏽</p>
+          <a href="#" class="hero-btn hero-btn-full hero__body--link">
+            <i class="fab fa-instagram hero__body--linkIcon"></i>
+          </a>
+          <a href="#" class="hero-btn hero-btn-ghost hero__body--link">
+            <i class="fab fa-twitter hero__body--linkIcon"></i>
+          </a>
         </div>
       </div>
     </div>
-    <footer>
-      <p>
-        &copy; <span>#weRme</span>. All rights reserved. Believe in me, believe in We.
-      </p>
-    </footer>
-  </div>
 
+    <div class="showcase">
+
+      <div class="show-wrapper">
+
+        <div class="comment">
+          <div class="section zero">
+
+            <div class="section__inputs login">
+
+              <h2 class="section__inputs--heading">Login</h2>
+
+              <form action="/login" method="POST">
+
+                <div class="inputsBox auth">
+
+                  <label class="inputsBox--label" for="username">Username**</label>
+                  <input class="inputsBox--input inputsBox--text" type="text" name="username" id="username" placeholder="John" required>
+
+                  <label class="inputsBox--label" for="password">Password**</label>
+                  <input class="inputsBox--input inputsBox--password" type="password" name="password" id="password" placeholder="Put in on lock :)">
+
+                  <input class="btn btn-full form--btn" type="submit" value="login">
+
+                  <h5>Don't have an account? &nbsp; <a href="/signup">Sign Up!</a></h5>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>
+          &copy; <span>#weRme</span>. All rights reserved. Believe in me, believe in We.
+        </p>
+      </footer>
+    </div>
+  </div>
 </div>
 
 
