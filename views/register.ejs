@@ -2,35 +2,36 @@
 
 <div class="container">
 
+  <div class="l-container">
+
+    <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+
+  </div>
+
+  <div class="menu-container" id="navbar">
+
+    <span class="closebtn" onclick="closeMenu()">&times</span>
+
+    <div class="menu-content">
+      <a href="/blogs">Posts</a>
+      <!-- will create an about page with mission statement and what-not -->
+      <a href="/blogs/new">Create</a>
+      <a href="#">About</a>
+      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+      <a href="/projects">Projects</a>
+      <!-- create a contact us panel with socials -->
+      <a href="#">Contact Us</a>
+      <% if (!currentUser) { %>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+      <% } %>
+      <% if (currentUser) { %>
+      <a href="/logout">Logout</a>
+      <% } %>
+    </div>
+  </div>
+
   <div class="hero">
-    <div class="l-container">
-
-      <span class="menu-icon" onclick="openMenu()">&#9776;</span>
-
-    </div>
-
-    <div class="menu-container" id="navbar">
-
-      <span class="closebtn" onclick="closeMenu()">&times</span>
-
-      <div class="menu-content">
-        <a href="/blogs">Home</a>
-        <!-- will create an about page with mission statement and what-not -->
-        <a href="#">About</a>
-        <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
-        <a href="/projects">Projects</a>
-        <!-- create a contact us panel with socials -->
-        <a href="#">Contact Us</a>
-        <% if (!currentUser) { %>
-        <a href="/signup">Sign Up</a>
-        <a href="/login">Login</a>
-        <% } %>
-        <% if (currentUser) { %>
-        <a href="/logout">Logout</a>
-        <% } %>
-      </div>
-    </div>
-
     <div class="hero__header">
       <a href="#" class="hero__header--link">
         <!-- dynamic placeholder avatar -->
