@@ -140,9 +140,17 @@
                   <a href="#"><%= comment.author.username %></a>
                   <span>3 hours ago</span>
                 </div>
-                <a class="avatar" href="<%= blog._id %>/comments/<%= comment._id %>/replies/new">
-                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Comment Author" />
-                </a>
+                <!-- route the user to comment edit page if they're the owner of the comment -->
+                <% if(currentUser && currentUser._id.equals(comment.author.id)) { %>
+                  <a class="avatar" href="<%= blog._id %>/comments/<%= comment._id %>/edit">
+                    <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Edit Comment" />
+                  </a>
+                <!-- route the user to comment reply page if they're not the owner of the comment -->
+                <% } else if(!currentUser || !currentUser._id.equals(comment.author.id)) { %>
+                  <a class="avatar" href="<%= blog._id %>/comments/<%= comment._id %>/replies/new">
+                    <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Comment Author" />
+                  </a>
+                <% } %>
                 <p>
                   <%= comment.text %>
                 </p>
