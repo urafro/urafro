@@ -14,45 +14,51 @@
 
     <div class="menu-container" id="navbar">
 
-      <span class="closebtn" onclick="closeMenu()">&times</span>
+    <span class="closebtn" onclick="closeMenu()">&times</span>
 
-      <div class="menu-content">
-        <a href="/blogs/<%= blog._id %>">Cancel</a>
-        <!-- will create an about page with mission statement and what-not -->
-        <a href="#">About</a>
-        <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
-        <a href="/projects">Projects</a>
-        <!-- create a contact us panel with socials -->
-        <a href="#">Contact Us</a>
-        <% if (!currentUser) { %>
-        <a href="/signup">Sign Up</a>
-        <a href="/login">Login</a>
-        <% } %>
-        <% if (currentUser) { %>
-        <a href="/logout">Logout</a>
-        <% } %>
-      </div>
+    <div class="menu-content">
+      <a href="/blogs">Posts</a>
+      <!-- will create an about page with mission statement and what-not -->
+      <a href="/blogs/new">Create</a>
+      <a href="#">About</a>
+      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
+      <a href="/projects">Projects</a>
+      <!-- create a contact us panel with socials -->
+      <a href="#">Contact Us</a>
+      <% if (!currentUser) { %>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+      <% } %>
+      <% if (currentUser) { %>
+      <a href="/logout">Logout</a>
+      <% } %>
     </div>
+  </div>
 
-    <div class="header-2">
-      <h2><%= blog.body.header.mainHeading %></h2>
+  <!-- declare show hero background image as inline css to access ejs data -->
+  <div class="heroTwo" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .9)), url('<%= blog.body.header.mainImage %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-      <div class="author-card">
-        <div class="card-image">
-          <!-- generic card image will be replaced by user image from the user schema -->
-          <img
-            src="https://avatars1.githubusercontent.com/u/40425600?s=460&u=70aad7d62f88901146fa06477a3604a62ad375e9&v=4"
+    <div class="heroTwo__headerTwo">
+      <h2 class="heroTwo__headerTwo--mainTitle"><%= blog.author.bio %></h2>
+
+      <div class="heroTwo__body">
+        <div class="heroTwo__body--cardImageContainer">
+          <!-- card image points to  user image from the user schema -->
+          <img class="heroTwo__body--cardImage"
+            src="<%= blog.author.avatarUrl %>"
             alt="author image">
         </div>
 
-        <div class="card-text">
+        <div class="heroTwo__body--cardText">
           <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
-          <h3><a href="#">Tinashe Dan</a></h3>
-          <p><%= blog.createdAt.toLocaleDateString() %></p>
+          <h3 class="heroTwo__body--cardTitle">
+            <a class="heroTwo__body--cardTitleLink" href="#"><%= blog.author.username %></a>
+          </h3>
+          <p class="heroTwo__body--cardDate caveat"><%= blog.createdAt.toLocaleDateString() %></p>
         </div>
       </div>
-
     </div>
+  </div>
   </div>
 
   <div class="showcase-2">
