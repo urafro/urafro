@@ -1919,23 +1919,15 @@ form submit buttons
 /** =====================
   * Auth Routes
 ======================= */
-.auth h5 {
+.auth__smallHeading {
   margin-top: 2rem;
   font-size: .7rem;
   margin-bottom: .5rem; }
-
-div.inputsBox.auth h5 a:link,
-div.inputsBox.auth h5 a:visited {
-  color: #aca5a5; }
-
-div.inputsBox.auth h5 a:active,
-div.inputsBox.auth h5 a:hover {
-  color: #555;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s; }
+  .auth__smallHeading--link:link, .auth__smallHeading--link:visited {
+    color: #aca5a5; }
+  .auth__smallHeading--link:active, .auth__smallHeading--link:hover {
+    color: #555;
+    transition: color .2s; }
 
 /* ============================
       PROJECTS APP STYLES

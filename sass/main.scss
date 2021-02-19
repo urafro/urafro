@@ -2715,25 +2715,21 @@ form submit buttons
   * Auth Routes
 ======================= */
 
-.auth h5 {
+.auth__smallHeading {
   margin-top: 2rem;
   font-size: .7rem;
   margin-bottom: .5rem;
-}
 
-div.inputsBox.auth h5 a:link,
-div.inputsBox.auth h5 a:visited {
-  color: rgb(172, 165, 165);
-}
+  &--link:link,
+  &--link:visited {
+    color: rgb(172, 165, 165);
+  }
 
-div.inputsBox.auth h5 a:active,
-div.inputsBox.auth h5 a:hover {
-  color: #555;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -o-transition: color .2s;
+  &--link:active,
+  &--link:hover {
+    color: #555;
+    transition: color .2s;
+  }
 }
 
 /* ============================
