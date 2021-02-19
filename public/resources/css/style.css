@@ -1939,118 +1939,97 @@ form submit buttons
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.projects__content {
-  background-color: #FFF;
-  height: 90%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.projects__content--logoBox {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2.5rem 6rem;
-  list-style-type: none; }
-
-.projects__content--body {
-  margin: 3rem 6rem;
-  display: flex;
-  align-items: center; }
+  .projects__content {
+    background-color: #FFF;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .projects__content--logoBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.5rem 6rem;
+      list-style-type: none; }
+    .projects__content--body {
+      margin: 3rem 6rem;
+      display: flex;
+      align-items: center; }
+    .projects__content--contacts {
+      display: flex;
+      margin: 0 6rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: .65rem; }
+    .projects__content--footer {
+      background-color: #111;
+      color: #555;
+      text-align: center;
+      padding: 1rem 0; }
+  .projects__imageBox {
+    flex: 2 2 50%;
+    width: 50%;
+    overflow: hidden;
+    height: 65vh;
+    background-image: linear-gradient(rgba(20, 30, 48, 0.5), rgba(20, 30, 48, 0.5)), url("https://images.unsplash.com/photo-1529088363398-8efc64a0eb95?ixlib=rb-1.2.1&auto=format&fit=crop&w=848&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .projects__textBox {
   flex: 1 1 50%;
   min-width: 50%; }
-
-.projects__imageBox {
-  flex: 2 2 50%; }
-
-.projects__textBox--heading {
-  font-size: 110%;
-  font-weight: 400;
-  margin-bottom: 2.5rem; }
-
-.projects__textBox--span {
-  display: inline-block;
-  font-size: .7rem;
-  margin-bottom: 1.5rem; }
-
-.projects__textBox--email {
-  display: flex; }
-
-.projects__textBox--emailInput {
-  /* removing borders from email input */
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  background-color: #FFF;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  height: 3rem;
-  width: 16rem; }
-
-.projects__textBox--emailInput::placeholder {
-  text-align: center; }
-
-.projects__textBox--submit {
-  padding: 1rem 1.5rem;
-  cursor: pointer; }
-
-.projects__textBox--smallSocials {
-  display: flex;
-  margin-top: 2.5rem; }
-
-.projects__textBox--smallLink:link,
-.projects__textBox--smallLink:visited {
-  color: #100c08;
-  text-decoration: none;
-  padding-right: 1rem; }
-
-.projects__imageBox {
-  width: 50%;
-  overflow: hidden;
-  height: 65vh;
-  background-image: linear-gradient(rgba(20, 30, 48, 0.5), rgba(20, 30, 48, 0.5)), url("https://images.unsplash.com/photo-1529088363398-8efc64a0eb95?ixlib=rb-1.2.1&auto=format&fit=crop&w=848&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.projects__content--contacts {
-  display: flex;
-  margin: 0 6rem;
-  align-items: center;
-  justify-content: space-between;
-  font-size: .65rem; }
+  .projects__textBox--heading {
+    font-size: 110%;
+    font-weight: 400;
+    margin-bottom: 2.5rem; }
+  .projects__textBox--span {
+    display: inline-block;
+    font-size: .7rem;
+    margin-bottom: 1.5rem; }
+  .projects__textBox--email {
+    display: flex; }
+    .projects__textBox--emailInput {
+      /* removing borders from email input */
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+      background-color: #FFF;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      height: 3rem;
+      width: 16rem; }
+    .projects__textBox--emailInput::placeholder {
+      text-align: center; }
+  .projects__textBox--submit {
+    padding: 1rem 1.5rem;
+    cursor: pointer; }
+  .projects__textBox--smallSocials {
+    display: flex;
+    margin-top: 2.5rem; }
+  .projects__textBox--smallLink:link, .projects__textBox--smallLink:visited {
+    color: #100c08;
+    text-decoration: none;
+    padding-right: 1rem; }
 
 .projects__card {
-  display: flex; }
-
-.projects__card--primary {
-  position: relative; }
-
-.projects__card--primaryHeading {
-  font-weight: 300;
-  margin-right: .5rem; }
-
-/* Drawing a line after a heading */
-.projects__card--primaryHeading::after {
-  content: "";
-  display: inline-block;
-  width: 2.5rem;
-  height: .1rem;
-  background-color: #100c08;
-  position: absolute;
-  left: 105%;
-  bottom: 75%; }
-
-.projects__card--secondary {
-  margin-left: 4rem; }
-
-.projects__content--footer {
-  background-color: #111;
-  color: #555;
-  text-align: center;
-  padding: 1rem 0; }
+  display: flex;
+  /* Drawing a line after a heading */ }
+  .projects__card--primary {
+    position: relative; }
+  .projects__card--primaryHeading {
+    font-weight: 300;
+    margin-right: .5rem; }
+  .projects__card--primaryHeading::after {
+    content: "";
+    display: inline-block;
+    width: 2.5rem;
+    height: .1rem;
+    background-color: #100c08;
+    position: absolute;
+    left: 105%;
+    bottom: 75%; }
+  .projects__card--secondary {
+    margin-left: 4rem; }
