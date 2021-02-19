@@ -2445,6 +2445,18 @@ form submit buttons
   }
 }
 
+.section__desc--heading {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.section__desc--paragraph {
+  margin-top: 2rem;
+  font-size: .8rem;
+  line-height: 1.35;
+}
+
 /* ==============================
   styles for new comment div only
 ================================ */
@@ -2467,17 +2479,6 @@ form submit buttons
 }
 
 /****** content-text ******/
-.section__desc h2 {
-  font-weight: 300;
-  font-size: 1.2rem;
-  margin-top: 3rem;
-}
-
-.section__desc p {
-  margin-top: 2rem;
-  font-size: .8rem;
-  line-height: 1.35;
-}
 
 div.section__desc p a:link,
 div.section__desc p a:visited {
