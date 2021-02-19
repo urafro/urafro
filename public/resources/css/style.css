@@ -1704,6 +1704,14 @@ form submit buttons
 ================= */
 .section__desc {
   padding-left: 3rem; }
+  .section__desc--heading {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 3rem; }
+  .section__desc--paragraph {
+    margin-top: 2rem;
+    font-size: .8rem;
+    line-height: 1.35; }
   .section__desc--image {
     padding: 3rem 0 2rem 0; }
   .section__desc--imageOne {
@@ -1713,16 +1721,6 @@ form submit buttons
   .section__desc--imageFour {
     height: 40rem;
     margin-left: 10rem; }
-
-.section__desc--heading {
-  font-weight: 300;
-  font-size: 1.2rem;
-  margin-top: 3rem; }
-
-.section__desc--paragraph {
-  margin-top: 2rem;
-  font-size: .8rem;
-  line-height: 1.35; }
 
 /* ==============================
   styles for new comment div only
