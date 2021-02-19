@@ -27,20 +27,22 @@ let mailTransporter = nodemailer.createTransport({
 //SENDING NEWSLETTER EMAIL TO GMAIL ACCOUNT
 router.post("/newsletter", (req, res) => {
   //saving email input from landing ejs form
-  const sender = `${req.body.newsletter}`;
+  const sender = `${req.body.email}`;
 
   let mailDetails = { 
     from: sender, 
     to: process.env.EMAIL, 
     subject: 'New sub to newsletter! 🎉',
     //Use proper html tags here to construct a more beautifull email 
-    text: `Save ${sendersEmail} to newsletter mailing list`
+    text: `Save ${sender} to newsletter mailing list`
   };
 
   mailTransporter.sendMail(mailDetails, (err, data) => { 
     if(err) { 
         req.flash("error", "Well, this is embarassing 😅. Email seems down atm. Kindly use our socials to get in touch");
         res.redirect("/");
+        console.log(err.message);
+        console.log(mailDetails);
     } else { 
         req.flash("success", "Email sent successfully ✅");
         res.redirect("/");
