@@ -2745,7 +2745,7 @@ form submit buttons
   justify-content: center;
 }
 
-.projects-container {
+.projects__content {
   background-color: $color-white;
   height: 90%;
   width: 90%;
@@ -2754,53 +2754,46 @@ form submit buttons
   justify-content: space-between;
 }
 
-.projects-container .logo-box {
+.projects__content--logoBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 6rem;
-}
-
-.logo-box {
   list-style-type: none;
 }
 
-.projects-container .content {
+.projects__content--body {
   margin: 3rem 6rem;
   display: flex;
   align-items: center;
 }
 
-.content .text-box {
+.projects__textBox {
   flex: 1 1 50%;
   min-width: 50%;
 }
 
-.content .image-box {
+.projects__imageBox {
   flex: 2 2 50%;
 }
 
-.text-box h1 {
+.projects__textBox--heading {
   font-size: 110%;
   font-weight: 400;
   margin-bottom: 2.5rem;
 }
 
-.text-box span {
+.projects__textBox--span {
   display: inline-block;
   font-size: .7rem;
   margin-bottom: 1.5rem;
 }
 
-.projects-email {
+.projects__textBox--email {
   display: flex;
 }
 
-.projects-email h5 {
-  font-weight: 300;
-}
-
-.projects-email input[type="email"] {
+.projects__textBox--emailInput {
   /* removing borders from email input */
   border-top-style: hidden;
   border-right-style: hidden;
@@ -2814,28 +2807,28 @@ form submit buttons
   width: 16rem;
 }
 
-.projects-email input[type="email"]::placeholder {
+.projects__textBox--emailInput::placeholder {
   text-align: center;
 }
 
-.text-box .btn {
+.projects__textBox--submit {
   padding: 1rem 1.5rem;
   cursor: pointer;
 }
 
-.small-socials {
+.projects__textBox--smallSocials {
   display: flex;
   margin-top: 2.5rem;
 }
 
-.small-socials a:link,
-.small-socials a:visited {
+.projects__textBox--smallLink:link,
+.projects__textBox--smallLink:visited {
   color: $color-black;
   text-decoration: none;
   padding-right: 1rem;
 }
 
-.image-box {
+.projects__imageBox {
   width: 50%;
   overflow: hidden;
   height: 65vh;
@@ -2846,7 +2839,7 @@ form submit buttons
   background-size: cover;
 }
 
-.projects-container .contacts {
+.projects__content--contacts {
   display: flex;
   margin: 0 6rem;
   align-items: center;
@@ -2854,21 +2847,21 @@ form submit buttons
   font-size: .65rem;
 }
 
-.contact-card {
+.projects__card {
   display: flex;
 }
 
-.contact-card .card-primary {
+.projects__card--primary {
   position: relative;
 }
 
-.contact-card .card-primary h4 {
+.projects__card--primaryHeading {
   font-weight: 300;
   margin-right: .5rem;
 }
 
 /* Drawing a line after a heading */
-.contact-card .card-primary h4::after {
+.projects__card--primaryHeading::after {
   content: "";
   display: inline-block;
   width: 2.5rem;
@@ -2879,11 +2872,11 @@ form submit buttons
   bottom: 75%;
 }
 
-.contact-card .card-secondary {
+.projects__card--secondary {
   margin-left: 4rem;
 }
 
-.projects-container .footer {
+.projects__content--footer {
   background-color: #111;
   color: #555;
   text-align: center;
