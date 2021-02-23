@@ -1366,11 +1366,13 @@ contains blog author name, blog date and tag
     align-items: center;
     justify-content: center;
     /* this can be a mixin/extend. using the same padding on showcaseBoxes */
-    padding-bottom: 10rem; }
-    .showcaseTwo .blog p {
+    padding-bottom: 10rem;
+    /* find a better way to do this */
+    /* & p {
       margin-bottom: 20px;
       line-height: 135%;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+    } */ }
   .showcaseTwo__footer {
     /* 
   this code should be a mixin/extend cuz its the same as showcase footer the first one just a few lines up 
@@ -1415,7 +1417,7 @@ contains blog author name, blog date and tag
   margin: 0 auto;
   text-align: center; }
   .blog__heading--mainHeading {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     position: relative;
     top: -2.5rem;

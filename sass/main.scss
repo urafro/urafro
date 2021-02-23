@@ -1920,11 +1920,12 @@ contains blog author name, blog date and tag
     /* this can be a mixin/extend. using the same padding on showcaseBoxes */
     padding-bottom: 10rem;
 
-    & p {
+    /* find a better way to do this */
+    /* & p {
       margin-bottom: 20px;
       line-height: 135%;
       font-size: 1.6rem;
-    }
+    } */
   }
 
   &__footer {
@@ -1988,7 +1989,7 @@ contains blog author name, blog date and tag
   text-align: center;
 
   &--mainHeading {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     position: relative;
     top: -2.5rem;
