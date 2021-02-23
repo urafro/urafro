@@ -60,6 +60,10 @@ select::-ms-expand {
   /* max-width: 100vw; */
 }
 
+.section__heading {
+  font-size: 3rem;
+}
+
 .left {
   float: left;
 }
@@ -623,7 +627,7 @@ h3 {
     text-align: center;
   }
 
-  &__head p {
+  &__head--paragraph {
     font-size: 1rem;
     font-weight: 400;
     opacity: .5;

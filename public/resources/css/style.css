@@ -36,6 +36,9 @@ select::-ms-expand {
   display: flex;
   /* max-width: 100vw; */ }
 
+.section__heading {
+  font-size: 3rem; }
+
 .left {
   float: left; }
 
@@ -452,7 +455,7 @@ h3 {
   .features__head {
     margin: 12rem 0 5rem 0;
     text-align: center; }
-  .features__head p {
+  .features__head--paragraph {
     font-size: 1rem;
     font-weight: 400;
     opacity: .5; }
