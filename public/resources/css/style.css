@@ -628,11 +628,11 @@ h3 {
     .numbers__boxes--digit {
       margin-top: 5rem;
       color: #FF2525;
-      font-size: 4rem;
+      font-size: 8rem;
       font-weight: 900;
       font-family: "Caveat", cursive; }
     .numbers__boxes--icon {
-      font-size: 1.6;
+      font-size: 2rem;
       margin-right: 2rem;
       color: rgba(16, 12, 8, 0.5); }
     .numbers__boxes--title {
