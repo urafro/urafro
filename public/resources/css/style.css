@@ -1433,7 +1433,7 @@ contains blog author name, blog date and tag
       margin-top: 2rem; }
   .blog__heading--paragraph {
     color: rgba(16, 12, 8, 0.3);
-    font-size: .8rem;
+    font-size: 1.3rem;
     animation: smallPop 1s linear 2s forwards;
     transform: scale(1); }
     .blog__heading--paragraph:after {
