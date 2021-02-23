@@ -2730,11 +2730,15 @@ form submit buttons
 /** =====================
   * Auth Routes
 ======================= */
+.zero {
+  width: 40vw;
+}
 
 .auth__smallHeading {
   margin-top: 2rem;
-  font-size: .7rem;
+  font-size: 1.3rem;
   margin-bottom: .5rem;
+  font-weight: 300;
 
   &--link:link,
   &--link:visited {

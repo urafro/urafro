@@ -1932,10 +1932,14 @@ form submit buttons
 /** =====================
   * Auth Routes
 ======================= */
+.zero {
+  width: 40vw; }
+
 .auth__smallHeading {
   margin-top: 2rem;
-  font-size: .7rem;
-  margin-bottom: .5rem; }
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+  font-weight: 300; }
   .auth__smallHeading--link:link, .auth__smallHeading--link:visited {
     color: #aca5a5; }
   .auth__smallHeading--link:active, .auth__smallHeading--link:hover {
