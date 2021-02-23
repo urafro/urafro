@@ -2092,7 +2092,7 @@ contains blog author name, blog date and tag
 .backlinks {
 
   &--heading {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-top: 5rem;
     margin-bottom: .5rem;
     border-top: .2rem solid rgba($color-primary-light, .5);
@@ -2102,12 +2102,11 @@ contains blog author name, blog date and tag
   &__tag {
     margin-left: .2rem;
     color: rgba($color-black, .5);
-    font-size: .9rem;
+    font-size: 1.3rem;
     border-bottom: .2rem solid rgba($color-primary-light, .5);
-    padding-bottom: 3rem;
 
     &--link {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       margin-left: .5rem;
       font-weight: 400;
       text-decoration: underline;

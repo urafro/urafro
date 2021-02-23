@@ -1488,7 +1488,7 @@ contains blog author name, blog date and tag
 
 /********* Show-backlinks section *************/
 .backlinks--heading {
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin-top: 5rem;
   margin-bottom: .5rem;
   border-top: 0.2rem solid rgba(249, 249, 249, 0.5);
@@ -1497,11 +1497,10 @@ contains blog author name, blog date and tag
 .backlinks__tag {
   margin-left: .2rem;
   color: rgba(16, 12, 8, 0.5);
-  font-size: .9rem;
-  border-bottom: 0.2rem solid rgba(249, 249, 249, 0.5);
-  padding-bottom: 3rem; }
+  font-size: 1.3rem;
+  border-bottom: 0.2rem solid rgba(249, 249, 249, 0.5); }
   .backlinks__tag--link {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-left: .5rem;
     font-weight: 400;
     text-decoration: underline; }
