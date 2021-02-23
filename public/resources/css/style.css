@@ -1620,7 +1620,6 @@ Content sections in form rows
     /* mixin or extend for these two cuz they have the same code  [__inputs and __desc] */
     flex: 1;
     padding: 0 2rem;
-    margin-top: 4rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1); }
     .section__inputs--heading {
@@ -1699,27 +1698,31 @@ Individual boxes in section rows
       background: #f9f9f9;
       font-family: inherit; }
 
-/* ================
-  new route images
-================= */
+/* ===================
+  new route desc side
+====================== */
 .section__desc {
   padding-left: 3rem; }
   .section__desc--heading {
     font-weight: 300;
-    font-size: 1.2rem;
-    margin-top: 3rem; }
+    font-size: 2rem;
+    margin-top: 2rem; }
   .section__desc--paragraph {
-    margin-top: 2rem;
-    font-size: .8rem;
-    line-height: 1.35; }
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem; }
   .section__desc--image {
-    padding: 3rem 0 2rem 0; }
+    padding: 3rem 0 3rem 0; }
+  .section__desc--imageZero {
+    height: 25rem; }
   .section__desc--imageOne {
-    height: 50rem; }
-  .section__desc--imageTwo {
     height: 35rem; }
+  .section__desc--imageTwo {
+    height: 28rem; }
+  .section__desc--imageThree {
+    height: 50rem; }
   .section__desc--imageFour {
-    height: 40rem;
+    height: 30rem;
     margin-left: 10rem; }
 
 /* =================

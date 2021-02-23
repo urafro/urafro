@@ -2306,7 +2306,6 @@ Content sections in form rows
     flex: 1;
     padding: 0 2rem;
 
-    margin-top: 4rem;
     border-radius: 1rem;
     box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
 
@@ -2419,38 +2418,46 @@ Individual boxes in section rows
   }
 }
 
-/* ================
-  new route images
-================= */
+/* ===================
+  new route desc side
+====================== */
 .section__desc {
   padding-left: 3rem;
 
   &--heading {
     font-weight: 300;
-    font-size: 1.2rem;
-    margin-top: 3rem;
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 
   &--paragraph {
-    margin-top: 2rem;
-    font-size: .8rem;
-    line-height: 1.35;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
 
   &--image {
-    padding: 3rem 0 2rem 0;
+    padding: 3rem 0 3rem 0;
+  }
+
+  &--imageZero {
+    height: 25rem;
   }
 
   &--imageOne {
-    height: 50rem;
-  }
-
-  &--imageTwo {
     height: 35rem;
   }
 
+  &--imageTwo {
+    height: 28rem;
+  }
+
+  &--imageThree {
+    height: 50rem;
+  }
+
   &--imageFour {
-    height: 40rem;
+    height: 30rem;
     margin-left: 10rem;
   }
 }
