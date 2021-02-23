@@ -1963,6 +1963,8 @@ form submit buttons
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .projects__content--logo {
+      font-size: 2rem; }
     .projects__content--logoBox {
       display: flex;
       align-items: center;
@@ -1998,12 +2000,12 @@ form submit buttons
   flex: 1 1 50%;
   min-width: 50%; }
   .projects__textBox--heading {
-    font-size: 110%;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 2.5rem; }
   .projects__textBox--span {
     display: inline-block;
-    font-size: .7rem;
+    font-size: 1.3rem;
     margin-bottom: 1.5rem; }
   .projects__textBox--email {
     display: flex; }
@@ -2015,17 +2017,17 @@ form submit buttons
       border-bottom-style: groove;
       background-color: #FFF;
       margin-top: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem;
       height: 3rem;
       width: 16rem; }
     .projects__textBox--emailInput::placeholder {
       text-align: center; }
   .projects__textBox--submit {
-    padding: 1rem 1.5rem;
     cursor: pointer; }
   .projects__textBox--smallSocials {
     display: flex;
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem;
+    font-size: 2rem; }
   .projects__textBox--smallLink:link, .projects__textBox--smallLink:visited {
     color: #100c08;
     text-decoration: none;
@@ -2038,7 +2040,8 @@ form submit buttons
     position: relative; }
   .projects__card--primaryHeading {
     font-weight: 300;
-    margin-right: .5rem; }
+    margin-right: .5rem;
+    font-size: 1.3rem; }
   .projects__card--primaryHeading::after {
     content: "";
     display: inline-block;
@@ -2049,4 +2052,7 @@ form submit buttons
     left: 105%;
     bottom: 75%; }
   .projects__card--secondary {
-    margin-left: 4rem; }
+    margin-left: 4rem;
+    margin-bottom: 1rem; }
+  .projects__card--secondaryParagraph {
+    font-size: 1.3rem; }
