@@ -978,19 +978,21 @@ h3 {
       border-radius: 50%;
       border: 8px solid rgba(255, 37, 37, 0.2); }
   .hero__body--mainTitle {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400; }
   .hero__body--desc {
     font-weight: 300;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
     width: 70%;
     margin: auto;
     margin-top: 1rem; }
   .hero__body--link:link, .hero__body--link:visited {
     padding: 1rem;
-    font-size: 2rem;
     color: #f9f9f9; }
+  .hero__body--linkIcon {
+    font-size: 3rem;
+    margin-top: 1.5rem; }
 
 .heroTwo__headerTwo {
   /* 

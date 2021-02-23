@@ -1374,24 +1374,30 @@ h3 {
 
   &__body {
     &--mainTitle {
-      font-size: 1.2rem;
+      font-size: 2rem;
       font-weight: 400;
     }
 
     &--desc {
       font-weight: 300;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 2rem;
       width: 70%;
       margin: auto;
       margin-top: 1rem;
     }
 
-    &--link:link,
-    &--link:visited {
-      padding: 1rem;
-      font-size: 2rem;
-      color: $color-primary-light;
+    &--link {
+      &:link,
+      &:visited {
+        padding: 1rem;
+        color: $color-primary-light;
+      }
+
+      &Icon {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+      }
     }
   }
 }
