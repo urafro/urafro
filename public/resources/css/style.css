@@ -415,13 +415,19 @@ h3 {
     box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1);
     position: relative;
     top: -2rem;
-    /* smaller nested containers */
-    /* first nested div heading */
-    /* second and third divs */ }
-    .intro__container img {
+    /* smaller nested containers */ }
+    .intro__container--heading {
+      font-size: 2rem;
+      margin: 2rem 0; }
+    .intro__container--paragraph {
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      width: 80%; }
+    .intro__container--image {
       height: 15rem; }
-    .intro__container p {
-      line-height: 1.2; }
+    .intro__container--btn {
+      margin-top: 1.5rem; }
     .intro__container--about {
       flex: 1; }
     .intro__container--give {
@@ -435,17 +441,6 @@ h3 {
       flex: 1; }
     .intro__container--about, .intro__container--give, .intro__container--receive {
       padding: 0 2rem 0 3rem; }
-    .intro__container--about h2 {
-      margin: 2rem 0; }
-    .intro__container--about p {
-      margin-bottom: 3rem; }
-    .intro__container--give h2,
-    .intro__container--receive h2 {
-      font-size: 1.2rem;
-      margin: 2rem 0; }
-    .intro__container--give p,
-    .intro__container--receive p {
-      margin-bottom: 1rem; }
 
 /* ==============
     features

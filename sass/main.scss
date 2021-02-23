@@ -558,12 +558,24 @@ h3 {
     position: relative;
     top: -2rem;
 
-    & img {
+    &--heading {
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+
+    &--paragraph {
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      width: 80%;
+    }
+
+    &--image {
       height: 15rem;
     }
 
-    & p {
-      line-height: 1.2;
+    &--btn {
+      margin-top: 1.5rem;
     }
 
     /* smaller nested containers */
@@ -593,27 +605,6 @@ h3 {
     &--give,
     &--receive {
       padding: 0 2rem 0 3rem;
-    }
-
-    /* first nested div heading */
-    &--about h2 {
-      margin: 2rem 0;
-    }
-
-    &--about p {
-      margin-bottom: 3rem;
-    }
-    
-    /* second and third divs */
-    &--give h2,
-    &--receive h2 {
-      font-size: 1.2rem;
-      margin: 2rem 0;
-    }
-
-    &--give p,
-    &--receive p {
-      margin-bottom: 1rem;
     }
   }
 }
