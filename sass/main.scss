@@ -917,7 +917,7 @@ h3 {
     &--brand {
       text-transform: none;
       color: $color-primary-red;
-      font-size: 1.2rem;
+      font-size: 3rem;
     }
 
     &--sub {
@@ -943,6 +943,7 @@ h3 {
     box-shadow: 0 .5rem .5rem rgba($color-black, .1);
 
     &--paragraph {
+      font-size: 1.5rem;
       line-height: 150%;
       margin: 2rem 0;
       width: 80%;
@@ -959,14 +960,14 @@ h3 {
     }
 
     &--name {
-      font-size: 90%;
+      font-size: 1.5rem;
       margin-bottom: 2rem;
     }
 
     &--title,
     &--company {
       display: block;
-      font-size: .8rem;
+      font-size: 1.2rem;
       font-style: italic;
       letter-spacing: .05rem;
       padding-bottom: .5rem;

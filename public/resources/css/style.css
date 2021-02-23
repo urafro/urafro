@@ -652,7 +652,7 @@ h3 {
   .testimonials__header--brand {
     text-transform: none;
     color: #FF2525;
-    font-size: 1.2rem; }
+    font-size: 3rem; }
   .testimonials__header--sub {
     font-weight: 300;
     margin-bottom: 4rem; }
@@ -672,6 +672,7 @@ h3 {
   top: -18rem;
   box-shadow: 0 0.5rem 0.5rem rgba(16, 12, 8, 0.1); }
   .testimonials__box--paragraph {
+    font-size: 1.5rem;
     line-height: 150%;
     margin: 2rem 0;
     width: 80%; }
@@ -684,11 +685,11 @@ h3 {
       font-size: 12rem;
       font-weight: 400; }
   .testimonials__box--name {
-    font-size: 90%;
+    font-size: 1.5rem;
     margin-bottom: 2rem; }
   .testimonials__box--title, .testimonials__box--company {
     display: block;
-    font-size: .8rem;
+    font-size: 1.2rem;
     font-style: italic;
     letter-spacing: .05rem;
     padding-bottom: .5rem; }
