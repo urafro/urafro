@@ -1733,7 +1733,8 @@ form submit buttons
   cursor: pointer;
   text-transform: none;
   display: inline-block;
-  font-family: inherit; }
+  font-family: inherit;
+  margin-bottom: 1rem; }
 
 /* ===============================================
                 COMMENT ROUTE
