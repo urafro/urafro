@@ -1495,7 +1495,6 @@ contains blog author name, blog date and tag
   padding-top: 2rem; }
 
 .backlinks__tag {
-  margin-left: .2rem;
   color: rgba(16, 12, 8, 0.5);
   font-size: 1.3rem;
   border-bottom: 0.2rem solid rgba(249, 249, 249, 0.5); }
@@ -1531,7 +1530,6 @@ contains blog author name, blog date and tag
       width: 100%;
       height: 30rem;
       border-radius: .3rem;
-      scale: 1;
       opacity: .7;
       transform: scale(1);
       transition: .3s ease-in-out; }
@@ -1543,7 +1541,7 @@ contains blog author name, blog date and tag
     bottom: 2rem;
     right: 2rem;
     font-size: .7rem;
-    padding: 5px 2rem;
+    padding: .5rem 2rem;
     color: #FFF;
     border-radius: 3rem; }
   .backlinkCard__tag--green:link, .backlinkCard__tag--green:visited {
@@ -1557,7 +1555,7 @@ contains blog author name, blog date and tag
   .backlinkCard__body--heading {
     width: 85%;
     margin-bottom: 1rem;
-    font-size: .9rem;
+    font-size: 1.3rem;
     letter-spacing: .01rem; }
   .backlinkCard__body--headingLink:link, .backlinkCard__body--headingLink:visited {
     color: #100c08;
@@ -1568,10 +1566,10 @@ contains blog author name, blog date and tag
   .backlinkCard__body--paragraph {
     margin-bottom: .5rem;
     color: rgba(16, 12, 8, 0.7);
-    font-size: .7rem;
+    font-size: 1.1rem;
     width: 100%; }
   .backlinkCard__body--link:link, .backlinkCard__body--link:visited {
-    font-size: .7rem;
+    font-size: 1.1rem;
     margin-left: .2rem;
     color: rgba(16, 12, 8, 0.5);
     text-decoration: underline; }

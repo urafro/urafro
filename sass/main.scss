@@ -2100,7 +2100,6 @@ contains blog author name, blog date and tag
   }
 
   &__tag {
-    margin-left: .2rem;
     color: rgba($color-black, .5);
     font-size: 1.3rem;
     border-bottom: .2rem solid rgba($color-primary-light, .5);
@@ -2155,7 +2154,6 @@ contains blog author name, blog date and tag
       width: 100%;
       height: 30rem;
       border-radius: .3rem;
-      scale: 1;
       opacity: .7;
       transform: scale(1);
       transition: .3s ease-in-out;
@@ -2175,7 +2173,7 @@ contains blog author name, blog date and tag
       bottom: 2rem;
       right: 2rem;
       font-size: .7rem;
-      padding: 5px 2rem;
+      padding: .5rem 2rem;
       color: $color-white;
       border-radius: 3rem;
     }
@@ -2205,7 +2203,7 @@ contains blog author name, blog date and tag
     &--heading {
       width: 85%;
       margin-bottom: 1rem;
-      font-size: .9rem;
+      font-size: 1.3rem;
       letter-spacing: .01rem;
     }
 
@@ -2226,14 +2224,14 @@ contains blog author name, blog date and tag
     &--paragraph {
       margin-bottom: .5rem;
       color: rgba($color-black, .7);
-      font-size: .7rem;
+      font-size: 1.1rem;
       width: 100%;
     }
 
     &--link {
       &:link,
       &:visited {
-        font-size: .7rem;
+        font-size: 1.1rem;
         margin-left: .2rem;
         color: rgba($color-black, .5);
         text-decoration: underline;
