@@ -1690,12 +1690,12 @@ contains blog author name, blog date and tag
     margin-top: 1rem;
 
     &--title {
-      font-size: .75rem;
+      font-size: 1.3rem;
       margin-bottom: .2rem;
     }
 
     &--paragraph {
-      font-size: .7rem;
+      font-size: 1.3rem;
       color: rgba($color-primary-light, .7);
       font-family: 'Caveat', cursive;
     }
@@ -1707,11 +1707,11 @@ contains blog author name, blog date and tag
     margin-top: 1rem;
     border-radius: 1rem;
     text-align: center;
+    font-size: 1.3rem;
 
     &--link {
       &:link,
       &:visited {
-        font-size: .9rem;
         color: $color-primary-light;
         padding: .5rem 1.6rem;
         border-radius: 1.5rem;

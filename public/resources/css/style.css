@@ -1215,10 +1215,10 @@ contains blog author name, blog date and tag
     margin-left: 2rem;
     margin-top: 1rem; }
     .showcaseCard__text--title {
-      font-size: .75rem;
+      font-size: 1.3rem;
       margin-bottom: .2rem; }
     .showcaseCard__text--paragraph {
-      font-size: .7rem;
+      font-size: 1.3rem;
       color: rgba(249, 249, 249, 0.7);
       font-family: 'Caveat', cursive; }
   .showcaseCard__tag {
@@ -1226,9 +1226,9 @@ contains blog author name, blog date and tag
     margin-right: 2rem;
     margin-top: 1rem;
     border-radius: 1rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.3rem; }
     .showcaseCard__tag--link:link, .showcaseCard__tag--link:visited {
-      font-size: .9rem;
       color: #f9f9f9;
       padding: .5rem 1.6rem;
       border-radius: 1.5rem; }
