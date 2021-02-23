@@ -2254,7 +2254,7 @@ contains blog author name, blog date and tag
 }
 
 .create {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 
   &--mainHeading {
@@ -2335,7 +2335,7 @@ Individual boxes in section rows
     position: absolute;
     text-transform: uppercase;
     padding: 1.2rem;
-    font-size: .55rem;
+    font-size: 1rem;
     font-weight: bolder;
     display: block;
   }
@@ -2354,6 +2354,7 @@ Individual boxes in section rows
     font-weight: 300;
     border-radius: .5rem;
     display: block;
+    font-size: 1.3rem;
 
     //all input placeholder styling
     &::placeholder {
@@ -2365,7 +2366,6 @@ Individual boxes in section rows
   &--text,
   &--password {
     height: 8rem;
-    font-size: .7rem;
     padding: 1rem;
   }
 
@@ -2412,7 +2412,6 @@ Individual boxes in section rows
       padding: 0 .5em;
       color: $color-black;
       cursor: pointer;
-      font-size: 85%;
       font-weight: 300;
       background: $color-primary-light;
       font-family: inherit;
