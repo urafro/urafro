@@ -95,6 +95,7 @@ a {
   padding: 1rem 3rem;
   text-decoration: none;
   font-weight: 300;
+  font-size: 1.5rem;
   border-radius: 20rem;
   transition: background-color 0.2s, border 0.2s, color 0.2s; }
 
@@ -149,15 +150,15 @@ a {
 #menuIcon,
 .menu-icon {
   position: fixed;
-  font-size: 2rem;
-  left: 4.2rem;
-  top: 2.4rem;
+  font-size: 2.5rem;
+  left: 4rem;
+  top: 2rem;
   cursor: pointer;
   z-index: 1; }
 
 .landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
-  opacity: 0; }
+  opacity: 1; }
 
 @keyframes menuFadeIn {
   100% {
@@ -304,7 +305,7 @@ h3 {
     margin-top: -10rem; }
     .greeting__nav--brand {
       flex: 1;
-      font-size: 150%;
+      font-size: 2rem;
       font-family: 'Caveat', cursive; }
     .greeting__nav--items {
       flex: 1;
@@ -316,7 +317,7 @@ h3 {
         .greeting__nav--items li a:link, .greeting__nav--items li a:visited {
           color: #100c08;
           font-weight: 400;
-          font-size: 1rem;
+          font-size: 1.5rem;
           transition: border-bottom .2s, color .2s; }
         .greeting__nav--items li a.nav--item:hover, .greeting__nav--items li a.nav--item:active {
           color: #FFF;
@@ -338,7 +339,7 @@ h3 {
     display: flex;
     width: 90%;
     align-items: center;
-    justify-items: center;
+    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -348,13 +349,13 @@ h3 {
       padding-left: 3rem;
       backface-visibility: hidden; }
       .greeting__boxes--box .greeting__box--subHeading {
-        font-size: 1.2rem;
+        font-size: 2rem;
         color: #FFF;
         animation: 1s spanSlideRight 1s ease-in forwards;
         opacity: 0;
-        margin-left: -50px; }
+        margin-left: -5rem; }
       .greeting__boxes--box .greeting__box--mainHeading {
-        font-size: 1.6rem;
+        font-size: 3.5rem;
         margin: 2rem 0 3rem 0;
         line-height: 1.4;
         position: relative;
@@ -393,7 +394,7 @@ h3 {
       flex: 1;
       align-self: flex-end; }
       .greeting__boxes--image img {
-        height: 45vh;
+        height: 42vh;
         position: relative;
         right: -8rem;
         opacity: 0;

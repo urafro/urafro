@@ -130,6 +130,7 @@ a {
   padding: 1rem 3rem;
   text-decoration: none;
   font-weight: 300;
+  font-size: 1.5rem;
   border-radius: 20rem;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
@@ -195,16 +196,16 @@ a {
 #menuIcon,
 .menu-icon {
   position: fixed;
-  font-size: 2rem;
-  left: 4.2rem;
-  top: 2.4rem;
+  font-size: 2.5rem;
+  left: 4rem;
+  top: 2rem;
   cursor: pointer;
   z-index: 1;
 }
 
 .landing-section #menuIcon {
   animation: 1s menuFadeIn 12s forwards;
-  opacity: 0;
+  opacity: 1;
 }
 
 @keyframes menuFadeIn {
@@ -392,7 +393,7 @@ h3 {
 
     &--brand {
       flex: 1;
-      font-size: 150%;
+      font-size: 2rem;
       font-family: 'Caveat',
       cursive;
     }
@@ -412,7 +413,7 @@ h3 {
           &:visited {
             color: $color-black;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: 1.5rem;
             transition: border-bottom .2s, color .2s;
           }
 
@@ -457,7 +458,7 @@ h3 {
     display: flex;
     width: 90%;
     align-items: center;
-    justify-items: center;
+    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -469,15 +470,15 @@ h3 {
       backface-visibility: hidden;
 
       .greeting__box--subHeading {
-        font-size: 1.2rem;
+        font-size: 2rem;
         color: $color-white;
         animation: 1s spanSlideRight 1s ease-in forwards;
         opacity: 0;
-        margin-left: -50px;
+        margin-left: -5rem;
       }
 
       .greeting__box--mainHeading {
-        font-size: 1.6rem;
+        font-size: 3.5rem;
         margin: 2rem 0 3rem 0;
         line-height: 1.4;
         position: relative;
@@ -530,7 +531,7 @@ h3 {
       align-self: flex-end;
 
       & img {
-        height: 45vh;
+        height: 42vh;
         position: relative;
         right: -8rem;
         opacity: 0;
@@ -538,7 +539,6 @@ h3 {
       } 
     }
   }
-
 }
 
 /*===================*/
