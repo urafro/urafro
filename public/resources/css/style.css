@@ -895,17 +895,18 @@ h3 {
   margin-right: 2rem;
   /* recent posts */ }
   .footerCard--title {
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    font-size: 2rem; }
   .footerCard__text {
-    font-size: initial; }
+    font-size: 1.5rem; }
     .footerCard__text--paragraph {
       line-height: 1.5;
-      color: #f9f9f9;
+      color: rgba(255, 255, 255, 0.9);
       width: 95%;
       margin-bottom: 1rem; }
     .footerCard__text--icon {
       margin: 1rem 1rem 0 0;
-      font-size: 1.2rem;
+      font-size: 2rem;
       color: #f9f9f9; }
   .footerCard__post {
     display: flex;
@@ -913,8 +914,8 @@ h3 {
     margin: 1rem 0;
     padding: 1rem 0; }
     .footerCard__post:nth-of-type(even) {
-      border-top: 1px solid rgba(249, 249, 249, 0.5);
-      border-bottom: 1px solid rgba(249, 249, 249, 0.5); }
+      border-top: 0.1rem solid rgba(249, 249, 249, 0.5);
+      border-bottom: 0.1rem solid rgba(249, 249, 249, 0.5); }
     .footerCard__post--image, .footerCard__post--image2 {
       height: 7.6rem;
       width: 7.6rem; }
@@ -923,9 +924,9 @@ h3 {
       margin-right: 2rem; }
     .footerCard__post--bodySpan {
       color: rgba(255, 255, 255, 0.5);
-      font-size: .7rem; }
+      font-size: 1.3rem; }
     .footerCard__post--bodyTitle {
-      font-size: .7rem;
+      font-size: 1.3rem;
       font-weight: 300; }
 
 /* ============================================================= 

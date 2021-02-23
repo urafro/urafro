@@ -1260,21 +1260,22 @@ h3 {
 
   &--title {
     margin-bottom: 3rem;
+    font-size: 2rem;
   }
 
   &__text {
-    font-size: initial;
+    font-size: 1.5rem;
 
     &--paragraph {
       line-height: 1.5;
-      color: $color-primary-light;
+      color: rgba($color-white, .9);
       width: 95%;
       margin-bottom: 1rem;
     }
 
     &--icon {
       margin: 1rem 1rem 0 0;
-      font-size: 1.2rem;
+      font-size: 2rem;
       color: $color-primary-light;
     }
   }
@@ -1287,8 +1288,8 @@ h3 {
     padding: 1rem 0;
 
     &:nth-of-type(even) {
-      border-top: 1px solid rgba($color-primary-light, .5);
-      border-bottom: 1px solid rgba($color-primary-light, .5);
+      border-top: .1rem solid rgba($color-primary-light, .5);
+      border-bottom: .1rem solid rgba($color-primary-light, .5);
     }
 
     &--image,
@@ -1304,11 +1305,11 @@ h3 {
 
     &--bodySpan {
       color: rgba($color-white, .5);
-      font-size: .7rem;
+      font-size: 1.3rem;
     }
 
     &--bodyTitle {
-      font-size: .7rem;
+      font-size: 1.3rem;
       font-weight: 300;
     }
   }
