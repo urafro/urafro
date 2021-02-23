@@ -1587,7 +1587,7 @@ contains blog author name, blog date and tag
   margin: 0 auto; }
   .create--mainHeading {
     text-align: center;
-    font-size: 2.5;
+    font-size: 5rem;
     font-weight: 300; }
     .create--mainHeading::after {
       display: block;
@@ -1626,7 +1626,7 @@ Content sections in form rows
     .section__inputs--heading {
       padding: 2rem;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 2rem;
       color: #FF2525; }
   .section__desc {
     flex: 1;

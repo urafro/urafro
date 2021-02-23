@@ -2259,7 +2259,7 @@ contains blog author name, blog date and tag
 
   &--mainHeading {
     text-align: center;
-    font-size: 2.5;
+    font-size: 5rem;
     font-weight: 300;
 
     &::after {
@@ -2313,7 +2313,7 @@ Content sections in form rows
     &--heading {
       padding: 2rem;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 2rem;
       color: $color-primary-red;
     }
   }
