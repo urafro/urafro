@@ -1731,7 +1731,7 @@ contains blog author name, blog date and tag
 
   &__head {
     &--title {
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
       width: 85%;
 
       &Link {
@@ -1739,7 +1739,7 @@ contains blog author name, blog date and tag
         &:visited {
           color: $color-black;
           font-weight: 400;
-          font-size: .85rem;
+          font-size: 2rem;
         }
 
         &:active,
@@ -1752,13 +1752,13 @@ contains blog author name, blog date and tag
   }
 
   &__paragraph {
-    font-size: .8rem;
+    font-size: 1.3rem;
     line-height: 1.2;
   }
 
   &__link {
     margin-top: 1rem;
-    font-size: .8rem;
+    font-size: 1.3rem;
     margin-bottom: 3.5rem;
     transition: all .2s;
 

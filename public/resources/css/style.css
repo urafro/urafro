@@ -1239,21 +1239,21 @@ contains blog author name, blog date and tag
 .showcaseText {
   width: 100%; }
   .showcaseText__head--title {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     width: 85%; }
     .showcaseText__head--titleLink:link, .showcaseText__head--titleLink:visited {
       color: #100c08;
       font-weight: 400;
-      font-size: .85rem; }
+      font-size: 2rem; }
     .showcaseText__head--titleLink:active, .showcaseText__head--titleLink:hover {
       color: rgba(16, 12, 8, 0.5);
       transition: color .2s; }
   .showcaseText__paragraph {
-    font-size: .8rem;
+    font-size: 1.3rem;
     line-height: 1.2; }
   .showcaseText__link {
     margin-top: 1rem;
-    font-size: .8rem;
+    font-size: 1.3rem;
     margin-bottom: 3.5rem;
     transition: all .2s; }
     .showcaseText__link--anchorTag:link, .showcaseText__link--anchorTag:visited {
