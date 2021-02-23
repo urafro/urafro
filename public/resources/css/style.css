@@ -1445,34 +1445,41 @@ contains blog author name, blog date and tag
       margin-top: 2rem;
       margin: 0 auto; }
   .blog__heading--h3 {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem; }
   .blog__heading--h4 {
-    font-size: 1.05rem;
-    margin-bottom: 1rem; }
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300; }
   .blog__heading--h5 {
-    font-size: .95rem;
-    margin-bottom: .5rem; }
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    font-weight: 300; }
   .blog__heading--h6 {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem; }
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300; }
 
 /* BLOG BODY SECTION */
 .blog__body {
   width: 90%;
   margin: 0 auto; }
+  .blog__body--paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 2rem; }
   .blog__body--sectionOne {
     margin-top: 3rem; }
   .blog__body--sectionTwo p:nth-of-type(2) {
     border-left: 0.2rem solid #FF2525;
     padding: 1rem;
-    line-height: 1.45rem;
+    line-height: 1.5rem;
     word-spacing: .5rem; }
   .blog__body--sectionThree .text-wrap {
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem;
+    line-height: 1.5rem; }
   .blog__body--sectionThree img {
     width: 100%;
-    height: 50rem; }
+    height: 40rem; }
   .blog__body--sectionThree p:last-of-type {
     margin-top: 2rem; }
 
