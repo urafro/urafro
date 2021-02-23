@@ -1420,7 +1420,7 @@ h3 {
   flex-direction: column;
 
   &--mainTitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     width: 70%;
   }
@@ -1435,11 +1435,10 @@ h3 {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
-    border: 8px solid rgba($color-primary-red, .2);
+    border: .8rem solid rgba($color-primary-red, .2);
   }
 
   &--cardText {
-    font-size: 1rem;
     padding: .5rem 1rem;
     position: relative;
     top: -1rem;
@@ -1448,11 +1447,13 @@ h3 {
 
   &--cardTitle {
     margin-bottom: .5rem;
+    font-size: 1.3rem;
   }
 
   &--cardDate {
     color: rgba($color-primary-light, .5);
     margin-left: .2rem;
+    font-size: 1.3rem;
   }
 }
 
