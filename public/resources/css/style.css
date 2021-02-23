@@ -511,7 +511,8 @@ h3 {
     text-align: center;
     flex: 1; }
     .about__text--sub {
-      opacity: .5; }
+      opacity: .5;
+      font-size: 1.5rem; }
     .about__text--main {
       margin-top: 1rem;
       margin-bottom: 3rem; }
@@ -525,14 +526,11 @@ h3 {
       top: 3rem;
       margin: 0 auto; }
     .about__text--phrase {
-      font-size: initial;
+      font-size: 1.5rem;
       margin: 0 auto;
       width: 80%;
       padding-top: 3rem;
       line-height: 1.3; }
-  .about--signature {
-    margin-top: 3rem;
-    height: 5rem; }
 
 /* ===============
       founder
