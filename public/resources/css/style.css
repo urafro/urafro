@@ -1098,23 +1098,26 @@ h3 {
       left: -25rem;
       background-color: #FFF;
       padding-left: 0;
-      animation: textLeftRight 2s ease-out 0s 1 forwards; }
+      animation: textLeftRight 2s ease-out 0s 1 forwards;
+      /* meet the writers button */ }
       .showcase__writersContainer--title {
-        font-size: 1.2rem;
+        padding: 3rem 0 1.5rem;
+        font-size: 2rem;
         font-weight: 400; }
+      .showcase__writersContainer--mainLink:link, .showcase__writersContainer--mainLink:visited {
+        opacity: .8;
+        color: #100c08; }
       .showcase__writersContainer--paragraph {
-        margin-bottom: 3rem; }
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        width: 85%; }
       .showcase__writersContainer--link {
-        font-size: .65rem;
         padding: 1rem 2rem;
         position: relative;
         top: -1.5rem;
         opacity: 0;
         animation: btnSlideDown 1s linear 2s 1 forwards;
         backface-visibility: hidden; }
-      .showcase__writersContainer--mainLink:link, .showcase__writersContainer--mainLink:visited {
-        opacity: .8;
-        color: #100c08; }
     .showcase__writers--empty {
       flex-basis: 15%; }
 
@@ -1138,7 +1141,7 @@ h3 {
     backface-visibility: hidden; }
     .showcase__separator--title {
       font-weight: 300;
-      font-size: .75rem; }
+      font-size: 1.3rem; }
   .showcaseBoxes {
     display: grid;
     grid-template-columns: 1fr;

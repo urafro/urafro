@@ -1531,28 +1531,31 @@ h3 {
       animation: textLeftRight 2s ease-out 0s 1 forwards;
 
       &--title {
-        font-size: 1.2rem;
+        padding: 3rem 0 1.5rem;
+        font-size: 2rem;
         font-weight: 400;
-      }
-
-      &--paragraph {
-        margin-bottom: 3rem;
-      }
-
-      &--link {
-        font-size: .65rem;
-        padding: 1rem 2rem;
-        position: relative;
-        top: -1.5rem;
-        opacity: 0;
-        animation: btnSlideDown 1s linear 2s 1 forwards;
-        backface-visibility: hidden;
       }
 
       &--mainLink:link,
       &--mainLink:visited {
         opacity: .8;
         color: $color-black;
+      }
+
+      &--paragraph {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        width: 85%;
+      }
+
+      /* meet the writers button */
+      &--link {
+        padding: 1rem 2rem;
+        position: relative;
+        top: -1.5rem;
+        opacity: 0;
+        animation: btnSlideDown 1s linear 2s 1 forwards;
+        backface-visibility: hidden;
       }
     }
 
@@ -1590,7 +1593,7 @@ h3 {
 
     &--title {
       font-weight: 300;
-      font-size: .75rem;
+      font-size: 1.3rem;
     }
   }
 
