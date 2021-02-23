@@ -775,7 +775,8 @@ h3 {
   .socials__boxes {
     margin: 0 auto;
     width: 60%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 5rem; }
     .socials__boxes--box {
       margin-top: 3rem; }
       .socials__boxes--box .socials--boxLink:link,
@@ -783,7 +784,7 @@ h3 {
         color: rgba(255, 37, 37, 0.7);
         font-size: 2rem; }
       .socials__boxes--box .socials--boxIcon {
-        font-size: 2rem; }
+        font-size: 6rem; }
 
 /* ================
     contact-us
