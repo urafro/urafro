@@ -283,7 +283,7 @@ a {
 }
 
 .yellow {
-  background-color: $color-primary-brown;
+  background-color: $color-secondary-brown;
 }
 
 .purple {
@@ -1036,6 +1036,7 @@ h3 {
     &--email:active,
     &--email:focus {
       background-color: rgba($color-black, .7);
+      outline: none;
     }
 
     &--email::placeholder {
@@ -1206,6 +1207,11 @@ h3 {
       outline: none;
       border: .1rem solid rgba($color-primary-dark, .3);
       color: inherit;
+      font-family: inherit;
+    }
+
+    &--textArea {
+      padding: 10px 0 0 10px;
     }
 
     &--text,
@@ -1429,7 +1435,7 @@ h3 {
 .heroTwo__body {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   &--cardImage {
     height: 10rem;
@@ -2118,7 +2124,7 @@ contains blog author name, blog date and tag
 
     &--yellow:link,
     &--yellow:visited {
-      color: $color-primary-brown;
+      color: $color-secondary-brown;
     }
 
     &--purple:link,
@@ -2185,7 +2191,7 @@ contains blog author name, blog date and tag
 
     &--yellow:link,
     &--yellow:visited {
-      background-color: $color-primary-brown;
+      background-color: $color-secondary-brown;
     }
 
     &--purple:link,
