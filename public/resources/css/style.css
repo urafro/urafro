@@ -147,9 +147,6 @@ a {
 /* ============================================================= 
                         LANDING PAGE
 ============================================================== */
-/* #menuIcon {
-  background: none;
-} */
 #menuIcon,
 .menu-icon {
   position: fixed;
@@ -159,7 +156,7 @@ a {
   cursor: pointer;
   z-index: 1; }
 
-.landing-section #menuIcon {
+.landing--menu {
   animation: 1s menuFadeIn 12s forwards;
   opacity: 1; }
 
