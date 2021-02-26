@@ -216,4 +216,129 @@
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+
+  span#menuIcon,
+  div.l-container .menu-icon {
+    font-size: 3rem;
+    top: 2rem;
+  }
+
+  div.greeting__nav--brand {
+    position: relative;
+    top: 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  div.greeting__nav--items {
+    display: none;
+  }
+
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 2.5rem;
+  }
+
+  div.greeting__boxes--image img {
+    height: 25vh;
+  }
+
+  h2.section__heading {
+    font-size: 2.5rem;
+  }
+
+  p.intro__container--paragraph {
+    width: 80%;
+  }
+
+  img.features__boxes--boxImage {
+    height: 7.5rem;
+  }
+
+  div.features {
+    padding-bottom: 5rem;
+  }
+
+  section.about {
+    flex-direction: column;
+  }
+
+  img.about__image--img {
+    height: 12.5rem;
+  }
+
+  h5.numbers__boxes--title {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  i.numbers__boxes--icon {
+    display: none;
+  }
+
+  div.testimonials__boxes {
+    flex-direction: column;
+  }
+
+  div.testimonials__box {
+    width: 100%;
+  }
+
+  p.testimonials__box--paragraph {
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+
+  h3.testimonials__box--name {
+    margin-bottom: 1rem;
+  }
+
+  input.newsletter__content--email {
+    width: 35rem;
+  }
+
+  div.contact--form {
+    flex-direction: column;
+  }
+
+  /* blog app styles */
+  div.container {
+    flex-direction: column;
+  }
+
+  div.hero {
+    display: none;
+  }
+
+  div.heroTwo {
+    height: 45vh;
+    position: initial;
+  }
+
+  div.showcaseBoxes {
+    width: 90%;
+  }
+
+  div.showcase__writers {
+    width: 100%;
+  }
+
+  div.showcase__writersContainer {
+    padding-left: 5%;
+  }
+
+  div.showcaseTwo .blog {
+    width: 90%;
+  }
+
+  .blog .blog__body--paragraph {
+    font-size: 1.5rem;
+  }
+
+  div.zero {
+    width: 80vw;
+  }
+}
