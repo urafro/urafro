@@ -131,7 +131,89 @@
 }
 
 /* Small iPads, Tablets: 481px to 768px */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  div.intro__container {
+    width: 85%;
+  }
+
+  div.features {
+    width: 85%;
+  }
+
+  div.features__boxes {
+    flex-direction: column;
+  }
+
+  div.features__boxes--box {
+    margin-bottom: 3rem;
+  }
+
+  p.features__boxes--boxParagraph {
+    width: 65%;
+  }
+
+  p.about__text--phrase {
+    width: 70%;
+  }
+
+  section.founder {
+    display: none;
+  }
+
+  p.testimonials__box--paragraph::before {
+    font-size: 5rem;
+  }
+
+  section.newsletter {
+    margin-top: -5rem;
+  }
+
+  h2.newsletter__content--mainHeading {
+    font-size: 4rem;
+  }
+
+  p.newsletter__content--subHeading {
+    font-size: 2rem;
+  }
+
+  section.contact {
+    flex-direction: column;
+  }
+
+  div.contact--image {
+    display: none;
+  }
+
+  div.contact--form {
+    right: 0;
+  }
+
+  div.landingFooter__content {
+    flex-direction: column;
+  }
+
+  div.footerCard {
+    margin-bottom: 3rem;
+  }
+
+  h3.footerCard--title {
+    margin-bottom: 1rem;
+  }
+
+  /* blog app styles */
+  img.section__desc--imageTwo {
+    height: 25rem;
+  }
+
+  img.section__desc--imageThree {
+    height: 35rem;
+  }
+
+  /* show route */
+  div.backlinks__cards {
+    flex-direction: column;
+  }
+}
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
 @media only screen and (max-width: 480px) {}

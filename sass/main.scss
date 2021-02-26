@@ -1042,16 +1042,6 @@ h3 {
 
     &--btn {
       cursor: pointer;
-      border-radius: 12rem;
-      font-size: 2rem;
-      padding: 1.5rem 3rem;
-      color: $color-black;
-      letter-spacing: .1rem;
-
-      &:active,
-      &:hover {
-        color: $color-primary-light;
-      }
     }
   }
 }

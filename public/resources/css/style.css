@@ -743,14 +743,7 @@ h3 {
       color: rgba(255, 255, 255, 0.7);
       word-spacing: .3rem; }
     .newsletter__content--btn {
-      cursor: pointer;
-      border-radius: 12rem;
-      font-size: 2rem;
-      padding: 1.5rem 3rem;
-      color: #100c08;
-      letter-spacing: .1rem; }
-      .newsletter__content--btn:active, .newsletter__content--btn:hover {
-        color: #f9f9f9; }
+      cursor: pointer; }
 
 /* ==============
       socials
