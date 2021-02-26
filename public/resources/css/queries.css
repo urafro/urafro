@@ -315,7 +315,20 @@
 
   div.heroTwo {
     height: 45vh;
-    position: initial;
+    position: static;
+    top: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.heroTwo__headerTwo {
+    margin: 3rem 0;
+    margin-left: 20%;
+  }
+
+  img.heroTwo__body--cardImage {
+    height: 6.25rem;
   }
 
   div.showcaseBoxes {
