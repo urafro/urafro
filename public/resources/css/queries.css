@@ -354,4 +354,21 @@
   div.zero {
     width: 80vw;
   }
+
+  div.section__desc {
+    display: none;
+  }
+
+  div.inputsBox--left,
+  div.inputsBox--right {
+    width: 100%;
+  }
+
+  div.inputsBox__selectWrapper {
+    margin-bottom: 2rem;
+  }
+
+  div.inputsBox__selectWrapper::after {
+    font-size: 2rem;
+  }
 }
