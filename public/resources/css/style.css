@@ -119,20 +119,21 @@ a {
   border: 1px solid #FFC03D;
   color: #100c08;
   font-weight: 400;
-  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba(16, 12, 8, 0.1);
+  box-shadow: 0.5rem 1.5rem 1.5rem -1.5rem rgba(16, 12, 8, 0.9);
   transition: all .2s; }
 
 /* body button alternative call to action selection */
 .btn-ghost {
   background-color: transparent;
   border: 0.1rem solid #cf920d;
-  color: #cf920d; }
+  color: #cf920d;
+  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba(16, 12, 8, 0.3); }
 
 .btn-full:hover {
   background-color: #cf920d;
   border-color: #cf920d;
   transform: translateY(-3px);
-  box-shadow: 0.2rem 0.6rem 1rem -0.75rem rgba(16, 12, 8, 0.1);
+  box-shadow: 0.2rem 0.6rem 1rem -0.75rem rgba(16, 12, 8, 0.5);
   color: #FFF; }
 
 .btn-full:active {
@@ -141,6 +142,7 @@ a {
 
 .btn-ghost:hover,
 .btn-ghost:active {
+  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba(16, 12, 8, 0.1);
   color: #100c08;
   background-color: #FFC03D;
   border-color: #FFC03D; }
@@ -163,13 +165,16 @@ a {
   position: fixed;
   font-size: 2.5rem;
   left: 3.5rem;
-  top: 2rem;
+  top: 2.5rem;
   cursor: pointer;
   z-index: 1;
   color: #8C92AC; }
 
+.l-container .landing--menu {
+  animation: 2s menuFadeIn 3s forwards;
+  opacity: 0; }
+
 .landing--menu {
-  animation: 1s menuFadeIn 12s forwards;
   opacity: 1; }
 
 @keyframes menuFadeIn {
@@ -247,22 +252,6 @@ a {
 /* ===============
   greeting styles 
 ================= */
-.greeting {
-  /* width: 100vw; */
-  /* height to be adjusted after i'm done with all corresponding styles */
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(255, 30, 48, 0.3), #ff3b55), url("/resources/img/greetings.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
-
-section h1,
-h2,
-h3 {
-  font-weight: 300; }
-
 @keyframes navFade {
   100% {
     opacity: 1;
@@ -316,7 +305,7 @@ h3 {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(20, 30, 48, 0.7), #243b55), url("/resources/img/greetings.jpg");
+  background-image: linear-gradient(rgba(255, 30, 48, 0.3), #ff3b55), url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -333,7 +322,7 @@ h3 {
     margin-top: -10rem; }
     .greeting__nav--brand {
       flex: 1;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-family: 'Caveat', cursive; }
     .greeting__nav--items {
       flex: 1;
@@ -538,8 +527,13 @@ h3 {
     text-align: center;
     flex: 1; }
     .about__text--sub {
-      opacity: .5;
-      font-size: 1.5rem; }
+      display: inline-block;
+      font-weight: 400;
+      font-size: 1.1rem;
+      padding: .7rem;
+      color: #100c08;
+      background-color: #FFC03D;
+      clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0 100%); }
     .about__text--main {
       margin-top: 1rem;
       margin-bottom: 3rem; }
@@ -568,7 +562,8 @@ h3 {
   background-color: #FFC03D; }
   .founder__text {
     flex: 1;
-    padding-left: 6.5rem; }
+    padding-left: 6.5rem;
+    border-left: 0.5rem solid #FF2525; }
     .founder__text--mainHeading {
       margin-bottom: 3rem;
       font-weight: 300; }
@@ -576,7 +571,7 @@ h3 {
         display: block;
         position: relative;
         top: 2rem;
-        background-color: rgba(255, 37, 37, 0.3);
+        background-color: rgba(16, 12, 8, 0.1);
         width: 2rem;
         height: .5rem;
         content: " ";
@@ -606,7 +601,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(16, 12, 8, 0.8), rgba(16, 12, 8, 0.8)), url("/resources/img/founder.jpeg");
+    background-image: linear-gradient(rgba(255, 30, 48, 0.3), rgba(255, 59, 85, 0.8)), url("/resources/img/founder.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -661,10 +656,12 @@ h3 {
     .numbers__boxes--icon {
       font-size: 2rem;
       margin-right: 2rem;
-      color: rgba(16, 12, 8, 0.5); }
+      color: rgba(255, 192, 61, 0.7); }
     .numbers__boxes--title {
       font-size: 1.1rem;
-      display: inline-block; }
+      display: inline-block;
+      color: #FF2525;
+      font-weight: 400; }
 
 /* ================
     testimonials
@@ -675,7 +672,7 @@ h3 {
   padding: 10rem 0 15rem 0; }
   .testimonials__header--main {
     text-transform: uppercase;
-    color: rgba(67, 35, 68, 0.5); }
+    color: rgba(255, 192, 61, 0.8); }
   .testimonials__header--brand {
     text-transform: none;
     color: #FF2525;
@@ -708,7 +705,7 @@ h3 {
       content: "\201C";
       position: absolute;
       top: 5rem;
-      color: rgba(16, 12, 8, 0.3);
+      color: rgba(255, 192, 61, 0.7);
       font-size: 12rem;
       font-weight: 400; }
   .testimonials__box--name {
@@ -862,8 +859,7 @@ h3 {
 /* SEND-US-A-MESSAGE */
 .form__inputs {
   margin-right: 7rem;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem #EEEEEE; }
+  border-radius: 1rem; }
   .form__inputs--secondaryHeading {
     word-spacing: .2rem; }
   .form__inputs .form__input {
@@ -1746,6 +1742,14 @@ Individual boxes in section rows
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 2rem; }
+  .section__desc--link:link, .section__desc--link:visited {
+    color: rgba(16, 12, 8, 0.5);
+    text-decoration: underline;
+    transition: all .2s; }
+  .section__desc--link:hover, .section__desc--link:active {
+    color: #100c08;
+    text-decoration-color: #FF2525;
+    text-decoration-style: wavy; }
   .section__desc--image {
     padding: 3rem 0 3rem 0; }
   .section__desc--imageZero {
@@ -1759,6 +1763,8 @@ Individual boxes in section rows
   .section__desc--imageFour {
     height: 30rem;
     margin-left: 10rem; }
+  .section__desc--imageFive {
+    height: 35rem; }
 
 /* =================
 form submit buttons

@@ -41,8 +41,8 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 300;
-
 }
+
 /* Reset Select */
 select {
   appearance: none;
@@ -165,7 +165,7 @@ a {
   border: 1px solid $color-primary-brown;
   color: $color-black;
   font-weight: 400;
-  box-shadow: .5rem 1.2rem 1.5rem -1.5rem rgba($color-black, .1);
+  box-shadow: .5rem 1.5rem 1.5rem -1.5rem rgba($color-black, .9);
   transition: all .2s;
 }
 
@@ -174,13 +174,14 @@ a {
   background-color: transparent;
   border: .1rem solid $color-secondary-brown;
   color: $color-secondary-brown;
+  box-shadow: .5rem 1.2rem 1.5rem -1.5rem rgba($color-black, .3)
 }
 
 .btn-full:hover {
   background-color: $color-secondary-brown;
   border-color: $color-secondary-brown;
   transform: translateY(-3px);
-  box-shadow: .2rem .6rem 1rem -.75rem rgba($color-black, .1);
+  box-shadow: .2rem .6rem 1rem -.75rem rgba($color-black, .5);
   color: $color-white;
 }
 
@@ -191,6 +192,7 @@ a {
 
 .btn-ghost:hover,
 .btn-ghost:active {
+  box-shadow: .5rem 1.2rem 1.5rem -1.5rem rgba($color-black, .1);
   color: $color-black;
   background-color: $color-primary-brown;
   border-color: $color-primary-brown;
@@ -218,14 +220,18 @@ a {
   position: fixed;
   font-size: 2.5rem;
   left: 3.5rem;
-  top: 2rem;
+  top: 2.5rem;
   cursor: pointer;
   z-index: 1;
   color: $color-grey;
 }
 
+.l-container .landing--menu {
+  animation: 2s menuFadeIn 3s forwards;
+  opacity: 0;
+}
+
 .landing--menu {
-  animation: 1s menuFadeIn 12s forwards;
   opacity: 1;
 }
 
@@ -320,25 +326,6 @@ a {
   greeting styles 
 ================= */
 
-.greeting {
-  /* width: 100vw; */
-  /* height to be adjusted after i'm done with all corresponding styles */
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba($color-bg1, .3), rgba($color-bg2, 1)),
-    url("/resources/img/greetings.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-section h1,
-h2,
-h3 {
-  font-weight: 300;
-}
-
 @keyframes navFade {
   100% {
     opacity: 1;
@@ -414,7 +401,7 @@ h3 {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(20, 30, 48, 0.7), rgba(36, 59, 85, 1)),
+  background-image: linear-gradient(rgba($color-bg1, .3), rgba($color-bg2, 1)),
     url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
@@ -434,7 +421,7 @@ h3 {
 
     &--brand {
       flex: 1;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-family: 'Caveat',
       cursive;
     }
@@ -753,8 +740,13 @@ h3 {
     flex: 1;
 
     &--sub {
-      opacity: .5;
-      font-size: 1.5rem;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 1.1rem;
+      padding: .7rem;
+      color: $color-black;
+      background-color: $color-primary-brown;
+      clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0 100%);
     }
 
     &--main {
@@ -794,6 +786,7 @@ h3 {
   &__text {
     flex: 1;
     padding-left: 6.5rem;
+    border-left: .5rem solid $color-primary-red;
 
     &--mainHeading {
       margin-bottom: 3rem;
@@ -803,7 +796,7 @@ h3 {
         display: block;
         position: relative;
         top: 2rem;
-        background-color: rgba($color-primary-red, 0.3);
+        background-color: rgba($color-black, .1);
         width: 2rem;
         height: .5rem;
         content: " ";
@@ -849,7 +842,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)),
+    background-image: linear-gradient(rgba($color-bg1, .3), rgba($color-bg2, 0.8)),
       url("/resources/img/founder.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -929,12 +922,14 @@ h3 {
     &--icon {
       font-size: 2rem;
       margin-right: 2rem;
-      color: rgba($color-black, .5);
+      color: rgba($color-primary-brown, .7);
     }
 
     &--title {
       font-size: 1.1rem;
       display: inline-block;
+      color: $color-primary-red;
+      font-weight: 400;
     }
   }
 }
@@ -951,7 +946,7 @@ h3 {
 
     &--main {
       text-transform: uppercase;
-      color: rgba($color-primary-dark, .5);
+      color: rgba($color-primary-brown, .8);
     }
 
     &--brand {
@@ -993,7 +988,7 @@ h3 {
         content: "\201C";
         position: absolute;
         top: 5rem;
-        color: rgba($color-black, .3);
+        color: rgba($color-primary-brown, .7);
         font-size: 12rem;
         font-weight: 400;
       }
@@ -1213,7 +1208,6 @@ h3 {
 .form__inputs {
   margin-right: 7rem;
   border-radius: 1rem;
-  box-shadow: 0 .5rem 1.5rem $color-bg3;
 
   &--secondaryHeading {
     word-spacing: .2rem;
@@ -2487,6 +2481,22 @@ Individual boxes in section rows
     margin-bottom: 2rem;
   }
 
+  &--link {
+    &:link,
+    &:visited {
+      color: rgba($color-black, .5);
+      text-decoration: underline;
+      transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-black;
+      text-decoration-color: $color-primary-red;
+      text-decoration-style: wavy;
+    }
+  }
+
   &--image {
     padding: 3rem 0 3rem 0;
   }
@@ -2510,6 +2520,10 @@ Individual boxes in section rows
   &--imageFour {
     height: 30rem;
     margin-left: 10rem;
+  }
+
+  &--imageFive {
+    height: 35rem;
   }
 }
 
