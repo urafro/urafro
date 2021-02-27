@@ -34,140 +34,151 @@
   <!-- Displaying dynamic user data -->
   <% if(currentUser) { %>
     <div class="hero">
-      <!-- header image will be replaced by signed in user's image -->
-      <div class="header">
-        <a href="#">
-          <img src="<%= currentUser.avatarUrl %>" alt="urafro blog author image">
+      <div class="hero__header">
+        <a href="#" class="hero__header--link">
+          <img class="hero__header--image" src="<%= currentUser.avatarUrl %>" alt="urafro blog author image">
         </a>
-        <h2>Hello.</h2>
-    
-        <p><%= currentUser.bio %></p>
-    
-        <!-- will implement the use of dynamic social links -->
-        <a href="#" class="hero-btn hero-btn-full">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="hero-btn hero-btn-ghost">
-          <i class="fab fa-twitter"></i>
-        </a>
-    
+        <div class="hero__body">
+          <h2 class="hero__body--mainTitle">
+            <%= currentUser.username %> <span class="hero__body--subTitle">/ urAfro writer</span>
+          </h2>
+          <p class="hero__body--desc"><%= currentUser.bio %></p>    
+          <!-- will implement the use of dynamic social links -->
+          <a class="hero__body--link" href="#" class="hero-btn hero-btn-full">
+            <i class="fab fa-instagram hero__body--linkIcon"></i>
+          </a>
+          <a class="hero__body--link" href="#" class="hero-btn hero-btn-ghost">
+            <i class="fab fa-twitter hero__body--linkIcon"></i>
+          </a>
+        </div>
         <!-- dynamic user data ends here -->
       </div>
     </div>
   <% } %>
 
+  <!-- Display our 'welcome details' if no user is logged in -->
   <% if(!currentUser) { %>
     <div class="hero">
     
-      <div class="header">
-        <a href="#">
-          <img src="https://i.imgur.com/f89JM9hs.png" alt="urafro founder image">
+      <div class="hero__header">
+        <a href="#" class="hero__header--link">
+          <img class="hero__header--image" src="https://i.imgur.com/f89JM9hs.png" %>" alt="urafro founder image">
         </a>
-        <h2 class="brand">urAfro</h2>
+
+        <div class="hero__body">
+          <h2 class="brand hero__body--mainTitle">urAfro</h2>
     
-        <p>Translating an idea into a practical solution can be hard alone. <a href="/signup">Join us</a> and let's make
+          <p class="hero__body--desc">Translating an idea into a practical solution can be hard alone. <a href="/signup">Join us</a> and let's make
           change!</p>
     
-        <a href="https://instagram.com/official_urafro" target="_blank" class="hero-btn hero-btn-full">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/official_urafro" target="_blank" class="hero-btn hero-btn-ghost">
-          <i class="fab fa-twitter"></i>
-        </a>
-    
+          <a class="hero__body--link" href="https://instagram.com/official_urafro" target="_blank" class="hero-btn hero-btn-full">
+            <i class="fab fa-instagram hero__body--linkIcon"></i>
+          </a>
+          <a class="hero__body--link" href="https://twitter.com/official_urafro" target="_blank" class="hero-btn hero-btn-ghost">
+            <i class="fab fa-twitter hero__body--linkIcon"></i>
+          </a>
+        </div>
       </div>
     </div>
   <% } %>
 
   <div class="showcase">
   
-    <div class="our-writers">
-      <div class="content-text">
-        <h2><a href="#">Old heads young shoulders</a></h2>
-        <p>
+    <div class="showcase__writers">
+      <div class="showcase__writersContainer">
+        <h2 class="showcase__writersContainer--title"><a href="#" class="showcase__writersContainer--mainLink">Old heads young shoulders</a></h2>
+        <p class="showcase__writersContainer--paragraph">
           <span class="brand">#We</span>&nbsp; are a group of young people interested in the consequences of how we interact with our environments.
         </p>
-        <a href="/projects" class="bdb bdb-full">meet the writers</a>
+        <a href="/projects" class="btn btn-full showcase__writersContainer--link">meet the writers</a>
       </div>
-      <div class="empty"></div>
+      <div class="showcase__writers--empty"></div>
     </div>
 
-    <section class="separator">
-      <h5><i class="fas fa-hand-point-down"></i> start reading now?</h5>
+    <section class="showcase__separator">
+      <h5 class="showcase__separator--title">
+        <i class="fas fa-hand-point-down showcase__separator--titleIcon"></i> start reading now?
+      </h5>
     </section>
 
-    <div class="showcase-boxes">
+    <div class="showcaseBoxes">
+      
       <!-- create a box for every blog in database with data from the "/blogs" Index route-->
       <% foundBlogs.forEach(function(blog) { %>
-      <div class="showcase-box">
+      <div class="showcaseBoxes__box">
 
-        <!-- link will go to the blog show route-->
-        <a href="/blogs/<%= blog._id %>">
-          <img src="<%= blog.body.header.mainImage %>" alt="urafro blog main image">
+        <!-- image link directing user to the blog show route-->
+        <a class="showcaseBoxes__box--link" href="/blogs/<%= blog._id %>">
+          <img class="showcaseBoxes__box--linkImage" src="<%= blog.body.header.mainImage %>" alt="urafro blog main image">
         </a>
 
-          <div class="showcase-card">
-
-            <div class="author-card">
-              <div class="card-image">
-                <!-- generic card image will be replaced by user image from the user schema -->
-                <a href="#">
-                  <img
-                    src="<%= blog.author.avatarUrl %>"
-                    alt="urafro blog author image">
+          <!-- create card fixed to the top of showcaseBoxes__box with blog author & blog tag data -->
+          <div class="showcaseCard">
+            <div class="showcaseCard__author">
+              <div class="showcaseCard__author--imgContainer">
+                <!-- card image showing user image from the user schema -->
+                <a class="showcaseCard__author--imgLink" href="#"> 
+                  <img class="showcaseCard__author--image" src="<%= blog.author.avatarUrl %>" alt="urafro blog author image">
                 </a>
               </div>
 
-              <div class="card-text">
-                <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
-                <h3><a href="#"><%= blog.author.username %></a></h3>
-                <p><%= blog.createdAt.toLocaleDateString() %></p>
+              <div class="showcaseCard__text">
+                <!-- h5 heading showing blog author from blog schema-->
+                <h3 class="showcaseCard__text--title">
+                  <a class="showcaseCard__text--titleLink" href="#">
+                    <%= blog.author.username %>
+                  </a>
+                </h3>
+                <p class="showcaseCard__text--paragraph">
+                  <%= blog.createdAt.toLocaleDateString() %>
+                </p>
               </div>
             </div>
 
-            <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-            <div class="card-tag">
-              <% if(blog.tag == "Life") { %>
-                <a href="#" class="green"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Code") { %>
-              <a href="#" class="yellow"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Music") { %>
-              <a href="#" class="purple"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Self") { %>
-              <a href="#" class="red"><%= blog.tag %></a>
+            <!-- display dynamic blog tag by use of a conditional -->
+            <div class="showcaseCard__tag">
+              <% if(blog.tag == "Self") { %>
+                <a class="showcaseCard__tag--link green" href="#"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Society") { %>
+                <a class="showcaseCard__tag--link yellow" href="#"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Tech") { %>
+                <a class="showcaseCard__tag--link purple" href="#"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Money") { %>
+                <a class="showcaseCard__tag--link red" href="#"><%= blog.tag %></a>
               <% } %>
             </div>
-
           </div>
-
         </div>
 
-        <div class="showcase-text">
-          <h3>
-            <a href="/blogs/<%= blog._id %>">
-              <%= blog.body.header.mainHeading %>
-            </a>
-          </h3>
-          <p>
-            <!-- Dynamically showing three dots for sample paragraph text on showcase cards -->
-            <% if (blog.body.content.introParagraph.length > 145) { %>
-            <%= blog.body.content.introParagraph.substring(0, 145) %>...
-            <% } else { %>
-            <%= blog.body.content.introParagraph.substring(0, 145) %>  
-            <% } %>
-          </p>
-
-          <div class="show-link">
-            <a href="/blogs/<%= blog._id %>">Read More</a>
+        <!-- 
+          STARTING FROM HERE NEXT!!
+        -->
+        <div class="showcaseText">
+          <div class="showcaseText__head">
+            <h3 class="showcaseText__head--title">
+              <a class="showcaseText__head--titleLink" href="/blogs/<%= blog._id %>">
+                <%= blog.body.header.mainHeading %>
+              </a>
+            </h3>
+            <p class="showcaseText__paragraph">
+            <!-- Dynamically show blog intro paragraph sub string -->
+              <% if (blog.body.content.introParagraph.length > 145) { %>
+              <%= blog.body.content.introParagraph.substring(0, 145) %>...
+              <% } else { %>
+              <%= blog.body.content.introParagraph.substring(0, 145) %>  
+              <% } %>
+            </p>
           </div>
-          
+          <div class="showcaseText__link">
+            <a class="showcaseText__link--anchorTag" href="/blogs/<%= blog._id %>">Read More</a>
+          </div>          
         </div>
       <% }) %>
       </div>
 
-      <footer>
-        <p>
-          &copy; <span>urAfro</span>. All rights reserved. Invest in a peer, believe in WE.
+      <footer class="showcase__footer">
+        <p class="showcase__footer--paragraph">
+          Copyright &copy; 2021 <span>urAfro</span>. All rights reserved. Invest in a peer, believe in WE.
         </p>
       </footer>
     </div>

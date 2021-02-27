@@ -1,759 +1,237 @@
 /* Largest Laptop screens and small TVs: 1366px and more */
 @media only screen and (min-width: 1920px) {
 
-  span#menuIcon,
-  div.l-container .menu-icon {
-    left: 20px;
-    top: 20px;
-    font-size: 160%;
+  html {
+    font-size: 12.5px;
   }
 
-  /* ===================
-    landing page styles
-    ==================== */
-
-  div.g-box span {
-    font-size: 130%;
+  .greeting__boxes--box span.greeting__box--subHeading {
+    font-size: 2.5rem;
   }
 
-  div.g-box h1 {
-    font-size: 290%;
-    margin: 20px 0 30px 0;
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 4.5rem;
   }
 
-  div.g-image img {
-    height: 650px;
+  div.greeting__boxes--image img {
+    height: 55vh;
   }
 
-  /* ==================
-      blog app styles
-  =================== */
-  div.hero .header h2,
-  div.hero-2 .header-2 h2 {
-    font-size: 150%;
-  }
-
-  div.hero .header p {
-    font-size: 145%;
-    margin-bottom: 10px;
-  }
-
-  a.hero-btn i {
-    font-size: 130%;
-  }
-
-  div.showcase-box {
-    width: 100%;
-    height: 220px;
-  }
-
-  div.showcase-text {
-    width: 100%;
-  }
-
-  div.showcase-card {
-    width: 100%;
-    height: 80px;
-  }
-
-  div.showcase-card .card-tag {
-    position: absolute;
-    right: 5px;
-  }
 }
 
 /* In between largest and large screens */
 @media only screen and (max-width: 1600px) {
 
-  span#menuIcon,
-  div.l-container .menu-icon {
-    left: 20px;
-    top: 20px;
-    font-size: 160%;
+  html {
+    font-size: 11.5px;
+  }
+
+  .greeting__boxes--box span.greeting__box--subHeading {
+    font-size: 2rem;
+  }
+
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 4rem;
+  }
+
+  div.greeting__boxes--image img {
+    height: 55vh;
   }
   
-  /* ===================
-    landing page styles
-    ==================== */
-
-  div.g-box span {
-    font-size: 130%;
-  }
-
-  div.g-box h1 {
-    font-size: 215%;
-    margin: 20px 0 30px 0;
-  }
-
-  div.g-image img {
-    height: 500px;
-  }
-
-  div.intro-div p {
-    width: 80%;
-  }
-
-  div.about-text p {
-    font-size: 100%;
-  }
-
-  div.box p {
-    width: 75%;
-  }
-
-  section.testimonials .box p {
-    width: 70%;
-  }
-
-  /* ===================
-      blog app styles
-  ==================== */
-  div.our-writers {
-    width: 75%;
-  }
-
-  section.separator {
-    margin-right: 13%;
-  }
 }
 
 /* Extra large screens, TVs: 1201px and more */
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
 
-  span#menuIcon,
-  div.l-container .menu-icon {
-    left: 20px;
-    top: 20px;
-    font-size: 160%;
+  html {
+    font-size: 10px;
   }
 
-    /* ===================
-    landing page styles
-    ==================== */
-
-    div.g-box span {
-      font-size: 100%;
-    }
-
-    div.g-box h1 {
-      font-size: 190%;
-      margin: 20px 0 30px 0;
-    }
-
-    div.g-image img {
-      height: 400px;
-    }
-
-  /* =================================
-            BLOG APP STYLES 
-  ================================== */
-
-  .hero,
-  .hero-2,
-  .hero-l {
-    min-width: 50%;
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 4rem;
   }
 
-  div.hero .header,
-  div.hero-2 .header-2 {
-    font-size: 100%;
+  div.greeting__boxes--image img {
+    height: 50vh;
   }
 
-  /* Index Page styles */
-  div.hero .header img,
-  div.hero-2 .header-2 img {
-    height: 85px;
-    width: 85px;
-  }
-
-  div.hero .header h2,
-  div.hero-2 .header-2 h2 {
-    font-size: 100%;
-    margin-bottom: 10px;
-    font-weight: 300;
-  }
-
-  div.hero .header p { 
-    margin-bottom: 5px;
-    font-size: 95%;
-  }
-
-  div.hero .header a i {
-    font-size: 80%;
-  }
-
-  div.header-2 .card-text p {
-    font-size: 60%;
-  }
-
-  div.our-writers {
-    width: 80%;
-  }
-
-  section.separator {
-    margin-right: 10%;
-  }
-
-  div.showcase-box {
-    width: 100%;
-    height: 220px;
-  }
-
-  div.showcase-text {
-    width: 100%;
-  }
-
-  div.showcase-card {
-    width: 100%;
-    height: 80px;
-  }
-
-  .showcase-card .card-tag {
-    position: absolute;
-    right: 5px;
-  }
-
-  /* show route styles */
-  div.section-three img {
-    height: 300px;
-  }
-
-  /* comments styles */
-  ul.comment-section {
-    position: relative;
-    width: 100%;
-  }
-
-  li.comment {
-    margin-bottom: 5px;
-  }
-
-  li.user-comment .info,
-  li.author-comment .info {
-    display: none;
-  }
-
-  li.comment p {
-    width: 70%;
-  }
-
-  li.write-new {
-    width: 100%;
-  }
 }
 
 /* Desktops, Large Screens: 1025px to 1200px */
 @media only screen and (max-width: 1200px) {
 
-  span#menuIcon,
-  div.l-container .menu-icon {
-    left: 20px;
-    top: 20px;
-    font-size: 160%;
+  html {
+    font-size: 9px;
   }
 
-  /* ===================
-    landing page styles
-    ==================== */
-
-  div.g-box span {
-    font-size: 100%;
+  div.greeting__boxes--image img {
+    height: 45vh;
   }
 
-  div.g-box h1 {
-    font-size: 180%;
-    margin: 20px 0 30px 0;
-  }
-
-  div.g-image img {
-    height: 350px;
-  }
-
-  /* ===================
-      blog app styles
-    ==================== */
-
-  .hero,
-  .hero-2,
-  .hero-l {
-    min-width: 50%;
-  }
-
-  div.our-writers {
-    width: 80%;
-  }
-
-  section.separator {
-    margin-right: 10%;
-  }
-
-  div.showcase-box {
-    width: 100%;
-    height: 190px;
-  }
-
-  div.showcase-text {
-    width: 100%;
-  }
-
-  div.showcase-card {
-    width: 100%;
-    height: 80px;
-  }
-
-  .showcase-card .card-tag {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
-  div.section-three img {
-    height: 250px;
-  }
-
-  /* Create Route styles */
-  div.content-boxes {
-    width: 90%;
-  }
-
-  .s0 img {
-    height: 200px;
-  }
-
-  div.s1 img {
-    height: 300px;
-  }
-
-  div.s2 img {
-    height: 250px;
-  }
-
-  div.s4 img {
-    margin-left: 50px;
-    height: 280px;
-  }
-
-  /* ==================
-    show route styles
-  =================== */
-
-  /* comments styles */
-  ul.comment-section {
-    position: relative;
-    width: 100%;
-  }
-
-  li.comment {
-    margin-bottom: 5px;
-  }
-
-  li.user-comment .info,
-  li.author-comment .info {
-    display: none;
-  }
-
-  li.comment p {
-    width: 70%;
-  }
-
-  li.write-new {
-    width: 100%;
-  }
-
-  /* Auth Routes */
-
-  div.comment {
-    margin-bottom: 0;
-  }
-
-  #auth-button {
-    font-size: 80%;
-  }
 }
 
 /* Small Screens and Laptops: 769px to 1024px */
 @media only screen and (max-width: 1024px) {
 
-  /* ===================
-    landing page styles
-  ==================== */
+  html {
+    font-size: 10px;
+  }
+
   span#menuIcon,
   div.l-container .menu-icon {
-    left: 20px;
-    top: 20px;
-    font-size: 160%;
+    top: 2rem;
+    left: 1rem;
   }
 
-  input.bdb {
-    padding: 10px 20px;
+  div.greeting__boxes {
+    flex-direction: column; 
+    margin-top: 3rem;
   }
 
-  ul.main-nav li a:link,
-  ul.main-nav li a:visited {
-    font-size: 70%;
+  div.greeting__boxes--box {
+    padding-left: 0;
+    align-self: flex-start;
   }
 
-  div.g-box span {
-    font-size: 100%;
+  div.greeting__boxes--image img {
+    margin-top: 2rem;
+    height: 30vh;
   }
 
-  div.g-box h1 {
-    font-size: 130%;
-    margin: 20px 0 30px 0;
+  div.intro__container {
+    flex-direction: column;
+    padding: 5rem 0;
   }
 
-  div.g-image img {
-    height: 320px;
+  p.intro__container--paragraph {
+    width: 50%;
   }
 
-  div.footer-card img {
-    height: 56px;
-    width: 56px;
-  }
-
-  div.newsletter-form input[type="email"] {
-    width: 70%;
-  }
-
-  /* ===================
-      blog app styles
-  ==================== */
-
-  .hero,
-  .hero-2,
-  .hero-l {
-    min-width: 50%;
-  }
-
-  /* centering the landing page text on small screens/laptops */
-  .showcase-l span {
-    margin-top: -10%;
-  }
-
-  div.showcase-box {
-    width: 100%;
-    height: 150px;
-  }
-
-  div.showcase-text {
-    width: 100%;
-  }
-
-  div.showcase-card {
-    width: 100%;
-    height: 80px;
-  }
-
-  .showcase-card .card-tag {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
-  /* =================
-    show route styles
-  ================== */
-
-  div.show-wrapper {
-    width: 92%;
-  }
-
-  div.show-heading {
-    width: 80%;
-  }
-  
-  /* Create Route Styles */
-  div.content-boxes {
-    width: 100%;
-  }
-
-  .s0 img {
-    height: 200px;
-  }
-
-  div.s1 img {
-    height: 300px;
-  }
-
-  div.s2 img {
-    height: 250px;
-  }
-
-  div.s4 img {
-    margin-left: 50px;
-    height: 280px;
-  }
-
-  /* Auth Routes */
-
-  .auth h5 {
+  div.intro__container--about {
     margin-bottom: 0;
-    font-size: 70%;
   }
 
-  #auth-button {
-    font-size: 70%;
+  div.intro__container--give,
+  div.intro__container--receive {
+    display: none;
+  }
+
+  p.founder__text--paragraph {
+    font-size: 1.2rem;
+  }
+
+  section.numbers {
+    padding-bottom: 5rem;
+  }
+
+  div.numbers__boxes {
+    width: 75%;
+  }
+
+  div.testimonials__boxes {
+    width: 90%;
+  }
+
+  div.socials__boxes {
+    width: 75%;
+  }
+
+  /* show route */
+  div.backlinks__cards {
+    flex-direction: column;
   }
 
 }
 
 /* Small iPads, Tablets: 481px to 768px */
-@media only screen and (max-width: 768px) {
-
-  /* ===================
-    landing page styles
-  ==================== */
-  
-  input.bdb {
-    padding: 10px 20px;
+@media only screen and (max-width: 767px) {
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 3rem;
   }
 
-  span#menuIcon, 
-  div.l-container .menu-icon {
-    left: 0;
-    top: 10px;
-    font-size: 135%;
+  div.greeting__boxes--image img {
+    height: 25vh;
   }
 
-  a.bdb {
-    padding: 5px 20px;
-    font-size: 75%;
+  div.intro__container {
+    width: 85%;
   }
 
-  ul.main-nav .nav-items {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
+  div.features {
+    width: 85%;
   }
 
-  ul.main-nav li a:link,
-  ul.main-nav li a:visited {
-    font-size: 70%;
-  }
-
-  div.g-box span {
-    font-size: 90%;
-  }
-
-  div.g-box h1 {
-    font-size: 90%;
-    margin: 20px 0 30px 0;
-  }
-
-  div.g-image img {
-    height: 230px;
-  }
-
-  /* intro-div */
-
-  div.intro-div p {
-    font-size: 65%;
-  }
-
-  div.intro-div img {
-    height: 80px;
-  }
-
-  div.about h2 {
-    font-size: 85%;
-  }
-
-  div.give h2,
-  div.receive h2 {
-    font-size: 80%;
-    margin: 10px 0;
-  }
-
-  /* how-it-works */
-  div.how-it-works h2 {
-    font-size: 125%;
-  }
-
-  div.box a i {
-    margin: 0 0 30px 0;
-    font-size: 75%;
-  }
-
-  div.box h3 {
-    font-size: 85%;
-  }
-
-  div.box p {
-    font-size: 65%;
-  }
-
-  div.box img {
-    height: 60px;
-  }
-
-  /* our story */
-  div.about-text {
-    font-size: 70%;
-  }
-
-  div.about-text p {
-    font-size: 110%;
-  }
-
-  div.founder-signature {
-    height: 35px;
-    margin-top: 25px;
-  }
-
-  /* numbers */
-  section.numbers h2,
-  section.socials h2 {
-    font-size: 120%;
-  }
-
-  section.numbers h2:before { 
-    bottom: 20px;
-  }
-
-  section.numbers h2:after {
-    top: 20px;
-  }
-
-  section.numbers .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  div.features__boxes {
     flex-direction: column;
   }
 
-  section.numbers .box h3 {
-    font-size: 120%;
-    margin-bottom: 10px;
+  div.features__boxes--box {
+    margin-bottom: 3rem;
   }
 
-  section.numbers .box i {
-    font-size: 120%;
-    margin-right: 2px;
-    display: none;
+  p.features__boxes--boxParagraph {
+    width: 65%;
   }
 
-  section.numbers .box h5 {
-    font-size: 70%;
+  p.about__text--phrase {
+    width: 70%;
   }
 
-  /* founder */
   section.founder {
     display: none;
   }
 
-  section.founder h2,
-  section.founder .image-text h2 {
-    font-size: 100%;
+  p.testimonials__box--paragraph::before {
+    font-size: 5rem;
   }
 
-  section.founder .text p {
-    font-size: 75%;
-    line-height: 150%;
+  section.newsletter {
+    margin-top: -5rem;
   }
 
-  /* socials */
-  section.socials .box a i {
-    font-size: 100%;
+  h2.newsletter__content--mainHeading {
+    font-size: 4rem;
   }
 
-  /* testimonials */
-  section.testimonials .header span {
-    font-size: 75%;
+  p.newsletter__content--subHeading {
+    font-size: 2rem;
   }
 
-  section.testimonials .header h2 {
-    font-size: 110%;
-  }
-
-  section.testimonials .box p:before {
-    bottom: 5px;
-    font-size: 60px;
-    font-weight: 400;
-  }
-
-  section.testimonials .box p {
-    font-size: 65%;
-  }
-
-  section.testimonials .box h3 {
-    font-size: 65%;
-    margin-bottom: 10px;
-  }
-
-  section.testimonials .title,
-  section.testimonials .company {
-    font-size: 50%;
-  }
-
-  /* newsletter */
-  div.newsletter-form h2 {
-    font-size: 100%;
-  }
-
-  /* contact-us */
-  section.contact-us {
-    padding-bottom: 0;
-  }
-
-  section.contact-us .form {
-    right: 0;
-  }
-
-  section.contact-us .image {
-    display: none;
-  }
-
-  section.contact-us .icon i {
-    font-size: 100%;
-  }
-
-  /* footer */
-
-  div.footer-card h3 {
-    font-size: 85%;
-  }
-
-  div.f-text p {
-    font-size: 80%;
-  }
-
-  div.f-body span {
-    font-size: 55%;
-  }
-
-  div.footer-card a i {
-    font-size: 85%;
-  }
-
-  div.footer-card img {
-    height: 56px;
-    width: 56px;
-  }
-
-  div.newsletter-form input[type="email"] {
-    width: 70%;
-  }
-
-  div.newsletter-form p {
-    font-size: 65%;
-  }
-
-  /* footer */
-  footer.l-footer .content {
+  section.contact {
     flex-direction: column;
   }
 
-  /* ===================
-      blog app styles
-  ==================== */
+  div.contact--image {
+    display: none;
+  }
 
+  div.contact--form {
+    right: 0;
+  }
+
+  div.landingFooter__content {
+    flex-direction: column;
+  }
+
+  div.footerCard {
+    margin-bottom: 3rem;
+  }
+
+  h3.footerCard--title {
+    margin-bottom: 1rem;
+  }
+
+  /* blog app styles */
+  img.section__desc--imageTwo {
+    height: 25rem;
+  }
+
+  img.section__desc--imageThree {
+    height: 35rem;
+  }
+
+  /* blog app styles */
   div.container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -761,950 +239,213 @@
     display: none;
   }
 
-  div.hero-2 {
+  div.heroTwo {
+    height: 45vh;
+    width: 100%;
     position: static;
     top: initial;
-    width: 100%;
-    height: 35vh;
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  div.hero .header,
-  div.hero-2 .header-2 {
-    padding-bottom: 30px;
+  div.heroTwo__headerTwo {
+    margin: 3rem 0;
+    margin-left: 20%;
   }
 
-  /* Hero Section Styles */
-  div.hero .header h2 {
-    margin: 10px 0 5px 0;
+  img.heroTwo__body--cardImage {
+    height: 6.25rem;
   }
 
-  div.hero .header p {
-    font-size: 100%;
+  div.showcaseBoxes {
     width: 90%;
   }
 
-  div.our-writers {
+  div.showcaseBoxes {
+    width: 90%;
+  }
+
+  div.showcase__writers {
     width: 100%;
   }
 
-  div.our-writers .content-text {
-    padding-left: 80px;
+  div.showcase__writersContainer {
+    padding-left: 5%;
   }
-
-  div.our-writers .empty {
-    -ms-flex-preferred-size: 10%;
-    flex-basis: 10%;
-  }
-
-  section.separator {
-    margin-right: 10%;
-  }
-
-  div.showcase-box {
-    width: 100%;
-    height: 150px;
-  }
-
-  div.showcase-text {
-    width: 100%;
-  }
-
-  div.showcase-card {
-    width: 100%;
-    height: 80px;
-  }
-
-  div.card-image a img {
-    height: 40px;
-    width: 40px;
-  }
-
-  div.card-text {
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-
-  div.card-text h3 {
-    font-size: 65%;
-  }
-
-  div.card-text p {
-    font-size: 50%;
-  }
-
-  div.card-tag {
-    margin-right: 10px;
-    margin-top: 3px;
-  }
-
-  div.card-tag a:link,
-  div.card-tag a:visited {
-    font-size: 70%;
-    padding: 5px 10px;
-  }
-
-  div.showcase-text h2 a:link,
-  div.showcase-text h2 a:visited {
-    font-size: 50%;
-  }
-
-  div.showcase-l span {
-    font-size: 110%;
-  }
-
-  div.showcase-l h1 {
-    font-size: 150%;
-  }
-
-  div.showcase-l p {
-    font-size: 85%;
-  }
-
-  div.showcase-l a:link,
-  div.showcase-l a:visited {
-    padding-right: 15px;
-    font-size: 170%;
-  }
-
-  /* ==================
-      blog index page
-  =================== */
-
-  div.showcase footer,
-  div.showcase-2 footer {
-    width: 100%;
-    padding-left: 80px;
-  }
-
-  div.l-container .menu-icon {
-    font-size: 20px;
-    left: 0;
-    top: 25px;
-    padding: 5px 15px;
-  }
-
-  div.menu-content a:link,
-  div.menu-content a:visited {
-    padding: 16px;
-    font-size: 20px;
-  }
-
-  /* =================
-    show route styles
-  ================== */
-
-  div.show-wrapper {
-    width: 92%;
-    margin-top: 30px;
-  }
-
-  div.show-heading {
-    width: 80%;
-  }
-
-  div.main-heading h1 {
-    font-size: 90%;
-  }
-
-  div.section-three img {
-    height: 200px;
-  }
-
-  div.backlinks-header a img {
-    height: 90px;
-  }
-
-  div.tag-links a:link,
-  div.tag-links a:visited {
-    font-size: 60%;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px 12px;
-  }
-
-  div.backlinks-body p {
-    font-size: 55%;
-  }
-
-  /* ================
-   new blog template
-  ================= */
-
-  div.content-boxes {
-    width: 100%;
-  }
-
-  .s0 img {
-    height: 200px;
-  }
-
-  div.s1 img {
-    height: 300px;
-  }
-
-  div.s2 img {
-    height: 250px;
-  }
-
-  div.s4 img {
-    margin-left: 50px;
-    height: 280px;
-  }
-
-  /* ==============
-  auth route styles
-  =============== */
-
-  div.comment {
-    margin-bottom: 0;
-  }
-
-  .auth h5 {
-    margin-bottom: 0;
-    font-size: 60%;
-  }
-
-  #auth-button {
-    font-size: 70%;
-  }
-  
-  section.projects-container .content {
-    margin: 30px 30px;
-  }
-
-  div.text-box h1 {
-    font-size: 65%;
-    margin-bottom: 20px;
-  }
-
-  div.text-box span {
-    display: inline-block;
-    font-size: 45%;
-    margin-bottom: 15px;
-  }
-
-  section.projects-container .contacts {
-    display: none;
-  }
-
 }
+
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
 
   span#menuIcon,
-  .l-container .menu-icon {
-    font-size: 115%;
-    left: -10px;
-    top: 15px;
+  div.l-container .menu-icon {
+    font-size: 3rem;
+    top: 2rem;
   }
 
-  div.show-menu {
-    display: none;
-  }
-
-  /* ================
-  landing page styles
-  ================= */
-
-  input.bdb {
-    padding: 8px 15px;
-  }
-
-  /* navbar & greeting section */
-  section.greeting,
-  section.newsletter {
-    background-attachment: initial;
-  }
-
-  ul.main-nav {
-    padding-top: 15px;
-  }
-
-  ul.main-nav .nav-items {
-    display: none;
-  }
-
-  ul.main-nav .brand {
+  div.greeting__nav--brand {
+    position: relative;
+    top: 1.5rem;
+    font-size: 3rem;
     text-align: center;
   }
 
-  div.greeting-boxes {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    font-size: 100%;
-    margin-top: 25px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  
-  div.g-box {
-    padding-left: 0;
-  }
-
-  div.g-box h1 {
-    font-size: 110%;
-  }
-
-  div.g-image {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-top: 40px;
-  }
-
-  div.g-image img {
-    height: 20vh;
-    left: 0;
-  }
-
-  /* intro-div */
-  div.intro-div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 30px 0;
-    margin-bottom: -50px;
-  }
-
-  div.intro-div .give,
-  div.intro-div .receive {
+  div.greeting__nav--items {
     display: none;
   }
 
-  /* how-it-works */
-  div.how-it-works {
-    padding-bottom: 50px;
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 2.5rem;
   }
 
-  div.how-it-works .head {
-    font-size: 70%;
+  div.greeting__boxes--image img {
+    height: 25vh;
   }
 
-  div.how-it-works .boxes {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  h2.section__heading {
+    font-size: 2.5rem;
+  }
+
+  p.intro__container--paragraph {
+    width: 80%;
+  }
+
+  img.features__boxes--boxImage {
+    height: 7.5rem;
+  }
+
+  div.features {
+    padding-bottom: 5rem;
+  }
+
+  section.about {
     flex-direction: column;
   }
 
-  div.how-it-works .box {
-    margin-bottom: 30px;
+  img.about__image--img {
+    height: 12.5rem;
   }
 
-  /* about us */
-  section.about-us {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  h5.numbers__boxes--title {
+    font-weight: 300;
+    font-size: 1.5rem;
   }
 
-  div.about-image img {
-    height: 100px;
-  }
-
-  div.about-text h2:after {
-    width: 120px;
-    top: 30px;
-  }
-
-  img.founder-signature {
-    height: 40px;
-  }
-
-  /* our numbers */
-  section.numbers {
-    background-color: #f3f3f7;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  section.numbers h2,
-  section.socials h2 {
-    font-size: 100%;
-  }
-
-  section.numbers h2:before {
-    height: 0;
-  }
-
-  section.numbers .boxes {
-    width: 100%;
-  }
-
-  section.numbers .box h3 {
-    font-size: 245%;
-  }
-
-  section.numbers .box i {
-    font-size: 105%;
-  }
-
-  /* founder */
-  section.founder {
+  i.numbers__boxes--icon {
     display: none;
   }
 
-  /* socials */
-  section.socials .box a i {
-    font-size: 100%;
-  }
-
-  /* testimonials */
-  section.testimonials .header {
-    padding-top: 50px;
-  }
-
-  section.testimonials .boxes {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  div.testimonials__boxes {
     flex-direction: column;
   }
 
-  section.testimonials .box {
-    margin: 0 auto;
-    width: 80%;
-    padding-top: 50px;
-    padding-left: 20px;
-    top: -180px;
-  }
-
-  /* newsletter */
-  div.newsletter-form {
+  div.testimonials__box {
     width: 100%;
-    font-size: 100%;
   }
 
-  div.newsletter-form p {
+  p.testimonials__box--paragraph {
+    margin-bottom: 1rem;
     width: 80%;
   }
 
-  div.newsletter-form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-items: center;
+  h3.testimonials__box--name {
+    margin-bottom: 1rem;
   }
 
-  div.newsletter-form input[type="email"] {
+  input.newsletter__content--email {
+    width: 35rem;
+  }
+
+  div.contact--form {
+    flex-direction: column;
     width: 90%;
-    font-size: 60%;
-    left: unset;
-    padding: 15px 20px;
   }
 
-  div.newsletter-form input[type="submit"] {
-    right: unset;
-    width: 30%;
-    margin-top: 15px;
-    padding: 0;
-  }
-  
-  /* socials */
-  section.socials {
-    margin: 0px;
-    padding: 50px 0;
-    background-color: #f3f3f7;
-  }
-
-  /* contact-us */
-  section.contact-us {
-    padding-top: 0;
-  }
-
-  section.contact-us .form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  /* blog app styles */
+  div.container {
     flex-direction: column;
   }
 
-  section.contact-us .card-txt h5 {
+  div.hero {
     display: none;
   }
 
-  section.contact-us .message {
-    margin-top: 30px;
-  }
-
-  /* footer */
-  footer.l-footer .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-left: 30px;
-  }
-
-  div.content .footer-card {
-    margin-bottom: 30px;
-  }
-
-  div.content .footer-card h3 {
-    margin-bottom: 15px;
-  }
-
-  div.f-text p {
-    width: 100%;
-  }
-
-  /* ================
-    blog app styles
-  ================= */
-
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  /* Hero section */
-  .hero-l {
-    display: none;
-  }
-
-  div.hero,
-  div.hero-2 {
-    /* to fix height and put the correct one for each screen size here */
-    height: 194px;
-    width: 100vw;
+  div.heroTwo {
+    height: 45vh;
     position: static;
     top: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  div.showcase-l span {
-    font-size: 70%;
+  div.heroTwo__headerTwo {
+    margin: 3rem 0;
+    margin-left: 20%;
   }
 
-  div.showcase-l h1 {
-    font-weight: 300;
-    padding: 15px 0px;
-    font-size: 90%;
+  img.heroTwo__body--cardImage {
+    height: 6.25rem;
   }
 
-  div.showcase-l p {
-    color: #fff;
-    font-size: 60%;
-    width: 96%;
-    line-height: 150%;
+  div.showcaseBoxes {
+    width: 90%;
   }
 
-  div.showcase-l a:link,
-  div.showcase-l a:visited {
-    margin: 0;
-    padding: 0;
-    padding-right: 5px;
-    font-size: 110%;
-  }
-
-  /*================
-  index route styles
-  ================ */
-
-  div.hero .header,
-  div.hero-2 .header-2 {
+  div.showcase__writers {
     width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 80%;
-    text-align: center;
-    overflow: hidden;
-    padding-bottom: 20px;
   }
 
-  div.hero .header img,
-  div.hero-2 .header-2 img {
-    height: 50px;
-    width: 50px;
-    border: 4px solid rgba(153, 59, 140, .2);
-  }
-
-  div.hero .header h2 {
-    margin-top: 20px;
-    font-size: 100%;
-  }
-
-  div.hero-2 .header-2 h2 {
-    margin-top: 20px;
-    font-size: 75%;
-    font-weight: 300;
-    color: rgb(200, 200, 200);
-  }
-
-  div.hero .header p {
-    font-size: 90%;
-    width: 70%;
-  }
-
-  div.our-writers .content-text {
+  div.showcase__writersContainer {
     padding-left: 5%;
   }
 
-  a.hero-btn:link,
-  a.hero-btn:visited {
-    padding: 5px 5px 20px 5px;
-    font-size: 100%;
+  div.showcaseTwo .blog {
+    width: 90%;
   }
 
-  /*=============
-  showcase styles 
-  =============== */
-  div.hero-2 nav {
+  .blog .blog__body--paragraph {
+    font-size: 1.5rem;
+  }
+
+  div.zero {
+    width: 80vw;
+  }
+
+  div.section__desc {
     display: none;
   }
 
-  div.showcase-boxes {
-    grid-gap: 5px;
+  div.inputsBox--left,
+  div.inputsBox--right {
     width: 100%;
   }
 
-  /* div.showcase-box {
-    width: 90%;
-    height: 150px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  } */
-
-  div.showcase-box {
-    width: 90%;
-    height: 150px;
+  div.inputsBox__selectWrapper {
+    margin-bottom: 2rem;
   }
 
-  div.showcase-text {
-    width: 90%;
+  div.inputsBox__selectWrapper::after {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+  html {
+    font-size: 7px;
   }
 
-  div.showcase-card {
-    width: 100%;
-    height: 80px;
+  .greeting__boxes--box span.greeting__box--subHeading {
+    font-size: 1.5rem;
   }
 
-  div.card-image a img {
-    height: 40px;
-    width: 40px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 2rem;
+    margin-top: 1rem;
   }
-
-  div.card-text {
-    font-weight: 300;
-    color: #fff;
-    margin-left: 20px;
-    position: relative;
-    top: -5px;
-  }
-
-  div.card-text h3 {
-    font-size: 75%;
-    margin-bottom: 0;
-  }
-
-  div.card-text h3,
-  div.header-2 .card-text p {
-    position: relative;
-    right: 10px;
-  }
-
-  div.showcase-card .card-text {
-    font-size: 75%;
-  }
-
-  div.showcase-card .card-text h3,
-  div.showcase-card .card-text p {
-    position: relative;
-    right: 10px;
-  }
-
-  div.header-2 .card-text p {
-    font-size: 70%;
-  }
-
-  div.card-tag {
-    margin-top: 3px;
-    margin-right: 5px;
-  }
-
-  div.card-tag a:link,
-  div.card-tag a:visited {
-    font-size: 65%;
-    padding: 5px 15px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-  }
-
-  div.showcase-card {
-    height: 55px;
-  }
-
-  div.showcase-text {
-    width: 90%;
-    font-size: 70%;
-  }
-
-  div.showcase-text h2 {
-    margin-bottom: 0px;
-    width: 95%;
-  }
-
-  /* Index footer */
-  div.showcase footer,
-  div.showcase-2 footer {
-    height: 120px;
-    width: 100%;
-    font-size: 70%;
-    padding: 0;
-  }
-
-  div.showcase footer p,
-  div.showcase-2 footer p {
-    width: 80%;
-    padding-top: 45px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  /* =================
-    show route styles
-  ================== */
-
-  div.show-wrapper {
-    width: 90%;
-  }
-
-  div.show-heading {
-    width: 85%;
-  }
-
-  div.main-heading h1 {
-    font-size: 105%;
-  }
-
-  div.main-heading h1:after,
-  div.intro-paragraph:after {
-    width: 100px;
-  }
-
-  div.intro-paragraph {
-    line-height: 105%;
-  }
-
-  div.show-content {
-    width: 98%;
-  }
-
-  div.section-two h3 {
-    font-size: 92%;
-  }
-
-  div.section-two p:nth-of-type(2) {
-    border-left: 2px solid rgb(186, 188, 189);
-    padding: 10px;
-    line-height: 140%;
-    word-spacing: 2.5px;
-  }
-
-  div.section-three h4 {
-    font-size: 88%;
-  }
-
-  div.section-three h5 {
-    font-size: 80%;
-  }
-
-  div.section-three img {
-    height: 150px;
-  }
-
-  div.section-four h6 {
-    font-size: 78%;
-    margin-bottom: 10px;
-  }
-
-  /* =================== 
-  Show-backlinks section 
-  ==================== */
-
-  div.show-backlinks h3 {
-    font-size: 100%;
-  }
-
-  div.show-backlinks p {
-    font-size: 80%;
-  }
-
-  div.show-backlinks p a {
-    font-size: 100%;
-  }
-
-  div.backlinks-header a img {
-    height: 80px;
-  }
-
-  div.tag-links a:link,
-  div.tag-links a:visited {
-    bottom: 10px;
-    right: 5px;
-    font-size: 60%;
-    padding: 3px 12px;
-  }
-
-  div.backlinks-body h4 {
-    width: 90%;
-    margin-bottom: 5px;
-    font-size: 80%;
-  }
-
-  div.backlinks-body p {
-    margin-bottom: 5px;
-    font-size: 50%;
-    width: 100%;
-  }
-
-  div.backlinks-body a {
-    font-size: 60%;
-    margin-left: 2px;
-  }
-
-  /* =========================
-        edit route styles
-  ========================== */
-
-  div.content-boxes h1 {
-    font-size: 200%;
-  }
-
-  div.content-boxes h1:after {
-    height: 2px;
-    width: 80px;
-  }
-
-  .content-text {
-    display: none;
-  }
-
-  div.content-boxes {
-    width: 100%;
-  }
-
-  div.content-boxes .row {
-    margin-top: 30px;
-  }
-
-  div.content-inputs h2 {
-    padding: 20px;
-    text-align: center;
-    font-size: 80%;
-  }
-
-  div.s3 {
-    padding-left: 0;
-  }
-
-  div.content-inputs input[type=text],
-  textarea,
-  div.auth input[type=password] {
-    margin-bottom: 10px;
-  }
-
-  div.content-inputs input[type=text],
-  div.auth input[type=password] {
-    height: 60px;
-    font-size: 60%;
-  }
-
-  div.content-inputs .left,
-  div.content-inputs .right {
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  div.after::after {
-    width: 150px;
-  }
-
-  /* ==============
-  auth route styles
-  =============== */
-
-  div.comment {
-    margin-bottom: 0;
-  }
-
-  .auth h5 {
-    margin-bottom: 0;
-    font-size: 60%;
-  }
-
-  #auth-button {
-    font-size: 70%;
-  }
-
-  section.projects-container .bdb-ghost {
-    display: none;
-  }
-
-  section.projects-container .content {
-    margin: 30px 60px;
-    flex-direction: column;
-  }
-
-  div.text-box h1 {
-    font-size: 60%;
-    font-weight: 400;
-    /* margin-bottom: 25px; */
-  }
-
-  div.text-box span {
-    font-size: 40%;
-    margin-bottom: 0;
-  }
-
-  section.content .image-box {
-    display: none;
-  }
-
-  section.projects-container .contacts {
-    display: none;
-  }
-
-  section.projects-container .footer {
-    padding: 10px 0;
-    font-size: 80%;
-  }
-
-  div.projects-email input[type="email"]::placeholder {
-    text-align: left;
-  }
-  
 }

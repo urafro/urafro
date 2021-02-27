@@ -34,59 +34,60 @@
 
   </div>
 
-  <div class="content-boxes">
+  <div class="create">
 
-    <h1>Tweak[s]</h1>
+    <h1 class="create--mainHeading">Tweak[s]</h1>
 
-    <form action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+    <form action="/blogs/<%= blog._id %>?_method=PUT" method="POST" class="create__form">
 
-      <div class="row">
+      <div class="create__form--row create__form--after">
 
-        <div class="section zero">
+        <div class="section">
 
-          <div class="content-inputs">
+          <div class="section__inputs">
 
-            <h2>Section Zero</h2>
+            <h2 class="section__inputs--heading">Section Zero</h2>
 
-            <div class="box-content">
+            <div class="inputsBox">
 
-              <label for="mainHeading">Title*</label>
-              <input type="text" name="blog[mainHeading]" id="mainHeading" value="<%= blog.body.header.mainHeading %>" required>
+              <label class="inputsBox--label" for="mainHeading">Title*</label>
+              <input class="inputsBox--input inputsBox--text" type="text" name="blog[mainHeading]" id="mainHeading" value="<%= blog.body.header.mainHeading %>" required>
 
               <div class="group">
-                <div class="left">
-                  <label for="mainImage">Image*</label>
-                  <input type="text" name="blog[mainImage]" id="mainImage" value="<%= blog.body.header.mainImage %>" required>
+                <div class="inputsBox--left left">
+                  <label class="inputsBox--label" for="mainImage">Image*</label>
+                  <input class="inputsBox--input inputsBox--text" type="text" name="blog[mainImage]" id="mainImage" value="<%= blog.body.header.mainImage %>" required>
                 </div>
 
-                <div class="right select">
+                <div class="inputsBox--right right inputsBox__selectWrapper">
                   <!-- <input type="text" name="blog[tag]" id="tag" placeholder="blog tag" required> -->
-                  <select name="blog[tag]" id="tag" required>
+                  <select class="inputsBox__selectWrapper--select" name="blog[tag]" id="tag" required>
                     <option selected disabled>Choose a tag</option>
-                    <option value="Life">Life</option>
-                    <option value="Code">Code</option>
-                    <option value="Music">Music</option>
                     <option value="Self">Self</option>
+                    <option value="Society">Society</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Money">Money</option>
                   </select>
                 </div>
               </div>
 
-              <label for="introParagraph">Intro*</label>
+              <label class="inputsBox--label" for="introParagraph">Intro*</label>
 
-              <textarea name="blog[introParagraph]" id="introParagraph" cols="30" rows="5" required>
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[introParagraph]" id="introParagraph" cols="30" rows="5" required>
                 <%= blog.body.content.introParagraph %>
               </textarea>
             </div>
 
           </div>
 
-          <div class="content-text">
-            <p>Hook your readers.</p>
-            <h2>A story lives and dies with <br>
+          <div class="section__desc section__desc--zero">
+            <p class="section__desc--paragraph">Hook your readers.</p>
+            <h2 class="section__desc--heading">A story lives and dies with <br>
               the introduction!
             </h2>
-            <p>Create a conversation from the title, the background image to the intro paragraph.</p>
-            <p>The last thing you should do is make the reader feel like
+            <img class="section__desc--image section__desc--imageZero" src="/resources/img/section0.svg" alt="urafro blog edit intro">
+            <p class="section__desc--paragraph">Create a conversation from the title, the background image to the intro paragraph.</p>
+            <p class="section__desc--paragraph">The last thing you should do is make the reader feel like
               they're reading an essay. Spice it up and include the audience in your play.
             </p>
 
@@ -95,33 +96,34 @@
 
       <!-- second row starts here -->
 
-      <div class="row">
+      <div class="create__form--row create__form--after">
 
         <div class="section one">
 
-          <div class="content-text">
-            <p>Open Up.</p>
-            <h2>Establish the tone/mood<br>
+          <div class="section__desc section__desc--one">
+            <p class="section__desc--paragraph">Open Up.</p>
+            <h2 class="section__desc--heading">Establish the tone/mood<br>
               howbeit slowly!
             </h2>
-            <p>Set up a road map to the core of your story by introducing the main pillars of your overall theme. </p>
+            <img class="section__desc--image section__desc--imageOne" src="/resources/img/section1.svg" alt="">
+            <p class="section__desc--paragraph">Set up a road map to the core of your story by introducing the main pillars of your overall theme. </p>
           </div>
 
-          <div class="content-inputs">
+          <div class="section__inputs">
 
-            <h2>Section One</h2>
+            <h2 class="section__inputs--heading">Section One</h2>
 
-            <div class="box-content">
+            <div class="inputsBox">
 
-              <label for="paragraphOne">Paragraph 1</label>
+              <label class="inputsBox--label" for="paragraphOne">Paragraph 1</label>
 
-              <textarea name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="5" required>
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphOne]" id="paragraphOne" cols="30" rows="5" required>
                 <%= blog.body.content.sectionOne.paragraphOne %>
               </textarea>
 
-              <label for="paragraphTwo">Paragraph Two</label>
+              <label class="inputsBox--label" for="paragraphTwo">Paragraph Two</label>
 
-              <textarea name="blog[paragraphTwo]" id="paragraphTwo" cols="30" rows="5">
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphTwo]" id="paragraphTwo" cols="30" rows="5">
                 <%= blog.body.content.sectionOne.paragraphTwo %>
               </textarea>
             </div>
@@ -133,46 +135,47 @@
 
       <!-- Third row starts here -->
 
-      <div class="row">
+      <div class="create__form--row create__form--after">
 
         <div class="section two">
 
-          <div class="content-inputs">
+          <div class="section__inputs">
 
-            <h2>Section Two</h2>
+            <h2 class="section__inputs--heading">Section Two</h2>
 
-            <div class="box-content">
+            <div class="inputsBox">
 
-              <label for="mediumHeading">Small Heading</label>
-              <input type="text" name="blog[mediumHeading]" id="smallHeading" value="<%= blog.body.content.sectionTwo.mediumHeading %>">
+              <label class="inputsBox--label" for="mediumHeading">Small Heading</label>
+              <input class="inputsBox--input inputsBox--text" type="text" name="blog[mediumHeading]" id="smallHeading" value="<%= blog.body.content.sectionTwo.mediumHeading %>">
 
-              <label for="paragraphThree">Paragraph Three</label>
+              <label class="inputsBox--label" for="paragraphThree">Paragraph Three</label>
 
-              <textarea name="blog[paragraphThree]" id="paragraphThree" cols="30" rows="5">
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphThree]" id="paragraphThree" cols="30" rows="5">
                 <%= blog.body.content.sectionTwo.paragraphThree %>
               </textarea>
 
-              <label for="paragraphFour">Paragraph Four</label>
+              <label class="inputsBox--label" for="paragraphFour">Paragraph Four</label>
 
-              <textarea name="blog[paragraphFour]" id="paragraphFour" cols="30" rows="5">
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphFour]" id="paragraphFour" cols="30" rows="5">
                 <%= blog.body.content.sectionTwo.paragraphFour %>
               </textarea>
 
-              <label for="paragraphFive">paragraphFive</label>
+              <label class="inputsBox--label" for="paragraphFive">paragraphFive</label>
 
-              <textarea name="blog[paragraphFive]" id="paragraphFive" cols="30" rows="5">
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphFive]" id="paragraphFive" cols="30" rows="5">
                 <%= blog.body.content.sectionTwo.paragraphFive %>
               </textarea>
             </div>
 
           </div>
 
-          <div class="content-text">
-            <p>Approaching the gist.</p>
-            <h2>Conclude your premise<br>
+          <div class="section__desc section__desc--two">
+            <p class="section__desc--paragraph">Approaching the gist.</p>
+            <h2 class="section__desc--heading">Conclude your premise<br>
               Ease in :)
             </h2>
-            <p>
+            <img class="section__desc--image section__desc--imageTwo" src="/resources/img/section2.svg" alt="">
+            <p class="section__desc--paragraph">
               Ease the reader into your story.
             </p>            
             <p>
@@ -187,65 +190,66 @@
 
       <!-- Fourth Row starts here -->
 
-      <div class="row">
+      <div class="create__form--row create__form--after">
 
-        <div class="section zero">
+        <div class="section">
 
-          <div class="content-text">
-            <h2>Longer context is<br>
+          <div class="section__desc section__desc--three">
+            <p class="section__desc--paragraph">Dissecting the frog.</p>
+            <h2 class="section__desc--heading">Longer context is<br>
               usually better.
             </h2>
-
-            <p>
+            <img class="section__desc--image section__desc--imageThree" src="/resources/img/section3.svg" alt="urafro blog section3 image">
+            <p class="section__desc--paragraph">
               Higher word count typically results in more search traffic.
             </p>
-            <p>
+            <p class="section__desc--paragraph">
               The more content you have, the more of it gets <a href="https://en.wikipedia.org/wiki/Web_indexing"
                 target="_blank">indexed</a>. The more that gets indexed, the better it will perfom in google searches
               and results!
             </p>
           </div>
 
-          <div class="content-inputs">
+          <div class="section__inputs">
 
-            <h2>Section Three</h2>
+            <h2 class="section__inputs--heading">Section Three</h2>
 
-            <div class="box-content">
+            <div class="inputsBox">
 
-              <label for="smallHeading">Blog Subheading</label>
-              <input type="text" name="blog[smallHeading]" id="smallHeading" value="<%= blog.body.content.sectionThree.smallHeading %>">
+              <label class="inputsBox--label" for="smallHeading">Blog Subheading</label>
+              <input class="inputsBox--input inputsBox--text" type="text" name="blog[smallHeading]" id="smallHeading" value="<%= blog.body.content.sectionThree.smallHeading %>">
 
-              <label for="paragraphSix">Paragraph Six</label>
+              <label class="inputsBox--label" for="paragraphSix">Paragraph Six</label>
 
-              <textarea name="blog[paragraphSix]" id="paragraphSix" cols="30" rows="5">
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphSix]" id="paragraphSix" cols="30" rows="5">
                 <%= blog.body.content.sectionThree.paragraphSix %>
               </textarea>
 
-              <label for="paragraphSeven">Paragraph Seven</label>
+              <label class="inputsBox--label" for="paragraphSeven">Paragraph Seven</label>
                 
-              <textarea name="blog[paragraphSeven]" id="paragraphSeven" cols="30" rows="5">
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphSeven]" id="paragraphSeven" cols="30" rows="5">
                 <%= blog.body.content.sectionThree.paragraphSeven %>
               </textarea>
 
               <div class="group">
-                <div class="left">
-                  <label for="smallerHeading">Smaller Heading</label>
-                  <input type="text" name="blog[smallerHeading]" id="smallerHeading" value="<%= blog.body.content.sectionThree.smallerHeading %>" required>
+                <div class="inputsBox--left left">
+                  <label class="inputsBox--label" for="smallerHeading">Smaller Heading</label>
+                  <input class="inputsBox--input inputsBox--text" type="text" name="blog[smallerHeading]" id="smallerHeading" value="<%= blog.body.content.sectionThree.smallerHeading %>" required>
                 </div>
 
-                <div class="right">
-                  <label for="blogImage">Blog Image*</label>
-                  <input type="text" name="blog[blogImage]" id="blogImage" value="<%= blog.body.content.sectionThree.blogImage %>" required>
+                <div class="inputsBox--right right">
+                  <label class="inputsBox--label" for="blogImage">Blog Image*</label>
+                  <input class="inputsBox--input inputsBox--text" type="text" name="blog[blogImage]" id="blogImage" value="<%= blog.body.content.sectionThree.blogImage %>" required>
                 </div>
               </div>
 
-              <label for="paragraphEight">Paragraph Eight</label>
-              <textarea name="blog[paragraphEight]" id="paragraphEight" cols="30" rows="5">
+              <label class="inputsBox--label" for="paragraphEight">Paragraph Eight</label>
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphEight]" id="paragraphEight" cols="30" rows="5">
                 <%= blog.body.content.sectionThree.paragraphEight %>
               </textarea>
 
-              <label for="paragraphNine">Paragraph Nine</label>
-              <textarea name="blog[paragraphNine]" id="paragraphNine" cols="30" rows="5">
+              <label class="inputsBox--label" for="paragraphNine">Paragraph Nine</label>
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[paragraphNine]" id="paragraphNine" cols="30" rows="5">
                 <%= blog.body.content.sectionThree.paragraphNine %>
               </textarea>
 
@@ -257,79 +261,78 @@
       </div>
 
       <!-- Fifth Row starts here -->
-      <div class="row">
+      <div class="create__form--row create__form--after">
 
-        <div class="section zero">
+        <div class="section">
 
-          <div class="content-inputs">
+          <div class="section__inputs">
 
-            <h2>Section Four</h2>
+            <h2 class="section__inputs--heading">Section Four</h2>
 
-            <div class="box-content">
+            <div class="inputsBox">
 
-              <label for="smallestHeading">Smallest Heading*</label>
-              <input type="text" name="blog[smallestHeading]" id="smallestHeading" value="<%= blog.body.content.sectionFour.smallestHeading %>" required>
+              <label class="inputsBox--label" for="smallestHeading">Smallest Heading*</label>
+              <input class="inputsBox--input inputsBox--text" type="text" name="blog[smallestHeading]" id="smallestHeading" value="<%= blog.body.content.sectionFour.smallestHeading %>" required>
 
-              <label for="lastParagraph">Last Paragraph*</label>
+              <label class="inputsBox--label" for="lastParagraph">Last Paragraph*</label>
 
-              <textarea name="blog[lastParagraph]" id="lastParagraph" cols="30" rows="10" required>
+              <textarea class="inputsBox--input inputsBox--textarea" name="blog[lastParagraph]" id="lastParagraph" cols="30" rows="10" required>
                 <%= blog.body.content.sectionFour.lastParagraph %>
               </textarea>
             </div>
 
           </div>
 
-          <div class="content-text">
-            <p>Wrapping it up.</p>
-            <h2>Short and Concise<br>
+          <div class="section__desc section__desc--four">
+            <p class="section__desc--paragraph">Wrapping it up.</p>
+            <h2 class="section__desc--heading">Short and Concise<br>
               simple does it!
             </h2>
-
-            <p>If you had a really dumb doppleganger for a best friend, how would you like your idea paraphrased best
+            <img class="section__desc--image section__desc--imageFour" src="/resources/img/section4.svg" alt="urafro blog section4 image">
+            <p class="section__desc--paragraph">If you had a really dumb doppleganger for a best friend, how would you like your idea paraphrased best
               for them to get it? Sum it all up and put it in perspective!</p>
           </div>
-
         </div>
       </div>
 
-      <div class="row last">
+      <div class="create__form--row create__form--last">
 
-          <div class="section zero s5">
+          <div class="section">
 
-            <div class="content-text">
-              <p>Put your eggs in one basket? It's good -- sometimes</p>
-              <h2>Add external links to resources<br>
+            <div class="section__desc section__desc--five">
+              <p class="section__desc--paragraph">Put your eggs in one basket? It's good -- sometimes</p>
+              <h2 class="section__desc--heading">Add external links to resources<br>
                 associated with this post
               </h2>
-
-              <p>
+              <img class="section__desc--image section__desc--imageFive" src="/resources/img/section5.svg" alt="Section 5 image">
+              <p class="section__desc--paragraph">
                 Outbound links improve our SEO.
               </p>
-              <p>
+              <p class="section__desc--paragraph">
                 Kinda like a direct sibling of backlinks, <a href="https://www.shoutmeloud.com/seo-benefits-and-tips-for-outbound-links.html" target="_blank">outbound links</a> are. The more our page gets indexed- you get it now!
               </p>
             </div>
 
-            <div class="content-inputs">
+            <div class="section__inputs">
 
-              <h2>Section Five</h2>
+              <h2 class="section__inputs--heading">Section Five</h2>
 
-              <div class="box-content">
+              <div class="inputsBox">
 
-                <label for="youtube link">Youtube</label>
-                <input type="text" name="blog[youtubeLink]" id="linkOne" placeholder="<%= blog.body.content.sectionFive.youtubeLink %>" required>
+                <label class="inputsBox--label" for="youtube link">Youtube</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[youtubeLink]" id="linkOne" placeholder="link to youtube episode" required>
 
-                <label for="reddit link">Reddit</label>
-                <input type="text" name="blog[redditLink]" id="linkTwo" placeholder="<%= blog.body.content.sectionFive.redditLink %>" required>
+                <label class="inputsBox--label" for="reddit link">Reddit</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[redditLink]" id="linkTwo" placeholder="link to reddit discussion" required>
 
-                <label for="twitter link">Twitter</label>
-                <input type="text" name="blog[twitterLink]" id="linkThree" placeholder="<%= blog.body.content.sectionFive.twitterLink %>" required>
+                <label class="inputsBox--label" for="twitter link">Twitter</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[twitterLink]" id="linkThree" placeholder="link to twitter hashtag" required>
 
-                <label for="instagram link">Instagram</label>
-                <input type="text" name="blog[instagramLink]" id="linkFour" placeholder="<%= blog.body.content.sectionFive.instagramLink %>" required>
+                <label class="inputsBox--label" for="instagram link">Instagram</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[instagramLink]" id="linkFour" placeholder="link to instagram challenge?" required>
 
-                <label for="external link">External</label>
-                <input type="text" name="blog[externalLink]" id="linkFive" placeholder="<%= blog.body.content.sectionFive.externalLink %>" required>
+                <label class="inputsBox--label" for="external link">External</label>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[externalLink]" id="linkFive" placeholder="link to the best external resource" required>
                     
               </div>
 
@@ -337,16 +340,15 @@
 
           </div>
         </div>
-
-
-      <!-- SUBMIT BUTTON FOR THE WHOLE FORM -->
-      <input class="bdb bdb-full" type="submit" value="Update"> 
-      <!-- create new drafts array -->
-      <a class="bdb bdb-ghost" href="#">Save Draft</a>
+        
+      <div class="create__form--btns">
+        <!-- SUBMIT BUTTON FOR THE WHOLE FORM -->
+        <input class="btn btn-full" type="submit" value="Update"> 
+        <!-- create new drafts array -->
+        <a class="btn btn-ghost" href="#">Save Draft</a>
+      </div>
+    </form>
   </div>
-  </form>
-
-</div>
 </div>
 
 <% include ../partials/footer %>

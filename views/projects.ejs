@@ -30,70 +30,70 @@
 
 </div>
 
-<header class="projects">
-  <section class="projects-container">
-    <ul class="logo-box">
-      <li class="brand">urAfro</li>
+<section class="projects">
+  <div class="projects__content">
+    <ul class="projects__content--logoBox">
+      <li class="brand projects__content--logo">#weRme</li>
       <!-- Remove this inline style ish when you're done styling the thing -->
-      <li><a href="/" class="bdb bdb-ghost">Home</a></li>
+      <li><a href="/" class="btn btn-ghost">Home</a></li>
     </ul>
 
-    <section class="content">  
-      <div class="text-box">
-        <h1>Our developers are still cooking<br> 
-          up the magic potions.
+    <section class="projects__content--body">  
+      <div class="projects__textBox">
+        <h1 class="projects__textBox--heading">Our developers are still cooking<br> 
+          up the magic portions.
         </h1>
 
-        <span>🙇🏽‍♂️ &nbsp; Bummer right? Sign up to be the first<br> 
-            to know when we launch!
+        <span class="projects__textBox--span">🙇🏽‍♂️ &nbsp; Bummer right? Sign up to be the first<br> 
+            to know when we launch
         </span>
 
-        <form action="/projects" method="POST">
+        <form class="projects__textBox--form" action="/projects" method="POST">
         
-          <div class="projects-email">
-            <input type="email" name="email" id="" placeholder="Enter your email here*" required>
+          <div class="projects__textBox--email">
+            <input class="inputsBox--input projects__textBox--emailInput" type="email" name="email" id="" placeholder="Enter your email here*" required>
           </div>
 
-          <input class="bdb bdb-full" type="submit" value="notify me">
+          <input class="btn btn-full projects__textBox--submit" type="submit" value="notify me">
 
-          <div class="small-socials">
-            <a href="https://www.instagram.com/official_urafro" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/official_urafro" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.reddit.com/r/urafro" target="_blank"><i class="fab fa-reddit"></i></a>
+          <div class="projects__textBox--smallSocials">
+            <a class="projects__textBox--smallLink" href="https://www.instagram.com/official_urafro" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="projects__textBox--smallLink" href="https://twitter.com/official_urafro" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="projects__textBox--smallLink" href="https://www.reddit.com/r/urafro" target="_blank"><i class="fab fa-facebook"></i></a>
           </div>
         </form>
       </div>
-      <div class="image-box">
+      <div class="projects__imageBox">
         
       </div>
     </section>
 
-    <section class="contacts">
-      <div class="contact-card">
-        <div class="card-primary">
-          <h4>Contact</h4>
+    <section class="projects__content--contacts">
+      <div class="projects__card">
+        <div class="projects__card--primary">
+          <h4 class="projects__card--primaryHeading">Contact</h4>
         </div>
-        <div class="card-secondary">
-          <p>WhatsApp. +263 772 794 678</p>
-          <p>Email: official.urafro@gmail.com</p>
+        <div class="projects__card--secondary">
+          <p class="projects__card--secondaryParagraph">Whatsapp. +263 772 794 678</p>
+          <p class="projects__card--secondaryParagraph">Email: official.urafro@gmail.com</p>
         </div>
       </div>
-      <div class="contact-card">
-        <div class="card-primary">
-          <h4>Head Office</h4>
+      <div class="projects__card">
+        <div class="projects__card--primary">
+          <h4 class="projects__card--primaryHeading">Head Office</h4>
         </div>
-        <div class="card-secondary">
-          <p>01 1997 New Office Street</p>
-          <p>Harare, Zimbabwe ZW 263</p>
+        <div class="projects__card--secondary">
+          <p class="projects__card--secondaryParagraph">01 1997 New Office Street</p>
+          <p class="projects__card--secondaryParagraph">Harare, Zimbabwe ZW 263</p>
         </div>
       </div>
     </section>
 
-    <section class="footer">
-      <p>&copy; 2023 <span class="brand">urAfro</span> Proudly designed & developed by <a href="#">Dan</a></p>
+    <section class="projects__content--footer">
+      <p>&copy; 2021 <span class="brand">urAfro</span> Proudly designed & developed by <a href="#">Dan</a></p>
     </section>
 
-  </section>
-</header>
+  </div>
+</section>
 
 <% include ./partials/footer %>

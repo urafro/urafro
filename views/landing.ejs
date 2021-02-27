@@ -4,7 +4,7 @@
 
   <div class="l-container">
 
-    <span class="menu-icon" id="menuIcon" onclick="openMenu()">&#9776;</span>
+    <span class="menu-icon landing--menu" id="menuIcon" onclick="openMenu()">&#9776;</span>
 
   </div>
 
@@ -33,51 +33,53 @@
 </div>
 
 <section class="greeting">
-  <ul class="main-nav">
-    <div class="brand">
+  <ul class="greeting__nav">
+    <div class="brand greeting__nav--brand">
       <li>urAfro</li>
     </div>
-    <div class="nav-items">
+    <div class="greeting__nav--items">
       <!-- this link should redirect to a more faq type content page -->
       <li>
-        <a href="/signup" class="nav-b">Join</a>
+        <a href="/signup" class="nav--item">Join</a>
       </li>
       <li>
-        <a href="#features" class="nav-b js--scroll-to-features">Features</a>
+        <a href="#features" class="nav--item js--scroll-to-features">Features</a>
       </li>
       <li>
-        <a href="#about" class="nav-b js--scroll-to-about">About</a>
+        <a href="#about" class="nav--item js--scroll-to-about">About</a>
       </li>
       <li>
-        <a href="#contact-us" class="nav-b js--scroll-to-contact">Contact</a>
+        <a href="#contact-us" class="nav--item js--scroll-to-contact">Contact</a>
       </li>
       <li>
-        <a href="/blogs" class="bdb bdb-ghost jiggle">Blog</a>
+        <a href="/blogs" class="btn btn-ghost jiggle">Blog</a>
       </li>
     </div>
   </ul>
 
-  <div class="greeting-boxes">
-    <div class="g-box">
-      <span>You can make a difference</span>
-      <h1>
+  <div class="greeting__boxes">
+    <div class="greeting__boxes--box">
+      <span class="greeting__box--subHeading">
+        You can make a difference
+      </span>
+      <h1 class="greeting__box--mainHeading">
         Add your voice to our chorus <br>
         Invest 'n invent with us<br>
         Make your mark!
       </h1>
 
-      <a href="#intro-div" class="bdb bdb-full js--scroll-to-intro"><i class="fas fa-angle-down"></i> See how</a>
+      <a href="#intro-div" class="btn btn-full"><i class="fas fa-angle-down"></i> See how</a>
     </div>
-    <div class="g-image">
+    <div class="greeting__boxes--image">
       <img src="./resources/img/g-box1.svg" alt="urafro community">
     </div>
   </div>
 </section>
 
 <section class="intro js--section--intro">
-  <div class="intro-div" id="intro-div">
-    <div class="about">
-      <h2>Join minds with us. 
+  <div class="intro__container" id="intro-div">
+    <div class="intro__container--about">
+      <h2 class="intro__container--heading">Join minds with others. 
         <br> 
         wut are we tho?</h2>
       
@@ -86,84 +88,83 @@
         responsible societal development. Building on Africa - all shades of her! 
       </p>
 
-      <p>Think Innovation - just smugly conventional 🙃</p>      
+      <p class="intro__container--paragraph">Think Innovation - just smugly conventional 🙃</p>      
 
-      <a href="/signup" class="bdb bdb-full">Join</a>
+      <a href="/signup" class="btn btn-full intro__container--btn">Join</a>
     </div>
 
-    <div class="give">
-      <img src="./resources/img/sponsor.svg" alt="urafro sponsor">
+    <div class="intro__container--give">
+      <img class="intro__container--image" src="./resources/img/sponsor.svg" alt="urafro sponsor">
 
-      <h2>Sponsor</h2>
+      <h2 class="intro__container--heading">Sponsor</h2>
 
-      <p>
+      <p class="intro__container--paragraph">
         "An idea is salvation by imagination"... use our <a href="/projects">projects app</a> to find ideas that can save your pocket; 
         soul even, on a rainy day!
       </p>
 
-      <p>Invest in yourself by supporting a peer's idea.</p>
+      <p class="intro__container--paragraph">Invest in yourself by supporting a peer's idea.</p>
     </div>
 
-    <div class="receive">
-      <img src="./resources/img/receive.svg" alt="urafro initiator">
+    <div class="intro__container--receive">
+      <img class="intro__container--image" src="./resources/img/receive.svg" alt="urafro initiator">
 
-      <h2>Initiator</h2>
+      <h2 class="intro__container--heading">Initiator</h2>
 
-      <p>
+      <p class="intro__container--paragraph">
         So you have conjured up an idea. An idea that can change the world around you.
         Collaboration could be your <span class="brand">[aha!!!]</span> moment.
       </p>
 
-      <p>Join arms with others and make positive change.</p>
+      <p class="intro__container--paragraph">Join arms with others and make positive change.</p>
     </div>
 
   </div>
 
-  <div class="how-it-works js--section--features" id="features">
+  <div class="features js--section--features" id="features">
 
-    <div class="head">
-      <h2>How to use <span class="brand">urAfro</span></h2>
-      <p class="italic">the right to shape the future, the choice to pick your side</p>
+    <div class="features__head">
+      <h2 class="features__head--mainHeading section__heading">How to use <span class="brand features__head--brand">urAfro</span></h2>
+      <p class="features__head--paragraph italic">the right to shape the future, the choice to pick your side</p>
     </div>
 
-    <div class="boxes">
-      <div class="box">
+    <div class="boxes features__boxes">
+      <div class="box features__boxes--box">
         <!-- link directs user to blog -->
-        <a href="/blogs"><i class="fas fa-angle-right"></i></a>
-        <h3>Lurker</h3>
-        <p>Browse around, read posts from <a href="/blogs">our blog</a> until you get a project or idea to support.</p>
-        <img src="./resources/img/lurker.svg" alt="urafro lurker">
+        <a class=features__boxes--boxLink href="/blogs"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
+        <h3 class="features__boxes--boxHeading">Lurker</h3>
+        <p class="features__boxes--boxParagraph">Browse around, read posts from <a class="projects__link" href="/blogs">our blog</a> until you get a project or idea to support.</p>
+        <img class="features__boxes--boxImage" src="./resources/img/lurker.svg" alt="urafro lurker">
       </div>
 
-      <div class="box">
+      <div class="box features__boxes--box">
         <!-- link directs user to projects initiate page -->
-        <a href="/projects"><i class="fas fa-angle-right"></i></a>
-        <h3>Initiator</h3>
-        <p>Get funding to support your idea or boots on the ground to help carry out your mission.</p>
-        <img src="./resources/img/initiator.svg" alt="urafro initiator">
+        <a class=features__boxes--boxLink href="/projects"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
+        <h3 class="features__boxes--boxHeading">Initiator</h3>
+        <p class="features__boxes--boxParagraph">Get funding to support your idea or boots on the ground to help carry out your mission.</p>
+        <img class="features__boxes--boxImage" src="./resources/img/initiator.svg" alt="urafro initiator">
       </div>
 
-      <div class="box">
+      <div class="box features__boxes--box">
         <!-- link directs user to projects sponsor page-->
-        <a href="/projects"><i class="fas fa-angle-right"></i></a>
-        <h3>Sponsor</h3>
-        <p>Put your money or labour where your heart is. Support the mission you'd be proud of.</p>
-        <img src="./resources/img/sponsor2.svg" alt="urafro sponsor">
+        <a class=features__boxes--boxLink href="/projects"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
+        <h3 class="features__boxes--boxHeading">Sponsor</h3>
+        <p class="features__boxes--boxParagraph">Put your money or labour where your heart is. Support the mission you'd be proud of.</p>
+        <img class="features__boxes--boxImage" src="./resources/img/sponsor2.svg" alt="urafro sponsor">
       </div>
     </div>
-
   </div>
 
 </section>
 
-<section class="about-us js--section--about" id="about">
-  <div class="about-image">
-    <img src="./resources/img/about-image.svg" alt="urafro community">
+<section class="about js--section--about" id="about">
+  <div class="about__image">
+    <img class="about__image--img" src="./resources/img/about-image.svg" alt="urafro community">
   </div>
-  <div class="about-text">
-    <span class="italic">Brand Since 2020</span>
-    <h2>The story of <span class="brand">urAfro</span></h2>
-    <p>
+  <div class="about__text">
+    <span class="italic about__text--sub">Brand Since 2020</span>
+    <h2 class="about__text--main section__heading">The story of <span class="brand">urAfro</span></h2>
+    <p class="about__text--phrase">
       <span class="brand">urAfro</span> is a community run by young people with a passion for positivity in effecting
       needful change APOLITICALLY in our diverse societies.
     </p>
@@ -171,279 +172,333 @@
 </section>
 
 <section class="founder">
-  <div class="text">
-    <h2>Nashe Dan <span>/ Founder</span></h2>
-    <p>"Hi. I'm a highschool dropout who quite like you, is living in a world of perspectives defined by celebrated scholarly naivete. I've grown to understand that in most rooms, this fact speaks loads against me but I don't mind though.
+  <div class="founder__text">
+    <h2 class="founder__text--mainHeading section__heading">Nashe Dan 
+      <span class="founder__text--subHeading">/ Founder</span>
+    </h2>
+    <p class="founder__text--paragraph">"Hi. I'm a highschool dropout who quite like you, is living in a world of perspectives defined by celebrated scholarly naivete. I've grown to understand that in most rooms, this fact speaks loads against me but I don't mind though.
     The loudest boos often come from the nosebleeds. If you are positive and daring in your pursuit of right, please hang
     around. You may have found a friend in me. Oh and hi again, <a href="/projects">I'm Dan!</a> 🙋🏽."</p>
 
-    <p>
+    <p class="founder__text--paragraph">
       Although the text above is an excerpt from <a href="/projects">my story</a>, all OUR human experiences speak to a broader and
       universal picture.
       That of resilience and belief in oneself and in the deeper sense of 'family' embedded in our social constructs or
       maybe... the lack of it sometimes!
     </p>
 
-    <p>While I still draw great inspiration from the stories my hidden scars tell, it took me a fair bit of time to realize it takes courage to admit that we all need help sometimes.
+    <p class="founder__text--paragraph">While I still draw great inspiration from the stories my hidden scars tell, it took me a fair bit of time to realize it takes courage to admit that we all need help sometimes.
       That is why I created urAfro. To make positive change and to make it together.
     </p>
 
-    <p class="italic">Let's live for <span class="brand">We</span> &nbsp; 'N feel good while <span class="brand">doing it.</span></p>
+    <p class="italic founder__text--paragraph">Let's live for <span class="brand">We</span> &nbsp; 'N feel good while <span class="brand">doing it.</span></p>
   </div>
-  <div class="image-text">
+  <div class="founder__image">
     <!-- link will diret user to founder page (ABOUT ME PAGE?) -->
     <a href="https://github.com/tinashy" target="_blank" class="bdb bdb-full">
-      <h2> <span class="italic">about</span> Foundɘr</h2>
+      <h2 class="founder__image--mainHeading"> <span class="italic founder__image--subHeading">about</span> Foundɘr</h2>
     </a>
   </div>
 </section>
 
 <section class="numbers">
-  <h2>Our Numbers So Far</h2>
-  <div class="boxes">
-    <div class="box">
-      <h3>2</h3>
-      <i class="far fa-handshake"></i> <h5>Projects</h5>
+  <h2 class="numbers__main--heading section__heading">Our Numbers So Far</h2>
+  <div class="boxes numbers__boxes">
+    <div class="box numbers__boxes--box">
+      <h3 class="numbers__boxes--digit">2</h3>
+      <i class="far fa-handshake numbers__boxes--icon"></i> 
+      <h5 class="numbers__boxes--title">Projects</h5>
     </div>
-    <div class="box">
-      <h3>1</h3>
-      <i class="fas fa-money-check-alt"></i> <h5>Sponsors</h5>
+    <div class="box numbers__boxes--box">
+      <h3 class="numbers__boxes--digit">1</h3>
+      <i class="fas fa-money-check-alt numbers__boxes--icon"></i> 
+      <h5 class="numbers__boxes--title">Sponsors</h5>
     </div>
-    <div class="box">
-      <h3>8</h3>
-      <i class="far fa-comments"></i> <h5>Topics</h5>
+    <div class="box numbers__boxes--box">
+      <h3 class="numbers__boxes--digit">8</h3>
+      <i class="far fa-comments numbers__boxes--icon"></i> 
+      <h5 class="numbers__boxes--title">Topics</h5>
     </div>
-    <div class="box">
-      <h3>2</h3>
-      <i class="fas fa-trophy"></i> <h5>Awards</h5>
+    <div class="box numbers__boxes--box">
+      <h3 class="numbers__boxes--digit">2</h3>
+      <i class="fas fa-trophy numbers__boxes--icon"></i> 
+      <h5 class="numbers__boxes--title">Awards</h5>
     </div>
   </div>
 </section>
 
 <section class="testimonials">
-  <div class="header">
-    <span>Our Testimonials</span>
-    <h2><span class="brand">urAfro</span> Quotes</h2>
+  <div class="testimonials__header">
+    <span class="testimonials__header--main">
+      Word on the street
+    </span>
+    <h2 class="testimonials__header--sub section__heading">
+      <span class="brand testimonials__header--brand">urAfro</span>  Quotes
+    </h2>
   </div>
-  <div class="boxes">
-    <div class="box">
-      <p>If you were to help nourish infant societies into healthy functional spaces that foster innovation, without getting loud --
-        like lose-ur-voice-kinda-stupid-loud... find a passive protagonist. Love this initiative! 😉 
+  <div class="boxes testimonials__boxes">
+    <div class="box testimonials__box">
+      <p class="testimonials__box--paragraph">If you are to help nourish infant societies into healthy functional spaces that foster innovation, without getting loud --
+        like lose-ur-voice-kinda-stupid-loud... find a passive protagonist. Love this initiative! 😉
       </p>
-      <h3>Nashe Dan</h3>
-      <span class="title">CEO</span>
-      <span class="company">urAfro</span>
+      <h3 class="testimonials__box--name">Nashe Dan</h3>
+      <span class="testimonials__box--title">CEO</span>
+      <span class="testimonials__box--company">urAfro</span>
     </div>
-    <div class="box">
-      <p>If you like what we are doing here at urAfro and would like to encourage us, get in touch through our socials or send us
+    <div class="box testimonials__box">
+      <p class="testimonials__box--paragraph">If you like what we are doing here at urAfro and would like to encourage us, get in touch through our socials or send us
         an email. If you have any questions, we will happily answer them before quoting you 😃
       </p>
-      <h3>Your Name Here</h3>
-      <span class="title">Professional Hugger</span>
-      <span class="company">Corporate Inc</span>
+      <h3 class="testimonials__box--name">Your Name Here</h3>
+      <span class="testimonials__box--title">Professional Hugger</span>
+      <span class="testimonials__box--company">Smiles Inc</span>
     </div>
-    <div class="box">
-      <p>Let's say you have something negative you don't appreciate here. Maybe you don't like our approach to a certain topic or just
+    <div class="box testimonials__box">
+      <p class="testimonials__box--paragraph">Let's say you have something negative you don't appreciate here. Maybe you don't like our approach to a certain topic or just
         straight up hate something about urAfro. We eat our veggies well so say it, we'll share it 🙂
       </p>
-      <h3>Yours Truly</h3>
-      <span class="title">Justice Thumbs</span>
-      <span class="company">Block Inc</span>
+      <h3 class="testimonials__box--name">Yours Truly</h3>
+      <span class="testimonials__box--title">Justice Thumbs</span>
+      <span class="testimonials__box--company">Block Inc</span>
     </div>
   </div>
 </section>
 
 <section class="newsletter js--section--contact">
 
-  <div class="newsletter-form">
-    <h2>Subscribe to our <span class="brand">newsletter</span></h2>
-    <p>You will receive newest information about upcoming projects, sponsorship opportunities and other important information.</p>
+  <div class="newsletter__content">
+    <h2 class="newsletter__content--mainHeading section__heading">Down for this challenge?</h2>
+    <p class="newsletter__content--subHeading">Subscribe to be the first to hear about upcoming projects and other goodies!</p>
 
     <!-- form will redirect data to be stored somewhere safe -->
     <form action="/newsletter" method="POST">
-      <input type="email" name="email" id="" placeholder="Enter your email" required>
-      <input class="bdb bdb-full" type="submit" value="Send">
+      <div class="newsletter--email">
+        <input class="newsletter__content--email" type="email" name="email" id="" placeholder="Enter your email" required>
+      </div>
+      <div class="content--submitBtn">
+        <input class="btn btn-full newsletter__content--btn" type="submit" value="Subscribe">
+      </div>
     </form>
   </div>
 
 </section>
 
 <section class="socials">
-  <h2>Our Socials</h2>
-  <div class="boxes">
-    <div class="box">     
-      <a href="https://www.instagram.com/official_urafro" target="_blank"><i class="fab fa-instagram"></i></a>
+  <h2 class="socials--mainHeading section__heading">Our Socials</h2>
+  <div class="boxes socials__boxes">
+    <div class="box socials__boxes--box">     
+      <a class="socials--boxLink" href="https://www.instagram.com/official_urafro" target="_blank">
+        <i class="fab fa-instagram socials--boxIcon"></i>
+      </a>
     </div>
-    <div class="box">      
-      <a href="https://twitter.com/official_urafro" target="_blank"><i class="fab fa-twitter"></i></a>
+    <div class="box socials__boxes--box">      
+      <a class="socials--boxLink" href="https://twitter.com/official_urafro" target="_blank">
+        <i class="fab fa-twitter socials--boxIcon"></i>
+      </a>
     </div>
-    <div class="box">
-      <a href="https://www.reddit.com/r/urafro" target="_blank" ><i class="fab fa-reddit"></i></a>
+    <div class="box socials__boxes--box">
+      <a class="socials--boxLink" href="https://www.reddit.com/r/urafro" target="_blank">
+        <i class="fab fa-reddit socials--boxIcon"></i>
+      </a>
     </div>
-    <div class="box">
-      <a href="https://www.facebook.com/official.urafro/" target="_blank" ><i class="fab fa-facebook"></i></a>
+    <div class="box socials__boxes--box">
+      <a class="socials--boxLink" href="https://www.facebook.com/official.urafro" target="_blank">
+        <i class="fab fa-facebook socials--boxIcon"></i>
+      </a>
     </div>
-    <div class="box">
-      <a href="https://www.github.com/tinashy/urafro" target="_blank"><i class="fab fa-github"></i></a>
+    <div class="box socials__boxes--box">
+      <a class="socials--boxLink" href="https://www.github.com/tinashy" target="_blank">
+        <i class="fab fa-github socials--boxIcon"></i>
+      </a>
     </div>
   </div>
   <!-- link will redirect to a page where a there are offers for users to run our social media for a set time -->
-  <a href="/projects" class="bdb bdb-ghost">Run our socials</a>
+  <a href="/projects" class="btn btn-ghost">Run our socials</a>
 </section>
 
-<section class="contact-us" id="contact-us">
+<section class="contact" id="contact-us">
   
-  <div class="image">
+  <div class="contact--image">
     <img src="./resources/img/contact-us.svg" alt="urafro contact-us">
   </div>
   
-  <div class="form">
-    <div class="our-contacts">
-      <h2><span class="brand">Our</span> Contacts</h2>
-      <div class="card">
-        <div class="icon">
-          <i class="fas fa-map-marker-alt"></i>
+  <div class="contact--form">
+    <div class="form__cards">
+      <h2 class="form__cards--mainHeading">
+        <span class="brand">Our</span> Contacts
+      </h2>
+
+      <div class="card form__cards--card">
+        <div class="card__icon--container">
+          <i class="fas fa-map-marker-alt card__icon--element"></i>
         </div>
-        <div class="card-txt">
-          <h5>Address</h5>
-          <p>Street number 5, Town, Country</p>
+        <div class="card__txt">
+          <h5 class="card__txt--title">Address</h5>
+          <p class="card__txt--desc">Street number 5, Town, Country</p>
         </div>
       </div>
 
-      <div class="card">
-        <div class="icon">
-          <i class="far fa-envelope"></i>
+      <div class="card form__cards--card">
+        <div class="card__icon--container">
+          <i class="far fa-envelope card__icon--element"></i>
         </div>
-        <div class="card-txt">
-          <h5>Email</h5>
-          <p>official.urafro@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="icon">
-          <i class="fab fa-whatsapp"></i>
-        </div>
-        <div class="card-txt">
-          <h5>WhatsApp</h5>
-          <p>(+263) 772 794 678</p>
+        <div class="card__txt">
+          <h5 class="card__txt--title">Email</h5>
+          <p class="card__txt--desc">official.urafro@gmail.com</p>
         </div>
       </div>
 
-      <div class="card">
-        <div class="icon">
-          <i class="far fa-clock"></i>
+      <div class="card form__cards--card">
+        <div class="card__icon--container">
+          <i class="fab fa-whatsapp card__icon--element"></i>
         </div>
-        <div class="card-txt">
-          <h5>Work Hours</h5>
-          <p>Mon - Frie. 11am - 19pm</p>
+        <div class="card__txt">
+          <h5 class="card__txt--title">WhatsApp</h5>
+          <p class="card__txt--desc">(+263) 772 794 678</p>
         </div>
       </div>
 
-      <div class="card">
-        <div class="icon">
-          <i class="fas fa-info-circle"></i>
+      <div class="card form__cards--card">
+        <div class="card__icon--container">
+          <i class="far fa-clock card__icon--element"></i>
         </div>
-        <div class="card-txt">
-          <h5>Additional Information</h5>
-          <p class="italic">Admin - check our socials out, see what we're up to!</p>
+        <div class="card__txt">
+          <h5 class="card__txt--title">Work Hours</h5>
+          <p class="card__txt--desc">Mon - Frie. 11am - 19pm</p>
+        </div>
+      </div>
+
+      <div class="card form__cards--card">
+        <div class="card__icon--container">
+          <i class="fas fa-info-circle card__icon--element"></i>
+        </div>
+        <div class="card__txt">
+          <h5 class="card__txt--title">Additional Information</h5>
+          <p class="italic card__txt--desc">Admin - check our socials out, see what we're up to!</p>
         </div>
       </div>
     </div>
 
-    <div class="message">
-      <h2>
-        <span class="brand">Send Us</span> A Message
+    <div class="form__inputs">
+      <h2 class="form__inputs--secondaryHeading form__cards--mainHeading">
+        <span class="brand form__inputs--brand">Send Us</span> A Message
       </h2>
-      <form action="message" method="POST">
-        <div class="message-input">
-          <label for="name"><h5>Name **</h5></label>
-          <input type="text" name="name" id="">
+      <form action="/message" target="POST">
+        <div class="form__input">
+          <label for="name" class="form__input--label">
+            <h5 class="form__input--labelHead">Name **</h5>
+          </label>
+          <input class="form__input--text" type="text" name="name" id="">
         </div>
         
-        <div class="message-input">
-          <label for="email"><h5>Email **</h5></label>
-          <input type="email" name="email" id="">
+        <div class="form__input">
+          <label for="email" class="form__input--label">
+            <h5 class="form__input--labelHead">Email **</h5>
+          </label>
+          <input class="form__input--email" type="email" name="email" id="">
         </div>
         
-        <div class="message-input">
-          <label for="name"><h5>Message text **</h5></label>
-          <textarea name="message" id="" cols="30" rows="7"></textarea>
+        <div class="form__input">
+          <label for="name" class="form__input--label">
+            <h5 class="form__input--labelHead">Message text **</h5>
+          </label>
+          <textarea class="form__input--textArea" name="message" id="" cols="30" rows="7"></textarea>
         </div>
 
-        <input class="bdb bdb-full" type="submit" value="send message">
+        <input class="btn btn-full form__input--submitBtn" type="submit" value="send message">
       </form>
-      
     </div>
   </div>
 </section>
 
-<footer class="l-footer">
-  <div class="content">
-    <div class="footer-card">
-      <h3>About Us</h3>
-      <div class="f-text">
-        <p>
+<footer class="landingFooter">
+  <div class="landingFooter__content">
+    <div class="footerCard">
+      <h3 class="footerCard--title">About Us</h3>
+      <div class="footerCard__text">
+        <p class="footerCard__text--paragraph">
           <span class="brand">urAfro</span> is a community run by young people with a passion for positivity in effecting
           needful change APOLITICALLY in our different societies.
         </p>
       </div>
       <!-- start by styling this section and replacing the generic links with the correct ones. Now take a rest :) -->
-      <a href="https://www.instagram.com/official_urafro" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/official_urafro" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.reddit.com/r/urafro" target="_blank" ><i class="fab fa-reddit"></i></a>
-      <a href="https://www.facebook.com/official.urafro/" target="_blank" ><i class="fab fa-facebook"></i></a>
-      <a href="https://www.github.com/tinashy/urafro" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/official_urafro" target="_blank">
+        <i class="fab fa-instagram footerCard__text--icon"></i>
+      </a>
+      <a href="https://twitter.com/official_urafro" target="_blank">
+        <i class="fab fa-twitter footerCard__text--icon"></i>
+      </a>
+      <a href="https://www.reddit.com/r/urafro" target="_blank">
+        <i class="fab fa-reddit footerCard__text--icon"></i>
+      </a>
+      <a href="https://www.facebook.com/official.urafro" target="_blank">
+        <i class="fab fa-facebook footerCard__text--icon"></i>
+      </a>
+      <a href="https://www.github.com/tinashy" target="_blank">
+        <i class="fab fa-github footerCard__text--icon"></i>
+      </a>
     </div>
-    <div class="footer-card">
-      <h3>Contacts</h3>
-      <div class="f-text">
-        <p><i class="fas fa-map-marker-alt"></i> Country, Street name-number</p>
-        <p><i class="fab fa-whatsapp"></i> (+263) 772 794 678</p>
-        <p><i class="far fa-envelope"></i> official.urafro@gmail.com</p>
-        <p><i class="far fa-clock"></i> Mon-Frie. 11am - 19pm</p>
-      </div>
-    </div>
-    <div class="footer-card">
-      <h3>Recent Posts</h3>
-      <div class="f-posts">
-        <div class="f-head">
-          <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
-        </div>
-        <div class="f-body">
-          <span>Life</span>
-          <h5>Introversion confusion</h5>
-        </div>
-      </div>
-      <div class="f-posts">
-        <div class="f-head">
-          <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
-        </div>
-        <div class="f-body">
-          <span>Code</span>
-          <h5>The dark planet</h5>
-        </div>
-      </div>
-      <div class="f-posts">
-        <div class="f-head">
-          <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
-        </div>
-        <div class="f-body">
-          <span>Music</span>
-          <h5>Of escapism in dance</h5>
-        </div>
+    <div class="footerCard">
+      <h3 class="footerCard--title">Contacts</h3>
+      <div class="footerCard__text">
+        <p class="footerCard__text--paragraph">
+          <i class="fas fa-map-marker-alt footerCard__text--icon"></i> Country, Street name-number
+        </p>
+        <p class="footerCard__text--paragraph">
+          <i class="fab fa-whatsapp footerCard__text--icon"></i> (+263) 772 794 678
+        </p>
+        <p class="footerCard__text--paragraph">
+          <i class="far fa-envelope footerCard__text--icon"></i> tinashydaniel@gmail.com
+        </p>
+        <p class="footerCard__text--paragraph">
+          <i class="far fa-clock footerCard__text--icon"></i> Mon-Frie. 11am - 17pm
+        </p>
       </div>
     </div>
-    <div class="footer-card">
-      <h3>Latest Projects</h3>
-      <a href="#"><img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-      <a href="#"><img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-      <a href="#"><img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-      <a href="#"><img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
+    <div class="footerCard">
+      <h3 class="footerCard--title">Recent Posts</h3>
+      <div class="footerCard__post">
+        <div class="f-head">
+          <img class="footerCard__post--image" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
+        </div>
+        <div class="footerCard__post--body">
+          <span class="footerCard__post--bodySpan">Life</span>
+          <h5 class="footerCard__post--bodyTitle">Introversion confusion</h5>
+        </div>
+      </div>
+      <div class="footerCard__post">
+        <div class="f-head">
+          <img class="footerCard__post--image" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
+        </div>
+        <div class="footerCard__post--body">
+          <span class="footerCard__post--bodySpan">Code</span>
+          <h5 class="footerCard__post--bodyTitle">The dark planet</h5>
+        </div>
+      </div>
+      <div class="footerCard__post">
+        <div class="f-head">
+          <img class="footerCard__post--image" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
+        </div>
+        <div class="footerCard__post--body">
+          <span class="footerCard__post--bodySpan">Music</span>
+          <h5 class="footerCard__post--bodyTitle">Of escapism in dance</h5>
+        </div>
+      </div>
+    </div>
+    <div class="footerCard">
+      <h3 class="footerCard--title">Latest Projects</h3>
+      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
+      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
+      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
+      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
     </div>
   </div>
-  <div class="developer">
-    <h3><span class="brand">urAfro</span> Designed & Developed by <a href="#">Dan</a></h3>
+  
+  <div class="landingFooter__developer">
+    <h3 class="italic landingFooter__developer--title">
+      <span class="brand landingFooter__developer--brand">urAfro</span> Designed & Developed by 
+      <a href="#">Dan</a>
+    </h3>
   </div>
 </footer>
 

@@ -32,99 +32,101 @@
   </div>
 
   <!-- declare show hero background image as inline css to access ejs data -->
-  <div class="hero-2" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .9)), url('<%= blog.body.header.mainImage %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="heroTwo" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .9)), url('<%= blog.body.header.mainImage %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-    <div class="header-2">
-      <h2><%= blog.author.bio %></h2>
+    <div class="heroTwo__headerTwo">
+      <h2 class="heroTwo__headerTwo--mainTitle"><%= blog.author.bio %></h2>
 
-      <div class="author-card">
-        <div class="card-image">
-          <!-- generic card image will be replaced by user image from the user schema -->
-          <img
+      <div class="heroTwo__body">
+        <div class="heroTwo__body--cardImageContainer">
+          <!-- card image points to  user image from the user schema -->
+          <img class="heroTwo__body--cardImage"
             src="<%= blog.author.avatarUrl %>"
             alt="urafro blog author image">
         </div>
 
-        <div class="card-text">
+        <div class="heroTwo__body--cardText">
           <!-- generic mini-card h5 heading will be replaced by blog author from blog schema-->
-          <h3><a href="#"><%= blog.author.username %></a></h3>
-          <p><%= blog.createdAt.toLocaleDateString() %></p>
+          <h3 class="heroTwo__body--cardTitle">
+            <a class="heroTwo__body--cardTitleLink" href="#"><%= blog.author.username %></a>
+          </h3>
+          <p class="heroTwo__body--cardDate caveat"><%= blog.createdAt.toLocaleDateString() %></p>
         </div>
       </div>
-      
     </div>
   </div>
 
-  <div class="showcase-2">
-
+  <div class="showcaseTwo">
     <!--
       showing author's menu when author's logged in
     -->
-
     <% if(currentUser && currentUser._id.equals(blog.author.id)) { %>
-    <div class="show-menu">
-      <ul>
-
-        <!-- edit current blog url -->
-        <li>
-          <a href="/blogs/<%= blog._id %>/edit">
-            <span class="admenu-tooltip bdb bdb-ghost">Edit</span><i class="far fa-edit"></i>
-          </a>
-        </li>
-        
-        <!-- add new blog url -->
-        <li>
-          <a href="/blogs/new">
-            <span class="admenu-tooltip bdb bdb-ghost">New</span><i class="far fa-file"></i>
-          </a>
-        </li>
-        
-        <!-- Delete opened blog -->
-        <li class="delete">
-          <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
-            <button><i class="fas fa-trash"></i></button>
-          </form>
-        </li>
-
-      </ul>
-    </div>
+    <ul class="showcaseTwo__admin">
+      <!-- edit current blog url -->
+      <li class="showcaseTwo__admin--li">
+        <a class="showcaseTwo__admin--link" href="/blogs/<%= blog._id %>/edit">
+          <span class="showcaseTwo__admin--tooltip btn btn-ghost">Edit</span>
+          <i class="far fa-edit showcaseTwo__admin--i"></i>
+        </a>
+      </li>        
+      <!-- add new blog url -->
+      <li class="showcaseTwo__admin--li">
+        <a class="showcaseTwo__admin--link" href="/blogs/new">
+          <span class="showcaseTwo__admin--tooltip btn btn-ghost">New</span>
+          <i class="far fa-file showcaseTwo__admin--i"></i>
+        </a>
+      </li>        
+      <!-- Delete opened blog -->
+      <li class="delete showcaseTwo__admin--li">
+        <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+            <button class="showcaseTwo__admin--button">
+            <i class="fas fa-trash showcaseTwo__admin--i"></i>
+          </button>
+        </form>
+      </li>
+    </ul>
     <% } %>
 
     <% if((!currentUser || !currentUser._id.equals(blog.author.id)) && blog.body.content.sectionFive) { %>
     <div class="show-menu">
-      <ul>
+      <ul class="showcaseTwo__admin">
         <!-- link to youtube episode -->
-        <li>
-          <a href="<%= blog.body.content.sectionFive.youtubeLink %>" target="_blank">
-            <span class="admenu-tooltip bdb bdb-ghost">Youtube</span><i class="fab fa-youtube"></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="<%= blog.body.content.sectionFive.youtubeLink %>" target="_blank">
+            <span class="showcaseTwo__admin--tooltip bdb bdb-ghost">Youtube</span>
+            <i class="fab fa-youtube showcaseTwo__admin--i"></i>
           </a>
         </li>
         
         <!-- link to reddit discussion -->
-        <li>
-          <a href="<%= blog.body.content.sectionFive.redditLink %>" target="_blank">
-            <span class="admenu-tooltip bdb bdb-ghost">Reddit</span><i class="fab fa-reddit-alien"></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="<%= blog.body.content.sectionFive.redditLink %>" target="_blank">
+            <span class="showcaseTwo__admin--tooltip bdb bdb-ghost">Reddit</span>
+            <i class="fab fa-reddit-alien showcaseTwo__admin--i"></i>
           </a>
         </li>
 
         <!-- link to twitter hashtag -->
-        <li>
-          <a href="<%= blog.body.content.sectionFive.twitterLink %>" target="_blank">
-            <span class="admenu-tooltip bdb bdb-ghost">Twitter</span><i class="fab fa-twitter"></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="<%= blog.body.content.sectionFive.twitterLink %>" target="_blank">
+            <span class="showcaseTwo__admin--tooltip bdb bdb-ghost">Twitter</span>
+            <i class="fab fa-twitter showcaseTwo__admin--i"></i>
           </a>
         </li>
 
         <!-- link to instagram hashtag/challenge -->
-        <li>
-          <a href="<%= blog.body.content.sectionFive.instagramLink %>" target="_blank">
-            <span class="admenu-tooltip bdb bdb-ghost">Insta</span><i class="fab fa-instagram"></i></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="<%= blog.body.content.sectionFive.instagramLink %>" target="_blank">
+            <span class="showcaseTwo__admin--tooltip bdb bdb-ghost">Insta</span>
+            <i class="fab fa-instagram showcaseTwo__admin--i"></i></i>
           </a>
         </li>
 
         <!-- link to external story -->
-        <li>
-          <a href="<%= blog.body.content.sectionFive.externalLink %>" target="_blank">
-            <span class="admenu-tooltip bdb bdb-ghost">Link</span><i class="fas fa-link"></i></i>
+        <li class="showcaseTwo__admin--li">
+          <a class="showcaseTwo__admin--link" href="<%= blog.body.content.sectionFive.externalLink %>" target="_blank">
+            <span class="showcaseTwo__admin--tooltip bdb bdb-ghost">Link</span>
+            <i class="fas fa-link showcaseTwo__admin--i"></i></i>
           </a>
         </li>
 
@@ -132,57 +134,42 @@
     </div>
     <% } %>
 
-    <div class="show-wrapper">
-      <div class="show-heading">
-
-        <div class="main-heading">
-          <h1><%= blog.body.header.mainHeading %></h1>
-        </div>
-
-        <div class="intro-paragraph">
-          <p><%= blog.body.content.introParagraph %></p>
-        </div>
-
+    <div class="blog">
+      <div class="blog__heading">
+        <h2 class="blog__heading--mainHeading">
+          <%= blog.body.header.mainHeading %>
+        </h2>
+        <p class="blog__heading--paragraph">
+          <%= blog.body.content.introParagraph %>
+        </p>
       </div>
 
-      <div class="show-content">
-        <div class="section-one">
-
-          <p><%= blog.body.content.sectionOne.paragraphOne %></p>
-
-          <p><%= blog.body.content.sectionOne.paragraphTwo %></p>
-          
+      <div class="blog__body">
+        <div class="blog__body--sectionOne">
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionOne.paragraphOne %></p>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionOne.paragraphTwo %></p>
         </div>
 
-        <div class="section-two">
-          <h3><%= blog.body.content.sectionTwo.mediumHeading %></h3>
-
-          <p><%= blog.body.content.sectionTwo.paragraphThree %></p>
-
-          <p><%= blog.body.content.sectionTwo.paragraphFour %></p>
-
-          <p><%= blog.body.content.sectionTwo.paragraphFive %></p>
+        <div class="blog__body--sectionTwo">
+          <h3 class="blog__heading--h3"><%= blog.body.content.sectionTwo.mediumHeading %></h3>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionTwo.paragraphThree %></p>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionTwo.paragraphFour %></p>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionTwo.paragraphFive %></p>
         </div>
 
-        <div class="section-three">
-          <h4><%= blog.body.content.sectionThree.smallHeading %></h4>
-
-          <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphSix.trim() %></p>
-
-          <p><%= blog.body.content.sectionThree.paragraphSeven %></p>
-
-          <h5><%= blog.body.content.sectionThree.smallerHeading %></h5>
-
-          <p class="text-wrap"><%= blog.body.content.sectionThree.paragraphEight.trim() %></p>
-
+        <div class="blog__body--sectionThree">
+          <h4 class="blog__heading--h4"><%= blog.body.content.sectionThree.smallHeading %></h4>
+          <p class="text-wrap blog__body--paragraph"><%= blog.body.content.sectionThree.paragraphSix.trim() %></p>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionThree.paragraphSeven %></p>
+          <h5 class="blog__heading--h5"><%= blog.body.content.sectionThree.smallerHeading %></h5>
+          <p class="text-wrap blog__body--paragraph"><%= blog.body.content.sectionThree.paragraphEight.trim() %></p>
           <img src="<%= blog.body.content.sectionThree.blogImage %>" alt="urafro | <%= blog.body.header.mainHeading %> image2">
-
-          <p><%= blog.body.content.sectionThree.paragraphNine %></p>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionThree.paragraphNine %></p>
         </div>
 
-        <div class="section-four">
-          <h6><%= blog.body.content.sectionFour.smallestHeading %></h6>
-          <p><%= blog.body.content.sectionFour.lastParagraph %></p>
+        <div class="blog__body--sectionFour">
+          <h6 class="blog__heading--h6"><%= blog.body.content.sectionFour.smallestHeading %></h6>
+          <p class="blog__body--paragraph"><%= blog.body.content.sectionFour.lastParagraph %></p>
         </div>
 
         <!-- 
@@ -190,33 +177,35 @@
                 Comments 
           ===================
         -->
-        <% if(blog.comments.length > 0 ) { %>
-    
+        <% if(blog.comments.length > 0 ) { %>    
           <ul class="comment-section">
-
-            <h2>The Convo<span class='commentHeadSpan'>...</span></h2>
-
+            <h3>Comments</h3>
+            <!-- Comment UI -->
             <% blog.comments.forEach((comment) => { %>
               <li class="comment author-comment">
-
                 <!-- Try to come up with a way of putting these inside the comment text div for thematic purposes | easy on the eye -->
                 <!-- <div class="info">
                   <a href="#"><%= comment.author.username %></a>
                   <span>3 hours ago</span>
                 </div> -->
-
-                <a class="avatar" href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/replies/new">
-                  <img src="<%= comment.author.avatarUrl %>" width="35" alt="urafro Profile Avatar" title="<%= comment.author.username %>" />
-                </a>
-
+                <!-- route the user to comment edit page if they're the owner of the comment -->
+                <% if(currentUser && currentUser._id.equals(comment.author.id)) { %>
+                  <a class="avatar" href="<%= blog._id %>/comments/<%= comment._id %>/edit">
+                    <img src="<%= comment.author.avatarUrl %>" width="35" alt="Profile Avatar" title="Edit Comment" />
+                  </a>
+                <!-- route the user to comment reply page if they're not the owner of the comment -->
+                <% } else if(!currentUser || !currentUser._id.equals(comment.author.id)) { %>
+                  <a class="avatar" href="<%= blog._id %>/comments/<%= comment._id %>/replies/new">
+                    <img src="<%= comment.author.avatarUrl %>" width="35" alt="urafro Profile Avatar" title="<%= comment.author.username %>" />
+                  </a>
+                <% } %>
                 <p>
                   <%= comment.text %>
                 </p>
-
               </li>
 
+              <!-- Comment Replies -->
               <% if(comment.replies.length > 0) { %>
-
                 <% comment.replies.forEach((reply) => { %>
                   <li class="comment user-comment">
 
@@ -229,20 +218,16 @@
                     <a class="avatar" href="#">
                       <img src="<%= reply.author.avatarUrl %>" width="35" alt="urafro Profile Avatar" title="<%= reply.author.username %>" />
                     </a>
-
                     <p>
                       <%= reply.text %>
                     </p>
-
                   </li>
                 <% }) %>
-
               <% } %>
-
             <% }) %>
 
+            <!--  Add Comment -->
             <li class="write-new">
-
               <form action="/blogs/<%= blog._id %>/comments/" method="post">
 
                 <textarea placeholder="Opinions — Share yours. Congratulate 'n educate 🗣" name="commentText"></textarea>
@@ -257,111 +242,100 @@
                   <% } %>
                   <button class="bdb bdb-ghost" type="submit">comment</button>
                 </div>
-
               </form>
-
             </li>
-
           </ul>
         <% } %>
-
         <!-- 
           ========================
-             NEW BLOG COMMENTS
+                NEW COMMENTS
           ========================
         -->
         <% if(blog.comments.length <= 0) { %>
           <form class="new-comment-form" action="/blogs/<%= blog.id %>/comments" method="POST">
             <div class="row comments-input">
-
               <div class="section zero">
-
-                <div class="content-inputs new-comment">
-
-                  <h2>Leave A Reply</h2>
-
-                  <div class="box-content">
-
+                <div class="section__inputs new-comment">
+                  <h2 class="section__inputs--heading">Leave A Reply</h2>
+                  <div class="inputsBox">
                     <!-- Add || Remove username input field if user is logged in or out -->
                     <% if(!currentUser) { %>
-                      <label for="username">Username*</label>
-                      <input type="text" name="username" id="username" placeholder="flawed69" required>
+                      <label class="inputsBox--label" for="username">Username*</label>
+                      <input class="inputsBox--input inputsBox--text" type="text" name="username" id="username" placeholder="flawed69" required>
                     <% } %>
-
-                    <label for="commentText">Comment*</label>
-
-                    <textarea name="commentText" id="commentText" cols="30" rows="5" placeholder="be the first to say something!"
+                    <label class="inputsBox--label" for="commentText">Comment*</label>
+                    <textarea class="inputsBox--input inputsBox--textarea" name="commentText" id="commentText" cols="30" rows="5" placeholder="be the first to say something!"
                       required></textarea>
-
-                    <input class="bdb bdb-full" type="submit" value="say it">
+                    <input class="btn btn-full form--btn" type="submit" value="say it">
                   </div>
-
                 </div>
-
               </div>
             </div>
           </form>
         <% } %>
 
+        <!-- BACKLINKS - Show Related Blogs -->
         <% if(taggedBlogs.length > 0) { %>
-          <div class="show-backlinks">
-            <h3>Did you read these already?</h3>
-            <p>Discover more posts in
+          <div class="backlinks">
+            <h3 class="backlinks--heading">Did you read these already?</h3>
+            <p class="backlinks__tag">Discover more posts in
               <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-          
-              <% if(blog.tag == "Life") { %>
-              <a href="#" class="green"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Code") { %>
-              <a href="#" class="yellow"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Music") { %>
-              <a href="#" class="purple"><%= blog.tag %></a>
-              <% } else if (blog.tag == "Self") { %>
-              <a href="#" class="red"><%= blog.tag %></a>
+              <% if(blog.tag == "Self") { %>
+              <a href="#" class="backlinks__tag--green backlinks__tag--link"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Society") { %>
+              <a href="#" class="backlinks__tag--yellow backlinks__tag--link"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Tech") { %>
+              <a href="#" class="backlinks__tag--purple backlinks__tag--link"><%= blog.tag %></a>
+              <% } else if (blog.tag == "Money") { %>
+              <a href="#" class="backlinks__tag--red backlinks__tag--link"><%= blog.tag %></a>
               <% } %>
-          
             </p>
           
-            <div class="backlinks-cards">
+            <div class="backlinks__cards">
+              <!-- Show Related Blogs -->
               <% taggedBlogs.forEach((taggedBlog) => { %>
-              <div class="backlinks-card">
-                <div class="backlinks-header">
-                  <a href="/blogs/<%= taggedBlog.id %>" class="header-image">
-                    <img src="<%= taggedBlog.body.header.mainImage %>" alt="urafro blog | <%= taggedBlog.body.header.mainHeading %> image1">
+              <div class="backlinkCard">
+                <div class="backlinkCard__header">
+                  <a href="/blogs/<%= taggedBlog.id %>">
+                    <img class="backlinkCard__header--image" src="<%= taggedBlog.body.header.mainImage %>" alt="urafro blog | <%= taggedBlog.body.header.mainHeading %> image1">
                   </a>
           
-                  <!-- display dynamic blog tag by use of a conditional (if/else statement) -->
-                  <div class="tag-links">
-                    <% if(taggedBlog.tag == "Life") { %>
-                    <a href="#" class="green"><%= taggedBlog.tag %></a>
-                    <% } else if (taggedBlog.tag == "Code") { %>
-                    <a href="#" class="yellow"><%= taggedBlog.tag %></a>
-                    <% } else if (taggedBlog.tag == "Music") { %>
-                    <a href="#" class="purple"><%= taggedBlog.tag %></a>
-                    <% } else if (taggedBlog.tag == "Self") { %>
-                    <a href="#" class="red"><%= taggedBlog.tag %></a>
+                  <!-- display dynamic blog tag -->
+                  <div class="backlinkCard__tag">
+                    <% if(taggedBlog.tag == "Self") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--green"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Society") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--yellow"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Tech") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--purple"><%= taggedBlog.tag %></a>
+                    <% } else if (taggedBlog.tag == "Money") { %>
+                    <a href="#" class="backlinkCard__tag--link backlinkCard__tag--red"><%= taggedBlog.tag %></a>
                     <% } %>
                   </div>
                 </div>
           
-                <div class="backlinks-body">
-                  <h4><a href="/blogs/<%= taggedBlog.id %>"><%= taggedBlog.body.header.mainHeading %></a></h4>
-                  <p><%= taggedBlog.body.content.introParagraph.substr(0, 78) %> ...</p>
-                  <a href="/blogs/<%= taggedBlog.id %>">Read More</a>
+                <div class="backlinkCard__body">
+                  <h4 class="backlinkCard__body--heading">
+                    <a class="backlinkCard__body--headingLink" href="/blogs/<%= taggedBlog.id %>">
+                      <%= taggedBlog.body.header.mainHeading %>
+                    </a>
+                  </h4>
+                  <p class="backlinkCard__body--paragraph">
+                    <%= taggedBlog.body.content.introParagraph.substr(0, 78) %> ...
+                  </p>
+                  <a class="backlinkCard__body--link" href="/blogs/<%= taggedBlog.id %>">Read More</a>
                 </div>
-          
               </div>
               <% }) %>
             </div>
-          
           </div>
         <% } %>
-
       </div>
     </div>
 
-    <footer>
-      <p>
-        &copy; <span>urAfro</span>. All rights reserved.
+    <footer class="showcaseTwo__footer">
+      <p class="showcaseTwo__footer--paragraph">
+        Copyright &copy; <span>urAfro</span>. All rights reserved.
       </p>
     </footer>
   </div>
