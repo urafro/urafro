@@ -136,7 +136,15 @@
 }
 
 /* Small iPads, Tablets: 481px to 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 3rem;
+  }
+
+  div.greeting__boxes--image img {
+    height: 25vh;
+  }
+
   div.intro__container {
     width: 85%;
   }
@@ -346,6 +354,7 @@
 
   div.contact--form {
     flex-direction: column;
+    width: 90%;
   }
 
   /* blog app styles */
@@ -414,5 +423,21 @@
 
   div.inputsBox__selectWrapper::after {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+  html {
+    font-size: 7px;
+  }
+
+  .greeting__boxes--box span.greeting__box--subHeading {
+    font-size: 1.5rem;
+  }
+
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 2rem;
+    margin-top: 1rem;
   }
 }
