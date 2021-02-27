@@ -1279,10 +1279,12 @@ contains blog author name, blog date and tag
     transition: all .2s; }
     .showcaseText__link--anchorTag:link, .showcaseText__link--anchorTag:visited {
       color: rgba(16, 12, 8, 0.5);
-      border-bottom: 0.1rem solid rgba(16, 12, 8, 0.5); }
+      border-bottom: 0.1rem solid rgba(255, 37, 37, 0.5);
+      transition: all .2s; }
     .showcaseText__link--anchorTag:active, .showcaseText__link--anchorTag:hover {
       color: #100c08;
-      transition: color .2s; }
+      font-weight: 400;
+      border-bottom: 0.2rem solid #FF2525; }
   .showcaseText::after {
     content: "";
     display: block;
@@ -1590,6 +1592,7 @@ contains blog author name, blog date and tag
     letter-spacing: .01rem; }
   .backlinkCard__body--headingLink:link, .backlinkCard__body--headingLink:visited {
     color: #100c08;
+    font-weight: 400;
     text-decoration: none; }
   .backlinkCard__body--headingLink:active, .backlinkCard__body--headingLink:hover {
     color: rgba(16, 12, 8, 0.7);

@@ -1797,13 +1797,15 @@ contains blog author name, blog date and tag
       &:link,
       &:visited {
         color: rgba($color-black, .5);
-        border-bottom: .1rem solid rgba($color-black, .5);
+        border-bottom: .1rem solid rgba($color-primary-red, .5);
+        transition: all .2s;
       }
 
       &:active,
       &:hover {
         color: $color-black;
-        transition: color .2s;
+        font-weight: 400;
+        border-bottom: .2rem solid $color-primary-red;
       }
     }
   }
@@ -2256,6 +2258,7 @@ contains blog author name, blog date and tag
       &:link,
       &:visited {
         color: $color-black;
+        font-weight: 400;
         text-decoration: none;
       }
 

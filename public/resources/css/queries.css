@@ -35,7 +35,7 @@
   }
 
   div.greeting__boxes--image img {
-    height: 55vh;
+    height: 40vh;
   }
   
 }
@@ -52,7 +52,7 @@
   }
 
   div.greeting__boxes--image img {
-    height: 50vh;
+    height: 40vh;
   }
 
 }
@@ -64,8 +64,12 @@
     font-size: 9px;
   }
 
+  .greeting__boxes--box h1.greeting__box--mainHeading {
+    font-size: 3rem;
+  }
+
   div.greeting__boxes--image img {
-    height: 45vh;
+    height: 30vh;
   }
 
 }
@@ -144,7 +148,7 @@
 }
 
 /* Small iPads, Tablets: 481px to 768px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .greeting__boxes--box h1.greeting__box--mainHeading {
     font-size: 3rem;
   }
@@ -195,6 +199,10 @@
 
   p.newsletter__content--subHeading {
     font-size: 2rem;
+  }
+
+  input.newsletter__content--email {
+    width: 40rem;
   }
 
   section.contact {
