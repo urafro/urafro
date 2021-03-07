@@ -854,6 +854,7 @@ a {
       &:link,
       &:visited {
         transition: background-color 1s;
+        font-size: 2rem;
       }
 
       &:hover,

@@ -607,7 +607,8 @@ a {
     background-position: center;
     background-attachment: fixed; }
     .founder__image a:link, .founder__image a:visited {
-      transition: background-color 1s; }
+      transition: background-color 1s;
+      font-size: 2rem; }
     .founder__image a:hover, .founder__image a:active {
       background-color: rgba(249, 249, 249, 0.1); }
     .founder__image--mainHeading {
