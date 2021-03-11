@@ -461,6 +461,23 @@
   div.inputsBox__selectWrapper::after {
     font-size: 2rem;
   }
+
+  div.projects__imageBox {
+    display: none;
+  }
+
+  section.projects__content--contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  div.projects__card {
+    flex-direction: column;
+  }
+
+  h4.projects__card--primaryHeading::after {
+    content: none;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
