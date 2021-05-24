@@ -401,7 +401,7 @@ a {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba($color-bg1, .3), rgba($color-bg2, 1)),
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-primary-dark, 1)),
     url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;

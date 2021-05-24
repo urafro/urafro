@@ -37,7 +37,7 @@ app.use(methodOverride("_method"));
 //Setting up flash messages
 app.use(flash());
 
-mongoose.connect(process.env.DATABASEURL, {
+mongoose.connect(process.env.DATABASEURL || "mongodb://localhost:27017/urafro", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,

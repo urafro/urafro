@@ -305,7 +305,7 @@ a {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(255, 30, 48, 0.3), #ff3b55), url("/resources/img/greetings.jpg");
+  background-image: linear-gradient(rgba(16, 12, 8, 0.5), #432344), url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
