@@ -305,7 +305,7 @@ a {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(16, 12, 8, 0.5), #432344), url("/resources/img/greetings.jpg");
+  background-image: linear-gradient(rgba(16, 12, 8, 0.7), #432344), url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -341,7 +341,7 @@ a {
           padding-bottom: .5rem;
           border-bottom: 0.3rem solid #FF2525; }
         .greeting__nav--items li a.btn-ghost:link, .greeting__nav--items li a.btn-ghost:visited {
-          color: #100c08;
+          /* color: $color-black; */
           font-weight: 400; }
         .greeting__nav--items li a.btn-ghost:hover, .greeting__nav--items li a.btn-ghost:active {
           color: #100c08; }
@@ -1810,7 +1810,7 @@ form submit buttons
 .comment {
   display: flex;
   border-radius: .3rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: .5rem;
   flex-wrap: wrap; }
 
 .comment.user-comment {
@@ -1930,7 +1930,8 @@ form submit buttons
 
 .write-new button {
   float: right;
-  margin-top: 1.8rem; }
+  margin-top: 1.8rem;
+  font-size: 1.5rem; }
 
 /* Responsive styles */
 @media (max-width: 800px) {

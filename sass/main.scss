@@ -401,7 +401,7 @@ a {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-primary-dark, 1)),
+  background-image: linear-gradient(rgba($color-black, .7), rgba($color-primary-dark, 1)),
     url("/resources/img/greetings.jpg");
   background-position: center;
   background-size: cover;
@@ -459,7 +459,7 @@ a {
 
             &:link,
             &:visited {
-              color: $color-black;
+              /* color: $color-black; */
               font-weight: 400;
             }
 
@@ -2576,7 +2576,7 @@ form submit buttons
 .comment {
   display: flex;
   border-radius: .3rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: .5rem;
   flex-wrap: wrap;
 }
 
@@ -2726,6 +2726,7 @@ form submit buttons
 .write-new button {
   float: right;
   margin-top: 1.8rem;
+  font-size: 1.5rem;
 }
 
 /* Responsive styles */
