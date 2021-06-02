@@ -842,7 +842,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba($color-bg1, .3), rgba($color-bg2, 0.8)),
+    background-image: linear-gradient(rgba($color-black, .7), rgba($color-primary-dark, 1)),
       url("/resources/img/founder.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1268,7 +1268,7 @@ a {
   &__content {
     display: flex;
     padding: 10rem 6rem;
-    background-image: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)),
+    background-image: linear-gradient(rgba($color-primary-dark, 1), rgba($color-black, .7)),
       url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
     background-position: center;
     background-size: cover;

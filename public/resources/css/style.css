@@ -601,7 +601,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 30, 48, 0.3), rgba(255, 59, 85, 0.8)), url("/resources/img/founder.jpeg");
+    background-image: linear-gradient(rgba(16, 12, 8, 0.7), #432344), url("/resources/img/founder.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -900,7 +900,7 @@ a {
   .landingFooter__content {
     display: flex;
     padding: 10rem 6rem;
-    background-image: linear-gradient(rgba(16, 12, 8, 0.7), rgba(16, 12, 8, 0.7)), url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+    background-image: linear-gradient(#432344, rgba(16, 12, 8, 0.7)), url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
