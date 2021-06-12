@@ -483,9 +483,13 @@ a {
       padding: 3rem 3rem;
       border-radius: .5rem;
       background-color: #FFF;
-      box-shadow: 0 0.5rem 0.5rem rgba(16, 12, 8, 0.1);
+      box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1);
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      transition: all .5s;
+      transform: scale(1); }
+      .features__boxes--box:hover, .features__boxes--box:active {
+        transform: scale(1.02); }
       .features__boxes--boxLink:link, .features__boxes--boxLink:visited {
         width: 3rem;
         color: rgba(255, 37, 37, 0.7);
@@ -695,7 +699,12 @@ a {
   border-radius: .5rem;
   position: relative;
   top: -18rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(16, 12, 8, 0.1); }
+  box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1);
+  transform: scale(1);
+  transition: all .5s;
+  backface-visibility: hidden; }
+  .testimonials__box:hover, .testimonials__box:active {
+    transform: scale(1.02); }
   .testimonials__box--paragraph {
     font-size: 1.5rem;
     line-height: 150%;
