@@ -383,6 +383,9 @@ a {
         font-weight: 400;
         border-left: 0px solid #FF2525;
         padding-left: 0px; }
+        .greeting__boxes--box .greeting__box--mainHeading .greeting__box--span {
+          display: inline-block;
+          opacity: .5; }
       .greeting__boxes--box.btn {
         text-transform: none; }
       .greeting__boxes--box .btn-full {
