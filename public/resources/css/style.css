@@ -165,7 +165,7 @@ a {
   position: fixed;
   font-size: 2.5rem;
   left: 3.5rem;
-  top: 2.5rem;
+  top: 6rem;
   cursor: pointer;
   z-index: 1;
   color: #8C92AC; }
@@ -215,7 +215,7 @@ a {
 
 .menu-container .closebtn {
   position: absolute;
-  top: 3.6rem;
+  top: 6rem;
   right: 4.8rem;
   font-size: 3rem;
   color: #FFF;
@@ -311,10 +311,11 @@ a {
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: 1rem 3rem;
+    padding: 4rem 3rem 1rem;
     animation: 1s navFade .5s forwards;
     opacity: 0;
-    margin-top: -10rem; }
+    margin-top: -10rem;
+    border-bottom: 0.1rem dashed #8C92AC; }
     .greeting__nav--brand {
       flex: 1;
       font-size: 4rem;
@@ -349,7 +350,7 @@ a {
           margin-left: 1rem;
           font-weight: 300; }
   .greeting__box {
-    margin: 15vh 2rem 3rem 8rem; }
+    margin: 18vh 2rem 3rem 8rem; }
     .greeting__box--heading {
       font-size: 10rem; }
       .greeting__box--headingLink {

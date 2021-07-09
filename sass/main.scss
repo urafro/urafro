@@ -220,7 +220,7 @@ a {
   position: fixed;
   font-size: 2.5rem;
   left: 3.5rem;
-  top: 2.5rem;
+  top: 6rem;
   cursor: pointer;
   z-index: 1;
   color: $color-grey;
@@ -279,7 +279,7 @@ a {
 
 .menu-container .closebtn {
   position: absolute;
-  top: 3.6rem;
+  top: 6rem;
   right: 4.8rem;
   font-size: 3rem;
   color: $color-white;
@@ -408,10 +408,11 @@ a {
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: 1rem 3rem;
+    padding: 4rem 3rem 1rem;
     animation: 1s navFade .5s forwards;
     opacity: 0;
     margin-top: -10rem;
+    border-bottom: .1rem dashed $color-grey;
 
     &--brand {
       flex: 1;
@@ -478,7 +479,7 @@ a {
   }
 
   &__box {
-    margin: 15vh 2rem 3rem 8rem;
+    margin: 18vh 2rem 3rem 8rem;
 
     &--heading {
       font-size: 10rem;
