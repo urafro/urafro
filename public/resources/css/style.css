@@ -304,12 +304,7 @@ a {
 
 .greeting {
   min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(16, 12, 8, 0.7), #432344), url("/resources/img/greetings.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
+  width: 100%; }
   .greeting__nav {
     display: flex;
     list-style: none;
@@ -332,12 +327,12 @@ a {
       .greeting__nav--items li {
         padding: 1rem; }
         .greeting__nav--items li a:link, .greeting__nav--items li a:visited {
-          color: #FFF;
+          color: #100c08;
           font-weight: 400;
           font-size: 1.5rem;
           transition: border-bottom .2s, color .2s; }
         .greeting__nav--items li a.nav--item:hover, .greeting__nav--items li a.nav--item:active {
-          color: rgba(255, 255, 255, 0.8);
+          color: rgba(16, 12, 8, 0.8);
           padding-bottom: .5rem;
           border-bottom: 0.3rem solid #FF2525; }
         .greeting__nav--items li a.btn-ghost:link, .greeting__nav--items li a.btn-ghost:visited {
@@ -352,75 +347,14 @@ a {
           text-transform: none;
           margin-left: 1rem;
           font-weight: 300; }
-  .greeting__boxes {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .greeting__boxes--box {
-      flex: 1;
-      padding-left: 3rem;
-      backface-visibility: hidden; }
-      .greeting__boxes--box .greeting__box--subHeading {
-        font-size: 2rem;
-        color: #FFF;
-        animation: 1s spanSlideRight 1s ease-in forwards;
-        opacity: 0;
-        margin-left: -5rem; }
-      .greeting__boxes--box .greeting__box--mainHeading {
-        font-size: 3.5rem;
-        margin: 2rem 0 3rem 0;
-        line-height: 1.4;
-        position: relative;
-        left: -10rem;
-        color: #FFF;
-        animation: 1s h1slideRight 2s ease-in forwards;
-        opacity: 0;
+  .greeting__box {
+    margin: 15vh 2rem 3rem 8rem; }
+    .greeting__box--heading {
+      font-size: 10rem; }
+      .greeting__box--headingLink:link, .greeting__box--headingLink:visited {
+        color: #100c08;
         font-weight: 400;
-        border-left: 0px solid #FF2525;
-        padding-left: 0px; }
-        .greeting__boxes--box .greeting__box--mainHeading .greeting__box--span {
-          display: inline-block;
-          opacity: .5; }
-      .greeting__boxes--box.btn {
-        text-transform: none; }
-      .greeting__boxes--box .btn-full {
-        position: relative;
-        top: -1.5rem;
-        opacity: 0;
-        animation: 1s btnSlideDown 4.5s ease-in forwards;
-        /* Blink and expand/shrink effect on landing page main cta button */
-        /* animating the ::after element we created above, on .greeting__box .btn-full hover */ }
-        .greeting__boxes--box .btn-full::after {
-          content: "";
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          border-radius: 10rem;
-          background-color: #FFC03D;
-          transition: all .4s;
-          z-index: -1; }
-        .greeting__boxes--box .btn-full:hover::after {
-          transform: scaleX(1.4) scaleY(1.6);
-          opacity: 0; }
-        .greeting__boxes--box .btn-full i {
-          margin-right: 1rem; }
-    .greeting__boxes--image {
-      flex: 1;
-      align-self: flex-end; }
-      .greeting__boxes--image img {
-        height: 42vh;
-        position: relative;
-        right: -8rem;
-        opacity: 0;
-        animation: 1s imgSlideLeft 3s ease-in-out forwards; }
+        border-bottom: 0.1rem solid #8C92AC; }
 
 /*===================*/
 .intro {

@@ -401,12 +401,6 @@ a {
 .greeting {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba($color-black, .7), rgba($color-primary-dark, 1)),
-    url("/resources/img/greetings.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 
   &__nav {
     display: flex;
@@ -439,7 +433,7 @@ a {
 
           &:link,
           &:visited {
-            color: $color-white;
+            color: $color-black;
             font-weight: 400;
             font-size: 1.5rem;
             transition: border-bottom .2s, color .2s;
@@ -449,7 +443,7 @@ a {
 
             &:hover,
             &:active {
-              color: rgba($color-white, .8);
+              color: rgba($color-black, .8);
               padding-bottom: .5rem;
               border-bottom: .3rem solid $color-primary-red;
             }
@@ -482,96 +476,18 @@ a {
     }
   }
 
-  &__boxes {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &__box {
+    margin: 15vh 2rem 3rem 8rem;
 
-    &--box {
-      flex: 1;
-      padding-left: 3rem;
-      backface-visibility: hidden;
+    &--heading {
+      font-size: 10rem;
 
-      .greeting__box--subHeading {
-        font-size: 2rem;
-        color: $color-white;
-        animation: 1s spanSlideRight 1s ease-in forwards;
-        opacity: 0;
-        margin-left: -5rem;
-      }
-
-      .greeting__box--mainHeading {
-        font-size: 3.5rem;
-        margin: 2rem 0 3rem 0;
-        line-height: 1.4;
-        position: relative;
-        left: -10rem;
-        color: $color-white;
-        animation: 1s h1slideRight 2s ease-in forwards;
-        opacity: 0;
+      &Link:link,
+      &Link:visited {
+        color: $color-black;
         font-weight: 400;
-        border-left: 0px solid $color-primary-red;
-        padding-left: 0px;
-        
-        .greeting__box--span {
-          display: inline-block;
-          opacity: .5;
-        }
+        border-bottom: .1rem solid $color-grey;
       }
-
-      &.btn {
-        text-transform: none;
-      }
-
-      & .btn-full {
-        position: relative;
-        top: -1.5rem;
-        opacity: 0;
-        animation: 1s btnSlideDown 4.5s ease-in forwards;
-
-        /* Blink and expand/shrink effect on landing page main cta button */
-        &::after {
-          content: "";
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          border-radius: 10rem;
-          background-color: $color-primary-brown;
-          transition: all .4s;
-          z-index: -1;
-        }
-
-        /* animating the ::after element we created above, on .greeting__box .btn-full hover */
-        &:hover::after {
-          transform: scaleX(1.4) scaleY(1.6);
-          opacity: 0;
-        }
-
-        & i {
-          margin-right: 1rem;
-        }
-      }
-    }
-
-    &--image {
-      flex: 1;
-      align-self: flex-end;
-
-      & img {
-        height: 42vh;
-        position: relative;
-        right: -8rem;
-        opacity: 0;
-        animation: 1s imgSlideLeft 3s ease-in-out forwards;
-      } 
     }
   }
 }
