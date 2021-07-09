@@ -317,7 +317,7 @@ a {
     margin-top: -10rem; }
     .greeting__nav--brand {
       flex: 1;
-      font-size: 2.5rem;
+      font-size: 4rem;
       font-family: 'Caveat', cursive; }
     .greeting__nav--items {
       flex: 1;
@@ -329,8 +329,9 @@ a {
         .greeting__nav--items li a:link, .greeting__nav--items li a:visited {
           color: #100c08;
           font-weight: 400;
-          font-size: 1.5rem;
-          transition: border-bottom .2s, color .2s; }
+          font-size: 2rem;
+          transition: border-bottom .2s, color .2s;
+          margin-right: 2rem; }
         .greeting__nav--items li a.nav--item:hover, .greeting__nav--items li a.nav--item:active {
           color: rgba(16, 12, 8, 0.8);
           padding-bottom: .5rem;
@@ -351,10 +352,21 @@ a {
     margin: 15vh 2rem 3rem 8rem; }
     .greeting__box--heading {
       font-size: 10rem; }
-      .greeting__box--headingLink:link, .greeting__box--headingLink:visited {
+      .greeting__box--headingLink {
         color: #100c08;
         font-weight: 400;
-        border-bottom: 0.1rem solid #8C92AC; }
+        display: inline-block; }
+        .greeting__box--headingLink:after {
+          display: block;
+          content: '';
+          /* width: 2rem;
+          position: relative; */
+          border-bottom: solid 0.3rem #FF2525;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+          transform-origin: 0% 50%; }
+        .greeting__box--headingLink:hover:after {
+          transform: scaleX(1); }
 
 /*===================*/
 .intro {

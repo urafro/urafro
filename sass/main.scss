@@ -415,7 +415,7 @@ a {
 
     &--brand {
       flex: 1;
-      font-size: 2.5rem;
+      font-size: 4rem;
       font-family: 'Caveat',
       cursive;
     }
@@ -435,8 +435,9 @@ a {
           &:visited {
             color: $color-black;
             font-weight: 400;
-            font-size: 1.5rem;
+            font-size: 2rem;
             transition: border-bottom .2s, color .2s;
+            margin-right: 2rem;
           }
 
           &.nav--item {
@@ -482,11 +483,26 @@ a {
     &--heading {
       font-size: 10rem;
 
-      &Link:link,
-      &Link:visited {
+      &Link {
         color: $color-black;
         font-weight: 400;
-        border-bottom: .1rem solid $color-grey;
+        display: inline-block;
+        
+        &:after {
+          display:block;
+          content: '';
+          /* width: 2rem;
+          position: relative; */
+
+          border-bottom: solid .3rem $color-primary-red;  
+          transform: scaleX(0);  
+          transition: transform 250ms ease-in-out;
+          transform-origin:  0% 50%;
+        }
+
+        &:hover:after {
+          transform: scaleX(1);
+        }
       }
     }
   }
