@@ -40,33 +40,8 @@
     font-size: 9px;
   }
 
-  span#menuIcon,
-  div.l-container .menu-icon {
-    top: 2rem;
-    left: 1rem;
-  }
-
-  div.greeting__boxes {
-    flex-direction: column;
-    margin-top: 3rem;
-  }
-
-  div.greeting__boxes--box {
-    padding-left: 0;
-    align-self: flex-start;
-  }
-
-  .greeting__boxes--box span.greeting__box--subHeading {
-    font-size: 2.5rem;
-  }
-
-  .greeting__boxes--box h1.greeting__box--mainHeading {
-    font-size: 4.5rem;
-  }
-
-  div.greeting__boxes--image img {
-    margin-top: 2rem;
-    height: 32vh;
+  .greeting__box--heading {
+    font-size: 8rem;
   }
 
 }
