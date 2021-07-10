@@ -104,12 +104,25 @@
 
 /* Small iPads, Tablets: 481px to 768px */
 @media only screen and (max-width: 768px) {
-  .greeting__boxes--box h1.greeting__box--mainHeading {
-    font-size: 3rem;
+
+  #menuIcon,
+  .menu-icon {
+    top: 5.5rem;
   }
 
-  div.greeting__boxes--image img {
-    height: 25vh;
+  .greeting__nav--brand {
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+
+  .greeting__nav--items li a:link,
+  .greeting__nav--items li a:visited {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+  }
+
+  .greeting__box--heading {
+    font-size: 4.5rem;
   }
 
   div.intro__container {
