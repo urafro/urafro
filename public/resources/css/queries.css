@@ -27,12 +27,8 @@
     font-size: 10px;
   }
 
-  .greeting__boxes--box h1.greeting__box--mainHeading {
-    font-size: 4rem;
-  }
-
-  div.greeting__boxes--image img {
-    height: 50vh;
+  .greeting__box--heading {
+    font-size: 8rem;
   }
 
 }
