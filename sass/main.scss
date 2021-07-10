@@ -1,4 +1,4 @@
-/* /* ===========================================
+/* ===========================================
               UNIVERSAL STYLES
 =============================================*/
 $color-primary-dark: #432344;
@@ -370,8 +370,8 @@ a {
   }
 
   100% {
-    border-left: 5px solid $color-primary-red;
-    padding-left: 20px;
+    border-left: .5rem solid $color-primary-red;
+    padding-left: 2rem;
     opacity: 1;
     left: 0;
   }
@@ -412,13 +412,13 @@ a {
     animation: 1s navFade .5s forwards;
     opacity: 0;
     margin-top: -10rem;
-    border-bottom: .1rem dashed $color-grey;
+    border-bottom: .1rem dashed rgba($color-black, .5);
 
     &--brand {
       flex: 1;
       font-size: 4rem;
-      font-family: 'Caveat',
-      cursive;
+      font-family: 'Caveat', cursive;
+      color: $color-black;
     }
 
     &--items {
@@ -452,6 +452,7 @@ a {
           }
 
           &.btn-ghost {
+            border: .1rem solid $color-black;
 
             &:link,
             &:visited {
@@ -488,6 +489,7 @@ a {
         color: $color-black;
         font-weight: 400;
         display: inline-block;
+        border-bottom: .1rem solid rgba($color-black, .3);
         
         &:after {
           display:block;
@@ -495,7 +497,7 @@ a {
           /* width: 2rem;
           position: relative; */
 
-          border-bottom: solid .3rem $color-primary-red;  
+          border-bottom: solid .3rem $color-black;  
           transform: scaleX(0);  
           transition: transform 250ms ease-in-out;
           transform-origin:  0% 50%;
@@ -515,7 +517,7 @@ a {
       animation: 1s btnSlideDown 3s ease-in forwards;
       background-color: $color-primary-light;
       color: $color-black;
-      border: .1rem solid $color-primary-brown;
+      border: .1rem solid $color-black;
       margin-top: 4rem;
 
       /* Blink and expand/shrink effect on landing page main cta button */
