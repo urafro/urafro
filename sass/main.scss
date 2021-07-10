@@ -479,7 +479,7 @@ a {
   }
 
   &__box {
-    margin: 18vh 2rem 3rem 8rem;
+    margin: 15vh 2rem 3rem 8rem;
 
     &--heading {
       font-size: 10rem;
@@ -509,11 +509,14 @@ a {
 
     .btn-ghost {
       position: relative;
+      font-size: 3rem;
       top: -1.5rem;
       opacity: 0;
-      animation: 1s btnSlideDown 4.5s ease-in forwards;
+      animation: 1s btnSlideDown 3s ease-in forwards;
       background-color: $color-primary-light;
       color: $color-black;
+      border: .1rem solid $color-primary-brown;
+      margin-top: 4rem;
 
       /* Blink and expand/shrink effect on landing page main cta button */
       &::after {
@@ -525,7 +528,7 @@ a {
         top: 0;
         left: 0;
         border-radius: 10rem;
-        background-color: $color-primary-brown;
+        background-color: $color-primary-light;
         transition: all .4s;
         z-index: -1;
       }
@@ -533,6 +536,7 @@ a {
       /* animating the ::after element we created above, on .greeting__box .btn-full hover */
       &:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
+        background-color: $color-primary-brown;
         opacity: 0;
       }
 

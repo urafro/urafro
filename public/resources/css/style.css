@@ -350,7 +350,7 @@ a {
           margin-left: 1rem;
           font-weight: 300; }
   .greeting__box {
-    margin: 18vh 2rem 3rem 8rem; }
+    margin: 15vh 2rem 3rem 8rem; }
     .greeting__box--heading {
       font-size: 10rem; }
       .greeting__box--headingLink {
@@ -370,11 +370,14 @@ a {
           transform: scaleX(1); }
     .greeting__box .btn-ghost {
       position: relative;
+      font-size: 3rem;
       top: -1.5rem;
       opacity: 0;
-      animation: 1s btnSlideDown 4.5s ease-in forwards;
+      animation: 1s btnSlideDown 3s ease-in forwards;
       background-color: #f9f9f9;
       color: #100c08;
+      border: 0.1rem solid #FFC03D;
+      margin-top: 4rem;
       /* Blink and expand/shrink effect on landing page main cta button */
       /* animating the ::after element we created above, on .greeting__box .btn-full hover */ }
       .greeting__box .btn-ghost::after {
@@ -386,11 +389,12 @@ a {
         top: 0;
         left: 0;
         border-radius: 10rem;
-        background-color: #FFC03D;
+        background-color: #f9f9f9;
         transition: all .4s;
         z-index: -1; }
       .greeting__box .btn-ghost:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
+        background-color: #FFC03D;
         opacity: 0; }
       .greeting__box .btn-ghost i {
         margin-right: 1rem; }
