@@ -53,25 +53,8 @@
     font-size: 10px;
   }
 
-  span#menuIcon,
-  div.l-container .menu-icon {
-    top: 2rem;
-    left: 1rem;
-  }
-
-  div.greeting__boxes {
-    flex-direction: column; 
-    margin-top: 3rem;
-  }
-
-  div.greeting__boxes--box {
-    padding-left: 0;
-    align-self: flex-start;
-  }
-
-  div.greeting__boxes--image img {
-    margin-top: 2rem;
-    height: 30vh;
+  .greeting__box--heading {
+    font-size: 6rem;
   }
 
   div.intro__container {
