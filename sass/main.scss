@@ -506,6 +506,41 @@ a {
         }
       }
     }
+
+    .btn-ghost {
+      position: relative;
+      top: -1.5rem;
+      opacity: 0;
+      animation: 1s btnSlideDown 4.5s ease-in forwards;
+      background-color: $color-primary-light;
+      color: $color-black;
+
+      /* Blink and expand/shrink effect on landing page main cta button */
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10rem;
+        background-color: $color-primary-brown;
+        transition: all .4s;
+        z-index: -1;
+      }
+
+      /* animating the ::after element we created above, on .greeting__box .btn-full hover */
+      &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+
+      & i {
+        margin-right: 1rem;
+      }
+    }
+
   }
 }
 

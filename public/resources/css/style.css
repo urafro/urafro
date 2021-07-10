@@ -368,6 +368,32 @@ a {
           transform-origin: 0% 50%; }
         .greeting__box--headingLink:hover:after {
           transform: scaleX(1); }
+    .greeting__box .btn-ghost {
+      position: relative;
+      top: -1.5rem;
+      opacity: 0;
+      animation: 1s btnSlideDown 4.5s ease-in forwards;
+      background-color: #f9f9f9;
+      color: #100c08;
+      /* Blink and expand/shrink effect on landing page main cta button */
+      /* animating the ::after element we created above, on .greeting__box .btn-full hover */ }
+      .greeting__box .btn-ghost::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10rem;
+        background-color: #FFC03D;
+        transition: all .4s;
+        z-index: -1; }
+      .greeting__box .btn-ghost:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+      .greeting__box .btn-ghost i {
+        margin-right: 1rem; }
 
 /*===================*/
 .intro {
