@@ -261,6 +261,12 @@
   div.l-container .menu-icon {
     font-size: 3rem;
     top: 2rem;
+    left: 1.3rem;
+  }
+
+  .greeting__nav {
+    border: none;
+    padding-top: .5rem;
   }
 
   div.greeting__nav--brand {
@@ -274,12 +280,12 @@
     display: none;
   }
 
-  .greeting__boxes--box h1.greeting__box--mainHeading {
-    font-size: 2.5rem;
+  .greeting__box {
+    margin-left: 4rem;
   }
 
-  div.greeting__boxes--image img {
-    height: 25vh;
+  .greeting__box--heading {
+    font-size: 6rem;
   }
 
   h2.section__heading {
