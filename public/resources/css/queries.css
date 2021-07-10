@@ -444,12 +444,12 @@
     font-size: 7px;
   }
 
-  .greeting__boxes--box span.greeting__box--subHeading {
-    font-size: 1.5rem;
+  .greeting__box--heading {
+    font-size: 4.5rem;
   }
 
-  .greeting__boxes--box h1.greeting__box--mainHeading {
+  .greeting__box .btn-ghost {
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 }
