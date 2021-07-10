@@ -54,7 +54,7 @@
   }
 
   .greeting__box--heading {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 
   div.intro__container {
@@ -286,6 +286,11 @@
 
   .greeting__box--heading {
     font-size: 5rem;
+  }
+
+  .greeting__box .btn-ghost {
+    font-size: 2rem;
+    margin-bottom: 3rem;
   }
 
   h2.section__heading {
