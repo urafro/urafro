@@ -315,7 +315,7 @@ a {
     animation: 1s navFade .5s forwards;
     opacity: 0;
     margin-top: -10rem;
-    border-bottom: 0.1rem dashed rgba(16, 12, 8, 0.5); }
+    border-bottom: 0.1rem dashed rgba(16, 12, 8, 0.1); }
     .greeting__nav--brand {
       flex: 1;
       font-size: 4rem;
@@ -355,7 +355,9 @@ a {
   .greeting__box {
     margin: 15vh 2rem 3rem 8rem; }
     .greeting__box--heading {
-      font-size: 10rem; }
+      font-size: 10rem;
+      padding-left: 3rem;
+      border-left: 0.2rem solid #FF2525; }
       .greeting__box--headingLink {
         color: #100c08;
         font-weight: 400;

@@ -412,7 +412,7 @@ a {
     animation: 1s navFade .5s forwards;
     opacity: 0;
     margin-top: -10rem;
-    border-bottom: .1rem dashed rgba($color-black, .5);
+    border-bottom: .1rem dashed rgba($color-black, .1);
 
     &--brand {
       flex: 1;
@@ -484,6 +484,8 @@ a {
 
     &--heading {
       font-size: 10rem;
+      padding-left: 3rem;
+      border-left: .2rem solid $color-primary-red;
 
       &Link {
         color: $color-black;

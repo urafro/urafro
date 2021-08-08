@@ -41,7 +41,7 @@
   }
 
   .greeting__box--heading {
-    font-size: 8rem;
+    font-size: 7.5rem;
   }
 
 }
@@ -54,7 +54,7 @@
   }
 
   .greeting__box--heading {
-    font-size: 8rem;
+    font-size: 7.5rem;
   }
 
   div.intro__container {
@@ -126,7 +126,7 @@
   }
 
   .greeting__box--heading {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .greeting__box .btn-ghost {
@@ -294,7 +294,7 @@
   }
 
   .greeting__box--heading {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .greeting__box .btn-ghost {
@@ -454,7 +454,7 @@
   }
 
   .greeting__box--heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .greeting__box .btn-ghost {
