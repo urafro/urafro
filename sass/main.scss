@@ -1855,6 +1855,7 @@ contains blog author name, blog date and tag
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f9f3c5;
 
 
 /*
@@ -1954,7 +1955,7 @@ contains blog author name, blog date and tag
 
   .blog {
     padding-top: 3rem;
-    width: 76%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -2020,19 +2021,19 @@ contains blog author name, blog date and tag
   }
 
   100% {
-    color: rgba($color-black, .3);
+    color: rgba($color-black, .5);
     transform: scale(1);
   }
 }
 
 /* BLOG HEADINGS */
 .blog__heading {
-  width: 65%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 
   &--mainHeading {
-    font-size: 2rem;
+    font-size: 2.8rem;
     margin-bottom: 2rem;
     position: relative;
     top: -2.5rem;
@@ -2053,6 +2054,7 @@ contains blog author name, blog date and tag
   &--paragraph {
     color: rgba($color-black, .3);
     font-size: 1.3rem;
+    letter-spacing: .1rem;
     animation: smallPop 1s linear 2s forwards;
     transform: scale(1);
 
@@ -2068,18 +2070,18 @@ contains blog author name, blog date and tag
   }
 
   &--h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   &--h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     font-weight: 300;
   }
 
   &--h5 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: .5rem;
     font-weight: 300;
   }
@@ -2095,10 +2097,12 @@ contains blog author name, blog date and tag
 .blog__body {
   width: 90%;
   margin: 0 auto;
+  letter-spacing: .1rem;
 
   &--paragraph {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
+    word-spacing: .1rem;
   }
 
   &--sectionOne {
