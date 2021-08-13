@@ -194,11 +194,11 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
           lastParagraph: req.body.blog.lastParagraph
         },
         sectionFive: {
-          linkOne: req.body.blog.linkOne,
-          linkTwo: req.body.blog.linkTwo,
-          linkThree: req.body.blog.linkThree,
-          linkFour: req.body.blog.linkFour,
-          linkFive: req.body.blog.linkFive
+          youtubeLink: req.body.blog.youtubeLink,
+          redditLink: req.body.blog.redditLink,
+          twitterLink: req.body.blog.twitterLink,
+          instagramLink: req.body.blog.instagramLink,
+          externalLink: req.body.blog.externalLink
         }
       }
     }
@@ -210,6 +210,7 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
       req.flash("error", err.message);
       res.redirect("/blogs/" + req.params.id);
     } else {
+      console.log(updatedBlog);
       req.flash("success", "Blog Updated successfully! 🚧");
       res.redirect("/blogs/" + req.params.id);
     }

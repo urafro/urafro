@@ -320,19 +320,19 @@
               <div class="inputsBox">
 
                 <label class="inputsBox--label" for="youtube link">Youtube</label>
-                <input class="inputsBox--input inputsBox--text" type="text" name="blog[youtubeLink]" id="linkOne" placeholder="link to youtube episode" required>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[youtubeLink]" id="linkOne" value="<%= blog.body.content.sectionFive.youtubeLink %>" required>
 
                 <label class="inputsBox--label" for="reddit link">Reddit</label>
-                <input class="inputsBox--input inputsBox--text" type="text" name="blog[redditLink]" id="linkTwo" placeholder="link to reddit discussion" required>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[redditLink]" id="linkTwo" value="<%= blog.body.content.sectionFive.redditLink %>" required>
 
                 <label class="inputsBox--label" for="twitter link">Twitter</label>
-                <input class="inputsBox--input inputsBox--text" type="text" name="blog[twitterLink]" id="linkThree" placeholder="link to twitter hashtag" required>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[twitterLink]" id="linkThree" value="<%= blog.body.content.sectionFive.twitterLink %>" required>
 
                 <label class="inputsBox--label" for="instagram link">Instagram</label>
-                <input class="inputsBox--input inputsBox--text" type="text" name="blog[instagramLink]" id="linkFour" placeholder="link to instagram challenge?" required>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[instagramLink]" id="linkFour" value="<%= blog.body.content.sectionFive.instagramLink %>" required>
 
                 <label class="inputsBox--label" for="external link">External</label>
-                <input class="inputsBox--input inputsBox--text" type="text" name="blog[externalLink]" id="linkFive" placeholder="link to the best external resource" required>
+                <input class="inputsBox--input inputsBox--text" type="text" name="blog[externalLink]" id="linkFive" value="<%= blog.body.content.sectionFive.externalLink %>" required>
                     
               </div>
 
