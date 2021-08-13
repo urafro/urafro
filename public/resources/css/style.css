@@ -549,14 +549,18 @@ a {
 .founder {
   display: flex;
   align-items: center;
-  background-color: #FFC03D; }
+  background-color: #FFC03D;
+  align-items: center; }
   .founder__text {
     flex: 1;
+    flex-basis: 50%;
     padding-left: 6.5rem;
     border-left: 0.5rem solid #FF2525; }
     .founder__text--mainHeading {
       margin-bottom: 3rem;
-      font-weight: 300; }
+      font-weight: 300;
+      font-size: 4rem;
+      letter-spacing: .1rem; }
       .founder__text--mainHeading::after {
         display: block;
         position: relative;
@@ -576,7 +580,9 @@ a {
       color: #100c08;
       font-size: initial;
       width: 90%;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      letter-spacing: .1rem;
+      line-height: 1.5; }
       .founder__text--paragraph a:link, .founder__text--paragraph a:visited {
         color: #FFF;
         transition: color .2s; }
@@ -586,16 +592,12 @@ a {
   .founder__image {
     flex: 1;
     align-self: center;
-    height: 70rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(16, 12, 8, 0.7), #432344), url("/resources/img/founder.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; }
+    flex-basis: 50%; }
+    .founder__image--img {
+      width: 100%; }
     .founder__image a:link, .founder__image a:visited {
       transition: background-color 1s;
       font-size: 2rem; }
