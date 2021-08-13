@@ -25,15 +25,22 @@
     "cookie-session": "^1.4.0",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
-    "express-sanitizer": "^1.0.5",
+    "express-sanitizer": "^1.0.6",
+    "hosted-git-info": "^4.0.2",
+    "lodash": "^4.17.21",
     "method-override": "^3.0.0",
     "moment": "^2.26.0",
-    "mongoose": "^5.9.20",
+    "mongoose": "^5.13.7",
     "mquery": ">=3.2.3",
     "node-sass": "^5.0.0",
     "nodemailer": "^6.4.17",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^6.0.1"
+    "passport-local-mongoose": "^6.0.1",
+    "path-parse": "^1.0.7",
+    "tar": "^6.1.8",
+    "trim-newlines": "^4.0.2",
+    "underscore": "^1.13.1",
+    "y18n": "^5.0.8"
   }
 }
