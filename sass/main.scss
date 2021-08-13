@@ -484,6 +484,7 @@ a {
 
     &--heading {
       font-size: 10rem;
+      font-weight: 300;
       padding-left: 3rem;
       border-left: .2rem solid $color-primary-red;
 
@@ -754,7 +755,7 @@ a {
     }
 
     &--phrase {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin: 0 auto;
       width: 80%;
       padding-top: 3rem;
