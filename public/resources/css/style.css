@@ -1225,7 +1225,7 @@ contains blog author name, blog date and tag
     .showcaseCard__author--image {
       height: 6rem;
       width: 6rem;
-      border-radius: .5rem; }
+      border-radius: 50%; }
   .showcaseCard__text {
     font-weight: 300;
     color: #FFF;
@@ -1523,13 +1523,14 @@ contains blog author name, blog date and tag
   font-size: 2rem;
   margin-top: 5rem;
   margin-bottom: .5rem;
-  border-top: 0.2rem solid rgba(249, 249, 249, 0.5);
+  border-top: 0.1rem solid rgba(255, 37, 37, 0.1);
   padding-top: 2rem; }
 
 .backlinks__tag {
   color: rgba(16, 12, 8, 0.5);
   font-size: 1.3rem;
-  border-bottom: 0.2rem solid rgba(249, 249, 249, 0.5); }
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid rgba(255, 37, 37, 0.1); }
   .backlinks__tag--link {
     font-size: 1.3rem;
     margin-left: .5rem;
@@ -1586,7 +1587,8 @@ contains blog author name, blog date and tag
     background-color: #FF2525; }
   .backlinkCard__body--heading {
     width: 85%;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
     font-size: 1.3rem;
     letter-spacing: .01rem; }
   .backlinkCard__body--headingLink:link, .backlinkCard__body--headingLink:visited {
