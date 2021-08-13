@@ -1561,7 +1561,7 @@ contains blog author name, blog date and tag
     overflow: hidden; }
     .backlinkCard__header--image {
       width: 100%;
-      height: 30rem;
+      height: 33.5rem;
       border-radius: .3rem;
       opacity: .7;
       transform: scale(1);
