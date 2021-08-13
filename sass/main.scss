@@ -1823,24 +1823,17 @@ contains blog author name, blog date and tag
 
 /* ===============================================
                 SHOW ROUTE
-================================================ */
-
-@keyframes admenuLeft {
-  100% {
-    opacity: 1;
-    right: 0;
-  }
-}
+================================================ *
 
 /* ADMING MENU STYLES HERE */
 @keyframes admenuLeft {
-  80% {
+  50% {
     opacity: 1;
-    right: .5rem;
+    right: -.5rem;
   }
 
   100% {
-    opacity: 1;
+    opacity: .7;
     right: -1rem;
   }
 }
@@ -1885,14 +1878,17 @@ contains blog author name, blog date and tag
 
     position: fixed;
     right: -1rem;
-    top: 70%;
+    top: 65%;
     opacity: 0;
     transform: translate(-40%);
-    animation: admenuLeft 1s linear 3s forwards;
+    animation: admenuLeft 1.5s linear 6s forwards;
     background-color: $color-primary-dark;
+    border-radius: .5rem;
+    width: 3rem;
+    text-align: center;
 
     &--li {
-      padding: 1rem .5rem;
+      padding: 1.2rem 0;
 
       &:last-of-type {
         border-bottom: .1rem solid transparent;
@@ -1935,7 +1931,7 @@ contains blog author name, blog date and tag
     }
 
     &--i {
-      font-size: .7rem;
+      font-size: 1.2rem;
     }
 
     &--button {
