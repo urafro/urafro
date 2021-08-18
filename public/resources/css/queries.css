@@ -258,6 +258,19 @@
   div.showcase__writersContainer {
     padding-left: 5%;
   }
+
+  /* incoming changes to be smoothened over once i get to designing the whole chabang */
+  /* .backlinkCard__header {
+    width: 50%;
+  }
+
+  .backlinkCard__body {
+    width: 50%;
+  }
+
+  .zero {
+    width: 80vw;
+  } */
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
