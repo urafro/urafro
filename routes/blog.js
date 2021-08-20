@@ -218,7 +218,7 @@ router.put("/:id",middleware.checkBlogOwnership, (req, res) => {
 });
 
 //Destroy Route - delete blog with specific id
-router.delete("/:id",middleware.checkBlogOwnership, (req, res) => {
+router.delete("/:id",middleware.isAdmin, (req, res) => {
   Blog.findByIdAndDelete(req.params.id, (err, deletedBlog) => {
     if (err) {
       req.flash("error", err.message);

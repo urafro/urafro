@@ -54,4 +54,14 @@ middlewareObj.isLoggedIn = function(req, res, next) {
   }
 }
 
+//middleware to check whether a user has admin privileges or not
+middlewareObj.isAdmin = function(req, res, next) {
+  if (req.isAuthenticated() && req.user.isAdmin) {
+    return next();
+  } else {
+    req.flash("error", "Kindly contact the admin to perfom that task");
+    res.redirect("back");
+  }
+}
+
 module.exports = middlewareObj;

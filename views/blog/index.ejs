@@ -43,13 +43,15 @@
             <%= currentUser.username %> <span class="hero__body--subTitle">/ urAfro writer</span>
           </h2>
           <p class="hero__body--desc"><%= currentUser.bio %></p>    
-          <!-- will implement the use of dynamic social links -->
-          <a class="hero__body--link" href="<%= currentUser.socials.instagram %>" target="_blank" class="hero-btn hero-btn-full">
-            <i class="fab fa-instagram hero__body--linkIcon"></i>
-          </a>
-          <a class="hero__body--link" href="<%= currentUser.socials.twitter %>" target="_blank" class="hero-btn hero-btn-ghost">
-            <i class="fab fa-twitter hero__body--linkIcon"></i>
-          </a>
+          <% if (currentUser.socials) { %>
+            <!-- will implement the use of dynamic social links -->
+            <a class="hero__body--link" href="<%= currentUser.socials.instagram %>" target="_blank" class="hero-btn hero-btn-full">
+              <i class="fab fa-instagram hero__body--linkIcon"></i>
+            </a>
+            <a class="hero__body--link" href="<%= currentUser.socials.twitter %>" target="_blank" class="hero-btn hero-btn-ghost">
+              <i class="fab fa-twitter hero__body--linkIcon"></i>
+            </a>
+          <% } %>
         </div>
         <!-- dynamic user data ends here -->
       </div>
