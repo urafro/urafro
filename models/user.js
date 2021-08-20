@@ -13,7 +13,8 @@ const UserSchema = new mongoose.Schema({
   drafts: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Draft"
-  }]
+  }],
+  socials: Object
 });
 
 UserSchema.plugin(LocalStrategyMongoose);

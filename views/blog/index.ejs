@@ -44,10 +44,10 @@
           </h2>
           <p class="hero__body--desc"><%= currentUser.bio %></p>    
           <!-- will implement the use of dynamic social links -->
-          <a class="hero__body--link" href="#" class="hero-btn hero-btn-full">
+          <a class="hero__body--link" href="<%= currentUser.socials.instagram %>" target="_blank" class="hero-btn hero-btn-full">
             <i class="fab fa-instagram hero__body--linkIcon"></i>
           </a>
-          <a class="hero__body--link" href="#" class="hero-btn hero-btn-ghost">
+          <a class="hero__body--link" href="<%= currentUser.socials.twitter %>" target="_blank" class="hero-btn hero-btn-ghost">
             <i class="fab fa-twitter hero__body--linkIcon"></i>
           </a>
         </div>
