@@ -127,7 +127,7 @@ router.post("/signup", (req, res) => {
       passport.authenticate("local")(req, res, () => {
         console.log(createdUser);
         console.log(createdUser.socials);
-        req.flash("success", "Oh hi there " + createdUser.username + "! Glad you joined #weRme. Now let's break societ--ahem... build society together!");
+        req.flash("success", "Oh hi there " + createdUser.username + "! Glad you joined urafro. Now let's break societ--ahem... build society together!");
         res.redirect("/blogs");
       });
     }
