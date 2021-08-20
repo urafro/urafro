@@ -1011,6 +1011,13 @@ a {
   .hero__body--link:link, .hero__body--link:visited {
     padding: 1rem;
     color: #f9f9f9; }
+  .hero__body--linkText {
+    text-decoration: underline;
+    transform: all .5s; }
+    .hero__body--linkText:link, .hero__body--linkText:visited {
+      opacity: .7; }
+    .hero__body--linkText:active, .hero__body--linkText:hover {
+      opacity: 1; }
   .hero__body--linkIcon {
     font-size: 3rem;
     margin-top: 1.5rem; }

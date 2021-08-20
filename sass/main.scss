@@ -1427,6 +1427,21 @@ a {
         color: $color-primary-light;
       }
 
+      &Text {
+        text-decoration: underline;
+        transform: all .5s;
+
+        &:link,
+        &:visited {
+          opacity: .7;
+        }
+
+        &:active,
+        &:hover {
+          opacity: 1;
+        }
+      }
+
       &Icon {
         font-size: 3rem;
         margin-top: 1.5rem;
