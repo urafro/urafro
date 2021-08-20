@@ -14,7 +14,11 @@ const UserSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Draft"
   }],
-  socials: Object
+  socials: Object,
+  isAdmin: {
+    type: Boolean,
+    default: false
+  }
 });
 
 UserSchema.plugin(LocalStrategyMongoose);
