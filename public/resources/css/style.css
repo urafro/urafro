@@ -999,8 +999,9 @@ a {
       border-radius: 50%;
       border: 8px solid rgba(255, 37, 37, 0.2); }
   .hero__body--mainTitle {
-    font-size: 2rem;
-    font-weight: 400; }
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: .7; }
   .hero__body--desc {
     font-weight: 300;
     text-align: center;
