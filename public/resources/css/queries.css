@@ -152,12 +152,15 @@
   }
 
   .greeting__box--heading {
-    font-size: 7.5rem;
+    font-size: 7.2rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .greeting__box .btn-ghost {
     font-size: 2rem;
     margin-bottom: 3rem;
+    margin-left: 3rem;
   }
 
   div.intro__container {
