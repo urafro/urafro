@@ -234,7 +234,8 @@ a {
 .brand {
   color: #FF2525;
   font-weight: 400;
-  font-family: 'Caveat', cursive; }
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem; }
 
 .caveat {
   font-family: 'Caveat', cursive; }
