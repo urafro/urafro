@@ -122,11 +122,11 @@
   }
 
   .greeting__box {
-    margin-left: 6rem;
+    margin-left: 3rem;
   }
 
   .greeting__box--heading {
-    font-size: 4.5rem;
+    font-size: 7.5rem;
   }
 
   .greeting__box .btn-ghost {
