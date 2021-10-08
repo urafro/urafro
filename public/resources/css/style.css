@@ -436,19 +436,25 @@ a {
       margin-bottom: 1rem;
       font-size: 1.5rem;
       width: 80%; }
-    .intro__container--image {
-      height: 15rem; }
-    .intro__container--btn {
-      margin-top: 1.5rem; }
-    .intro__container--about {
-      flex: 1; }
-    .intro__container--give {
-      flex: 1; }
-      .intro__container--give a:link, .intro__container--give a:visited {
+      .intro__container--paragraphLink:link, .intro__container--paragraphLink:visited {
         color: #100c08;
         text-decoration: underline;
         text-decoration-color: #FF2525;
         text-decoration-thickness: .2rem; }
+      .intro__container--paragraphLink:active, .intro__container--paragraphLink:hover {
+        opacity: .7; }
+    .intro__container--image {
+      height: 15rem; }
+    .intro__container--btn {
+      margin-top: 1.5rem; }
+      .intro__container--btnTwo {
+        display: none; }
+    .intro__container--about {
+      flex: 1; }
+    .intro__container--give {
+      flex: 1; }
+      .intro__container--give .intro__container--btnTwo {
+        text-decoration: none; }
     .intro__container--receive {
       flex: 1; }
     .intro__container--about, .intro__container--give, .intro__container--receive {

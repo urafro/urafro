@@ -53,8 +53,17 @@
     font-size: 10px;
   }
 
+  .greeting__box {
+    margin-left: 4.5rem;
+  }
+
   .greeting__box--heading {
-    font-size: 7.5rem;
+    font-size: 10rem;
+    width: 98%;
+  }
+
+  .greeting__box .btn-ghost {
+    margin-top: 6rem;
   }
 
   div.intro__container {
@@ -62,17 +71,22 @@
     padding: 5rem 0;
   }
 
-  p.intro__container--paragraph {
-    width: 50%;
+  .intro__container--paragraph {
+    width: 65%;
   }
 
   div.intro__container--about {
     margin-bottom: 0;
   }
 
-  div.intro__container--give,
+  div.intro__container--about,
   div.intro__container--receive {
     display: none;
+  }
+
+  .intro__container--btnTwo {
+    display: inline-block;
+    margin-top: 3rem;
   }
 
   p.founder__text--paragraph {

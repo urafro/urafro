@@ -587,6 +587,21 @@ a {
       margin-bottom: 1rem;
       font-size: 1.5rem;
       width: 80%;
+
+      &Link {
+        &:link,
+        &:visited {
+          color: $color-black;
+          text-decoration: underline;
+          text-decoration-color: $color-primary-red;
+          text-decoration-thickness: .2rem;
+        }
+
+        &:active,
+        &:hover {
+          opacity: .7;
+        }
+      }
     }
 
     &--image {
@@ -595,6 +610,10 @@ a {
 
     &--btn {
       margin-top: 1.5rem;
+
+      &Two {
+        display: none;
+      }
     }
 
     /* smaller nested containers */
@@ -605,14 +624,8 @@ a {
     &--give {
       flex: 1;
 
-      a {
-        &:link,
-        &:visited {
-          color: $color-black;
-          text-decoration: underline;
-          text-decoration-color: $color-primary-red;
-          text-decoration-thickness: .2rem;
-        }
+      .intro__container--btnTwo  {
+        text-decoration: none;
       }
     }
 
