@@ -97,6 +97,10 @@
     height: 20rem;
   }
 
+  .about__text--phrase {
+    width: 60%;
+  }
+
   p.founder__text--paragraph {
     font-size: 1.2rem;
   }
