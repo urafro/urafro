@@ -149,6 +149,7 @@
 
   .greeting__box {
     margin-left: 3rem;
+    margin-top: 8vh;
   }
 
   .greeting__box--heading {
