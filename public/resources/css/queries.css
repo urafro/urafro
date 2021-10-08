@@ -89,6 +89,14 @@
     margin-top: 3rem;
   }
 
+  .about {
+    flex-direction: column;
+  }
+
+  .about__image--img {
+    height: 20rem;
+  }
+
   p.founder__text--paragraph {
     font-size: 1.2rem;
   }
