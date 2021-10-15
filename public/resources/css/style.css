@@ -556,6 +556,8 @@ a {
       width: 80%;
       padding-top: 3rem;
       line-height: 1.3; }
+    .about__text--btn {
+      margin-top: 3rem; }
 
 /* ===============
       founder
