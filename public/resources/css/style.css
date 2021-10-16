@@ -565,16 +565,16 @@ a {
 .founder {
   display: flex;
   align-items: center;
-  background-color: #FFC03D;
+  background-color: #ffe6e2;
   align-items: center; }
   .founder__text {
     flex: 1;
     flex-basis: 50%;
     padding-left: 6.5rem;
-    border-left: 0.5rem solid #FF2525; }
+    border-left: 0.5rem solid #FFF; }
     .founder__text--mainHeading {
       margin-bottom: 3rem;
-      font-weight: 300;
+      font-weight: 600;
       font-size: 4rem;
       letter-spacing: .1rem; }
       .founder__text--mainHeading::after {
@@ -600,11 +600,12 @@ a {
       letter-spacing: .1rem;
       line-height: 1.5; }
       .founder__text--paragraph a:link, .founder__text--paragraph a:visited {
-        color: #FFF;
-        transition: color .2s; }
+        color: #100c08;
+        transition: color .2s;
+        text-decoration: underline; }
       .founder__text--paragraph a:hover, .founder__text--paragraph a:active {
         color: #100c08;
-        text-decoration: underline; }
+        opacity: .7; }
   .founder__image {
     flex: 1;
     align-self: center;

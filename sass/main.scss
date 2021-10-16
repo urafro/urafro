@@ -6,6 +6,7 @@ $color-primary-light: #f9f9f9;
 $color-primary-red: #FF2525;
 $color-primary-brown: #FFC03D;
 $color-secondary-brown: #cf920d;
+$color-background-light: rgb(255, 230, 226);
 
 $color-white: #FFF;
 $color-black: #100c08;
@@ -795,18 +796,18 @@ a {
 .founder {
   display: flex;
   align-items: center;
-  background-color: $color-primary-brown;
+  background-color: $color-background-light;
   align-items: center;
 
   &__text {
     flex: 1;
     flex-basis: 50%;
     padding-left: 6.5rem;
-    border-left: .5rem solid $color-primary-red;
+    border-left: .5rem solid $color-white;
 
     &--mainHeading {
       margin-bottom: 3rem;
-      font-weight: 300;
+      font-weight: 600;
       font-size: 4rem;
       letter-spacing: .1rem;
 
@@ -841,14 +842,15 @@ a {
       & a {
         &:link,
         &:visited {
-          color: $color-white;
+          color: $color-black;
           transition: color .2s;
+          text-decoration: underline;
         }
 
         &:hover,
         &:active {
           color: $color-black;
-          text-decoration: underline;
+          opacity: .7;
         }
       }
     }
