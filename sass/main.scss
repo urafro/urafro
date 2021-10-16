@@ -937,34 +937,34 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
-}
 
-.postsBox__head--title {
-  display: flex;
-  align-items: center;
-}
-
-.postsBox__head--titleEmpty {
-  height: .8rem;
-  width: .8rem;
-  background-color: $color-black;
-  border-radius: 50%;
-  margin-right: 1rem;
-  opacity: .8;
-}
-
-.postsBox__head--titleText {
-  font-size: 1.5rem;
-  opacity: .5;
-  letter-spacing: .1rem;
-  word-spacing: .1rem;
-}
-
-.postsBox__head--titleTextTwo {
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
-  word-spacing: .1rem;
-  opacity: .5;
+  &--title {
+    display: flex;
+    align-items: center;
+    
+    &Empty {
+      height: .8rem;
+      width: .8rem;
+      background-color: $color-black;
+      border-radius: 50%;
+      margin-right: 1rem;
+      opacity: .8;
+    }
+    
+    &Text {
+      font-size: 1.5rem;
+      opacity: .5;
+      letter-spacing: .1rem;
+      word-spacing: .1rem;
+    }
+    
+    &TextTwo {
+      font-size: 1.2rem;
+      letter-spacing: .1rem;
+      word-spacing: .1rem;
+      opacity: .5;
+    }
+  }
 }
 
 .postsBox__image--img {
