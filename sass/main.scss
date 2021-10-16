@@ -911,13 +911,18 @@ a {
     services
 =============== */
 
-.services__head {
-  margin: 20rem 0 20rem 10rem;
+.services {
+
+  &__head {
+    margin: 20rem 0 20rem 10rem;
+
+    &--title {
+      font-size: 5rem;
+    }
+  }
 }
 
-.services__head--title {
-  font-size: 5rem;
-}
+
 
 /* ================
     testimonials
