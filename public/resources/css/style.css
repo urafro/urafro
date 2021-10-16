@@ -559,22 +559,11 @@ a {
     .about__text--btn {
       margin-top: 3rem; }
 
-/* ===============
-      breaker
-================ */
-.breaker {
-  width: 100%;
-  background-image: url("/resources/img/breakerTwo.jpg");
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
-  background-attachment: fixed; }
-
 /* ==============
     services
 =============== */
 .services__head {
-  margin: 20rem 0 20rem 10rem; }
+  padding: 20rem 0 20rem 10rem; }
   .services__head--title {
     font-size: 5rem; }
 
@@ -626,6 +615,20 @@ a {
   word-spacing: .1rem;
   margin-bottom: 5rem;
   width: 87%; }
+
+.developers {
+  background-color: #f9f9f9; }
+
+/* ===============
+      breaker
+================ */
+.breaker {
+  width: 100%;
+  background-image: url("/resources/img/breakerTwo.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed; }
 
 /* ================
     testimonials

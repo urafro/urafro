@@ -790,17 +790,7 @@ a {
   }
 }
 
-/* ===============
-      breaker
-================ */
-.breaker {
-  width: 100%;
-  background-image: url("/resources/img/breakerTwo.jpg");
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
-  background-attachment: fixed;
-}
+
 
 /* ==============
     services
@@ -809,7 +799,7 @@ a {
 .services {
 
   &__head {
-    margin: 20rem 0 20rem 10rem;
+    padding: 20rem 0 20rem 10rem;
 
     &--title {
       font-size: 5rem;
@@ -880,6 +870,28 @@ a {
   margin-bottom: 5rem;
   width: 87%;
 }
+
+
+
+.developers {
+  background-color: $color-primary-light;
+}
+
+
+
+/* ===============
+      breaker
+================ */
+.breaker {
+  width: 100%;
+  background-image: url("/resources/img/breakerTwo.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
 
 /* ================
     testimonials
