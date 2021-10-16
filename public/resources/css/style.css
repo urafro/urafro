@@ -639,41 +639,13 @@ a {
       margin-right: .5rem; }
 
 /* ==============
-    our numbers
+    services
 =============== */
-.numbers {
-  padding: 5rem 0 10rem 0;
-  text-align: center; }
-  .numbers__main--heading {
-    margin-bottom: 2rem; }
-    .numbers__main--heading::after {
-      display: block;
-      height: .1rem;
-      width: 10rem;
-      content: " ";
-      background-color: rgba(255, 37, 37, 0.3);
-      margin: 0 auto;
-      position: relative;
-      top: 3rem; }
-  .numbers__boxes {
-    margin: 0 auto;
-    width: 60%;
-    text-align: center; }
-    .numbers__boxes--digit {
-      margin-top: 5rem;
-      color: #FF2525;
-      font-size: 8rem;
-      font-weight: 900;
-      font-family: "Caveat", cursive; }
-    .numbers__boxes--icon {
-      font-size: 2rem;
-      margin-right: 2rem;
-      color: rgba(255, 192, 61, 0.7); }
-    .numbers__boxes--title {
-      font-size: 1.1rem;
-      display: inline-block;
-      color: #FF2525;
-      font-weight: 400; }
+.services__head {
+  margin: 20rem 0 20rem 10rem; }
+
+.services__head--title {
+  font-size: 5rem; }
 
 /* ================
     testimonials

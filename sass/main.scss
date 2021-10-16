@@ -908,54 +908,15 @@ a {
 }
 
 /* ==============
-    our numbers
+    services
 =============== */
 
-.numbers {
-  padding: 5rem 0 10rem 0;
-  text-align: center;
+.services__head {
+  margin: 20rem 0 20rem 10rem;
+}
 
-  &__main--heading {
-    margin-bottom: 2rem;
-
-    &::after {
-      display: block;
-      height: .1rem;
-      width: 10rem;
-      content: " ";
-      background-color: rgba($color-primary-red, .3);
-      margin: 0 auto;
-      position: relative;
-      top: 3rem;
-    }
-  }
-
-  &__boxes {
-    margin: 0 auto;
-    width: 60%;
-    text-align: center;
-
-    &--digit {
-      margin-top: 5rem;
-      color: $color-primary-red;
-      font-size: 8rem;
-      font-weight: 900;
-      font-family: "Caveat", cursive;
-    }
-
-    &--icon {
-      font-size: 2rem;
-      margin-right: 2rem;
-      color: rgba($color-primary-brown, .7);
-    }
-
-    &--title {
-      font-size: 1.1rem;
-      display: inline-block;
-      color: $color-primary-red;
-      font-weight: 400;
-    }
-  }
+.services__head--title {
+  font-size: 5rem;
 }
 
 /* ================
