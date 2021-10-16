@@ -643,11 +643,10 @@ a {
         height: .1rem;
         background-color: #100c08;
         font-weight: 400; }
-
-.posts__boxes {
-  display: flex;
-  margin: 5rem 10rem;
-  justify-content: space-between; }
+  .posts__boxes {
+    display: flex;
+    margin: 5rem 10rem;
+    justify-content: space-between; }
 
 .postsBox {
   display: flex;
@@ -663,48 +662,45 @@ a {
   .postsBox:active, .postsBox:hover {
     transform: scale(1.01);
     box-shadow: 0 1.5rem 1.5rem rgba(16, 12, 8, 0.1); }
-
-.postsBox__head {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5rem; }
-  .postsBox__head--title {
+  .postsBox__head {
     display: flex;
-    align-items: center; }
-    .postsBox__head--titleEmpty {
-      height: .8rem;
-      width: .8rem;
-      background-color: #100c08;
-      border-radius: 50%;
-      margin-right: 1rem;
-      opacity: .8; }
-    .postsBox__head--titleText {
-      font-size: 1.5rem;
-      opacity: .5;
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+    .postsBox__head--title {
+      display: flex;
+      align-items: center; }
+      .postsBox__head--titleEmpty {
+        height: .8rem;
+        width: .8rem;
+        background-color: #100c08;
+        border-radius: 50%;
+        margin-right: 1rem;
+        opacity: .8; }
+      .postsBox__head--titleText {
+        font-size: 1.5rem;
+        opacity: .5;
+        letter-spacing: .1rem;
+        word-spacing: .1rem; }
+      .postsBox__head--titleTextTwo {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        word-spacing: .1rem;
+        opacity: .5; }
+  .postsBox__body {
+    margin-bottom: 5rem; }
+    .postsBox__body--title {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
       letter-spacing: .1rem;
-      word-spacing: .1rem; }
-    .postsBox__head--titleTextTwo {
-      font-size: 1.2rem;
+      word-spacing: .1rem;
+      width: 90%; }
+    .postsBox__body--paragraph {
+      font-size: 1.5rem;
       letter-spacing: .1rem;
       word-spacing: .1rem;
       opacity: .5; }
-
-.postsBox__body {
-  margin-bottom: 5rem; }
-  .postsBox__body--title {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-    letter-spacing: .1rem;
-    word-spacing: .1rem;
-    width: 90%; }
-  .postsBox__body--paragraph {
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-    word-spacing: .1rem;
-    opacity: .5; }
-
-.postsBox__image--img {
-  width: 100%; }
+  .postsBox__image--img {
+    width: 100%; }
 
 /* ================
     testimonials
