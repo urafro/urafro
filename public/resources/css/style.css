@@ -663,6 +663,8 @@ a {
   height: 65rem; }
   .servicesBox__image--imgTwo {
     height: 85rem; }
+  .servicesBox__image--imgThree {
+    height: 75rem; }
 
 .servicesBox__text {
   padding: 10rem 10rem; }
