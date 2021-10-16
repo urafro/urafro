@@ -626,7 +626,8 @@ a {
       posts
 ================ */
 .posts {
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  padding-bottom: 20rem; }
   .posts__head {
     padding: 20rem 10rem 0 10rem; }
     .posts__head--heading {
