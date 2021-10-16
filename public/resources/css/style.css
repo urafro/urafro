@@ -678,6 +678,10 @@ a {
     background-color: #100c08;
     font-weight: 400; }
 
+.servicesBox__text--headBig {
+  font-size: 6rem;
+  margin: 5rem 0; }
+
 /* ================
     testimonials
 ================= */
