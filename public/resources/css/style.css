@@ -650,6 +650,10 @@ a {
   justify-content: space-between; }
 
 .postsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70rem;
   max-width: 49%;
   padding: 3rem;
   color: #100c08;
@@ -682,12 +686,13 @@ a {
       opacity: .5; }
 
 .postsBox__body {
-  margin-bottom: 8rem; }
+  margin-bottom: 5rem; }
   .postsBox__body--title {
     font-size: 3.5rem;
     margin-bottom: 2rem;
     letter-spacing: .1rem;
-    word-spacing: .1rem; }
+    word-spacing: .1rem;
+    width: 90%; }
   .postsBox__body--paragraph {
     font-size: 1.5rem;
     letter-spacing: .1rem;
