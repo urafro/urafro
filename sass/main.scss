@@ -826,7 +826,10 @@ a {
 
 .servicesBox__image--img  {
   width: 100%;
-  height: 65rem;
+  
+  &One {
+    height: 75rem;
+  }
 
   &Two {
     height: 85rem;
