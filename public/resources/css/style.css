@@ -560,84 +560,8 @@ a {
       margin-top: 3rem; }
 
 /* ===============
-      founder
+      breaker
 ================ */
-.founder {
-  display: flex;
-  align-items: center;
-  background-color: #ffe6e2;
-  align-items: center; }
-  .founder__text {
-    flex: 1;
-    flex-basis: 50%;
-    padding-left: 6.5rem;
-    border-left: 0.5rem solid #FFF; }
-    .founder__text--mainHeading {
-      margin-bottom: 3rem;
-      font-weight: 600;
-      font-size: 4rem;
-      letter-spacing: .1rem; }
-      .founder__text--mainHeading::after {
-        display: block;
-        position: relative;
-        top: 2rem;
-        background-color: rgba(16, 12, 8, 0.1);
-        width: 2rem;
-        height: .5rem;
-        content: " ";
-        border-top-left-radius: .3rem;
-        border-top-right-radius: .3rem; }
-    .founder__text--subHeading {
-      font-size: 2rem;
-      margin-left: 1rem;
-      color: #100c08;
-      opacity: .5; }
-    .founder__text--paragraph {
-      color: #100c08;
-      font-size: initial;
-      width: 90%;
-      margin-bottom: 2rem;
-      letter-spacing: .1rem;
-      line-height: 1.5; }
-      .founder__text--paragraph a:link, .founder__text--paragraph a:visited {
-        color: #100c08;
-        transition: color .2s;
-        text-decoration: underline; }
-      .founder__text--paragraph a:hover, .founder__text--paragraph a:active {
-        color: #100c08;
-        opacity: .7; }
-    .founder__text--btn {
-      margin-top: 2rem; }
-  .founder__image {
-    flex: 1;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 50%; }
-    .founder__image--img {
-      width: 100%; }
-    .founder__image a:link, .founder__image a:visited {
-      transition: background-color 1s;
-      font-size: 2rem; }
-    .founder__image a:hover, .founder__image a:active {
-      background-color: rgba(249, 249, 249, 0.1); }
-    .founder__image--mainHeading {
-      font-size: 1.7;
-      font-weight: 400;
-      color: #FFF;
-      padding: 3rem;
-      border: 0.1rem solid #FFF;
-      border-radius: .2rem; }
-    .founder__image--subHeading {
-      color: #FFF;
-      opacity: .5;
-      text-transform: uppercase;
-      font-size: .5rem;
-      font-weight: 400;
-      letter-spacing: .05rem;
-      margin-right: .5rem; }
-
 /* ==============
     services
 =============== */
