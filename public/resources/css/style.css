@@ -650,7 +650,9 @@ a {
 
 .postsBox {
   max-width: 49%;
-  padding: 3rem; }
+  padding: 3rem;
+  background-color: #FFF;
+  box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1); }
 
 .postsBox__head {
   display: flex;
