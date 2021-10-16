@@ -922,6 +922,26 @@ a {
   }
 }
 
+.services__boxes {
+  width: 100vw;
+}
+
+.servicesBox {
+  display: flex;
+}
+
+.servicesBox__text {
+  flex-basis: 40%;
+}
+
+.servicesBox__image {
+  flex-basis: 60%;
+}
+
+.servicesBox__image--img  {
+  width: 100%;
+}
+
 
 
 /* ================
