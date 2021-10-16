@@ -562,6 +562,14 @@ a {
 /* ===============
       breaker
 ================ */
+.breaker {
+  width: 100%;
+  background-image: url("/resources/img/breakerTwo.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed; }
+
 /* ==============
     services
 =============== */
