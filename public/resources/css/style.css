@@ -652,7 +652,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70rem;
   max-width: 49%;
   padding: 3rem;
   color: #100c08;
