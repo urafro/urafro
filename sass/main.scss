@@ -896,26 +896,26 @@ a {
 ================ */
 .posts {
   background-color: $color-primary-light;
-}
 
-.posts__head {
-  padding: 20rem 10rem 0 10rem;
-}
-
-.posts__head--heading {
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  word-spacing: .1rem;
-
-  &::before {
-    display: block;
-    content: "";
-    position: relative;
-    bottom: .8rem;
-    width: 1rem;
-    height: .1rem;
-    background-color: $color-black;
-    font-weight: 400;
+  &__head {
+    padding: 20rem 10rem 0 10rem;
+  
+    &--heading {
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      word-spacing: .1rem;
+    
+      &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: .8rem;
+        width: 1rem;
+        height: .1rem;
+        background-color: $color-black;
+        font-weight: 400;
+      }
+    }
   }
 }
 
