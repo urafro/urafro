@@ -606,6 +606,8 @@ a {
       .founder__text--paragraph a:hover, .founder__text--paragraph a:active {
         color: #100c08;
         opacity: .7; }
+    .founder__text--btn {
+      margin-top: 2rem; }
   .founder__image {
     flex: 1;
     align-self: center;
