@@ -919,6 +919,25 @@ a {
   }
 }
 
+.posts__boxes {
+  display: flex;
+  margin: 5rem 10rem;
+  justify-content: space-between;
+}
+
+.postsBox {
+  max-width: 49%;
+  padding: 3rem;
+}
+
+.postsBox__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postsBox__image--img {
+  width: 50rem;
+}
 
 /* ================
     testimonials
