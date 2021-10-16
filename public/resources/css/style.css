@@ -650,7 +650,8 @@ a {
   width: 100vw; }
 
 .servicesBox {
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .servicesBox__text {
   flex-basis: 40%; }
