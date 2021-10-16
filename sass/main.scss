@@ -936,6 +936,13 @@ a {
   color: $color-black;
   background-color: $color-white;
   box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+  transition: all .5s;
+
+  &:active,
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 1.5rem 1.5rem rgba($color-black, .1);
+  }
 }
 
 .postsBox__head {

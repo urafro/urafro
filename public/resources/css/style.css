@@ -658,7 +658,11 @@ a {
   padding: 3rem;
   color: #100c08;
   background-color: #FFF;
-  box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1); }
+  box-shadow: 0 0.5rem 1.5rem rgba(16, 12, 8, 0.1);
+  transition: all .5s; }
+  .postsBox:active, .postsBox:hover {
+    transform: scale(1.01);
+    box-shadow: 0 1.5rem 1.5rem rgba(16, 12, 8, 0.1); }
 
 .postsBox__head {
   display: flex;
