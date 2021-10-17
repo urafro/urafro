@@ -72,6 +72,20 @@
     font-size: 7.5rem;
   }
 
+  /* servicesBox */
+  .servicesBox__image--imgOne {
+    height: 65rem;
+  }
+
+  .servicesBox__image--imgThree {
+    height: 58rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 2.5rem;
+  }
+
 }
 
 /* Small Screens and Laptops: 769px to 1024px */
