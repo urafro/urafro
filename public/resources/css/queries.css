@@ -37,8 +37,26 @@
     font-size: 10px;
   }
 
+  .brand {
+    font-size: 2rem;
+  }
+
   .greeting__box--heading {
     font-size: 7rem;
+  }
+
+  /* servicesBox */
+  .servicesBox__image--imgOne {
+    height: 63rem;
+  }
+
+  .servicesBox__image--imgThree {
+    height: 60rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
 }
