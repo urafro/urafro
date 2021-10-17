@@ -17,6 +17,16 @@
   .greeting__box--heading {
     font-size: 7rem;
   }
+
+  /* servicesBox */
+  .servicesBox__text--headBig {
+    font-size: 5rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 3rem;
+  }
   
 }
 
