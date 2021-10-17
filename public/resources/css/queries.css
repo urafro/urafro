@@ -232,28 +232,36 @@
     width: 70%;
   }
 
-  section.founder {
-    display: none;
+  /* servicesBox */
+  .services__head {
+    padding: 15rem 0 15rem 8rem;
   }
 
-  p.testimonials__box--paragraph::before {
-    font-size: 5rem;
+  .services__head--title {
+    font-size: 3.5rem;
   }
 
-  section.newsletter {
-    margin-top: -5rem;
+  .servicesBox__text {
+    padding: 5rem;
   }
 
-  h2.newsletter__content--mainHeading {
-    font-size: 4rem;
+  .servicesBox__text--headBig {
+    font-size: 3.5rem;
+    margin: 4rem 0;
   }
 
-  p.newsletter__content--subHeading {
-    font-size: 2rem;
+  /* postsBox */
+  .posts__boxes {
+    flex-direction: column;
   }
 
-  input.newsletter__content--email {
-    width: 40rem;
+  .postsBox {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
   section.contact {
