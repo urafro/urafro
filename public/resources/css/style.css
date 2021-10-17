@@ -565,7 +565,9 @@ a {
 .services__head {
   padding: 20rem 0 20rem 10rem; }
   .services__head--title {
-    font-size: 5rem; }
+    font-size: 5rem;
+    letter-spacing: .1rem;
+    word-spacing: .1rem; }
 
 .services__boxes {
   width: 100vw; }

@@ -143,16 +143,18 @@
     width: 60%;
   }
 
-  p.founder__text--paragraph {
-    font-size: 1.2rem;
+  /* servicesBox */
+  .services__head--title {
+    font-size: 4rem;
   }
 
-  section.numbers {
-    padding-bottom: 5rem;
+  .servicesBox__text {
+    padding: 5rem;
   }
 
-  div.numbers__boxes {
-    width: 75%;
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
   div.testimonials__boxes {
