@@ -17,6 +17,16 @@
   .greeting__box--heading {
     font-size: 7rem;
   }
+
+  /* servicesBox */
+  .servicesBox__text--headBig {
+    font-size: 5rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 3rem;
+  }
   
 }
 
@@ -27,8 +37,26 @@
     font-size: 10px;
   }
 
+  .brand {
+    font-size: 2rem;
+  }
+
   .greeting__box--heading {
     font-size: 7rem;
+  }
+
+  /* servicesBox */
+  .servicesBox__image--imgOne {
+    height: 63rem;
+  }
+
+  .servicesBox__image--imgThree {
+    height: 60rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
 }
@@ -42,6 +70,20 @@
 
   .greeting__box--heading {
     font-size: 7.5rem;
+  }
+
+  /* servicesBox */
+  .servicesBox__image--imgOne {
+    height: 65rem;
+  }
+
+  .servicesBox__image--imgThree {
+    height: 58rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
 }
@@ -101,16 +143,18 @@
     width: 60%;
   }
 
-  p.founder__text--paragraph {
-    font-size: 1.2rem;
+  /* servicesBox */
+  .services__head--title {
+    font-size: 4rem;
   }
 
-  section.numbers {
-    padding-bottom: 5rem;
+  .servicesBox__text {
+    padding: 5rem;
   }
 
-  div.numbers__boxes {
-    width: 75%;
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
   div.testimonials__boxes {
@@ -188,28 +232,36 @@
     width: 70%;
   }
 
-  section.founder {
-    display: none;
+  /* servicesBox */
+  .services__head {
+    padding: 15rem 0 15rem 8rem;
   }
 
-  p.testimonials__box--paragraph::before {
-    font-size: 5rem;
+  .services__head--title {
+    font-size: 3.5rem;
   }
 
-  section.newsletter {
-    margin-top: -5rem;
+  .servicesBox__text {
+    padding: 5rem;
   }
 
-  h2.newsletter__content--mainHeading {
-    font-size: 4rem;
+  .servicesBox__text--headBig {
+    font-size: 3.5rem;
+    margin: 4rem 0;
   }
 
-  p.newsletter__content--subHeading {
-    font-size: 2rem;
+  /* postsBox */
+  .posts__boxes {
+    flex-direction: column;
   }
 
-  input.newsletter__content--email {
-    width: 40rem;
+  .postsBox {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .postsBox__body--title {
+    font-size: 2.5rem;
   }
 
   section.contact {
@@ -369,39 +421,67 @@
     height: 12.5rem;
   }
 
-  h5.numbers__boxes--title {
-    font-weight: 300;
-    font-size: 1.5rem;
+  /* servicesBox */
+  .services__head {
+    padding-left: 4.5rem;
   }
 
-  i.numbers__boxes--icon {
-    display: none;
+  .services__head--title {
+    font-size: 2.3rem;
   }
 
-  div.testimonials__boxes {
+  .servicesBox {
     flex-direction: column;
   }
 
-  div.testimonials__box {
-    width: 100%;
+  .servicesBox__text {
+    order: 2;
   }
 
-  p.testimonials__box--paragraph {
-    margin-bottom: 1rem;
-    width: 80%;
+  .servicesBox__image {
+    order: 1;
   }
 
-  h3.testimonials__box--name {
-    margin-bottom: 1rem;
+  .servicesBox__image--img {
+    height: 36rem;
   }
 
-  input.newsletter__content--email {
-    width: 35rem;
+  .servicesBox__image--imgThree {
+    height: 40rem;
   }
 
+  /* shortCta */
+  .shortCta {
+    background-color: #f9f9f9;
+  }
+
+  /* breaker */
+  .breaker {
+    height: 50vh;
+  }
+
+  /* postsBoxes */
+  .posts__head {
+    padding-left: 4rem;
+  }
+
+  .posts__boxes {
+    margin: 5rem 4rem;
+  }
+
+  /* socials */
+  div.socials__boxes {
+    width: 90%;
+  }
+
+  /* contact form */
   div.contact--form {
     flex-direction: column;
     width: 90%;
+  }
+
+  .card__txt--desc {
+    font-size: 1.6rem;
   }
 
   /* blog app styles */
@@ -500,6 +580,10 @@
   .greeting__box .btn-ghost {
     margin-left: 0;
     margin-top: 3rem;
+  }
+
+  .services__head--title {
+    font-size: 2rem;
   }
 }
 
