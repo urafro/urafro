@@ -2820,3 +2820,56 @@ form submit buttons
     font-size: 1.3rem;
   }
 }
+
+
+
+
+
+
+
+/*
+E-COMMERCE STYLES
+
+
+SME templates first
+*/
+
+.smeNavItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  list-style-type: none;
+}
+
+.smeNavItems__links {
+  display: flex;
+  align-items: center;
+}
+
+.smeNavItems__links--li {
+  list-style-type: none;
+}
+
+.smeNavItems__links--link {
+  color: $color-black;
+}
+
+.smeNavItems__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.smeNavItems__brand--link {
+  color: $color-black;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.smeNavItems__brand--country {
+  align-self: flex-end;
+  display: inline-block;
+  position: relative;
+  bottom: .5rem;
+  letter-spacing: .1rem;
+}
