@@ -2018,13 +2018,14 @@ SME templates first
 
 .smeIntro {
   width: 100vw;
-  height: 80vh;
-  background-image: url("https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2970&q=80");
+  height: 75vh;
+  background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.5)), url("/resources/img/smeIntro-min.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 5rem; }
+  padding: 5rem;
+  color: #FFF; }
   .smeIntro__header, .smeIntro__body, .smeIntro__form, .smeIntro__disclaimer {
     width: 30%; }
   .smeIntro__header {
@@ -2037,7 +2038,8 @@ SME templates first
   .smeIntro__body--paragraph {
     font-size: 2rem;
     margin-bottom: 4rem;
-    letter-spacing: .05rem; }
+    letter-spacing: .05rem;
+    word-spacing: .1rem; }
   .smeIntro__form {
     display: flex;
     flex-direction: column;
@@ -2045,17 +2047,23 @@ SME templates first
     .smeIntro__form--input {
       padding: 2rem;
       background-color: transparent;
-      border: 0.1rem solid #100c08;
+      border: 0.1rem solid #FFF;
       border-radius: .5rem;
-      margin-bottom: .5rem; }
+      margin-bottom: .5rem;
+      color: #FFF; }
+      .smeIntro__form--input:focus {
+        outline: none; }
     .smeIntro__form--input::placeholder {
-      letter-spacing: .1rem; }
+      letter-spacing: .1rem;
+      color: #FFF;
+      opacity: .8; }
     .smeIntro__form--btn {
       align-self: flex-start;
       cursor: pointer;
       letter-spacing: .1rem;
       border-radius: .5rem;
-      border: 0.1rem solid #100c08; }
+      border: 0.1rem solid #FFF;
+      padding: 1.5rem 2rem; }
   .smeIntro__disclaimer--paragraph {
     font-size: 1.3rem;
     word-spacing: .1rem; }

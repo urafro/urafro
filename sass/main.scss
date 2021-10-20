@@ -2904,13 +2904,14 @@ SME templates first
 
 .smeIntro {
   width: 100vw;
-  height: 80vh;
-  background-image: url("https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2970&q=80");
+  height: 75vh;
+  background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .5)), url("/resources/img/smeIntro-min.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 5rem;
+  color: $color-white;
 
   &__header,
   &__body,
@@ -2934,6 +2935,7 @@ SME templates first
     font-size: 2rem;
     margin-bottom: 4rem;
     letter-spacing: .05rem;
+    word-spacing: .1rem;
   }
 
   &__form {
@@ -2944,13 +2946,20 @@ SME templates first
     &--input {
       padding: 2rem;
       background-color: transparent;
-      border: .1rem solid $color-black;
+      border: .1rem solid $color-white;
       border-radius: .5rem;
       margin-bottom: .5rem;
+      color: $color-white;
+
+      &:focus {
+        outline: none;
+      }
     }
     
     &--input::placeholder {
       letter-spacing: .1rem;
+      color: $color-white;
+      opacity: .8;
     }
 
     &--btn {
@@ -2958,7 +2967,8 @@ SME templates first
       cursor: pointer;
       letter-spacing: .1rem;
       border-radius: .5rem;
-      border: .1rem solid $color-black;
+      border: .1rem solid $color-white;
+      padding: 1.5rem 2rem;
     }
   }
 
