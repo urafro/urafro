@@ -2997,4 +2997,22 @@ smeFeatures
 
 .smeFeatures__boxes {
   background-color: $color-white;
+  padding: 3rem 5rem;
+}
+
+.smeFbox {
+  display: flex;
+}
+
+.smeFbox__text {
+  flex-basis: 50%;
+}
+
+.smeFbox__image {
+  flex-basis: 50%;
+}
+
+.smeFbox__image--img {
+  width: 100%;
+  border-radius: .5rem;
 }
