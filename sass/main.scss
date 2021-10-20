@@ -2933,13 +2933,14 @@ SME templates first
 
 .smeIntro__body--paragraph {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   letter-spacing: .05rem;
 }
 
 .smeIntro__form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .smeIntro__form--input {
@@ -2959,4 +2960,10 @@ SME templates first
   cursor: pointer;
   letter-spacing: .1rem;
   border-radius: .5rem;
+  border: .1rem solid $color-black;
+}
+
+.smeIntro__disclaimer--paragraph {
+  font-size: 1.3rem;
+  word-spacing: .1rem;
 }

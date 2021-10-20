@@ -2043,12 +2043,13 @@ SME templates first
 
 .smeIntro__body--paragraph {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   letter-spacing: .05rem; }
 
 .smeIntro__form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 3rem; }
 
 .smeIntro__form--input {
   padding: 2rem;
@@ -2064,4 +2065,9 @@ SME templates first
   align-self: flex-start;
   cursor: pointer;
   letter-spacing: .1rem;
-  border-radius: .5rem; }
+  border-radius: .5rem;
+  border: 0.1rem solid #100c08; }
+
+.smeIntro__disclaimer--paragraph {
+  font-size: 1.3rem;
+  word-spacing: .1rem; }
