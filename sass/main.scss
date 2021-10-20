@@ -2913,7 +2913,10 @@ SME templates first
   padding: 5rem;
 }
 
-.smeIntro__header {
+.smeIntro__header,
+.smeIntro__body,
+.smeIntro__form,
+.smeIntro__disclaimer {
   width: 30%;
 }
 
