@@ -2025,49 +2025,37 @@ SME templates first
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 5rem; }
-
-.smeIntro__header,
-.smeIntro__body,
-.smeIntro__form,
-.smeIntro__disclaimer {
-  width: 30%; }
-
-.smeIntro__header {
-  margin: 0 0 3rem; }
-
-.smeIntro__header--main {
-  font-size: 4.5rem;
-  font-weight: 600;
-  line-height: 155%;
-  word-spacing: .1rem; }
-
-.smeIntro__body--paragraph {
-  font-size: 2rem;
-  margin-bottom: 4rem;
-  letter-spacing: .05rem; }
-
-.smeIntro__form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem; }
-
-.smeIntro__form--input {
-  padding: 2rem;
-  background-color: transparent;
-  border: 0.1rem solid #100c08;
-  border-radius: .5rem;
-  margin-bottom: .5rem; }
-
-.smeIntro__form--input::placeholder {
-  letter-spacing: .1rem; }
-
-.smeIntro__form--btn {
-  align-self: flex-start;
-  cursor: pointer;
-  letter-spacing: .1rem;
-  border-radius: .5rem;
-  border: 0.1rem solid #100c08; }
-
-.smeIntro__disclaimer--paragraph {
-  font-size: 1.3rem;
-  word-spacing: .1rem; }
+  .smeIntro__header, .smeIntro__body, .smeIntro__form, .smeIntro__disclaimer {
+    width: 30%; }
+  .smeIntro__header {
+    margin: 0 0 3rem; }
+    .smeIntro__header--main {
+      font-size: 4.5rem;
+      font-weight: 600;
+      line-height: 155%;
+      word-spacing: .1rem; }
+  .smeIntro__body--paragraph {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    letter-spacing: .05rem; }
+  .smeIntro__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem; }
+    .smeIntro__form--input {
+      padding: 2rem;
+      background-color: transparent;
+      border: 0.1rem solid #100c08;
+      border-radius: .5rem;
+      margin-bottom: .5rem; }
+    .smeIntro__form--input::placeholder {
+      letter-spacing: .1rem; }
+    .smeIntro__form--btn {
+      align-self: flex-start;
+      cursor: pointer;
+      letter-spacing: .1rem;
+      border-radius: .5rem;
+      border: 0.1rem solid #100c08; }
+  .smeIntro__disclaimer--paragraph {
+    font-size: 1.3rem;
+    word-spacing: .1rem; }
