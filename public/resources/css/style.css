@@ -2115,3 +2115,10 @@ smeFeatures
   font-size: 4rem;
   width: 60%;
   margin: 3rem 0 2rem; }
+
+.smeFbox__text--paragraph {
+  font-size: 1.5rem;
+  width: 70%;
+  margin-bottom: 2rem;
+  line-height: 160%;
+  word-spacing: .1rem; }
