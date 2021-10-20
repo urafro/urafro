@@ -2849,10 +2849,33 @@ SME templates first
 
 .smeNavItems__links--li {
   list-style-type: none;
+  margin: 0 2rem;
+  font-weight: 400;
+}
+
+.smeNavItems__links--number {
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  opacity: .8;
 }
 
 .smeNavItems__links--link {
   color: $color-black;
+  font-size: 1.8rem;
+  transition: all .5s;
+
+  &:link,
+  &:visited {
+    font-weight: 400;
+    opacity: .8;
+  }
+
+  &:active,
+  &:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
 }
 
 .smeNavItems__brand {
@@ -2872,4 +2895,9 @@ SME templates first
   position: relative;
   bottom: .5rem;
   letter-spacing: .1rem;
+}
+
+.smeNav--btn {
+  box-shadow: none;
+  margin-left: 2rem;
 }
