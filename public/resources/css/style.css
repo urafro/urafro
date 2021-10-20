@@ -2084,7 +2084,8 @@ smeFeatures
   padding: 3rem 5rem; }
 
 .smeFbox {
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .smeFbox__text {
   flex-basis: 50%; }
@@ -2095,3 +2096,17 @@ smeFeatures
 .smeFbox__image--img {
   width: 100%;
   border-radius: .5rem; }
+
+.smeFbox__text--small {
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase; }
+  .smeFbox__text--small::before {
+    display: block;
+    content: "";
+    position: relative;
+    bottom: .8rem;
+    width: 1rem;
+    height: .1rem;
+    background-color: #100c08;
+    font-weight: 400; }
