@@ -2078,3 +2078,6 @@ smeFeatures
     padding: 10rem 5rem; }
     .smeFeatures__head--title {
       font-size: 4rem; }
+
+.smeFeatures__boxes {
+  background-color: #FFF; }
