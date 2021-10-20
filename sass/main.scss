@@ -2982,11 +2982,15 @@ SME templates first
 /*
 smeFeatures
 */
-.smeFeatures__head {
-  width: 70%;
-  padding: 10rem 5rem;
+.smeFeatures {
+  background-color: $color-background-light;
 
-  &--title {
-    font-size: 4rem;
+  &__head {
+    width: 70%;
+    padding: 10rem 5rem;
+  
+    &--title {
+      font-size: 4rem;
+    }
   }
 }

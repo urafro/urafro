@@ -2071,8 +2071,10 @@ SME templates first
 /*
 smeFeatures
 */
-.smeFeatures__head {
-  width: 70%;
-  padding: 10rem 5rem; }
-  .smeFeatures__head--title {
-    font-size: 4rem; }
+.smeFeatures {
+  background-color: #ffe6e2; }
+  .smeFeatures__head {
+    width: 70%;
+    padding: 10rem 5rem; }
+    .smeFeatures__head--title {
+      font-size: 4rem; }
