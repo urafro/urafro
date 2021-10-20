@@ -2920,9 +2920,19 @@ SME templates first
   width: 30%;
 }
 
+.smeIntro__header {
+  margin: 0 0 3rem;
+}
+
 .smeIntro__header--main {
   font-size: 4.5rem;
   font-weight: 600;
   line-height: 155%;
   word-spacing: .1rem;
+}
+
+.smeIntro__body--paragraph {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: .05rem;
 }
