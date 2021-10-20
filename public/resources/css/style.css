@@ -2067,3 +2067,12 @@ SME templates first
   .smeIntro__disclaimer--paragraph {
     font-size: 1.3rem;
     word-spacing: .1rem; }
+
+/*
+smeFeatures
+*/
+.smeFeatures__head {
+  width: 70%;
+  padding: 10rem 5rem; }
+  .smeFeatures__head--title {
+    font-size: 4rem; }

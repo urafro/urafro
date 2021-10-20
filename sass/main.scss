@@ -2977,3 +2977,16 @@ SME templates first
     word-spacing: .1rem;
   }
 }
+
+
+/*
+smeFeatures
+*/
+.smeFeatures__head {
+  width: 70%;
+  padding: 10rem 5rem;
+
+  &--title {
+    font-size: 4rem;
+  }
+}
