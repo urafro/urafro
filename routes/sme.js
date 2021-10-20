@@ -6,7 +6,7 @@ const middleware = require("../middleware");
 
 //Index Route - show landing page for sme's
 router.get("/sme", (req, res) => {
-  res.send("Welcome to urafro's sme landing page");
+  res.render("sme/landing");
 });
 
 
