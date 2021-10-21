@@ -3003,9 +3003,14 @@ smeFeatures
 .smeFbox {
   display: flex;
   align-items: center;
+  margin-bottom: 6rem;
 
   &__text {
     flex-basis: 50%;
+
+    &Right {
+      padding-left: 15rem;
+    }
 
     &--small {
       font-size: 1.2rem;
@@ -3025,8 +3030,8 @@ smeFeatures
     }
     
     &--big {
-      font-size: 4rem;
-      width: 60%;
+      font-size: 5rem;
+      width: 70%;
       margin: 3rem 0 2rem;
     }
     
@@ -3036,6 +3041,10 @@ smeFeatures
       margin-bottom: 2rem;
       line-height: 160%;
       word-spacing: .1rem;
+
+      &Right {
+        width: 80%;
+      }
     }
   }
   
