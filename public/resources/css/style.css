@@ -2085,7 +2085,7 @@ smeFeatures
 .smeFbox {
   display: flex;
   align-items: center;
-  margin-bottom: 6rem; }
+  margin-bottom: 8rem; }
   .smeFbox__text {
     flex-basis: 50%; }
     .smeFbox__textRight {
