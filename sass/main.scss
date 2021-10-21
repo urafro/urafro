@@ -2946,10 +2946,11 @@ SME templates first
     &--input {
       padding: 2rem;
       background-color: transparent;
-      border: .1rem solid $color-white;
+      border: .05rem solid $color-white;
       border-radius: .5rem;
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
       color: $color-white;
+      border-radius: 5rem;
 
       &:focus {
         outline: none;
@@ -2965,10 +2966,10 @@ SME templates first
     &--btn {
       align-self: flex-start;
       cursor: pointer;
-      letter-spacing: .1rem;
-      border-radius: .5rem;
-      border: .1rem solid $color-white;
-      padding: 1.5rem 2rem;
+      border: none;
+      word-spacing: .1rem;
+      box-shadow: none;
+      text-transform: lowercase;
     }
   }
 
