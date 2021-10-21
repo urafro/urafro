@@ -3063,3 +3063,23 @@ smeFeatures
     }
   }
 }
+
+.smeBreaker {
+  background: $color-background-light;
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10rem 5rem;
+
+  &__header--main {
+    font-size: 5rem;
+    font-weight: 400;
+    word-spacing: .1rem;
+    margin-bottom: 3rem;
+  }
+  
+  &__paragraph--p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -2124,3 +2124,18 @@ smeFeatures
     .smeFbox__image--img {
       width: 100%;
       border-radius: .5rem; }
+
+.smeBreaker {
+  background: #ffe6e2;
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10rem 5rem; }
+  .smeBreaker__header--main {
+    font-size: 5rem;
+    font-weight: 400;
+    word-spacing: .1rem;
+    margin-bottom: 3rem; }
+  .smeBreaker__paragraph--p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
