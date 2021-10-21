@@ -2173,3 +2173,11 @@ smeFeatures
     word-spacing: .1rem; }
   .smeCta__button--btn {
     margin-left: -3rem; }
+
+.smeBreakerTwo {
+  background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.5)), url("https://images.unsplash.com/photo-1509100194014-d49809396daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFF; }
