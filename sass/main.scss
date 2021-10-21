@@ -3046,6 +3046,11 @@ smeFeatures
       &Right {
         width: 80%;
       }
+
+      &Bold {
+        display: inline;
+        font-weight: 400;
+      }
     }
   }
   

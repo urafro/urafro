@@ -2116,6 +2116,9 @@ smeFeatures
       word-spacing: .1rem; }
       .smeFbox__text--paragraphRight {
         width: 80%; }
+      .smeFbox__text--paragraphBold {
+        display: inline;
+        font-weight: 400; }
   .smeFbox__image {
     flex-basis: 50%; }
     .smeFbox__image--img {
