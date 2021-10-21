@@ -2180,4 +2180,11 @@ smeFeatures
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #FFF; }
+  color: #FFF;
+  height: 60vh; }
+
+.smeBio {
+  padding: 10rem 5rem; }
+  .smeBio__head--main {
+    font-size: 6rem;
+    word-spacing: .1rem; }

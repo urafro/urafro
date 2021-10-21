@@ -3147,4 +3147,16 @@ smeFeatures
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: $color-white;
+  height: 60vh;
+}
+
+.smeBio {
+  padding: 10rem 5rem;
+
+  &__head {
+    &--main {
+      font-size: 6rem;
+      word-spacing: .1rem;
+    }
+  }
 }
