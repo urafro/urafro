@@ -3083,3 +3083,20 @@ smeFeatures
     margin-bottom: 1rem;
   }
 }
+
+.smeCta {
+  height: 50vh;
+  display: flex;
+}
+
+.smeCta--empty {
+  flex-basis: 50%;
+}
+
+.smeCta--text {
+  flex-basis: 50%;
+}
+
+.smeCta--text {
+  padding: 10rem 5rem;
+}
