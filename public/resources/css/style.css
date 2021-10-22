@@ -2197,22 +2197,19 @@ sme footer
   background-color: #ffe6e2;
   color: #100c08;
   padding: 2rem 5rem; }
-
-.smeFooter__head {
-  display: flex;
-  list-style-type: none; }
-
-.smeFooter__head--link {
-  margin: 0 2rem 0 0;
-  padding-bottom: 2rem;
-  transition: all .2s; }
-  .smeFooter__head--link:link, .smeFooter__head--link:visited {
-    color: #100c08; }
-  .smeFooter__head--link:active, .smeFooter__head--link:hover {
-    border-bottom: 0.5rem solid #100c08; }
-
-.smeFooter__head--title {
-  font-size: 2rem;
-  word-spacing: .1rem;
-  letter-spacing: .1rem;
-  font-weight: 400; }
+  .smeFooter__head {
+    display: flex;
+    list-style-type: none; }
+    .smeFooter__head--link {
+      margin: 0 2rem 0 0;
+      padding-bottom: 2rem;
+      transition: all .2s; }
+      .smeFooter__head--link:link, .smeFooter__head--link:visited {
+        color: #100c08; }
+      .smeFooter__head--link:active, .smeFooter__head--link:hover {
+        border-bottom: 0.5rem solid #100c08; }
+    .smeFooter__head--title {
+      font-size: 2rem;
+      word-spacing: .1rem;
+      letter-spacing: .1rem;
+      font-weight: 400; }
