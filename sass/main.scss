@@ -3161,3 +3161,40 @@ smeFeatures
     }
   }
 }
+
+/*
+sme footer
+*/
+.smeFooter {
+  background-color: $color-background-light;
+  color: $color-black;
+  padding: 2rem 5rem;
+}
+
+.smeFooter__head {
+  display: flex;
+  list-style-type: none;
+}
+
+.smeFooter__head--link {
+  margin: 0 2rem 0 0;
+  padding-bottom: 2rem;
+  transition: all .2s;
+
+  &:link,
+  &:visited {
+    color: $color-black;
+  }
+
+  &:active,
+  &:hover {
+    border-bottom: .5rem solid $color-black;
+  }
+}
+
+.smeFooter__head--title {
+  font-size: 2rem;
+  word-spacing: .1rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+}
