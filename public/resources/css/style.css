@@ -2041,7 +2041,8 @@ SME templates first
     font-size: 2rem;
     margin-bottom: 4rem;
     letter-spacing: .05rem;
-    word-spacing: .1rem; }
+    word-spacing: .1rem;
+    line-height: 160%; }
   .smeIntro__form {
     display: flex;
     flex-direction: column;
