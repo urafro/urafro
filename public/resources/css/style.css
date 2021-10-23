@@ -2215,6 +2215,15 @@ sme footer
       font-weight: 400; }
   .smeFooter .lastCta {
     margin-top: 6rem; }
+    .smeFooter .lastCta .btn::before {
+      display: block;
+      content: "";
+      position: relative;
+      bottom: 2.5rem;
+      width: 1rem;
+      height: .1rem;
+      background-color: #100c08;
+      font-weight: 400; }
 
 .smeFooter__boxes {
   display: flex;

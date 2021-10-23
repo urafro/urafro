@@ -3201,6 +3201,20 @@ sme footer
   //last call-to-action div
   .lastCta {
     margin-top: 6rem;
+
+    .btn {
+
+      &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: 2.5rem;
+        width: 1rem;
+        height: .1rem;
+        background-color: $color-black;
+        font-weight: 400;
+      }
+    }
   }
 }
 
