@@ -2205,22 +2205,46 @@ sme footer
       padding-bottom: 2rem;
       transition: all .2s; }
       .smeFooter__head--link:link, .smeFooter__head--link:visited {
-        color: #100c08; }
+        color: #100c08;
+        border-bottom: .2rem solid transparent; }
       .smeFooter__head--link:active, .smeFooter__head--link:hover {
-        border-bottom: 0.5rem solid #100c08; }
+        border-bottom: 0.2rem solid #100c08; }
     .smeFooter__head--title {
       font-size: 2rem;
       word-spacing: .1rem;
       font-weight: 400; }
 
 .smeFooter__boxes {
-  display: flex; }
+  display: flex;
+  border-top: 0.1rem solid rgba(16, 12, 8, 0.1);
+  padding-top: 2rem;
+  justify-content: space-between; }
+
+.smeFooterBox__head {
+  margin-bottom: 2rem; }
+
+.smeFooterBox__head--title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  cursor: text; }
 
 .smeFooterBox__links {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-right: 6rem; }
 
 .smeFooterBox--group {
   display: flex; }
 
 .smeFooterBox__links--link {
-  color: #100c08; }
+  color: #100c08;
+  font-size: 1.3rem;
+  transition: all .5s; }
+
+.smeFooterBox__links--li {
+  font-size: 1.5rem;
+  word-spacing: .1rem;
+  line-height: 200%;
+  opacity: .5;
+  transition: all .5s; }
+  .smeFooterBox__links--li:active, .smeFooterBox__links--li:hover {
+    opacity: 1; }

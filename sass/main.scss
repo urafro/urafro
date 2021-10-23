@@ -3182,11 +3182,12 @@ sme footer
       &:link,
       &:visited {
         color: $color-black;
+        border-bottom: .2rem solid transparent;
       }
     
       &:active,
       &:hover {
-        border-bottom: .5rem solid $color-black;
+        border-bottom: .2rem solid $color-black;
       }
     }
 
@@ -3200,10 +3201,24 @@ sme footer
 
 .smeFooter__boxes {
   display: flex;
+  border-top: .1rem solid rgba($color-black, .1);
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+.smeFooterBox__head {
+  margin-bottom: 2rem;
+}
+
+.smeFooterBox__head--title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  cursor: text;
 }
 
 .smeFooterBox__links {
   list-style-type: none;
+  margin-right: 6rem;
 }
 
 .smeFooterBox--group {
@@ -3212,4 +3227,19 @@ sme footer
 
 .smeFooterBox__links--link {
   color: $color-black;
+  font-size: 1.3rem;
+  transition: all .5s;
+}
+
+.smeFooterBox__links--li {
+  font-size: 1.5rem;
+  word-spacing: .1rem;
+  line-height: 200%;
+  opacity: .5;
+  transition: all .5s;
+
+  &:active,
+  &:hover {
+    opacity: 1;
+  }
 }
