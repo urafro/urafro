@@ -2222,29 +2222,26 @@ sme footer
 
 .smeFooterBox__head {
   margin-bottom: 2rem; }
-
-.smeFooterBox__head--title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  cursor: text; }
-
-.smeFooterBox__links {
-  list-style-type: none;
-  margin-right: 6rem; }
+  .smeFooterBox__head--title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: text; }
 
 .smeFooterBox--group {
   display: flex; }
 
-.smeFooterBox__links--link {
-  color: #100c08;
-  font-size: 1.3rem;
-  transition: all .5s; }
-
-.smeFooterBox__links--li {
-  font-size: 1.5rem;
-  word-spacing: .1rem;
-  line-height: 200%;
-  opacity: .5;
-  transition: all .5s; }
-  .smeFooterBox__links--li:active, .smeFooterBox__links--li:hover {
-    opacity: 1; }
+.smeFooterBox__links {
+  list-style-type: none;
+  margin-right: 6rem; }
+  .smeFooterBox__links--link {
+    color: #100c08;
+    font-size: 1.3rem;
+    transition: all .5s; }
+  .smeFooterBox__links--li {
+    font-size: 1.5rem;
+    word-spacing: .1rem;
+    line-height: 200%;
+    opacity: .5;
+    transition: all .5s; }
+    .smeFooterBox__links--li:active, .smeFooterBox__links--li:hover {
+      opacity: 1; }
