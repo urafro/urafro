@@ -3197,3 +3197,19 @@ sme footer
     }
   }
 }
+
+.smeFooter__boxes {
+  display: flex;
+}
+
+.smeFooterBox__links {
+  list-style-type: none;
+}
+
+.smeFooterBox--group {
+  display: flex;
+}
+
+.smeFooterBox__links--link {
+  color: $color-black;
+}
