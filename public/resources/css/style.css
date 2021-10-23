@@ -2196,12 +2196,12 @@ sme footer
 .smeFooter {
   background-color: #ffe6e2;
   color: #100c08;
-  padding: 2rem 5rem; }
+  padding: 2rem 5rem 10rem; }
   .smeFooter__head {
     display: flex;
     list-style-type: none; }
     .smeFooter__head--link {
-      margin: 0 2rem 0 0;
+      margin: 0 3rem 0 0;
       padding-bottom: 2rem;
       transition: all .2s; }
       .smeFooter__head--link:link, .smeFooter__head--link:visited {
