@@ -1975,7 +1975,7 @@ SME templates first
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 5rem;
+  padding: 1rem 5rem;
   list-style-type: none; }
   .smeNavItems__brand {
     display: flex;
@@ -2026,6 +2026,8 @@ SME templates first
   background-attachment: fixed;
   padding: 5rem;
   color: #FFF; }
+  .smeIntroTwo {
+    background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.1)), url("/resources/img/smeIntroThree.jpg"); }
   .smeIntro__header, .smeIntro__body, .smeIntro__form, .smeIntro__disclaimer {
     width: 30%; }
   .smeIntro__header {
