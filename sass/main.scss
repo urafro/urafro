@@ -2914,7 +2914,7 @@ SME templates first
   color: $color-white;
 
   &Two {
-    background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .1)), url("/resources/img/smeIntroThree.jpg");
+    background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .2)), url("/resources/img/smeIntroFour.jpg");
   }
 
   &__header,
@@ -2951,7 +2951,7 @@ SME templates first
     &--input {
       padding: 2rem;
       background-color: transparent;
-      border: .05rem solid $color-white;
+      border: .1rem solid $color-white;
       border-radius: .5rem;
       margin-bottom: 1rem;
       color: $color-white;

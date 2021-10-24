@@ -2027,7 +2027,7 @@ SME templates first
   padding: 5rem;
   color: #FFF; }
   .smeIntroTwo {
-    background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.1)), url("/resources/img/smeIntroThree.jpg"); }
+    background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.2)), url("/resources/img/smeIntroFour.jpg"); }
   .smeIntro__header, .smeIntro__body, .smeIntro__form, .smeIntro__disclaimer {
     width: 30%; }
   .smeIntro__header {
@@ -2050,7 +2050,7 @@ SME templates first
     .smeIntro__form--input {
       padding: 2rem;
       background-color: transparent;
-      border: 0.05rem solid #FFF;
+      border: 0.1rem solid #FFF;
       border-radius: .5rem;
       margin-bottom: 1rem;
       color: #FFF;
