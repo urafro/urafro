@@ -723,6 +723,23 @@
   h4.projects__card--primaryHeading::after {
     content: none;
   }
+
+  /* smeFooter */
+  .smeFooter__boxes {
+    flex-direction: column;
+  }
+
+  .smeFooter__head {
+    text-align: center;
+  }
+
+  .smeFooterBox {
+    margin-bottom: 3rem;
+  }
+
+  .smeFooterBox__head {
+    margin-bottom: 1rem;
+  }
 }
 
 /* small phone screen sizes */
