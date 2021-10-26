@@ -476,9 +476,32 @@
   }
 
   /* smeFbox */
-  .smeFbox__text--big {
+  .smeFbox__text--big,
+  .smeCta__head--big {
     font-size: 4rem;
     width: 93%;
+  }
+
+  /* smeCta */
+  .smeCta--text {
+    flex-basis: 60%;
+  }
+
+  .smeCta--empty {
+    flex-basis: 40%;
+  }
+
+  .smeCta__body--paragraph {
+    width: 100%;
+  }
+
+  /* smeFooter */
+  .smeFooterBox__links {
+    margin-right: 3rem;
+  }
+
+  .smeFooterBox__links--li {
+    line-height: 140%;
   }
 }
 
