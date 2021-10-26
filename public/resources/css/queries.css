@@ -211,6 +211,12 @@
     width: 40%;
   }
 
+  /* smeFeatures */
+  .smeFeatures__head,
+  .smeBio__head {
+    width: 80%;
+  }
+
   /* smeFbox */
   .smeFbox__textRight {
     padding-left: 8rem;
