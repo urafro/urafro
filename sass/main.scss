@@ -2961,6 +2961,10 @@ SME templates first
       font-size: 2rem;
       text-transform: capitalize;
       font-weight: 400;
+
+      &Brand {
+        text-transform: none;
+      }
     }
 
     /*
@@ -2975,13 +2979,19 @@ SME templates first
     &--middle {
       padding-top: 3rem;
       margin-top: 3rem;
-      border-top: .1rem solid rgba($color-black, 0.1);
+      border-top: .1rem solid rgba($color-black, .1);
 
       &Btn {
         margin-top: 2rem;
         width: 80%;
         text-align: center;
       }
+    }
+
+    &--bottom {
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: .1rem solid rgba($color-black, .1);
     }
 
     @media screen and (max-width: 768px) {

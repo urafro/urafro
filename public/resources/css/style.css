@@ -2076,6 +2076,8 @@ SME templates first
       font-size: 2rem;
       text-transform: capitalize;
       font-weight: 400; }
+      .ecoMenu__toggle--liBrand {
+        text-transform: none; }
     .ecoMenu__toggle--input:checked ~ ul {
       transform: none;
       opacity: 1; }
@@ -2087,6 +2089,10 @@ SME templates first
         margin-top: 2rem;
         width: 80%;
         text-align: center; }
+    .ecoMenu__toggle--bottom {
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: 0.1rem solid rgba(16, 12, 8, 0.1); }
     @media screen and (max-width: 768px) {
       .ecoMenu__toggle .ecoMenu__toggle--menu {
         transform: none;
