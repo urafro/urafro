@@ -2277,7 +2277,6 @@ smeFeatures
     margin-bottom: 1rem; }
 
 .smeCta {
-  height: 50vh;
   display: flex; }
   .smeCta--empty {
     flex-basis: 50%; }

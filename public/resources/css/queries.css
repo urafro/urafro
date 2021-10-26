@@ -469,6 +469,17 @@
   .smeIntro__form--input::placeholder {
     color: #100c08;
   }
+
+  .smeFeatures__head--title,
+  .smeBio__head--main {
+    font-size: 2.5rem;
+  }
+
+  /* smeFbox */
+  .smeFbox__text--big {
+    font-size: 4rem;
+    width: 93%;
+  }
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
