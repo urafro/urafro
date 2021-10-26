@@ -78,6 +78,32 @@
     font-size: 2.5rem;
   }
 
+  /* servicesBox */
+  .servicesBox__text--headBig {
+    font-size: 5rem;
+  }
+
+  /* postsBox */
+  .postsBox__body--title {
+    font-size: 3rem;
+  }
+  
+  /* smeIntro */
+  .smeIntro {
+    height: 85vh;
+  }
+
+  /* smeFeatures */
+  .smeFeatures__head--title,
+  .smeBio__head--main {
+    font-size: 3.5rem;
+  }
+
+  /* smeBio */
+  .smeBio__head {
+    width: 70%;
+  }
+
 }
 
 /* Desktops, Large Screens: 1025px to 1200px */
