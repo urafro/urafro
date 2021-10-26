@@ -32,6 +32,21 @@
     font-size: 3rem;
   }
   
+  /* smeIntro */
+  .smeIntro {
+    height: 85vh;
+  }
+
+  /* smeFeatures */
+  .smeFeatures__head--title,
+  .smeBio__head--main {
+    font-size: 3.5rem;
+  }
+
+  /* smeBio */
+  .smeBio__head {
+    width: 70%;
+  }
 }
 
 /* Extra large screens, TVs: 1201px and more */
