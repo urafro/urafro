@@ -2018,7 +2018,7 @@ SME templates first
 
 .smeIntro {
   width: 100vw;
-  height: 75vh;
+  height: auto;
   background-image: linear-gradient(rgba(50, 74, 119, 0.5), rgba(20, 30, 48, 0.1)), url("/resources/img/smeIntroTwo-min.jpg");
   background-position: center;
   background-size: cover;

@@ -31,11 +31,6 @@
   .postsBox__body--title {
     font-size: 3rem;
   }
-  
-  /* smeIntro */
-  .smeIntro {
-    height: 85vh;
-  }
 
   /* smeFeatures */
   .smeFeatures__head--title,
@@ -86,11 +81,6 @@
   /* postsBox */
   .postsBox__body--title {
     font-size: 3rem;
-  }
-  
-  /* smeIntro */
-  .smeIntro {
-    height: 85vh;
   }
 
   /* smeFeatures */
