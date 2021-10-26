@@ -8,8 +8,7 @@ const express = require("express"),
     Comment = require("./routes/comment"),
     passport = require("passport"),
     index = require("./routes/index"),
-    sme = require("./routes/sme"),
-    retailer = require("./routes/retailer"),
+    ecommerce = require("./routes/ecommerce"),
     LocalStrategy = require("passport-local"),
     LocalStrategyMongoose = require("passport-local-mongoose"),
     User = require("./models/user"),
@@ -77,8 +76,7 @@ app.use((req, res, next) => {
 app.use("/blogs", Blog);
 app.use("/blogs/:id/comments", Comment);
 app.use(index);
-app.use(sme);
-app.use(retailer);
+app.use(ecommerce);
 
 //Listening to routes on heroku server
 app.listen(process.env.PORT || 3000, process.env.IP, () => {
