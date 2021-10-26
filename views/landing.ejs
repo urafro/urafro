@@ -13,19 +13,19 @@
     <span class="closebtn" onclick="closeMenu()">&times</span>
 
     <div class="menu-content">
-      <a href="/blogs">Blog</a>
+      <a href="/blogs">blog</a>
       <!-- will create an about page with mission statement and what-not -->
-      <a href="#">About</a>
+      <a href="#">about</a>
       <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
-      <a href="/projects">Projects</a>
+      <a href="/ecommerce/sme">e-commerce for SMEs</a>
       <!-- create a contact us panel with socials -->
-      <a href="#">Contact Us</a>
+      <a href="/projects">projects</a>
       <% if (!currentUser) { %>
-      <a href="/signup">Sign Up</a>
-      <a href="/login">Login</a>
+      <a href="/ecommerce/sme">sell online</a>
+      <a href="/login">login</a>
       <% } %>
       <% if (currentUser) { %>
-      <a href="/logout">Logout</a>
+      <a href="/logout">logout</a>
       <% } %>
     </div>
   </div>
@@ -40,7 +40,7 @@
     <div class="greeting__nav--items">
       <!-- this link should redirect to a more faq type content page -->
       <li>
-        <a href="/signup" class="nav--item">Join</a>
+        <a href="/ecommerce/sme" class="nav--item">Join</a>
       </li>
       <li>
         <a href="#features" class="nav--item js--scroll-to-features">Features</a>
@@ -83,7 +83,7 @@
 
       <p class="intro__container--paragraph">the best <span class="brand">SOLUTIONS</span> &nbsp; are a collaborative effort so 👇🏼</p>
 
-      <a href="/signup" class="btn btn-full intro__container--btn">Join us</a>
+      <a href="/ecommerce/sme" class="btn btn-full intro__container--btn">Join us</a>
     </div>
 
     <div class="intro__container--give">
@@ -92,12 +92,12 @@
       <h2 class="intro__container--heading">You</h2>
 
       <p class="intro__container--paragraph">
-        Are you an African SME looking to join the e-commerce craze and future-proof your business? Checkout <a class="intro__container--paragraphLink" href="/projects">how we can help</a> get your business online for free 
+        Are you an African business looking to join the e-commerce craze and future-proof your business? Checkout <a class="intro__container--paragraphLink" href="/ecommerce/sme">how we can help</a> get your business online for free 
       </p>
 
       <p class="intro__container--paragraph">Invest in yourself by supporting our vision</p>
 
-      <a href="/projects" class="btn btn-full intro__container--btnTwo">get your website</a>
+      <a href="/ecommerce/sme" class="btn btn-full intro__container--btnTwo">get a free website</a>
     </div>
 
     <div class="intro__container--receive">
@@ -145,7 +145,7 @@
     <div class="boxes features__boxes">
       <div class="box features__boxes--box">
         <!-- link directs user to projects initiate page -->
-        <a class=features__boxes--boxLink href="/projects"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
+        <a class=features__boxes--boxLink href="/ecommerce/sme"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
         <h3 class="features__boxes--boxHeading">SMEs</h3>
         <p class="features__boxes--boxParagraph">Get a free website <span class="brand">+</span> &nbsp; the best inventory management software for your SME</p>
         <img class="features__boxes--boxImage" src="./resources/img/initiator.svg" alt="urafro initiator">
@@ -153,9 +153,9 @@
 
       <div class="box features__boxes--box">
         <!-- link directs user to projects sponsor page-->
-        <a class=features__boxes--boxLink href="/projects"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
-        <h3 class="features__boxes--boxHeading">Corporates</h3>
-        <p class="features__boxes--boxParagraph">Let's collaborate on your next big idea. And challenge mediocre norms together</p>
+        <a class=features__boxes--boxLink href="/ecommerce/retailer"><i class="fas fa-angle-right features__boxes--boxIcon"></i></a>
+        <h3 class="features__boxes--boxHeading">Retailers</h3>
+        <p class="features__boxes--boxParagraph">Get your business online. Use the power of AI Insight to boost sales and manage inventory</p>
         <img class="features__boxes--boxImage" src="./resources/img/sponsor2.svg" alt="urafro sponsor">
       </div>
 
@@ -185,6 +185,10 @@
     <!-- SMEs div -->
     <div class="services__boxes--box">
       <div class="servicesBox">
+        <div class="servicesBox__image">
+          <img src="/resources/img/smeServices.jpg" alt="urafro SME's image" class="servicesBox__image--img servicesBox__image--imgOne">
+        </div>
+
         <div class="servicesBox__text">
           <h5 class="servicesBox__text--headSmall">
             small businesses
@@ -202,24 +206,16 @@
             You can opt for an inventory management system to come fused with your website. If you like it, you start paying subscriptions after a month's trial period, from as low as USD $4.99/month
           </p>
 
-          <a href="/projects" class="btn btn-full">get a website</a>
-        </div>
-
-        <div class="servicesBox__image">
-          <img src="/resources/img/servicesOne.jpg" alt="urafro SME's image" class="servicesBox__image--img servicesBox__image--imgOne">
+          <a href="/ecommerce/sme" class="btn btn-full">get a free website</a>
         </div>
       </div>
     </div>
     <!-- Corporates div -->
     <div class="services__boxes--box">
       <div class="servicesBox">
-        <div class="servicesBox__image">
-          <img src="/resources/img/corporatesTwo-min.jpg" alt="urafro SME's image" class="servicesBox__image--img servicesBox__image--imgTwo">
-        </div>
-
         <div class="servicesBox__text">
           <h5 class="servicesBox__text--headSmall">
-            corporates
+            retailers
           </h5>
 
           <h2 class="servicesBox__text--headBig">
@@ -238,13 +234,21 @@
             We believe we found a cheap and scalable culture-specific solution to it
           </p>
 
-          <a href="/projects" class="btn btn-ghost">join the waiting list</a>
+          <a href="/ecommerce/retailer" class="btn btn-ghost">join the waiting list</a>
+        </div>
+
+        <div class="servicesBox__image">
+          <img src="/resources/img/corporatesThree.jpg" alt="urafro SME's image" class="servicesBox__image--img servicesBox__image--imgTwo">
         </div>
       </div>
     </div>
     <!-- lurker div -->
     <div class="services__boxes--box">
       <div class="servicesBox">
+        <div class="servicesBox__image">
+          <img src="/resources/img/startupThree.jpg" alt="urafro SME's image" class="servicesBox__image--img servicesBox__image--imgThree">
+        </div>
+
         <div class="servicesBox__text">
           <h5 class="servicesBox__text--headSmall">
             tiny startups
@@ -259,10 +263,6 @@
           </p>
 
           <a href="/projects" class="btn btn-ghost">take survey</a>
-        </div>
-
-        <div class="servicesBox__image">
-          <img src="/resources/img/startupOne-min.jpg" alt="urafro SME's image" class="servicesBox__image--img servicesBox__image--imgThree">
         </div>
       </div>
     </div>
@@ -322,7 +322,7 @@
       </div>
 
       <div class="postsBox__body">
-        <h2 class="postsBox__body--title">Adapting local SME businesses for uncertain, deadly circumstances</h2>
+        <h2 class="postsBox__body--title">Adapting local business models for uncertain, deadly circumstances</h2>
 
         <p class="postsBox__body--paragraph">Nashe Dan, CTO</p>
       </div>
@@ -456,100 +456,12 @@
           <textarea class="form__input--textArea" name="message" id="" cols="30" rows="7"></textarea>
         </div>
 
-        <input class="btn btn-full form__input--submitBtn" type="submit" value="send message">
+        <input class="btn btn-ghost form__input--submitBtn" type="submit" value="send message">
       </form>
     </div>
   </div>
 </section>
 
-<footer class="landingFooter">
-  <div class="landingFooter__content">
-    <div class="footerCard">
-      <h3 class="footerCard--title">About Us</h3>
-      <div class="footerCard__text">
-        <p class="footerCard__text--paragraph">
-          <span class="brand">urAfro</span> &nbsp; is the first e-commerce platform empowering local governments to provide cheap logistics rates for developing countries in Africa
-        </p>
-      </div>
-      <!-- start by styling this section and replacing the generic links with the correct ones. Now take a rest :) -->
-      <a href="https://www.instagram.com/official_urafro" target="_blank">
-        <i class="fab fa-instagram footerCard__text--icon"></i>
-      </a>
-      <a href="https://twitter.com/official_urafro" target="_blank">
-        <i class="fab fa-twitter footerCard__text--icon"></i>
-      </a>
-      <a href="https://www.reddit.com/r/urafro" target="_blank">
-        <i class="fab fa-reddit footerCard__text--icon"></i>
-      </a>
-      <a href="https://www.facebook.com/official.urafro" target="_blank">
-        <i class="fab fa-facebook footerCard__text--icon"></i>
-      </a>
-      <a href="https://www.github.com/tinashy" target="_blank">
-        <i class="fab fa-github footerCard__text--icon"></i>
-      </a>
-    </div>
-    <div class="footerCard">
-      <h3 class="footerCard--title">Contacts</h3>
-      <div class="footerCard__text">
-        <p class="footerCard__text--paragraph">
-          <i class="fas fa-map-marker-alt footerCard__text--icon"></i> Country, Street name-number
-        </p>
-        <p class="footerCard__text--paragraph">
-          <i class="fab fa-whatsapp footerCard__text--icon"></i> (+263) 772 794 678
-        </p>
-        <p class="footerCard__text--paragraph">
-          <i class="far fa-envelope footerCard__text--icon"></i> tinashydaniel@gmail.com
-        </p>
-        <p class="footerCard__text--paragraph">
-          <i class="far fa-clock footerCard__text--icon"></i> Mon-Frie. 11am - 17pm
-        </p>
-      </div>
-    </div>
-    <div class="footerCard">
-      <h3 class="footerCard--title">Recent Posts</h3>
-      <div class="footerCard__post">
-        <div class="f-head">
-          <img class="footerCard__post--image" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
-        </div>
-        <div class="footerCard__post--body">
-          <span class="footerCard__post--bodySpan">Life</span>
-          <h5 class="footerCard__post--bodyTitle">Introversion confusion</h5>
-        </div>
-      </div>
-      <div class="footerCard__post">
-        <div class="f-head">
-          <img class="footerCard__post--image" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
-        </div>
-        <div class="footerCard__post--body">
-          <span class="footerCard__post--bodySpan">Code</span>
-          <h5 class="footerCard__post--bodyTitle">The dark planet</h5>
-        </div>
-      </div>
-      <div class="footerCard__post">
-        <div class="f-head">
-          <img class="footerCard__post--image" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Blog_1-1024x683.jpg" alt="">
-        </div>
-        <div class="footerCard__post--body">
-          <span class="footerCard__post--bodySpan">Music</span>
-          <h5 class="footerCard__post--bodyTitle">Of escapism in dance</h5>
-        </div>
-      </div>
-    </div>
-    <div class="footerCard">
-      <h3 class="footerCard--title">Latest Projects</h3>
-      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-      <a href="#"><img class="footerCard__post--image2" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/2016/02/Portfolio_2_2-989x1024.jpg" alt=""></a>
-    </div>
-  </div>
-  
-  <div class="landingFooter__developer">
-    <h3 class="italic landingFooter__developer--title">
-      <span class="brand landingFooter__developer--brand">urAfro</span> Designed & Developed by 
-      <a href="#">Dan</a>
-    </h3>
-  </div>
-</footer>
+<% include ./partials/smeFooter %>
 
 <% include ./partials/footer %>

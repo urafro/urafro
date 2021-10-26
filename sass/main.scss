@@ -2820,3 +2820,456 @@ form submit buttons
     font-size: 1.3rem;
   }
 }
+
+
+
+
+
+
+
+/*
+E-COMMERCE STYLES
+
+
+SME templates first
+*/
+
+.smeNavItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  list-style-type: none;
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+
+    &--link {
+      color: $color-black;
+      font-size: 4rem;
+      font-weight: 400;
+    }
+    
+    &--country {
+      align-self: flex-end;
+      display: inline-block;
+      position: relative;
+      bottom: .5rem;
+      letter-spacing: .1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &--number {
+      text-decoration: none;
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+      opacity: .8;
+    }
+
+    &--li {
+      list-style-type: none;
+      margin: 0 2rem;
+      font-weight: 400;
+    }
+
+    &--link {
+      color: $color-black;
+      font-size: 1.8rem;
+      transition: all .5s;
+    
+      &:link,
+      &:visited {
+        font-weight: 400;
+        opacity: .8;
+      }
+    
+      &:active,
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+  }
+
+  .smeNav--btn {
+    box-shadow: none;
+    margin-left: 2rem;
+  }
+}
+
+.smeIntro {
+  width: 100vw;
+  height: 75vh;
+  background-image: linear-gradient(rgba(50, 74, 119, .5), rgba(20, 30, 48, .1)), url("/resources/img/smeIntroTwo-min.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5rem;
+  color: $color-white;
+
+  &Two {
+    background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .2)), url("/resources/img/smeIntroFour.jpg");
+  }
+
+  &__header,
+  &__body,
+  &__form,
+  &__disclaimer {
+    width: 30%;
+  }
+
+  &__header {
+    margin: 0 0 3rem;
+
+    &--main {
+      font-size: 4.5rem;
+      font-weight: 600;
+      line-height: 155%;
+      word-spacing: .1rem;
+    }
+  }
+
+  &__body--paragraph {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    letter-spacing: .05rem;
+    word-spacing: .1rem;
+    line-height: 160%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    &--input {
+      padding: 2rem;
+      background-color: transparent;
+      border: .1rem solid $color-white;
+      border-radius: .5rem;
+      margin-bottom: 1rem;
+      color: $color-white;
+      border-radius: 5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    
+    &--input::placeholder {
+      letter-spacing: .1rem;
+      color: $color-white;
+      opacity: .8;
+    }
+
+    &--btn {
+      align-self: flex-start;
+      cursor: pointer;
+      border: none;
+      word-spacing: .1rem;
+      box-shadow: none;
+      text-transform: lowercase;
+      letter-spacing: .1rem;
+    }
+  }
+
+  &__disclaimer--paragraph {
+    font-size: 1.3rem;
+    word-spacing: .1rem;
+  }
+}
+
+
+/*
+smeFeatures
+*/
+.smeFeatures {
+  background-color: $color-background-light;
+
+  &__head {
+    width: 70%;
+    padding: 10rem 5rem;
+  
+    &--title {
+      font-size: 4rem;
+    }
+  }
+
+  &__boxes {
+    background-color: $color-white;
+    padding: 3rem 5rem;
+  }
+}
+
+.smeFbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8rem;
+
+  &__text {
+    flex-basis: 50%;
+
+    &Right {
+      padding-left: 15rem;
+    }
+
+    &--small {
+      font-size: 1.2rem;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+    
+      &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: .8rem;
+        width: 1rem;
+        height: .1rem;
+        background-color: $color-black;
+        font-weight: 400;
+      }
+    }
+    
+    &--big {
+      font-size: 5rem;
+      width: 70%;
+      margin: 3rem 0 2rem;
+    }
+    
+    &--paragraph {
+      font-size: 1.5rem;
+      width: 70%;
+      margin-bottom: 2rem;
+      line-height: 160%;
+      word-spacing: .1rem;
+
+      &Right {
+        width: 80%;
+      }
+
+      &Bold {
+        display: inline;
+        font-weight: 400;
+      }
+    }
+  }
+  
+  &__image {
+    flex-basis: 50%;
+
+    &--img {
+      width: 100%;
+      border-radius: .5rem;
+    }
+  }
+}
+
+.smeBreaker {
+  background: $color-background-light;
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10rem 5rem;
+
+  &__header--main {
+    font-size: 5rem;
+    font-weight: 400;
+    word-spacing: .1rem;
+    margin-bottom: 3rem;
+  }
+  
+  &__paragraph--p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.smeCta {
+  height: 50vh;
+  display: flex;
+
+  &--empty {
+    flex-basis: 50%;
+  }
+  
+  &--text {
+    flex-basis: 50%;
+    padding: 10rem 5rem;
+  }
+
+  &__head {
+    
+    &--small {
+      font-size: 1.3rem;
+      word-spacing: .1rem;
+      margin-bottom: 1rem;
+    
+      &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: .8rem;
+        width: 1rem;
+        height: .1rem;
+        background-color: $color-black;
+        font-weight: 400;
+      }
+    }
+
+    &--big {
+      font-size: 5rem;
+      margin-bottom: 3rem;
+      width: 80%;
+    }
+  }
+
+  &__body {
+    &--paragraph {
+      font-size: 1.5rem;
+      width: 85%;
+      margin-bottom: 2rem;
+      line-height: 150%;
+      word-spacing: .1rem;
+    }
+  }
+
+  &__button {
+    &--btn {
+      margin-left: -3rem;
+    }
+  }
+}
+
+.smeBreakerTwo {
+  background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .5)), url("https://images.unsplash.com/photo-1509100194014-d49809396daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $color-white;
+  height: 60vh;
+}
+
+.smeBio {
+  padding: 10rem 5rem;
+
+  &__head {
+    &--main {
+      font-size: 6rem;
+      word-spacing: .1rem;
+    }
+  }
+}
+
+/*
+sme footer
+*/
+.smeFooter {
+  background-color: $color-background-light;
+  color: $color-black;
+  padding: 2rem 5rem 10rem;
+
+  &__head {
+    display: flex;
+    list-style-type: none;
+
+    &--link {
+      margin: 0 3rem 0 0;
+      padding-bottom: 2rem;
+      transition: all .2s;
+    
+      &:link,
+      &:visited {
+        color: $color-black;
+        border-bottom: .2rem solid transparent;
+      }
+    
+      &:active,
+      &:hover {
+        border-bottom: .2rem solid $color-black;
+      }
+    }
+
+    &--title {
+      font-size: 2rem;
+      word-spacing: .1rem;
+      font-weight: 400;
+    }
+  }
+
+  //last call-to-action div
+  .lastCta {
+    margin-top: 6rem;
+
+    .btn {
+
+      &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: 2.5rem;
+        width: 1rem;
+        height: .1rem;
+        background-color: $color-black;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.smeFooter__boxes {
+  display: flex;
+  border-top: .1rem solid rgba($color-black, .1);
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+
+//nested inside smeFooter__boxes
+.smeFooterBox {
+
+  &__head {
+    margin-bottom: 2rem;
+
+    &--title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      cursor: text;
+    }
+  }
+
+  //for nested link groups
+  &--group {
+    display: flex;
+  }
+
+  &__links {
+    list-style-type: none;
+    margin-right: 6rem;
+
+    &--link {
+      color: $color-black;
+      font-size: 1.3rem;
+      transition: all .5s;
+    }
+
+    &--li {
+      font-size: 1.5rem;
+      word-spacing: .1rem;
+      line-height: 200%;
+      opacity: .5;
+      transition: all .5s;
+    
+      &:active,
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
