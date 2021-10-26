@@ -2935,7 +2935,7 @@ SME templates first
     Make this absolute positioned
     at the top left of the screen
     */
-    .ecoMenu__toggle--menu {
+    &--menu {
       position: absolute;
       width: 43rem;
       height: 110vh;
@@ -2956,17 +2956,32 @@ SME templates first
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
 
-    .ecoMenu__toggle--menu li {
+    &--li {
       padding: 1rem 0;
-      font-size: 2.2rem;
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 400;
     }
 
     /*
     And let's fade it in from the left
     */
-    .ecoMenu__toggle--input:checked ~ ul {
+    &--input:checked ~ ul {
       transform: none;
       opacity: 1;
+    }
+
+    //separate middle div with middle section links
+    &--middle {
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: .1rem solid rgba($color-black, 0.1);
+
+      &Btn {
+        margin-top: 2rem;
+        width: 80%;
+        text-align: center;
+      }
     }
 
     @media screen and (max-width: 768px) {

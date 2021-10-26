@@ -2055,7 +2055,7 @@ SME templates first
         transform-origin: 0% 0%; }
       .ecoMenu__toggle--span:nth-last-child(2) {
         transform-origin: 0% 100%; }
-    .ecoMenu__toggle .ecoMenu__toggle--menu {
+    .ecoMenu__toggle--menu {
       position: absolute;
       width: 43rem;
       height: 110vh;
@@ -2071,12 +2071,22 @@ SME templates first
       transform-origin: 0% 0%;
       transform: translate(100%, 0);
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-    .ecoMenu__toggle .ecoMenu__toggle--menu li {
+    .ecoMenu__toggle--li {
       padding: 1rem 0;
-      font-size: 2.2rem; }
-    .ecoMenu__toggle .ecoMenu__toggle--input:checked ~ ul {
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 400; }
+    .ecoMenu__toggle--input:checked ~ ul {
       transform: none;
       opacity: 1; }
+    .ecoMenu__toggle--middle {
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: 0.1rem solid rgba(16, 12, 8, 0.1); }
+      .ecoMenu__toggle--middleBtn {
+        margin-top: 2rem;
+        width: 80%;
+        text-align: center; }
     @media screen and (max-width: 768px) {
       .ecoMenu__toggle .ecoMenu__toggle--menu {
         transform: none;
