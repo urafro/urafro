@@ -2842,144 +2842,139 @@ SME templates first
 .ecoMenu {
   //hide hamburger menu on all screens except from iPad going down
   display: none;
-}
 
-.ecoMenu__toggle--link {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
+  &__toggle {
+    display: block;
+    position: fixed;
+    top: 3rem;
+    right: 1.5rem;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
 
-.ecoMenu__toggle--link:hover {
-  color: tomato;
-}
+    &--link {
+      text-decoration: none;
+      color: #232323;
+      transition: color 0.3s ease;
 
-.ecoMenu__toggle {
-  display: block;
-  position: fixed;
-  top: 3rem;
-  right: 1.5rem;
+      &:hover {
+        color: tomato;
+      }
+    }
+    
+    &--input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      -webkit-touch-callout: none;
 
-  z-index: 1;
+      /* 
+      Transform all the slices of hamburger
+      into a crossmark.
+      */
+      &:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+      }
 
-  -webkit-user-select: none;
-  user-select: none;
-}
+      /*
+      But let's hide the middle one.
+      */
+      &:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
 
-.ecoMenu__toggle--input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+      /*
+      Oh yeah and the last one should go the other direction
+      */
+      &:checked ~ span:nth-last-child(2) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+    }
 
-  cursor: pointer;
+    /*
+    *Just a quick hamburger
+    */
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+    &--span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
 
-  -webkit-touch-callout: none;
-}
+      background: #cdcdcd;
+      border-radius: 3px;
 
-/*
- * Just a quick hamburger
-*/
+      z-index: 1;
 
-.ecoMenu__toggle--span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+      transform-origin: 4px 0px;
 
-  background: #cdcdcd;
-  border-radius: 3px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 
-  z-index: 1;
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+      
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    }
 
-  transform-origin: 4px 0px;
+    /*
+    Make this absolute positioned
+    at the top left of the screen
+    */
+    .ecoMenu__toggle--menu {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 0;
+      padding: 50px;
+      padding-top: 125px;
+      right: -100px;
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
 
-.ecoMenu__toggle--span:first-child {
-  transform-origin: 0% 0%;
-}
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
 
-.ecoMenu__toggle--span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
 
-/* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-*/
-.ecoMenu__toggle--input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
+    .ecoMenu__toggle--menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
 
-/*
-  * But let's hide the middle one.
-*/
-.ecoMenu__toggle--input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
+    /*
+    And let's fade it in from the left
+    */
+    .ecoMenu__toggle--input:checked ~ ul {
+      transform: none;
+      opacity: 1;
+    }
 
-/*
-  * Oh yeah and the last one should go the other direction
-*/
-.ecoMenu__toggle--input:checked ~ span:nth-last-child(2) {
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
+    @media screen and (max-width: 768px) {
+      .ecoMenu__toggle--menu {
+        transform: none;
+        opacity: 0;
 
-/*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
-.ecoMenu__toggle--menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-.ecoMenu__toggle--menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
-  * And let's fade it in from the left
-  */
-.ecoMenu__toggle--input:checked ~ ul {
-  transform: none;
-  opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .ecoMenu__toggle--menu {
-    transform: none;
-    opacity: 0;
-
-    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      }
+    }
   }
 }
 
