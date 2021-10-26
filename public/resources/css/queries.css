@@ -771,6 +771,15 @@
     width: 90%;
   }
 
+  /* smeCta */
+  .smeCta--empty {
+    display: none;
+  }
+
+  .smeCta--text {
+    flex-basis: 100%;
+  }
+
   /* smeFooter */
   .smeFooter__boxes {
     flex-direction: column;
