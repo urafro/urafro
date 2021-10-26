@@ -205,6 +205,21 @@
     flex-direction: column;
   }
 
+
+  /* smeIntro */
+  .smeIntro__header {
+    width: 40%;
+  }
+
+  /* smeFbox */
+  .smeFbox__textRight {
+    padding-left: 8rem;
+  }
+
+  .smeFbox__text--big {
+    width: 75%;
+  }
+
 }
 
 /* Small iPads, Tablets: 481px to 768px */
