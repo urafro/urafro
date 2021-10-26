@@ -2009,11 +2009,11 @@ SME templates first
         color: tomato; }
     .ecoMenu__toggle--input {
       display: block;
-      width: 40px;
-      height: 32px;
+      width: 4rem;
+      height: 3.2rem;
       position: absolute;
-      top: -7px;
-      left: -5px;
+      top: -.7rem;
+      left: -.5rem;
       cursor: pointer;
       opacity: 0;
       /* hide this */
@@ -2032,24 +2032,24 @@ SME templates first
       */ }
       .ecoMenu__toggle--input:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-0.2rem, -0.1rem);
         background: #232323; }
       .ecoMenu__toggle--input:checked ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2); }
       .ecoMenu__toggle--input:checked ~ span:nth-last-child(2) {
         opacity: 1;
-        transform: rotate(-45deg) translate(0, -1px); }
+        transform: rotate(-45deg) translate(0, -0.1rem); }
     .ecoMenu__toggle--span {
       display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
+      width: 2.5rem;
+      height: .2rem;
+      margin-bottom: .8rem;
       position: relative;
-      background: #cdcdcd;
-      border-radius: 3px;
+      background: #100c08;
+      border-radius: .3rem;
       z-index: 1;
-      transform-origin: 4px 0px;
+      transform-origin: .4rem 0px;
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
       .ecoMenu__toggle--span:first-child {
         transform-origin: 0% 0%; }
