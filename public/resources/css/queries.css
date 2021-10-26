@@ -438,6 +438,37 @@
   .ecoMenu {
     display: block;
   }
+
+  /* smeIntro */
+  .smeIntro {
+    background-image: none;
+    color: #100c08;
+  }
+
+  .smeIntro__header {
+    width: 100%;
+  }
+
+  .smeIntro__header--main {
+    font-size: 3rem;
+  }
+
+  .smeIntro__body {
+    width: 80%;
+  }
+
+  .smeIntro__form,
+  .smeIntro__disclaimer {
+    width: 70%;
+  }
+
+  .smeIntro__form--input {
+    border: .1rem solid #100c08;
+  }
+
+  .smeIntro__form--input::placeholder {
+    color: #100c08;
+  }
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
