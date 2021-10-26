@@ -746,6 +746,31 @@
     width: 95%;
   }
 
+  /* smeFbox */
+  .smeFbox {
+    flex-direction: column;
+  }
+
+  .smeFbox__text {
+    order: 2;
+  }
+
+  .smeFbox__image {
+    order: 1;
+  }
+
+  .smeFbox__image--img {
+    margin-bottom: 3rem;
+  }
+
+  .smeFbox__textRight {
+    padding-left: 0;
+  }
+
+  .smeFbox__text--paragraph {
+    width: 90%;
+  }
+
   /* smeFooter */
   .smeFooter__boxes {
     flex-direction: column;
