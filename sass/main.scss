@@ -2937,11 +2937,13 @@ SME templates first
     */
     .ecoMenu__toggle--menu {
       position: absolute;
-      width: 300px;
-      margin: -100px 0 0 0;
-      padding: 50px;
-      padding-top: 125px;
-      right: -100px;
+      width: 43rem;
+      height: 110vh;
+      margin: -10rem 0 0 0;
+      padding: 5rem;
+      padding-top: 12.5rem;
+      padding-left: 3rem;
+      right: -10rem;
 
       background: #ededed;
       list-style-type: none;
@@ -2955,8 +2957,8 @@ SME templates first
     }
 
     .ecoMenu__toggle--menu li {
-      padding: 10px 0;
-      font-size: 22px;
+      padding: 1rem 0;
+      font-size: 2.2rem;
     }
 
     /*
