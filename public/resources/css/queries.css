@@ -226,6 +226,24 @@
     width: 75%;
   }
 
+  /* smeFooter */
+  .smeFooter__head--title {
+    font-size: 1.3rem;
+  }
+
+  .smeFooterBox__head--title {
+    font-size: 1.3rem;
+  }
+
+  .smeFooterBox__links {
+    margin-right: 4rem;
+  }
+
+  .smeFooterBox__links--li {
+    word-spacing: normal;
+    font-size: 1.3rem;
+  }
+
 }
 
 /* Small iPads, Tablets: 481px to 768px */
