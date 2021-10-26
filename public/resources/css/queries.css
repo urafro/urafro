@@ -5,6 +5,10 @@
     font-size: 12.5px;
   }
 
+  .smeIntro__header--main  {
+    font-size: 5rem;
+  }
+
 }
 
 /* In between largest and large screens */

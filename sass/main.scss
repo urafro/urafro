@@ -2973,6 +2973,8 @@ SME templates first
       cursor: pointer;
       border: none;
       word-spacing: .1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
       box-shadow: none;
       text-transform: lowercase;
       letter-spacing: .1rem;
@@ -2998,6 +3000,8 @@ smeFeatures
   
     &--title {
       font-size: 4rem;
+      word-spacing: .1rem;
+      line-height: 140%;
     }
   }
 
@@ -3163,6 +3167,7 @@ smeFeatures
     &--main {
       font-size: 6rem;
       word-spacing: .1rem;
+      line-height: 140%;
     }
   }
 }

@@ -2066,6 +2066,8 @@ SME templates first
       cursor: pointer;
       border: none;
       word-spacing: .1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
       box-shadow: none;
       text-transform: lowercase;
       letter-spacing: .1rem; }
@@ -2082,7 +2084,9 @@ smeFeatures
     width: 70%;
     padding: 10rem 5rem; }
     .smeFeatures__head--title {
-      font-size: 4rem; }
+      font-size: 4rem;
+      word-spacing: .1rem;
+      line-height: 140%; }
   .smeFeatures__boxes {
     background-color: #FFF;
     padding: 3rem 5rem; }
@@ -2191,7 +2195,8 @@ smeFeatures
   padding: 10rem 5rem; }
   .smeBio__head--main {
     font-size: 6rem;
-    word-spacing: .1rem; }
+    word-spacing: .1rem;
+    line-height: 140%; }
 
 /*
 sme footer
