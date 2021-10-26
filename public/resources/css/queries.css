@@ -813,6 +813,33 @@
   .services__head--title {
     font-size: 2rem;
   }
+
+  /* smeintro */
+  .smeIntro__header--main {
+    font-size: 2.5rem;
+  }
+
+  .smeIntro__body,
+  .smeIntro__disclaimer {
+    width: 100%;
+  }
+
+  .smeIntro__body--paragraph {
+    line-height: 140%;
+  }
+
+  .smeIntro__form {
+    width: 90%;
+  }
+
+  .smeFbox__text--paragraph {
+    width: 100%;
+  }
+
+  /* smeFooter */
+  .smeFooter__head {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
