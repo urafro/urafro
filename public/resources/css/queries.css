@@ -427,6 +427,17 @@
   .zero {
     width: 80vw;
   } */
+
+
+
+  /* sme styles */
+  .smeNavItems__links {
+    display: none;
+  }
+
+  .ecoMenu {
+    display: block;
+  }
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */

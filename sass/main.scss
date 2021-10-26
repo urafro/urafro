@@ -3,27 +3,27 @@
 =============================================*/
 $color-primary-dark: #432344;
 $color-primary-light: #f9f9f9;
-$color-primary-red: #FF2525;
-$color-primary-brown: #FFC03D;
+$color-primary-red: #ff2525;
+$color-primary-brown: #ffc03d;
 $color-secondary-brown: #cf920d;
 $color-background-light: rgb(255, 230, 226);
 
-$color-white: #FFF;
+$color-white: #fff;
 $color-black: #100c08;
-$color-grey: #8C92AC;
+$color-grey: #8c92ac;
 
-$color-instagram: #EE1092;
-$color-twitter: #0764F7;
+$color-instagram: #ee1092;
+$color-twitter: #0764f7;
 $color-github: #333;
-$color-reddit: #FF5700;
+$color-reddit: #ff5700;
 $color-youtube: #c4302b;
 
-$color-success: #16A085;
-$color-error: #FF3F34;
+$color-success: #16a085;
+$color-error: #ff3f34;
 
 $color-bg1: rgb(255, 30, 48);
 $color-bg2: rgb(255, 59, 85);
-$color-bg3: #EEEEEE;
+$color-bg3: #eeeeee;
 
 * {
   margin: 0;
@@ -34,7 +34,7 @@ $color-bg3: #EEEEEE;
 html {
   background-color: $color-white;
   color: $color-black;
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 62.5%;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -44,7 +44,12 @@ body {
   overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
 }
 
@@ -103,7 +108,7 @@ a {
 }
 
 .fab {
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .fa-instagram:active,
@@ -126,7 +131,7 @@ a {
 .fa-reddit:active,
 .fa-reddit:hover {
   color: $color-reddit;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .fa-youtube:active,
@@ -145,17 +150,17 @@ a {
 
 .success-flash,
 .error-flash {
-  padding: .5rem;
+  padding: 0.5rem;
   width: 100%;
 }
 
 .success-flash {
-  background: rgba($color-success, .5);
+  background: rgba($color-success, 0.5);
   color: $color-primary-dark;
 }
 
 .error-flash {
-  background: rgba($color-error, .5);
+  background: rgba($color-error, 0.5);
   color: $color-primary-dark;
 }
 
@@ -177,34 +182,34 @@ a {
   border: 1px solid $color-primary-brown;
   color: $color-black;
   font-weight: 400;
-  box-shadow: .5rem 1.5rem 1.5rem -1.5rem rgba($color-black, .9);
-  transition: all .2s;
+  box-shadow: 0.5rem 1.5rem 1.5rem -1.5rem rgba($color-black, 0.9);
+  transition: all 0.2s;
 }
 
 /* body button alternative call to action selection */
 .btn-ghost {
   background-color: transparent;
-  border: .1rem solid $color-secondary-brown;
+  border: 0.1rem solid $color-secondary-brown;
   color: $color-secondary-brown;
-  box-shadow: .5rem 1.2rem 1.5rem -1.5rem rgba($color-black, .3)
+  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba($color-black, 0.3);
 }
 
 .btn-full:hover {
   background-color: $color-secondary-brown;
   border-color: $color-secondary-brown;
   transform: translateY(-3px);
-  box-shadow: .2rem .6rem 1rem -.75rem rgba($color-black, .5);
+  box-shadow: 0.2rem 0.6rem 1rem -0.75rem rgba($color-black, 0.5);
   color: $color-white;
 }
 
 .btn-full:active {
   transform: translateY(-1px);
-  box-shadow: .1rem .3rem .5rem -.75rem rgba($color-black, .1);
+  box-shadow: 0.1rem 0.3rem 0.5rem -0.75rem rgba($color-black, 0.1);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  box-shadow: .5rem 1.2rem 1.5rem -1.5rem rgba($color-black, .1);
+  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba($color-black, 0.1);
   color: $color-black;
   background-color: $color-primary-brown;
   border-color: $color-primary-brown;
@@ -286,7 +291,7 @@ a {
 .menu-content a:active,
 .menu-content a:hover {
   background-color: $color-secondary-brown;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .menu-container .closebtn {
@@ -306,12 +311,12 @@ a {
 .brand {
   color: $color-primary-red;
   font-weight: 400;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 2.5rem;
 }
 
 .caveat {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
 
 /* Blog tag colors */
@@ -355,26 +360,25 @@ a {
 }
 
 @keyframes jiggle {
-
   48%,
   62% {
-    transform: scale(1.0, 1.0)
+    transform: scale(1, 1);
   }
 
   50% {
-    transform: scale(1.1, 0.9)
+    transform: scale(1.1, 0.9);
   }
 
   56% {
-    transform: scale(0.9, 1.1) translate(0, -.5rem)
+    transform: scale(0.9, 1.1) translate(0, -0.5rem);
   }
 
   59% {
-    transform: scale(1.0, 1.0) translate(0, -.3rem)
+    transform: scale(1, 1) translate(0, -0.3rem);
   }
 }
 
-  /* Boxes animations */
+/* Boxes animations */
 @keyframes h1slideRight {
   50% {
     opacity: 1;
@@ -383,26 +387,26 @@ a {
   }
 
   100% {
-    border-left: .5rem solid $color-primary-red;
+    border-left: 0.5rem solid $color-primary-red;
     padding-left: 2rem;
     opacity: 1;
     left: 0;
   }
 }
 
-  @keyframes spanSlideRight {
-    100% {
-      opacity: 0.6;
-      margin-left: 0;
-    }
+@keyframes spanSlideRight {
+  100% {
+    opacity: 0.6;
+    margin-left: 0;
   }
+}
 
-  @keyframes btnSlideDown {
-    100% {
-      opacity: 1;
-      top: 0;
-    }
+@keyframes btnSlideDown {
+  100% {
+    opacity: 1;
+    top: 0;
   }
+}
 
 @keyframes imgSlideLeft {
   100% {
@@ -422,15 +426,15 @@ a {
     width: 90%;
     margin: auto;
     padding: 4rem 3rem 1rem;
-    animation: 1s navFade .5s forwards;
+    animation: 1s navFade 0.5s forwards;
     opacity: 0;
     margin-top: -10rem;
-    border-bottom: .1rem dashed rgba($color-black, .1);
+    border-bottom: 0.1rem dashed rgba($color-black, 0.1);
 
     &--brand {
       flex: 1;
       font-size: 4rem;
-      font-family: 'Caveat', cursive;
+      font-family: "Caveat", cursive;
       color: $color-black;
     }
 
@@ -444,28 +448,26 @@ a {
         padding: 1rem;
 
         a {
-
           &:link,
           &:visited {
             color: $color-black;
             font-weight: 400;
             font-size: 2rem;
-            transition: border-bottom .2s, color .2s;
+            transition: border-bottom 0.2s, color 0.2s;
             margin-right: 2rem;
           }
 
           &.nav--item {
-
             &:hover,
             &:active {
-              color: rgba($color-black, .8);
-              padding-bottom: .5rem;
-              border-bottom: .3rem solid $color-primary-red;
+              color: rgba($color-black, 0.8);
+              padding-bottom: 0.5rem;
+              border-bottom: 0.3rem solid $color-primary-red;
             }
           }
 
           &.btn-ghost {
-            border: .1rem solid $color-black;
+            border: 0.1rem solid $color-black;
 
             &:link,
             &:visited {
@@ -499,24 +501,24 @@ a {
       font-size: 10rem;
       font-weight: 300;
       padding-left: 3rem;
-      border-left: .2rem solid $color-primary-red;
+      border-left: 0.2rem solid $color-primary-red;
 
       &Link {
         color: $color-black;
         font-weight: 400;
         display: inline-block;
-        border-bottom: .1rem solid rgba($color-black, .3);
-        
+        border-bottom: 0.1rem solid rgba($color-black, 0.3);
+
         &:after {
-          display:block;
-          content: '';
+          display: block;
+          content: "";
           /* width: 2rem;
           position: relative; */
 
-          border-bottom: solid .3rem $color-black;  
-          transform: scaleX(0);  
+          border-bottom: solid 0.3rem $color-black;
+          transform: scaleX(0);
           transition: transform 250ms ease-in-out;
-          transform-origin:  0% 50%;
+          transform-origin: 0% 50%;
         }
 
         &:hover:after {
@@ -533,7 +535,7 @@ a {
       animation: 1s btnSlideDown 3s ease-in forwards;
       background-color: $color-primary-light;
       color: $color-black;
-      border: .1rem solid $color-black;
+      border: 0.1rem solid $color-black;
       margin-top: 4rem;
 
       /* Blink and expand/shrink effect on landing page main cta button */
@@ -547,7 +549,7 @@ a {
         left: 0;
         border-radius: 10rem;
         background-color: $color-primary-light;
-        transition: all .4s;
+        transition: all 0.4s;
         z-index: -1;
       }
 
@@ -562,7 +564,6 @@ a {
         margin-right: 1rem;
       }
     }
-
   }
 }
 
@@ -578,8 +579,8 @@ a {
     width: 90%;
     background-color: $color-white;
     padding: 10rem 0;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
     position: relative;
     top: -2rem;
 
@@ -600,12 +601,12 @@ a {
           color: $color-black;
           text-decoration: underline;
           text-decoration-color: $color-primary-red;
-          text-decoration-thickness: .2rem;
+          text-decoration-thickness: 0.2rem;
         }
 
         &:active,
         &:hover {
-          opacity: .7;
+          opacity: 0.7;
         }
       }
     }
@@ -630,7 +631,7 @@ a {
     &--give {
       flex: 1;
 
-      .intro__container--btnTwo  {
+      .intro__container--btnTwo {
         text-decoration: none;
       }
     }
@@ -664,7 +665,7 @@ a {
   &__head--paragraph {
     font-size: 1.3rem;
     font-weight: 400;
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &__boxes {
@@ -674,12 +675,12 @@ a {
     &--box {
       flex-basis: 32%;
       padding: 3rem 3rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       background-color: $color-white;
-      box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+      box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
       display: flex;
       flex-direction: column;
-      transition: all .5s;
+      transition: all 0.5s;
       transform: scale(1);
 
       &:hover,
@@ -690,7 +691,7 @@ a {
       &Link:link,
       &Link:visited {
         width: 3rem;
-        color: rgba($color-primary-red, .7);
+        color: rgba($color-primary-red, 0.7);
         font-size: 1.7rem;
         transition: color 0.2s;
       }
@@ -715,9 +716,9 @@ a {
       .projects__link {
         &:link,
         &:visited {
-          color: rgba($color-primary-red, .7);
+          color: rgba($color-primary-red, 0.7);
           text-decoration: underline;
-          transition: color .2s;
+          transition: color 0.2s;
         }
 
         &:hover,
@@ -745,7 +746,6 @@ a {
   align-items: center;
   padding: 5rem 0;
 
-
   &__image {
     flex: 1;
   }
@@ -758,7 +758,7 @@ a {
       display: inline-block;
       font-weight: 400;
       font-size: 1.1rem;
-      padding: .7rem;
+      padding: 0.7rem;
       color: $color-black;
       background-color: $color-primary-brown;
       clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0 100%);
@@ -772,9 +772,9 @@ a {
     &--main:after {
       display: block;
       width: 20rem;
-      background-color: rgba($color-primary-dark, .2);
+      background-color: rgba($color-primary-dark, 0.2);
       content: " ";
-      height: .1rem;
+      height: 0.1rem;
       position: relative;
       top: 3rem;
       margin: 0 auto;
@@ -794,21 +794,18 @@ a {
   }
 }
 
-
-
 /* ==============
     services
 =============== */
 
 .services {
-
   &__head {
     padding: 20rem 0 20rem 10rem;
 
     &--title {
       font-size: 5rem;
-      letter-spacing: .1rem;
-      word-spacing: .1rem;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.1rem;
     }
   }
 
@@ -828,33 +825,33 @@ a {
     &--headSmall {
       text-transform: uppercase;
       font-size: 1.2rem;
-      letter-spacing: .1rem;
-    
+      letter-spacing: 0.1rem;
+
       &::before {
         display: block;
         content: "";
         position: relative;
-        bottom: .8rem;
+        bottom: 0.8rem;
         width: 1rem;
-        height: .1rem;
+        height: 0.1rem;
         background-color: $color-black;
         font-weight: 400;
       }
     }
-    
+
     &--headBig {
       font-size: 6rem;
       margin: 5rem 0;
     }
-    
+
     &--paragraph {
       font-size: 1.5rem;
-      letter-spacing: .1rem;
-      word-spacing: .1rem;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.1rem;
       margin-bottom: 2rem;
       width: 87%;
     }
-    
+
     &--paragraphLast {
       margin-bottom: 5rem;
     }
@@ -862,26 +859,24 @@ a {
 
   &__image {
     flex-basis: 60%;
-  
-    &--img  {
+
+    &--img {
       width: 100%;
-      
+
       &One {
         height: 75rem;
       }
-    
+
       &Two {
         height: 85rem;
       }
-    
+
       &Three {
         height: 75rem;
       }
     }
   }
 }
-
-
 
 /* ===============
       breaker
@@ -895,8 +890,6 @@ a {
   background-attachment: fixed;
 }
 
-
-
 /* ===============
       posts
 ================ */
@@ -906,19 +899,19 @@ a {
 
   &__head {
     padding: 20rem 10rem 0 10rem;
-  
+
     &--heading {
       text-transform: uppercase;
-      letter-spacing: .1rem;
-      word-spacing: .1rem;
-    
+      letter-spacing: 0.1rem;
+      word-spacing: 0.1rem;
+
       &::before {
         display: block;
         content: "";
         position: relative;
-        bottom: .8rem;
+        bottom: 0.8rem;
         width: 3rem;
-        height: .1rem;
+        height: 0.1rem;
         background-color: $color-black;
         font-weight: 400;
       }
@@ -940,65 +933,65 @@ a {
   padding: 3rem;
   color: $color-black;
   background-color: $color-white;
-  box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
-  transition: all .5s;
+  box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
+  transition: all 0.5s;
 
   &:active,
   &:hover {
     transform: scale(1.01);
-    box-shadow: 0 1.5rem 1.5rem rgba($color-black, .1);
+    box-shadow: 0 1.5rem 1.5rem rgba($color-black, 0.1);
   }
 
   &__head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
-  
+
     &--title {
       display: flex;
       align-items: center;
-      
+
       &Empty {
-        height: .8rem;
-        width: .8rem;
+        height: 0.8rem;
+        width: 0.8rem;
         background-color: $color-black;
         border-radius: 50%;
         margin-right: 1rem;
-        opacity: .8;
+        opacity: 0.8;
       }
-      
+
       &Text {
         font-size: 1.5rem;
-        opacity: .5;
-        letter-spacing: .1rem;
-        word-spacing: .1rem;
+        opacity: 0.5;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
       }
-      
+
       &TextTwo {
         font-size: 1.2rem;
-        letter-spacing: .1rem;
-        word-spacing: .1rem;
-        opacity: .5;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        opacity: 0.5;
       }
     }
   }
 
   &__body {
     margin-bottom: 5rem;
-  
+
     &--title {
       font-size: 3.5rem;
       margin-bottom: 2rem;
-      letter-spacing: .1rem;
-      word-spacing: .1rem;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.1rem;
       width: 90%;
     }
-    
+
     &--paragraph {
       font-size: 1.5rem;
-      letter-spacing: .1rem;
-      word-spacing: .1rem;
-      opacity: .5;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.1rem;
+      opacity: 0.5;
     }
   }
 
@@ -1019,7 +1012,7 @@ a {
 
     &--main {
       text-transform: uppercase;
-      color: rgba($color-primary-brown, .8);
+      color: rgba($color-primary-brown, 0.8);
     }
 
     &--brand {
@@ -1045,12 +1038,12 @@ a {
     background-color: $color-white;
     padding-top: 5rem;
     padding-left: 2rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     position: relative;
     top: -18rem;
-    box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+    box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
     transform: scale(1);
-    transition: all .5s;
+    transition: all 0.5s;
     backface-visibility: hidden;
 
     &:hover,
@@ -1063,13 +1056,13 @@ a {
       line-height: 150%;
       margin: 2rem 0;
       width: 80%;
-      
+
       &::before {
         display: block;
         content: "\201C";
         position: absolute;
         top: 5rem;
-        color: rgba($color-primary-brown, .7);
+        color: rgba($color-primary-brown, 0.7);
         font-size: 12rem;
         font-weight: 400;
       }
@@ -1085,8 +1078,8 @@ a {
       display: block;
       font-size: 1.2rem;
       font-style: italic;
-      letter-spacing: .05rem;
-      padding-bottom: .5rem;
+      letter-spacing: 0.05rem;
+      padding-bottom: 0.5rem;
     }
   }
 }
@@ -1096,7 +1089,8 @@ a {
 ================================================================== */
 
 .newsletter {
-  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url('/resources/img/newsletter-bg-min.jpg');
+  background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)),
+    url("/resources/img/newsletter-bg-min.jpg");
   /* try to compress the background image or remove 'background-size: cover' to remove lag on scroll" */
   background-size: cover;
   background-position: center;
@@ -1118,16 +1112,16 @@ a {
       margin-bottom: 2rem;
       font-weight: 500;
       font-size: 6rem;
-      letter-spacing: .1rem;
-      word-spacing: .3rem;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.3rem;
     }
 
     &--subHeading {
       margin: 0 auto;
-      color: rgba($color-white, .8);
+      color: rgba($color-white, 0.8);
       font-size: 2.35rem;
       margin-bottom: 2rem;
-      word-spacing: .2rem;
+      word-spacing: 0.2rem;
     }
 
     &--email,
@@ -1142,22 +1136,22 @@ a {
       text-align: center;
       padding: 2rem 0;
       color: $color-white;
-      border: .2rem solid rgba($color-white, .7);
-      background-color: rgba($color-black, .1);
+      border: 0.2rem solid rgba($color-white, 0.7);
+      background-color: rgba($color-black, 0.1);
       border-radius: 12rem;
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     &--email:hover,
     &--email:active,
     &--email:focus {
-      background-color: rgba($color-black, .7);
+      background-color: rgba($color-black, 0.7);
       outline: none;
     }
 
     &--email::placeholder {
-      color: rgba($color-white, .7);
-      word-spacing: .3rem;
+      color: rgba($color-white, 0.7);
+      word-spacing: 0.3rem;
     }
 
     &--btn {
@@ -1180,9 +1174,9 @@ a {
     &::after {
       display: block;
       width: 10rem;
-      background-color: rgba($color-primary-red, .2);
+      background-color: rgba($color-primary-red, 0.2);
       content: " ";
-      height: .1rem;
+      height: 0.1rem;
       position: relative;
       top: 3rem;
       margin: 0 auto;
@@ -1200,7 +1194,7 @@ a {
 
       .socials--boxLink:link,
       .socials--boxLink:visited {
-        color: rgba($color-primary-red, .7);
+        color: rgba($color-primary-red, 0.7);
         font-size: 2rem;
       }
 
@@ -1225,12 +1219,12 @@ a {
 
   &--form {
     flex: 1;
-    box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+    box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
     padding: 5rem 0 5rem 3rem;
     position: relative;
     right: 6.5rem;
     display: flex;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
     /* OUR-CONTACTS */
     .form__cards,
@@ -1243,7 +1237,6 @@ a {
 }
 
 .form__cards {
-
   &--mainHeading {
     margin-bottom: 3rem;
     font-weight: 300;
@@ -1265,20 +1258,20 @@ a {
 
     &--element {
       font-size: 1.5rem;
-      color: rgba($color-black, .5);
+      color: rgba($color-black, 0.5);
     }
   }
 
   &__txt {
     &--title {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       text-transform: uppercase;
       font-size: 1.2rem;
       font-weight: 300;
     }
 
     &--desc {
-      color: rgba($color-black, .5);
+      color: rgba($color-black, 0.5);
       font-size: 1.3rem;
       width: 80%;
     }
@@ -1291,7 +1284,7 @@ a {
   border-radius: 1rem;
 
   &--secondaryHeading {
-    word-spacing: .2rem;
+    word-spacing: 0.2rem;
   }
 
   .form__input {
@@ -1312,7 +1305,7 @@ a {
     &--textArea {
       width: 100%;
       outline: none;
-      border: .1rem solid rgba($color-primary-dark, .3);
+      border: 0.1rem solid rgba($color-primary-dark, 0.3);
       color: inherit;
       font-family: inherit;
     }
@@ -1324,13 +1317,13 @@ a {
     &--text,
     &--email {
       padding: 1.5rem 1rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
     }
 
     &--submitBtn {
       position: relative;
       top: 0;
-      letter-spacing: .05rem;
+      letter-spacing: 0.05rem;
       cursor: pointer;
     }
   }
@@ -1344,11 +1337,14 @@ a {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  
+
   &__content {
     display: flex;
     padding: 10rem 6rem;
-    background-image: linear-gradient(rgba($color-primary-dark, 1), rgba($color-black, .7)),
+    background-image: linear-gradient(
+        rgba($color-primary-dark, 1),
+        rgba($color-black, 0.7)
+      ),
       url("https://images.unsplash.com/photo-1598746666848-01f94f708ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
     background-position: center;
     background-size: cover;
@@ -1363,7 +1359,7 @@ a {
     background-color: $color-black;
     border: none;
     padding: 1rem 0;
-    color: rgba($color-white, .5);
+    color: rgba($color-white, 0.5);
   }
 }
 
@@ -1381,7 +1377,7 @@ a {
 
     &--paragraph {
       line-height: 1.5;
-      color: rgba($color-white, .9);
+      color: rgba($color-white, 0.9);
       width: 95%;
       margin-bottom: 1rem;
     }
@@ -1401,8 +1397,8 @@ a {
     padding: 1rem 0;
 
     &:nth-of-type(even) {
-      border-top: .1rem solid rgba($color-primary-light, .5);
-      border-bottom: .1rem solid rgba($color-primary-light, .5);
+      border-top: 0.1rem solid rgba($color-primary-light, 0.5);
+      border-bottom: 0.1rem solid rgba($color-primary-light, 0.5);
     }
 
     &--image,
@@ -1417,7 +1413,7 @@ a {
     }
 
     &--bodySpan {
-      color: rgba($color-white, .5);
+      color: rgba($color-white, 0.5);
       font-size: 1.3rem;
     }
 
@@ -1454,8 +1450,8 @@ a {
 
 /* Index hero(left side) section */
 .hero {
-  background: linear-gradient(rgba($color-black, .2), rgba($color-black, .8)),
-  url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.8)),
+    url("https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1468,7 +1464,7 @@ a {
     width: 100%;
     text-align: center;
     margin-top: 55vh;
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: relative;
     bottom: -5rem;
     opacity: 0;
@@ -1481,7 +1477,7 @@ a {
       height: 10rem;
       width: 10rem;
       border-radius: 50%;
-      border: 8px solid rgba($color-primary-red, .2);
+      border: 8px solid rgba($color-primary-red, 0.2);
     }
   }
 
@@ -1489,7 +1485,7 @@ a {
     &--mainTitle {
       font-size: 1.5rem;
       font-weight: 300;
-      opacity: .7;
+      opacity: 0.7;
     }
 
     &--desc {
@@ -1510,11 +1506,11 @@ a {
 
       &Text {
         text-decoration: underline;
-        transform: all .5s;
+        transform: all 0.5s;
 
         &:link,
         &:visited {
-          opacity: .7;
+          opacity: 0.7;
         }
 
         &:active,
@@ -1538,7 +1534,7 @@ a {
   */
   width: 80%;
   margin: 65vh auto;
-  font-size: .8rem;
+  font-size: 0.8rem;
   position: relative;
   /* for Pop up animation */
   bottom: -5rem;
@@ -1563,24 +1559,24 @@ a {
   &--cardImage {
     height: 10rem;
     border-radius: 50%;
-    border: .8rem solid rgba($color-primary-red, .2);
+    border: 0.8rem solid rgba($color-primary-red, 0.2);
   }
 
   &--cardText {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     position: relative;
     top: -1rem;
     width: 70%;
   }
 
   &--cardTitle {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
   }
 
   &--cardDate {
-    color: rgba($color-primary-light, .5);
-    margin-left: .2rem;
+    color: rgba($color-primary-light, 0.5);
+    margin-left: 0.2rem;
     font-size: 1.3rem;
   }
 }
@@ -1631,7 +1627,10 @@ a {
   &__writers {
     width: 80%;
     height: 50rem;
-    background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-black, 0.5)),
+    background-image: linear-gradient(
+        rgba($color-black, 0.5),
+        rgba($color-black, 0.5)
+      ),
       url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
     background-size: cover;
     background-position: top;
@@ -1666,7 +1665,7 @@ a {
 
       &--mainLink:link,
       &--mainLink:visited {
-        opacity: .8;
+        opacity: 0.8;
         color: $color-black;
       }
 
@@ -1743,19 +1742,19 @@ a {
       height: 20rem;
       margin-top: 1rem;
       overflow: hidden;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
 
       &--linkImage {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         transform: scale(1);
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
 
       &--linkImage:hover {
-        filter: grayscale(.5);
+        filter: grayscale(0.5);
         transform: scale(1.1);
       }
     }
@@ -1770,9 +1769,9 @@ a {
     height: 12rem;
     padding: 5rem;
     padding-left: 0;
-    background: rgba($color-primary-red, .7);
+    background: rgba($color-primary-red, 0.7);
     color: $color-primary-light;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 100%;
     position: absolute;
     right: 0;
@@ -1797,8 +1796,15 @@ contains blog author name, blog date and tag
   height: 8rem;
   padding-top: 1rem;
   padding-left: 2rem;
-  background-image: linear-gradient(to bottom, rgba(10, 0, 0, .6), rgba(27, 29, 32, .5), rgba(5, 30, 54, .4), rgba(15, 36, 56, .3), rgba(7, 40, 73, 0));
-  border-radius: .5rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(10, 0, 0, 0.6),
+    rgba(27, 29, 32, 0.5),
+    rgba(5, 30, 54, 0.4),
+    rgba(15, 36, 56, 0.3),
+    rgba(7, 40, 73, 0)
+  );
+  border-radius: 0.5rem;
 
   &__author {
     display: flex;
@@ -1819,13 +1825,13 @@ contains blog author name, blog date and tag
 
     &--title {
       font-size: 1.3rem;
-      margin-bottom: .2rem;
+      margin-bottom: 0.2rem;
     }
 
     &--paragraph {
       font-size: 1.3rem;
-      color: rgba($color-primary-light, .7);
-      font-family: 'Caveat', cursive;
+      color: rgba($color-primary-light, 0.7);
+      font-family: "Caveat", cursive;
     }
   }
 
@@ -1841,14 +1847,14 @@ contains blog author name, blog date and tag
       &:link,
       &:visited {
         color: $color-primary-light;
-        padding: .5rem 1.6rem;
+        padding: 0.5rem 1.6rem;
         border-radius: 1.5rem;
       }
 
       &:active,
       &:hover {
         color: $color-white;
-        transition: color .2s;
+        transition: color 0.2s;
       }
     }
   }
@@ -1872,8 +1878,8 @@ contains blog author name, blog date and tag
 
         &:active,
         &:hover {
-          color: rgba($color-black, .5);
-          transition: color .2s;
+          color: rgba($color-black, 0.5);
+          transition: color 0.2s;
         }
       }
     }
@@ -1888,21 +1894,21 @@ contains blog author name, blog date and tag
     margin-top: 1rem;
     font-size: 1.3rem;
     margin-bottom: 3.5rem;
-    transition: all .2s;
+    transition: all 0.2s;
 
     &--anchorTag {
       &:link,
       &:visited {
-        color: rgba($color-black, .5);
-        border-bottom: .1rem solid rgba($color-primary-red, .5);
-        transition: all .2s;
+        color: rgba($color-black, 0.5);
+        border-bottom: 0.1rem solid rgba($color-primary-red, 0.5);
+        transition: all 0.2s;
       }
 
       &:active,
       &:hover {
         color: $color-black;
         font-weight: 400;
-        border-bottom: .2rem solid $color-primary-red;
+        border-bottom: 0.2rem solid $color-primary-red;
       }
     }
   }
@@ -1912,8 +1918,8 @@ contains blog author name, blog date and tag
     display: block;
     position: relative;
     width: 100%;
-    height: .1rem;
-    background-color: rgba($color-black, .1);
+    height: 0.1rem;
+    background-color: rgba($color-black, 0.1);
   }
 }
 
@@ -1925,11 +1931,11 @@ contains blog author name, blog date and tag
 @keyframes admenuLeft {
   50% {
     opacity: 1;
-    right: -.5rem;
+    right: -0.5rem;
   }
 
   100% {
-    opacity: .7;
+    opacity: 0.7;
     right: -1rem;
   }
 }
@@ -1950,8 +1956,7 @@ contains blog author name, blog date and tag
   justify-content: center;
   background-color: #f9f3c5;
 
-
-/*
+  /*
   figure out a way to style all links in the blog body without affecting the backlinks a tags styling down below
   that's why I've commented these out for now
 
@@ -1979,7 +1984,7 @@ contains blog author name, blog date and tag
     transform: translate(-40%);
     animation: admenuLeft 1.5s linear 6s forwards;
     background-color: $color-primary-dark;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     width: 3rem;
     text-align: center;
 
@@ -1987,7 +1992,7 @@ contains blog author name, blog date and tag
       padding: 1.2rem 0;
 
       &:last-of-type {
-        border-bottom: .1rem solid transparent;
+        border-bottom: 0.1rem solid transparent;
       }
     }
 
@@ -2017,8 +2022,8 @@ contains blog author name, blog date and tag
       color: $color-black;
       text-align: center;
       border-radius: 1.5rem;
-      padding: .5rem 0;
-      font-size: .7rem;
+      padding: 0.5rem 0;
+      font-size: 0.7rem;
 
       /*Positioning the tooltip*/
       position: absolute;
@@ -2033,10 +2038,10 @@ contains blog author name, blog date and tag
     &--button {
       display: inline-block;
       border: none;
-      font-size: .7rem;
+      font-size: 0.7rem;
       margin: 0;
       text-decoration: none;
-      color: rgba($color-primary-brown, .5);
+      color: rgba($color-primary-brown, 0.5);
       font-family: sans-serif;
       cursor: pointer;
       text-align: center;
@@ -2076,9 +2081,9 @@ contains blog author name, blog date and tag
 
     padding: 2rem;
     padding-left: 0;
-    background: rgba($color-primary-red, .7);
+    background: rgba($color-primary-red, 0.7);
     color: $color-primary-light;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 100%;
     position: absolute;
     right: 0;
@@ -2112,12 +2117,12 @@ contains blog author name, blog date and tag
 
 @keyframes smallPop {
   90% {
-    color: rgba($color-black, .8);
+    color: rgba($color-black, 0.8);
     transform: scale(1.03);
   }
 
   100% {
-    color: rgba($color-black, .5);
+    color: rgba($color-black, 0.5);
     transform: scale(1);
   }
 }
@@ -2135,11 +2140,11 @@ contains blog author name, blog date and tag
     top: -2.5rem;
     opacity: 0;
     animation: mainHeadingSlideDown 1s linear 0s forwards;
-    
+
     &:after {
       display: block;
-      height: .1rem;
-      background-color: rgba($color-primary-light, .5);
+      height: 0.1rem;
+      background-color: rgba($color-primary-light, 0.5);
       content: " ";
       width: 20rem;
       margin: 0 auto;
@@ -2148,17 +2153,17 @@ contains blog author name, blog date and tag
   }
 
   &--paragraph {
-    color: rgba($color-black, .3);
+    color: rgba($color-black, 0.3);
     font-size: 1.3rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     animation: smallPop 1s linear 2s forwards;
     transform: scale(1);
 
     &:after {
       display: block;
-      height: .1rem;
+      height: 0.1rem;
       content: " ";
-      background-color: rgba($color-primary-light, .5);
+      background-color: rgba($color-primary-light, 0.5);
       width: 20rem;
       margin-top: 2rem;
       margin: 0 auto;
@@ -2178,7 +2183,7 @@ contains blog author name, blog date and tag
 
   &--h5 {
     font-size: 1.6rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-weight: 300;
   }
 
@@ -2193,12 +2198,12 @@ contains blog author name, blog date and tag
 .blog__body {
   width: 90%;
   margin: 0 auto;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 
   &--paragraph {
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    word-spacing: .1rem;
+    word-spacing: 0.1rem;
   }
 
   &--sectionOne {
@@ -2206,10 +2211,10 @@ contains blog author name, blog date and tag
   }
 
   &--sectionTwo p:nth-of-type(2) {
-    border-left: .2rem solid $color-primary-red;
+    border-left: 0.2rem solid $color-primary-red;
     padding: 1rem;
     line-height: 1.5rem;
-    word-spacing: .5rem;
+    word-spacing: 0.5rem;
   }
 
   &--sectionThree .text-wrap {
@@ -2233,24 +2238,23 @@ contains blog author name, blog date and tag
 
 /********* Show-backlinks section *************/
 .backlinks {
-
   &--heading {
     font-size: 2rem;
     margin-top: 5rem;
-    margin-bottom: .5rem;
-    border-top: .1rem solid rgba($color-primary-red, .1);
+    margin-bottom: 0.5rem;
+    border-top: 0.1rem solid rgba($color-primary-red, 0.1);
     padding-top: 2rem;
   }
 
   &__tag {
-    color: rgba($color-black, .5);
+    color: rgba($color-black, 0.5);
     font-size: 1.3rem;
     padding-bottom: 2rem;
-    border-bottom: .1rem solid rgba($color-primary-red, .1);
+    border-bottom: 0.1rem solid rgba($color-primary-red, 0.1);
 
     &--link {
       font-size: 1.3rem;
-      margin-left: .5rem;
+      margin-left: 0.5rem;
       font-weight: 400;
       text-decoration: underline;
     }
@@ -2297,10 +2301,10 @@ contains blog author name, blog date and tag
     &--image {
       width: 100%;
       height: 33.5rem;
-      border-radius: .3rem;
-      opacity: .7;
+      border-radius: 0.3rem;
+      opacity: 0.7;
       transform: scale(1);
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &--image:active,
@@ -2316,8 +2320,8 @@ contains blog author name, blog date and tag
       position: absolute;
       bottom: 2rem;
       right: 2rem;
-      font-size: .7rem;
-      padding: .5rem 2rem;
+      font-size: 0.7rem;
+      padding: 0.5rem 2rem;
       color: $color-white;
       border-radius: 3rem;
     }
@@ -2347,9 +2351,9 @@ contains blog author name, blog date and tag
     &--heading {
       width: 85%;
       margin-top: 1rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       font-size: 1.3rem;
-      letter-spacing: .01rem;
+      letter-spacing: 0.01rem;
     }
 
     &--headingLink {
@@ -2362,14 +2366,14 @@ contains blog author name, blog date and tag
 
       &:active,
       &:hover {
-        color: rgba($color-black, .7);
-        transition: color .2s;
+        color: rgba($color-black, 0.7);
+        transition: color 0.2s;
       }
     }
 
     &--paragraph {
-      margin-bottom: .5rem;
-      color: rgba($color-black, .7);
+      margin-bottom: 0.5rem;
+      color: rgba($color-black, 0.7);
       font-size: 1.1rem;
       width: 100%;
     }
@@ -2378,8 +2382,8 @@ contains blog author name, blog date and tag
       &:link,
       &:visited {
         font-size: 1.1rem;
-        margin-left: .2rem;
-        color: rgba($color-black, .5);
+        margin-left: 0.2rem;
+        color: rgba($color-black, 0.5);
         text-decoration: underline;
       }
 
@@ -2410,7 +2414,7 @@ contains blog author name, blog date and tag
 
     &::after {
       display: block;
-      height: .1rem;
+      height: 0.1rem;
       background-color: $color-primary-red;
       content: " ";
       width: 10rem;
@@ -2429,9 +2433,9 @@ contains blog author name, blog date and tag
       content: " ";
       margin: 0 auto;
       width: 30rem;
-      height: .1rem;
+      height: 0.1rem;
       margin-top: 5rem;
-      background-color: rgba($color-primary-red, .1);
+      background-color: rgba($color-primary-red, 0.1);
     }
 
     &--last {
@@ -2453,7 +2457,7 @@ Content sections in form rows
     padding: 0 2rem;
 
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1.5rem rgba($color-black, .1);
+    box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
 
     &--heading {
       padding: 2rem;
@@ -2494,10 +2498,10 @@ Individual boxes in section rows
   .inputsBox--input {
     width: 100%;
     margin-bottom: 2rem;
-    border: .1rem dashed rgba($color-black, .3);
+    border: 0.1rem dashed rgba($color-black, 0.3);
     font-family: inherit;
     font-weight: 300;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     display: block;
     font-size: 1.3rem;
 
@@ -2530,20 +2534,20 @@ Individual boxes in section rows
     line-height: 3;
     background: $color-primary-light;
     overflow: hidden;
-    border-radius: .25em;
+    border-radius: 0.25em;
 
     /* Arrow */
     &::after {
-      content: '\25BC';
+      content: "\25BC";
       position: absolute;
       top: 0;
       right: 0;
       padding: 0 1em;
-      color: rgba($color-primary-red, .7);
+      color: rgba($color-primary-red, 0.7);
       background-color: $color-primary-light;
       cursor: pointer;
       pointer-events: none;
-      transition: .5s all ease;
+      transition: 0.5s all ease;
     }
 
     /* Transition */
@@ -2554,7 +2558,7 @@ Individual boxes in section rows
 
     &--select {
       flex: 1;
-      padding: 0 .5em;
+      padding: 0 0.5em;
       color: $color-black;
       cursor: pointer;
       font-weight: 300;
@@ -2585,9 +2589,9 @@ Individual boxes in section rows
   &--link {
     &:link,
     &:visited {
-      color: rgba($color-black, .5);
+      color: rgba($color-black, 0.5);
       text-decoration: underline;
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     &:hover,
@@ -2650,7 +2654,7 @@ form submit buttons
 .auth__smallHeading {
   margin-top: 2rem;
   font-size: 1.3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 300;
 
   &--link:link,
@@ -2661,7 +2665,7 @@ form submit buttons
   &--link:active,
   &--link:hover {
     color: #555;
-    transition: color .2s;
+    transition: color 0.2s;
   }
 }
 
@@ -2708,7 +2712,7 @@ form submit buttons
       margin: 0 6rem;
       align-items: center;
       justify-content: space-between;
-      font-size: .65rem;
+      font-size: 0.65rem;
     }
 
     &--footer {
@@ -2725,7 +2729,10 @@ form submit buttons
     width: 50%;
     overflow: hidden;
     height: 65vh;
-    background-image: linear-gradient(rgba(20, 30, 48, .5), rgba(20, 30, 48, .5)),
+    background-image: linear-gradient(
+        rgba(20, 30, 48, 0.5),
+        rgba(20, 30, 48, 0.5)
+      ),
       url("https://images.unsplash.com/photo-1529088363398-8efc64a0eb95?ixlib=rb-1.2.1&auto=format&fit=crop&w=848&q=80");
     background-position: center;
     background-repeat: no-repeat;
@@ -2787,7 +2794,6 @@ form submit buttons
     text-decoration: none;
     padding-right: 1rem;
   }
-  
 }
 
 .projects__card {
@@ -2799,7 +2805,7 @@ form submit buttons
 
   &--primaryHeading {
     font-weight: 300;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     font-size: 1.3rem;
   }
 
@@ -2808,7 +2814,7 @@ form submit buttons
     content: "";
     display: inline-block;
     width: 2.5rem;
-    height: .1rem;
+    height: 0.1rem;
     background-color: $color-black;
     position: absolute;
     left: 105%;
@@ -2825,12 +2831,6 @@ form submit buttons
   }
 }
 
-
-
-
-
-
-
 /*
 E-COMMERCE STYLES
 
@@ -2844,121 +2844,146 @@ SME templates first
   display: none;
 }
 
+.ecoMenu__toggle--link {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+.ecoMenu__toggle--link:hover {
+  color: tomato;
+}
+
+.ecoMenu__toggle {
+  display: block;
+  position: fixed;
+  top: 3rem;
+  right: 1.5rem;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ecoMenu__toggle--input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
 /*
  * Just a quick hamburger
- */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #cdcdcd;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
+*/
+
+.ecoMenu__toggle--span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.ecoMenu__toggle--span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.ecoMenu__toggle--span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
   * Transform all the slices of hamburger
   * into a crossmark.
-  */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- }
- 
- /*
+*/
+.ecoMenu__toggle--input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
   * But let's hide the middle one.
-  */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   opacity: 1;
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
+*/
+.ecoMenu__toggle--input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * Oh yeah and the last one should go the other direction
+*/
+.ecoMenu__toggle--input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
   * Make this absolute positioned
   * at the top left of the screen
   */
- #menu
- {
-   position: absolute;
-   width: 300px;
-   margin: -100px 0 0 0;
-   padding: 50px;
-   padding-top: 125px;
-   right: -100px;
-   
-   background: #ededed;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
+.ecoMenu__toggle--menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.ecoMenu__toggle--menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
   * And let's fade it in from the left
   */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
-   opacity: 1;
- }
- 
- @media screen and (max-width: 768px) {
-   #menu {
-     transform: none;
-     opacity: 0;
- 
-     transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-   }
- }
+.ecoMenu__toggle--input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
 
+@media screen and (max-width: 768px) {
+  .ecoMenu__toggle--menu {
+    transform: none;
+    opacity: 0;
 
-
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+}
 
 //menu styles end here =====================================================
-
 
 .smeNavItems {
   display: flex;
@@ -2976,13 +3001,13 @@ SME templates first
       font-size: 4rem;
       font-weight: 400;
     }
-    
+
     &--country {
       align-self: flex-end;
       display: inline-block;
       position: relative;
-      bottom: .5rem;
-      letter-spacing: .1rem;
+      bottom: 0.5rem;
+      letter-spacing: 0.1rem;
     }
   }
 
@@ -2993,8 +3018,8 @@ SME templates first
     &--number {
       text-decoration: none;
       font-size: 1.8rem;
-      letter-spacing: .1rem;
-      opacity: .8;
+      letter-spacing: 0.1rem;
+      opacity: 0.8;
     }
 
     &--li {
@@ -3006,14 +3031,14 @@ SME templates first
     &--link {
       color: $color-black;
       font-size: 1.8rem;
-      transition: all .5s;
-    
+      transition: all 0.5s;
+
       &:link,
       &:visited {
         font-weight: 400;
-        opacity: .8;
+        opacity: 0.8;
       }
-    
+
       &:active,
       &:hover {
         text-decoration: underline;
@@ -3031,7 +3056,11 @@ SME templates first
 .smeIntro {
   width: 100vw;
   height: auto;
-  background-image: linear-gradient(rgba(50, 74, 119, .5), rgba(20, 30, 48, .1)), url("/resources/img/smeIntroTwo-min.jpg");
+  background-image: linear-gradient(
+      rgba(50, 74, 119, 0.5),
+      rgba(20, 30, 48, 0.1)
+    ),
+    url("/resources/img/smeIntroTwo-min.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3040,7 +3069,11 @@ SME templates first
   color: $color-white;
 
   &Two {
-    background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .2)), url("/resources/img/smeIntroFour.jpg");
+    background-image: linear-gradient(
+        rgba(50, 74, 119, 1),
+        rgba(20, 30, 48, 0.2)
+      ),
+      url("/resources/img/smeIntroFour.jpg");
   }
 
   &__header,
@@ -3057,15 +3090,15 @@ SME templates first
       font-size: 4.5rem;
       font-weight: 600;
       line-height: 155%;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
     }
   }
 
   &__body--paragraph {
     font-size: 2rem;
     margin-bottom: 4rem;
-    letter-spacing: .05rem;
-    word-spacing: .1rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
     line-height: 160%;
   }
 
@@ -3077,8 +3110,8 @@ SME templates first
     &--input {
       padding: 2rem;
       background-color: transparent;
-      border: .1rem solid $color-white;
-      border-radius: .5rem;
+      border: 0.1rem solid $color-white;
+      border-radius: 0.5rem;
       margin-bottom: 1rem;
       color: $color-white;
       border-radius: 5rem;
@@ -3087,32 +3120,31 @@ SME templates first
         outline: none;
       }
     }
-    
+
     &--input::placeholder {
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
       color: $color-white;
-      opacity: .8;
+      opacity: 0.8;
     }
 
     &--btn {
       align-self: flex-start;
       cursor: pointer;
       border: none;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       box-shadow: none;
       text-transform: lowercase;
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
     }
   }
 
   &__disclaimer--paragraph {
     font-size: 1.3rem;
-    word-spacing: .1rem;
+    word-spacing: 0.1rem;
   }
 }
-
 
 /*
 smeFeatures
@@ -3123,10 +3155,10 @@ smeFeatures
   &__head {
     width: 70%;
     padding: 10rem 5rem;
-  
+
     &--title {
       font-size: 4rem;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
       line-height: 140%;
     }
   }
@@ -3151,33 +3183,33 @@ smeFeatures
 
     &--small {
       font-size: 1.2rem;
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
       text-transform: uppercase;
-    
+
       &::before {
         display: block;
         content: "";
         position: relative;
-        bottom: .8rem;
+        bottom: 0.8rem;
         width: 1rem;
-        height: .1rem;
+        height: 0.1rem;
         background-color: $color-black;
         font-weight: 400;
       }
     }
-    
+
     &--big {
       font-size: 5rem;
       width: 70%;
       margin: 3rem 0 2rem;
     }
-    
+
     &--paragraph {
       font-size: 1.5rem;
       width: 70%;
       margin-bottom: 2rem;
       line-height: 160%;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
 
       &Right {
         width: 80%;
@@ -3189,13 +3221,13 @@ smeFeatures
       }
     }
   }
-  
+
   &__image {
     flex-basis: 50%;
 
     &--img {
       width: 100%;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
     }
   }
 }
@@ -3210,10 +3242,10 @@ smeFeatures
   &__header--main {
     font-size: 5rem;
     font-weight: 400;
-    word-spacing: .1rem;
+    word-spacing: 0.1rem;
     margin-bottom: 3rem;
   }
-  
+
   &__paragraph--p {
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -3227,26 +3259,25 @@ smeFeatures
   &--empty {
     flex-basis: 50%;
   }
-  
+
   &--text {
     flex-basis: 50%;
     padding: 10rem 5rem;
   }
 
   &__head {
-    
     &--small {
       font-size: 1.3rem;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
       margin-bottom: 1rem;
-    
+
       &::before {
         display: block;
         content: "";
         position: relative;
-        bottom: .8rem;
+        bottom: 0.8rem;
         width: 1rem;
-        height: .1rem;
+        height: 0.1rem;
         background-color: $color-black;
         font-weight: 400;
       }
@@ -3265,7 +3296,7 @@ smeFeatures
       width: 85%;
       margin-bottom: 2rem;
       line-height: 150%;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
     }
   }
 
@@ -3277,7 +3308,8 @@ smeFeatures
 }
 
 .smeBreakerTwo {
-  background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, .5)), url("https://images.unsplash.com/photo-1509100194014-d49809396daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
+  background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, 0.5)),
+    url("https://images.unsplash.com/photo-1509100194014-d49809396daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3291,7 +3323,7 @@ smeFeatures
   &__head {
     &--main {
       font-size: 6rem;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
       line-height: 140%;
     }
   }
@@ -3312,23 +3344,23 @@ sme footer
     &--link {
       margin: 0 3rem 0 0;
       padding-bottom: 2rem;
-      transition: all .2s;
-    
+      transition: all 0.2s;
+
       &:link,
       &:visited {
         color: $color-black;
-        border-bottom: .2rem solid transparent;
+        border-bottom: 0.2rem solid transparent;
       }
-    
+
       &:active,
       &:hover {
-        border-bottom: .2rem solid $color-black;
+        border-bottom: 0.2rem solid $color-black;
       }
     }
 
     &--title {
       font-size: 2rem;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
       font-weight: 400;
     }
   }
@@ -3338,14 +3370,13 @@ sme footer
     margin-top: 6rem;
 
     .btn {
-
       &::before {
         display: block;
         content: "";
         position: relative;
         bottom: 2.5rem;
         width: 1rem;
-        height: .1rem;
+        height: 0.1rem;
         background-color: $color-black;
         font-weight: 400;
       }
@@ -3355,15 +3386,13 @@ sme footer
 
 .smeFooter__boxes {
   display: flex;
-  border-top: .1rem solid rgba($color-black, .1);
+  border-top: 0.1rem solid rgba($color-black, 0.1);
   padding-top: 2rem;
   justify-content: space-between;
 }
 
-
 //nested inside smeFooter__boxes
 .smeFooterBox {
-
   &__head {
     margin-bottom: 2rem;
 
@@ -3386,16 +3415,16 @@ sme footer
     &--link {
       color: $color-black;
       font-size: 1.3rem;
-      transition: all .5s;
+      transition: all 0.5s;
     }
 
     &--li {
       font-size: 1.5rem;
-      word-spacing: .1rem;
+      word-spacing: 0.1rem;
       line-height: 200%;
-      opacity: .5;
-      transition: all .5s;
-    
+      opacity: 0.5;
+      transition: all 0.5s;
+
       &:active,
       &:hover {
         opacity: 1;
