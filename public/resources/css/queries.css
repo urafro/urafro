@@ -724,6 +724,28 @@
     content: none;
   }
 
+
+
+  /* smeFeatures */
+  .smeFeatures__head{
+    padding: 5rem;
+    width: 95%;
+  }
+
+  .smeFeatures__head--title,
+  .smeBio__head--main {
+    font-size: 2rem;
+  }
+
+  /* smeBio */
+  .smeBio {
+    padding: 5rem;
+  }
+
+  .smeBio__head {
+    width: 95%;
+  }
+
   /* smeFooter */
   .smeFooter__boxes {
     flex-direction: column;
