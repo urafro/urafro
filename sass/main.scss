@@ -3098,6 +3098,14 @@ SME templates first
       url("/resources/img/smeIntroFour.jpg");
   }
 
+  &Three {
+    background-image: linear-gradient(
+        rgba(50, 74, 119, 1),
+        rgba(20, 30, 48, .5)
+      ),
+      url("/resources/img/wholesaleTwo.jpg");
+  }
+
   &__header,
   &__body,
   &__form,

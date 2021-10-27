@@ -2156,6 +2156,8 @@ SME templates first
   color: #fff; }
   .smeIntroTwo {
     background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.2)), url("/resources/img/smeIntroFour.jpg"); }
+  .smeIntroThree {
+    background-image: linear-gradient(#324a77, rgba(20, 30, 48, 0.5)), url("/resources/img/wholesaleTwo.jpg"); }
   .smeIntro__header, .smeIntro__body, .smeIntro__form, .smeIntro__disclaimer {
     width: 30%; }
   .smeIntro__header {

@@ -26,5 +26,15 @@ router.post("/ecommerce/retailer", (req, res) => {
   res.redirect("/projects");
 });
 
+//Index Route - show landing page for wholesalers
+router.get("/ecommerce/wholesalers", (req, res) => {
+  res.render("wholesaler/landing");
+});
+
+//New Route - store user phone number and reroute them to pricing page
+router.post("/ecommerce/wholesaler", (req, res) => {
+  req.flash("success", "Hiya. We are still developing the bits. Kindly reach out to us using our phone number +263 772 794 678");
+  res.redirect("/projects");
+});
 
 module.exports = router;

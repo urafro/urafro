@@ -1,0 +1,280 @@
+<% include ../partials/header %>
+
+<section class="smeNav">
+  <ul class="smeNavItems">
+    <div class="smeNavItems__brand">
+      <li class="smeNavItems__brand--name"><a href="/" class="smeNavItems__brand--link">urafro</a></li>
+      <span class="smeNavItems__brand--country">Zimbabwe</span>
+    </div>
+
+    <div class="smeNavItems__links">
+      <li class="smeNavItems__links--li smeNavItems__links--number">
+        +263 772 794 678
+      </li>
+      <!-- link to pricing page -->
+      <li class="smeNavItems__links--li">
+        <a href="/projects" class="smeNavItems__links--link">Pricing</a>
+      </li>
+      <!-- link to how-to page -->
+      <li class="smeNavItems__links--li">
+        <a href="/projects" class="smeNavItems__links--link">How-to</a>
+      </li>
+      <!-- link to e-commerce blog page -->
+      <li class="smeNavItems__links--li">
+        <a href="/projects" class="smeNavItems__links--link">Blog</a>
+      </li>
+      <!-- link to sme sign up route -->
+      <a href="/projects" class="btn btn-full smeNav--btn">start free trial</a>
+    </div>
+
+    <nav role='navigation' class="ecoMenu">
+      <div class="ecoMenu__toggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" class="ecoMenu__toggle--input" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span class="ecoMenu__toggle--span"></span>
+        <span class="ecoMenu__toggle--span"></span>
+        <span class="ecoMenu__toggle--span"></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul class="ecoMenu__toggle--menu">
+          <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">start</li></a>
+          <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">get free website</li></a>
+          <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">how-to</li></a>
+          <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">features</li></a>
+          <a class="ecoMenu__toggle--link" href=""><li class="ecoMenu__toggle--li">sell online</li></a>
+
+          <div class="ecoMenu__toggle--middle">
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">pricing</li></a>
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">learn</li></a>
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">Login</li></a>
+
+            <!-- link to pricing -->
+            <a href="#" class="btn btn-full ecoMenu__toggle--middleBtn">start free trial</a>
+          </div>
+
+          <div class="ecoMenu__toggle--bottom">
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">about</li></a>
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">careers</li></a>
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">blog</li></a>
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li ecoMenu__toggle--liBrand">urafro Plus</li></a>
+            <a class="ecoMenu__toggle--link" href="/projects"><li class="ecoMenu__toggle--li">Sitemap</li></a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </ul>
+</section>
+
+<div class="smeIntro smeIntroThree">
+  <div class="smeIntro__header">
+    <h1 class="smeIntro__header--main">
+      The platform African commerce is built on
+    </h1>
+  </div>
+  <div class="smeIntro__body">
+    <p class="smeIntro__body--paragraph">
+      urafro is helping wholesalers get online, sell and design an afrocentric solution to our continental challenge of logistics
+    </p>
+  </div>
+  <form action="/ecommerce/retailer" method="POST" class="smeIntro__form">
+    <input class="smeIntro__form--input" type="tel" name="number" placeholder="Enter your rep's phone number" required>
+    <input type="submit" value="Start free trial" class="btn btn-full smeIntro__form--btn">
+  </form>
+  <div class="smeIntro__disclaimer">
+    <p class="smeIntro__disclaimer--paragraph">Try urafro free for 30 days, no credit card required. By entering your phone number, you agree to receive marketing messages from urafro.</p>
+  </div>
+</div>
+
+<div class="smeFeatures">
+  <div class="smeFeatures__head">
+    <h2 class="smeFeatures__head--title">
+      Bring your African business online. Let us help you create an ecommerce website backed by powerful tools to help you find customers, improve sales, manage your inventory and simplify your day-to-day
+    </h2>
+  </div>
+
+  <div class="smeFeatures__boxes">
+    <div class="smeFeatures__boxes--box smeFbox">
+      <div class="smeFbox__image">
+        <img src="/resources/img/retailer-min.jpg" alt="" class="smeFbox__image--img">
+      </div>
+
+      <div class="smeFbox__text smeFbox__textRight">
+        <h5 class="smeFbox__text--small">
+          wholesaler
+        </h5>
+        <h2 class="smeFbox__text--big">
+          Move your business online
+        </h2>
+
+        <p class="smeFbox__text--paragraph smeFbox__text--paragraphRight">
+          Let us help you turn your wholesale business into an online store and reach more customers without much hassle
+        </p>
+
+        <!-- link to pricing page -->
+        <a href="/projects" class="btn btn-full">get your website</a>
+      </div>
+    </div>
+    
+    <div class="smeFeatures__boxes--box smeFbox">
+      <div class="smeFbox__text">
+        <h5 class="smeFbox__text--small">
+          already have a website?
+        </h5>
+        <h2 class="smeFbox__text--big">
+          Switch to urafro e-commerce
+        </h2>
+
+        <p class="smeFbox__text--paragraph">
+          Bring your business to urafro no matter which ecommerce platform you were using. We will transfer your domain for free and hold your *sanitized* hand throughout the whole process
+        </p>
+
+        <!-- link to pricing page -->
+        <a href="/projects" class="btn btn-ghost">get started for free</a>
+      </div>
+
+      <div class="smeFbox__image">
+        <img src="/resources/img/switch-min.jpg" alt="" class="smeFbox__image--img">
+      </div>
+    </div>
+
+    <div class="smeFeatures__boxes--box smeFbox">
+      <div class="smeFbox__image">
+        <img src="/resources/img/smeHelp-min.jpg" alt="" class="smeFbox__image--img">
+      </div>
+
+      <div class="smeFbox__text smeFbox__textRight">
+        <h5 class="smeFbox__text--small">
+          hands-free launch
+        </h5>
+        <h2 class="smeFbox__text--big">
+          You get expert help
+        </h2>
+
+        <p class="smeFbox__text--paragraph smeFbox__text--paragraphRight">
+          Our team of software engineers will help you pick a design and launch your website so you don't have to think about anything technical like domains, hosting or code!
+        </p>
+
+        <!-- link to pricing page -->
+        <a href="/projects" class="btn btn-ghost">get your website</a>
+      </div>
+    </div>
+
+    <div class="smeFeatures__boxes--box smeFbox">
+      <div class="smeFbox__text">
+        <h5 class="smeFbox__text--small">
+          websites + inventory
+        </h5>
+        <h2 class="smeFbox__text--big">
+          Creativity without the jargon
+        </h2>
+
+        <p class="smeFbox__text--paragraph">
+          <span class="smeFbox__text--paragraphBold">We'll help you create AND run, a modern, professional and custom website with ease:</span> you run the business! We think that's a big enough responsibility to have to worry about what a domain is or when it's going to expire. Leave all the website maintenance to us
+        </p>
+
+        <p class="smeFbox__text--paragraph">
+          <span class="smeFbox__text--paragraphBold">Work with the pros to help refine your design taste and create the best website for your idea. </span> You'll get a urafro software engineer to work with you in translating your idea from paper to website design
+        </p>
+
+        <p class="smeFbox__text--paragraph">
+          <span class="smeFbox__text--paragraphBold">Be visible on search engines most frequented by your customers:</span> leverage the power of our intergrated tools dedicated to local SEO, social media and SMS marketing. 
+        </p>
+
+        <p class="smeFbox__text--paragraph">
+          <span class="smeFbox__text--paragraphBold">Leave nothing to chance:</span> with urafro Insight and AI-powered financial advice tailored for your business
+        </p>
+
+        <!-- link to pricing page -->
+        <a href="/projects" class="btn btn-full">get started for free</a>
+      </div>
+
+      <div class="smeFbox__image">
+        <img src="/resources/img/smeFeaturesTwo.jpg" alt="" class="smeFbox__image--img">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="smeBreaker">
+  <div class="smeBreaker__header">
+    <h2 class="smeBreaker__header--main">
+      It all starts with a website.
+    </h2>
+  </div>
+  <div class="smeBreaker__paragraph">
+    <p class="smeBreaker__paragraph--p">
+      Bring your idea to life. Claim your online identity with a website.
+    </p>
+  </div>
+  <div class="smeBreaker__button">
+    <!-- link to pricing page -->
+    <a href="/projects" class="btn btn-full">get started for free</a>
+  </div>
+</div>
+
+<div class="smeCta">
+  <div class="smeCta--empty"></div>
+
+  <div class="smeCta--text">
+    <div class="smeCta__head">
+      <h5 class="smeCta__head--small">urafro guides</h5>
+      <h2 class="smeCta__head--big">Why choose urafro?</h2>
+    </div>
+    <div class="smeCta__body">
+      <p class="smeCta__body--paragraph">Because we know that even the best performing technology needs the best specialists. This is why we provide permanent specialized telephone technical support, among other things.
+      </p>
+  
+      <p class="smeCta__body--paragraph smeCta__body--paragraphLast">
+        Call our technical support team on +263 772 794 678.
+      </p>
+    </div>
+  
+    <div class="smeCta__button">
+      <!-- link to pricing page -->
+      <a href="/projects" class="btn btn-ghost smeCta__button--btn">Get help</a>
+    </div>
+  </div>
+</div>
+
+<div class="smeBreaker smeBreakerTwo">
+  <div class="smeBreaker__header">
+    <h2 class="smeBreaker__header--main">
+      Plant the seeds of your journey with urafro
+    </h2>
+  </div>
+  <div class="smeBreaker__paragraph">
+    <p class="smeBreaker__paragraph--p">
+      Try urafro for free, and explore all the tools and services you need to start, run, and grow your business.
+    </p>
+  </div>
+  <div class="smeBreaker__button">
+    <!-- link to pricing page -->
+    <a href="/projects" class="btn btn-full">start free trial</a>
+  </div>
+</div>
+
+<div class="smeBio">
+  <div class="smeBio__head">
+    <h2 class="smeBio__head--main">
+      urafro e-commerce is your African business' best partner because we ARE you. it helps that we are literally the best afrocentric software developers too. say hi, let's make something cool together!
+    </h2>
+  </div>
+</div>
+
+<% include ../partials/smeFooter %>
+
+<% include ../partials/footer %>
