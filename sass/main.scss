@@ -688,12 +688,20 @@ a {
         transform: scale(1.02);
       }
 
-      &Link:link,
-      &Link:visited {
-        width: 3rem;
-        color: rgba($color-primary-red, 0.7);
-        font-size: 1.7rem;
-        transition: color 0.2s;
+      &Link {
+        &:link,
+        &:visited {
+          width: 3rem;
+          color: $color-primary-red;
+          opacity: .7;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover,
+        &:active {
+          opacity: 1;
+          padding-left: .5rem;
+        }
       }
 
       &Icon {

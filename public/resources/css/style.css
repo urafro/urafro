@@ -501,9 +501,12 @@ a {
         transform: scale(1.02); }
       .features__boxes--boxLink:link, .features__boxes--boxLink:visited {
         width: 3rem;
-        color: rgba(255, 37, 37, 0.7);
-        font-size: 1.7rem;
-        transition: color 0.2s; }
+        color: #ff2525;
+        opacity: .7;
+        transition: all 0.2s ease-in-out; }
+      .features__boxes--boxLink:hover, .features__boxes--boxLink:active {
+        opacity: 1;
+        padding-left: .5rem; }
       .features__boxes--boxIcon {
         margin-top: 3rem;
         margin-bottom: 4rem;
