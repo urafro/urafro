@@ -183,15 +183,16 @@ a {
   color: $color-black;
   font-weight: 400;
   box-shadow: 0.5rem 1.5rem 1.5rem -1.5rem rgba($color-black, 0.9);
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 /* body button alternative call to action selection */
 .btn-ghost {
   background-color: transparent;
-  border: 0.1rem solid $color-secondary-brown;
-  color: $color-secondary-brown;
+  border: 0.1rem solid $color-black;
+  color: $color-black;
   box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba($color-black, 0.3);
+  transition: all .2s ease;
 }
 
 .btn-full:hover {

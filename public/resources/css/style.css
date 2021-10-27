@@ -135,14 +135,15 @@ a {
   color: #100c08;
   font-weight: 400;
   box-shadow: 0.5rem 1.5rem 1.5rem -1.5rem rgba(16, 12, 8, 0.9);
-  transition: all 0.2s; }
+  transition: all 0.2s ease; }
 
 /* body button alternative call to action selection */
 .btn-ghost {
   background-color: transparent;
-  border: 0.1rem solid #cf920d;
-  color: #cf920d;
-  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba(16, 12, 8, 0.3); }
+  border: 0.1rem solid #100c08;
+  color: #100c08;
+  box-shadow: 0.5rem 1.2rem 1.5rem -1.5rem rgba(16, 12, 8, 0.3);
+  transition: all .2s ease; }
 
 .btn-full:hover {
   background-color: #cf920d;
