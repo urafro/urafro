@@ -3567,3 +3567,30 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
     }
   }
 }
+
+.ePrice__bottom {
+  margin: 3rem 0 6rem;
+  text-align: center;
+}
+
+.ePrice__bottom--btn {
+  font-size: 1.5rem;
+  letter-spacing: .05rem;
+  word-spacing: .05rem;
+  transition: all .2s ease;
+
+  &:link,
+  &:visited {
+    color: $color-black;
+    opacity: .7;
+  }
+
+  &:active,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.ePrice__bottom--btnIcon {
+  opacity: .7;
+}
