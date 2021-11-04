@@ -2433,7 +2433,8 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
     margin: 0 0 1.5rem; }
     .planBox__head--main {
       font-size: 2rem;
-      font-weight: 400; }
+      font-weight: 400;
+      text-transform: uppercase; }
   .planBox__desc {
     margin-bottom: 3rem; }
     .planBox__desc--paragraph {
