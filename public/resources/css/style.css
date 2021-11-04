@@ -2465,17 +2465,15 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
 .ePrice__bottom {
   margin: 3rem 0 6rem;
   text-align: center; }
-
-.ePrice__bottom--btn {
-  font-size: 1.5rem;
-  letter-spacing: .05rem;
-  word-spacing: .05rem;
-  transition: all .2s ease; }
-  .ePrice__bottom--btn:link, .ePrice__bottom--btn:visited {
-    color: #100c08;
-    opacity: .7; }
-  .ePrice__bottom--btn:active, .ePrice__bottom--btn:hover {
-    opacity: 1; }
-
-.ePrice__bottom--btnIcon {
-  opacity: .7; }
+  .ePrice__bottom--btn {
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    word-spacing: .05rem;
+    transition: all .2s ease; }
+    .ePrice__bottom--btn:link, .ePrice__bottom--btn:visited {
+      color: #100c08;
+      opacity: .7; }
+    .ePrice__bottom--btn:active, .ePrice__bottom--btn:hover {
+      opacity: 1; }
+    .ePrice__bottom--btnIcon {
+      opacity: .7; }
