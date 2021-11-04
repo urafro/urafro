@@ -3500,10 +3500,11 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
 
 .ePrice__boxes {
   display: flex;
-  margin: 0 15rem;
+  margin: 0 15rem 5rem;
   justify-content: space-between;
 }
 
+//planBox nested in .ePrice__boxes as .ePrice__boxes--box
 .planBox {
   flex-basis: 30%;
   text-align: center;
@@ -3513,55 +3514,55 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.planBox__head {
-  margin: 0 0 1.5rem;
-}
+  &__head {
+    margin: 0 0 1.5rem;
+  
+    &--main {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
 
-.planBox__head--main {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.planBox__desc {
-  margin-bottom: 3rem;
-}
-
-.planBox__desc--paragraph {
-  font-size: 1.8rem;
-  line-height: 140%;
-}
-
-.planBox__number {
-  display: flex;
-  align-items: center;
-}
-
-.planBox__number--amount {
-  display: flex;
-}
-
-.planBox__number--amountMain {
-  display: inline-block;
-  font-weight: 400;
-  font-size: 5rem;
-}
-
-.planBox__number--amountSup {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin-top: .5rem;
-}
-
-.planBox__number--currency {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 1rem; 
-}
-
-.planBox__number--currencySpan {
-  display: block;
-  font-size: 1.2rem;
+  &__desc {
+    margin-bottom: 3rem;
+  
+    &--paragraph {
+      font-size: 1.8rem;
+      line-height: 140%;
+    }
+  }
+  
+  &__number {
+    display: flex;
+    align-items: center;
+  
+    &--amount {
+      display: flex;
+    
+      &Main {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 5rem;
+      }
+      
+      &Sup {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-top: .5rem;
+      }
+    }
+  
+    &--currency {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 1rem; 
+    
+      &Span {
+        display: block;
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
