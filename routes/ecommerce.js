@@ -11,8 +11,8 @@ router.get("/ecommerce/sme", (req, res) => {
 
 //New Route - store user phone number and reroute them to pricing page
 router.post("/ecommerce/sme", (req, res) => {
-  req.flash("success", "Hiya. We are still developing the bits. Kindly reach out to us using our phone number +263 772 794 678");
-  res.redirect("/projects");
+  //developing just the design for the pricing page minus the phone number collection logic
+  res.render("sme/pricing");
 });
 
 //Index Route - show landing page for retailers
