@@ -3744,53 +3744,55 @@ alternate prices for ecommerce plans section styles
   display: flex;
   flex-direction: column;
   text-align: center;
-}
 
-.eAlternates--top {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 5rem;
-}
-
-.eAlternates--box {
-  flex-basis: 40%;
-}
-
-.eAlternates__plus--head {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-.eAlternates__plus--paragraph {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  opacity: .7;
-}
-
-.eAlternates__plus--link {
-  color: $color-black;
-  font-size: 1.8rem;
-  transition: all .2s ease-in-out;
-  opacity: .7;
-
-  &:link,
-  &:visited {
-    text-decoration: underline;
+  &--top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
   }
 
-  &:hover,
-  &:active {
-    text-decoration: none;
+  &--box {
+    flex-basis: 40%;
   }
-}
 
-.eAlternates--bottom {
-  width: 70%;
-  margin: 0 auto;
-}
+  .eAlternates__plus {
+    &--head {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    
+    &--paragraph {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      opacity: .7;
+    }
 
-.eAlternates__bottom--paragraph {
-  font-size: 1.6rem;
-  word-spacing: .1rem;
+    &--link {
+      color: $color-black;
+      font-size: 1.8rem;
+      transition: all .2s ease-in-out;
+      opacity: .7;
+    
+      &:link,
+      &:visited {
+        text-decoration: underline;
+      }
+    
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &--bottom {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  &__bottom--paragraph {
+    font-size: 1.6rem;
+    word-spacing: .1rem;
+  }
 }
