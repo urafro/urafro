@@ -3603,7 +3603,7 @@ ecommerce features boxes for pricing template
 */
 
 .eFeatures {
-  margin: 5rem 15rem;
+  margin: 10rem 15rem;
 }
 
 .eFeatures__head {
@@ -3616,6 +3616,50 @@ ecommerce features boxes for pricing template
 }
 
 .efBox {
-  border: .1rem solid $color-primary-red;
+  border: .1rem solid rgba($color-black, .1);
   flex-basis: 20%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.efBox__head {
+  margin: 1rem 0;
+}
+
+.efBox__head--main {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.efBox__body {
+  display: flex;
+  align-items: center;
+}
+
+.efBox__body--amount {
+  display: flex;
+}
+
+.efBox__body--amountSup {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: .5rem;
+}
+
+.efBox__body--amountDigits {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.efBox__body--text {
+  margin-left: .5rem;
+}
+
+.efBox__body--textSpan {
+  display: block;
+  font-size: 1.2rem;
 }
