@@ -2520,3 +2520,17 @@ ecommerce features boxes for pricing template
       .efBox .efBox__body--textSpan {
         display: block;
         font-size: 1.2rem; }
+
+/*
+eFeatures body styles
+*/
+.eFeatures__body {
+  width: 100%; }
+  .eFeatures__body--header {
+    background-color: rgba(16, 12, 8, 0.05);
+    padding: 1.2rem;
+    border: 0.1rem solid rgba(16, 12, 8, 0.1); }
+    .eFeatures__body--headerMain {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: uppercase; }

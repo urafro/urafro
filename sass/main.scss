@@ -3663,3 +3663,22 @@ ecommerce features boxes for pricing template
     }
   }
 }
+
+/*
+eFeatures body styles
+*/
+.eFeatures__body {
+  width: 100%;
+
+  &--header {
+    background-color: rgba($color-black, .05);
+    padding: 1.2rem;
+    border: .1rem solid rgba($color-black, .1);
+  
+    &Main {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
