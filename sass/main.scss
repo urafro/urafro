@@ -3687,33 +3687,34 @@ eFeatures body styles
 .efRow {
   display: flex;
   border: .1rem solid rgba($color-black, .1);
-}
 
-.efRow__head {
-  flex-basis: 40%;
-  padding: 1.2rem;
-}
+  &__head {
+    flex-basis: 40%;
+    padding: 1.2rem;
+  
+    &--main {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    
+    &--paragraph {
+      font-size: 1.5rem;
+      opacity: .7;
+      line-height: 140%;
+    }
+  }
 
-.efRow--small {
-  flex-basis: 20%;
-  text-align: center;
-  border-left: .1rem solid rgba($color-black, .1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.efRow__head--main {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
-
-.efRow__head--paragraph {
-  font-size: 1.5rem;
-  opacity: .7;
-}
-
-.efRow--icon {
-  font-size: 1.5rem;
+  &--small {
+    flex-basis: 20%;
+    text-align: center;
+    border-left: .1rem solid rgba($color-black, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &--icon {
+    font-size: 1.5rem;
+  }
 }
