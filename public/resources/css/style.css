@@ -2543,9 +2543,9 @@ eFeatures body styles
     padding: 1.2rem; }
     .efRow__head--main {
       font-size: 1.5rem;
-      margin-bottom: 1rem;
       font-weight: 400; }
     .efRow__head--paragraph {
+      margin-top: 1rem;
       font-size: 1.5rem;
       opacity: .7;
       line-height: 140%; }
