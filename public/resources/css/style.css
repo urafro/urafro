@@ -2558,6 +2558,8 @@ eFeatures body styles
     justify-content: center; }
     .efRow__small--icon {
       font-size: 1.5rem;
-      opacity: .7; }
+      opacity: .5; }
+      .efRow__small--iconMinus {
+        opacity: .2; }
     .efRow__small--text {
       font-size: 1.5rem; }

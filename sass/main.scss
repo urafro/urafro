@@ -3715,7 +3715,11 @@ eFeatures body styles
 
     &--icon {
       font-size: 1.5rem;
-      opacity: .7;
+      opacity: .5;
+
+      &Minus {
+        opacity: .2;
+      }
     }
 
     &--text {
