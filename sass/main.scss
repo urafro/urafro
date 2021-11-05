@@ -3687,6 +3687,12 @@ eFeatures body styles
 .efRow {
   display: flex;
   border: .1rem solid rgba($color-black, .1);
+  transition: all .2s ease;
+
+  &:active,
+  &:hover {
+    background-color: rgba($color-black, .05);
+  }
 
   &__head {
     flex-basis: 40%;

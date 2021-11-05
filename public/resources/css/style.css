@@ -2537,7 +2537,10 @@ eFeatures body styles
 
 .efRow {
   display: flex;
-  border: 0.1rem solid rgba(16, 12, 8, 0.1); }
+  border: 0.1rem solid rgba(16, 12, 8, 0.1);
+  transition: all .2s ease; }
+  .efRow:active, .efRow:hover {
+    background-color: rgba(16, 12, 8, 0.05); }
   .efRow__head {
     flex-basis: 40%;
     padding: 1.2rem; }
