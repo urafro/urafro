@@ -2549,12 +2549,15 @@ eFeatures body styles
       font-size: 1.5rem;
       opacity: .7;
       line-height: 140%; }
-  .efRow--small {
+  .efRow__small {
     flex-basis: 20%;
     text-align: center;
     border-left: 0.1rem solid rgba(16, 12, 8, 0.1);
     display: flex;
     align-items: center;
     justify-content: center; }
-  .efRow--icon {
-    font-size: 1.5rem; }
+    .efRow__small--icon {
+      font-size: 1.5rem;
+      opacity: .7; }
+    .efRow__small--text {
+      font-size: 1.5rem; }
