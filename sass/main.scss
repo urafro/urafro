@@ -3796,3 +3796,42 @@ alternate prices for ecommerce plans section styles
     word-spacing: .1rem;
   }
 }
+
+
+
+/*
+questions and answers section on pricing template
+*/
+.qna {
+  margin: 10rem 25rem;
+  display: flex;
+
+  &--box {
+    padding: 3rem;
+    flex-basis: 50%;
+  }
+  
+  &--header {
+    font-size: 3rem;
+    letter-spacing: .05rem;
+    word-spacing: .05rem;
+    margin-bottom: 5rem;
+    font-weight: 400;
+  }
+
+  &__general--box {
+    margin-bottom: 5rem;
+  
+    &Title {
+      font-weight: 400;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    
+    &P {
+      font-size: 1.7rem;
+      line-height: 140%;
+      word-spacing: .05rem;
+    }
+  }
+}
