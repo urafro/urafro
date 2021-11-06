@@ -2643,28 +2643,26 @@ pricing template bottom call to action section styles
     padding-left: 10rem; }
     .pricingCta__text--header {
       font-size: 3rem; }
-  .pricingCta__right {
-    padding-left: 8rem; }
-    .pricingCta__right--form {
-      display: flex;
-      flex-direction: column; }
-      .pricingCta__right--formBtn {
-        align-self: flex-start;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        letter-spacing: .05rem;
-        font-weight: 600;
-        box-shadow: none;
-        cursor: pointer; }
-    .pricingCta__right--input {
-      width: 80%;
-      padding: 2rem;
-      border: 0.1rem solid rgba(16, 12, 8, 0.1);
-      border-radius: 20rem;
-      margin-bottom: 1rem;
-      font-size: 1.5rem; }
-    .pricingCta__right--paragraph {
-      width: 75%;
-      margin-top: 3rem;
-      font-size: 1.5rem;
-      line-height: 140%; }
+  .pricingCta__right--form {
+    display: flex;
+    flex-direction: column; }
+    .pricingCta__right--formBtn {
+      align-self: flex-start;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      letter-spacing: .05rem;
+      font-weight: 600;
+      box-shadow: none;
+      cursor: pointer; }
+  .pricingCta__right--input {
+    width: 80%;
+    padding: 2rem;
+    border: 0.1rem solid rgba(16, 12, 8, 0.1);
+    border-radius: 20rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; }
+  .pricingCta__right--paragraph {
+    width: 75%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 140%; }
