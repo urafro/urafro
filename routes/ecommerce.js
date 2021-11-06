@@ -15,6 +15,11 @@ router.post("/ecommerce/sme", (req, res) => {
   res.render("sme/pricing");
 });
 
+//show ecommerce plan prices
+router.get("/ecommerce/pricing", (req, res) => {
+  res.render("sme/pricing");
+});
+
 //Index Route - show landing page for retailers
 router.get("/ecommerce/retailer", (req, res) => {
   res.render("retailer/landing");
