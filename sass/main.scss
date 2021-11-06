@@ -3835,3 +3835,56 @@ questions and answers section on pricing template
     }
   }
 }
+
+
+
+/*
+pricing template bottom call to action section styles
+*/
+.pricingCta {
+  margin: 0 5rem 15rem;
+  display: flex;
+
+  &--box {
+    flex-basis: 50%;
+  }
+
+  &__text {
+    padding-left: 10rem;
+
+    &--header {
+      font-size: 3rem;
+    }
+  }
+
+  &__right {
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+  
+      &Btn {
+        align-self: flex-start;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        letter-spacing: .05rem;
+        font-weight: 600;
+        box-shadow: none;
+      }
+    }
+    
+    &--input {
+      width: 80%;
+      padding: 2rem;
+      border: .1rem solid rgba($color-black, .1);
+      border-radius: 20rem;
+      margin-bottom: 1rem;
+    }
+    
+    &--paragraph {
+      width: 80%;
+      margin-top: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+}
