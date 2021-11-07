@@ -254,6 +254,43 @@
     font-size: 1.3rem;
   }
 
+  /* pricing template */
+  .ePrice__boxes {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10rem 5rem;
+  }
+
+  .planBox {
+    flex-basis: 45%;
+    margin: 1rem;
+  }
+
+  /* eFeatures */
+  .eFeatures {
+    margin: 10rem;
+  }
+
+  /* eAlternates */
+  .eAlternates {
+    margin: 15rem 20rem;
+  }
+
+  /* smeBreaker */
+  .smeBreaker__header--main {
+    font-size: 4rem;
+  }
+
+  /* qna */
+  .qna {
+    margin: 10rem 5rem;
+  }
+
+  /* pricingCta */
+  .pricingCta__text {
+    padding-left: 0;
+  }
+
 }
 
 /* Small iPads, Tablets: 481px to 768px */
