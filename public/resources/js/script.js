@@ -25,8 +25,18 @@ $(document).ready(function() {
   });
 
   /* show/hide features on pricing template */
+  //show/hide eFeatures section
   $('.js--show-hide-features').click(() => {
     $('.eFeatures').toggleClass('smeFeatures--hidden');
+  });
+
+  //display appropriate button info bases on the visibility of eFeatures
+  $('.js--show-hide-features').click(() => {
+    if ($('.ePrice__bottom--btnIcon').hasClass('fa-plus')) {
+      $('.ePrice__bottom--btn').html('<i class="fas fa-minus ePrice__bottom--btnIcon"></i> Hide plan features');
+    } else {
+      $('.ePrice__bottom--btn').html('<i class="fas fa-plus ePrice__bottom--btnIcon"></i> Show plan features');
+    }
   });
   
 });
