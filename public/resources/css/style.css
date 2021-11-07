@@ -2103,9 +2103,6 @@ SME templates first
         opacity: 0;
         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); } }
 
-.smeNav {
-  display: none; }
-
 .smeNavItems {
   display: flex;
   justify-content: space-between;

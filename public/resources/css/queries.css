@@ -1056,6 +1056,12 @@
   .smeFooter__head {
     flex-wrap: wrap;
   }
+
+
+  /* pricing template */
+  .ePrice__header {
+    margin: 0 4rem;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
