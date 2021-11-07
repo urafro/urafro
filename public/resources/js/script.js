@@ -68,4 +68,18 @@ $(document).ready(function() {
       $('.ePrice__urafro--btn').html('<i class="fas fa-plus ePrice__urafro--btnIcon"></i> Show plan features');
     }
   });
+
+  //show/hide basic plan features section
+  $('.js--show-hide-features-adv').click(() => {
+    $('.eFeatures__body--adv').slideToggle('fast');
+  });
+
+  //display appropriate button info bases on the visibility of eFeatures
+  $('.js--show-hide-features-adv').click(() => {
+    if ($('.ePrice__adv--btnIcon').hasClass('fa-plus')) {
+      $('.ePrice__adv--btn').html('<i class="fas fa-minus ePrice__adv--btnIcon"></i> Hide plan features');
+    } else {
+      $('.ePrice__adv--btn').html('<i class="fas fa-plus ePrice__adv--btnIcon"></i> Show plan features');
+    }
+  });
 });
