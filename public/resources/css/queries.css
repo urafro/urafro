@@ -511,6 +511,7 @@
 
   .smeIntro__form--input {
     border: .1rem solid #100c08;
+    color: #100c08;
   }
 
   .smeIntro__form--input::placeholder {
