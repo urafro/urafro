@@ -2545,6 +2545,9 @@ eFeatures body styles
 .eFeatures__body--basic {
   display: none; }
 
+.eFeatures__body--urafro {
+  display: none; }
+
 .efRow {
   display: flex;
   border: 0.1rem solid rgba(16, 12, 8, 0.1);

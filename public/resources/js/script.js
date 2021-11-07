@@ -54,4 +54,18 @@ $(document).ready(function() {
       $('.ePrice__basic--btn').html('<i class="fas fa-plus ePrice__basic--btnIcon"></i> Show plan features');
     }
   });
+
+  //show/hide basic plan features section
+  $('.js--show-hide-features-urafro').click(() => {
+    $('.eFeatures__body--urafro').slideToggle('fast');
+  });
+
+  //display appropriate button info bases on the visibility of eFeatures
+  $('.js--show-hide-features-urafro').click(() => {
+    if ($('.ePrice__urafro--btnIcon').hasClass('fa-plus')) {
+      $('.ePrice__urafro--btn').html('<i class="fas fa-minus ePrice__urafro--btnIcon"></i> Hide plan features');
+    } else {
+      $('.ePrice__urafro--btn').html('<i class="fas fa-plus ePrice__urafro--btnIcon"></i> Show plan features');
+    }
+  });
 });
