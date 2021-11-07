@@ -3693,6 +3693,11 @@ eFeatures body styles
   }
 }
 
+//hidden features on small planBox boxes
+.eFeatures__body--basic {
+  display: none;
+}
+
 //this is the same container as eFeatures__body--container
 .efRow {
   display: flex;

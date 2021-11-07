@@ -39,4 +39,19 @@ $(document).ready(function() {
     }
   });
   
+
+  /* show/hide features on pricing template small screens */
+  //show/hide basic plan features section
+  $('.js--show-hide-features-basic').click(() => {
+    $('.eFeatures__body--basic').slideToggle('fast');
+  });
+
+  //display appropriate button info bases on the visibility of eFeatures
+  $('.js--show-hide-features-basic').click(() => {
+    if ($('.ePrice__basic--btnIcon').hasClass('fa-plus')) {
+      $('.ePrice__basic--btn').html('<i class="fas fa-minus ePrice__basic--btnIcon"></i> Hide plan features');
+    } else {
+      $('.ePrice__basic--btn').html('<i class="fas fa-plus ePrice__basic--btnIcon"></i> Show plan features');
+    }
+  });
 });

@@ -2542,6 +2542,9 @@ eFeatures body styles
       font-weight: 600;
       text-transform: uppercase; }
 
+.eFeatures__body--basic {
+  display: none; }
+
 .efRow {
   display: flex;
   border: 0.1rem solid rgba(16, 12, 8, 0.1);
