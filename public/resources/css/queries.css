@@ -99,6 +99,11 @@
     width: 70%;
   }
 
+  /* pricing template */
+  .ePrice {
+    padding-top: 8rem;
+  }
+
 }
 
 /* Desktops, Large Screens: 1025px to 1200px */
