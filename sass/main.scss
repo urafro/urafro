@@ -2908,6 +2908,10 @@ SME templates first
         opacity: 1;
         transform: rotate(-45deg) translate(0, -.1rem);
       }
+
+      &:checked ~ .ecoMenu__toggle--menu {
+        width: 44rem;
+      }
     }
 
     /*
@@ -2946,7 +2950,7 @@ SME templates first
     */
     &--menu {
       position: absolute;
-      width: 43rem;
+      width: 0rem;
       height: 110vh;
       margin: -10rem 0 0 0;
       padding: 5rem;
