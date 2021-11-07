@@ -42,6 +42,11 @@
   .smeBio__head {
     width: 70%;
   }
+
+  /* pricing template */
+  .ePrice {
+    padding-top: 10rem;
+  }
 }
 
 /* Extra large screens, TVs: 1201px and more */
