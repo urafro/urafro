@@ -555,6 +555,57 @@
   .smeFooterBox__links--li {
     line-height: 140%;
   }
+
+  /* 
+  pricing template styles
+  */
+
+  /* ePrice */
+  .ePrice {
+    padding-top: 7rem;
+  }
+
+  .ePrice__header--main {
+    font-size: 4rem;
+  }
+  
+  .ePrice__header--paragraph {
+    font-size: 2rem;
+  }
+
+  .ePrice__boxes {
+    margin: 0 5rem 5rem;
+  }
+
+  /* eFeatures */
+  .eFeatures {
+    margin: 10rem 7rem;
+  }
+
+  .efBox__head--main {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* eAlternates */
+  .eAlternates {
+    margin: 15rem 10rem;
+  }
+
+  /* qna */
+  .qna {
+    margin: 10rem 2rem;
+  }
+
+  /* pricingCta */
+  .pricingCta {
+    flex-direction: column;
+  }
+
+  .pricingCta__text--header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Small Phones from 280px (... to include galaxy fold :/...) to 480p */
