@@ -933,6 +933,20 @@
     text-align: left;
   }
 
+  .ePrice__bottom--btn {
+    font-size: 2rem;
+  }
+
+  .ePrice__bottom--icon {
+    margin-right: 1rem;
+    opacity: .5;
+  }
+
+  /* hiding show/hide button for large features section on small screens */
+  .js--show-hide-features {
+    display: none;
+  }
+
   .efRow__headSmall {
     flex-basis: 70%;
   }
@@ -952,6 +966,52 @@
   .efBox {
     padding: 2.45rem;
   }
+
+  /* eAlternates */
+  .eAlternates {
+    margin: 15rem 5rem;
+  }
+
+  .eAlternates--top {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .eAlternates--bottom {
+    width: 100%;
+  }
+
+  .eAlternates__bottom--paragraph {
+    font-size: 1.6rem;
+  }
+
+  .eAlternates__plus--paragraph {
+    font-size: 2rem;
+  }
+
+  .eAlternates--box {
+    margin-bottom: 5rem;
+  }
+
+  /* smeBreaker */
+  .smeBreaker__header {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .smeBreaker__header--main {
+    font-size: 4rem;
+  }
+
+  .smeBreaker__paragraph--p {
+    display: none;
+  }
+
+  /* qna */
+  .qna {
+    display: flex;
+    flex-direction: column;
+  };
 }
 
 /* small phone screen sizes */

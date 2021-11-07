@@ -33,7 +33,7 @@ $(document).ready(function() {
   //display appropriate button info bases on the visibility of eFeatures
   $('.js--show-hide-features').click(() => {
     if ($('.ePrice__bottom--btnIcon').hasClass('fa-plus')) {
-      $('.ePrice__bottom--btn').html('<i class="fas fa-minus ePrice__bottom--btnIcon"></i> Hide plan features');
+      $('.ePrice__bottom--btn').html('<i class="fas fa-minus ePrice__bottom--btnIcon ePrice__bottom--icon"></i> Hide plan features');
     } else {
       $('.ePrice__bottom--btn').html('<i class="fas fa-plus ePrice__bottom--btnIcon"></i> Show plan features');
     }
@@ -49,9 +49,9 @@ $(document).ready(function() {
   //display appropriate button info bases on the visibility of eFeatures
   $('.js--show-hide-features-basic').click(() => {
     if ($('.ePrice__basic--btnIcon').hasClass('fa-plus')) {
-      $('.ePrice__basic--btn').html('<i class="fas fa-minus ePrice__basic--btnIcon"></i> Hide plan features');
+      $('.ePrice__basic--btn').html('<i class="fas fa-minus ePrice__basic--btnIcon ePrice__bottom--icon"></i> Hide plan features');
     } else {
-      $('.ePrice__basic--btn').html('<i class="fas fa-plus ePrice__basic--btnIcon"></i> Show plan features');
+      $('.ePrice__basic--btn').html('<i class="fas fa-plus ePrice__basic--btnIcon ePrice__bottom--icon"></i> Show plan features');
     }
   });
 
@@ -63,9 +63,9 @@ $(document).ready(function() {
   //display appropriate button info bases on the visibility of eFeatures
   $('.js--show-hide-features-urafro').click(() => {
     if ($('.ePrice__urafro--btnIcon').hasClass('fa-plus')) {
-      $('.ePrice__urafro--btn').html('<i class="fas fa-minus ePrice__urafro--btnIcon"></i> Hide plan features');
+      $('.ePrice__urafro--btn').html('<i class="fas fa-minus ePrice__urafro--btnIcon ePrice__bottom--icon"></i> Hide plan features');
     } else {
-      $('.ePrice__urafro--btn').html('<i class="fas fa-plus ePrice__urafro--btnIcon"></i> Show plan features');
+      $('.ePrice__urafro--btn').html('<i class="fas fa-plus ePrice__urafro--btnIcon ePrice__bottom--icon"></i> Show plan features');
     }
   });
 
@@ -77,9 +77,9 @@ $(document).ready(function() {
   //display appropriate button info bases on the visibility of eFeatures
   $('.js--show-hide-features-adv').click(() => {
     if ($('.ePrice__adv--btnIcon').hasClass('fa-plus')) {
-      $('.ePrice__adv--btn').html('<i class="fas fa-minus ePrice__adv--btnIcon"></i> Hide plan features');
+      $('.ePrice__adv--btn').html('<i class="fas fa-minus ePrice__adv--btnIcon ePrice__bottom--icon"></i> Hide plan features');
     } else {
-      $('.ePrice__adv--btn').html('<i class="fas fa-plus ePrice__adv--btnIcon"></i> Show plan features');
+      $('.ePrice__adv--btn').html('<i class="fas fa-plus ePrice__adv--btnIcon ePrice__bottom--icon"></i> Show plan features');
     }
   });
 });
