@@ -925,6 +925,10 @@
     padding: 0 5rem;;
   }
 
+  .ePrice__bottomTwo {
+    display: block;
+  }
+
   /* eFeatures */
   .eFeatures {
     margin: 10rem 5rem;

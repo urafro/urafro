@@ -3607,6 +3607,11 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
 }
 
 
+//hiding small price features box links on large screens
+.ePrice__bottomTwo {
+  display: none;
+}
+
 
 /*
 ecommerce features boxes for pricing template

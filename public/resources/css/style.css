@@ -2484,6 +2484,9 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
     .ePrice__bottom--btnIcon {
       opacity: .7; }
 
+.ePrice__bottomTwo {
+  display: none; }
+
 /*
 ecommerce features boxes for pricing template
 */
