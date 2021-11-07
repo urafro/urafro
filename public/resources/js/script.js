@@ -27,7 +27,7 @@ $(document).ready(function() {
   /* show/hide features on pricing template */
   //show/hide eFeatures section
   $('.js--show-hide-features').click(() => {
-    $('.eFeatures').toggleClass('smeFeatures--hidden');
+    $('.eFeatures').slideToggle('slow');
   });
 
   //display appropriate button info bases on the visibility of eFeatures
