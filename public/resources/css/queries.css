@@ -894,6 +894,64 @@
   .smeFooterBox__head {
     margin-bottom: 1rem;
   }
+
+  /*
+  pricing template
+  */
+  .ePrice__header {
+    margin: 0 7rem;
+  }
+
+  .ePrice__header--paragraph {
+    font-size: 2.5rem;
+    margin: 3rem 0 3rem;
+  }
+
+  .ePrice__boxes {
+    margin-top: 10rem;
+  }
+
+  .planBox {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .planBox__head {
+    padding-top: 5rem;
+  }
+
+  .planBox__desc--paragraph {
+    padding: 0 5rem;;
+  }
+
+  /* eFeatures */
+  .eFeatures {
+    margin: 10rem 5rem;
+  }
+
+  .eFeatures__body--headerSmall {
+    text-align: left;
+  }
+
+  .efRow__headSmall {
+    flex-basis: 70%;
+  }
+
+  .efRow__smallScreen {
+    flex-basis: 30%;
+  }
+
+  .efRow__head--mainSmall {
+    text-align: left;
+  }
+
+  .efRow__head--paragraphSmall {
+    text-align: left;
+  }
+
+  .efBox {
+    padding: 2.45rem;
+  }
 }
 
 /* small phone screen sizes */
