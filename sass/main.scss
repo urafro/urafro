@@ -3208,6 +3208,11 @@ smeFeatures
   }
 }
 
+//hiding pricing features section initially
+.smeFeatures--hidden {
+  display: none;
+}
+
 .smeFbox {
   display: flex;
   align-items: center;
@@ -3578,6 +3583,7 @@ E-COMMERCE UNIVERSAL PRICING TEMPLATE
     letter-spacing: .05rem;
     word-spacing: .05rem;
     transition: all .2s ease;
+    cursor: pointer;
   
     &:link,
     &:visited {

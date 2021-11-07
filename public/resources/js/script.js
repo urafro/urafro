@@ -23,5 +23,10 @@ $(document).ready(function() {
       scrollTop: $('.js--section--contact').offset().top
     }, 2000);
   });
+
+  /* show/hide features on pricing template */
+  $('.js--show-hide-features').click(() => {
+    $('.eFeatures').toggleClass('smeFeatures--hidden');
+  });
   
 });
