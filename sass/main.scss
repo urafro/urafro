@@ -3108,7 +3108,7 @@ SME templates first
         rgba(50, 74, 119, 1),
         rgba(20, 30, 48, 0.2)
       ),
-      url("/resources/img/smeIntroFour.jpg");
+      url("/resources/img/smeIntroFour-min.jpg");
   }
 
   &Three {
@@ -3116,7 +3116,7 @@ SME templates first
         rgba(50, 74, 119, 1),
         rgba(20, 30, 48, .5)
       ),
-      url("/resources/img/wholesaleTwo.jpg");
+      url("/resources/img/wholesaleTwo-min.jpg");
   }
 
   &__header,
@@ -3356,7 +3356,7 @@ smeFeatures
 
 .smeBreakerTwo {
   background-image: linear-gradient(rgba(50, 74, 119, 1), rgba(20, 30, 48, 0.5)),
-    url("https://images.unsplash.com/photo-1509100194014-d49809396daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
+    url("/resources/img/smeBreakerTwo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

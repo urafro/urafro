@@ -700,6 +700,10 @@
     height: 36rem;
   }
 
+  .servicesBox__image--imgTwo {
+    height: 55rem;
+  }
+
   .servicesBox__image--imgThree {
     height: 40rem;
   }
