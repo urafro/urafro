@@ -15,20 +15,20 @@
       <span class="closebtn" onclick="closeMenu()">&times</span>
 
       <div class="menu-content">
-        <a href="/blogs">Cancel</a>
+        <a href="/blogs">cancel</a>
         <!-- will create an about page with mission statement and what-not -->
-        <a href="#">About</a>
+        <a href="/ecommerce/sme">e-commerce</a>
         <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
-        <a href="/projects">Projects</a>
+        <a href="/projects">projects</a>
         <!-- create a contact us panel with socials -->
-        <a href="#">Contact Us</a>
+        <a href="/">home 🏡</a>
         <% if (!currentUser) { %>
-        <a href="/signup">Sign Up</a>
-        <a href="/login">Login</a>
+        <a href="/signup">sign Up</a>
+        <a href="/login">login</a>
         <% } %>
-        <% if (currentUser) { %>
-        <a href="/logout">Logout</a>
-        <% } %>
+        <!-- <% if (currentUser) { %>
+        <a href="/logout">logout</a>
+        <% } %> -->
       </div>
     </div>
 

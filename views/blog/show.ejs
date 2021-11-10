@@ -13,21 +13,23 @@
     <span class="closebtn" onclick="closeMenu()">&times</span>
 
     <div class="menu-content">
-      <a href="/blogs">Posts</a>
+      <a href="/blogs">posts</a>
       <!-- will create an about page with mission statement and what-not -->
-      <a href="/blogs/new">Create</a>
-      <a href="#">About</a>
-      <!-- this will link to several ideas about how we can impact meaningful change in our communities -->
-      <a href="/projects">Projects</a>
+      <a href="/blogs/new">create</a>
+      <!-- 
+        this will link to several ideas about how we can impact meaningful change in our communities '/projects' url deleted here. but the idea  is very much still alive
+      -->
+      <a href="/ecommerce/sme">sell online</a>
+      <a href="#">about</a>
       <!-- create a contact us panel with socials -->
-      <a href="#">Contact Us</a>
-      <% if (!currentUser) { %>
+      <a href="#">contact us</a>
+      <!-- <% if (!currentUser) { %>
       <a href="/signup">Sign Up</a>
       <a href="/login">Login</a>
       <% } %>
       <% if (currentUser) { %>
       <a href="/logout">Logout</a>
-      <% } %>
+      <% } %> -->
     </div>
   </div>
 
