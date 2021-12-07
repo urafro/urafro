@@ -719,7 +719,13 @@ a {
       &Paragraph {
         font-size: 1.5rem;
         width: 80%;
-        margin-bottom: 5rem;
+        margin-bottom: 1.5rem;
+
+        &Last {
+          font-size: 1.5rem;
+          width: 80%;
+          margin-bottom: 5rem;
+        }
       }
 
       .projects__link {

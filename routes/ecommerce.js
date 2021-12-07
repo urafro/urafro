@@ -42,4 +42,9 @@ router.post("/ecommerce/wholesaler", (req, res) => {
   res.redirect("/projects");
 });
 
+//SURVEY ROUTE - serve plan pointers template
+router.get("/survey", (req, res) => {
+  res.render("sme/survey");
+});
+
 module.exports = router;

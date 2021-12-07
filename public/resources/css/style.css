@@ -518,7 +518,11 @@ a {
       .features__boxes--boxParagraph {
         font-size: 1.5rem;
         width: 80%;
-        margin-bottom: 5rem; }
+        margin-bottom: 1.5rem; }
+        .features__boxes--boxParagraphLast {
+          font-size: 1.5rem;
+          width: 80%;
+          margin-bottom: 5rem; }
       .features__boxes--box .projects__link:link, .features__boxes--box .projects__link:visited {
         color: rgba(255, 37, 37, 0.7);
         text-decoration: underline;
