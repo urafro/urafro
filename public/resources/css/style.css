@@ -496,16 +496,17 @@ a {
         font-size: 1.5rem;
         width: 80%;
         margin-bottom: 1.5rem; }
-        .features__boxes--boxParagraphLast {
-          font-size: 1.5rem;
-          width: 80%;
-          margin-bottom: 5rem; }
       .features__boxes--box .projects__link:link, .features__boxes--box .projects__link:visited {
         color: rgba(255, 37, 37, 0.7);
         text-decoration: underline;
         transition: color 0.2s; }
       .features__boxes--box .projects__link:hover, .features__boxes--box .projects__link:active {
         color: #ff2525; }
+      .features__boxes--boxBtn {
+        width: 50%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        text-align: center; }
       .features__boxes--boxImage {
         height: 10rem;
         position: relative;

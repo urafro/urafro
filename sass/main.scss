@@ -688,12 +688,6 @@ a {
         font-size: 1.5rem;
         width: 80%;
         margin-bottom: 1.5rem;
-
-        &Last {
-          font-size: 1.5rem;
-          width: 80%;
-          margin-bottom: 5rem;
-        }
       }
 
       .projects__link {
@@ -708,6 +702,13 @@ a {
         &:active {
           color: $color-primary-red;
         }
+      }
+
+      &Btn {
+        width: 50%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
       }
 
       &Image {
