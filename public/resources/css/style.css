@@ -269,11 +269,12 @@ a {
 /* ===============
   greeting styles 
 ================= */
-@keyframes navFade {
+/* @keyframes navFade {
   100% {
     opacity: 1;
-    margin-top: 0; } }
-
+    margin-top: 0;
+  }
+} */
 .jiggle {
   animation-name: jiggle;
   animation-duration: 2s;
@@ -292,32 +293,10 @@ a {
   59% {
     transform: scale(1, 1) translate(0, -0.3rem); } }
 
-/* Boxes animations */
-@keyframes h1slideRight {
-  50% {
-    opacity: 1;
-    left: 0;
-    padding-left: 0; }
-  100% {
-    border-left: 0.5rem solid #ff2525;
-    padding-left: 2rem;
-    opacity: 1;
-    left: 0; } }
-
-@keyframes spanSlideRight {
-  100% {
-    opacity: 0.6;
-    margin-left: 0; } }
-
 @keyframes btnSlideDown {
   100% {
     opacity: 1;
     top: 0; } }
-
-@keyframes imgSlideLeft {
-  100% {
-    opacity: 1;
-    right: 0; } }
 
 .greeting {
   min-height: 100vh;
@@ -329,9 +308,7 @@ a {
     width: 90%;
     margin: auto;
     padding: 4rem 3rem 1rem;
-    animation: 1s navFade 0.5s forwards;
-    opacity: 0;
-    margin-top: -10rem;
+    opacity: 1;
     border-bottom: 0.1rem dashed rgba(16, 12, 8, 0.1); }
     .greeting__nav--brand {
       flex: 1;
