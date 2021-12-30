@@ -87,6 +87,11 @@ app.use("/ecommerce", ecommerce);
 
 /*
 TRYING TO SEND SITEMAP.XML AS A HTTP RESPONSE
+step 1.
+    create sitemap get route like the one below
+step 2.
+    navigate your way to google console + sitemaps submit page. enter the url <domain-name>/sitemap
+that's it :)
 */
 
 //without middleware
