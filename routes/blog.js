@@ -285,7 +285,7 @@ router.post("/drafts",middleware.isLoggedIn, (req, res) => {
       req.flash("error", err.message);
       res.redirect("/blogs/new");
     } else {
-      req.flash("success", "Draft stored in a cool place! 🎉")
+      req.flash("success", "Draft created successfully")
       res.redirect("/blogs");
       console.log(createdDraft);
     }
