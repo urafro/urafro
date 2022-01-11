@@ -233,8 +233,13 @@ router.delete("/:id",middleware.isAdmin, (req, res) => {
 
 /* Blog Draft Routes */
 
+//drafts index route
+router.get("/admin/drafts",middleware.isAdmin, (req, res) => {
+  res.send("welcome to created drafts page");
+});
+
 //Use data from blog new get route - create new blog or save it as draft instead
-router.post("/drafts",middleware.isLoggedIn, (req, res) => {
+router.post("/drafts",middleware.isAdmin, (req, res) => {
 
   const newDraft = {
     tag: req.body.blog.tag,
