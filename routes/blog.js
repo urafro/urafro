@@ -233,6 +233,8 @@ router.delete("/:id",middleware.isAdmin, (req, res) => {
 
 /* Blog Draft Routes */
 
+//next up is creating different user profile schemas for sme's, retailers, wholesalers and admin
+
 //drafts index route
 router.get("/admin/drafts",middleware.isAdmin, (req, res) => {
   res.send("welcome to created drafts page");
