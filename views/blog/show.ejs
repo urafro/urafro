@@ -130,7 +130,7 @@
     <% } %>
 
     <% if((!currentUser || !currentUser._id.equals(blog.author.id)) && blog.body.content.sectionFive) { %>
-    <div class="show-menu">
+    <div class="show-menu" style="display: none;">
       <ul class="showcaseTwo__admin">
         <!-- link to youtube episode -->
         <li class="showcaseTwo__admin--li">
@@ -233,10 +233,12 @@
                   <h2 class="section__inputs--heading">Leave A Reply</h2>
                   <div class="inputsBox">
                     <label class="inputsBox--label" for="commentText">Comment*</label>
-                    <textarea class="inputsBox--input inputsBox--textarea" name="commentText" id="commentText" cols="30" rows="5" placeholder="head over to our IG, Twitter or Reddit to comment on this post... or click on the sticky links to the bottom right of your screen to be taken there ez 🙂"
-                      required></textarea>
+                    <!-- <textarea class="inputsBox--input inputsBox--textarea" name="commentText" id="commentText" cols="30" rows="5" placeholder="head over to our IG, Twitter or Reddit to comment on this post... or click on the sticky links to the bottom right of your screen to be taken there ez 🙂"
+                      required></textarea> -->
+                    <textarea class="inputsBox--input inputsBox--textarea" name="commentText" id="commentText" cols="30" rows="5" placeholder="head over to our IG, Twitter or Reddit to comment on this post... or click on the 'back to Instagram' button below to be redirected there ez 🙂"
+                    required></textarea>
                     <!-- this link should redirect to the best available option. Youtube preferrably when that's sorted -->
-                    <a href="<%= blog.body.content.sectionFive.instagramLink %>" target="_blank" class="btn btn-full form--btn">take me there</a>
+                    <a href="<%= blog.body.content.sectionFive.instagramLink %>" target="_blank" class="btn btn-full form--btn">back to Instagram</a>
                   </div>
                 </div>
               </div>
